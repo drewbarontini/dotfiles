@@ -106,8 +106,11 @@ nmap <C-Down> ddp
 vmap <C-Up> xkP`[V`]
 vmap <C-Down> xp`[V`]
 
+"CtrlP
+nmap <leader>c :CtrlP<CR>
+
 "NERDTree toggle
-nmap <leader>nt :NERDTreeToggle <CR>
+nmap <leader>nt :NERDTreeToggle<CR>
 map <leader>nb :NERDTreeFromBookmark
 
 " ----- Syntax Highlighting & Theme ----- "
@@ -131,6 +134,9 @@ autocmd Filetype gitcommit setlocal spell textwidth=72
 autocmd! FileType mkd setlocal syn=off
 
 " ----- Plugin-specific ----- "
+
+"CtrlP
+let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 
 "NERDTree
 let g:NERDTreeWinSize = 50
