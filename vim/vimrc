@@ -37,10 +37,11 @@ set rtp+=/Users/Drew/Library/Python/2.7/lib/python/site-packages/powerline/bindi
 
 " ----- General Configuration ----- "
 
-syntax on
-filetype on
-filetype plugin on
-filetype indent on
+if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
+  syntax on
+endif
+
+filetype plugin indent on
 
 set number
 set nowrap
@@ -56,7 +57,6 @@ set noshowmode
 set mouse=a
 set backspace=indent,eol,start
 set laststatus=2
-set list listchars=tab:\ \ ,trail:·
 set scrolloff=8
 set foldcolumn=1
 
@@ -81,10 +81,15 @@ set history=50
 set autoindent
 set smartindent
 set smarttab
+
+"Softtabs, 2 spaces
 set shiftwidth=2
 set softtabstop=2
 set tabstop=2
 set expandtab
+
+" Display extra whitespace
+set list listchars=tab:»·,trail:·
 
 " ----- Search ----- "
 
