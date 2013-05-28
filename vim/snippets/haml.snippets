@@ -1,11 +1,10 @@
 snippet =lt
-	= link_to '$1', '${2:#}'${3:, class: '$4'}
+	= link_to '${1:text}', '${2:#}'
 snippet =it
-	= image_tag '$1', alt: '$2'${3:, ${4:class: '$5'}, ${6: width: '$7'}, ${8: height: '$9'}}
+	= image_tag '${1:image}', alt: '${2:text}'
 snippet =rp
 	= render :partial => '${1:partial}'
 snippet =rpl
 	= render :partial => '${1:partial}', :locals => {}
 snippet =rpc
 	= render :partial => '${1:partial}', :collection => @$1
-
