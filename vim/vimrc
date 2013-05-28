@@ -1,6 +1,35 @@
-" ----- Pathogen ----- "
+" ----- Vundle ----- "
 
-execute pathogen#infect()
+set nocompatible
+filetype off
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+Bundle 'gmarik/vundle'
+
+" ----- Bundles ----- "
+
+Bundle 'mileszs/ack.vim'
+Bundle 'kien/ctrlp.vim'
+Bundle 'scrooloose/nerdcommenter'
+Bundle 'scrooloose/nerdtree'
+Bundle 'msanders/snipmate.vim'
+Bundle 'scrooloose/syntastic'
+Bundle 'Townk/vim-autoclose'
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'skammer/vim-css-color'
+Bundle 'tpope/vim-dispatch'
+Bundle 'Lokaltog/vim-easymotion'
+Bundle 'tpope/vim-fugitive'
+Bundle 'airblade/vim-gitgutter'
+Bundle 'tpope/vim-haml'
+Bundle 'nathanaelkane/vim-indent-guides'
+Bundle 'terryma/vim-multiple-cursors'
+Bundle 'tpope/vim-rails'
+Bundle 'tpope/vim-surround'
+Bundle 'mattn/zencoding-vim'
 
 " ----- Powerline ----- "
 
