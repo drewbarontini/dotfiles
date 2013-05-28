@@ -138,9 +138,9 @@ map <Leader>no :e ~/Dropbox/Notes/<CR>
 map <Leader>nc :sp ~/Dropbox/Notes/
 
 " Open a new tab and search for something
-nmap <leader>a :tab split<CR>:Ack! ""<Left>
+nmap <leader>a :Ack! ""<Left>
 " Search for word under cursor
-nmap <leader>A :tab split<CR>:Ack! <C-r><C-w><CR>
+nmap <leader>A :Ack! <C-r><C-w><CR>
 
 " CtrlP
 nmap <C-b> :CtrlPBuffer<CR>
