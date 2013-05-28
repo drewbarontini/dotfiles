@@ -59,29 +59,29 @@ set laststatus=2
 set scrolloff=8
 set foldcolumn=1
 
-"http://vim.wikia.com/wiki/Make_Vim_completion_popup_menu_work_just_like_in_an_IDE
+" http://vim.wikia.com/wiki/Make_Vim_completion_popup_menu_work_just_like_in_an_IDE
 set wildmenu
 set wildmode=list:longest
 set completeopt=longest,menuone
 
-"This makes vim act like all other editors, buffers can
-"exist in the background without being in a window.
-"http://items.sjbach.com/319/configuring-vim-right
+" This makes vim act like all other editors, buffers can
+" exist in the background without being in a window.
+" http://items.sjbach.com/319/configuring-vim-right
 set hidden
 
-"No swap files
+" No swap files
 set nobackup
 set nowritebackup
 set noswapfile    " http://robots.thoughtbot.com/post/18739402579/global-gitignore#comment-458413287
 set history=50
 
-"---- Indentation ----- "
+" ---- Indentation ----- "
 
 set autoindent
 set smartindent
 set smarttab
 
-"Softtabs, 2 spaces
+" Softtabs, 2 spaces
 set shiftwidth=2
 set softtabstop=2
 set tabstop=2
@@ -114,33 +114,38 @@ nmap <space> :
 
 imap jj <esc>
 
-"Remap window navigation
+" Remap window navigation
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
-"Open split and make active
+" Open split and make active
 nnoremap <leader>v <C-w>v<C-w>l
 nnoremap <leader>h <C-w>s<C-w>j
 
-"Trim trailing whitespace
+" Trim trailing whitespace
 nnoremap <leader>s :%s/\s\+$//<cr>:let @/=''<CR>
 
-"Open .vimrc
+" Open .vimrc
 nnoremap <leader>rc :e $MYVIMRC<cr>
 
-"Open up Dropbox notes.txt file
+" Open up Dropbox notes.txt file
 map <Leader>ns :sp ~/Dropbox/Notes/scratch.txt<cr>
-"Open up Dropbox notes directory
+" Open up Dropbox notes directory
 map <Leader>no :e ~/Dropbox/Notes/<CR>
-"Open or create Dropbox notes file
+" Open or create Dropbox notes file
 map <Leader>nc :sp ~/Dropbox/Notes/
 
-"CtrlP
+" Open a new tab and search for something
+nmap <leader>a :tab split<CR>:Ack! ""<Left>
+" Search for word under cursor
+nmap <leader>A :tab split<CR>:Ack! <C-r><C-w><CR>
+
+" CtrlP
 nmap <C-b> :CtrlPBuffer<CR>
 
-"NERDTree toggle
+" NERDTree toggle
 nmap <leader>nt :NERDTreeToggle<CR>
 map <leader>nb :NERDTreeFromBookmark
 
@@ -155,21 +160,21 @@ autocmd! FileType mkd setlocal syn=off
 
 " ----- Plugin-specific ----- "
 
-"CtrlP
+" CtrlP
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 set wildignore+=*/tmp/*,*/log/*,*.so,*.swp,*.zip
 
-"NERDTree
+" NERDTree
 let g:NERDTreeWinSize = 50
 let NERDTreeShowHidden=1
 
-"EasyMotion
+" EasyMotion
 let g:EasyMotion_leader_key = '<Leader>'
 
-"Ack
+" Ack
 let g:ackprg = 'ag --nogroup --nocolor --column'
 
-"GitGutter
+" GitGutter
 let g:gitgutter_eager = 0
 
 " ----- Reload vim on save ----- "
