@@ -53,7 +53,7 @@ set linebreak
 set ruler
 set cursorline
 set mousehide
-set scrolloff=3
+set scrolloff=8
 set foldcolumn=1
 set wildmenu
 set wildmode=list:longest
@@ -140,12 +140,11 @@ map <leader>nb :NERDTreeFromBookmark
 
 " ----- Syntax Highlighting & Theme ----- "
 
+set synmaxcol=2048
 syntax enable
 syntax on
-
 set t_Co=256
 let g:solarized_termtrans = 1
-
 set background=light
 colorscheme solarized
 
