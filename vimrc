@@ -162,6 +162,7 @@ autocmd! FileType mkd setlocal syn=off
 
 "CtrlP
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 
 "NERDTree
 let g:NERDTreeWinSize = 50
