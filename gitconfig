@@ -1,15 +1,15 @@
 [user]
-	name = Drew Barontini
-	email = drewbarontini@gmail.com
+  name = Drew Barontini
+  email = drewbarontini@gmail.com
 [color]
-	ui = true
+  ui = true
 [core]
-	editor = vim
-	excludesfile = /Users/Drew/.gitignore
-	quotepath = false
+  editor = vim
+  excludesfile = /Users/Drew/.gitignore
+  quotepath = false
 [github]
-	user = drewbarontini
+  user = drewbarontini
 [ghi]
-	token = 918b9a35f11f5ad44fbb97159cc5cf4b3589943a
+  token = 918b9a35f11f5ad44fbb97159cc5cf4b3589943a
 [merge]
-	tool = opendiff
+  tool = opendiff

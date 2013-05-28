@@ -1,4 +1,4 @@
-# To enable shims and autocompletion
+# Enable shims and autocompletion
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 export EDITOR='vim'
@@ -69,4 +69,3 @@ alias be='bundle exec'
 # Middleman
 alias mb='./bin/middleman build'
 alias ms='./bin/middleman s'
-
