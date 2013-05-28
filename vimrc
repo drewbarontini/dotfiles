@@ -107,7 +107,7 @@ vmap <C-Up> xkP`[V`]
 vmap <C-Down> xp`[V`]
 
 "CtrlP
-nmap <leader>c :CtrlP<CR>
+nmap <C-b> :CtrlPBuffer<CR>
 
 "NERDTree toggle
 nmap <leader>nt :NERDTreeToggle<CR>
