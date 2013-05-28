@@ -58,3 +58,9 @@
 [submodule "vim/bundle/zencoding"]
 	path = vim/bundle/zencoding
 	url = git@github.com:mattn/zencoding-vim.git
+[submodule "vim/bundle/tlib"]
+	path = vim/bundle/tlib
+	url = git@github.com:tomtom/tlib_vim.git
+[submodule "vim/bundle/addon-utils"]
+	path = vim/bundle/addon-utils
+	url = git@github.com:MarcWeber/vim-addon-mw-utils.git
