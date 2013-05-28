@@ -94,7 +94,7 @@ nnoremap <leader>s :%s/\s\+$//<cr>:let @/=''<CR>
 nnoremap <leader>rc :e $MYVIMRC<cr>
 
 "Open up Dropbox notes.txt file
-map <Leader>pn :sp ~/Dropbox/Notes/notes.txt<cr>
+map <Leader>pn :sp ~/Dropbox/Notes/inbox.txt<cr>
 "Open or create Dropbox notes file
 map <Leader>no :e ~/Dropbox/Notes/
 
