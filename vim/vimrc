@@ -131,17 +131,11 @@ nnoremap <leader>s :%s/\s\+$//<cr>:let @/=''<CR>
 nnoremap <leader>rc :e $MYVIMRC<cr>
 
 "Open up Dropbox notes.txt file
-map <Leader>pn :sp ~/Dropbox/Notes/inbox.txt<cr>
+map <Leader>ns :sp ~/Dropbox/Notes/scratch.txt<cr>
+"Open up Dropbox notes directory
+map <Leader>no :e ~/Dropbox/Notes/<CR>
 "Open or create Dropbox notes file
-map <Leader>no :sp ~/Dropbox/Notes/
-
-"Bubble single lines
-nmap <C-Up> ddkP
-nmap <C-Down> ddp
-
-"Bubble multiple lines
-vmap <C-Up> xkP`[V`]
-vmap <C-Down> xp`[V`]
+map <Leader>nc :sp ~/Dropbox/Notes/
 
 "CtrlP
 nmap <C-b> :CtrlPBuffer<CR>
@@ -163,7 +157,7 @@ autocmd! FileType mkd setlocal syn=off
 
 "CtrlP
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip
+set wildignore+=*/tmp/*,*/log/*,*.so,*.swp,*.zip
 
 "NERDTree
 let g:NERDTreeWinSize = 50
