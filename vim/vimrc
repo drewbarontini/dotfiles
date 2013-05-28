@@ -1,7 +1,7 @@
-" ----- Vundle ----- "
-
 set nocompatible
 filetype off
+
+" ----- Vundle ----- "
 
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
@@ -37,28 +37,32 @@ set rtp+=/Users/Drew/Library/Python/2.7/lib/python/site-packages/powerline/bindi
 
 " ----- General Configuration ----- "
 
-set number                      "Line numbers are good
-set backspace=indent,eol,start  "Allow backspace in insert mode
-set history=500                 "Store lots of :cmdline history
-set visualbell                  "No sounds
-set autoread                    "Reload files changed outside vim
-set ttyfast
-set showmatch
-set mouse=a
-set laststatus=2
-set noshowmode
-set list listchars=tab:\ \ ,trail:·
+syntax on
+filetype on
+filetype plugin on
+filetype indent on
+
+set number
 set nowrap
 set linebreak
 set ruler
 set cursorline
 set mousehide
+set visualbell
+set autoread
+set ttyfast
+set showmatch
+set noshowmode
+set mouse=a
+set backspace=indent,eol,start
+set laststatus=2
+set list listchars=tab:\ \ ,trail:·
 set scrolloff=8
 set foldcolumn=1
-set wildmenu
-set wildmode=list:longest
 
 "http://vim.wikia.com/wiki/Make_Vim_completion_popup_menu_work_just_like_in_an_IDE
+set wildmenu
+set wildmode=list:longest
 set completeopt=longest,menuone
 
 "This makes vim act like all other editors, buffers can
@@ -66,15 +70,13 @@ set completeopt=longest,menuone
 "http://items.sjbach.com/319/configuring-vim-right
 set hidden
 
-"Save the file when focus is lost
-au FocusLost * :wa
-
 "No swap files
-set noswapfile
 set nobackup
-set nowb
+set nowritebackup
+set noswapfile    " http://robots.thoughtbot.com/post/18739402579/global-gitignore#comment-458413287
+set history=50
 
-" ----- Indentation ----- "
+"---- Indentation ----- "
 
 set autoindent
 set smartindent
@@ -83,8 +85,6 @@ set shiftwidth=2
 set softtabstop=2
 set tabstop=2
 set expandtab
-filetype plugin on
-filetype indent on
 
 " ----- Search ----- "
 
@@ -93,6 +93,14 @@ set nohlsearch
 set incsearch
 set ignorecase
 set smartcase
+
+" ----- Syntax Highlighting & Theme ----- "
+
+set synmaxcol=2048
+set t_Co=256
+let g:solarized_termtrans = 1
+set background=light
+colorscheme solarized
 
 " ----- Mappings ----- "
 
@@ -121,7 +129,7 @@ nnoremap <leader>rc :e $MYVIMRC<cr>
 "Open up Dropbox notes.txt file
 map <Leader>pn :sp ~/Dropbox/Notes/inbox.txt<cr>
 "Open or create Dropbox notes file
-map <Leader>no :e ~/Dropbox/Notes/
+map <Leader>no :sp ~/Dropbox/Notes/
 
 "Bubble single lines
 nmap <C-Up> ddkP
@@ -137,16 +145,6 @@ nmap <C-b> :CtrlPBuffer<CR>
 "NERDTree toggle
 nmap <leader>nt :NERDTreeToggle<CR>
 map <leader>nb :NERDTreeFromBookmark
-
-" ----- Syntax Highlighting & Theme ----- "
-
-set synmaxcol=2048
-syntax enable
-syntax on
-set t_Co=256
-let g:solarized_termtrans = 1
-set background=light
-colorscheme solarized
 
 " ----- Filetypes ----- "
 
