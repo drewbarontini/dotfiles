@@ -27,6 +27,7 @@ Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'terryma/vim-multiple-cursors'
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-surround'
+Bundle 'godlygeek/tabular'
 Bundle 'mattn/zencoding-vim'
 Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'tomtom/tlib_vim'
@@ -58,8 +59,11 @@ set noshowmode
 set mouse=a
 set backspace=indent,eol,start
 set laststatus=2
-set scrolloff=8
+set scrolloff=6
 set foldcolumn=1
+
+" Larger line-height
+set linespace=3
 
 " http://vim.wikia.com/wiki/Make_Vim_completion_popup_menu_work_just_like_in_an_IDE
 set wildmenu
@@ -105,7 +109,7 @@ set smartcase
 set synmaxcol=2048
 set t_Co=256
 let g:solarized_termtrans = 1
-set background=light
+set background=dark
 colorscheme solarized
 
 " ----- Mappings ----- "
@@ -150,6 +154,9 @@ nmap <C-b> :CtrlPBuffer<CR>
 " NERDTree toggle
 nmap <leader>nt :NERDTreeToggle<CR>
 map <leader>nb :NERDTreeFromBookmark
+
+" Marked.app
+:nnoremap <leader>m :silent !open -a Marked.app '%:p'<cr>
 
 " ----- Filetypes ----- "
 
