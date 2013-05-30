@@ -11,6 +11,7 @@ Bundle 'gmarik/vundle'
 " ----- Bundles ----- "
 
 Bundle 'mileszs/ack.vim'
+Bundle 'chriskempson/base16-vim'
 Bundle 'kien/ctrlp.vim'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'scrooloose/nerdtree'
