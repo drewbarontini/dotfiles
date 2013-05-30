@@ -67,5 +67,5 @@ alias drew='brew'
 alias be='bundle exec'
 
 # Middleman
-alias mb='./bin/middleman build'
-alias ms='./bin/middleman s'
+alias mib='./bin/middleman build'
+alias mis='./bin/middleman s'
