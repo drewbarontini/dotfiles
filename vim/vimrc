@@ -58,7 +58,6 @@ set autoread
 set ttyfast
 set showmatch
 set noshowmode
-set mouse=a
 set backspace=indent,eol,start
 set laststatus=2
 set scrolloff=6
@@ -82,6 +81,9 @@ set nobackup
 set nowritebackup
 set noswapfile    " http://robots.thoughtbot.com/post/18739402579/global-gitignore#comment-458413287
 set history=50
+
+" Make vim clipboard available
+set clipboard=unnamed
 
 " ---- Indentation ----- "
 
@@ -111,7 +113,7 @@ set smartcase
 set synmaxcol=2048
 set t_Co=256
 let g:solarized_termtrans = 1
-set background=light
+" set background=dark
 colorscheme solarized
 
 " ----- Mappings ----- "
