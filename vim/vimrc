@@ -142,6 +142,9 @@ nnoremap <leader>s :%s/\s\+$//<cr>:let @/=''<CR>
 " Open .vimrc
 nnoremap <leader>rc :e $MYVIMRC<cr>
 
+" Jump out of parenthesis, brackets, etc.
+inoremap <C-e> <C-o>A
+
 " Open up Dropbox notes.txt file
 map <Leader>ns :sp ~/Dropbox/Notes/scratch.txt<cr>
 " Open up Dropbox notes directory
