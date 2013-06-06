@@ -145,6 +145,9 @@ nnoremap <leader>rc :e $MYVIMRC<CR>
 " Jump out of parenthesis, brackets, etc.
 inoremap <C-e> <C-o>A
 
+" Switch between buffers
+map <leader>, <C-^>
+
 " Open up Dropbox notes.txt file
 map <leader>ns :sp ~/Dropbox/Notes/scratch.txt<CR>
 " Open up Dropbox notes directory
