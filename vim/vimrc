@@ -105,8 +105,8 @@ set list listchars=tab:»·,trail:·
 " ----- Search ----- "
 
 set cursorline
-set nohlsearch
 set incsearch
+set hlsearch
 set ignorecase
 set smartcase
 
@@ -146,7 +146,13 @@ nnoremap <leader>rc :e $MYVIMRC<CR>
 inoremap <C-e> <C-o>A
 
 " Switch between buffers
-map <leader>, <C-^>
+map <leader><leader> <C-^>
+
+" Clear the search buffer when hitting return
+function! MapCR()
+  nnoremap <cr> :nohlsearch<cr>
+endfunction
+call MapCR()
 
 " Open up Dropbox notes.txt file
 map <leader>ns :sp ~/Dropbox/Notes/scratch.txt<CR>
