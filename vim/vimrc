@@ -164,6 +164,19 @@ map <leader>nb :NERDTreeFromBookmark
 " Marked.app
 :nnoremap <leader>m :silent !open -a Marked.app '%:p'<CR>
 
+" ----- Open Files in Directory of Current File ----- "
+
+cnoremap %% <C-R>=expand('%:h').'/'<cr>
+map <leader>e :edit %%
+map <leader>v :view %%
+
+" ----- NO Arrow Keys ----- "
+
+map <Left> <Nop>
+map <Right> <Nop>
+map <Up> <Nop>
+map <Down> <Nop>
+
 " ----- Filetypes ----- "
 
 autocmd Filetype gitcommit setlocal spell textwidth=72
