@@ -146,11 +146,11 @@ nnoremap <leader>rc :e $MYVIMRC<CR>
 inoremap <C-e> <C-o>A
 
 " Open up Dropbox notes.txt file
-map <Leader>ns :sp ~/Dropbox/Notes/scratch.txt<CR>
+map <leader>ns :sp ~/Dropbox/Notes/scratch.txt<CR>
 " Open up Dropbox notes directory
-map <Leader>no :e ~/Dropbox/Notes/<CR>
+map <leader>no :e ~/Dropbox/Notes/<CR>
 " Open or create Dropbox notes file
-map <Leader>nc :sp ~/Dropbox/Notes/
+map <leader>nc :sp ~/Dropbox/Notes/
 
 " Open a new tab and search for something
 nmap <leader>a :Ack! ""<Left>
