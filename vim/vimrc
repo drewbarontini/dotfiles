@@ -164,11 +164,9 @@ map <leader>nb :NERDTreeFromBookmark
 " Marked.app
 :nnoremap <leader>m :silent !open -a Marked.app '%:p'<CR>
 
-" ----- Open Files in Directory of Current File ----- "
+" ----- Directory of Current File ----- "
 
 cnoremap %% <C-R>=expand('%:h').'/'<cr>
-map <leader>E :edit %%
-map <leader>v :view %%
 
 " ----- NO Arrow Keys ----- "
 
