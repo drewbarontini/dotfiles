@@ -167,7 +167,7 @@ map <leader>nb :NERDTreeFromBookmark
 " ----- Open Files in Directory of Current File ----- "
 
 cnoremap %% <C-R>=expand('%:h').'/'<cr>
-map <leader>e :edit %%
+map <leader>E :edit %%
 map <leader>v :view %%
 
 " ----- NO Arrow Keys ----- "
