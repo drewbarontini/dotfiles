@@ -22,6 +22,11 @@ if [ -f `brew --prefix`/etc/autojump ]; then
   . `brew --prefix`/etc/autojump
 fi
 
+# Git Autocomplete
+if [ -f /usr/local/etc/bash_completion ]; then
+  . /usr/local/etc/bash_completion
+fi
+
 # Simple HTTP server from a directory, optionally specifying a port
 function server() {
   local port="${1:-8000}"
