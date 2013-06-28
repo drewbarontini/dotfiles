@@ -35,6 +35,7 @@ function server() {
 }
 
 # Git Aliases
+alias g='git'
 alias ga='git add'
 alias gb='git branch'
 alias gc='git commit'
@@ -65,6 +66,9 @@ alias gsth='git stash show'
 alias gstp='git stash pop'
 alias gt='git tag'
 alias gui='git update-index --assume-unchanged'
+
+# Vim
+alias v='vim'
 
 # Drew's Brew
 alias drew='brew'
