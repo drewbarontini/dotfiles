@@ -1,0 +1,19 @@
+{
+	"files":
+	{
+		"jquery": "http://code.jquery.com/jquery.min.js",
+		"mvcss-app": "https://raw.github.com/mvcss/mvcss/master/application.sass",
+		"mvcss-base": "https://github.com/mvcss/mvcss/blob/master/core/_base.sass",
+		"mvcss-content": "https://github.com/mvcss/mvcss/blob/master/core/_content.sass",
+		"mvcss-helpers": "https://github.com/mvcss/mvcss/blob/master/core/_helpers.sass",
+		"mvcss-layout": "https://github.com/mvcss/mvcss/blob/master/core/_layout.sass",
+		"mvcss-reset": "https://github.com/mvcss/mvcss/blob/master/core/_reset.scss",
+		"mvcss-settings": "https://github.com/mvcss/mvcss/blob/master/core/_settings.sass"
+	},
+	"packages":
+	{
+		"html5_boilerplate": "https://github.com/h5bp/html5-boilerplate/zipball/master",
+		"mvcss": "https://github.com/mvcss/mvcss/zipball/master",
+		"mvcss-library": "https://github.com/mvcss/library/zipball/master"
+	}
+}
