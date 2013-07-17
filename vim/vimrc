@@ -36,8 +36,17 @@ Bundle 'garbas/vim-snipmate'
 Bundle 'ervandew/supertab'
 Bundle 'mattn/webapi-vim'
 Bundle 'mattn/gist-vim'
+Bundle 'joeytwiddle/sexy_scroller.vim'
 
 " ----- Powerline ----- "
+
+" Make Esc happen without waiting for timeoutlen
+" Fixes Powerline delay
+augroup FastEscape
+  autocmd!
+  au InsertEnter * set timeoutlen=0
+  au InsertLeave * set timeoutlen=1000
+augroup END
 
 set rtp+=/Users/Drew/Library/Python/2.7/lib/python/site-packages/powerline/bindings/vim
 
@@ -62,7 +71,7 @@ set showmatch
 set noshowmode
 set backspace=indent,eol,start
 set laststatus=2
-set scrolloff=6
+set scrolloff=4
 set foldcolumn=1
 
 " Larger line-height
@@ -116,7 +125,7 @@ set t_Co=256
 let g:solarized_termtrans = 1
 
 set background=dark
-colorscheme solarized
+colorscheme grb256
 
 " ----- Mappings ----- "
 
