@@ -37,6 +37,7 @@ Bundle 'ervandew/supertab'
 Bundle 'mattn/webapi-vim'
 Bundle 'mattn/gist-vim'
 Bundle 'joeytwiddle/sexy_scroller.vim'
+Bundle 'daylerees/colour-schemes', { 'rtp': 'vim-themes/' }
 
 " ----- Powerline ----- "
 
