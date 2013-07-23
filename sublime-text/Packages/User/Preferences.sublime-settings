@@ -2,7 +2,7 @@
 	"auto_complete_commit_on_tab": true,
 	"bold_folder_labels": true,
 	"caret_style": "solid",
-	"color_scheme": "Packages/Color Scheme - Default/Cobalt.tmTheme",
+	"color_scheme": "Packages/Color Scheme - User/PlasticCodeWrap.tmTheme",
 	"create_window_at_startup": false,
 	"ensure_newline_at_eof_on_save": true,
 	"file_exclude_patterns":
@@ -17,20 +17,20 @@
 		".sass-cache",
 		"tmp"
 	],
-	"font_face": "Menlo",
+	"font_face": "Ubuntu Mono",
 	"font_options":
 	[
 		"no_bold",
 		"subpixel_antialias"
 	],
-	"font_size": 12.0,
+	"font_size": 16.0,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
 	],
-	"line_padding_bottom": 2,
-	"line_padding_top": 2,
+	"line_padding_bottom": 4,
+	"line_padding_top": 4,
 	"open_files_in_new_window": false,
 	"rulers":
 	[
