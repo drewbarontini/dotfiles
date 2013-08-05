@@ -5,6 +5,7 @@
 		"mvcss-app": "https://raw.github.com/mvcss/mvcss/master/application.sass",
 		"mvcss-base": "https://github.com/mvcss/mvcss/blob/master/core/_base.sass",
 		"mvcss-content": "https://github.com/mvcss/mvcss/blob/master/core/_content.sass",
+		"mvcss-grid": "https://raw.github.com/mvcss/library/master/modules/_grid.sass",
 		"mvcss-helpers": "https://github.com/mvcss/mvcss/blob/master/core/_helpers.sass",
 		"mvcss-layout": "https://github.com/mvcss/mvcss/blob/master/core/_layout.sass",
 		"mvcss-reset": "https://github.com/mvcss/mvcss/blob/master/core/_reset.scss",
