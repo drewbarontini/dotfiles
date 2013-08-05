@@ -73,7 +73,7 @@ set scrolloff=4
 set foldcolumn=1
 
 " Rulers
-set colorcolumn=72,150
+set colorcolumn=72
 
 " Larger line-height
 set linespace=3
