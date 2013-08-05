@@ -38,6 +38,7 @@ Bundle 'mattn/webapi-vim'
 Bundle 'mattn/gist-vim'
 Bundle 'daylerees/colour-schemes', { 'rtp': 'vim-themes/' }
 Bundle 'bling/vim-airline'
+Bundle 'tpope/vim-git'
 
 " ----- Airline ----- "
 
@@ -70,6 +71,9 @@ set backspace=indent,eol,start
 set laststatus=2
 set scrolloff=4
 set foldcolumn=1
+
+" Rulers
+set colorcolumn=72,150
 
 " Larger line-height
 set linespace=3
