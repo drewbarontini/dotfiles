@@ -29,7 +29,6 @@ Bundle 'terryma/vim-multiple-cursors'
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-surround'
 Bundle 'godlygeek/tabular'
-Bundle 'mattn/zencoding-vim'
 Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'tomtom/tlib_vim'
 Bundle 'garbas/vim-snipmate'
@@ -39,6 +38,7 @@ Bundle 'mattn/gist-vim'
 Bundle 'daylerees/colour-schemes', { 'rtp': 'vim-themes/' }
 Bundle 'bling/vim-airline'
 Bundle 'tpope/vim-git'
+Bundle 'mattn/emmet-vim'
 
 " ----- Airline ----- "
 
@@ -186,6 +186,9 @@ map <leader>nb :NERDTreeFromBookmark
 " Marked.app
 :nnoremap <leader>m :silent !open -a Marked.app '%:p'<CR>
 
+" Shell command
+nmap <leader>S :!<Space>
+
 " ----- Directory of Current File ----- "
 
 cnoremap %% <C-R>=expand('%:h').'/'<cr>
@@ -232,6 +235,8 @@ autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
 autocmd Filetype gitcommit setlocal spell textwidth=72
 autocmd! FileType mkd setlocal syn=off
+autocmd BufNewFile,BufRead *.scss set ft=scss.css
+autocmd BufNewFile,BufRead *.sass set ft=sass.css
 
 filetype indent plugin on
 
