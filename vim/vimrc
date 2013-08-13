@@ -97,6 +97,14 @@ set history=50
 " Make vim clipboard available
 set clipboard=unnamed
 
+" Get rid of the delay when hitting esc!
+set noesckeys
+
+" (Hopefully) removes the delay when hitting esc in insert mode
+set noesckeys
+set ttimeout
+set ttimeoutlen=1
+
 " ---- Indentation ----- "
 
 set autoindent
@@ -198,6 +206,12 @@ map <leader>co ggVG"*y
 " Replace current search with...
 map <leader>rs :%s//
 
+" Save file
+map <C-s> <esc>:w<CR>
+imap <C-s> <esc>:w<CR>
+
+" New tab
+map <C-t> <esc>:tabnew<CR>
 
 " ----- Directory of Current File ----- "
 
@@ -235,7 +249,7 @@ function! RenameFile()
     redraw!
   endif
 endfunction
-map <leader>n :call RenameFile()<cr>
+map <leader>rn :call RenameFile()<cr>
 
 " ----- Filetypes ----- "
 
