@@ -44,7 +44,7 @@ Bundle 'mattn/emmet-vim'
 
 let g:airline_left_sep=''
 let g:airline_right_sep=''
-let g:airline_theme='dark'
+let g:airline_theme='powerlineish'
 let g:airline_powerline_fonts=0
 let g:airline_branch_prefix = '⎇ '
 
@@ -188,6 +188,16 @@ map <leader>nb :NERDTreeFromBookmark
 
 " Shell command
 nmap <leader>S :!<Space>
+
+" Run 'bundle install'
+map <leader>bb :! bundle install<CR>
+
+" Copy whole file, store in register
+map <leader>co ggVG"*y
+
+" Replace current search with...
+map <leader>rs :%s//
+
 
 " ----- Directory of Current File ----- "
 
