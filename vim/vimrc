@@ -16,7 +16,6 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/syntastic'
-Bundle 'Townk/vim-autoclose'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'tpope/vim-dispatch'
@@ -38,6 +37,7 @@ Bundle 'mattn/gist-vim'
 Bundle 'bling/vim-airline'
 Bundle 'tpope/vim-git'
 Bundle 'mattn/emmet-vim'
+Bundle 'AutoClose'
 
 " ----- Airline ----- "
 
@@ -179,9 +179,9 @@ map <leader>no :e ~/Dropbox/Notes/<CR>
 map <leader>nc :sp ~/Dropbox/Notes/
 
 " Open a new tab and search for something
-nmap <leader>a :Ack! ""<Left>
+nmap <leader>k :Ack! ""<Left>
 " Search for word under cursor
-nmap <leader>A :Ack! <C-r><C-w><CR>
+nmap <leader>K :Ack! <C-r><C-w><CR>
 
 " CtrlP
 nnoremap ff :CtrlP<cr>
