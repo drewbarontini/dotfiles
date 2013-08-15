@@ -1,14 +1,22 @@
+" ----------------------------------------------------
+"   Initialize
+" ----------------------------------------------------
+
 set nocompatible
 filetype off
 
-" ----- Vundle ----- "
+" ----------------------------------------------------
+"   Vundle
+" ----------------------------------------------------
 
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 Bundle 'gmarik/vundle'
 
-" ----- Bundles ----- "
+" ----------------------------------------------------
+"   Bundles
+" ----------------------------------------------------
 
 Bundle 'mileszs/ack.vim'
 Bundle 'chriskempson/base16-vim'
@@ -39,15 +47,19 @@ Bundle 'tpope/vim-git'
 Bundle 'mattn/emmet-vim'
 Bundle 'AutoClose'
 
-" ----- Airline ----- "
+" ----------------------------------------------------
+"   Airline
+" ----------------------------------------------------
 
 let g:airline_left_sep=''
 let g:airline_right_sep=''
-let g:airline_theme='jellybeans'
+let g:airline_theme='tomorrow'
 let g:airline_powerline_fonts=0
 let g:airline_branch_prefix = '⎇ '
 
-" ----- General Configuration ----- "
+" ----------------------------------------------------
+"   General Configuration
+" ----------------------------------------------------
 
 if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
   syntax on
@@ -104,7 +116,9 @@ set noesckeys
 set ttimeout
 set ttimeoutlen=1
 
-" ---- Indentation ----- "
+" ----------------------------------------------------
+"   Indentation
+" ----------------------------------------------------
 
 set autoindent
 set smartindent
@@ -119,7 +133,9 @@ set expandtab
 " Display extra whitespace
 set list listchars=tab:»·,trail:·
 
-" ----- Search ----- "
+" ----------------------------------------------------
+"   Search
+" ----------------------------------------------------
 
 set cursorline
 set incsearch
@@ -127,20 +143,26 @@ set hlsearch
 set ignorecase
 set smartcase
 
-" ----- Syntax Highlighting & Theme ----- "
+" ----------------------------------------------------
+"   Syntax Highlighting & Theme
+" ----------------------------------------------------
 
 set t_Co=256
 let g:solarized_termtrans = 1
 
 set background=dark
-colorscheme jellybeans
+colorscheme Tomorrow-Night-Bright
 
-" ----- Mappings ----- "
+" ----------------------------------------------------
+"   Mappings
+" ----------------------------------------------------
 
+" ----- General Mappings ----- "
+
+" Change leader key
 let mapleader = ","
 
 nmap <space> :
-
 imap jj <esc>
 
 " Remap window navigation
@@ -156,42 +178,11 @@ nnoremap <leader>h <C-w>s<C-w>j
 " Trim trailing whitespace
 nnoremap <leader>s :%s/\s\+$//<cr>:let @/=''<CR>
 
-" Open .vimrc
-nnoremap <leader>rc :e $MYVIMRC<CR>
-
 " Jump out of parenthesis, brackets, etc.
 inoremap <C-e> <C-o>A
 
 " Switch between buffers
 map <leader><leader> <C-^>
-
-" Clear the search buffer when hitting return
-function! MapCR()
-  nnoremap <leader>l :nohlsearch<cr>
-endfunction
-call MapCR()
-
-" Open up Dropbox notes.txt file
-map <leader>ns :sp ~/Dropbox/Notes/scratch.txt<CR>
-" Open up Dropbox notes directory
-map <leader>no :e ~/Dropbox/Notes/<CR>
-" Open or create Dropbox notes file
-map <leader>nc :sp ~/Dropbox/Notes/
-
-" Open a new tab and search for something
-nmap <leader>k :Ack! ""<Left>
-" Search for word under cursor
-nmap <leader>K :Ack! <C-r><C-w><CR>
-
-" CtrlP
-nnoremap ff :CtrlP<cr>
-
-" NERDTree toggle
-nmap <leader>nt :NERDTreeToggle<CR>
-map <leader>nb :NERDTreeFromBookmark
-
-" Marked.app
-:nnoremap <leader>m :silent !open -a Marked.app '%:p'<CR>
 
 " Shell command
 nmap <leader>S :!<Space>
@@ -212,16 +203,49 @@ imap <C-s> <esc>:w<CR>
 " New tab
 map <C-t> <esc>:tabnew<CR>
 
-" ----- Directory of Current File ----- "
+" Clear the search buffer when hitting return
+function! MapCR()
+  nnoremap <leader>l :nohlsearch<cr>
+endfunction
+call MapCR()
 
-cnoremap %% <C-R>=expand('%:h').'/'<cr>
+" Directory of Current File
 
-" ----- NO Arrow Keys ----- "
+cnoremap %% <C-R>=expand('%:h').'/'<CR>
+
+" NO Arrow Keys
 
 map <Left> <Nop>
 map <Right> <Nop>
 map <Up> <Nop>
 map <Down> <Nop>
+
+" ----- Open File Mappings ----- "
+
+" Open .vimrc
+nnoremap <leader>rc :e $MYVIMRC<CR>
+
+" Open up Dropbox notes.txt file
+map <leader>ns :sp ~/Dropbox/Notes/notes--scratch.txt<CR>
+" Open up Dropbox notes directory
+map <leader>no :e ~/Dropbox/Notes/<CR>
+" Open or create Dropbox notes file
+map <leader>nc :sp ~/Dropbox/Notes/
+
+" Open a new tab and search for something
+nmap <leader>k :Ack! ""<Left>
+" Search for word under cursor
+nmap <leader>K :Ack! <C-r><C-w><CR>
+
+" CtrlP
+nnoremap ff :CtrlP<cr>
+
+" NERDTree toggle
+nmap <leader>nt :NERDTreeToggle<CR>
+map <leader>nb :NERDTreeFromBookmark
+
+" Open snippets
+map <leader>p :e ~/.dotfiles/vim/snippets<CR>
 
 " ----- Multi-purpose Tab Key ----- "
 " Indent if we're at the beginning of a line. Else, do completion.
@@ -250,7 +274,9 @@ function! RenameFile()
 endfunction
 map <leader>rn :call RenameFile()<cr>
 
-" ----- Filetypes ----- "
+" ----------------------------------------------------
+"   Filetypes
+" ----------------------------------------------------
 
 autocmd Filetype gitcommit setlocal spell textwidth=72
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
@@ -263,7 +289,9 @@ autocmd BufNewFile,BufRead *.sass set ft=sass.css
 
 filetype indent plugin on
 
-" ----- Plugin-specific ----- "
+" ----------------------------------------------------
+"   Plugin-specific Settings
+" ----------------------------------------------------
 
 " CtrlP
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
