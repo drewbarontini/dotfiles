@@ -82,3 +82,6 @@ alias be='bundle exec'
 # Middleman
 alias mib='./bin/middleman build'
 alias mis='./bin/middleman s'
+
+# Disable C-s in terminal
+alias vim="stty stop '' -ixoff ; vim"
