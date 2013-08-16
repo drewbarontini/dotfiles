@@ -46,6 +46,7 @@ Bundle 'bling/vim-airline'
 Bundle 'tpope/vim-git'
 Bundle 'mattn/emmet-vim'
 Bundle 'AutoClose'
+Bundle 'tpope/vim-abolish'
 
 " ----------------------------------------------------
 "   Airline
@@ -53,7 +54,7 @@ Bundle 'AutoClose'
 
 let g:airline_left_sep=''
 let g:airline_right_sep=''
-let g:airline_theme='tomorrow'
+let g:airline_theme='solarized'
 let g:airline_powerline_fonts=0
 let g:airline_branch_prefix = '⎇ '
 
@@ -150,8 +151,8 @@ set smartcase
 set t_Co=256
 let g:solarized_termtrans = 1
 
-set background=dark
-colorscheme Tomorrow-Night-Bright
+set background=light
+colorscheme solarized
 
 " ----------------------------------------------------
 "   Mappings
@@ -233,9 +234,9 @@ map <leader>no :e ~/Dropbox/Notes/<CR>
 map <leader>nc :sp ~/Dropbox/Notes/
 
 " Open a new tab and search for something
-nmap <leader>k :Ack! ""<Left>
+nmap <leader>aa :Ack! ""<Left>
 " Search for word under cursor
-nmap <leader>K :Ack! <C-r><C-w><CR>
+nmap <leader>AA :Ack! <C-r><C-w><CR>
 
 " CtrlP
 nnoremap ff :CtrlP<cr>
