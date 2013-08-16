@@ -102,7 +102,6 @@ snippet cfcoh
 	#   -> ${2:Description}
 	#
 	# *************************************
-
 # Long comment
 snippet cfcol
 	# -------------------------------------
@@ -111,3 +110,10 @@ snippet cfcol
 # Short comment
 snippet cfcos
 	# ----- ${1:Comment} ----- #
+# jQuery 'on'
+snippet cfjon
+	$('${1:}').on '${2:click}', (e) ->
+		${3:#...}
+# jQuery preventDefault
+snippet cfjpd
+	${1:e}.preventDefault()
