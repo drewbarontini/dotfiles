@@ -311,3 +311,10 @@ let g:ackprg = 'ag --nogroup --nocolor --column'
 " GitGutter
 let g:gitgutter_eager = 0
 
+" ----------------------------------------------------
+"   Autosave
+" ----------------------------------------------------
+
+if has('autocmd')
+  autocmd bufwritepost .vimrc source $MYVIMRC
+endif
