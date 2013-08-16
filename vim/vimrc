@@ -247,7 +247,7 @@ nmap <leader>nt :NERDTreeToggle<CR>
 map <leader>nb :NERDTreeFromBookmark
 
 " Open snippets
-map <leader>p :e ~/.dotfiles/vim/snippets<CR>
+map <leader>p :tabedit ~/.dotfiles/vim/snippets<CR>
 
 " ----- Multi-purpose Tab Key ----- "
 " Indent if we're at the beginning of a line. Else, do completion.
