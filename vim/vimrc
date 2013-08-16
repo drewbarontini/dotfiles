@@ -224,7 +224,7 @@ map <Down> <Nop>
 " ----- Open File Mappings ----- "
 
 " Open .vimrc
-nnoremap <leader>rc :e $MYVIMRC<CR>
+nnoremap <leader>rc :tabedit $MYVIMRC<CR>
 
 " Open up Dropbox notes.txt file
 map <leader>ns :sp ~/Dropbox/Notes/notes--scratch.txt<CR>
