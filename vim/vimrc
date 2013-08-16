@@ -47,6 +47,7 @@ Bundle 'tpope/vim-git'
 Bundle 'mattn/emmet-vim'
 Bundle 'AutoClose'
 Bundle 'tpope/vim-abolish'
+Bundle 'bronson/vim-visual-star-search'
 
 " ----------------------------------------------------
 "   Airline
