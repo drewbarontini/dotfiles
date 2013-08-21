@@ -18,5 +18,6 @@
 [difftool]
   prompt = false
 [alias]
+  poop = pop
   standup = log --since yesterday --author="drewbarontini" --pretty=oneline
   standup-branches = log --since yesterday --author="drewbarontini" --pretty=oneline --branches=* --decorate
