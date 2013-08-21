@@ -43,3 +43,11 @@ ln -s /Applications/Sublime\ Text\ 3.app/Contents/SharedSupport/bin/subl /usr/lo
 ln -s ~/.dotfiles/vim ~/.vim
 ln -s ~/.dotfiles/vimrc ~/.vimrc
 ```
+
+### Install Vundle
+
+```
+git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+```
+
+Run `:BundleInstall` in vim.
