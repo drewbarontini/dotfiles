@@ -1,6 +1,9 @@
 # Set vi editing mode
 set -o vi
 
+# Autocomplete git commands
+source ~/.git-completion.bash
+
 # Enable shims and autocompletion
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
