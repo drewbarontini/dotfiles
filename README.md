@@ -1,3 +1,9 @@
+# Setup
+
+```
+git clone git@github.com:drewbarontini/.dotfiles.git ~/.dotfiles
+```
+
 ## bash
 
 ```
