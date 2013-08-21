@@ -4,7 +4,7 @@
 git clone git@github.com:drewbarontini/.dotfiles.git ~/.dotfiles
 ```
 
-## bash
+## Bash
 
 ```
 ln -s ~/.dotfiles/bash/bash_profile ~/.bash_profile
