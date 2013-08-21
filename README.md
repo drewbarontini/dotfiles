@@ -8,6 +8,13 @@ git clone git@github.com:drewbarontini/.dotfiles.git ~/.dotfiles
 
 ```
 ln -s ~/.dotfiles/bash/bash_profile ~/.bash_profile
+mkdir ~/.bash
+ln -s ~/.dotfiles/bash/aliases ~/.bash/aliases
+mkdir ~/.bash/completions
+ln -s ~/.dotfiles/bash/completions/git.bash ~/.bash/completions/git.bash
+ln -s ~/.dotfiles/bash/config ~/.bash/config
+ln -s ~/.dotfiles/bash/functions ~/.bash/functions
+ln -s ~/.dotfiles/bash/prompt ~/.bash/prompt
 ```
 
 ## Git
