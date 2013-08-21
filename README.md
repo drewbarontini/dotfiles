@@ -7,8 +7,8 @@ ln -s ~/.dotfiles/bash_profile ~/.bash_profile
 ## Git
 
 ```
-ln -s ~/.dotfiles/gitconfig ~/.gitconfig
-ln -s ~/.dotfiles/gitignore ~/.gitignore
+ln -s ~/.dotfiles/git/gitconfig ~/.gitconfig
+ln -s ~/.dotfiles/git/gitignore ~/.gitignore
 ```
 
 ## Sublime Text
