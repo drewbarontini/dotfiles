@@ -156,30 +156,6 @@ let g:solarized_termtrans = 1
 set background=light
 colorscheme solarized
 
-" Set colorscheme to solarized
-colorscheme solarized
-
-" Change the Solarized background to dark or light depending upon the time of
-" day (7 refers to 7AM and 17 to 5PM). Change the background only if it is not
-" already set to the value we want.
-function! SetSolarizedBackground()
-    if strftime("%H") >= 7 && strftime("%H") < 17
-        if &background != 'light'
-            set background=light
-        endif
-    else
-        if &background != 'dark'
-            set background=dark
-        endif
-    endif
-endfunction
-
-" Every time you save a file, call the function to check the time and change
-" the background (if necessary)
-if has("autocmd")
-    autocmd bufwritepost * call SetSolarizedBackground()
-endif
-
 " ----------------------------------------------------
 "   Mappings
 " ----------------------------------------------------
