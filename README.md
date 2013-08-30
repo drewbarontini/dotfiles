@@ -45,3 +45,33 @@ git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 ```
 
 Run `:BundleInstall` in vim.
+
+### Vim Keyboard Shortcuts
+
+- `,v` opens a vertical split window and makes it active
+- `,h` opens a horizontal split window and makes it active
+- `,s` trims trailing whitespace
+- `,,` switches between buffers
+- `,S` starts a shell command
+- `,bb` runs `bundle install`
+- `,co` copies the whole file and stores in register
+- `,rs` replaces the current search term with what is passed in
+- `,l` clears the search
+- `,rc` opens the `vimrc` in a new tab
+- `,aa` opens up [Ack](https://github.com/mileszs/ack.vim) for searching
+- `,AA` opens up [Ack](https://github.com/mileszs/ack.vim) to search for word under the cursor
+- `ff` opens up [CtrlP](https://github.com/kien/ctrlp.vim)
+- `,nt` opens up [NerdtTree](https://github.com/scrooloose/nerdtree)
+- `,p` opens up snippets
+- `,rn` to rename the current file
+- `,ns` opens up Dropbox notes scratch text file
+- `,no` opens up Dropbox notes directory
+- `,nc` opens or creates a Dropbox note
+
+- `C-s` saves the the file
+- `C-t` creates a new tab
+- `C-h` switches to the left pane
+- `C-l` switches to the right pane
+- `C-j` switches to the bottom pane
+- `C-k` switches to the top pane
+- `C-e` jumps out of parenthesis, brackets, etc.
