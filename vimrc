@@ -153,8 +153,14 @@ set smartcase
 set t_Co=256
 let g:solarized_termtrans = 1
 
-set background=dark
+set background=light
 colorscheme solarized
+
+if strftime("%H") >= 5 && strftime("%H") <= 17
+  set background=light
+else
+  set background=dark
+endif
 
 " ----------------------------------------------------
 "   Mappings
