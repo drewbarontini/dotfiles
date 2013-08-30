@@ -48,6 +48,8 @@ Run `:BundleInstall` in vim.
 
 ### Vim Keyboard Shortcuts
 
+#### Leader Commands
+
 - `,v` opens a vertical split window and makes it active
 - `,h` opens a horizontal split window and makes it active
 - `,s` trims trailing whitespace
@@ -67,6 +69,8 @@ Run `:BundleInstall` in vim.
 - `,ns` opens up Dropbox notes scratch text file
 - `,no` opens up Dropbox notes directory
 - `,nc` opens or creates a Dropbox note
+
+#### Control Key Mappings
 
 - `C-s` saves the the file
 - `C-t` creates a new tab
