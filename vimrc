@@ -19,7 +19,6 @@ Bundle 'gmarik/vundle'
 " ----------------------------------------------------
 
 Bundle 'mileszs/ack.vim'
-Bundle 'chriskempson/base16-vim'
 Bundle 'kien/ctrlp.vim'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'scrooloose/nerdtree'
@@ -48,6 +47,8 @@ Bundle 'mattn/emmet-vim'
 Bundle 'AutoClose'
 Bundle 'tpope/vim-abolish'
 Bundle 'bronson/vim-visual-star-search'
+Bundle 'flazz/vim-colorschemes'
+Bundle 'qualiabyte/vim-colorstepper'
 
 " ----------------------------------------------------
 "   Airline
@@ -55,7 +56,7 @@ Bundle 'bronson/vim-visual-star-search'
 
 let g:airline_left_sep=''
 let g:airline_right_sep=''
-let g:airline_theme='solarized'
+let g:airline_theme='dark'
 let g:airline_powerline_fonts=0
 let g:airline_branch_prefix = '⎇ '
 let g:airline#extensions#hunks#non_zero_only = 1
@@ -153,8 +154,8 @@ set smartcase
 set t_Co=256
 let g:solarized_termtrans = 1
 
-set background=light
-colorscheme solarized
+set background=dark
+colorscheme Tomorrow-Night-Bright
 
 " ----------------------------------------------------
 "   Mappings
