@@ -41,6 +41,9 @@ alias drew='brew'
 # Bundle Exec
 alias be='bundle exec'
 
+# Rails
+alias br='./bin/rails'
+
 # Middleman
 alias mib='./bin/middleman build'
 alias mis='./bin/middleman s'
