@@ -1,7 +1,7 @@
 {
 	"auto_complete_commit_on_tab": true,
 	"bold_folder_labels": true,
-	"caret_style": "solid",
+	"caret_style": "wide",
 	"color_scheme": "Packages/Color Scheme - User/Railscasts.tmTheme",
 	"create_window_at_startup": false,
 	"ensure_newline_at_eof_on_save": true,
@@ -43,7 +43,7 @@
 	"theme": "Soda Dark.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
-	"vintage_start_in_command_mode": false,
+	"vintage_start_in_command_mode": true,
 	"wide_caret": true,
 	"word_wrap": false
 }
