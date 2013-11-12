@@ -44,6 +44,9 @@ alias be='bundle exec'
 # Rails
 alias br='./bin/rails'
 
+# Rake
+alias bk='./bin/rake'
+
 # Middleman
 alias mib='./bin/middleman build'
 alias mis='./bin/middleman s'
