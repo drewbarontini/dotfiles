@@ -20,3 +20,6 @@
 [alias]
   standup = log --since yesterday --author="drewbarontini" --pretty=oneline
   standup-branches = log --since yesterday --author="drewbarontini" --pretty=oneline --branches=* --decorate
+  today = log --since=midnight --author='Roberto Bonvallet' --oneline
+[push]
+  default = simple
