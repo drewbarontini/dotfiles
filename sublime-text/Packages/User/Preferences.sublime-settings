@@ -1,7 +1,10 @@
 {
 	"auto_complete_commit_on_tab": true,
 	"bold_folder_labels": true,
-	"caret_style": "wide",
+	"caret_style": "solid",
+	"caret_extra_top": 1,
+  "caret_extra_bottom": 1,
+  "caret_extra_width": 6,
 	"color_scheme": "Packages/Color Scheme - User/Railscasts.tmTheme",
 	"create_window_at_startup": false,
 	"ensure_newline_at_eof_on_save": true,
