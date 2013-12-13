@@ -28,10 +28,13 @@ highlight DiffChange term=reverse cterm=bold ctermbg=lightblue ctermfg=16
 highlight DiffText term=reverse cterm=bold ctermbg=lightgray ctermfg=16
 highlight DiffDelete term=reverse cterm=bold ctermbg=lightred ctermfg=16
 
+highlight PmenuSel ctermfg=16 ctermbg=156
+
 " Added by me (Drew Barontini)
 hi link diffAdded    DiffAdd
 hi link diffChanged  DiffChange
 hi link diffRemoved  DiffDelete
 hi ColorColumn ctermbg=234 cterm=NONE ctermfg=NONE
+hi FoldColumn ctermbg=NONE
+hi SignColumn ctermbg=NONE
 
-highlight PmenuSel ctermfg=16 ctermbg=156
