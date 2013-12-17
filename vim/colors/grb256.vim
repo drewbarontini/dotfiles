@@ -30,7 +30,7 @@ highlight DiffDelete term=reverse cterm=bold ctermbg=lightred ctermfg=16
 
 highlight PmenuSel ctermfg=16 ctermbg=156
 
-" Added by me (Drew Barontini)
+" Added by Drew Barontini
 hi link diffAdded    DiffAdd
 hi link diffChanged  DiffChange
 hi link diffRemoved  DiffDelete
