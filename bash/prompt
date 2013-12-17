@@ -2,8 +2,4 @@
 parse_git_branch() {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/➜ \1/'
 }
-# parse_rbenv_version () {
-#   rbenv_ruby_version=`rbenv version | sed -e 's/ .*//'`
-#   printf $rbenv_ruby_version
-# }
-export PS1='\nin \[\033[0;32m\]\W \[\033[0;94m\]$(parse_git_branch)\[\033[0m\] \n➜ '
+export PS1='\nin \[\033[0;32m\]\W \[\033[0;94m\]$(parse_git_branch)\[\033[0m\] \n➜'
