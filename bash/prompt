@@ -1,5 +1,5 @@
 # Prompt
 parse_git_branch() {
-  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/➜ \1/'
+  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'
 }
-export PS1='\nin \[\033[0;32m\]\W \[\033[0;94m\]$(parse_git_branch)\[\033[0m\] \n➜'
+export PS1='\n\[\033[0;37m\]in\[\033[0m\] \[\033[0;32m\]\W \[\033[0;37m\]on\[\033[0m\] \[\033[0;34m\]$(parse_git_branch)\[\033[0m\] \n\[\033[0;37m\]✓\[\033[0m\]  '
