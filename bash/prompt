@@ -1,9 +1,29 @@
-# Prompt
-parse_git_branch() {
-  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'
+# ----- Prompt ----- #
+
+# Show the current path
+current_path (){
+  echo $(basename `pwd`)
 }
+
+# Get the current git branch
+parse_git_branch() {
+  ref=$(/usr/local/bin/git symbolic-ref HEAD 2>/dev/null) || return
+  printf "${ref#refs/heads/}"
+}
+
+# Show the rbenv version
 parse_rbenv_version() {
   rbenv_ruby_version=`rbenv version | sed -e 's/ .*//'`
   printf $rbenv_ruby_version
 }
-export PS1='\n\[\033[0;37m\]in\[\033[0m\] \[\033[0;32m\]\W \[\033[0;37m\]on\[\033[0m\] \[\033[0;34m\]$(parse_git_branch)\[\033[0m\] \n\[\033[0;37m\]✓\[\033[0m\] '
+
+# Show the git branch IF it's a repo
+branch_if_repo() {
+if [ 'which git' ] && [ -f `which rbenv` ] && [ -d ./.git ]; then
+  printf "$(tput setaf 3) on $(tput setaf 2)$(parse_git_branch)"
+fi
+}
+
+# The prompt
+NORMAL="\[\033[0m\]"
+export PS1='in \[$(tput setaf 6)\]$(current_path)$(branch_if_repo) \n\[$(tput setaf 3)\]\[\033[0;00m\]✓ '
