@@ -57,10 +57,13 @@ Bundle 'johnallen3d/made-of-code.vim'
 
 let g:airline_left_sep=''
 let g:airline_right_sep=''
-let g:airline_theme='solarized'
+let g:airline_theme='powerlineish'
 let g:airline_powerline_fonts=0
 let g:airline_branch_prefix = '⎇ '
 let g:airline#extensions#hunks#non_zero_only = 1
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#left_sep = ' '
+let g:airline#extensions#tabline#left_alt_sep = '|'
 
 " ----------------------------------------------------
 "   General Configuration
@@ -155,8 +158,8 @@ set smartcase
 set t_Co=256
 let g:solarized_termtrans = 1
 
-set background=light
-colorscheme solarized
+set background=dark
+colorscheme grb256
 
 " ----------------------------------------------------
 "   Mappings
@@ -215,11 +218,9 @@ endfunction
 call MapCR()
 
 " Directory of Current File
-
 cnoremap %% <C-R>=expand('%:h').'/'<CR>
 
 " NO Arrow Keys
-
 map <Left> <Nop>
 map <Right> <Nop>
 map <Up> <Nop>
