@@ -5,7 +5,7 @@
 	"caret_extra_top": 1,
 	"caret_extra_width": 6,
 	"caret_style": "solid",
-	"color_scheme": "Packages/Theme - Flatland/Flatland Dark.tmTheme",
+	"color_scheme": "Packages/Color Scheme - Default/Solarized (Dark).tmTheme",
 	"create_window_at_startup": false,
 	"ensure_newline_at_eof_on_save": true,
 	"file_exclude_patterns":
@@ -23,10 +23,9 @@
 	"font_face": "Source Code Pro",
 	"font_options":
 	[
-		"no_bold",
 		"subpixel_antialias"
 	],
-	"font_size": 15.0,
+	"font_size": 14.0,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
@@ -42,7 +41,6 @@
 	],
 	"scroll_past_end": true,
 	"tab_size": 2,
-	"theme": "Flatland Dark.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
 	"vintage_start_in_command_mode": true,
