@@ -57,7 +57,7 @@ Bundle 'johnallen3d/made-of-code.vim'
 
 let g:airline_left_sep=''
 let g:airline_right_sep=''
-let g:airline_theme='powerlineish'
+let g:airline_theme='solarized'
 let g:airline_powerline_fonts=0
 let g:airline_branch_prefix = '⎇ '
 let g:airline#extensions#hunks#non_zero_only = 1
@@ -66,6 +66,14 @@ let g:airline#extensions#tabline#show_buffers = 0
 let g:airline#extensions#tabline#tab_min_count = 2
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
+
+" ----------------------------------------------------
+"   Synctastic
+" ----------------------------------------------------
+
+let g:syntastic_mode_map = { 'mode': 'active',
+                           \ 'active_filetypes': ['ruby', 'php'],
+                           \ 'passive_filetypes': ['html'] }
 
 " ----------------------------------------------------
 "   General Configuration
@@ -161,7 +169,7 @@ set t_Co=256
 let g:solarized_termtrans = 1
 
 set background=dark
-colorscheme grb256
+colorscheme solarized
 
 " ----------------------------------------------------
 "   Mappings
