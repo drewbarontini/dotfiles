@@ -48,6 +48,8 @@ Run `:BundleInstall` in vim.
 
 ### Vim Keyboard Shortcuts
 
+- `ff` opens up [CtrlP](https://github.com/kien/ctrlp.vim)
+
 #### Leader Commands
 
 - `,v` opens a vertical split window and makes it active
@@ -62,7 +64,6 @@ Run `:BundleInstall` in vim.
 - `,rc` opens the `vimrc` in a new tab
 - `,aa` opens up [Ack](https://github.com/mileszs/ack.vim) for searching
 - `,AA` opens up [Ack](https://github.com/mileszs/ack.vim) to search for word under the cursor
-- `ff` opens up [CtrlP](https://github.com/kien/ctrlp.vim)
 - `,nt` opens up [NerdtTree](https://github.com/scrooloose/nerdtree)
 - `,p` opens up snippets
 - `,rn` to rename the current file
