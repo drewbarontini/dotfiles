@@ -3,6 +3,7 @@
 	"installed_packages":
 	[
 		"AdvancedNewFile",
+		"AngularJS (CoffeeScript)",
 		"CoffeeScript",
 		"Emmet",
 		"Modific",
