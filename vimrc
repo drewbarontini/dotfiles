@@ -47,9 +47,8 @@ Bundle 'mattn/emmet-vim'
 Bundle 'AutoClose'
 Bundle 'tpope/vim-abolish'
 Bundle 'bronson/vim-visual-star-search'
-Bundle 'qualiabyte/vim-colorstepper'
 Bundle 'nelstrom/vim-qargs'
-Bundle 'johnallen3d/made-of-code.vim'
+Bundle 'goldfeld/vim-seek'
 
 " ----------------------------------------------------
 "   Airline
