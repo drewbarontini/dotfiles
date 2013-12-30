@@ -21,7 +21,7 @@ Bundle 'gmarik/vundle'
 Bundle 'mileszs/ack.vim'
 Bundle 'kien/ctrlp.vim'
 Bundle 'scrooloose/nerdcommenter'
-Bundle 'scrooloose/nerdtree'
+Bundle 'tpope/vim-vinegar'
 Bundle 'scrooloose/syntastic'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'altercation/vim-colors-solarized'
@@ -168,7 +168,7 @@ set t_Co=256
 let g:solarized_termtrans = 1
 
 set background=dark
-colorscheme Tomorrow-Night-Bright
+colorscheme grb256
 
 " ----------------------------------------------------
 "   Mappings
