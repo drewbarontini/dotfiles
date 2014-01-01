@@ -178,3 +178,14 @@ hi link phpDocParam        vimCommentTitle
 hi link diffAdded          DiffAdd
 hi link diffChanged        DiffChange
 hi link diffRemoved        DiffDelete
+
+" Added by Drew Barontini
+hi link diffAdded    DiffAdd
+hi link diffChanged  DiffChange
+hi link diffRemoved  DiffDelete
+hi ColorColumn ctermbg=234 cterm=NONE ctermfg=NONE
+hi FoldColumn ctermbg=NONE
+hi SignColumn ctermbg=NONE
+hi LineNr ctermbg=NONE
+hi CursorLineNr ctermbg=NONE
+
