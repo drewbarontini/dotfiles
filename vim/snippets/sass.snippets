@@ -32,3 +32,13 @@ snippet sscf
 	@extend %group
 snippet ss+
 	+${1:mixin-name}(${2:arguments})
+snippet sskey
+	@-webkit-keyframes ${1:animationName}
+		${2://...}
+
+	@-moz-keyframes $1
+
+	@keyframes $1
+snippet ssani
+	-webkit-animation: ${1:}
+	animation: $1
