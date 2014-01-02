@@ -489,3 +489,8 @@ delf s:grey_color
 delf s:grey_level
 delf s:grey_number
 " }}}
+
+" Added by Drew Barontini
+hi ColorColumn ctermbg=234 cterm=NONE ctermfg=NONE
+hi FoldColumn ctermbg=NONE
+hi SignColumn ctermbg=NONE
