@@ -17,17 +17,16 @@
 		".sass-cache",
 		"tmp"
 	],
-	"font_face": "Source Code Pro",
+	"font_face": "Inconsolata-dz",
 	"font_options":
 	[
 		"subpixel_antialias"
 	],
-	"font_size": 15.0,
+	"font_size": 18.0,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
-		"Theme - Flatland"
 	],
 	"line_padding_bottom": 2,
 	"line_padding_top": 2,
@@ -39,7 +38,6 @@
 	"scroll_past_end": true,
 	"soda_classic_tabs": true,
 	"tab_size": 2,
-	"theme": "Spacegray.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
 	"vintage_start_in_command_mode": true,
