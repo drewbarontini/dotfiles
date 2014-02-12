@@ -134,7 +134,7 @@ set ttimeout
 set ttimeoutlen=1
 
 " Remove dotted line on split windows
-set fillchars+=vert:\ 
+set fillchars+=vert:\
 
 " ----------------------------------------------------
 "   Indentation
