@@ -38,6 +38,12 @@ ln -s ~/.dotfiles/vim ~/.vim
 ln -s ~/.dotfiles/vimrc ~/.vimrc
 ```
 
+## MacVim
+
+```
+ln -s ~/.dotfiles/gvimrc ~/.gvimrc
+```
+
 ### Install Vundle
 
 ```
