@@ -38,4 +38,5 @@ hi ColorColumn ctermbg=234 cterm=NONE ctermfg=NONE
 hi FoldColumn ctermbg=NONE
 hi SignColumn ctermbg=NONE
 hi LineNr ctermfg=234
+hi VertSplit ctermbg=black ctermfg=234
 
