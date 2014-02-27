@@ -28,7 +28,6 @@ Bundle 'altercation/vim-colors-solarized'
 Bundle 'tpope/vim-dispatch'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'tpope/vim-fugitive'
-Bundle 'airblade/vim-gitgutter'
 Bundle 'tpope/vim-haml'
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'terryma/vim-multiple-cursors'
@@ -56,7 +55,7 @@ Bundle 'goldfeld/vim-seek'
 
 let g:airline_left_sep=''
 let g:airline_right_sep=''
-let g:airline_theme='jellybeans'
+let g:airline_theme='dark'
 let g:airline_powerline_fonts=0
 let g:airline_branch_prefix = '⎇ '
 let g:airline#extensions#hunks#non_zero_only = 1
@@ -171,7 +170,7 @@ set t_Co=256
 let g:solarized_termtrans = 1
 
 set background=dark
-colorscheme jellybeans
+colorscheme grb256
 
 " ----------------------------------------------------
 "   Mappings
@@ -233,10 +232,10 @@ call MapCR()
 cnoremap %% <C-R>=expand('%:h').'/'<CR>
 
 " NO Arrow Keys
-map <Left> <Nop>
-map <Right> <Nop>
-map <Up> <Nop>
-map <Down> <Nop>
+"map <Left> <Nop>
+"map <Right> <Nop>
+"map <Up> <Nop>
+"map <Down> <Nop>
 
 " ----- Open File Mappings ----- "
 
