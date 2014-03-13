@@ -170,7 +170,7 @@ set t_Co=256
 let g:solarized_termtrans = 1
 
 set background=dark
-colorscheme grb256
+colorscheme Tomorrow-Night-Bright
 
 " ----------------------------------------------------
 "   Mappings
@@ -295,6 +295,8 @@ map <leader>rn :call RenameFile()<cr>
 "   Filetypes
 " ----------------------------------------------------
 
+filetype indent plugin on
+
 autocmd Filetype gitcommit setlocal spell textwidth=72
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
@@ -303,8 +305,6 @@ autocmd Filetype gitcommit setlocal spell textwidth=72
 autocmd! FileType mkd setlocal syn=off
 autocmd BufNewFile,BufRead *.scss set ft=scss.css
 autocmd BufNewFile,BufRead *.sass set ft=sass.css
-
-filetype indent plugin on
 
 " ----------------------------------------------------
 "   Plugin-specific Settings
