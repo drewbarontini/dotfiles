@@ -48,6 +48,8 @@ Bundle 'tpope/vim-abolish'
 Bundle 'bronson/vim-visual-star-search'
 Bundle 'nelstrom/vim-qargs'
 Bundle 'goldfeld/vim-seek'
+Bundle 'tpope/vim-markdown'
+Bundle 'junegunn/goyo.vim'
 
 " ----------------------------------------------------
 "   Airline
@@ -264,6 +266,9 @@ map <leader>nb :NERDTreeFromBookmark
 " Open snippets
 map <leader>p :tabedit ~/.dotfiles/vim/snippets<CR>
 
+" Goyo
+nnoremap <leader>V :Goyo<CR>
+
 " ----- Multi-purpose Tab Key ----- "
 " Indent if we're at the beginning of a line. Else, do completion.
 
@@ -302,7 +307,9 @@ autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
 autocmd Filetype gitcommit setlocal spell textwidth=72
-autocmd! FileType mkd setlocal syn=off
+autocmd Filetype markdown setlocal wrap
+autocmd Filetype markdown setlocal linebreak
+autocmd Filetype markdown setlocal nolist
 autocmd BufNewFile,BufRead *.scss set ft=scss.css
 autocmd BufNewFile,BufRead *.sass set ft=sass.css
 
