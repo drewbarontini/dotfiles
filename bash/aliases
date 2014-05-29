@@ -46,6 +46,7 @@ alias br='./bin/rails'
 
 # Rake
 alias bk='./bin/rake'
+alias rkd='rake deploy'
 alias rkds='rake deploy:staging'
 alias rkdp='rake deploy:production'
 
