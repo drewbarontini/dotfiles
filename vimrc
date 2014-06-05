@@ -57,7 +57,7 @@ Bundle 'junegunn/goyo.vim'
 
 let g:airline_left_sep=''
 let g:airline_right_sep=''
-let g:airline_theme='powerlineish'
+let g:airline_theme='solarized'
 let g:airline_powerline_fonts=0
 let g:airline_branch_prefix = '⎇ '
 let g:airline#extensions#hunks#non_zero_only = 1
@@ -172,7 +172,7 @@ set t_Co=256
 let g:solarized_termtrans = 1
 
 set background=dark
-colorscheme sunburst
+colorscheme solarized
 
 " ----------------------------------------------------
 "   Mappings
