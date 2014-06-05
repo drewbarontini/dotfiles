@@ -70,7 +70,6 @@ Run `:BundleInstall` in vim.
 - `,rc` opens the `vimrc` in a new tab
 - `,aa` opens up [Ack](https://github.com/mileszs/ack.vim) for searching
 - `,AA` opens up [Ack](https://github.com/mileszs/ack.vim) to search for word under the cursor
-- `,nt` opens up [NerdtTree](https://github.com/scrooloose/nerdtree)
 - `,p` opens up snippets
 - `,rn` to rename the current file
 - `,ns` opens up Dropbox notes scratch text file
