@@ -2,7 +2,7 @@
 	"auto_complete_commit_on_tab": true,
 	"bold_folder_labels": true,
 	"caret_style": "wide",
-	"color_scheme": "Packages/Color Scheme - Default/Twilight.tmTheme",
+	"color_scheme": "Packages/Color Scheme - Default/Solarized (Dark).tmTheme",
 	"create_window_at_startup": false,
 	"ensure_newline_at_eof_on_save": true,
 	"file_exclude_patterns":
@@ -27,6 +27,9 @@
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
+		"Sass",
+		"Emmet",
+		"Modific"
 	],
 	"line_padding_bottom": 2,
 	"line_padding_top": 2,
@@ -36,8 +39,9 @@
 		80
 	],
 	"scroll_past_end": true,
-	"soda_classic_tabs": true,
+	"soda_classic_tabs": false,
 	"tab_size": 2,
+	"theme": "Sodarized Dark 3.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
 	"vintage_start_in_command_mode": true,
