@@ -50,6 +50,7 @@ Bundle 'nelstrom/vim-qargs'
 Bundle 'goldfeld/vim-seek'
 Bundle 'tpope/vim-markdown'
 Bundle 'junegunn/goyo.vim'
+Bundle 'idanarye/vim-merginal'
 
 " ----------------------------------------------------
 "   Airline
