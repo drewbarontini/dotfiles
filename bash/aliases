@@ -57,5 +57,8 @@ alias mis='./bin/middleman s'
 # Disable C-s in terminal
 alias vim="stty stop '' -ixoff ; vim"
 
+# Unix
+alias ll='ls -la'
+
 # Redis
 alias rs='redis-server /usr/local/etc/redis.conf'
