@@ -55,6 +55,8 @@ Run `:BundleInstall` in vim.
 ### Vim Keyboard Shortcuts
 
 - `ff` opens up [CtrlP](https://github.com/kien/ctrlp.vim)
+- `space` or `;` &mdash; `:`
+- `jj` escapes Insert Mode
 
 #### Leader Commands
 
