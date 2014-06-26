@@ -184,6 +184,7 @@ colorscheme solarized
 " Change leader key
 let mapleader = ","
 
+nmap ; :
 nmap <space> :
 imap jj <esc>
 
