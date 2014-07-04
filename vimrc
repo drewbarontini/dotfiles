@@ -18,39 +18,39 @@ Bundle 'gmarik/vundle'
 "   Bundles
 " ----------------------------------------------------
 
-Bundle 'mileszs/ack.vim'
-Bundle 'kien/ctrlp.vim'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'tpope/vim-vinegar'
-Bundle 'scrooloose/syntastic'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'tpope/vim-dispatch'
+Bundle 'AutoClose'
 Bundle 'Lokaltog/vim-easymotion'
-Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-haml'
+Bundle 'MarcWeber/vim-addon-mw-utils'
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'bling/vim-airline'
+Bundle 'bronson/vim-visual-star-search'
+Bundle 'ervandew/supertab'
+Bundle 'garbas/vim-snipmate'
+Bundle 'godlygeek/tabular'
+Bundle 'goldfeld/vim-seek'
+Bundle 'idanarye/vim-merginal'
+Bundle 'junegunn/goyo.vim'
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'kien/ctrlp.vim'
+Bundle 'mattn/emmet-vim'
+Bundle 'mattn/gist-vim'
+Bundle 'mattn/webapi-vim'
+Bundle 'mileszs/ack.vim'
 Bundle 'nathanaelkane/vim-indent-guides'
+Bundle 'nelstrom/vim-qargs'
+Bundle 'scrooloose/nerdcommenter'
+Bundle 'scrooloose/syntastic'
 Bundle 'terryma/vim-multiple-cursors'
+Bundle 'tomtom/tlib_vim'
+Bundle 'tpope/vim-abolish'
+Bundle 'tpope/vim-dispatch'
+Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-git'
+Bundle 'tpope/vim-haml'
+Bundle 'tpope/vim-markdown'
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-surround'
-Bundle 'godlygeek/tabular'
-Bundle 'MarcWeber/vim-addon-mw-utils'
-Bundle 'tomtom/tlib_vim'
-Bundle 'garbas/vim-snipmate'
-Bundle 'ervandew/supertab'
-Bundle 'mattn/webapi-vim'
-Bundle 'mattn/gist-vim'
-Bundle 'bling/vim-airline'
-Bundle 'tpope/vim-git'
-Bundle 'mattn/emmet-vim'
-Bundle 'AutoClose'
-Bundle 'tpope/vim-abolish'
-Bundle 'bronson/vim-visual-star-search'
-Bundle 'nelstrom/vim-qargs'
-Bundle 'goldfeld/vim-seek'
-Bundle 'tpope/vim-markdown'
-Bundle 'junegunn/goyo.vim'
-Bundle 'idanarye/vim-merginal'
+Bundle 'tpope/vim-vinegar'
 
 " ----------------------------------------------------
 "   Airline
@@ -199,7 +199,7 @@ nnoremap <leader>v <C-w>v<C-w>l
 nnoremap <leader>h <C-w>s<C-w>j
 
 " Trim trailing whitespace
-nnoremap <leader>s :%s/\s\+$//<cr>:let @/=''<CR>
+nnoremap <leader>s :%s/\s\+$//<cr>:let @/=''<cr>
 
 " Jump out of parenthesis, brackets, etc.
 inoremap <C-e> <C-o>A
@@ -208,10 +208,10 @@ inoremap <C-e> <C-o>A
 map <leader><leader> <C-^>
 
 " Shell command
-nmap <leader>S :!<Space>
+nmap <leader>S :!<space>
 
 " Run 'bundle install'
-map <leader>bb :! bundle install<CR>
+map <leader>bb :! bundle install<cr>
 
 " Copy whole file, store in register
 map <leader>co ggVG"*y
@@ -220,11 +220,11 @@ map <leader>co ggVG"*y
 map <leader>rs :%s//
 
 " Save file
-map <C-s> <esc>:w<CR>
-imap <C-s> <esc>:w<CR>
+map <C-s> <esc>:w<cr>
+imap <C-s> <esc>:w<cr>
 
 " New tab
-map <C-t> <esc>:tabnew<CR>
+map <C-t> <esc>:tabnew<cr>
 
 " Clear the search buffer when hitting return
 function! MapCR()
@@ -233,7 +233,7 @@ endfunction
 call MapCR()
 
 " Directory of Current File
-cnoremap %% <C-R>=expand('%:h').'/'<CR>
+cnoremap %% <C-R>=expand('%:h').'/'<cr>
 
 " NO Arrow Keys
 "map <Left> <Nop>
@@ -244,32 +244,37 @@ cnoremap %% <C-R>=expand('%:h').'/'<CR>
 " ----- Open File Mappings ----- "
 
 " Open .vimrc
-nnoremap <leader>rc :tabedit $MYVIMRC<CR>
+nnoremap <leader>rc :tabedit $MYVIMRC<cr>
 
 " Open up Dropbox notes.txt file
-map <leader>ns :sp ~/Dropbox/Notes/notes--scratch.txt<CR>
+map <leader>ns :sp ~/Dropbox/Notes/notes-scratch.txt<cr>
 " Open up Dropbox notes directory
-map <leader>no :e ~/Dropbox/Notes/<CR>
+map <leader>no :e ~/Dropbox/Notes/<cr>
 " Open or create Dropbox notes file
 map <leader>nc :sp ~/Dropbox/Notes/
 
 " Open a new tab and search for something
 nmap <leader>aa :Ack! ""<Left>
 " Search for word under cursor
-nmap <leader>AA :Ack! <C-r><C-w><CR>
+nmap <leader>AA :Ack! <C-r><C-w><cr>
 
 " CtrlP
 nnoremap ff :CtrlP<cr>
 
 " NERDTree toggle
-nmap <leader>nt :NERDTreeToggle<CR>
+nmap <leader>nt :NERDTreeToggle<cr>
 map <leader>nb :NERDTreeFromBookmark
 
 " Open snippets
-map <leader>p :tabedit ~/.dotfiles/vim/snippets<CR>
+map <leader>p :tabedit ~/.dotfiles/vim/snippets<cr>
 
 " Goyo
-nnoremap <leader>V :Goyo<CR>
+nnoremap <leader>V :Goyo<cr>
+
+" ----- Rails Mappings ----- "
+
+map <leader>T :!bundle exec rake test %<cr>
+map <leader>bb :!bundle install<cr>
 
 " ----- Multi-purpose Tab Key ----- "
 " Indent if we're at the beginning of a line. Else, do completion.
