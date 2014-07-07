@@ -1,0 +1,21 @@
+# ----- Functions ----- #
+
+# Simple HTTP server from a directory, optionally specifying a port
+function server() {
+  local port="${1:-8000}"
+  open "http://localhost:${port}/"
+  python -m SimpleHTTPServer "$port"
+}
+
+# Extract external ZIP archive (via John D. Jameson)
+function dlz() {
+  wget "$1" -O .tempzip -q
+  unzip -q .tempzip
+  rm .tempzip
+}
+
+# Get an HTTP status code from a curl
+function get_curl_response() {
+  curl -s -I $1 | grep HTTP/1.1
+}
+
