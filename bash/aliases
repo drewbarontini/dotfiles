@@ -62,6 +62,7 @@ alias vim="stty stop '' -ixoff ; vim"
 
 # Unix
 alias ll='ls -la'
+alias sbp='source ~/.bash_profile'
 
 # Redis
 alias rs='redis-server /usr/local/etc/redis.conf'
