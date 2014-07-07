@@ -1,3 +1,5 @@
+# ----- Functions ----- #
+
 # Simple HTTP server from a directory, optionally specifying a port
 function server() {
   local port="${1:-8000}"
@@ -7,9 +9,9 @@ function server() {
 
 # Extract external ZIP archive (via John D. Jameson)
 dlz() {
-  wget -O tempzip "$1"
-  unzip tempzip
-  rm tempzip
+  wget -O .tempzip "$1"
+  unzip .tempzip
+  rm .tempzip
 }
 
 # MVCSS
@@ -17,6 +19,9 @@ function mvcss() {
   if [ "$1" == 'all' ]
   then
     dlz https://github.com/mvcss/mvcss/archive/master.zip
+  elif [ "$1" == 'copy' ]
+  then
+    curl https://raw.githubusercontent.com/mvcss/mvcss/master/"$2"/_"$3".sass | pbcopy
   else
     curl -O https://raw.githubusercontent.com/mvcss/mvcss/master/"$1"/_"$2".sass
   fi
