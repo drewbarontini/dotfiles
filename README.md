@@ -2,7 +2,7 @@ Installation
 ============
 
 ```bash
-curl https://raw.githubusercontent.com/drewbarontini/dotfiles/master/install.sh
+curl -O https://raw.githubusercontent.com/drewbarontini/dotfiles/master/install.sh
 bash install.sh
 ```
 
