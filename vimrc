@@ -236,10 +236,10 @@ call MapCR()
 cnoremap %% <C-R>=expand('%:h').'/'<cr>
 
 " NO Arrow Keys
-"map <Left> <Nop>
-"map <Right> <Nop>
-"map <Up> <Nop>
-"map <Down> <Nop>
+map <Left> <Nop>
+map <Right> <Nop>
+map <Up> <Nop>
+map <Down> <Nop>
 
 " ----- Open File Mappings ----- "
 
@@ -261,10 +261,6 @@ nmap <leader>AA :Ack! <C-r><C-w><cr>
 " CtrlP
 nnoremap ff :CtrlP<cr>
 
-" NERDTree toggle
-nmap <leader>nt :NERDTreeToggle<cr>
-map <leader>nb :NERDTreeFromBookmark
-
 " Open snippets
 map <leader>p :tabedit ~/.dotfiles/vim/snippets<cr>
 
@@ -273,8 +269,8 @@ nnoremap <leader>V :Goyo<cr>
 
 " ----- Rails Mappings ----- "
 
-map <leader>T :!bundle exec rake test %<cr>
 map <leader>bb :!bundle install<cr>
+map <leader>T :!bundle exec rspec %<cr>
 
 " ----- Multi-purpose Tab Key ----- "
 " Indent if we're at the beginning of a line. Else, do completion.
