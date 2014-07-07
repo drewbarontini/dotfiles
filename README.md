@@ -37,6 +37,7 @@ To copy a file to your clipboard:
 
 ```bash
 mvcss copy components grid
+mvcss-library copy components list
 ```
 
 Git
