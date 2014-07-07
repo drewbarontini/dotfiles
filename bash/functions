@@ -8,22 +8,49 @@ function server() {
 }
 
 # Extract external ZIP archive (via John D. Jameson)
-dlz() {
-  wget -O .tempzip "$1"
-  unzip .tempzip
+function dlz() {
+  wget "$1" -O .tempzip -q
+  unzip -q .tempzip
   rm .tempzip
 }
 
+# Get an HTTP status code from a curl
+function get_curl_response() {
+  curl -s -I $1 | grep HTTP/1.1
+}
+
 # MVCSS
+
+MVCSSURL='https://raw.githubusercontent.com/mvcss/mvcss/master'
+MVCSSLIBURL='https://raw.githubusercontent.com/mvcss/library/master'
+
 function mvcss() {
   if [ "$1" == 'all' ]
   then
+    echo "Getting that thang..."
     dlz https://github.com/mvcss/mvcss/archive/master.zip
+    echo "Downloaded MVCSS Zip file to `pwd`!"
   elif [ "$1" == 'copy' ]
   then
-    curl https://raw.githubusercontent.com/mvcss/mvcss/master/"$2"/_"$3".sass | pbcopy
+    echo "Getting that thang..."
+    RESPONSE=$(get_curl_response "$MVCSSURL"/"$2"/_"$3".sass)
+    if [[ $RESPONSE =~ .*404.*  ]]
+    then
+      echo "Sorry, $2/$3 not found."
+    else
+      curl -s "$MVCSSURL"/"$2"/_"$3".sass | pbcopy
+      echo "Copied $2/$3 to the clipboard!"
+    fi
   else
-    curl -O https://raw.githubusercontent.com/mvcss/mvcss/master/"$1"/_"$2".sass
+    echo "Getting that thang..."
+    RESPONSE=$(get_curl_response "$MVCSSURL"/"$1"/_"$2".sass)
+    if [[ $RESPONSE =~ .*404.*  ]]
+    then
+      echo "Sorry, $1/$2 not found."
+    else
+      curl -O -s "$MVCSSURL"/"$1"/_"$2".sass
+      echo "Downloaded $1/$2 to `pwd`!"
+    fi
   fi
 }
 
@@ -31,8 +58,24 @@ function mvcss() {
 function mvcss-library() {
   if [ "$1" == 'copy' ]
   then
-    curl https://raw.githubusercontent.com/mvcss/library/master/"$2"/_"$3".sass | pbcopy
+    echo "Getting that thang..."
+    RESPONSE=$(get_curl_response "$MVCSSLIBURL"/"$2"/_"$3".sass)
+    if [[ $RESPONSE =~ .*404.*  ]]
+    then
+      echo "Sorry, $2/$3 not found."
+    else
+      curl -s "$MVCSSLIBURL"/"$2"/_"$3".sass | pbcopy
+      echo "Copied $2/$3 to the clipboard!"
+    fi
   else
-    curl -O https://raw.githubusercontent.com/mvcss/library/master/"$1"/_"$2".sass
+    echo "Getting that thang..."
+    RESPONSE=$(get_curl_response "$MVCSSLIBURL"/"$1"/_"$2".sass)
+    if [[ $RESPONSE =~ .*404.*  ]]
+    then
+      echo "Sorry, $1/$2 not found."
+    else
+      curl -O -s "$MVCSSLIBURL"/"$1"/_"$2".sass
+      echo "Downloaded $1/$2 to `pwd`!"
+    fi
   fi
 }
