@@ -1,6 +1,8 @@
 # Git Aliases
 alias g='git'
 alias ga='git add'
+alias gac='git add . && git commit'
+alias gacv='git add . && git commit --verbose'
 alias gb='git branch'
 alias gc='git commit'
 alias gcam='git commit -a -m'
@@ -34,6 +36,7 @@ alias gui='git update-index --assume-unchanged'
 
 # Vim
 alias v='vim'
+alias vi='vim'
 
 # Drew's Brew
 alias drew='brew'
@@ -62,3 +65,9 @@ alias ll='ls -la'
 
 # Redis
 alias rs='redis-server /usr/local/etc/redis.conf'
+
+# Quick Jumps
+alias code='cd ~/Code/'
+
+# Quick Files
+alias scratch='vim ~/Dropbox\ \(Personal\)/Notes/notes-scratch.txt'
