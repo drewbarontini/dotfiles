@@ -2,7 +2,7 @@
 
 # Show the current path
 current_path (){
-  echo $(basename `pwd`)
+  echo "$(basename `pwd`)"
 }
 
 # Get the current git branch
