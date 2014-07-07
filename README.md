@@ -15,7 +15,7 @@ ln -s ~/.dotfiles/bash/bash_profile ~/.bash_profile
 
 ### MVCSS
 
-To pull all of MVCSS, run:
+To download a ZIP of MVCSS, run:
 
 ```bash
 mvcss all
