@@ -1,24 +1,48 @@
-# Setup
+Setup
+=====
 
 ```
 git clone git@github.com:drewbarontini/dotfiles.git ~/.dotfiles
 ```
 
-## Bash
+Bash
+----
 
 ```
 ln -s ~/.dotfiles/bash ~/.bash
 ln -s ~/.dotfiles/bash/bash_profile ~/.bash_profile
 ```
 
-## Git
+### MVCSS
+
+To pull all of MVCSS, run:
+
+```bash
+mvcss all
+```
+
+To pull a specific Foundation/Component/Structure file:
+
+```bash
+mvcss components grid
+```
+
+To pull a specific Library file:
+
+```bash
+mvcss-library components list
+```
+
+Git
+---
 
 ```
 ln -s ~/.dotfiles/gitconfig ~/.gitconfig
 ln -s ~/.dotfiles/gitignore ~/.gitignore
 ```
 
-## Sublime Text
+Sublime Text
+------------
 
 ```
 cd ~/Library/Application \Support/Sublime \Text \3
@@ -31,14 +55,16 @@ Enable `subl`
 ln -s /Applications/Sublime\ Text\ 3.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
 ```
 
-## Vim
+Vim
+---
 
 ```
 ln -s ~/.dotfiles/vim ~/.vim
 ln -s ~/.dotfiles/vimrc ~/.vimrc
 ```
 
-## MacVim
+MacVim
+------
 
 ```
 ln -s ~/.dotfiles/gvimrc ~/.gvimrc
