@@ -1,4 +1,15 @@
-# Git Aliases
+## -------------------------------------
+##   Aliases
+## -------------------------------------
+
+## ----- Files & Jumps ----- ##
+
+alias scratch='vim ~/Dropbox\ \(Personal\)/Notes/notes-scratch.txt'
+alias code='cd ~/Code/'
+
+## ----- Git ----- ##
+
+# General
 alias g='git'
 alias ga='git add'
 alias gac='git add . && git commit'
@@ -54,46 +65,21 @@ alias hb='hub browse'
 alias hc='hub clone'
 alias hpr='hub pull-request'
 
-# Vim
-alias v='vim'
-alias vi='vim'
+## ----- Middleman ----- ##
+
+alias mib='./bin/middleman build'
+alias mis='./bin/middleman s'
+
+## ----- Miscellaneous ----- ##
 
 # Drew's Brew
 alias drew='brew'
 
-# Bundle Exec
-alias be='bundle exec'
-
-# Rails
-alias br='./bin/rails'
-
-# Rake
-alias bk='./bin/rake'
-alias rkd='rake deploy'
-alias rkds='rake deploy:staging'
-alias rkdp='rake deploy:production'
-
-# Middleman
-alias mib='./bin/middleman build'
-alias mis='./bin/middleman s'
-
 # Disable C-s in terminal
 alias vim="stty stop '' -ixoff ; vim"
 
-# Unix
-alias ll='ls -la'
-alias sbp='source ~/.bash_profile'
+## ----- MVCSS ----- ##
 
-# Redis
-alias rs='redis-server /usr/local/etc/redis.conf'
-
-# Quick Jumps
-alias code='cd ~/Code/'
-
-# Quick Files
-alias scratch='vim ~/Dropbox\ \(Personal\)/Notes/notes-scratch.txt'
-
-# MVCSS
 alias m='mvcss'
 alias ma='mvcss all'
 alias mac='mvcss copy'
@@ -107,3 +93,30 @@ alias mlf='mvcss-library foundation'
 alias mlcf='mvcss-library copy foundation'
 alias mlco='mvcss-library components'
 alias mlcco='mvcss-library copy components'
+
+## ----- Rails Environment ----- ##
+
+# Bundle
+alias be='bundle exec'
+alias bi='bundle install'
+alias bib='bundle install --binstubs'
+
+# Rails
+alias br='./bin/rails'
+
+# Rake
+alias bk='./bin/rake'
+alias rkd='rake deploy'
+alias rkds='rake deploy:staging'
+alias rkdp='rake deploy:production'
+
+## ----- Unix ----- ##
+
+alias ll='ls -la'
+alias sbp='source ~/.bash_profile'
+
+## ----- Vim ----- ##
+
+alias v='vim'
+alias vi='vim'
+
