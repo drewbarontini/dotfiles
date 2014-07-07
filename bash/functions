@@ -28,5 +28,10 @@ function mvcss() {
 }
 
 function mvcss-library() {
-  curl -O https://raw.githubusercontent.com/mvcss/library/master/"$1"/_"$2".sass
+  if [ "$1" == 'copy' ]
+  then
+    curl https://raw.githubusercontent.com/mvcss/library/master/"$2"/_"$3".sass | pbcopy
+  else
+    curl -O https://raw.githubusercontent.com/mvcss/library/master/"$1"/_"$2".sass
+  fi
 }
