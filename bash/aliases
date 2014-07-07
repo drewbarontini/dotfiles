@@ -90,3 +90,18 @@ alias code='cd ~/Code/'
 
 # Quick Files
 alias scratch='vim ~/Dropbox\ \(Personal\)/Notes/notes-scratch.txt'
+
+# MVCSS
+alias m='mvcss'
+alias ma='mvcss all'
+alias mac='mvcss copy'
+alias maf='mvcss foundation'
+alias macf='mvcss copy foundation'
+alias maco='mvcss components'
+alias macco='mvcss copy components'
+alias ml='mvcss-library'
+alias mlc='mvcss-library copy'
+alias mlf='mvcss-library foundation'
+alias mlcf='mvcss-library copy foundation'
+alias mlco='mvcss-library components'
+alias mlcco='mvcss-library copy components'
