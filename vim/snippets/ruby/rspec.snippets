@@ -1,0 +1,62 @@
+# rspec
+snippet spechelper
+	require File.expand_path(File.dirname(__FILE__) + '/../spec_helper')${1}
+
+
+# describe
+snippet des
+	describe ${1:description}" do
+		${2}
+	end
+snippet desc
+	describe ${1:class} do
+		before do
+			${2}
+		end
+
+	end
+snippet descd
+	describe ${1:class}, "${2:description}" do
+		before do
+			${3}
+		end
+
+	end
+snippet desd
+	describe "${1:description}" do
+		before do
+			${2}
+		end
+
+	end
+
+# before & after
+snippet before-
+	before(:${1:each}) do
+		${2}
+	end
+snippet after-
+	after(:${1:each}) do
+		${2}
+	end
+
+# it should
+snippet it
+	it "should ${1:description}" do
+		${2}
+	end
+snippet itsh
+	it "should ${1:description}" do
+		${2:model}.should ${3}
+	end
+snippet itshbe
+	it "should ${1:description}" do
+  		${2:model}.should be_${3}
+	end
+
+# matchers
+snippet sheq
+	${1:targe}.should == ${2}
+snippet shbe
+	${1:target}.should be_${2:result}
+
