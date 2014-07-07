@@ -27,3 +27,9 @@ function get_curl_response() {
   curl -s -I $1 | grep HTTP/1.1
 }
 
+## ----- Delete Files ----- ##
+## Deletes files with a pattern
+function delete-files() {
+  find . -name $1 -delete
+}
+
