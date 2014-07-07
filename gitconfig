@@ -10,7 +10,7 @@
 [github]
   user = drewbarontini
 [ghi]
-  token = 918b9a35f11f5ad44fbb97159cc5cf4b3589943a
+	token = !security find-internet-password -a drewbarontini -s github.com -l 'ghi token' -w
 [merge]
   tool = opendiff
 [diff]
