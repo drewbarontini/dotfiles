@@ -21,35 +21,58 @@ function get_curl_response() {
 
 # MVCSS
 
+LOADMSG='Getting that thang...'
 MVCSSURL='https://raw.githubusercontent.com/mvcss/mvcss/master'
 MVCSSLIBURL='https://raw.githubusercontent.com/mvcss/library/master'
 
 function mvcss() {
   if [ "$1" == 'all' ]
   then
-    echo "Getting that thang..."
+    echo "$LOADMSG"
     dlz https://github.com/mvcss/mvcss/archive/master.zip
     echo "Downloaded MVCSS Zip file to `pwd`!"
   elif [ "$1" == 'copy' ]
   then
-    echo "Getting that thang..."
-    RESPONSE=$(get_curl_response "$MVCSSURL"/"$2"/_"$3".sass)
+    echo "$LOADMSG"
+    if [ "$3" == 'reset' ]
+    then
+      RESPONSE=$(get_curl_response "$MVCSSURL"/"$2"/_"$3".scss)
+    else
+      RESPONSE=$(get_curl_response "$MVCSSURL"/"$2"/_"$3".sass)
+    fi
     if [[ $RESPONSE =~ .*404.*  ]]
     then
       echo "Sorry, $2/$3 not found."
     else
-      curl -s "$MVCSSURL"/"$2"/_"$3".sass | pbcopy
-      echo "Copied $2/$3 to the clipboard!"
+      if [ "$3" == 'reset' ]
+      then
+        curl -s "$MVCSSURL"/"$2"/_"$3".scss | pbcopy
+        echo "Copied $2/$3 to the clipboard!"
+      else
+        curl -s "$MVCSSURL"/"$2"/_"$3".sass | pbcopy
+        echo "Copied $2/$3 to the clipboard!"
+      fi
     fi
   else
-    echo "Getting that thang..."
-    RESPONSE=$(get_curl_response "$MVCSSURL"/"$1"/_"$2".sass)
+    echo "$LOADMSG"
+    if [ "$2" == 'reset' ]
+    then
+      RESPONSE=$(get_curl_response "$MVCSSURL"/"$1"/_"$2".scss)
+    else
+      RESPONSE=$(get_curl_response "$MVCSSURL"/"$1"/_"$2".sass)
+    fi
     if [[ $RESPONSE =~ .*404.*  ]]
     then
       echo "Sorry, $1/$2 not found."
     else
-      curl -O -s "$MVCSSURL"/"$1"/_"$2".sass
-      echo "Downloaded $1/$2 to `pwd`!"
+      if [ "$2" == 'reset' ]
+      then
+        curl -O -s "$MVCSSURL"/"$1"/_"$2".scss
+        echo "Downloaded $1/$2 to `pwd`!"
+      else
+        curl -O -s "$MVCSSURL"/"$1"/_"$2".sass
+        echo "Downloaded $1/$2 to `pwd`!"
+      fi
     fi
   fi
 }
@@ -58,7 +81,7 @@ function mvcss() {
 function mvcss-library() {
   if [ "$1" == 'copy' ]
   then
-    echo "Getting that thang..."
+    echo "$LOADMSG"
     RESPONSE=$(get_curl_response "$MVCSSLIBURL"/"$2"/_"$3".sass)
     if [[ $RESPONSE =~ .*404.*  ]]
     then
@@ -68,7 +91,7 @@ function mvcss-library() {
       echo "Copied $2/$3 to the clipboard!"
     fi
   else
-    echo "Getting that thang..."
+    echo "$LOADMSG"
     RESPONSE=$(get_curl_response "$MVCSSLIBURL"/"$1"/_"$2".sass)
     if [[ $RESPONSE =~ .*404.*  ]]
     then
