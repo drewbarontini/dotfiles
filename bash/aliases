@@ -33,6 +33,8 @@ alias gsth='git stash show'
 alias gstp='git stash pop'
 alias gt='git tag'
 alias gui='git update-index --assume-unchanged'
+alias git-standup='git log --since yesterday --author="drewbarontini" --pretty=oneline'
+alias git-today='git log --since=midnight --author="Drew Barontini" --oneline'
 
 # ghi
 alias i='ghi'
