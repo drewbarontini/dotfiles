@@ -34,6 +34,24 @@ alias gstp='git stash pop'
 alias gt='git tag'
 alias gui='git update-index --assume-unchanged'
 
+# ghi
+alias i='ghi'
+alias il='ghi list'
+alias is='ghi show'
+alias io='ghi open'
+alias ic='ghi close'
+alias ie='ghi edit'
+alias ico='ghi comment'
+alias ila='ghi label'
+alias ia='ghi assign'
+alias im='ghi milestone'
+
+# hub
+alias h='hub'
+alias hb='hub browse'
+alias hc='hub clone'
+alias hpr='hub pull-request'
+
 # Vim
 alias v='vim'
 alias vi='vim'
