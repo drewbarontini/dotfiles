@@ -114,6 +114,8 @@ alias rkdp='rake deploy:production'
 
 alias ll='ls -la'
 alias sbp='source ~/.bash_profile'
+alias todos="ack -i '(TODO|FIX(ME)|NOTE?):'"
+alias magic-numbers="ack -i '(FIXME: Magic number!)'" # `| wc -l` to get the count
 
 ## ----- Vim ----- ##
 
