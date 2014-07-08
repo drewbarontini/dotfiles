@@ -6,6 +6,7 @@
 
 alias scratch='vim ~/Dropbox\ \(Personal\)/Notes/notes-scratch.txt'
 alias code='cd ~/Code/'
+alias aliases='vim ~/.dotfiles/bash/aliases'
 
 ## ----- Git ----- ##
 
@@ -15,6 +16,8 @@ alias ga='git add'
 alias gac='git add . && git commit'
 alias gacv='git add . && git commit --verbose'
 alias gb='git branch'
+alias gbd='git branch -d'
+alias gbD='git branch -D'
 alias gc='git commit'
 alias gcam='git commit -a -m'
 alias gcm='git commit -m'
@@ -41,6 +44,7 @@ alias gpp='git pull --rebase && git push'
 alias gs='git status'
 alias gst='git stash save'
 alias gsth='git stash show'
+alias gstl='git stash list'
 alias gstp='git stash pop'
 alias gt='git tag'
 alias gui='git update-index --assume-unchanged'
