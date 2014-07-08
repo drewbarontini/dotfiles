@@ -37,15 +37,7 @@ What's Included
 
 - Git
 - Bash
+- iTerm2 (colors)
 - Sublime Text
 - Vim
-
-Additional Info
----------------
-
-### iTerm Colors
-
-- [Solarized](https://github.com/altercation/solarized/tree/master/iterm2-colors-solarized)
-- [Tomorrow](https://github.com/chriskempson/tomorrow-theme/tree/master/iTerm2)
-- [Jellybeans](https://github.com/qtpi/Jellybeans.itermcolors)
 
