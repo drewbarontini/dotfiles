@@ -124,6 +124,15 @@ alias rkd='rake deploy'
 alias rkds='rake deploy:staging'
 alias rkdp='rake deploy:production'
 
+## ----- Rbenv ----- ##
+
+alias re='rbenv'
+alias rei='rbenv install'
+alias reil='rbenv install list'
+alias rer='rbenv rehash'
+alias rev='rbenv version'
+alias reva='rbenv versions'
+
 ## ----- Unix ----- ##
 
 # Via https://github.com/mathiasbynens/dotfiles/blob/master/.aliases
