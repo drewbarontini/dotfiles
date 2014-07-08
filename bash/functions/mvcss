@@ -1,3 +1,19 @@
+## ----- Download ZIP ----- ##
+## Extract external ZIP archive (via John D. Jameson)
+
+function dlz() {
+  wget "$1" -O .tempzip -q
+  unzip -q .tempzip
+  rm .tempzip
+}
+
+## ----- Get Curl Response ----- ##
+## Get an HTTP status code from a curl
+
+function get_curl_response() {
+  curl -s -I $1 | grep HTTP/1.1
+}
+
 ## ----- MVCSS ----- ##
 ## Pull down the MVCSS files/project from the GitHub repo
 
