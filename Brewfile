@@ -17,8 +17,6 @@ install bash-completion
 install boost
 install browsertime
 install cairo
-install chromedriver
-install cscope
 install eot-utils
 install faac
 install ffmpeg
@@ -49,7 +47,6 @@ install mercurial
 install openssl
 install ossp-uuid
 install pcre
-install phantomjs
 install pixman
 install pkg-config
 install postgresql
@@ -57,7 +54,6 @@ install python
 install readline
 install redis
 install rename
-install sickbeard
 install sitespeed.io
 install sqlite
 install texi2html
