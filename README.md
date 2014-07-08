@@ -24,6 +24,12 @@ ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
 brew bundle Brewfile
 ```
 
+### Rbenv
+
+```bash
+bash .rbenv
+```
+
 ### OS X Applications
 
 ```bash
