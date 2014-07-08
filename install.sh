@@ -25,9 +25,6 @@ then
   git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
   echo "Run :BundleInstall in Vim to install plugins"
 
-  echo "Setting up basic OS X settings..."
-  bash .osx
-
   source ~/.bash_profile
 
   echo "Done! Run 'open ~/.dotfiles' to see your new files."
