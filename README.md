@@ -49,7 +49,10 @@ What's Included
 
 - Git
 - Bash
+- Homebrew
 - iTerm2 (colors)
+- OS X Apps, Settings
+- Rbenv
 - Sublime Text
 - Vim
 
