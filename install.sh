@@ -7,7 +7,7 @@ then
 
   echo "Setting up Bash..."
   ln -s ~/.dotfiles/bash ~/.bash
-  ln -s ~/.dotfiles/bash/bash_profile ~/.bash_profile
+  ln -s ~/.dotfiles/bash_profile ~/.bash_profile
 
   echo "Setting up Git..."
   ln -s ~/.dotfiles/gitconfig ~/.gitconfig
