@@ -1,0 +1,42 @@
+# Install native apps
+# Usage: `brew bundle Caskfile`
+
+install caskroom/cask/brew-cask
+tap caskroom/versions
+
+cask install adium 2> /dev/null
+cask install adobe-creative-cloud 2> /dev/null
+cask install alfred 2> /dev/null
+cask install anvil 2> /dev/null
+cask install appcleaner 2> /dev/null
+cask install arq 2> /dev/null
+cask install atom 2> /dev/null
+cask install backblaze-downloader 2> /dev/null
+cask install balsamiq-mockups 2> /dev/null
+cask install caffeine 2> /dev/null
+cask install codekit 2> /dev/null
+cask install colorschemer-studio 2> /dev/null
+cask install drobo-dashboard 2> /dev/null
+cask install dropbox 2> /dev/null
+cask install firefox 2> /dev/null
+cask install flux 2> /dev/null
+cask install gifrocket 2> /dev/null
+cask install google-chrome 2> /dev/null
+cask install hipchat 2> /dev/null
+cask install imageoptim 2> /dev/null
+cask install instacast 2> /dev/null
+cask install jing 2> /dev/null
+cask install mamp 2> /dev/null
+cask install moom 2> /dev/null
+cask install rdio 2> /dev/null
+cask install screenflow 2> /dev/null
+cask install screenhero 2> /dev/null
+cask install skype 2> /dev/null
+cask install sublime-text 2> /dev/null
+cask install superduper 2> /dev/null
+cask install totalfinder 2> /dev/null
+cask install transmit 2> /dev/null
+cask install vlc 2> /dev/null
+cask install vyprvpn 2> /dev/null
+cask install ynab 2> /dev/null
+cask install iterm2 2> /dev/null
