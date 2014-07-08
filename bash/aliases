@@ -80,8 +80,8 @@ alias mis='./bin/middleman s'
 # Drew's Brew
 alias drew='brew'
 
-# Disable C-s in terminal
-alias vim="stty stop '' -ixoff ; vim"
+# Stopwatch
+alias timer='echo "Timer started. Stop with Ctrl-D." && date && time cat && date'
 
 ## ----- MVCSS ----- ##
 
@@ -98,6 +98,11 @@ alias mlf='mvcss-library foundation'
 alias mlcf='mvcss-library copy foundation'
 alias mlco='mvcss-library components'
 alias mlcco='mvcss-library copy components'
+
+## ----- OS X ----- ##
+
+# Clean up LaunchServices to remove duplicates in the "Open With" menu
+alias lscleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder"
 
 ## ----- Rails Environment ----- ##
 
@@ -117,14 +122,29 @@ alias rkdp='rake deploy:production'
 
 ## ----- Unix ----- ##
 
+# Via https://github.com/mathiasbynens/dotfiles/blob/master/.aliases
+# Detect which `ls` flavor is in use
+if ls --color > /dev/null 2>&1; then # GNU `ls`
+  colorflag="--color"
+else # OS X `ls`
+  colorflag="-G"
+fi
+
+# Listing
+alias l='ls -lF ${colorflag}'
+alias la='ls -laF ${colorflag}'
+alias ld="ls -lF ${colorflag} | grep --color=never '^d'"
+
 alias rmd='rm -rf'
-alias ll='ls -la'
 alias sbp='source ~/.bash_profile'
 alias todos="ack -i '(TODO|FIX(ME)|NOTE?):'"
 alias magic-numbers="ack -i '(FIXME: Magic number!)'" # `| wc -l` to get the count
 alias rmorig='find . -name *.orig -delete'
 
 ## ----- Vim ----- ##
+
+# Disable C-s in terminal
+alias vim="stty stop '' -ixoff ; vim"
 
 alias v='vim'
 alias vi='vim'
