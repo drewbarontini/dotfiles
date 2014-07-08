@@ -141,6 +141,7 @@ alias sbp='source ~/.bash_profile'
 alias todos="ack -i '(TODO|FIX(ME)|NOTE?):'"
 alias magic-numbers="ack -i '(FIXME: Magic number!)'" # `| wc -l` to get the count
 alias rmorig='find . -name *.orig -delete'
+alias p='less'
 
 ## ----- Vim ----- ##
 
