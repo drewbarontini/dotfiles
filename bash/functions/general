@@ -17,3 +17,9 @@ function delete-files() {
   find . -name $1 -delete
 }
 
+## ----- Run Shell Script ----- ##
+## Runs a shell script passed in via curl
+function run-sh() {
+  bash <(curl -s $1)
+}
+
