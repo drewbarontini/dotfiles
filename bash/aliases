@@ -6,7 +6,8 @@
 
 alias scratch='vim ~/Dropbox\ \(Personal\)/Notes/notes-scratch.txt'
 alias code='cd ~/Code/'
-alias aliases='vim ~/.dotfiles/bash/aliases'
+alias al='vim ~/.dotfiles/bash/aliases'
+alias lal='less ~/.dotfiles/bash/aliases'
 alias vimrc='vim ~/.vimrc'
 
 ## ----- Git ----- ##
@@ -16,6 +17,7 @@ alias g='git'
 alias ga='git add'
 alias gac='git add . && git commit'
 alias gacv='git add . && git commit --verbose'
+alias gap='git add -p'
 alias gb='git branch'
 alias gbd='git branch -d'
 alias gbD='git branch -D'
