@@ -29,3 +29,9 @@ function find-alias() {
   grep $1 ~/.dotfiles/bash/aliases
 }
 
+## ----- Homebrew Dependencies ----- ##
+## Lists out all brew packages and associated dependencies
+function brew-deps() {
+  brew list | while read cask; do echo -n $cask; brew deps $cask | awk '{ printf(" %s ", $0) }'; echo ""; done
+}
+
