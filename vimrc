@@ -324,18 +324,11 @@ autocmd BufNewFile,BufRead *.sass set ft=sass.css
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 set wildignore+=*/tmp/*,*/log/*,*.so,*.swp,*.zip
 
-" NERDTree
-let g:NERDTreeWinSize = 50
-let NERDTreeShowHidden=1
-
 " EasyMotion
 let g:EasyMotion_leader_key = '<Leader>'
 
 " Ack
 let g:ackprg = 'ag --nogroup --nocolor --column'
-
-" GitGutter
-let g:gitgutter_eager = 0
 
 " ----------------------------------------------------
 "   Autosave
