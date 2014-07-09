@@ -7,66 +7,76 @@ update
 # Upgrade any already-installed formulae
 upgrade
 
+# Ack
+# -> A tool like grep, optimized for programmers
 install ack
+
+# apple-gcc42
+# -> Components removed from < Xcode 4.2
 install apple-gcc42
-install autoconf
+
+# Autojump
+# -> A cd command that learns
 install autojump
-install automake
+
+# Bash & Bash Completion
 install bash
 install bash-completion
-install boost
-install browsertime
-install cairo
-install eot-utils
-install faac
+
+# FFmpeg
+# -> Record, convert and stream audio and video
 install ffmpeg
-install fontconfig
-install fontforge
-install freetype
-install gdbm
-install gettext
-install ghi
-install giflib
+
+# Git
+# -> Version control
 install git
+
+# GHI
+# -> GitHub Issues on the command line
+install ghi
+
+# Git FTP
 install git-ftp
-install glib
-install harfbuzz
-install highlight
+
+# Hub
+# -> Command-line wrapper for git
 install hub
-install icu4c
+
+# ImageMagick
+# -> Create, edit, compose, or convert bitmap images
 install imagemagick
-install jpeg
-install lame
-install libevent
-install libffi
-install libpng
-install libtiff
-install libtool
-install lua
-install mercurial
-install openssl
-install ossp-uuid
-install pcre
-install pixman
-install pkg-config
-install postgresql
-install python
-install readline
+
+# Node
+# -> Platform built on Chrome's JavaScript runtime
+install node
+
+# Redis
+# -> Advanced key-value store
 install redis
+
+# Rename
+# -> Rename files in the command line
 install rename
+
+# Sitespeed.io
+# -> Analyze your website speed and performance
 install sitespeed.io
-install sqlite
-install texi2html
+
+# TheSilverSearcher
+# -> A code-searching tool similar to ack, but faster
 install the_silver_searcher
-install tmux
+
+# Tree
+# -> Recursive directory listing command
 install tree
-install ttfautohint
+
+# Vim
+# -> Ye' old text editor
 install vim
+
+# Wget
+# -> Software package for retrieving files
 install wget
-install x264
-install xvid
-install xz
-install yasm
 
 # Remove outdated versions from the cellar
 cleanup
