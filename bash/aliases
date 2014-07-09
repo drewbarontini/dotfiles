@@ -155,6 +155,7 @@ alias l='ls -lF ${colorflag}'
 alias la='ls -laF ${colorflag}'
 alias ld="ls -lF ${colorflag} | grep --color=never '^d'"
 
+alias ..='cd ..'
 alias rmd='rm -rf'
 alias sbp='source ~/.bash_profile'
 alias todos="ack -i '(TODO|FIX(ME)|NOTE?):'"
