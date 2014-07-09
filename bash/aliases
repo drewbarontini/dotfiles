@@ -2,6 +2,14 @@
 ##   Aliases
 ## -------------------------------------
 
+## ----- Brew ----- ##
+
+# Drew's Brew
+alias drew='brew'
+alias d='brew'
+alias di='brew install'
+alias dl='brew list'
+
 ## ----- Files & Jumps ----- ##
 
 alias scratch='vim ~/Dropbox\ \(Personal\)/Notes/notes-scratch.txt'
@@ -82,9 +90,6 @@ alias mib='./bin/middleman build'
 alias mis='./bin/middleman s'
 
 ## ----- Miscellaneous ----- ##
-
-# Drew's Brew
-alias drew='brew'
 
 # Stopwatch
 alias timer='echo "Timer started. Stop with Ctrl-D." && date && time cat && date'
