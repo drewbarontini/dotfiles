@@ -34,7 +34,7 @@ bash <(curl -s https://npmjs.org/install.sh)
 
 #### Fonts
 
-To compile fonts properly, use [Font Custom](http://fontcustom.com/).
+To compile icon fonts, use [Font Custom](http://fontcustom.com/).
 
 ```bash
 brew install fontforge ttfautohint
