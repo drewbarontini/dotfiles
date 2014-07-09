@@ -23,3 +23,9 @@ function run-sh() {
   bash <(curl -s $1)
 }
 
+## ----- Find Alias ----- ##
+## Greps for a specific alias in aliases
+function find-alias() {
+  grep $1 ~/.dotfiles/bash/aliases
+}
+
