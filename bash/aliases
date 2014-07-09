@@ -5,6 +5,7 @@
 ## ----- Files & Jumps ----- ##
 
 alias scratch='vim ~/Dropbox\ \(Personal\)/Notes/notes-scratch.txt'
+alias sharpen='vim ~/Dropbox\ \(Personal\)/Notes/notes-sharpen.txt'
 alias code='cd ~/Code/'
 alias al='vim ~/.dotfiles/bash/aliases'
 alias lal='less ~/.dotfiles/bash/aliases'
