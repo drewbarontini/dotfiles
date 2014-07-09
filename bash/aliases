@@ -119,6 +119,7 @@ alias bib='bundle install --binstubs'
 alias pd='powder'
 alias pdl='powder link'
 alias pdo='powder open'
+alias pdr='powder restart'
 
 # Rails
 alias br='./bin/rails'
