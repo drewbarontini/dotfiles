@@ -35,3 +35,9 @@ function brew-deps() {
   brew list | while read cask; do echo -n $cask; brew deps $cask | awk '{ printf(" %s ", $0) }'; echo ""; done
 }
 
+## ----- Get Process ID ----- ##
+## Returns a process id or set of ids for specified process
+function get-process-id() {
+  ps aux | grep $1 | awk '{print $2}'
+}
+
