@@ -320,6 +320,9 @@ autocmd BufNewFile,BufRead *.sass set ft=sass.css
 "   Plugin-specific Settings
 " ----------------------------------------------------
 
+" Ack
+let g:ackprg = 'ag --nogroup --nocolor --column'
+
 " CtrlP
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 set wildignore+=*/tmp/*,*/log/*,*.so,*.swp,*.zip
@@ -327,8 +330,8 @@ set wildignore+=*/tmp/*,*/log/*,*.so,*.swp,*.zip
 " EasyMotion
 let g:EasyMotion_leader_key = '<Leader>'
 
-" Ack
-let g:ackprg = 'ag --nogroup --nocolor --column'
+" Gist
+let g:gist_clip_command = 'pbcopy'
 
 " ----------------------------------------------------
 "   Autosave
