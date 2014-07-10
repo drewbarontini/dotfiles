@@ -41,3 +41,9 @@ function get-process-id() {
   ps aux | grep $1 | awk '{print $2}'
 }
 
+## ----- Open ----- ##
+## Alias for 'open' command
+function o() {
+  open http://$1
+}
+
