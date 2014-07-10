@@ -270,7 +270,7 @@ nnoremap <leader>V :Goyo<cr>
 " ----- Rails Mappings ----- "
 
 map <leader>bb :!bundle install<cr>
-map <leader>T :!bundle exec rspec %<cr>
+map <leader>t :!bundle exec rspec %<cr>
 
 " ----- Multi-purpose Tab Key ----- "
 " Indent if we're at the beginning of a line. Else, do completion.
