@@ -69,7 +69,7 @@ alias gstl='git stash list'
 alias gstp='git stash pop'
 alias gt='git tag'
 alias gui='git update-index --assume-unchanged'
-alias git-author-commits='shortlog --summary --numbered'
+alias git-author-commits='git shortlog --summary --numbered'
 alias git-standup='git log --since yesterday --author="drewbarontini" --pretty=oneline'
 alias git-today='git log --since=midnight --author="Drew Barontini" --oneline'
 
