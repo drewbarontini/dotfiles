@@ -1,6 +1,6 @@
-[path]
+[include]
 
-  path = ~/.gitconfig.user
+  path = ~/.gitconfig.local
 
 [color]
 
