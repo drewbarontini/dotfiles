@@ -19,6 +19,7 @@ alias lal='less ~/.dotfiles/bash/aliases'
 alias rc='vim ~/.vimrc'
 alias scratch='vim ~/Dropbox\ \(Personal\)/Notes/notes-scratch.txt'
 alias sharpen='vim ~/Dropbox\ \(Personal\)/Notes/notes-sharpen.txt'
+alias todolist='vim ~/Dropbox\ \(Personal\)/Notes/todos.txt'
 
 ## ----- Git ----- ##
 

@@ -53,3 +53,10 @@ function git-remote-tracking-branch() {
   git checkout -b $1 && git push -u origin $1
 }
 
+## ----- Todo----- ##
+## Adds a text todo to Dropbox `todos.txt` file
+function todo() {
+  echo "- $1" >> ~/Dropbox\ \(Personal\)/Notes/todos.txt
+  echo "Added!"
+}
+
