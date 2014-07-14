@@ -47,3 +47,9 @@ function o() {
   open http://$1
 }
 
+## ----- Git Remote Tracking Branch ----- ##
+## Creates a new branch and pushes that branch to remote
+function git-remote-tracking-branch() {
+  git checkout -b $1 && git push -u origin $1
+}
+
