@@ -54,9 +54,9 @@ function git-remote-tracking-branch() {
 }
 
 ## ----- Todo----- ##
-## Adds a text todo to Dropbox `todos.txt` file
+## Adds a text todo to a text file
 function todo() {
-  echo "- $1" >> ~/Dropbox\ \(Personal\)/Notes/todos.txt
+  echo "- $1" >> "$TODOLIST_PATH_RAW"
   echo "Added!"
 }
 

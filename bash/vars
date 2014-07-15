@@ -15,5 +15,6 @@ GENERALFUNC_PATH='~/.dotfiles/bash/functions/general'
 SCRATCHNOTES_PATH='~/Dropbox\ \(Personal\)/Notes/notes-scratch.txt'
 SHARPENNOTES_PATH='~/Dropbox\ \(Personal\)/Notes/notes-sharpen.txt'
 TODOLIST_PATH='~/Dropbox\ \(Personal\)/Notes/todos.txt'
+TODOLIST_PATH_RAW=~/Dropbox\ \(Personal\)/Notes/todos.txt
 VIMRC_PATH='~/.vimrc'
 
