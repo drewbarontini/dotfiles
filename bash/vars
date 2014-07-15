@@ -1,0 +1,19 @@
+## -------------------------------------
+##   Vars
+## -------------------------------------
+
+## ----- User ----- ##
+
+NAME='Drew Barontini'
+USERNAME='drewbarontini'
+
+## ----- Paths ----- ##
+
+ALIASES_PATH='~/.dotfiles/bash/aliases'
+CODE_PATH='~/Code/'
+GENERALFUNC_PATH='~/.dotfiles/bash/functions/general'
+SCRATCHNOTES_PATH='~/Dropbox\ \(Personal\)/Notes/notes-scratch.txt'
+SHARPENNOTES_PATH='~/Dropbox\ \(Personal\)/Notes/notes-sharpen.txt'
+TODOLIST_PATH='~/Dropbox\ \(Personal\)/Notes/todos.txt'
+VIMRC_PATH='~/.vimrc'
+

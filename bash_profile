@@ -2,6 +2,7 @@
 ##   Imports
 ## -------------------------------------
 
+source ~/.bash/vars
 source ~/.bash/aliases
 source ~/.bash/completions/git.bash
 source ~/.bash/config
