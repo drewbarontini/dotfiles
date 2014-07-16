@@ -9,13 +9,14 @@ USERNAME='drewbarontini'
 
 ## ----- Paths ----- ##
 
-ALIASES_PATH='~/.dotfiles/bash/aliases'
-CODE_PATH='~/Code/'
-GENERALFUNC_PATH='~/.dotfiles/bash/functions/general'
-NOTES_PATH='~/Dropbox\ \(Personal\)/Notes/'
-SCRATCHNOTES_PATH='~/Dropbox\ \(Personal\)/Notes/notes-scratch.txt'
-SHARPENNOTES_PATH='~/Dropbox\ \(Personal\)/Notes/notes-sharpen.txt'
-TODOLIST_PATH='~/Dropbox\ \(Personal\)/Notes/todos.txt'
+ALIASES_PATH="$HOME/.dotfiles/bash/aliases"
+CODE_PATH="$HOME/Code/"
+GENERALFUNC_PATH="$HOME/.dotfiles/bash/functions/general"
+NOTES_PATH="$HOME/Dropbox\ \(Personal\)/Notes/"
+SCRATCHNOTES_PATH="$HOME/Dropbox\ \(Personal\)/Notes/notes-scratch.txt"
+SHARPENNOTES_PATH="$HOME/Dropbox\ \(Personal\)/Notes/notes-sharpen.txt"
+TODOLIST_PATH="$HOME/Dropbox\ \(Personal\)/Notes/todos.txt"
 TODOLIST_PATH_RAW=~/Dropbox\ \(Personal\)/Notes/todos.txt
-VIMRC_PATH='~/.vimrc'
+VIMRC_PATH='$HOME/.vimrc'
+WALLPAPER_PATH="$HOME/Pictures/Wallpapers"
 
