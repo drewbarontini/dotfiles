@@ -56,7 +56,7 @@ function git-remote-tracking-branch() {
 ## ----- Todo----- ##
 ## Adds a text todo to a text file
 function todo() {
-  echo "- $1" >> "$TODOLIST_PATH_RAW"
+  echo "- $*" >> "$TODOLIST_PATH_RAW"
   echo "Added!"
 }
 
