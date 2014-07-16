@@ -101,6 +101,8 @@ alias mis='./bin/middleman s'
 
 ## ----- Miscellaneous ----- ##
 
+alias walls="ls -lF ${colorflag} $WALLPAPER_PATH"
+
 # Stopwatch
 alias timer='echo "Timer started. Stop with Ctrl-D." && date && time cat && date'
 
@@ -157,14 +159,6 @@ alias rev='rbenv version'
 alias reva='rbenv versions'
 
 ## ----- Unix ----- ##
-
-# Via https://github.com/mathiasbynens/dotfiles/blob/master/.aliases
-# Detect which `ls` flavor is in use
-if ls --color > /dev/null 2>&1; then # GNU `ls`
-  colorflag="--color"
-else # OS X `ls`
-  colorflag="-G"
-fi
 
 # Listing
 alias l='ls -lF ${colorflag}'
