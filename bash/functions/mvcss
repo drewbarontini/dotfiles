@@ -108,7 +108,6 @@ function get-mvcss-sass-build() {
   touch build.sass
   echo "Created 'build' directory."
   echo "Getting Foundation files..."
-  curl -s "$MVCSSURL"/foundation/_reset.scss >> build.sass
   curl -s "$MVCSSURL"/foundation/_helpers.sass >> build.sass
   curl -s "$MVCSSURL"/foundation/_config.sass >> build.sass
   curl -s "$MVCSSURL"/foundation/_base.sass >> build.sass
