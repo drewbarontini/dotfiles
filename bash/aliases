@@ -162,7 +162,7 @@ alias reva='rbenv versions'
 
 # Listing
 alias l='ls -lF ${colorflag}'
-alias la='ls -laF ${colorflag}'
+alias la='ls -lAF ${colorflag}'
 alias ld="ls -lF ${colorflag} | grep --color=never '^d'"
 
 alias ..='cd ..'
