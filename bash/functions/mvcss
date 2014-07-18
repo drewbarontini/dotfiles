@@ -2,7 +2,7 @@
 ## Extract external ZIP archive (via John D. Jameson)
 
 function dlz() {
-  wget "$1" -O .tempzip -q
+  curl -s -L -o .tempzip "$1"
   unzip -q .tempzip
   rm .tempzip
 }
@@ -100,3 +100,27 @@ function mvcss-library() {
     fi
   fi
 }
+
+## ----- Get MVCSS Sass Build ----- ##
+## Pulls down and concatenates MVCSS Sass files
+function get-mvcss-sass-build() {
+  MVCSSURL='https://raw.githubusercontent.com/mvcss/mvcss/master'
+  touch build.sass
+  echo "Created 'build' directory."
+  echo "Getting Foundation files..."
+  curl -s "$MVCSSURL"/foundation/_reset.scss >> build.sass
+  curl -s "$MVCSSURL"/foundation/_helpers.sass >> build.sass
+  curl -s "$MVCSSURL"/foundation/_config.sass >> build.sass
+  curl -s "$MVCSSURL"/foundation/_base.sass >> build.sass
+  echo "Getting Component files..."
+  curl -s "$MVCSSURL"/components/_bucket.sass >> build.sass
+  curl -s "$MVCSSURL"/components/_card.sass >> build.sass
+  curl -s "$MVCSSURL"/components/_grid.sass >> build.sass
+  curl -s "$MVCSSURL"/components/_row.sass >> build.sass
+  curl -s "$MVCSSURL"/components/_well.sass >> build.sass
+  echo "Getting Tools file..."
+  curl -s "$MVCSSURL"/foundation/_tools.sass >> build.sass
+  cat build.sass | pbcopy
+  echo "Created 'build.sass', copied to clipboard!"
+}
+
