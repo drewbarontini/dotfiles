@@ -104,7 +104,7 @@ Vim Keyboard Shortcuts
 - `,rn` to rename the current file
 - `,V` Goyo to put file in focus mode (for Markdown)
 
-### Open Files
+#### Open Files
 
 - `,rc` opens the `vimrc` in a new tab
 - `,p` opens up snippets
@@ -112,12 +112,12 @@ Vim Keyboard Shortcuts
 - `,no` opens up Dropbox notes directory
 - `,nc` opens or creates a Dropbox note
 
-### Rails
+#### Rails
 
 - `,bb` runs `bundle install`
 - `,T` runs the current Rspec spec
 
-### Control Key Mappings
+#### Control Key Mappings
 
 - `C-s` saves the the file
 - `C-t` creates a new tab
