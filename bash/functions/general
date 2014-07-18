@@ -44,7 +44,15 @@ function get-process-id() {
 ## ----- Open ----- ##
 ## Alias for 'open' command
 function o() {
-  open http://$1
+  if [ "$1" == 'l' ]
+  then
+    open http://localhost:$2/$3
+  elif [ "$1" == 'm' ]
+  then
+    open http://localhost:4567/$2
+  else
+    open http://$1
+  fi
 }
 
 ## ----- Git Remote Tracking Branch ----- ##
