@@ -74,3 +74,9 @@ function wall() {
   desktop "$WALLPAPER_PATH"/wallpapers-"$1"
 }
 
+## ----- Symlinks ----- ##
+## List symlink files in a specified directory
+function symlinks() {
+  ls -al "$1" | grep .-\>
+}
+

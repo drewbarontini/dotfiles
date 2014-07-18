@@ -163,7 +163,7 @@ alias reva='rbenv versions'
 # Listing
 alias l='ls -1F'
 alias la='ls -A1F'
-alias ld="ls -lF"
+alias ld='ls -lF'
 
 alias ..='cd ..'
 alias magic-numbers="ack -i '(FIXME: Magic number!)'" # `| wc -l` to get the count
