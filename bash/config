@@ -2,6 +2,7 @@
 ##   Config
 ## -------------------------------------
 
+export CLICOLOR=1
 export EDITOR='vim'
 export SHELL='/bin/bash'
 
@@ -13,12 +14,4 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # Autojump
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
-
-# Via https://github.com/mathiasbynens/dotfiles/blob/master/.aliases
-# Detect which `ls` flavor is in use
-if ls --color > /dev/null 2>&1; then # GNU `ls`
-  colorflag="--color"
-else # OS X `ls`
-  colorflag="-G"
-fi
 
