@@ -70,9 +70,5 @@ install tree
 # -> Ye' old text editor
 install vim
 
-# Wget
-# -> Software package for retrieving files
-install wget
-
 # Remove outdated versions from the cellar
 cleanup
