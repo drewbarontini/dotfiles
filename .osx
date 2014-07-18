@@ -5,7 +5,7 @@
 sudo -v
 
 # Menu bar: disable transparency
-defaults write NSGlobalDomain AppleEnableMenuBarTransparency -bool false
+#defaults write NSGlobalDomain AppleEnableMenuBarTransparency -bool false
 
 # Set sidebar icon size to Small
 defaults write NSGlobalDomain NSTableViewDefaultSizeMode -int 1
