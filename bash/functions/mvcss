@@ -123,3 +123,19 @@ function get-mvcss-sass-build() {
   echo "Created 'build.sass', copied to clipboard!"
 }
 
+## ----- Get MVCSS CSS Build ----- ##
+## Pulls down and the MVCSS CSS build and copies to clipboard
+function get-mvcss-css-build() {
+  MVCSSURL='https://raw.githubusercontent.com/mvcss/mvcss/master'
+  if [[ "$1" == 'min' ]]
+  then
+    echo "Copying 'application.min.css' to the clipboard..."
+    curl -s "$MVCSSURL"/_build/css/application.min.css | pbcopy
+    echo "Copied!"
+  else
+    echo "Copying 'application.css' to the clipboard..."
+    curl -s "$MVCSSURL"/_build/css/application.css | pbcopy
+    echo "Copied!"
+  fi
+}
+
