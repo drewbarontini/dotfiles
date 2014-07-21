@@ -26,6 +26,7 @@ cask install hipchat 2> /dev/null
 cask install imageoptim 2> /dev/null
 cask install instacast 2> /dev/null
 cask install jing 2> /dev/null
+cask install keyboard-maestro 2> /dev/null
 cask install mamp 2> /dev/null
 cask install moom 2> /dev/null
 cask install rdio 2> /dev/null
