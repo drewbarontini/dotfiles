@@ -7,6 +7,9 @@ sudo -v
 # Menu bar: disable transparency
 #defaults write NSGlobalDomain AppleEnableMenuBarTransparency -bool false
 
+# Set highlight color to gold
+defaults write NSGlobalDomain AppleHighlightColor -string "0.984300 0.929400 0.451000"
+
 # Set sidebar icon size to Small
 defaults write NSGlobalDomain NSTableViewDefaultSizeMode -int 1
 
