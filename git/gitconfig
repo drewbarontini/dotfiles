@@ -49,4 +49,4 @@
 
 [commit]
 
-  template = ~/.dotfiles/git/commit_template
+  template = ~/.dotfiles/git/template
