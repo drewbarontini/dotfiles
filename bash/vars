@@ -11,6 +11,7 @@ USERNAME='drewbarontini'
 
 ALIASES_PATH="$HOME/.dotfiles/bash/aliases"
 CODE_PATH="$HOME/Code/"
+DOTFILES_PATH="$HOME/.dotfiles"
 GENERALFUNC_PATH="$HOME/.dotfiles/bash/functions/general"
 NOTES_PATH="$HOME/Dropbox\ \(Personal\)/Notes/"
 SCRATCHNOTES_PATH="$HOME/Dropbox\ \(Personal\)/Notes/notes-scratch.txt"

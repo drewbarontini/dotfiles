@@ -15,6 +15,7 @@ alias dl='brew list'
 alias al="vim $ALIASES_PATH"
 alias bfunc="vim $GENERALFUNC_PATH"
 alias code="cd $CODE_PATH"
+alias cd.="cd $DOTFILES_PATH"
 alias lal="less $ALIASES_PATH"
 alias notes="vim $NOTES_PATH"
 alias rc="vim $VIMRC_PATH"
