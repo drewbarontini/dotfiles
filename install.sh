@@ -7,12 +7,12 @@ then
 
   echo "Setting up Bash..."
   ln -s ~/.dotfiles/bash ~/.bash
-  ln -s ~/.dotfiles/bash_profile ~/.bash_profile
+  ln -s ~/.dotfiles/bash/bash_profile ~/.bash_profile
 
   echo "Setting up Git..."
-  ln -s ~/.dotfiles/gitconfig.local ~/.gitconfig.local
-  ln -s ~/.dotfiles/gitconfig ~/.gitconfig
-  ln -s ~/.dotfiles/gitignore ~/.gitignore
+  ln -s ~/.dotfiles/git/gitconfig.local ~/.gitconfig.local
+  ln -s ~/.dotfiles/git/gitconfig ~/.gitconfig
+  ln -s ~/.dotfiles/git/gitignore ~/.gitignore
 
   echo "Setting up Sublime Text..."
   cd ~/Library/Application\ Support/Sublime\ Text\ 3/
@@ -21,8 +21,8 @@ then
 
   echo "Setting up Vim..."
   ln -s ~/.dotfiles/vim ~/.vim
-  ln -s ~/.dotfiles/vimrc ~/.vimrc
-  ln -s ~/.dotfiles/gvimrc ~/.gvimrc
+  ln -s ~/.dotfiles/vim/vimrc ~/.vimrc
+  ln -s ~/.dotfiles/vim/gvimrc ~/.gvimrc
   git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
   echo "Run :BundleInstall in Vim to install plugins"
 

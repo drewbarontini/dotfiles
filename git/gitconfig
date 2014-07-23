@@ -46,3 +46,7 @@
 [push]
 
   default = simple
+
+[commit]
+
+  template = ~/.dotfiles/git/commit_template
