@@ -14,14 +14,14 @@ Once the script runs, you can `rm install.sh`.
 ### OS X Settings
 
 ```bash
-bash .osx
+bash setup/osx
 ```
 
 ### Homebrew
 
 ```bash
 ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
-brew bundle Brewfile
+brew bundle setup/Brewfile
 ```
 
 #### NPM
@@ -44,13 +44,13 @@ gem install fontcustom
 ### Rbenv
 
 ```bash
-bash .rbenv
+bash setup/rbenv
 ```
 
 ### OS X Applications
 
 ```bash
-brew bundle Caskfile
+brew bundle setup/Caskfile
 ```
 
 Applications not in cask:
