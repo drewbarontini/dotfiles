@@ -73,6 +73,7 @@ alias gstp='git stash pop'
 alias gt='git tag'
 alias gui='git update-index --assume-unchanged'
 alias git-author-commits='git shortlog --summary --numbered'
+alias git-config-vars='git config --global -l'
 alias git-standup="git log --since yesterday --author='$USERNAME' --pretty=oneline"
 alias git-today="git log --since=midnight --author='$NAME' --oneline"
 
