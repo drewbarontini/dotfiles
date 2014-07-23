@@ -73,10 +73,10 @@ alias gstl='git stash list'
 alias gstp='git stash pop'
 alias gt='git tag'
 alias gui='git update-index --assume-unchanged'
-alias git-author-commits='git shortlog --summary --numbered'
-alias git-config-vars='git config --global -l'
-alias git-standup="git log --since yesterday --author='$USERNAME' --pretty=oneline"
-alias git-today="git log --since=midnight --author='$NAME' --oneline"
+alias git_author_commits='git shortlog --summary --numbered'
+alias git_config_vars='git config --global -l'
+alias git_standup="git log --since yesterday --author='$USERNAME' --pretty=oneline"
+alias git_today="git log --since=midnight --author='$NAME' --oneline"
 
 # ghi
 alias i='ghi'
@@ -127,7 +127,7 @@ alias mlcco='mvcss-library copy components'
 ## ----- OS X ----- ##
 
 # Clean up LaunchServices to remove duplicates in the "Open With" menu
-alias lscleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder"
+alias ls_cleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder"
 
 ## ----- Rails Environment ----- ##
 
@@ -168,7 +168,7 @@ alias la='ls -A1F'
 alias ld='ls -lF'
 
 alias ..='cd ..'
-alias magic-numbers="ack -i '(FIXME: Magic number!)'" # `| wc -l` to get the count
+alias magic_numbers="ack -i '(FIXME: Magic number!)'" # `| wc -l` to get the count
 alias p='less'
 alias rmd='rm -rf'
 alias rmorig='find . -name *.orig -delete'
