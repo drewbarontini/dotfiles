@@ -76,7 +76,7 @@ function mvcss() {
 }
 
 # MVCSS Library
-function mvcss-library() {
+function mvcss_library() {
   if [ "$1" == 'copy' ]
   then
     echo "$LOADMSG"
@@ -103,7 +103,7 @@ function mvcss-library() {
 
 ## ----- Get MVCSS Sass Build ----- ##
 ## Pulls down and concatenates MVCSS Sass files
-function get-mvcss-sass-build() {
+function get_mvcss_sass_build() {
   MVCSSURL='https://raw.githubusercontent.com/mvcss/mvcss/master'
   touch build.sass
   echo "Created 'build' directory."
@@ -125,7 +125,7 @@ function get-mvcss-sass-build() {
 
 ## ----- Get MVCSS CSS Build ----- ##
 ## Pulls down and the MVCSS CSS build and copies to clipboard
-function get-mvcss-css-build() {
+function get_mvcss_css_build() {
   MVCSSURL='https://raw.githubusercontent.com/mvcss/mvcss/master'
   if [[ "$1" == 'min' ]]
   then

@@ -13,31 +13,31 @@ function server() {
 
 ## ----- Delete Files ----- ##
 ## Deletes files with a pattern
-function delete-files() {
+function delete_files() {
   find . -name $1 -delete
 }
 
 ## ----- Run Shell Script ----- ##
 ## Runs a shell script passed in via curl
-function run-sh() {
+function run_sh() {
   bash <(curl -s $1)
 }
 
 ## ----- Find Alias ----- ##
 ## Greps for a specific alias in aliases
-function find-alias() {
+function find_alias() {
   grep $1 ~/.dotfiles/bash/aliases
 }
 
 ## ----- Homebrew Dependencies ----- ##
 ## Lists out all brew packages and associated dependencies
-function brew-deps() {
+function brew_deps() {
   brew list | while read cask; do echo -n $cask; brew deps $cask | awk '{ printf(" %s ", $0) }'; echo ""; done
 }
 
 ## ----- Get Process ID ----- ##
 ## Returns a process id or set of ids for specified process
-function get-process-id() {
+function get_process_id() {
   ps aux | grep $1 | awk '{print $2}'
 }
 
@@ -57,7 +57,7 @@ function o() {
 
 ## ----- Git Remote Tracking Branch ----- ##
 ## Creates a new branch and pushes that branch to remote
-function git-remote-tracking-branch() {
+function git_remote_tracking_branch() {
   git checkout -b $1 && git push -u origin $1
 }
 
