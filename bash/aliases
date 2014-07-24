@@ -146,14 +146,15 @@ alias pdr='powder restart'
 alias br='./bin/rails'
 
 # Rake
-alias bk='./bin/rake'
-alias bkc='./bin/rake db:create'
-alias bkr='./bin/rake db:reset'
-alias bks='./bin/rake db:seed'
-alias bkt='./bin/rake db:setup'
-alias rkd='rake deploy'
-alias rkds='rake deploy:staging'
-alias rkdp='rake deploy:production'
+alias rk='./bin/rake'
+alias rkdbc='./bin/rake db:create'
+alias rkdbm='./bin/rake db:migrate'
+alias rkdbr='./bin/rake db:reset'
+alias rkdbs='./bin/rake db:seed'
+alias rkdbt='./bin/rake db:setup'
+alias rkdy='rake deploy'
+alias rkdys='rake deploy:staging'
+alias rkdyp='rake deploy:production'
 
 ## ----- Rbenv ----- ##
 
