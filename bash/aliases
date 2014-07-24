@@ -147,6 +147,10 @@ alias br='./bin/rails'
 
 # Rake
 alias bk='./bin/rake'
+alias bkc='./bin/rake db:create'
+alias bkr='./bin/rake db:reset'
+alias bks='./bin/rake db:seed'
+alias bkt='./bin/rake db:setup'
 alias rkd='rake deploy'
 alias rkds='rake deploy:staging'
 alias rkdp='rake deploy:production'
