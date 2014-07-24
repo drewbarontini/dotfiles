@@ -71,7 +71,8 @@ function todo() {
 ## ----- Wallpaper ----- ##
 ## Uses the 'desktop' gem to set a wallpaper everywhere
 function wall() {
-  desktop "$WALLPAPER_PATH"/wallpapers-"$1"
+  category=$(echo $1 | tr 'A-Z' 'a-z')
+  desktop "$WALLPAPER_PATH"/"$1"/wallpapers-"$category"-"$2"
 }
 
 ## ----- Symlinks ----- ##
