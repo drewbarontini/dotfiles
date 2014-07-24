@@ -133,7 +133,6 @@ alias ls_cleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/L
 
 # Bundle
 alias be='bundle exec'
-alias berc='bundle exec rails c'
 alias bi='bundle install'
 alias bib='bundle install --binstubs'
 
@@ -145,6 +144,8 @@ alias pdr='powder restart'
 
 # Rails
 alias br='./bin/rails'
+alias brc='./bin/rails c'
+alias brs='./bin/rails s'
 
 # Rake
 alias rk='./bin/rake'
