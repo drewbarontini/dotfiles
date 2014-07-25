@@ -117,12 +117,12 @@ alias mf='mvcss foundation'
 alias mcf='mvcss copy foundation'
 alias mco='mvcss components'
 alias mcco='mvcss copy components'
-alias ml='mvcss-library'
-alias mlc='mvcss-library copy'
-alias mlf='mvcss-library foundation'
-alias mlcf='mvcss-library copy foundation'
-alias mlco='mvcss-library components'
-alias mlcco='mvcss-library copy components'
+alias ml='mvcss_library'
+alias mlc='mvcss_library copy'
+alias mlf='mvcss_library foundation'
+alias mlcf='mvcss_library copy foundation'
+alias mlco='mvcss_library components'
+alias mlcco='mvcss_library copy components'
 
 ## ----- OS X ----- ##
 
