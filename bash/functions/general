@@ -81,3 +81,9 @@ function symlinks() {
   ls -al "$1" | grep .-\>
 }
 
+## ----- Git Tag ----- ##
+## Simpler method for setting a git tag
+function git_tag() {
+  git tag -a $1 -m "Version $1"
+}
+
