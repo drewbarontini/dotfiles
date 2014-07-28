@@ -26,6 +26,12 @@ function get_process_id() {
   ps aux | grep $1 | awk '{print $2}'
 }
 
+## ----- Git Delete Tag ----- ##
+## Deletes a git tag on remote
+function git_delete_tag() {
+  git push origin :refs/tags/$1
+}
+
 ## ----- Git Remote Tracking Branch ----- ##
 ## Creates a new branch and pushes that branch to remote
 function git_remote_tracking_branch() {
