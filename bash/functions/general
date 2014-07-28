@@ -35,7 +35,7 @@ function git_remote_tracking_branch() {
 ## ----- Git Tag ----- ##
 ## Simpler method for setting a git tag
 function git_tag() {
-  git tag -a $1 -m "Version $1"
+  git tag -a "v$1" -m "Version $1"
 }
 
 ## ----- Server ----- ##
