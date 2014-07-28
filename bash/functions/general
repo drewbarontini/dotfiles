@@ -10,30 +10,45 @@ function brew_deps() {
 
 ## ----- Delete Files ----- ##
 ## Deletes files with a pattern
+##
+## $1 - the file(s)
+##
 function delete_files() {
   find . -name $1 -delete
 }
 
 ## ----- Find Alias ----- ##
 ## Greps for a specific alias in aliases
+##
+## $1 - the alias
+##
 function find_alias() {
   grep $1 ~/.dotfiles/bash/aliases
 }
 
 ## ----- Get Process ID ----- ##
 ## Returns a process id or set of ids for specified process
+##
+## $1 - the process id
+##
 function get_process_id() {
   ps aux | grep $1 | awk '{print $2}'
 }
 
 ## ----- Git Delete Tag ----- ##
 ## Deletes a git tag on remote
+##
+## $1 - the tag name
+##
 function git_delete_tag() {
   git push origin :refs/tags/$1
 }
 
 ## ----- Git Remote Tracking Branch ----- ##
 ## Creates a new branch and pushes that branch to remote
+##
+## $1 - the branch name
+##
 function git_remote_tracking_branch() {
   git checkout -b $1 && git push -u origin $1
 }
@@ -74,7 +89,9 @@ function git_tag() {
 
 ## ----- Server ----- ##
 ## Simple HTTP server from a directory, optionally specifying a port
-
+##
+## $1 - the port (optional)
+##
 function server() {
   local port="${1:-8000}"
   open "http://localhost:${port}/"
@@ -83,6 +100,10 @@ function server() {
 
 ## ----- Open ----- ##
 ## Alias for 'open' command
+##
+## $1 - 'l' (localhost) or 'm' (Middleman)
+## $2 - the URL (without 'http://' prefix)
+##
 function o() {
   if [ "$1" == 'l' ]
   then
@@ -97,18 +118,27 @@ function o() {
 
 ## ----- Run Shell Script ----- ##
 ## Runs a shell script passed in via curl
+##
+## $1 - the shell script
+##
 function run_sh() {
   bash <(curl -s $1)
 }
 
 ## ----- Symlinks ----- ##
 ## List symlink files in a specified directory
+##
+## $1 - the directory
+##
 function symlinks() {
   ls -al "$1" | grep .-\>
 }
 
 ## ----- Todo----- ##
 ## Adds a text todo to a text file
+##
+## $1 - the todo
+##
 function todo() {
   echo "- $*" >> "$TODOLIST_PATH_RAW"
   echo "Added!"
@@ -116,6 +146,10 @@ function todo() {
 
 ## ----- Wallpaper ----- ##
 ## Uses the 'desktop' gem to set a wallpaper everywhere
+##
+## $1 - the category ('art', 'space', etc.)
+## $2 - the wallpaper
+##
 function wall() {
   category=$(echo $1 | tr 'A-Z' 'a-z')
   desktop "$WALLPAPER_PATH"/"$1"/wallpapers-"$category"-"$2"
