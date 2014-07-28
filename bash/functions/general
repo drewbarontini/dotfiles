@@ -4,6 +4,9 @@
 
 ## ----- Homebrew Dependencies ----- ##
 ## Lists out all brew packages and associated dependencies
+##
+## Usage: `brew_deps`
+##
 function brew_deps() {
   brew list | while read cask; do echo -n $cask; brew deps $cask | awk '{ printf(" %s ", $0) }'; echo ""; done
 }
@@ -12,6 +15,8 @@ function brew_deps() {
 ## Deletes files with a pattern
 ##
 ## $1 - the file(s)
+##
+## Usage: `delete_files .DS_Store`
 ##
 function delete_files() {
   find . -name $1 -delete
@@ -22,6 +27,8 @@ function delete_files() {
 ##
 ## $1 - the alias
 ##
+## Usage: `find_alias mv`
+##
 function find_alias() {
   grep $1 ~/.dotfiles/bash/aliases
 }
@@ -30,6 +37,8 @@ function find_alias() {
 ## Returns a process id or set of ids for specified process
 ##
 ## $1 - the process id
+##
+## Usage: `get_process_id ruby`
 ##
 function get_process_id() {
   ps aux | grep $1 | awk '{print $2}'
@@ -40,7 +49,9 @@ function get_process_id() {
 ##
 ## $1 - the tag name
 ##
-function git_delete_tag() {
+## Usage: `git_delete_remote_tag v1.2.0`
+##
+function git_delete_remote_tag() {
   git push origin :refs/tags/$1
 }
 
@@ -48,6 +59,8 @@ function git_delete_tag() {
 ## Creates a new branch and pushes that branch to remote
 ##
 ## $1 - the branch name
+##
+## Usage: `git_remote_tracking_branch fix_sign_up_form_styles`
 ##
 function git_remote_tracking_branch() {
   git checkout -b $1 && git push -u origin $1
@@ -57,6 +70,8 @@ function git_remote_tracking_branch() {
 ## Simpler method for setting a git tag (assumes prefixed 'v')
 ##
 ## $1 - 'major', 'minor', 'patch'
+##
+## Usage: `git_tag major`
 ##
 function git_tag() {
   tag=$(git describe --abbrev=0 --tags)
@@ -92,6 +107,8 @@ function git_tag() {
 ##
 ## $1 - the port (optional)
 ##
+## Usage: `server`
+##
 function server() {
   local port="${1:-8000}"
   open "http://localhost:${port}/"
@@ -103,6 +120,8 @@ function server() {
 ##
 ## $1 - 'l' (localhost) or 'm' (Middleman)
 ## $2 - the URL (without 'http://' prefix)
+##
+## Usage: `o google.com`, `o l 3000`, `o m`
 ##
 function o() {
   if [ "$1" == 'l' ]
@@ -121,6 +140,8 @@ function o() {
 ##
 ## $1 - the shell script
 ##
+## Usage: `run_sh http://www.example.com/install.sh`
+##
 function run_sh() {
   bash <(curl -s $1)
 }
@@ -130,6 +151,8 @@ function run_sh() {
 ##
 ## $1 - the directory
 ##
+## Usage: `symlinks ~`
+##
 function symlinks() {
   ls -al "$1" | grep .-\>
 }
@@ -138,6 +161,8 @@ function symlinks() {
 ## Adds a text todo to a text file
 ##
 ## $1 - the todo
+##
+## Usage: `todo Do this thing!`
 ##
 function todo() {
   echo "- $*" >> "$TODOLIST_PATH_RAW"
@@ -149,6 +174,8 @@ function todo() {
 ##
 ## $1 - the category ('art', 'space', etc.)
 ## $2 - the wallpaper
+##
+## Usage: `wall space 01.jpg`
 ##
 function wall() {
   category=$(echo $1 | tr 'A-Z' 'a-z')
