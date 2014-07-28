@@ -73,7 +73,8 @@ function git_remote_tracking_branch() {
 }
 
 ## ----- Git Tag ----- ##
-## Simpler method for setting a git tag (assumes prefixed 'v')
+## Automatically set a git tag based on Semantic Versioning keyword
+## Note: This assumes you prefix your git tags with 'v' (e.g 'v1.2.0')
 ##
 ## $1 - 'major', 'minor', 'patch'
 ##
