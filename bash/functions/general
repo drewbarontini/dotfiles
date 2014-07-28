@@ -39,9 +39,37 @@ function git_remote_tracking_branch() {
 }
 
 ## ----- Git Tag ----- ##
-## Simpler method for setting a git tag
+## Simpler method for setting a git tag (assumes prefixed 'v')
+##
+## $1 - 'major', 'minor', 'patch'
+##
 function git_tag() {
-  git tag -a "v$1" -m "Version $1"
+  tag=$(git describe --abbrev=0 --tags)
+  major=$(echo $tag | cut -d '.' -f1 | grep -o "[0-9]")
+  major=$(echo $major | tr -d ' ')
+  minor=$(echo $tag | cut -d '.' -f2)
+  patch=$(echo $tag | cut -d '.' -f3)
+
+  if [[ "$1" == 'major' ]]
+  then
+    nmajor=$(($major+1))
+    version="$nmajor.0.0"
+  fi
+
+  if [[ "$1" == 'minor' ]]
+  then
+    nminor=$(($minor+1))
+    version="$major.$nminor.0"
+  fi
+
+  if [[ "$1" == 'patch' ]]
+  then
+    npatch=$(($patch+1))
+    version="$major.$minor.$npatch"
+  fi
+
+  git tag -a "v$version" -m "Version $version"
+  echo "v$version created!"
 }
 
 ## ----- Server ----- ##
