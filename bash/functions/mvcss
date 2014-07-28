@@ -1,5 +1,10 @@
 ## ----- Download ZIP ----- ##
 ## Extract external ZIP archive (via John D. Jameson)
+##
+## $1 - the ZIP URL
+##
+## Usage: `dlz http://www.example.com/example.zip`
+##
 
 function dlz() {
   curl -s -L -o .tempzip "$1"
@@ -9,6 +14,11 @@ function dlz() {
 
 ## ----- Get Curl Response ----- ##
 ## Get an HTTP status code from a curl
+##
+## $1 - the URL to the file
+##
+## Usage: `get_curl_response http://www.example.com/file.html`
+##
 
 function get_curl_response() {
   curl -s -I $1 | grep HTTP/1.1
@@ -16,6 +26,9 @@ function get_curl_response() {
 
 ## ----- MVCSS ----- ##
 ## Pull down the MVCSS files/project from the GitHub repo
+##
+## Usage: `mvcss all`, `mvcss components grid`, `mvcss copy components grid`
+##
 
 # Variables
 LOADMSG='Getting that thang...'
@@ -76,6 +89,10 @@ function mvcss() {
 }
 
 # MVCSS Library
+## Pull down the MVCSS Library files from the GitHub repo
+##
+## Usage: `mvcss_library components list`, `mvcss_library copy components list`
+##
 function mvcss_library() {
   if [ "$1" == 'copy' ]
   then
@@ -103,6 +120,9 @@ function mvcss_library() {
 
 ## ----- Get MVCSS Sass Build ----- ##
 ## Pulls down and concatenates MVCSS Sass files
+##
+## Usage: `get_mvcss_sass_build`
+##
 function get_mvcss_sass_build() {
   MVCSSURL='https://raw.githubusercontent.com/mvcss/mvcss/master'
   touch build.sass
@@ -125,6 +145,9 @@ function get_mvcss_sass_build() {
 
 ## ----- Get MVCSS CSS Build ----- ##
 ## Pulls down and the MVCSS CSS build and copies to clipboard
+##
+## Usage: `get_mvcss_css_build`
+##
 function get_mvcss_css_build() {
   MVCSSURL='https://raw.githubusercontent.com/mvcss/mvcss/master'
   if [[ "$1" == 'min' ]]
