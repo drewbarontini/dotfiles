@@ -2,13 +2,10 @@
 ##   Functions
 ## -------------------------------------
 
-## ----- Server ----- ##
-## Simple HTTP server from a directory, optionally specifying a port
-
-function server() {
-  local port="${1:-8000}"
-  open "http://localhost:${port}/"
-  python -m SimpleHTTPServer "$port"
+## ----- Homebrew Dependencies ----- ##
+## Lists out all brew packages and associated dependencies
+function brew_deps() {
+  brew list | while read cask; do echo -n $cask; brew deps $cask | awk '{ printf(" %s ", $0) }'; echo ""; done
 }
 
 ## ----- Delete Files ----- ##
@@ -17,28 +14,37 @@ function delete_files() {
   find . -name $1 -delete
 }
 
-## ----- Run Shell Script ----- ##
-## Runs a shell script passed in via curl
-function run_sh() {
-  bash <(curl -s $1)
-}
-
 ## ----- Find Alias ----- ##
 ## Greps for a specific alias in aliases
 function find_alias() {
   grep $1 ~/.dotfiles/bash/aliases
 }
 
-## ----- Homebrew Dependencies ----- ##
-## Lists out all brew packages and associated dependencies
-function brew_deps() {
-  brew list | while read cask; do echo -n $cask; brew deps $cask | awk '{ printf(" %s ", $0) }'; echo ""; done
-}
-
 ## ----- Get Process ID ----- ##
 ## Returns a process id or set of ids for specified process
 function get_process_id() {
   ps aux | grep $1 | awk '{print $2}'
+}
+
+## ----- Git Remote Tracking Branch ----- ##
+## Creates a new branch and pushes that branch to remote
+function git_remote_tracking_branch() {
+  git checkout -b $1 && git push -u origin $1
+}
+
+## ----- Git Tag ----- ##
+## Simpler method for setting a git tag
+function git_tag() {
+  git tag -a $1 -m "Version $1"
+}
+
+## ----- Server ----- ##
+## Simple HTTP server from a directory, optionally specifying a port
+
+function server() {
+  local port="${1:-8000}"
+  open "http://localhost:${port}/"
+  python -m SimpleHTTPServer "$port"
 }
 
 ## ----- Open ----- ##
@@ -55,10 +61,16 @@ function o() {
   fi
 }
 
-## ----- Git Remote Tracking Branch ----- ##
-## Creates a new branch and pushes that branch to remote
-function git_remote_tracking_branch() {
-  git checkout -b $1 && git push -u origin $1
+## ----- Run Shell Script ----- ##
+## Runs a shell script passed in via curl
+function run_sh() {
+  bash <(curl -s $1)
+}
+
+## ----- Symlinks ----- ##
+## List symlink files in a specified directory
+function symlinks() {
+  ls -al "$1" | grep .-\>
 }
 
 ## ----- Todo----- ##
@@ -73,17 +85,5 @@ function todo() {
 function wall() {
   category=$(echo $1 | tr 'A-Z' 'a-z')
   desktop "$WALLPAPER_PATH"/"$1"/wallpapers-"$category"-"$2"
-}
-
-## ----- Symlinks ----- ##
-## List symlink files in a specified directory
-function symlinks() {
-  ls -al "$1" | grep .-\>
-}
-
-## ----- Git Tag ----- ##
-## Simpler method for setting a git tag
-function git_tag() {
-  git tag -a $1 -m "Version $1"
 }
 
