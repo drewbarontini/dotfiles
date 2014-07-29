@@ -35,7 +35,7 @@ function git_remote_tracking_branch() {
 ##
 
 function git_tag() {
-  local tag=$(git describe --abbrev=0 --tags)
+  local tag=$(git describe --abbrev=0 --tags 2>/dev/null)
   local prefix=$(echo $tag | grep -o --color=never "[A-z]\+")
   local major=$(echo $tag | cut -d '.' -f1 | grep -o --color=never "[0-9]")
   local minor=$(echo $tag | cut -d '.' -f2)
@@ -61,6 +61,8 @@ function git_tag() {
       echo
       echo "Example:"
       echo "  git_tag major"
+      echo
+      echo "If this is your first tag, use 'git tag' to set up your first one."
   esac
 
   if [[ "$version" ]]
