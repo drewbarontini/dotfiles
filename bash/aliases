@@ -175,6 +175,7 @@ alias la='ls -A1F'
 alias ld='ls -lF'
 
 # Miscellaneous
+alias c='clear'
 alias ..='cd ..'
 alias p='less'
 alias sbp='source ~/.bash_profile'
