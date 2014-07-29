@@ -51,9 +51,9 @@ function mvcss() {
     echo "$LOADMSG"
     if [ "$3" == 'reset' ]
     then
-      RESPONSE=$(get_curl_response "$MVCSSURL"/"$2"/_"$3".scss)
+      local RESPONSE=$(get_curl_response "$MVCSSURL"/"$2"/_"$3".scss)
     else
-      RESPONSE=$(get_curl_response "$MVCSSURL"/"$2"/_"$3".sass)
+      local RESPONSE=$(get_curl_response "$MVCSSURL"/"$2"/_"$3".sass)
     fi
     if [[ $RESPONSE =~ .*404.*  ]]
     then
@@ -72,9 +72,9 @@ function mvcss() {
     echo "$LOADMSG"
     if [ "$2" == 'reset' ]
     then
-      RESPONSE=$(get_curl_response "$MVCSSURL"/"$1"/_"$2".scss)
+      local RESPONSE=$(get_curl_response "$MVCSSURL"/"$1"/_"$2".scss)
     else
-      RESPONSE=$(get_curl_response "$MVCSSURL"/"$1"/_"$2".sass)
+      local RESPONSE=$(get_curl_response "$MVCSSURL"/"$1"/_"$2".sass)
     fi
     if [[ $RESPONSE =~ .*404.*  ]]
     then
@@ -101,7 +101,7 @@ function mvcss_library() {
   if [ "$1" == 'copy' ]
   then
     echo "$LOADMSG"
-    RESPONSE=$(get_curl_response "$MVCSSLIBURL"/"$2"/_"$3".sass)
+    local RESPONSE=$(get_curl_response "$MVCSSLIBURL"/"$2"/_"$3".sass)
     if [[ $RESPONSE =~ .*404.*  ]]
     then
       echo "Sorry, $2/$3 not found."
@@ -111,7 +111,7 @@ function mvcss_library() {
     fi
   else
     echo "$LOADMSG"
-    RESPONSE=$(get_curl_response "$MVCSSLIBURL"/"$1"/_"$2".sass)
+    local RESPONSE=$(get_curl_response "$MVCSSLIBURL"/"$1"/_"$2".sass)
     if [[ $RESPONSE =~ .*404.*  ]]
     then
       echo "Sorry, $1/$2 not found."
@@ -128,7 +128,7 @@ function mvcss_library() {
 ## Usage: `get_mvcss_sass_build`
 ##
 function get_mvcss_sass_build() {
-  MVCSSURL='https://raw.githubusercontent.com/mvcss/mvcss/master'
+  local MVCSSURL='https://raw.githubusercontent.com/mvcss/mvcss/master'
   touch build.sass
   echo "Created 'build' directory."
   echo "Getting Foundation files..."
@@ -153,7 +153,7 @@ function get_mvcss_sass_build() {
 ## Usage: `get_mvcss_css_build`
 ##
 function get_mvcss_css_build() {
-  MVCSSURL='https://raw.githubusercontent.com/mvcss/mvcss/master'
+  local MVCSSURL='https://raw.githubusercontent.com/mvcss/mvcss/master'
   if [[ "$1" == 'min' ]]
   then
     echo "Copying 'application.min.css' to the clipboard..."

@@ -130,7 +130,7 @@ function todo() {
 ##
 
 function wall() {
-  category=$(echo $1 | tr 'A-Z' 'a-z')
+  local category=$(echo $1 | tr 'A-Z' 'a-z')
   desktop "$WALLPAPER_PATH"/"$1"/wallpapers-"$category"-"$2"
 }
 
