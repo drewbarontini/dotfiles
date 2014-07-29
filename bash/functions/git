@@ -1,0 +1,66 @@
+## -------------------------------------
+##   Functions - Git
+## -------------------------------------
+
+## ----- Git Delete Tag ----- ##
+## Deletes a git tag on remote
+##
+## $1 - the tag name
+##
+## Usage: `git_delete_remote_tag v1.2.0`
+##
+
+function git_delete_remote_tag() {
+  git push origin :refs/tags/$1
+}
+
+## ----- Git Remote Tracking Branch ----- ##
+## Creates a new branch and pushes that branch to remote
+##
+## $1 - the branch name
+##
+## Usage: `git_remote_tracking_branch fix_sign_up_form_styles`
+##
+
+function git_remote_tracking_branch() {
+  git checkout -b $1 && git push -u origin $1
+}
+
+## ----- Git Tag ----- ##
+## Automatically set a git tag based on Semantic Versioning keyword
+## Note: This assumes you prefix your git tags with 'v' (e.g 'v1.2.0')
+##
+## $1 - 'major', 'minor', 'patch'
+##
+## Usage: `git_tag major`
+##
+
+function git_tag() {
+  tag=$(git describe --abbrev=0 --tags)
+  major=$(echo $tag | cut -d '.' -f1 | grep -o "[0-9]")
+  major=$(echo $major | tr -d ' ')
+  minor=$(echo $tag | cut -d '.' -f2)
+  patch=$(echo $tag | cut -d '.' -f3)
+
+  if [[ "$1" == 'major' ]]
+  then
+    nmajor=$(($major+1))
+    version="$nmajor.0.0"
+  fi
+
+  if [[ "$1" == 'minor' ]]
+  then
+    nminor=$(($minor+1))
+    version="$major.$nminor.0"
+  fi
+
+  if [[ "$1" == 'patch' ]]
+  then
+    npatch=$(($patch+1))
+    version="$major.$minor.$npatch"
+  fi
+
+  git tag -a "v$version" -m "Version $version"
+  echo "v$version created!"
+}
+

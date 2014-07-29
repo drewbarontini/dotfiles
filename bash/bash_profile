@@ -7,6 +7,7 @@ source ~/.bash/config
 source ~/.bash/aliases
 source ~/.bash/completions/git.bash
 source ~/.bash/functions/general
+source ~/.bash/functions/git
 source ~/.bash/functions/mvcss
 source ~/.bash/prompt
 
