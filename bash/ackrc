@@ -1,0 +1,9 @@
+# Filetypes
+--type-add=html=.haml
+--type-add=ruby=.haml
+--type-set=coffee=.coffee
+
+# Ignores
+--ignore-dir=.bundle
+--ignore-dir=log
+--ignore-dir=tmp
