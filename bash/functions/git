@@ -28,7 +28,6 @@ function git_remote_tracking_branch() {
 
 ## ----- Tag ----- ##
 ## Automatically set a git tag based on Semantic Versioning keyword
-## Note: This assumes you prefix your git tags with 'v' (e.g 'v1.2.0')
 ##
 ## $1 - 'major', 'minor', 'patch'
 ##
@@ -36,31 +35,37 @@ function git_remote_tracking_branch() {
 ##
 
 function git_tag() {
-  tag=$(git describe --abbrev=0 --tags)
-  major=$(echo $tag | cut -d '.' -f1 | grep -o "[0-9]")
-  major=$(echo $major | tr -d ' ')
-  minor=$(echo $tag | cut -d '.' -f2)
-  patch=$(echo $tag | cut -d '.' -f3)
+  local tag=$(git describe --abbrev=0 --tags)
+  local prefix=$(echo $tag | grep -o --color=never "[A-z]\+")
+  local major=$(($(echo $tag | cut -d '.' -f1)))
+  local minor=$(echo $tag | cut -d '.' -f2)
+  local patch=$(echo $tag | cut -d '.' -f3)
 
-  if [[ "$1" == 'major' ]]
+  case "$1" in
+    'major')
+      local nmajor=$(($major+1))
+      local version="$nmajor.0.0"
+      ;;
+    'minor')
+      local nminor=$(($minor+1))
+      local version="$major.$nminor.0"
+      ;;
+    'patch')
+      local npatch=$(($patch+1))
+      local version="$major.$minor.$npatch"
+      ;;
+    *)
+      echo "Automatically set a git tag based on Semantic Versioning keyword"
+      echo
+      echo "Usage: git_tag <major|minor|patch>"
+      echo
+      echo "Example:"
+      echo "  git_tag major"
+  esac
+
+  if [[ "$version" ]]
   then
-    nmajor=$(($major+1))
-    version="$nmajor.0.0"
+    git tag -a "$prefix$version" -m "Version $version"
+    echo "$prefix$version created!"
   fi
-
-  if [[ "$1" == 'minor' ]]
-  then
-    nminor=$(($minor+1))
-    version="$major.$nminor.0"
-  fi
-
-  if [[ "$1" == 'patch' ]]
-  then
-    npatch=$(($patch+1))
-    version="$major.$minor.$npatch"
-  fi
-
-  git tag -a "v$version" -m "Version $version"
-  echo "v$version created!"
 }
-
