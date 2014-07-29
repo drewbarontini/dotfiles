@@ -2,7 +2,7 @@
 ##   Functions - Git
 ## -------------------------------------
 
-## ----- Git Delete Tag ----- ##
+## ----- Delete Remote Tag ----- ##
 ## Deletes a git tag on remote
 ##
 ## $1 - the tag name
@@ -14,7 +14,7 @@ function git_delete_remote_tag() {
   git push origin :refs/tags/$1
 }
 
-## ----- Git Remote Tracking Branch ----- ##
+## ----- Remote Tracking Branch ----- ##
 ## Creates a new branch and pushes that branch to remote
 ##
 ## $1 - the branch name
@@ -26,7 +26,7 @@ function git_remote_tracking_branch() {
   git checkout -b $1 && git push -u origin $1
 }
 
-## ----- Git Tag ----- ##
+## ----- Tag ----- ##
 ## Automatically set a git tag based on Semantic Versioning keyword
 ## Note: This assumes you prefix your git tags with 'v' (e.g 'v1.2.0')
 ##
