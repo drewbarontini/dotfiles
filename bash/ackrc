@@ -1,3 +1,6 @@
+# Pager
+--pager=less -FRSX
+
 # Filetypes
 --type-add=html=.haml
 --type-add=ruby=.haml
