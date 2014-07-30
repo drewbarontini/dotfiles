@@ -3,7 +3,7 @@ snippet coh
 	// *************************************
 	//
 	//   ${1:Comment}
-	//   -> ${2:Description}
+	//   -> ${0:Description}
 	//
 	// *************************************
 # Heading Comment (with template)
@@ -17,78 +17,78 @@ snippet coht
 	//   Template (Haml)
 	// -------------------------------------
 	//
-	// ${3:.element[.element--modifier](.is-state)}
+	// ${0:.element[.element--modifier](.is-state)}
 	//
 	// *************************************
 # Long Comment
 snippet col
 	// -------------------------------------
-	//   ${1:Comment}
+	//   ${0:Comment}
 	// -------------------------------------
 # Short Comment
 snippet cos
-	// ----- ${1:Comment} ----- //
+	// ----- ${0:Comment} ----- //
 # Comment Description
 snippet cosd
 	// -> ${1:Description}
 	//
-	// ${2:...}
+	// ${0:...}
 	//
 # TODO (FIXME, NOTE)
 snippet todo
-	// ${1:TODO|FIXME|NOTE}: $2
+	// ${1:TODO|FIXME|NOTE}: ${0}
 # Extend
 snippet ex
-	@extend ${1}
+	@extend ${0}
 # Mixin
 snippet +
-	+${1:mixin-name}(${2:arguments})
+	+${1:mixin-name}(${0:arguments})
 # Keyframe Animation
 snippet key
-	@-webkit-keyframes ${1:animationName}
+	@-webkit-keyframes ${0:animationName}
 		${2://...}
 
-	@-moz-keyframes $1
+	@-moz-keyframes $0
 
-	@keyframes $1
+	@keyframes $0
 # Animation
 snippet ani
-	-webkit-animation: ${1:}
-	animation: $1
+	-webkit-animation: ${0:}
+	animation: $0
 # Respond To
 snippet rt
-	+respond-to(${1})
-		${2}
+	+respond-to(${0})
+		${0}
 # Em
 snippet em
-	em(${1}px)
+	em(${0}px)
 # Lighten
 snippet ltn
-	lighten(${1}, ${2}%)
+	lighten(${1}, ${0}%)
 # Darken
 snippet dkn
-	darken(${1}, ${2}%)
+	darken(${1}, ${0}%)
 # Variable
 snippet var
-	$${1}: ${2}
+	$${1}: ${0}
 # Import
 snippet imp
-	@import "${1}"
+	@import "${0}"
 # For
 snippet for
 	@for $i from 1 through ${1}
-		${2}
+		${0}
 # Each
 snippet each
 	@each ${1} in ${2}
-		${3}
+		${0}
 # If
 snippet if
 	@if ${1}
-		${2}
+		${0}
 # If/Else
 snippet ife
 	@if ${1}
 		${2}
 	@else
-		${3}
+		${0}
