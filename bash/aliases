@@ -152,6 +152,7 @@ alias brs='./bin/rails s'
 # Rake
 alias rk='./bin/rake'
 alias rkdbc='./bin/rake db:create'
+alias rkdbd='./bin/rake db:drop'
 alias rkdbm='./bin/rake db:migrate'
 alias rkdbr='./bin/rake db:reset'
 alias rkdbs='./bin/rake db:seed'
