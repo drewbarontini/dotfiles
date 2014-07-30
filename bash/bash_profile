@@ -15,5 +15,5 @@ source ~/.bash/prompt
 ##   rbenv
 ## -------------------------------------
 
-export PATH="$HOME/.rbenv/bin:$PATH"
+export PATH="$HOME/.rbenv/bin:$PATH:/Applications/Postgres.app/Contents/Versions/9.3/bin"
 eval "$(rbenv init -)"
