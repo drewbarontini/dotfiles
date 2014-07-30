@@ -34,27 +34,6 @@ snippet cosd
 	//
 	// ${0:...}
 	//
-# TODO (FIXME, NOTE)
-snippet todo
-	// ${1:TODO|FIXME|NOTE}: ${0}
-# Extend
-snippet ex
-	@extend ${0}
-# Mixin
-snippet +
-	+${1:mixin-name}(${0:arguments})
-# Keyframe Animation
-snippet key
-	@-webkit-keyframes ${0:animationName}
-		${2://...}
-
-	@-moz-keyframes $0
-
-	@keyframes $0
-# Animation
-snippet ani
-	-webkit-animation: ${0:}
-	animation: $0
 # Respond To
 snippet rt
 	+respond-to(${0})
@@ -62,33 +41,12 @@ snippet rt
 # Em
 snippet em
 	em(${0}px)
-# Lighten
-snippet ltn
-	lighten(${1}, ${0}%)
-# Darken
-snippet dkn
-	darken(${1}, ${0}%)
-# Variable
-snippet var
-	$${1}: ${0}
-# Import
-snippet imp
-	@import "${0}"
-# For
-snippet for
-	@for $i from 1 through ${1}
-		${0}
-# Each
-snippet each
-	@each ${1} in ${2}
-		${0}
-# If
-snippet if
-	@if ${1}
-		${0}
-# If/Else
-snippet ife
-	@if ${1}
-		${2}
-	@else
-		${0}
+# Base Variable
+snippet bvar
+	$b-${0}
+# Base Space Variable
+snippet bsp
+	$b-${0:space}
+# Color Variable
+snippet cvar
+	$c-${0}
