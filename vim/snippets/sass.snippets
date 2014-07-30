@@ -74,3 +74,21 @@ snippet var
 # Import
 snippet imp
 	@import "${1}"
+# For
+snippet for
+	@for $i from 1 through ${1}
+		${2}
+# Each
+snippet each
+	@each ${1} in ${2}
+		${3}
+# If
+snippet if
+	@if ${1}
+		${2}
+# If/Else
+snippet ife
+	@if ${1}
+		${2}
+	@else
+		${3}
