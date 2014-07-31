@@ -117,6 +117,10 @@ Vim Keyboard Shortcuts
 - `,bb` runs `bundle install`
 - `,t` runs the current Rspec spec
 
+#### Apps
+
+- `,m` Opens current file in Marked 2.app
+
 #### Control Key Mappings
 
 - `C-s` saves the the file

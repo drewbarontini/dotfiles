@@ -273,6 +273,10 @@ nnoremap <leader>V :Goyo<cr>
 map <leader>bb :!bundle install<cr>
 map <leader>t :!bundle exec rspec %<cr>
 
+" ----- Marked ----- "
+
+nmap <leader>m :!open -a Marked\ 2.app "%"<cr>
+
 " ----- Multi-purpose Tab Key ----- "
 " Indent if we're at the beginning of a line. Else, do completion.
 
