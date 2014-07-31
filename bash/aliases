@@ -79,6 +79,7 @@ alias gui='git update-index --assume-unchanged'
 alias git_author_commits='git shortlog --summary --numbered'
 alias git_config_vars='git config --global -l'
 alias git_current_tag='git describe --abbrev=0 --tags'
+alias git_push_deploy='git pull --rebase && git push && rake deploy'
 alias git_standup="git log --since yesterday --author='$USERNAME' --pretty=oneline"
 alias git_today="git log --since=midnight --author='$NAME' --oneline"
 
