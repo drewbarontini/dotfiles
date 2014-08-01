@@ -4,6 +4,10 @@ snippet todo
 # Extend
 snippet ex
 	@extend ${0}
+# Extend Icon
+snippet exi
+	@extend %icn
+	@extend %icn--${0}
 # Mixin
 snippet +
 	+${1:mixin-name}(${0:arguments})
@@ -48,4 +52,25 @@ snippet ife
 	@if ${1}
 		${2}
 	@else
+		${0}
+# After
+snippet af
+	&::after
+		${0}
+# Before
+snippet be
+	&::before
+		${0}
+# First Child
+snippet fc
+	&:first-child
+		${0}
+# Last Child
+snippet lc
+	&:last-child
+		${0}
+# Hover/Focus
+snippet hf
+	&:hover,
+	&:focus
 		${0}
