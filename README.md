@@ -21,7 +21,7 @@ bash setup/osx
 
 ```bash
 ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
-brew bundle setup/Brewfile
+brew bundle setup/brew
 ```
 
 #### NPM
@@ -50,7 +50,7 @@ bash setup/rbenv
 ### OS X Applications
 
 ```bash
-brew bundle setup/Caskfile
+brew bundle setup/cask
 ```
 
 Applications not in cask:
