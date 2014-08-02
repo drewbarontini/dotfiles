@@ -1,0 +1,36 @@
+snippet =lt "Link To"
+= link_to '${1:text}', '${0:#}'
+endsnippet
+
+snippet =it "Image Tag"
+= image_tag '${1:image}', alt: '${0:text}'
+endsnippet
+
+snippet =rp "Render Partial"
+= render :partial => '${0:partial}'
+endsnippet
+
+snippet =rpl "Render Partial with Locals"
+= render :partial => '${0:partial}', :locals => {}
+endsnippet
+
+snippet =rpc "Render Partial with Collection"
+= render :partial => '${1:partial}', :collection => @$1
+endsnippet
+
+snippet if "If Statement"
+- if ${1:condition}
+	${0}
+endsnippet
+
+snippet ife "If/Else Statement"
+- if ${1:condition}
+	${2}
+- else
+	${0}
+endsnippet
+
+snippet ul "Unordered List"
+%ul
+	%li ${0:item}
+endsnippet

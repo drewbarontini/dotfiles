@@ -1,0 +1,96 @@
+snippet todo "TODO/FIXME/NOTE"
+// ${1:TODO|FIXME|NOTE}: ${0}
+endsnippet
+
+snippet ex "Extend"
+@extend ${0}
+endsnippet
+
+snippet exi "Extend Icon"
+@extend %icn
+@extend %icn--${0}
+endsnippet
+
+snippet + "Mixin"
++${1:mixin-name}(${0:arguments})
+endsnippet
+
+snippet key "Keyframe Animation"
+@-webkit-keyframes ${1:animationName}
+	${2://...}
+
+@-moz-keyframes $1
+	$2
+
+@keyframes $1
+	$2
+endsnippet
+
+snippet ani "Animation"
+-webkit-animation: ${0:}
+animation: $0
+endsnippet
+
+snippet ltn "Lighten Function"
+lighten(${1}, ${0}%)
+endsnippet
+
+snippet dkn "Darken Function"
+darken(${1}, ${0}%)
+endsnippet
+
+snippet var "Variable Definition"
+$${1}: ${0}
+endsnippet
+
+snippet imp "Import"
+@import "${0}"
+endsnippet
+
+snippet for "For Loop"
+@for $i from 1 through ${1}
+	${0}
+endsnippet
+
+snippet each "Each Loop"
+@each ${1} in ${2}
+	${0}
+endsnippet
+
+snippet if "If Conditional"
+@if ${1}
+	${0}
+endsnippet
+
+snippet ife "If/Else Conditional"
+@if ${1}
+	${2}
+@else
+	${0}
+endsnippet
+
+snippet af "After Pseudo Element"
+&::after
+	${0}
+endsnippet
+
+snippet be "Before Pseudo Element"
+&::before
+	${0}
+endsnippet
+
+snippet fc "First Child"
+&:first-child
+	${0}
+endsnippet
+
+snippet lc "Last Child"
+&:last-child
+	${0}
+endsnippet
+
+snippet hf "Hover, Focus"
+&:hover,
+&:focus
+	${0}
+endsnippet

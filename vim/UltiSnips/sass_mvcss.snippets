@@ -1,0 +1,81 @@
+snippet coh "Heading Comment"
+// *************************************
+//
+//   ${1:Comment}
+//   -> ${0:Description}
+//
+// *************************************
+endsnippet
+
+snippet coht "Heading Comment with Template"
+// *************************************
+//
+//   ${1:Comment}
+//   -> ${2:Description}
+//
+// -------------------------------------
+//   Template (Haml)
+// -------------------------------------
+//
+// ${0:.element[.element--modifier](.is-state)}
+//
+// *************************************
+endsnippet
+
+snippet col "Long Comment"
+// -------------------------------------
+//   ${0:Comment}
+// -------------------------------------
+endsnippet
+
+snippet cos "Short Comment"
+// ----- ${0:comment} ----- //
+endsnippet
+
+snippet cosd "Short Comment Description"
+// -> ${1:Description}
+//
+// ${0:...}
+//
+endsnippet
+
+snippet rt "respond-to Mixin"
++respond-to(${0})
+	${0}
+endsnippet
+
+snippet em "em Function"
+em(${0}px)
+endsnippet
+
+snippet bvar "Base Variable"
+$b-${0}
+endsnippet
+
+snippet bsp "Base Space Variable"
+$b-${0:space}
+endsnippet
+
+snippet cvar "Color Variable"
+$c-${0}
+endsnippet
+
+snippet mod "Modifier Class"
+.${1:element}--${2}
+	${0}
+endsnippet
+
+snippet ste "State Class"
+.${1:element}.is-${2}
+	${0}
+endsnippet
+
+snippet con "Context Class"
+.has-${1}
+	${0}
+endsnippet
+
+snippet sca "Scaffold Class"
+.${1:element}-${2}
+	${0}
+endsnippet
