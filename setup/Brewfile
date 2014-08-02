@@ -50,6 +50,9 @@ install imagemagick
 # -> Platform built on Chrome's JavaScript runtime
 install node
 
+# Python
+install python
+
 # Redis
 # -> Advanced key-value store
 install redis
