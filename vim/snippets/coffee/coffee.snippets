@@ -114,31 +114,3 @@ snippet req
 # Export
 snippet exp
 	${1:root} = exports ? this
-
-# Header comment
-snippet coh
-	# *************************************
-	#
-	#   ${1:Comment}
-	#   -> ${0:Description}
-	#
-	# *************************************
-
-# Long comment
-snippet col
-	# -------------------------------------
-	#   ${0:Comment}
-	# -------------------------------------
-
-# Short comment
-snippet cos
-	# ----- ${0:Comment} ----- #
-
-# jQuery 'on'
-snippet jon
-	$('${1:}').on '${2:click}', (e) ->
-		${0:#...}
-
-# jQuery preventDefault
-snippet jpd
-	${0:e}.preventDefault()

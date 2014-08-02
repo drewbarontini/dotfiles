@@ -1,28 +1,35 @@
 # Link To
 snippet =lt
-	= link_to '${1:text}', '${2:#}'
+	= link_to '${1:text}', '${0:#}'
+
 # Image Tag
 snippet =it
-	= image_tag '${1:image}', alt: '${2:text}'
+	= image_tag '${1:image}', alt: '${0:text}'
+
 # Render Partial
 snippet =rp
-	= render :partial => '${1:partial}'
+	= render :partial => '${0:partial}'
+
 # Render Partial (with locals)
 snippet =rpl
-	= render :partial => '${1:partial}', :locals => {}
+	= render :partial => '${0:partial}', :locals => {}
+
 # Render Partial (with collection)
 snippet =rpc
 	= render :partial => '${1:partial}', :collection => @$1
+
 # If
 snippet if
 	- if ${1:condition}
 		${0}
+
 # If/Else
 snippet ife
 	- if ${1:condition}
 		${2}
 	- else
 		${0}
+
 # Unordered List
 snippet ul
 	%ul
