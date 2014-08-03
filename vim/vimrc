@@ -351,8 +351,6 @@ map <leader>rn :call RenameFile()<cr>
 "   Filetypes
 " ----------------------------------------------------
 
-filetype indent plugin on
-
 autocmd Filetype gitcommit setlocal spell textwidth=72
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
