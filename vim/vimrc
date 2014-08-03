@@ -117,6 +117,10 @@ Bundle 'SirVer/ultisnips'
 "   Syntax Highlighting & Theme
 " ----------------------------------------------------
 
+if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
+  syntax on
+endif
+
 set t_Co=256
 let g:solarized_termtrans = 1
 
@@ -126,10 +130,6 @@ colorscheme solarized
 " ----------------------------------------------------
 "   General Configuration
 " ----------------------------------------------------
-
-if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
-  syntax on
-endif
 
 filetype indent plugin on
 
@@ -263,12 +263,6 @@ imap <C-s> <esc>:w<cr>
 " New tab
 map <C-t> <esc>:tabnew<cr>
 
-" Clear the search buffer when hitting return
-function! MapCR()
-  nnoremap <leader>l :nohlsearch<cr>
-endfunction
-call MapCR()
-
 " Directory of Current File
 cnoremap %% <C-R>=expand('%:h').'/'<cr>
 
@@ -312,6 +306,17 @@ map <leader>t :!bundle exec rspec %<cr>
 " ----- Marked ----- "
 
 nmap <leader>m :!open -a Marked\ 2.app "%"<cr>
+
+" ----------------------------------------------------
+"   Functions
+" ----------------------------------------------------
+
+" ----- Clear Search ----- "
+" Clear the search buffer when hitting return
+function! MapCR()
+  nnoremap <leader>l :nohlsearch<cr>
+endfunction
+call MapCR()
 
 " ----- Multi-purpose Tab Key ----- "
 " Indent if we're at the beginning of a line. Else, do completion.
