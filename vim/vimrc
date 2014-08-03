@@ -284,6 +284,17 @@ map <leader>no :e ~/Dropbox/Notes/<cr>
 " Open or create Dropbox notes file
 map <leader>nc :sp ~/Dropbox/Notes/
 
+" Open snippets
+map <leader>p :tabedit ~/.dotfiles/vim/snippets<cr>
+
+" ----- Rails Mappings ----- "
+
+map <leader>bb :!bundle install<cr>
+map <leader>t :!bundle exec rspec %<cr>
+
+" ----- Apps/Plugins ----- "
+
+" Ack
 " Open a new tab and search for something
 nmap <leader>aa :Ack! ""<Left>
 " Search for word under cursor
@@ -292,19 +303,10 @@ nmap <leader>AA :Ack! <C-r><C-w><cr>
 " CtrlP
 nnoremap ff :CtrlP<cr>
 
-" Open snippets
-map <leader>p :tabedit ~/.dotfiles/vim/snippets<cr>
-
 " Goyo
 nnoremap <leader>V :Goyo<cr>
 
-" ----- Rails Mappings ----- "
-
-map <leader>bb :!bundle install<cr>
-map <leader>t :!bundle exec rspec %<cr>
-
-" ----- Marked ----- "
-
+" Marked
 nmap <leader>m :!open -a Marked\ 2.app "%"<cr>
 
 " ----------------------------------------------------
