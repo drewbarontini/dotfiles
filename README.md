@@ -109,6 +109,11 @@ Vim Keyboard Shortcuts
 
 - `C-t` creates a new tab
 
+**Sizing**
+
+- `+` Increases vertical split window size
+- `_` Decreases vertical split window size
+
 #### Commands
 
 - `,S` starts a shell command
