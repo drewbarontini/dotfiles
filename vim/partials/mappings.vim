@@ -35,10 +35,14 @@ map <C-t> <esc>:tabnew<cr>
 
 " ========== Commands ========== "
 
-nmap <leader>S :!<space>                "Shell command
-map <leader>rs :%s//                    "Replace current search with...
-cnoremap %% <C-R>=expand('%:h').'/'<cr> "Directory of Current File
-map <leader>co ggVG "*y                 "Copy whole file, store in register
+" Shell command
+nmap <leader>S :!<space>
+" Replace current search with...
+map <leader>rs :%s//
+" Directory of Current File
+cnoremap %% <C-R>=expand('%:h').'/'<cr>
+" Copy whole file, store in register
+map <leader>co ggVG "*y
 
 " Save file
 map <C-s> <esc>:w<cr>
@@ -46,16 +50,23 @@ imap <C-s> <esc>:w<cr>
 
 " ========== Functions ========== "
 
-nnoremap <leader>s :%s/\s\+$//<cr>:let @/=''<cr> "Trim trailing whitespace
-inoremap <C-e> <C-o>A                            "Jump out of parenthesis, brackets, etc.
+" Trim trailing whitespace
+nnoremap <leader>s :%s/\s\+$//<cr>:let @/=''<cr>
+" Jump out of parenthesis, brackets, etc.
+inoremap <C-e> <C-o>A
 
 " ========== Open File(s) ========== "
 
-nnoremap <leader>rc :tabedit $MYVIMRC<cr>                "Open .vimrc
-map <leader>ns :sp ~/Dropbox/Notes/notes-scratch.txt<cr> "Open up Dropbox notes.txt file
-map <leader>no :e ~/Dropbox/Notes/<cr>                   "Open up Dropbox notes directory
-map <leader>nc :sp ~/Dropbox/Notes/                      "Open or create Dropbox notes file
-map <leader>p :tabedit ~/.dotfiles/vim/UltiSnips<cr>     "Open snippets
+" Open .vimrc
+nnoremap <leader>rc :tabedit $MYVIMRC<cr>
+" Open up Dropbox notes.txt file
+map <leader>ns :sp ~/Dropbox/Notes/notes-scratch.txt<cr>
+" Open up Dropbox notes directory
+map <leader>no :e ~/Dropbox/Notes/<cr>
+" Open or create Dropbox notes file
+map <leader>nc :sp ~/Dropbox/Notes/
+" Open snippets
+map <leader>p :tabedit ~/.dotfiles/vim/UltiSnips<cr>
 
 " ========== Rails ========== "
 
@@ -65,8 +76,10 @@ map <leader>t :!bundle exec rspec %<cr>
 " ========== Apps/Plugins ========== "
 
 " Ack
-nmap <leader>aa :Ack!  ""<Left>      "Open a new tab and search for something
-nmap <leader>AA :Ack! <C-r><C-w><cr> "Search for word under cursor
+" Open a new tab and search for something
+nmap <leader>aa :Ack!  ""<Left>
+" Search for word under cursor
+nmap <leader>AA :Ack! <C-r><C-w><cr>
 
 " CtrlP
 nnoremap ff :CtrlP<cr>
