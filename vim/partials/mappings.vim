@@ -81,7 +81,7 @@ map <leader>t :!bundle exec rspec %<cr>
 
 " Ack
 " Open a new tab and search for something
-nmap <leader>aa :Ack!  ""<Left>
+nmap <leader>aa :Ack! ""<Left>
 " Search for word under cursor
 nmap <leader>AA :Ack! <C-r><C-w><cr>
 
