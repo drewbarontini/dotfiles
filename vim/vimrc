@@ -152,9 +152,9 @@ source ~/.vim/partials/filetypes.vim
 
 source ~/.vim/partials/settings.vim
 
-" ----------------------------------------------------
+" ====================================================
 "   Autosave
-" ----------------------------------------------------
+" ====================================================
 
 if has('autocmd')
   autocmd bufwritepost .vimrc source $MYVIMRC
