@@ -35,7 +35,7 @@ map <C-t> <esc>:tabnew<cr>
 
 " Sizing
 nnoremap + <C-w>>
-nnoremap - <C-w><
+nnoremap _ <C-w><
 
 " ========== Commands ========== "
 
