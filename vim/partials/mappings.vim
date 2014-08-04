@@ -33,6 +33,10 @@ map <leader><leader> <C-^>
 " New tab
 map <C-t> <esc>:tabnew<cr>
 
+" Sizing
+nnoremap + <C-w>>
+nnoremap - <C-w><
+
 " ========== Commands ========== "
 
 " Shell command
