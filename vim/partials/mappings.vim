@@ -77,3 +77,6 @@ nnoremap <leader>V :Goyo<cr>
 " Marked
 nmap <leader>m :!open -a Marked\ 2.app "%"<cr>
 
+" UltiSnips
+nnoremap <leader>se :UltiSnipsEdit<cr>
+

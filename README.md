@@ -143,4 +143,5 @@ Vim Keyboard Shortcuts
 - `ff` opens up [CtrlP](https://github.com/kien/ctrlp.vim)
 - `,V` Goyo to put file in focus mode (for Markdown)
 - `,m` Opens current file in Marked 2.app
+- `,se` Runs `:UltiSnipsEdit` to edit current filetype snippets
 
