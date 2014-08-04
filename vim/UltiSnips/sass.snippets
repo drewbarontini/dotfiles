@@ -2,6 +2,10 @@ snippet todo "TODO/FIXME/NOTE"
 // ${1:TODO|FIXME|NOTE}: ${0}
 endsnippet
 
+snippet mn "TODO/FIXME/NOTE"
+// FIXME: Magic number!
+endsnippet
+
 snippet ex "Extend"
 @extend ${0}
 endsnippet
@@ -35,8 +39,16 @@ snippet ltn "Lighten Function"
 lighten(${1}, ${0}%)
 endsnippet
 
+snippet wltn "Wrap with Lighten Function"
+lighten(${VISUAL}, ${0}%)
+endsnippet
+
 snippet dkn "Darken Function"
 darken(${1}, ${0}%)
+endsnippet
+
+snippet wdkn "Wrap with Darken Function"
+darken(${VISUAL}, ${0}%)
 endsnippet
 
 snippet var "Variable Definition"
