@@ -37,3 +37,27 @@ function ${5:function_name}() {
 	${0:# ...}
 }
 endsnippet
+
+snippet es "Echo"
+echo "$0"
+endsnippet
+
+snippet if "If Statement"
+if [[ "$1" ]]
+then
+	${0:# ...}
+fi
+endsnippet
+
+snippet ife "If/Else Statement"
+if [[ "$1" ]]
+then
+	${2:# ...}
+else
+	${0:# ...}
+fi
+endsnippet
+
+snippet al "Alias"
+alias ${1:name}='$0'
+endsnippet
