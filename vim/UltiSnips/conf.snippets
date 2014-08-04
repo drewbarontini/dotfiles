@@ -1,0 +1,39 @@
+snippet coh "Heading Comment"
+## -------------------------------------
+##   ${1:Section Title}
+## -------------------------------------
+endsnippet
+
+snippet cos "Sub-heading Comment"
+## ----- ${1:Section Title} ----- ##
+endsnippet
+
+snippet cof "Function Comment Heading"
+## ----- ${1:Function Title} ----- ##
+## ${2:Description}
+##
+## ${3:Arguments}
+##
+## Usage: \`$0\`
+##
+endsnippet
+
+snippet func "Function"
+function ${1:function_name}() {
+	${0:# ...}
+}
+endsnippet
+
+snippet cfunc "Function with Comment Heading"
+## ----- ${1:Function Title} ----- ##
+## ${2:Description}
+##
+## ${3:Arguments}
+##
+## Usage: \`$4\`
+##
+
+function ${5:function_name}() {
+	${0:# ...}
+}
+endsnippet
