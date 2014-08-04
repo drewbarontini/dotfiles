@@ -76,33 +76,52 @@ What's Included
 Vim Keyboard Shortcuts
 ----------------------
 
-- `ff` opens up [CtrlP](https://github.com/kien/ctrlp.vim)
-- `space` or `;` &mdash; `:`
-- `jj` escapes Insert Mode
-
 ### Leader Commands
 
 #### Setup
 
 - `,` - leader key
 
-#### Window Navigation
+#### General
+
+- `space` or `;` &mdash; `:`
+- `jj` escapes Insert Mode
+
+#### Window Management
+
+**Navigation**
+
+- `C-h` switches to the left pane
+- `C-l` switches to the right pane
+- `C-j` switches to the bottom pane
+- `C-k` switches to the top pane
+
+**Splits**
 
 - `,v` opens a vertical split window and makes it active
 - `,h` opens a horizontal split window and makes it active
 
-#### General
+**Buffers**
+
+- `,,` switches between buffers
+
+**Tabs**
+
+- `C-t` creates a new tab
+
+#### Commands
+
+- `,S` starts a shell command
+- `,rs` replaces the current search term with what is passed in
+- `,co` copies the whole file and stores in register
+- `,l` clears the search
+- `C-s` saves the the file
+
+#### Functions
 
 - `,s` trims trailing whitespace
-- `,,` switches between buffers
-- `,S` starts a shell command
-- `,co` copies the whole file and stores in register
-- `,rs` replaces the current search term with what is passed in
-- `,l` clears the search
-- `,aa` opens up [Ack](https://github.com/mileszs/ack.vim) for searching
-- `,AA` opens up [Ack](https://github.com/mileszs/ack.vim) to search for word under the cursor
+- `C-e` jumps out of parenthesis, brackets, etc.
 - `,rn` to rename the current file
-- `,V` Goyo to put file in focus mode (for Markdown)
 
 #### Open Files
 
@@ -117,17 +136,11 @@ Vim Keyboard Shortcuts
 - `,bb` runs `bundle install`
 - `,t` runs the current Rspec spec
 
-#### Apps
+#### Apps/Plugins
 
+- `,aa` opens up [Ack](https://github.com/mileszs/ack.vim) for searching
+- `,AA` opens up [Ack](https://github.com/mileszs/ack.vim) to search for word under the cursor
+- `ff` opens up [CtrlP](https://github.com/kien/ctrlp.vim)
+- `,V` Goyo to put file in focus mode (for Markdown)
 - `,m` Opens current file in Marked 2.app
-
-#### Control Key Mappings
-
-- `C-s` saves the the file
-- `C-t` creates a new tab
-- `C-h` switches to the left pane
-- `C-l` switches to the right pane
-- `C-j` switches to the bottom pane
-- `C-k` switches to the top pane
-- `C-e` jumps out of parenthesis, brackets, etc.
 

@@ -2,9 +2,13 @@
 "   Vundle
 " ====================================================
 
+" Required by Vundle
+filetype off
+
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
+" Vundle manages Vundle (required)
 Bundle 'gmarik/vundle'
 
 " ========== Bundles ========== "
@@ -104,3 +108,5 @@ Bundle 'tpope/vim-vinegar'
 " Requires Python (ships with Homebrew Vim)
 Bundle 'SirVer/ultisnips'
 
+" Required by vundle
+filetype indent plugin on

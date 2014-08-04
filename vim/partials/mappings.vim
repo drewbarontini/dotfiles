@@ -55,7 +55,7 @@ nnoremap <leader>rc :tabedit $MYVIMRC<cr>                "Open .vimrc
 map <leader>ns :sp ~/Dropbox/Notes/notes-scratch.txt<cr> "Open up Dropbox notes.txt file
 map <leader>no :e ~/Dropbox/Notes/<cr>                   "Open up Dropbox notes directory
 map <leader>nc :sp ~/Dropbox/Notes/                      "Open or create Dropbox notes file
-map <leader>p :tabedit ~/.dotfiles/vim/snippets<cr>      "Open snippets
+map <leader>p :tabedit ~/.dotfiles/vim/UltiSnips<cr>     "Open snippets
 
 " ========== Rails ========== "
 
