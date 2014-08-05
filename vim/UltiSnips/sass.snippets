@@ -19,6 +19,16 @@ snippet + "Mixin"
 +${1:mixin-name}(${0:arguments})
 endsnippet
 
+snippet = "Mixin Definition"
+=${1:mixin-name}${2:(${3:arguments})}
+	${0:// ...}
+endsnippet
+
+snippet fun "Function Definition"
+@function ${1:function-name}(${2:arguments})
+	${0:// ...}
+endsnippet
+
 snippet key "Keyframe Animation"
 @-webkit-keyframes ${1:animationName}
 	${2://...}
@@ -104,6 +114,11 @@ endsnippet
 snippet hf "Hover, Focus"
 &:hover,
 &:focus
+	${0}
+endsnippet
+
+snippet ac "Active"
+&:active
 	${0}
 endsnippet
 
