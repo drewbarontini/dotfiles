@@ -1,7 +1,7 @@
 snippet coh "Heading Comment"
 // *************************************
 //
-//   ${1:Comment}
+//   ${1:`!p res = re.sub(r'_', '', snip.basename.title())`}
 //   -> ${0:Description}
 //
 // *************************************
@@ -10,14 +10,14 @@ endsnippet
 snippet coht "Heading Comment with Template"
 // *************************************
 //
-//   ${1:Comment}
+//   ${1:`!p res = re.sub(r'_', '', snip.basename.title())`}
 //   -> ${2:Description}
 //
 // -------------------------------------
 //   Template (Haml)
 // -------------------------------------
 //
-// ${0:.element[.element--modifier](.is-state)}
+// .${0:`!p res = re.sub(r'_', '', snip.basename)`[.`!p res = re.sub(r'_', '', snip.basename)`--modifier](.is-state)}
 //
 // *************************************
 endsnippet
