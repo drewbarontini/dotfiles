@@ -31,14 +31,14 @@ endsnippet
 snippet comp "Component Template"
 // *************************************
 //
-//   ${1:Component Name}
+//   ${1:`!p res = re.sub(r'_', '', snip.basename.title())`}
 //   -> ${2:Description}
 //
 // -------------------------------------
 //   Template (Haml)
 // -------------------------------------
 //
-// .${3:component}[.$3--modifier](.is-state)(.has-context)
+// .${3:`!p res = re.sub(r'_', '', snip.basename)`}[.$3--modifier](.is-state)(.has-context)
 //   .$3-scaffolding
 //
 // *************************************
@@ -73,14 +73,14 @@ endsnippet
 snippet struc "Structure Template"
 // *************************************
 //
-//   ${1:Structure Name}
+//   ${1:`!p res = re.sub(r'_', '', snip.basename.title())`}
 //   -> ${2:Description}
 //
 // -------------------------------------
 //   Template (Haml)
 // -------------------------------------
 //
-// .${3:structure}[.$3--modifier](.is-state)(.has-context)
+// .${3:`!p res = re.sub(r'_', '', snip.basename)`}[.$3--modifier](.is-state)(.has-context)
 //   .$3-scaffolding
 //
 // *************************************
