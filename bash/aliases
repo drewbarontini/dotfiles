@@ -22,6 +22,7 @@ alias rc="vim $VIMRC_PATH"
 alias scratch="vim $SCRATCHNOTES_PATH"
 alias sharpen="vim $SHARPENNOTES_PATH"
 alias todolist="vim $TODOLIST_PATH"
+alias snippets="vim $SNIPPETS_PATH"
 
 ## ----- Git ----- ##
 
