@@ -68,7 +68,7 @@ inoremap <C-e> <C-o>A
 map <leader>co ggVG "*y
 
 " Delete all text in file
-map <leader>do ggVGx
+map <leader>do ggdG
 
 " ========== Open File(s) ========== "
 
