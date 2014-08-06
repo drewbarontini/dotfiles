@@ -45,12 +45,12 @@ nnoremap _ <C-w><
 
 " Shell command
 nmap <leader>S :!<space>
+
 " Replace current search with...
 map <leader>rs :%s//
+
 " Directory of Current File
 cnoremap %% <C-R>=expand('%:h').'/'<cr>
-" Copy whole file, store in register
-map <leader>co ggVG "*y
 
 " Save file
 map <C-s> <esc>:w<cr>
@@ -60,19 +60,30 @@ imap <C-s> <esc>:w<cr>
 
 " Trim trailing whitespace
 nnoremap <leader>s :%s/\s\+$//<cr>:let @/=''<cr>
+
 " Jump out of parenthesis, brackets, etc.
 inoremap <C-e> <C-o>A
+
+" Copy whole file, store in register
+map <leader>co ggVG "*y
+
+" Delete all text in file
+map <leader>do ggVGx
 
 " ========== Open File(s) ========== "
 
 " Open .vimrc
 nnoremap <leader>rc :e ~/.dotfiles/vim/vimrc<cr>
+
 " Open up Dropbox notes.txt file
 map <leader>ns :sp ~/Dropbox/Notes/notes-scratch.txt<cr>
+
 " Open up Dropbox notes directory
 map <leader>no :e ~/Dropbox/Notes/<cr>
+
 " Open or create Dropbox notes file
 map <leader>nc :sp ~/Dropbox/Notes/
+
 " Open snippets
 map <leader>sd :e ~/.dotfiles/vim/UltiSnips<cr>
 
