@@ -138,7 +138,7 @@ Vim Keyboard Shortcuts
 
 #### Rails
 
-- `,bb` runs `bundle install`
+- `,B` runs `bundle install`
 - `,t` runs the current Rspec spec
 
 #### Apps/Plugins
