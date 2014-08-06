@@ -62,7 +62,7 @@ inoremap <C-e> <C-o>A
 " ========== Open File(s) ========== "
 
 " Open .vimrc
-nnoremap <leader>rc :tabedit $MYVIMRC<cr>
+nnoremap <leader>rc :e $MYVIMRC<cr>
 " Open up Dropbox notes.txt file
 map <leader>ns :sp ~/Dropbox/Notes/notes-scratch.txt<cr>
 " Open up Dropbox notes directory
