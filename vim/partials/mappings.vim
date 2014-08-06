@@ -70,7 +70,7 @@ map <leader>no :e ~/Dropbox/Notes/<cr>
 " Open or create Dropbox notes file
 map <leader>nc :sp ~/Dropbox/Notes/
 " Open snippets
-map <leader>p :tabedit ~/.dotfiles/vim/UltiSnips<cr>
+map <leader>sb :tabedit ~/.dotfiles/vim/UltiSnips<cr>
 
 " ========== Rails ========== "
 
