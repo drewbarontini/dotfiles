@@ -88,6 +88,9 @@ nmap <leader>AA :Ack! <C-r><C-w><cr>
 " CtrlP
 nnoremap ff :CtrlP<cr>
 
+" Git
+nnoremap <leader>gb :Gbrowse<cr>
+
 " Goyo
 nnoremap <leader>V :Goyo<cr>
 
