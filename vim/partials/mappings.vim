@@ -92,6 +92,7 @@ nmap <leader>AA :Ack! <C-r><C-w><cr>
 " CtrlP
 nnoremap <leader>f :CtrlP<cr>
 nnoremap <leader>b :CtrlPBuffer<cr>
+nnoremap <leader>F :ClearCtrlPCache<cr>
 
 " Git
 nnoremap <leader>gb :Gbrowse<cr>
