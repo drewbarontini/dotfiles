@@ -15,6 +15,10 @@ map <Right> <Nop>
 map <Up> <Nop>
 map <Down> <Nop>
 
+" Inserting newlines
+nmap J O<esc>Dj
+nmap K o<esc>Dk
+
 " ========== Window Management ========== "
 
 " Navigation
