@@ -78,7 +78,7 @@ map <leader>sd :e ~/.dotfiles/vim/UltiSnips<cr>
 
 " ========== Rails ========== "
 
-map <leader>bb :!bundle install<cr>
+map <leader>B :!bundle install<cr>
 map <leader>t :!bundle exec rspec %<cr>
 
 " ========== Apps/Plugins ========== "
