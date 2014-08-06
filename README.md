@@ -131,7 +131,7 @@ Vim Keyboard Shortcuts
 #### Open Files
 
 - `,rc` opens the `vimrc` in a new tab
-- `,p` opens up snippets
+- `,sd` opens up snippets
 - `,ns` opens up Dropbox notes scratch text file
 - `,no` opens up Dropbox notes directory
 - `,nc` opens or creates a Dropbox note
@@ -145,7 +145,8 @@ Vim Keyboard Shortcuts
 
 - `,aa` opens up [Ack](https://github.com/mileszs/ack.vim) for searching
 - `,AA` opens up [Ack](https://github.com/mileszs/ack.vim) to search for word under the cursor
-- `ff` opens up [CtrlP](https://github.com/kien/ctrlp.vim)
+- `,f` opens up [CtrlP](https://github.com/kien/ctrlp.vim)
+- `,b` opens up [CtrlP](https://github.com/kien/ctrlp.vim) buffer
 - `,V` Goyo to put file in focus mode (for Markdown)
 - `,m` Opens current file in Marked 2.app
 - `,se` Runs `:UltiSnipsEdit` to edit current filetype snippets
