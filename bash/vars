@@ -19,6 +19,6 @@ SHARPENNOTES_PATH="$HOME/Dropbox\ \(Personal\)/Notes/notes-sharpen.txt"
 SNIPPETS_PATH="$HOME/.dotfiles/vim/UltiSnips"
 TODOLIST_PATH="$HOME/Dropbox\ \(Personal\)/Notes/todos.txt"
 TODOLIST_PATH_RAW=~/Dropbox\ \(Personal\)/Notes/todos.txt
-VIMRC_PATH='$HOME/.vimrc'
+VIMRC_PATH='$HOME/.dotfiles/vim/vimrc'
 WALLPAPER_PATH=$HOME/Dropbox\ \(Personal\)/Wallpapers
 
