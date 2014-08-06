@@ -70,7 +70,7 @@ map <leader>no :e ~/Dropbox/Notes/<cr>
 " Open or create Dropbox notes file
 map <leader>nc :sp ~/Dropbox/Notes/
 " Open snippets
-map <leader>sb :tabedit ~/.dotfiles/vim/UltiSnips<cr>
+map <leader>sd :e ~/.dotfiles/vim/UltiSnips<cr>
 
 " ========== Rails ========== "
 
@@ -87,6 +87,7 @@ nmap <leader>AA :Ack! <C-r><C-w><cr>
 
 " CtrlP
 nnoremap ff :CtrlP<cr>
+nnoremap fb :CtrlPBuffer<cr>
 
 " Git
 nnoremap <leader>gb :Gbrowse<cr>
