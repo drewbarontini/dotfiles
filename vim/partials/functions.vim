@@ -6,7 +6,7 @@
 " Clear the search buffer when hitting return
 
 function! MapCR()
-  nnoremap <leader>l :nohlsearch<cr>
+  nnoremap <silent> <leader>l :nohlsearch<cr>
 endfunction
 call MapCR()
 
