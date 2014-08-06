@@ -86,8 +86,8 @@ nmap <leader>aa :Ack! ""<Left>
 nmap <leader>AA :Ack! <C-r><C-w><cr>
 
 " CtrlP
-nnoremap ff :CtrlP<cr>
-nnoremap fb :CtrlPBuffer<cr>
+nnoremap <leader>f :CtrlP<cr>
+nnoremap <leader>b :CtrlPBuffer<cr>
 
 " Git
 nnoremap <leader>gb :Gbrowse<cr>
