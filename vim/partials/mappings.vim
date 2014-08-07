@@ -192,7 +192,7 @@ nnoremap <leader>V :Goyo<cr>
 
 " Save file
 noremap <leader>w :w<cr>
-noremap <leader>W :wq<cr>
+noremap <leader>W :x<cr>
 
 " == X == "
 
