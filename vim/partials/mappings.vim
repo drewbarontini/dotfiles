@@ -146,7 +146,8 @@ nnoremap <leader>p Yp
 
 " == Q == "
 
-" ...
+" Quit
+noremap <leader>q :q<cr>
 
 " == R == "
 
