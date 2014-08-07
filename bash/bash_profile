@@ -1,6 +1,8 @@
 ## -------------------------------------
-##   Imports
+##   Bash Profile
 ## -------------------------------------
+
+## ----- Imports ----- ##
 
 source ~/.bash/vars
 source ~/.bash/config
@@ -10,16 +12,6 @@ source ~/.bash/functions/general
 source ~/.bash/functions/git
 source ~/.bash/functions/mvcss
 source ~/.bash/prompt
+source ~/.bash/overrides
+source ~/.bash/rbenv
 
-## -------------------------------------
-##   Allow 'go' alias to autocomplete
-## -------------------------------------
-
-__git_complete go _git_checkout
-
-## -------------------------------------
-##   rbenv
-## -------------------------------------
-
-export PATH="$HOME/.rbenv/bin:$PATH:/Applications/Postgres.app/Contents/Versions/9.3/bin"
-eval "$(rbenv init -)"

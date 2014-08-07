@@ -1,0 +1,7 @@
+## -------------------------------------
+##   Overrides
+## -------------------------------------
+
+# Allow 'go' alias to autocomplete
+__git_complete go _git_checkout
+
