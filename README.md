@@ -41,7 +41,7 @@ brew install fontforge ttfautohint
 gem install fontcustom
 ```
 
-### Rbenv
+### rbenv
 
 ```bash
 bash setup/rbenv
@@ -70,7 +70,7 @@ What's Included
 - Homebrew
 - iTerm2 (colors)
 - OS X Apps, Settings
-- Rbenv
+- rbenv
 - Sublime Text
 - Vim
 
