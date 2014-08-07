@@ -8,7 +8,9 @@ then
   echo "Setting up Bash..."
   ln -s ~/.dotfiles/bash ~/.bash
   ln -s ~/.dotfiles/bash/bash_profile ~/.bash_profile
-  ln -s ~/.dotfiles/bash/ackrc ~/.ackrc
+
+  echo "Setting up Ack..."
+  ln -s ~/.dotfiles/ack/ackrc ~/.ackrc
 
   echo "Setting up Git..."
   ln -s ~/.dotfiles/git/gitconfig.local ~/.gitconfig.local
