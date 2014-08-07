@@ -156,6 +156,9 @@ nnoremap <leader>rc :e ~/.dotfiles/vim/vimrc<cr>
 " Replace current search with...
 map <leader>rs :%s//
 
+" Open Vim mappings file
+nnoremap <leader>rm :e ~/.dotfiles/vim/partials/mappings.vim<cr>
+
 " == S == "
 
 " Shell command
