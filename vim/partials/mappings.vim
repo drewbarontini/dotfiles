@@ -5,9 +5,9 @@
 " ========== General ========== "
 
 " Better defaults
-nmap ; :
-nmap <space> :
-imap jj <esc>
+nnoremap ; :
+nnoremap <space> :
+inoremap jj <esc>
 
 " NO Arrow Keys
 map <Left> <Nop>
@@ -26,11 +26,10 @@ nnoremap + <C-w>>
 nnoremap _ <C-w><
 
 " Tabs
-map <C-t> <esc>:tabnew<cr>
+noremap <C-t> <esc>:tabnew<cr>
 
 " Save file
-map <C-s> <esc>:w<cr>
-imap <C-s> <esc>:w<cr>
+noremap <C-s> <esc>:w<cr>
 
 " Directory of Current File
 cnoremap %% <C-R>=expand('%:h').'/'<cr>
@@ -39,8 +38,8 @@ cnoremap %% <C-R>=expand('%:h').'/'<cr>
 inoremap <C-e> <C-o>A
 
 " Insert newlines
-nmap J O<esc>Dj
-nmap K o<esc>Dk
+nnoremap J O<esc>Dj
+nnoremap K o<esc>Dk
 
 " Copy to end of line
 nnoremap Y y$
@@ -50,7 +49,7 @@ nnoremap Y y$
 " == Non-Alphanumeric == "
 
 " Switch between buffers
-map <leader><leader> <C-^>
+nnoremap <leader><leader> <C-^>
 
 " Tabularize
 vnoremap <leader>= :Tabularize /
@@ -58,15 +57,15 @@ vnoremap <leader>= :Tabularize /
 " == A == "
 
 " Open a new tab and search for something with Ack
-nmap <leader>aa :Ack! ""<Left>
+nnoremap <leader>aa :Ack! ""<Left>
 
 " Search for word under cursor with Ack
-nmap <leader>AA :Ack! <C-r><C-w><cr>
+nnoremap <leader>AA :Ack! <C-r><C-w><cr>
 
 " == B == "
 
 " bundle install
-map <leader>B :!bundle install<cr>
+nnoremap <leader>B :!bundle install<cr>
 
 " Open CtrlP buffer search
 nnoremap <leader>b :CtrlPBuffer<cr>
@@ -74,12 +73,12 @@ nnoremap <leader>b :CtrlPBuffer<cr>
 " == C == "
 
 " Copy whole file, store in register
-map <leader>co ggVG "*y
+nnoremap <leader>co ggVG "*y
 
 " == D == "
 
 " Delete all text in file
-map <leader>do ggdG
+nnoremap <leader>do ggdG
 
 " == E == "
 
@@ -122,18 +121,18 @@ nnoremap <leader>h <C-w>s<C-w>j
 " == M == "
 
 " Open current file in Marked 2 application
-nmap <leader>m :!open -a Marked\ 2.app "%"<cr>
+nnoremap <leader>m :!open -a Marked\ 2.app "%"<cr>
 
 " == N == "
 
 " Open up Dropbox notes.txt file
-map <leader>ns :sp ~/Dropbox\ (Personal)/Notes/notes-scratch.txt<cr>
+nnoremap <leader>ns :sp ~/Dropbox\ (Personal)/Notes/notes-scratch.txt<cr>
 
 " Open up Dropbox notes directory
-map <leader>no :e ~/Dropbox\ (Personal)/Notes/<cr>
+nnoremap <leader>no :e ~/Dropbox\ (Personal)/Notes/<cr>
 
 " Open or create Dropbox notes file
-map <leader>nc :sp ~/Dropbox\ (Personal)/Notes/
+nnoremap <leader>nc :sp ~/Dropbox\ (Personal)/Notes/
 
 " == O == "
 
@@ -147,7 +146,7 @@ nnoremap <leader>p Yp
 " == Q == "
 
 " Quit
-noremap <leader>q :q<cr>
+nnoremap <leader>q :q<cr>
 
 " == R == "
 
@@ -155,7 +154,7 @@ noremap <leader>q :q<cr>
 nnoremap <leader>rc :e ~/.dotfiles/vim/vimrc<cr>
 
 " Replace current search with...
-map <leader>rs :%s//
+nnoremap <leader>rs :%s//
 
 " Open Vim mappings file
 nnoremap <leader>rm :e ~/.dotfiles/vim/partials/mappings.vim<cr>
@@ -163,13 +162,13 @@ nnoremap <leader>rm :e ~/.dotfiles/vim/partials/mappings.vim<cr>
 " == S == "
 
 " Shell command
-nmap <leader>S :!<space>
+nnoremap <leader>S :!<space>
 
 " Trim trailing whitespace
 nnoremap <silent> <leader>s :%s/\s\+$//<cr>:let @/=''<cr>
 
 " Open snippets
-map <leader>sd :e ~/.dotfiles/vim/UltiSnips<cr>
+nnoremap <leader>sd :e ~/.dotfiles/vim/UltiSnips<cr>
 
 " Edit currently scoped snippets
 nnoremap <leader>se :UltiSnipsEdit<cr>
@@ -177,12 +176,12 @@ nnoremap <leader>se :UltiSnipsEdit<cr>
 " == T == "
 
 " Run RSpec test for current file
-map <leader>t :!bundle exec rspec %<cr>
+nnoremap <leader>t :!bundle exec rspec %<cr>
 
 " == U == "
 
 " IndentGuidesToggle
-nmap <silent> <Leader>ug <Plug>IndentGuidesToggle
+nnoremap <silent> <Leader>ug <Plug>IndentGuidesToggle
 
 " == V == "
 
@@ -195,8 +194,8 @@ nnoremap <leader>V :Goyo<cr>
 " == W == "
 
 " Save file
-noremap <leader>w :w<cr>
-noremap <leader>W :x<cr>
+nnoremap <leader>w :w<cr>
+nnoremap <leader>W :x<cr>
 
 " == X == "
 
