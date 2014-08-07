@@ -151,6 +151,7 @@ source ~/.vim/partials/filetypes.vim
 " ====================================================
 
 source ~/.vim/partials/settings.vim
+source ~/.vim/partials/iterm.vim
 
 " ====================================================
 "   Autosave
