@@ -12,6 +12,12 @@ source ~/.bash/functions/mvcss
 source ~/.bash/prompt
 
 ## -------------------------------------
+##   Allow 'go' alias to autocomplete
+## -------------------------------------
+
+__git_complete go _git_checkout
+
+## -------------------------------------
 ##   rbenv
 ## -------------------------------------
 
