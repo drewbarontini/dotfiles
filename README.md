@@ -66,6 +66,7 @@ What's Included
 
 - Git
 - Bash
+- Ack
 - Homebrew
 - iTerm2 (colors)
 - OS X Apps, Settings
