@@ -56,7 +56,7 @@ cnoremap %% <C-R>=expand('%:h').'/'<cr>
 map <C-s> <esc>:w<cr>
 imap <C-s> <esc>:w<cr>
 
-" ========== Functions ========== "
+" ========== Text ========== "
 
 " Trim trailing whitespace
 nnoremap <leader>s :%s/\s\+$//<cr>:let @/=''<cr>
@@ -68,7 +68,16 @@ inoremap <C-e> <C-o>A
 map <leader>co ggVG "*y
 
 " Delete all text in file
-map <leader>do ggdG
+map <leader>xo ggdG
+
+" Copy to end of line
+nnoremap Y y$
+
+" Copy line, paste before current line
+nnoremap <leader>y YP
+
+" Duplicate current line, paste after
+nnoremap <leader>p Yp
 
 " ========== Open File(s) ========== "
 
