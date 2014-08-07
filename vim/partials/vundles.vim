@@ -108,5 +108,8 @@ Bundle 'tpope/vim-vinegar'
 " Requires Python (ships with Homebrew Vim)
 Bundle 'SirVer/ultisnips'
 
+" Simple TODO lists
+Bundle 'vitalk/vim-simple-todo'
+
 " Required by vundle
 filetype indent plugin on

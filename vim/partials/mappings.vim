@@ -68,7 +68,7 @@ inoremap <C-e> <C-o>A
 map <leader>co ggVG "*y
 
 " Delete all text in file
-map <leader>xo ggdG
+map <leader>do ggdG
 
 " Copy to end of line
 nnoremap Y y$
@@ -119,6 +119,9 @@ nnoremap <leader>gb :Gbrowse<cr>
 
 " Goyo
 nnoremap <leader>V :Goyo<cr>
+
+" Indent Guides
+nmap <silent> <Leader>ug <Plug>IndentGuidesToggle
 
 " Marked
 nmap <leader>m :!open -a Marked\ 2.app "%"<cr>
