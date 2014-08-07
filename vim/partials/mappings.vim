@@ -165,7 +165,7 @@ nnoremap <leader>rm :e ~/.dotfiles/vim/partials/mappings.vim<cr>
 nmap <leader>S :!<space>
 
 " Trim trailing whitespace
-nnoremap <leader>s :%s/\s\+$//<cr>:let @/=''<cr>
+nnoremap <silent> <leader>s :%s/\s\+$//<cr>:let @/=''<cr>
 
 " Open snippets
 map <leader>sd :e ~/.dotfiles/vim/UltiSnips<cr>
