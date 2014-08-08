@@ -30,7 +30,7 @@ function sg-init() {
 ## $2 - width (option)
 ## $3 - URL (if width/height passed in)
 ##
-## Usage: `sg google.com`, `ss 800 600 google.com`
+## Usage: `sg google.com`, `sg 800 600 google.com`
 ##
 
 function sg() {
