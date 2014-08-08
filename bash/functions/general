@@ -11,7 +11,7 @@
 ##
 
 function clean_url() {
-  echo $1 | sed 's/\.[a-z]*$//' | tr ./_ -
+  echo $1 | sed 's/\.[[:alnum:]]*//' | tr ./_ -
 }
 
 ## ----- Delete Files ----- ##
