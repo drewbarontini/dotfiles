@@ -86,3 +86,12 @@ function sg-inc() {
   webkit2png -W $1 -H $2 -F -o screenshot-$i --delay=2 http://$3/$i
 }
 
+## ----- Screenshot Zip ----- ##
+## Creates a zip file of all the screenshots
+##
+## Usage: `sg-zip`
+##
+
+function sg-zip() {
+  zip -r $SGDIR ../$SGDIR/*.png
+}
