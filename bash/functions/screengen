@@ -7,6 +7,8 @@
 
 SGDIR='screengen'
 SGFILE='urls.txt'
+SGWIDTH='1440'
+SGHEIGHT='1440'
 
 ## ----- Screengen Init ----- ##
 ## Sets up the structure for Screengen
@@ -34,11 +36,11 @@ function sg-init() {
 ##
 
 function sg() {
-  re='^[0-9]+$'
-  page=$(clean_url $1)
+  local re='^[0-9]+$'
+  local page=$(clean_url $1)
   if ! [[ $1 =~ $re ]]
   then
-    webkit2png -W 1440 -H 900 -F -o screenshot-$page http://$1
+    webkit2png -W $SGWIDTH -H $SGHEIGHT -F -o screenshot-$page http://$1
   else
     webkit2png -W $1 -H $2 -F -o screenshot-$page http://$3
   fi
@@ -56,12 +58,15 @@ function sg() {
 ##
 
 function sg-file() {
-  i=1
+  local i=1
   while read line
   do
-    url=$line
-    page=$(clean_url $url)
-    webkit2png -W $2 -H $3 -F -o screenshot-$page http://$url
+    local url=$(echo $line | awk '{print $1}')
+    local page=$(clean_url $url)
+    local size=$(echo $line | awk '{print $2}')
+    local width=$(echo $size | awk -F 'x' '{print $1}')
+    local height=$(echo $size | awk -F 'x' '{print $2}')
+    webkit2png -W $width -H $height -F -o screenshot-$page http://$url
     let i++
   done < $1
 }
