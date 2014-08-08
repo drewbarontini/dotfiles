@@ -49,10 +49,10 @@ function sg() {
 ## ----- Screenshots From File ----- ##
 ## Takes a set of screenshots from a file
 ##
-## $1 - The file to read from
-## $2 - The width
-## $3 - The height
-## $4 - The URL
+## $1 - file
+## $2 - width
+## $3 - height
+## $4 - URL
 ##
 ## Usage: `sg-file urls.txt 800 600`
 ##
