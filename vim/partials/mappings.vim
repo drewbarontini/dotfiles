@@ -30,6 +30,7 @@ noremap <C-t> <esc>:tabnew<cr>
 
 " Save file
 noremap <C-s> <esc>:w<cr>
+inoremap <C-s> <esc>:w<cr>
 
 " Directory of Current File
 cnoremap %% <C-R>=expand('%:h').'/'<cr>
