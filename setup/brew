@@ -70,5 +70,9 @@ install tree
 # -> Ye' old text editor
 install vim
 
+# webkit2png
+# -> Command-line webpage screenshots
+install webkit2png
+
 # Remove outdated versions from the cellar
 cleanup

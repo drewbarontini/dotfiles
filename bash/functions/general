@@ -48,6 +48,26 @@ function get_process_id() {
   ps aux | grep $1 | awk '{print $2}'
 }
 
+## ----- Screenshot ----- ##
+## Wrapper for webkit2png command
+##
+## $1 - URL (or height)
+## $2 - width (option)
+## $3 - URL (if width/height passed in)
+##
+## Usage: `ss google.com`, `ss 800 600 google.com`
+##
+
+function ss() {
+  re='^[0-9]+$'
+  if ! [[ $1 =~ $re ]]
+  then
+    webkit2png -W 1440 -H 900 -F -o screenshot http://$1
+  else
+    webkit2png -W $1 -H $2 -F -o screenshot http://$3
+  fi
+}
+
 ## ----- Server ----- ##
 ## Simple HTTP server from a directory, optionally specifying a port
 ##
