@@ -1,0 +1,84 @@
+## -------------------------------------
+##   Functions - Wrappers
+## -------------------------------------
+
+## ----- Homebrew Dependencies ----- ##
+## Lists out all brew packages and associated dependencies
+##
+## Usage: `brew_deps`
+##
+
+function brew_deps() {
+  brew list | while read cask; do echo -n $cask; brew deps $cask | awk '{ printf(" %s ", $0) }'; echo ""; done
+}
+
+## ----- Screenshot ----- ##
+## Wrapper for webkit2png command
+## Requires: webkit2png (`brew install webkit2png`)
+##
+## $1 - URL (or height)
+## $2 - width (option)
+## $3 - URL (if width/height passed in)
+##
+## Usage: `ss google.com`, `ss 800 600 google.com`
+##
+
+function ss() {
+  re='^[0-9]+$'
+  if ! [[ $1 =~ $re ]]
+  then
+    webkit2png -W 1440 -H 900 -F -o screenshot http://$1
+  else
+    webkit2png -W $1 -H $2 -F -o screenshot http://$3
+  fi
+}
+
+## ----- Screenshots From File ----- ##
+## Same as `ss()`, but takes a set of screenshots from a file
+##
+## $1 - The file to read from
+##
+## Usage: `ss_from_file urls.txt 800 600 google.com`
+##
+
+function ss_from_file() {
+  i=1
+  while read line
+  do
+    url=$line
+    page=$(echo $url | tr ./_ -)
+    webkit2png -W $2 -H $3 -F -o screenshot-$page http://$url
+    let i++
+  done < $1
+}
+
+## ----- Screenshot Incrementer ----- ##
+## Same as `ss()`, but runs over a set of incrementing URLs
+## Requires: webkit2png (`brew install webkit2png`), `run` function
+##
+## $1 - width
+## $2 - height
+## $2 - URL
+##
+## Usage: `run 28 ss_incrementer 1024 768 example.com/#`
+##
+
+function ss_incrementer() {
+  webkit2png -W $1 -H $2 -F -o screenshot-$i --delay=2 http://$3/$i
+}
+
+## ----- Wallpaper ----- ##
+## Uses the 'desktop' gem to set a wallpaper everywhere
+## Requires: desktop (`gem install desktop`)
+##
+## $1 - the category ('art', 'space', etc.)
+## $2 - the wallpaper
+##
+## Usage: `wall space 01.jpg`
+##
+
+function wall() {
+  local category=$(echo $1 | tr 'A-Z' 'a-z')
+  desktop "$WALLPAPER_PATH"/"$1"/wallpapers-"$category"-"$2"
+}
+

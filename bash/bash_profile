@@ -11,6 +11,7 @@ source ~/.bash/completions/git.bash
 source ~/.bash/functions/general
 source ~/.bash/functions/git
 source ~/.bash/functions/mvcss
+source ~/.bash/functions/wrappers
 source ~/.bash/prompt
 source ~/.bash/overrides
 source ~/.bash/rbenv

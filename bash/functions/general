@@ -2,16 +2,6 @@
 ##   Functions - General
 ## -------------------------------------
 
-## ----- Homebrew Dependencies ----- ##
-## Lists out all brew packages and associated dependencies
-##
-## Usage: `brew_deps`
-##
-
-function brew_deps() {
-  brew list | while read cask; do echo -n $cask; brew deps $cask | awk '{ printf(" %s ", $0) }'; echo ""; done
-}
-
 ## ----- Delete Files ----- ##
 ## Deletes files with a pattern
 ##
@@ -48,40 +38,6 @@ function get_process_id() {
   ps aux | grep $1 | awk '{print $2}'
 }
 
-## ----- Screenshot ----- ##
-## Wrapper for webkit2png command
-##
-## $1 - URL (or height)
-## $2 - width (option)
-## $3 - URL (if width/height passed in)
-##
-## Usage: `ss google.com`, `ss 800 600 google.com`
-##
-
-function ss() {
-  re='^[0-9]+$'
-  if ! [[ $1 =~ $re ]]
-  then
-    webkit2png -W 1440 -H 900 -F -o screenshot http://$1
-  else
-    webkit2png -W $1 -H $2 -F -o screenshot http://$3
-  fi
-}
-
-## ----- Server ----- ##
-## Simple HTTP server from a directory, optionally specifying a port
-##
-## $1 - the port (optional)
-##
-## Usage: `server`
-##
-
-function server() {
-  local port="${1:-8000}"
-  open "http://localhost:${port}/"
-  python -m SimpleHTTPServer "$port"
-}
-
 ## ----- Open ----- ##
 ## Alias for 'open' command
 ##
@@ -103,6 +59,24 @@ function o() {
   fi
 }
 
+## ----- Run ----- ##
+## Runs a command a set number of times
+##
+## $1 - the number of times to run the command
+## $2 - the command to run
+##
+## Usage: `run 5 some_command`
+##
+
+function run() {
+  num=$1
+  shift
+  for i in `seq $num`
+  do
+    $@
+  done
+}
+
 ## ----- Run Shell Script ----- ##
 ## Runs a shell script passed in via curl
 ##
@@ -113,6 +87,20 @@ function o() {
 
 function run_sh() {
   bash <(curl -s $1)
+}
+
+## ----- Server ----- ##
+## Simple HTTP server from a directory, optionally specifying a port
+##
+## $1 - the port (optional)
+##
+## Usage: `server`
+##
+
+function server() {
+  local port="${1:-8000}"
+  open "http://localhost:${port}/"
+  python -m SimpleHTTPServer "$port"
 }
 
 ## ----- Symlinks ----- ##
@@ -138,19 +126,5 @@ function symlinks() {
 function todo() {
   echo "- $*" >> "$TODOLIST_PATH_RAW"
   echo "Added!"
-}
-
-## ----- Wallpaper ----- ##
-## Uses the 'desktop' gem to set a wallpaper everywhere
-##
-## $1 - the category ('art', 'space', etc.)
-## $2 - the wallpaper
-##
-## Usage: `wall space 01.jpg`
-##
-
-function wall() {
-  local category=$(echo $1 | tr 'A-Z' 'a-z')
-  desktop "$WALLPAPER_PATH"/"$1"/wallpapers-"$category"-"$2"
 }
 
