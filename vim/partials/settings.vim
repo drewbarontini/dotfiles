@@ -27,7 +27,7 @@ set wildignore+=*/tmp/*,*/log/*,*.so,*.swp,*.zip
 
 " ========== EasyMotion ========== "
 
-let g:EasyMotion_leader_key = '<Leader>'
+let g:EasyMotion_leader_key = '<leader>e'
 
 " ========== Gist ========== "
 
