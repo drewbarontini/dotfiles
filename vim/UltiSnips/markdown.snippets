@@ -45,7 +45,7 @@ snippet linkdoc "Link Documentation"
 endsnippet
 
 snippet img "Image"
-![${1:alttext}](${2:/images/image.jpg} "${3:title}")
+![${1:alt}](${2:/images/image.jpg} "${3:title}")
 endsnippet
 
 snippet ilc "Inline Code" i
@@ -61,4 +61,10 @@ endsnippet
 
 snippet kb "Check Box"
 - [ ] $0
+endsnippet
+
+snippet fm "Frontmatter"
+---
+${1:key}: ${2:value}
+---
 endsnippet
