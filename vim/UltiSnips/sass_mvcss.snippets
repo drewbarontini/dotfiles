@@ -136,25 +136,17 @@ snippet em "em Function"
 em(${0}px)
 endsnippet
 
-snippet bvar "Base Variable"
-$b-${0}
-endsnippet
-
 snippet bsp "Base Space Variable"
 $b-${0:space}
 endsnippet
 
-snippet cvar "Color Variable"
-$c-${0}
-endsnippet
-
 snippet mod "Modifier Class"
-.${1:element}--${2}
+.${1:`!p res = re.sub(r'_', '', snip.basename)`}--${2}
 	${0}
 endsnippet
 
 snippet ste "State Class"
-.${1:element}.is-${2}
+.${1:`!p res = re.sub(r'_', '', snip.basename)`}.is-${2}
 	${0}
 endsnippet
 
@@ -164,6 +156,30 @@ snippet con "Context Class"
 endsnippet
 
 snippet sca "Scaffold Class"
-.${1:element}-${2}
+.${1:`!p res = re.sub(r'_', '', snip.basename)`}-${2}
 	${0}
+endsnippet
+
+snippet vb "Base Variable"
+$b-${0}
+endsnippet
+
+snippet vc "Color Variable"
+$c-${0}
+endsnippet
+
+snippet vcb "$c-background"
+$c-background
+endsnippet
+
+snippet vch "$c-highlight"
+$c-highlight
+endsnippet
+
+snippet vcbi "$c-background-invert"
+$c-background-invert
+endsnippet
+
+snippet vcti "$c-text-invert"
+$c-text-invert
 endsnippet
