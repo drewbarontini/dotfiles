@@ -209,5 +209,6 @@ nnoremap <leader>y YP
 
 " == Z == "
 
-" ...
+" Quicker action to suspend Vim ('fg' to return)
+nnoremap <leader>z <C-z>
 
