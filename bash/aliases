@@ -99,6 +99,9 @@ alias ila='ghi label'
 alias ia='ghi assign'
 alias im='ghi milestone'
 
+# Heroku
+alias hd='git push heroku master'
+
 # hub
 alias h='hub'
 alias hb='hub browse'
