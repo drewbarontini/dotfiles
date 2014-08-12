@@ -11,7 +11,7 @@ snippet =rp "Render Partial"
 endsnippet
 
 snippet =rpl "Render Partial with Locals"
-= render :partial => '${0:partial}', :locals => {}
+= render :partial => '${1:partial}', :locals => { $0 }
 endsnippet
 
 snippet =rpc "Render Partial with Collection"
