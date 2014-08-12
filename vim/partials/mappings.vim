@@ -7,7 +7,7 @@
 " Better defaults
 nnoremap ; :
 nnoremap <space> :
-inoremap jj <esc>
+inoremap jk <esc>
 
 " NO Arrow Keys
 map <Left> <Nop>

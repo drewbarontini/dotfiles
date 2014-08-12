@@ -7,15 +7,15 @@ snippet =it "Image Tag"
 endsnippet
 
 snippet =rp "Render Partial"
-= render :partial => '${0:partial}'
+= render '${0:partial}'
 endsnippet
 
 snippet =rpl "Render Partial with Locals"
-= render :partial => '${1:partial}', :locals => { $0 }
+= render partial: '${1:partial}', locals: { $0 }
 endsnippet
 
 snippet =rpc "Render Partial with Collection"
-= render :partial => '${1:partial}', :collection => @$1
+= render partial: '${1:partial}', collection: @$1
 endsnippet
 
 snippet if "If Statement"
