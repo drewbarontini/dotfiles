@@ -111,5 +111,8 @@ Bundle 'SirVer/ultisnips'
 " Simple TODO lists
 Bundle 'vitalk/vim-simple-todo'
 
+" Adds a 'gs' sort
+Bundle 'christoomey/vim-sort-motion'
+
 " Required by vundle
 filetype indent plugin on
