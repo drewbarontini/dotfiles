@@ -2,6 +2,10 @@ snippet bg "Background"
 background: ${0}
 endsnippet
 
+snippet bga "Background Attachment"
+background-attachment: ${0:scroll|fixed|local|initial|inherit}
+endsnippet
+
 snippet bgd "Background Darken"
 background: darken($${1}, ${0}%)
 endsnippet
@@ -12,6 +16,30 @@ endsnippet
 
 snippet bgv "Background Variable"
 background: $${0}
+endsnippet
+
+snippet bgri "Background Rails Image"
+background: image-url('${0}')
+endsnippet
+
+snippet bgc "Background Color"
+background-color: $0
+endsnippet
+
+snippet bgi "Background Image"
+background-image: $0
+endsnippet
+
+snippet bgp "Background Position"
+background-position: $0
+endsnippet
+
+snippet bgr "Background Position"
+background-repeat: ${0:no-repeat}
+endsnippet
+
+snippet bgs "Background Size"
+background-size: ${0:cover|contain}
 endsnippet
 
 snippet bd "Border"
@@ -218,6 +246,10 @@ snippet mbv "Margin Bottom Base Variable"
 margin-bottom: $b-${0}
 endsnippet
 
+snippet mbm "Margin Bottom Base Space"
+margin-bottom: $b-space$0
+endsnippet
+
 snippet mhc "Margin Horizontal Center"
 margin: 0 auto
 endsnippet
@@ -308,6 +340,10 @@ endsnippet
 
 snippet pbv "Padding Bottom Base Variable"
 padding-bottom: $b-${0}
+endsnippet
+
+snippet pbm "Padding Bottom Base Space"
+padding-bottom: $b-space$0
 endsnippet
 
 snippet pl "Padding Left"
