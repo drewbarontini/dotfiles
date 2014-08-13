@@ -2,10 +2,6 @@ snippet bg "Background"
 background: ${0}
 endsnippet
 
-snippet bga "Background Attachment"
-background-attachment: ${0:scroll|fixed|local|initial|inherit}
-endsnippet
-
 snippet bgd "Background Darken"
 background: darken($${1}, ${0}%)
 endsnippet
@@ -14,12 +10,16 @@ snippet bgl "Background Lighten"
 background: lighten($${1}, ${0}%)
 endsnippet
 
+snippet bgri "Background Rails Image"
+background: image-url('${0}')
+endsnippet
+
 snippet bgv "Background Variable"
 background: $${0}
 endsnippet
 
-snippet bgri "Background Rails Image"
-background: image-url('${0}')
+snippet bga "Background Attachment"
+background-attachment: ${0:scroll|fixed|local|initial|inherit}
 endsnippet
 
 snippet bgc "Background Color"
@@ -440,6 +440,10 @@ endsnippet
 
 snippet tof "Top Flush"
 top: 0
+endsnippet
+
+snippet trn "Transition"
+transition: ${0:all 0.2s ease-in-out}
 endsnippet
 
 snippet vab "vertical-align: baseline"
