@@ -74,7 +74,7 @@ nnoremap <leader>b :CtrlPBuffer<cr>
 " == C == "
 
 " Copy whole file, store in register
-nnoremap <leader>co ggVG "*y
+nnoremap <leader>co ggVG"*y
 
 " == D == "
 
