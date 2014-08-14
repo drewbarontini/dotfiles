@@ -53,7 +53,7 @@ nnoremap <bs> <C-u>
 " == Non-Alphanumeric == "
 
 " Switch between buffers
-nnoremap <leader><leader> <C-^>
+nnoremap ,, <C-^>
 
 " Tabularize
 vnoremap <leader>= :Tabularize /
