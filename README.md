@@ -86,7 +86,7 @@ Vim Keyboard Shortcuts
 #### General
 
 - `space` or `;` &mdash; `:`
-- `jj` escapes Insert Mode
+- `jk` escapes Insert Mode
 
 #### Window Management
 
@@ -117,17 +117,31 @@ Vim Keyboard Shortcuts
 
 #### Commands
 
-- `,S` starts a shell command
-- `,rs` replaces the current search term with what is passed in
-- `,co` copies the whole file and stores in register
-- `,l` clears the search
+- `%%` expands the current path in the command line
 - `C-s` saves the the file
+- `,l` clears the search
+- `,rs` replaces the current search term with what is passed in
+- `,S` starts a shell command
+- `,q` quits
+- `,w` saves the the file
+- `,W` saves the the file and closes it
+- `,z` Suspends Vim (`fg` to return)
+
+#### Text
+
+- `,co` copies the whole file and stores in register
+- `,do` deletes the whole file
+- `J` inserts a newline above
+- `K` inserts a newline below
+- `,p` duplicates current line below
+- `,y` duplicates current line above
+- `Y` copies to the end of line
 
 #### Functions
 
-- `,s` trims trailing whitespace
 - `C-e` jumps out of parenthesis, brackets, etc.
 - `,rn` to rename the current file
+- `,s` trims trailing whitespace
 
 #### Open Files
 
@@ -146,9 +160,12 @@ Vim Keyboard Shortcuts
 
 - `,aa` opens up [Ack](https://github.com/mileszs/ack.vim) for searching
 - `,AA` opens up [Ack](https://github.com/mileszs/ack.vim) to search for word under the cursor
-- `,f` opens up [CtrlP](https://github.com/kien/ctrlp.vim)
 - `,b` opens up [CtrlP](https://github.com/kien/ctrlp.vim) buffer
-- `,V` Goyo to put file in focus mode (for Markdown)
+- `,f` opens up [CtrlP](https://github.com/kien/ctrlp.vim)
+- `,F` clears the [CtrlP](https://github.com/kien/ctrlp.vim) cache
+- `,gb` Runs `:Gbrowse` to open current file on GitHub
 - `,m` Opens current file in Marked 2.app
 - `,se` Runs `:UltiSnipsEdit` to edit current filetype snippets
+- `,ug` Runs the `IndentGuidesToggle`
+- `,V` Goyo to put file in focus mode (for Markdown)
 
