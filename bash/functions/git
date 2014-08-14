@@ -14,6 +14,18 @@ function git_delete_remote_tag() {
   git push origin :refs/tags/$1
 }
 
+## ----- Interactive Rebase ----- ##
+## Runs git interactive rebase
+##
+## $1 - the number of commits to rebase
+##
+## Usage: `git_interactive_rebase 4`
+##
+
+function git_interactive_rebase() {
+  git rebase -i HEAD~$1
+}
+
 ## ----- Remote Tracking Branch ----- ##
 ## Creates a new branch and pushes that branch to remote
 ##
