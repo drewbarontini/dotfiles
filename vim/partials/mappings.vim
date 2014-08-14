@@ -117,7 +117,8 @@ nnoremap <leader>h <C-w>s<C-w>j
 
 " == L == "
 
-" ...
+" Clear the search buffer when hitting return
+nnoremap <silent> <leader>l :nohlsearch<cr>
 
 " == M == "
 

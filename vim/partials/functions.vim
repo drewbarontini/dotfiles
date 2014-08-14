@@ -2,14 +2,6 @@
 "   Functions
 " ====================================================
 
-" ========== Clear Search ========== "
-" Clear the search buffer when hitting return
-
-function! MapCR()
-  nnoremap <silent> <leader>l :nohlsearch<cr>
-endfunction
-call MapCR()
-
 " ========== Multi-purpose Tab Key ========== "
 " Indent if we're at the beginning of a line. Else, do completion.
 
