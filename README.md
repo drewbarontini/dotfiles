@@ -87,8 +87,6 @@ Vim Keyboard Shortcuts
 
 - `;` &mdash; `:`
 - `jk` escapes Insert Mode
-- `enter` pages down
-- `delete`/`backspace` pages up
 
 #### Window Management
 

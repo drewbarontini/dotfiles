@@ -44,10 +44,6 @@ nnoremap K o<esc>Dk
 " Copy to end of line
 nnoremap Y y$
 
-" Page down/up
-nnoremap <enter> <C-d>
-nnoremap <bs> <C-u>
-
 " ========== Leader ========== "
 
 " == Non-Alphanumeric == "
