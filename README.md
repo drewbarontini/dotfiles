@@ -81,11 +81,11 @@ Vim Keyboard Shortcuts
 
 #### Setup
 
-- `,` - leader key
+- `space` - leader key
 
 #### General
 
-- `space` or `;` &mdash; `:`
+- `;` &mdash; `:`
 - `jk` escapes Insert Mode
 - `enter` pages down
 - `delete`/`backspace` pages up

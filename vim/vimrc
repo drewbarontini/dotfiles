@@ -41,7 +41,8 @@ set ttimeoutlen=1
 set fillchars+=vert:\
 
 " Change leader key
-let mapleader = ","
+map , <leader>
+map <Space> <leader>
 
 " ====================================================
 "   Vundle

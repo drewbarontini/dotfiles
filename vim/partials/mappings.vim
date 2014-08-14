@@ -6,7 +6,6 @@
 
 " Better defaults
 nnoremap ; :
-nnoremap <space> :
 inoremap jk <esc>
 
 " NO Arrow Keys
