@@ -81,6 +81,9 @@ nnoremap <leader>co ggVG"*y
 " Delete all text in file
 nnoremap <leader>do ggdG
 
+" Duplicate current line below
+nnoremap <leader>dl yyp
+
 " == E == "
 
 " ...
