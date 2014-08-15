@@ -61,6 +61,23 @@ Applications not in cask:
 
 And the rest are in the Mac App Store.
 
+### GitHub Command Line
+
+Two options:
+
+1. [stephencelis/ghi](http://github.com/stephencelis/ghi)
+2. [node-gh/gh](http://github.com/node-gh/gh)
+
+#### GHI
+
+This is in `setup/brew`.
+
+#### GH
+
+```shell
+[sudo] npm install -g gh
+```
+
 ### Multiple Heroku Accounts
 
 If you manage more than one Heroku account, install [Heroku Accounts](https://github.com/ddollar/heroku-accounts):
