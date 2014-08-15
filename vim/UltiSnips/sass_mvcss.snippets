@@ -2,9 +2,9 @@ snippet coh "Heading Comment"
 // *************************************
 //
 //   ${1:`!p res = re.sub(r'_', '', snip.basename.title())`}
-//   -> ${0:Description}
+//   -> ${2:Description}
 //
-// *************************************
+// *************************************$0
 endsnippet
 
 snippet coht "Heading Comment with Template"
@@ -17,15 +17,15 @@ snippet coht "Heading Comment with Template"
 //   Template (Haml)
 // -------------------------------------
 //
-// .${0:`!p res = re.sub(r'_', '', snip.basename)`[.`!p res = re.sub(r'_', '', snip.basename)`--modifier](.is-state)}
+// .${3:`!p res = re.sub(r'_', '', snip.basename)`[.`!p res = re.sub(r'_', '', snip.basename)`--modifier](.is-state)}
 //
-// *************************************
+// *************************************$0
 endsnippet
 
 snippet col "Long Comment"
 // -------------------------------------
-//   ${0:Comment}
-// -------------------------------------
+//   ${1:Comment}
+// -------------------------------------$0
 endsnippet
 
 snippet comp "Component Template"
@@ -113,7 +113,7 @@ snippet struc "Structure Template"
 endsnippet
 
 snippet cos "Short Comment"
-// ----- ${0:Comment} ----- //
+// ----- ${1:Comment} ----- //$0
 endsnippet
 
 snippet cosd "Short Comment Description"
