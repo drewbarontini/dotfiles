@@ -61,6 +61,22 @@ Applications not in cask:
 
 And the rest are in the Mac App Store.
 
+### Multiple Heroku Accounts
+
+If you manage more than one Heroku account, install [Heroku Accounts](https://github.com/ddollar/heroku-accounts):
+
+```shell
+heroku plugins:install git://github.com/ddollar/heroku-accounts.git
+```
+
+### Desktop Wallpapers
+
+To easily swap out multiple space and monitor wallpapers on OS X, install [chrishunt/desktop](https://github.com/chrishunt/desktop):
+
+```shell
+gem install desktop
+```
+
 What's Included
 ---------------
 
