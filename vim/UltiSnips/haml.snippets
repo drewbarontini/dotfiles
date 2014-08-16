@@ -47,5 +47,13 @@ ${1:key}: ${2:value}
 endsnippet
 
 snippet todo "TODO comment"
-/ TODO: $0
+/ TODO${1:(${2})}: $0
+endsnippet
+
+snippet fix "FIXME comment"
+/ FIXME${1:(${2})}: $0
+endsnippet
+
+snippet note "NOTE comment"
+/ NOTE${1:(${2})}: $0
 endsnippet

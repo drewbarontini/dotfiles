@@ -1,5 +1,13 @@
-snippet todo "TODO/FIXME/NOTE"
-// ${1:TODO|FIXME|NOTE}: ${0}
+snippet todo "TODO comment"
+// TODO${1:(${2})}: $0
+endsnippet
+
+snippet fix "FIXME comment"
+// FIXME${1:(${2})}: $0
+endsnippet
+
+snippet note "NOTE comment"
+// NOTE${1:(${2})}: $0
 endsnippet
 
 snippet mn "TODO/FIXME/NOTE"

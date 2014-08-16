@@ -1,7 +1,19 @@
+snippet desc "describe"
+describe ${1} do
+	${2}
+end$0
+endsnippet
+
+snippet bef "before"
+before do
+	${1}
+end$0
+endsnippet
+
 snippet it "it"
-it "${1:Expectation}" do
-	$0
-end
+it '${1:Expectation}' do
+	${2}
+end$0
 endsnippet
 
 snippet ex "Expectation"
