@@ -158,6 +158,7 @@ alias pdr='powder restart'
 # Rails
 alias br='./bin/rails'
 alias brc='./bin/rails c'
+alias brg='./bin/rails g'
 alias brs='./bin/rails s'
 
 # Rake
