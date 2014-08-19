@@ -155,10 +155,10 @@ alias pdo='powder open'
 alias pdr='powder restart'
 
 # Rails
-alias br='./bin/rails'
-alias brc='./bin/rails c'
-alias brg='./bin/rails g'
-alias brs='./bin/rails s'
+alias ra='./bin/rails'
+alias rac='./bin/rails c'
+alias rag='./bin/rails g'
+alias ras='./bin/rails s'
 
 # Rake
 alias rk='./bin/rake'
