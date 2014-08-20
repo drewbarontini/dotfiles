@@ -175,21 +175,52 @@ function get_mvcss_css_build() {
 ##
 function mvcss_starter() {
   local BASEMANURL='git@github.com:drewbarontini/baseman.git'
-  echo "Cloning drewbarontini/baseman..."
+
+  echo
+  echo "=============================================================="
+  echo "================ MVCSS Starter Project ======================="
+  echo "=============================================================="
+  echo
+
+  echo "--------------------------------------------------------------"
+  echo "-- Cloning drewbarontini/baseman..."
+  echo "--------------------------------------------------------------"
+  echo
+
   git clone $BASEMANURL $1
   cd $1
   cd source/assets/stylesheets
+
+  echo
+  echo "--------------------------------------------------------------"
+  echo "-- Downloading MVCSS..."
+  echo "--------------------------------------------------------------"
+  echo
+
   mvcss all
   mv mvcss-master/application.sass application.sass
   mv mvcss-master/foundation foundation
   mv mvcss-master/components components
   mv mvcss-master/structures structures
   rm -rf mvcss-master
-  echo "MVCSS is set up!"
+
   cd ../../../
-  echo "Bundling..."
+
+  echo
+  echo "--------------------------------------------------------------"
+  echo "-- Bundling..."
+  echo "--------------------------------------------------------------"
+  echo
+
   gem install bundler
   bundle install --binstubs
+
+  echo
+  echo "--------------------------------------------------------------"
+  echo "-- Starting the Middleman server..."
+  echo "--------------------------------------------------------------"
+  echo
+
   bundle exec middleman s
 }
 
