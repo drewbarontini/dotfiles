@@ -166,3 +166,30 @@ function get_mvcss_css_build() {
   fi
 }
 
+## ----- MVCSS Starter ----- ##
+## Creates an MVCSS starter application using drewbarontini/baseman
+##
+## $1 - The repo name
+##
+## Usage: `mvcss_starter sandbox`
+##
+function mvcss_starter() {
+  local BASEMANURL='git@github.com:drewbarontini/baseman.git'
+  echo "Cloning drewbarontini/baseman..."
+  git clone $BASEMANURL $1
+  cd $1
+  cd source/assets/stylesheets
+  mvcss all
+  mv mvcss-master/application.sass application.sass
+  mv mvcss-master/foundation foundation
+  mv mvcss-master/components components
+  mv mvcss-master/structures structures
+  rm -rf mvcss-master
+  echo "MVCSS is set up!"
+  cd ../../../
+  echo "Bundling..."
+  gem install bundler
+  bundle install --binstubs
+  bundle exec middleman s
+}
+
