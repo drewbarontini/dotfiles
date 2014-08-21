@@ -10,10 +10,11 @@ USERNAME='drewbarontini'
 ## ----- Paths ----- ##
 
 ALIASES_PATH="$HOME/.dotfiles/bash/aliases"
-CODE_PATH="$HOME/Code/"
+CODE_PATH="$HOME/Code"
 DOTFILES_PATH="$HOME/.dotfiles"
 GENERALFUNC_PATH="$HOME/.dotfiles/bash/functions/general"
 NOTES_PATH="$HOME/Dropbox\ \(Personal\)/Notes/"
+PLAYGROUND_PATH="$CODE_PATH/Playground"
 SCRATCHNOTES_PATH="$HOME/Dropbox\ \(Personal\)/Notes/notes-scratch.txt"
 SHARPENNOTES_PATH="$HOME/Dropbox\ \(Personal\)/Notes/notes-sharpen.txt"
 SNIPPETS_PATH="$HOME/.dotfiles/vim/UltiSnips"

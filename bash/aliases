@@ -25,6 +25,7 @@ alias sharpen="vim $SHARPENNOTES_PATH"
 alias snippets="vim $SNIPPETS_PATH"
 alias todolist="vim $TODOLIST_PATH"
 alias vfiles="vim $VIM_FILES_PATH"
+alias play='cd $PLAYGROUND_PATH'
 
 ## ----- Git ----- ##
 
