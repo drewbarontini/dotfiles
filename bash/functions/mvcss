@@ -95,9 +95,9 @@ function mvcss() {
 # MVCSS Library
 ## Pull down the MVCSS Library files from the GitHub repo
 ##
-## Usage: `mvcss_library components list`, `mvcss_library copy components list`
+## Usage: `mvcss-library components list`, `mvcss_library copy components list`
 ##
-function mvcss_library() {
+function mvcss-library() {
   if [ "$1" == 'copy' ]
   then
     echo "$LOADMSG"
@@ -122,50 +122,6 @@ function mvcss_library() {
   fi
 }
 
-## ----- Get MVCSS Sass Build ----- ##
-## Pulls down and concatenates MVCSS Sass files
-##
-## Usage: `get_mvcss_sass_build`
-##
-function get_mvcss_sass_build() {
-  local MVCSSURL='https://raw.githubusercontent.com/mvcss/mvcss/master'
-  touch build.sass
-  echo "Created 'build' directory."
-  echo "Getting Foundation files..."
-  curl -s "$MVCSSURL"/foundation/_helpers.sass >> build.sass
-  curl -s "$MVCSSURL"/foundation/_config.sass >> build.sass
-  curl -s "$MVCSSURL"/foundation/_base.sass >> build.sass
-  echo "Getting Component files..."
-  curl -s "$MVCSSURL"/components/_bucket.sass >> build.sass
-  curl -s "$MVCSSURL"/components/_card.sass >> build.sass
-  curl -s "$MVCSSURL"/components/_grid.sass >> build.sass
-  curl -s "$MVCSSURL"/components/_row.sass >> build.sass
-  curl -s "$MVCSSURL"/components/_well.sass >> build.sass
-  echo "Getting Tools file..."
-  curl -s "$MVCSSURL"/foundation/_tools.sass >> build.sass
-  cat build.sass | pbcopy
-  echo "Created 'build.sass', copied to clipboard!"
-}
-
-## ----- Get MVCSS CSS Build ----- ##
-## Pulls down and the MVCSS CSS build and copies to clipboard
-##
-## Usage: `get_mvcss_css_build`
-##
-function get_mvcss_css_build() {
-  local MVCSSURL='https://raw.githubusercontent.com/mvcss/mvcss/master'
-  if [[ "$1" == 'min' ]]
-  then
-    echo "Copying 'application.min.css' to the clipboard..."
-    curl -s "$MVCSSURL"/_build/css/application.min.css | pbcopy
-    echo "Copied!"
-  else
-    echo "Copying 'application.css' to the clipboard..."
-    curl -s "$MVCSSURL"/_build/css/application.css | pbcopy
-    echo "Copied!"
-  fi
-}
-
 ## ----- MVCSS Starter ----- ##
 ## Creates an MVCSS starter application using drewbarontini/baseman
 ##
@@ -173,7 +129,7 @@ function get_mvcss_css_build() {
 ##
 ## Usage: `mvcss_starter sandbox`
 ##
-function mvcss_starter() {
+function mvcss-starter() {
   local BASEMANURL='git@github.com:drewbarontini/baseman.git'
 
   echo
@@ -222,5 +178,49 @@ function mvcss_starter() {
   echo
 
   bundle exec middleman s
+}
+
+## ----- Get MVCSS Sass Build ----- ##
+## Pulls down and concatenates MVCSS Sass files
+##
+## Usage: `get_mvcss_sass_build`
+##
+function get_mvcss_sass_build() {
+  local MVCSSURL='https://raw.githubusercontent.com/mvcss/mvcss/master'
+  touch build.sass
+  echo "Created 'build' directory."
+  echo "Getting Foundation files..."
+  curl -s "$MVCSSURL"/foundation/_helpers.sass >> build.sass
+  curl -s "$MVCSSURL"/foundation/_config.sass >> build.sass
+  curl -s "$MVCSSURL"/foundation/_base.sass >> build.sass
+  echo "Getting Component files..."
+  curl -s "$MVCSSURL"/components/_bucket.sass >> build.sass
+  curl -s "$MVCSSURL"/components/_card.sass >> build.sass
+  curl -s "$MVCSSURL"/components/_grid.sass >> build.sass
+  curl -s "$MVCSSURL"/components/_row.sass >> build.sass
+  curl -s "$MVCSSURL"/components/_well.sass >> build.sass
+  echo "Getting Tools file..."
+  curl -s "$MVCSSURL"/foundation/_tools.sass >> build.sass
+  cat build.sass | pbcopy
+  echo "Created 'build.sass', copied to clipboard!"
+}
+
+## ----- Get MVCSS CSS Build ----- ##
+## Pulls down and the MVCSS CSS build and copies to clipboard
+##
+## Usage: `get_mvcss_css_build`
+##
+function get_mvcss_css_build() {
+  local MVCSSURL='https://raw.githubusercontent.com/mvcss/mvcss/master'
+  if [[ "$1" == 'min' ]]
+  then
+    echo "Copying 'application.min.css' to the clipboard..."
+    curl -s "$MVCSSURL"/_build/css/application.min.css | pbcopy
+    echo "Copied!"
+  else
+    echo "Copying 'application.css' to the clipboard..."
+    curl -s "$MVCSSURL"/_build/css/application.css | pbcopy
+    echo "Copied!"
+  fi
 }
 
