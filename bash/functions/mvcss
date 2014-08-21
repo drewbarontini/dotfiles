@@ -127,7 +127,7 @@ function mvcss-library() {
 ##
 ## $1 - The repo name
 ##
-## Usage: `mvcss_starter sandbox`
+## Usage: `mvcss-starter sandbox`
 ##
 function mvcss-starter() {
   local BASEMANURL='git@github.com:drewbarontini/baseman.git'
