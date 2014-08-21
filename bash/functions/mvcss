@@ -145,7 +145,14 @@ function mvcss-starter() {
 
   git clone $BASEMANURL $1
   cd $1
-  cd source/assets/stylesheets
+
+  echo
+  echo "--------------------------------------------------------------"
+  echo "-- Cleaning up repo..."
+  echo "--------------------------------------------------------------"
+
+  rm CHANGELOG.md
+  rm MIT-LICENSE
 
   echo
   echo "--------------------------------------------------------------"
@@ -153,6 +160,7 @@ function mvcss-starter() {
   echo "--------------------------------------------------------------"
   echo
 
+  cd source/assets/stylesheets
   mvcss all
   mv mvcss-master/application.sass application.sass
   mv mvcss-master/foundation foundation
@@ -160,7 +168,17 @@ function mvcss-starter() {
   mv mvcss-master/structures structures
   rm -rf mvcss-master
 
+  echo
+  echo "--------------------------------------------------------------"
+  echo "-- Setting up a new Git repo..."
+  echo "--------------------------------------------------------------"
+  echo
+
   cd ../../../
+  rm -rf .git
+  git init
+  git add .
+  git commit -m 'Initial commit'
 
   echo
   echo "--------------------------------------------------------------"
