@@ -78,6 +78,10 @@ This is in `setup/brew`.
 [sudo] npm install -g gh
 ```
 
+### Heroku Toolbelt
+
+Download at [https://toolbelt.heroku.com/](https://toolbelt.heroku.com/).
+
 ### Multiple Heroku Accounts
 
 If you manage more than one Heroku account, install [Heroku Accounts](https://github.com/ddollar/heroku-accounts):
