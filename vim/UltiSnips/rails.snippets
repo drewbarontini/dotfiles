@@ -1,3 +1,15 @@
+snippet ba "before_action"
+before_action :${1:method_name}, only: [${2::show}]$0
+endsnippet
+
 snippet bp "binding.pry"
 binding.pry
+endsnippet
+
+snippet cont "Controller Class"
+Class ${1:Model}Controller < ApplicationController
+
+	$0
+
+end
 endsnippet
