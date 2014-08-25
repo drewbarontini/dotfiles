@@ -90,7 +90,7 @@ nnoremap <leader>do ggdG
 nnoremap <leader>f :CtrlP<cr>
 
 " Clear CtrlP cache
-nnoremap <leader>F :ClearCtrlPCache<cr>
+nnoremap <silent> <leader>F :ClearCtrlPCache<cr>
 
 " == G == "
 
