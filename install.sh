@@ -9,6 +9,7 @@ then
   echo
   git clone git@github.com:drewbarontini/dotfiles.git ~/.dotfiles
 
+  echo
   echo "--------------------------------------------------------------"
   echo "--> Setting up Bash..."
   echo "--------------------------------------------------------------"
