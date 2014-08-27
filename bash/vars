@@ -2,26 +2,13 @@
 ##   Vars
 ## -------------------------------------
 
-## ----- User ----- ##
-
-NAME='Drew Barontini'
-USERNAME='drewbarontini'
-
 ## ----- Paths ----- ##
 
 ALIASES_PATH="$HOME/.dotfiles/bash/aliases"
-CODE_PATH="$HOME/Code"
 DOTFILES_PATH="$HOME/.dotfiles"
 GENERALFUNC_PATH="$HOME/.dotfiles/bash/functions/general"
-NOTES_PATH="$HOME/Dropbox\ \(Personal\)/Notes/"
-PLAYGROUND_PATH="$CODE_PATH/Playground"
-SCRATCHNOTES_PATH="$HOME/Dropbox\ \(Personal\)/Notes/notes-scratch.txt"
-SHARPENNOTES_PATH="$HOME/Dropbox\ \(Personal\)/Notes/notes-sharpen.txt"
 SNIPPETS_PATH="$HOME/.dotfiles/vim/UltiSnips"
-TODOLIST_PATH="$HOME/Dropbox\ \(Personal\)/Notes/todos.txt"
-TODOLIST_PATH_RAW=~/Dropbox\ \(Personal\)/Notes/todos.txt
 VIMRC_PATH='$HOME/.dotfiles/vim/vimrc'
 VIM_FILES_PATH="$HOME/.dotfiles/vim"
 VIM_MAPPINGS_PATH="$HOME/.dotfiles/vim/partials/mappings.vim"
-WALLPAPER_PATH=$HOME/Dropbox\ \(Personal\)/Wallpapers
 
