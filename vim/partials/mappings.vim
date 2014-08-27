@@ -182,7 +182,7 @@ nnoremap <leader>t :!bundle exec rspec %<cr>
 " == U == "
 
 " IndentGuidesToggle
-nnoremap <silent> <leader>ug <Plug>IndentGuidesToggle
+nnoremap <silent> <leader>ug :IndentGuidesToggle<cr>
 
 " == V == "
 
