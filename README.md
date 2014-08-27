@@ -6,10 +6,7 @@ Installation
 
 ```bash
 bash <(curl -s http://drewb.io/install.sh)
-bash install.sh
 ```
-
-Once the script runs, you can `rm install.sh`.
 
 ### OS X Settings
 
