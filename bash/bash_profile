@@ -17,3 +17,7 @@ source ~/.bash/prompt
 source ~/.bash/overrides
 source ~/.bash/rbenv
 
+## Local Files
+
+[[ -f ~/.bash.local ]] && source ~/.bash.local
+
