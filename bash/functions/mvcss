@@ -97,6 +97,7 @@ function mvcss() {
 ##
 ## Usage: `mvcss-library components list`, `mvcss_library copy components list`
 ##
+
 function mvcss-library() {
   if [ "$1" == 'copy' ]
   then
@@ -129,37 +130,21 @@ function mvcss-library() {
 ##
 ## Usage: `mvcss-starter sandbox`
 ##
+
 function mvcss-starter() {
   local BASEMANURL='git@github.com:drewbarontini/baseman.git'
 
-  echo
-  echo "=============================================================="
-  echo "================ MVCSS Starter Project ======================="
-  echo "=============================================================="
-  echo
+  coh 'MVCSS Start Project'
 
-  echo "--------------------------------------------------------------"
-  echo "-- Cloning drewbarontini/baseman..."
-  echo "--------------------------------------------------------------"
-  echo
-
+  col epre 'Cloning drewbarontini/baseman...'
   git clone $BASEMANURL $1
   cd $1
 
-  echo
-  echo "--------------------------------------------------------------"
-  echo "-- Cleaning up repo..."
-  echo "--------------------------------------------------------------"
-
+  cos epost 'Cleaning up repo...'
   rm CHANGELOG.md
   rm MIT-LICENSE
 
-  echo
-  echo "--------------------------------------------------------------"
-  echo "-- Downloading MVCSS..."
-  echo "--------------------------------------------------------------"
-  echo
-
+  col 'Downloading MVCSS...'
   cd source/assets/stylesheets
   mvcss all
   mv mvcss-master/application.sass application.sass
@@ -168,33 +153,18 @@ function mvcss-starter() {
   mv mvcss-master/structures structures
   rm -rf mvcss-master
 
-  echo
-  echo "--------------------------------------------------------------"
-  echo "-- Setting up a new Git repo..."
-  echo "--------------------------------------------------------------"
-  echo
-
+  col 'Setting up a new Git repo...'
   cd ../../../
   rm -rf .git
   git init
   git add .
   git commit -m 'Initial commit'
 
-  echo
-  echo "--------------------------------------------------------------"
-  echo "-- Bundling..."
-  echo "--------------------------------------------------------------"
-  echo
-
+  col 'Bundling...'
   gem install bundler
   bundle install --binstubs
 
-  echo
-  echo "--------------------------------------------------------------"
-  echo "-- Starting the Middleman server..."
-  echo "--------------------------------------------------------------"
-  echo
-
+  col 'Starting the Middleman server...'
   bundle exec middleman s
 }
 
@@ -203,6 +173,7 @@ function mvcss-starter() {
 ##
 ## Usage: `get_mvcss_sass_build`
 ##
+
 function get_mvcss_sass_build() {
   local MVCSSURL='https://raw.githubusercontent.com/mvcss/mvcss/master'
   touch build.sass
@@ -228,6 +199,7 @@ function get_mvcss_sass_build() {
 ##
 ## Usage: `get_mvcss_css_build`
 ##
+
 function get_mvcss_css_build() {
   local MVCSSURL='https://raw.githubusercontent.com/mvcss/mvcss/master'
   if [[ "$1" == 'min' ]]

@@ -14,6 +14,78 @@ function clean_url() {
   echo $1 | sed 's/\.[[:alnum:]]*//' | tr ./_ -
 }
 
+## ----- Comment Header ----- ##
+## Heading comment for output
+##
+## $1 - The comment title
+##
+## Usage: `coh 'This is my title'`
+##
+
+function coh() {
+  echo
+  echo "=============================================================="
+  echo "==> $1"
+  echo "=============================================================="
+  echo
+}
+
+## ----- Long Comment ----- ##
+## Long, secondary comment for output
+##
+## $1 - The comment title
+##
+## Usage: `col 'This is my title'`
+##
+
+function col() {
+  case "$1" in
+    'epre')
+      echo "--------------------------------------------------------------"
+      echo "--> $2"
+      echo "--------------------------------------------------------------"
+      echo
+      ;;
+    'epost')
+      echo
+      echo "--------------------------------------------------------------"
+      echo "--> $2"
+      echo "--------------------------------------------------------------"
+      ;;
+    *)
+      echo
+      echo "--------------------------------------------------------------"
+      echo "--> $1"
+      echo "--------------------------------------------------------------"
+      echo
+  esac
+}
+
+## ----- Short Comment ----- ##
+## Short, tertiary comment for output
+##
+## $1 - The comment title
+##
+## Usage: `cos 'This is my title'`
+##
+
+function cos() {
+  case "$1" in
+    'epre')
+      echo "--> $2"
+      echo
+      ;;
+    'epost')
+      echo
+      echo "--> $2"
+      ;;
+    *)
+      echo
+      echo "--> $1"
+      echo
+  esac
+}
+
 ## ----- Delete Files ----- ##
 ## Deletes files with a pattern
 ##
