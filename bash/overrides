@@ -9,3 +9,6 @@ __git_complete go _git_checkout
 __git_complete gb _git_branch
 __git_complete gbd _git_branch
 __git_complete gbD _git_branch
+
+# Allow 'gm' alias to autocomplete
+__git_complete gm _git_merge
