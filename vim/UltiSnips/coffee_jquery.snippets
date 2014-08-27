@@ -1,14 +1,15 @@
 snippet jor "jQuery Document Ready"
 jQuery ($) ->
+	${0:# ...}
 endsnippet
 
 snippet jon "jQuery 'on'"
 $('${1:}').on '${2:click}', (e) ->
-	${0:#...}
+	${0:# ...}
 endsnippet
 
 snippet jpd "jQuery Prevent Default"
-${0:e}.preventDefault()
+${1:e}.preventDefault()$0
 endsnippet
 
 snippet job "jQuery Object"
