@@ -107,7 +107,7 @@ function delete_files() {
 ##
 
 function find_alias() {
-  grep $1 ~/.dotfiles/bash/aliases
+  alias | grep $1
 }
 
 ## ----- Get Process ID ----- ##
