@@ -6,6 +6,7 @@
 
 ALIASES_PATH="$HOME/.dotfiles/bash/aliases"
 DOTFILES_PATH="$HOME/.dotfiles"
+DOTFILES_LOCAL_PATH="$HOME/.dotfiles-local"
 GENERALFUNC_PATH="$HOME/.dotfiles/bash/functions/general"
 SNIPPETS_PATH="$HOME/.dotfiles/vim/UltiSnips"
 VIMRC_PATH='$HOME/.dotfiles/vim/vimrc'
