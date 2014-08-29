@@ -205,6 +205,7 @@ alias rmd='rm -rf'
 alias rmorig='find . -name *.orig -delete'
 
 # Searching
+alias fa='alias | grep'
 alias magic_numbers="ack -i '(FIXME: Magic number!)'" # `| wc -l` to get the count
 alias todos="ack -i '(TODO|FIX(ME)|NOTE?):'"
 

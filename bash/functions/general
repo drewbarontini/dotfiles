@@ -98,18 +98,6 @@ function delete_files() {
   find . -name $1 -delete
 }
 
-## ----- Find Alias ----- ##
-## Greps for a specific alias in aliases
-##
-## $1 - the alias
-##
-## Usage: `find_alias mv`
-##
-
-function find_alias() {
-  alias | grep $1
-}
-
 ## ----- Get Process ID ----- ##
 ## Returns a process id or set of ids for specified process
 ##
