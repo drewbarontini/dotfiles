@@ -1,0 +1,35 @@
+snippet ae "After Each"
+afterEach ->
+	${0:#...}
+endsnippet
+
+snippet be "Before Each"
+beforeEach ->
+	${0:#...}
+endsnippet
+
+snippet desc "Describe"
+describe '${1}', ->
+	${0:# ...}
+endsnippet
+
+snippet ex "Expect"
+expect(${1})$0
+endsnippet
+
+snippet it "Expectation"
+it '${1}', ->
+	${0:# ...}
+endsnippet
+
+snippet lf "loadFixtures"
+loadFixtures('${1}.html')$0
+endsnippet
+
+snippet tb "toBe" w
+.toBe(${1})$0
+endsnippet
+
+snippet te "toEqual" w
+.toEqual(${1})$0
+endsnippet
