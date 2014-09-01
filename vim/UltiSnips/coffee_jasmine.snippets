@@ -33,3 +33,10 @@ endsnippet
 snippet te "toEqual" w
 .toEqual(${1})$0
 endsnippet
+
+snippet ce "Test Event"
+spyOnEvent(${1:@element}, '${2:click}')
+$1.$2()
+
+expect('$2').toHaveBeenTriggeredOn($1)$0
+endsnippet
