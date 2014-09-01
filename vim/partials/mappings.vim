@@ -108,7 +108,7 @@ nnoremap <leader>h <C-w>s<C-w>j
 
 " == J == "
 
-" ...
+nnoremap <leader>J :!bundle exec rake jasmine:ci<cr>
 
 " == K == "
 
