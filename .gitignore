@@ -1,6 +1,7 @@
 .DS_Store
 sublime-text/Packages/User/Package Control.cache
 sublime-text/Packages/User/Package Control.last-run
+sublime-text/Packages/User/SublimeGit.sublime-settings
 doc/tags
 vim/bundle
 vim/.netrwhist
