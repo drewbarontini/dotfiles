@@ -1,50 +1,60 @@
-## -------------------------------------
-##   Functions - Git
-## -------------------------------------
+# ****************************************************
+#
+#   Functions - Git
+#
+# ****************************************************
 
-## ----- Delete Remote Tag ----- ##
-## Deletes a git tag on remote
-##
-## $1 - the tag name
-##
-## Usage: `git_delete_remote_tag v1.2.0`
-##
+# ----------------------------------------------------
+#   Delete Remote Tag
+#   -> Delete git tag on remote
+# ----------------------------------------------------
+#
+# $1 - the tag name
+#
+# Usage: `git_delete_remote_tag v1.2.0`
+#
 
 function git_delete_remote_tag() {
   git push origin :refs/tags/$1
 }
 
-## ----- Interactive Rebase ----- ##
-## Runs git interactive rebase
-##
-## $1 - the number of commits to rebase
-##
-## Usage: `git_interactive_rebase 4`
-##
+# ----------------------------------------------------
+#   Interactive Rebase
+#   -> Runs git interactive rebase
+# ----------------------------------------------------
+#
+# $1 - the number of commits to rebase
+#
+# Usage: `git_interactive_rebase 4`
+#
 
 function git_interactive_rebase() {
   git rebase -i HEAD~$1
 }
 
-## ----- Remote Tracking Branch ----- ##
-## Creates a new branch and pushes that branch to remote
-##
-## $1 - the branch name
-##
-## Usage: `git_remote_tracking_branch fix_sign_up_form_styles`
-##
+# ----------------------------------------------------
+#   Remote Tracking Branch
+#   -> Creates a new branch and pushes that branch to remote
+# ----------------------------------------------------
+#
+# $1 - the branch name
+#
+# Usage: `git_remote_tracking_branch fix_sign_up_form_styles`
+#
 
 function git_remote_tracking_branch() {
   git checkout -b $1 && git push -u origin $1
 }
 
-## ----- Tag ----- ##
-## Automatically set a git tag based on Semantic Versioning keyword
-##
-## $1 - 'major', 'minor', 'patch'
-##
-## Usage: `git_tag major`
-##
+# ----------------------------------------------------
+#   Tag
+#   -> Automatically set a git tag based on Semantic Versioning keyword
+# ----------------------------------------------------
+#
+# $1 - 'major', 'minor', 'patch'
+#
+# Usage: `git_tag major`
+#
 
 function git_tag() {
   local tag=$(git describe --abbrev=0 --tags 2>/dev/null)

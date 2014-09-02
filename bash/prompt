@@ -1,7 +1,9 @@
-## -------------------------------------
+# ****************************************************
+#
 ##   Prompt (slightly modified version of Mathias Bynens' prompt)
 ##   -> Source: https://github.com/mathiasbynens/dotfiles
-## -------------------------------------
+#
+# ****************************************************
 
 # Shell prompt based on the Solarized Dark theme.
 # Screenshot: http://i.imgur.com/EkEtphC.png

@@ -1,0 +1,50 @@
+#!/usr/bin/env bash
+# ****************************************************
+#
+#   MVCSS Sass Build
+#   -> Pulls down and concatenates MVCSS Sass files
+#
+# ----------------------------------------------------
+#   Dependencies
+# ----------------------------------------------------
+#
+#  - bash-comment
+#
+# ****************************************************
+
+set -o errexit
+set -o nounset
+set -o pipefail
+
+# ----------------------------------------------------
+#   Variables
+# ----------------------------------------------------
+
+MVCSSURL='https://raw.githubusercontent.com/mvcss/mvcss/master'
+
+# ----------------------------------------------------
+#   Main
+# ----------------------------------------------------
+
+touch build.sass
+
+bash-comment s "Created 'build' directory."
+
+bash-comment s "Getting Foundation files..."
+curl -s "$MVCSSURL"/foundation/_helpers.sass >> build.sass
+curl -s "$MVCSSURL"/foundation/_config.sass >> build.sass
+curl -s "$MVCSSURL"/foundation/_base.sass >> build.sass
+
+bash-comment s "Getting Component files..."
+curl -s "$MVCSSURL"/components/_bucket.sass >> build.sass
+curl -s "$MVCSSURL"/components/_card.sass >> build.sass
+curl -s "$MVCSSURL"/components/_grid.sass >> build.sass
+curl -s "$MVCSSURL"/components/_row.sass >> build.sass
+curl -s "$MVCSSURL"/components/_well.sass >> build.sass
+
+bash-comment s "Getting Tools file..."
+curl -s "$MVCSSURL"/foundation/_tools.sass >> build.sass
+
+cat build.sass | pbcopy
+
+bash-comment s "Created 'build.sass', copied to clipboard!"

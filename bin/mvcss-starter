@@ -1,0 +1,73 @@
+#!/usr/bin/env bash
+# ****************************************************
+#
+#   MVCSS Starter
+#   -> Creates an MVCSS starter application using drewbarontini/baseman
+#
+# ----------------------------------------------------
+#   Dependencies
+# ----------------------------------------------------
+#
+#  - bash-comment
+#
+# ****************************************************
+
+set -o errexit
+set -o nounset
+set -o pipefail
+
+# ----------------------------------------------------
+#   Variables
+# ----------------------------------------------------
+
+BASEMANURL='git@github.com:drewbarontini/baseman.git'
+
+# ----------------------------------------------------
+#   Main
+# ----------------------------------------------------
+
+echo
+bash-comment l 'MVCSS Start Project'
+echo
+
+bash-comment m 'Cloning drewbarontini/baseman...'
+echo
+git clone $BASEMANURL $1
+cd $1
+
+echo
+bash-comment s 'Cleaning up repo...'
+echo
+rm CHANGELOG.md
+rm MIT-LICENSE
+
+echo
+bash-comment m 'Downloading MVCSS...'
+echo
+cd source/assets/stylesheets
+mvcss all
+mv mvcss-master/application.sass application.sass
+mv mvcss-master/foundation foundation
+mv mvcss-master/components components
+mv mvcss-master/structures structures
+rm -rf mvcss-master
+
+echo
+bash-comment m 'Setting up a new Git repo...'
+echo
+cd ../../../
+rm -rf .git
+git init
+git add .
+git commit -m 'Initial commit'
+
+echo
+bash-comment m 'Bundling...'
+echo
+gem install bundler
+bundle install --binstubs
+
+echo
+bash-comment m 'Starting the Middleman server...'
+echo
+bundle exec middleman s

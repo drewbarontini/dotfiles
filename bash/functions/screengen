@@ -1,20 +1,26 @@
-## -------------------------------------
-##   Functions - Screengen
-##   -> Requires: webkit2png (`brew install webkit2png`)
-## -------------------------------------
+# ****************************************************
+#
+#   Screengen
+#   -> Requires: webkit2png (`brew install webkit2png`)
+#
+# ****************************************************
 
-## ----- Variables ----- ##
+# ----------------------------------------------------
+#   Variables
+# ----------------------------------------------------
 
 SGDIR='screengen'
 SGFILE='urls.txt'
 SGWIDTH='1440'
 SGHEIGHT='1440'
 
-## ----- Screengen Init ----- ##
-## Sets up the structure for Screengen
-##
-## Usage: `sg-init`
-##
+# ----------------------------------------------------
+#   Screengen Init
+#   -> Sets up the structure for Screengen
+# ----------------------------------------------------
+#
+# Usage: `sg-init`
+#
 
 function sg-init() {
   mkdir $SGDIR
@@ -25,15 +31,17 @@ function sg-init() {
   echo "Now, add your URLs (without 'http://') in that file."
 }
 
-## ----- Generate Single Screenshot ----- ##
-## Wrapper for webkit2png command
-##
-## $1 - URL (or height)
-## $2 - width (option)
-## $3 - URL (if width/height passed in)
-##
-## Usage: `sg google.com`, `sg 800 600 google.com`
-##
+# ----------------------------------------------------
+#   Generate Single Screenshot
+#   -> Wrapper for webkit2png command
+# ----------------------------------------------------
+#
+# $1 - URL (or height)
+# $2 - width (option)
+# $3 - URL (if width/height passed in)
+#
+# Usage: `sg google.com`, `sg 800 600 google.com`
+#
 
 function sg() {
   local re='^[0-9]+$'
@@ -46,16 +54,18 @@ function sg() {
   fi
 }
 
-## ----- Screenshots From File ----- ##
-## Takes a set of screenshots from a file
-##
-## $1 - file
-## $2 - width
-## $3 - height
-## $4 - URL
-##
-## Usage: `sg-file urls.txt 800 600`
-##
+# ----------------------------------------------------
+#   Screenshots From File
+#   -> Takes a set of screenshots from a file
+# ----------------------------------------------------
+#
+# $1 - file
+# $2 - width
+# $3 - height
+# $4 - URL
+#
+# Usage: `sg-file urls.txt 800 600`
+#
 
 function sg-file() {
   local i=1
@@ -71,26 +81,30 @@ function sg-file() {
   done < $1
 }
 
-## ----- Screenshot Incrementer ----- ##
-## Runs over a set of incrementing URLs
-## Requires: `run` function
-##
-## $1 - width
-## $2 - height
-## $2 - URL
-##
-## Usage: `run 10 sg-inc 1024 768 example.com/#`
-##
+# ----------------------------------------------------
+#   Screenshot Incrementer
+#   -> Runs over a set of incrementing URLsDescription
+#      Requires: `run` function
+# ----------------------------------------------------
+#
+# $1 - width
+# $2 - height
+# $2 - URL
+#
+# Usage: `run 10 sg-inc 1024 768 example.com/#`
+#
 
 function sg-inc() {
   webkit2png -W $1 -H $2 -F -o screenshot-$i --delay=2 http://$3/$i
 }
 
-## ----- Screenshot Zip ----- ##
-## Creates a zip file of all the screenshots
-##
-## Usage: `sg-zip`
-##
+# ----------------------------------------------------
+#   Screenshot Zip
+#   -> Creates a zip file of all the screenshots
+# ----------------------------------------------------
+#
+# Usage: `sg-zip`
+#
 
 function sg-zip() {
   zip -r $SGDIR ../$SGDIR/*.png

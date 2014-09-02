@@ -1,12 +1,18 @@
-## -------------------------------------
-##   Bash Profile
-## -------------------------------------
+# ****************************************************
+#
+#   Bash Profile
+#
+# ****************************************************
 
-## ----- $PATH ----- ##
+# ----------------------------------------------------
+#   $PATH
+# ----------------------------------------------------
 
 export PATH="$HOME/.dotfiles/bin:$HOME/.rbenv/bin:$PATH:/Applications/Postgres.app/Contents/Versions/9.3/bin"
 
-## ----- Imports ----- ##
+# ----------------------------------------------------
+#   Imports
+# ----------------------------------------------------
 
 [[ -f ~/.bash_vars.local ]] && source ~/.bash_vars.local
 source ~/.bash/vars
@@ -15,7 +21,6 @@ source ~/.bash/aliases
 source ~/.bash/completions/git.bash
 source ~/.bash/functions/general
 source ~/.bash/functions/git
-source ~/.bash/functions/mvcss
 source ~/.bash/functions/screengen
 source ~/.bash/functions/wrappers
 [[ -f ~/.bash_functions.local ]] && source ~/.bash_functions.local

@@ -1,123 +1,61 @@
-## -------------------------------------
-##   Functions - General
-## -------------------------------------
+# ****************************************************
+#
+#   Functions - General
+#
+# ****************************************************
 
-## ----- Clean URL ----- ##
-## Removes extraneous characters from URL
-##
-## $1 - the URL
-##
-## Usage: `clean_url 'google.com'`
-##
+# ----------------------------------------------------
+#   Clean URL
+#   -> Remove extraneous characters from URL
+# ----------------------------------------------------
+#
+# $1 - the URL
+#
+# Usage: `clean_url 'google.com'`
+#
 
 function clean_url() {
   echo $1 | sed 's/\.[[:alnum:]]*//' | tr ./_ -
 }
 
-## ----- Comment Header ----- ##
-## Heading comment for output
-##
-## $1 - The comment title
-##
-## Usage: `coh 'This is my title'`
-##
-
-function coh() {
-  echo
-  echo "=============================================================="
-  echo "==> $1"
-  echo "=============================================================="
-  echo
-}
-
-## ----- Long Comment ----- ##
-## Long, secondary comment for output
-##
-## $1 - The comment title
-##
-## Usage: `col 'This is my title'`
-##
-
-function col() {
-  case "$1" in
-    'epre')
-      echo "--------------------------------------------------------------"
-      echo "--> $2"
-      echo "--------------------------------------------------------------"
-      echo
-      ;;
-    'epost')
-      echo
-      echo "--------------------------------------------------------------"
-      echo "--> $2"
-      echo "--------------------------------------------------------------"
-      ;;
-    *)
-      echo
-      echo "--------------------------------------------------------------"
-      echo "--> $1"
-      echo "--------------------------------------------------------------"
-      echo
-  esac
-}
-
-## ----- Short Comment ----- ##
-## Short, tertiary comment for output
-##
-## $1 - The comment title
-##
-## Usage: `cos 'This is my title'`
-##
-
-function cos() {
-  case "$1" in
-    'epre')
-      echo "--> $2"
-      echo
-      ;;
-    'epost')
-      echo
-      echo "--> $2"
-      ;;
-    *)
-      echo
-      echo "--> $1"
-      echo
-  esac
-}
-
-## ----- Delete Files ----- ##
-## Deletes files with a pattern
-##
-## $1 - the file(s)
-##
-## Usage: `delete_files .DS_Store`
-##
+# ----------------------------------------------------
+#   Delete Files
+#   -> Deletes files with a pattern
+# ----------------------------------------------------
+#
+# $1 - the file(s)
+#
+# Usage: `delete_files .DS_Store`
+#
 
 function delete_files() {
   find . -name $1 -delete
 }
 
-## ----- Get Process ID ----- ##
-## Returns a process id or set of ids for specified process
-##
-## $1 - the process id
-##
-## Usage: `get_process_id ruby`
-##
+# ----------------------------------------------------
+#   Get Process ID
+#   -> Returns a process id or set of ids for specified process
+# ----------------------------------------------------
+#
+# $1 - the process id
+#
+# Usage: `get_process_id ruby`
+#
 
 function get_process_id() {
   ps aux | grep $1 | awk '{print $2}'
 }
 
-## ----- Open ----- ##
-## Alias for 'open' command
-##
-## $1 - 'l' (localhost) or 'm' (Middleman)
-## $2 - the URL (without 'http://' prefix)
-##
-## Usage: `o google.com`, `o l 3000`, `o m`
-##
+# ----------------------------------------------------
+#   Open
+#   -> Alias for 'open' command
+# ----------------------------------------------------
+#
+# $1 - 'l' (localhost) or 'm' (Middleman)
+# $2 - the URL (without 'http://' prefix)
+#
+# Usage: `o google.com`, `o l 3000`, `o m`
+#
 
 function o() {
   if [ "$1" == 'l' ]
@@ -131,14 +69,16 @@ function o() {
   fi
 }
 
-## ----- Run ----- ##
-## Runs a command a set number of times
-##
-## $1 - the number of times to run the command
-## $2 - the command to run
-##
-## Usage: `run 5 some_command`
-##
+# ----------------------------------------------------
+#   Run
+#   -> Run a command a set number of times
+# ----------------------------------------------------
+#
+# $1 - the number of times to run the command
+# $2 - the command to run
+#
+# Usage: `run 5 some_command`
+#
 
 function run() {
   num=$1
@@ -149,25 +89,29 @@ function run() {
   done
 }
 
-## ----- Run Shell Script ----- ##
-## Runs a shell script passed in via curl
-##
-## $1 - the shell script
-##
-## Usage: `run_sh http://www.example.com/install.sh`
-##
+# ----------------------------------------------------
+#   Run Shell Script
+#   -> Run a shell script passed in via curl
+# ----------------------------------------------------
+#
+# $1 - the shell script
+#
+# Usage: `run_sh http://www.example.com/install.sh`
+#
 
 function run_sh() {
   bash <(curl -s $1)
 }
 
-## ----- Server ----- ##
-## Simple HTTP server from a directory, optionally specifying a port
-##
-## $1 - the port (optional)
-##
-## Usage: `server`
-##
+# ----------------------------------------------------
+#   Server
+#   -> Simple HTTP server from a directory, optionally specifying a port
+# ----------------------------------------------------
+#
+# $1 - the port (optional)
+#
+# Usage: `server`
+#
 
 function server() {
   local port="${1:-8000}"
@@ -175,25 +119,29 @@ function server() {
   python -m SimpleHTTPServer "$port"
 }
 
-## ----- Symlinks ----- ##
-## List symlink files in a specified directory
-##
-## $1 - the directory
-##
-## Usage: `symlinks ~`
-##
+# ----------------------------------------------------
+#   Symlinks
+#   -> List symlink files in a specified directory
+# ----------------------------------------------------
+#
+# $1 - the directory
+#
+# Usage: `symlinks ~`
+#
 
 function symlinks() {
   ls -al "$1" | grep .-\>
 }
 
-## ----- Todo----- ##
-## Adds a text todo to a text file
-##
-## $1 - the todo
-##
-## Usage: `todo Do this thing!`
-##
+# ----------------------------------------------------
+#   Todo
+#   -> Add a text todo to text file
+# ----------------------------------------------------
+#
+# $1 - the todo
+#
+# Usage: `todo Do this thing!`
+#
 
 function todo() {
   echo "- $*" >> "$TODOLIST_PATH_RAW"

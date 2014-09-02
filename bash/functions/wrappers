@@ -1,26 +1,32 @@
-## -------------------------------------
-##   Functions - Wrappers
-## -------------------------------------
+# ****************************************************
+#
+#   Functions - Wrappers
+#
+# ****************************************************
 
-## ----- Homebrew Dependencies ----- ##
-## Lists out all brew packages and associated dependencies
-##
-## Usage: `brew_deps`
-##
+# ----------------------------------------------------
+#   Homebrew Dependencies
+#   -> List out all brew packages and associated dependencies
+# ----------------------------------------------------
+#
+# Usage: `brew_deps`
+#
 
 function brew_deps() {
   brew list | while read cask; do echo -n $cask; brew deps $cask | awk '{ printf(" %s ", $0) }'; echo ""; done
 }
 
-## ----- Wallpaper ----- ##
-## Uses the 'desktop' gem to set a wallpaper everywhere
-## Requires: desktop (`gem install desktop`)
-##
-## $1 - the category ('art', 'space', etc.)
-## $2 - the wallpaper
-##
-## Usage: `wall space 01.jpg`
-##
+# ----------------------------------------------------
+#   Wallpaper
+#   -> Use the 'desktop' gem to set a wallpaper everywhere
+#      Requires: desktop (`gem install desktop`)
+# ----------------------------------------------------
+#
+# $1 - the category ('art', 'space', etc.)
+# $2 - the wallpaper
+#
+# Usage: `wall space 01.jpg`
+#
 
 function wall() {
   local category=$(echo $1 | tr 'A-Z' 'a-z')
