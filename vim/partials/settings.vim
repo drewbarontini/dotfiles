@@ -29,6 +29,18 @@ set wildignore+=*/tmp/*,*/log/*,*.so,*.swp,*.zip
 
 let g:EasyMotion_leader_key = '<leader>e'
 
+" Display targets in uppercase
+let g:EasyMotion_use_upper = 1
+
+" Remove x, z, and ; from default key set, set group key priority
+let g:EasyMotion_keys = 'ASDHJKLQWERTYUIMNOCVBPGF'
+
+" Overwrite default target colors
+hi link EasyMotionTarget Special
+hi link EasyMotionShade  Comment
+hi link EasyMotionTarget2First Type
+hi link EasyMotionTarget2Second Type
+
 " ========== Gist ========== "
 
 let g:gist_clip_command = 'pbcopy'
