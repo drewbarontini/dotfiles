@@ -27,3 +27,5 @@ else
   echo "#!/usr/bin/env $2" >> "$1"
 fi
 
+chmod +x "$1"
+
