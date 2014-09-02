@@ -119,9 +119,6 @@ nnoremap <leader>J :!bundle exec rake jasmine:ci<cr>
 " Clear the search buffer when hitting return
 nnoremap <silent> <leader>l :nohlsearch<cr>
 
-" EasyMotion
-map <C-l> <Plug>(easymotion-bd-w)
-
 " == M == "
 
 " Open current file in Marked 2 application
