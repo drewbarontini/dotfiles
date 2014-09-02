@@ -1,0 +1,57 @@
+#!/usr/bin/env bash
+# ----------------------------------------------------
+#
+#   Spellbook
+#   -> Download Spellbook files or copy to clipboard
+#
+# ----------------------------------------------------
+#   Dependencies
+# ----------------------------------------------------
+#
+#  - download-zip
+#
+# ----------------------------------------------------
+
+set -o errexit
+set -o nounset
+set -o pipefail
+
+# ----------------------------------------------------
+#   Variables
+# ----------------------------------------------------
+
+URL='https://raw.githubusercontent.com/spellbook/spellbook/master'
+
+# ----------------------------------------------------
+#   Error Handling
+# ----------------------------------------------------
+
+function _on-exit() {
+  [ "$?" != 0 ] && echo 'File not found!'
+}
+
+trap _on-exit EXIT
+
+# ----------------------------------------------------
+#   Main
+# ----------------------------------------------------
+
+if (( "$#" == 0 )); then
+
+  download-zip 'https://github.com/spellbook/spellbook/archive/master.zip'
+  echo 'Downloaded Spellbook to spellbook-master/'
+  exit
+
+fi
+
+if [ "$1" != 'copy' ]; then
+
+  curl -fsO "$URL/$1/$2.coffee"
+  echo "Downloaded $1/$2!"
+
+else
+
+  curl -fs "$URL/$2/$3.coffee" | pbcopy
+  echo "Copied $2/$3 to the clipboard!"
+
+fi!/usr/bin/env bash
