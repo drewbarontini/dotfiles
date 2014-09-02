@@ -6,4 +6,4 @@ doc/tags
 vim/bundle
 vim/.netrwhist
 gitconfig.local
-bin/*.local
+bin/_*
