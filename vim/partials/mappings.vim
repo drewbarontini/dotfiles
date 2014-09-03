@@ -104,6 +104,7 @@ nnoremap <leader>h <C-w>s<C-w>j
 
 " == I == "
 
+" Auto-indent entire file
 nnoremap <leader>I mmgg=G`m
 
 " == J == "
