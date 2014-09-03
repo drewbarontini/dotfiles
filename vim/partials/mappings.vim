@@ -145,6 +145,9 @@ nnoremap <leader>nc :vsp ~/Dropbox\ (Personal)/Notes/
 " Duplicate current line, paste after
 nnoremap <leader>p Yp
 
+" Nice paste
+nnoremap <leader>P :set paste<cr>o<esc>"*]p :set nopaste<cr>
+
 " == Q == "
 
 " Quit
