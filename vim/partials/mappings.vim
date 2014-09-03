@@ -104,7 +104,7 @@ nnoremap <leader>h <C-w>s<C-w>j
 
 " == I == "
 
-" ...
+nnoremap <leader>I mmgg=G`m
 
 " == J == "
 
