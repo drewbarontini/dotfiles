@@ -8,6 +8,7 @@
 #   Dependencies
 # ----------------------------------------------------
 #
+#  - bash-comment
 #  - download-zip
 #
 # ----------------------------------------------------
@@ -38,20 +39,23 @@ trap _on-exit EXIT
 
 if (( "$#" == 0 )); then
 
+  bash-comment s '...'
   download-zip 'https://github.com/spellbook/spellbook/archive/master.zip'
-  echo 'Downloaded Spellbook to spellbook-master/'
+  bash-comment s 'Downloaded Spellbook to spellbook-master/'
   exit
 
 fi
 
 if [ "$1" != 'copy' ]; then
 
+  bash-comment s '...'
   curl -fsO "$URL/$1/$2.coffee"
-  echo "Downloaded $1/$2!"
+  bash-comment s "Downloaded $1/$2!"
 
 else
 
+  bash-comment s '...'
   curl -fs "$URL/$2/$3.coffee" | pbcopy
-  echo "Copied $2/$3 to the clipboard!"
+  bash-comment s "Copied $2/$3 to the clipboard!"
 
-fi!/usr/bin/env bash
+fi
