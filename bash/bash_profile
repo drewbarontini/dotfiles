@@ -18,6 +18,7 @@ export PATH="$HOME/.dotfiles/bin:$HOME/.rbenv/bin:$PATH:/Applications/Postgres.a
 source ~/.bash/vars
 source ~/.bash/config
 source ~/.bash/aliases
+[[ -f ~/.bash_aliases.local ]] && source ~/.bash_aliases.local
 source ~/.bash/completions/git.bash
 source ~/.bash/functions/general
 source ~/.bash/functions/git
