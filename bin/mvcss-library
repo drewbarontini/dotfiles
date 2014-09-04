@@ -40,9 +40,9 @@ trap _on-exit EXIT
 
 if (( "$#" == 0 )); then
 
-  bash-comment s '...'
+  message yellow 'Downloading...'
   download-zip 'https://github.com/mvcss/library/archive/master.zip'
-  bash-comment s 'Downloaded MVCSS to mvcss-master/'
+  message green 'Downloaded MVCSS Library to mvcss-library-master/'
   exit
 
 fi
@@ -51,14 +51,14 @@ fi
 
 if [ "$1" != 'copy' ]; then
 
-  bash-comment s '...'
+  message yellow 'Downloading...'
   curl -fsO "$URL/$1/_$2.$EXT"
-  bash-comment s "Downloaded $1/$2!"
+  message green "Downloaded $1/$2!"
 
 else
 
-  bash-comment s '...'
+  message yellow 'Copying...'
   curl -fs "$URL/$2/_$3.$EXT" | pbcopy
-  bash-comment s "Copied $2/$3 to the clipboard!"
+  message green "Copied $2/$3 to the clipboard!"
 
 fi

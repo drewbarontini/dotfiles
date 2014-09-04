@@ -26,13 +26,19 @@ MVCSSURL='https://raw.githubusercontent.com/mvcss/mvcss/master'
 #   Main
 # ----------------------------------------------------
 
-if [[ "$1" == 'min' ]]
-then
-  bash-comment s "Copying 'application.min.css' to the clipboard..."
-  curl -s "$MVCSSURL"/_build/css/application.min.css | pbcopy
-  bash-comment s "Copied!"
-else
-  bash-comment s "Copying 'application.css' to the clipboard..."
+if (( "$#" == 0 )); then
+
+  message yellow "Copying 'application.css' to the clipboard..."
   curl -s "$MVCSSURL"/_build/css/application.css | pbcopy
-  bash-comment s "Copied!"
+  message green "Copied!"
+  exit
+
+fi
+
+if [ "$1" == 'min' ]; then
+
+  message yellow "Copying 'application.min.css' to the clipboard..."
+  curl -s "$MVCSSURL"/_build/css/application.min.css | pbcopy
+  message green "Copied!"
+
 fi

@@ -28,6 +28,7 @@ MVCSSURL='https://raw.githubusercontent.com/mvcss/mvcss/master'
 
 touch build.sass
 
+echo
 bash-comment s "Created 'build' directory."
 
 bash-comment s "Getting Foundation files..."
@@ -47,4 +48,5 @@ curl -s "$MVCSSURL"/foundation/_tools.sass >> build.sass
 
 cat build.sass | pbcopy
 
-bash-comment s "Created 'build.sass', copied to clipboard!"
+echo
+message green "Created 'build.sass', copied to clipboard!"

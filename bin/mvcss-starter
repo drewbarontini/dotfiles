@@ -9,6 +9,7 @@
 # ----------------------------------------------------
 #
 #  - bash-comment
+#  - download-zip
 #
 # ****************************************************
 
@@ -36,8 +37,9 @@ git clone $BASEMANURL $1
 cd $1
 
 echo
-bash-comment s 'Cleaning up repo...'
+bash-comment m 'Cleaning up repo...'
 echo
+message green 'Cleaned up repo!'
 rm CHANGELOG.md
 rm MIT-LICENSE
 
@@ -45,7 +47,8 @@ echo
 bash-comment m 'Downloading MVCSS...'
 echo
 cd source/assets/stylesheets
-mvcss all
+download-zip 'https://github.com/mvcss/mvcss/archive/master.zip'
+message green "Downloaded MVCSS!"
 mv mvcss-master/application.sass application.sass
 mv mvcss-master/foundation foundation
 mv mvcss-master/components components
@@ -60,6 +63,8 @@ rm -rf .git
 git init
 git add .
 git commit -m 'Initial commit'
+echo
+message green 'Set up new Git repo with initial commit!'
 
 echo
 bash-comment m 'Bundling...'

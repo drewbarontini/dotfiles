@@ -39,23 +39,23 @@ trap _on-exit EXIT
 
 if (( "$#" == 0 )); then
 
-  bash-comment s '...'
+  message yellow 'Downloading...'
   download-zip 'https://github.com/spellbook/spellbook/archive/master.zip'
-  bash-comment s 'Downloaded Spellbook to spellbook-master/'
+  message green 'Downloaded Spellbook to spellbook-master/'
   exit
 
 fi
 
 if [ "$1" != 'copy' ]; then
 
-  bash-comment s '...'
+  message yellow 'Downloading...'
   curl -fsO "$URL/$1/$2.coffee"
-  bash-comment s "Downloaded $1/$2!"
+  message green "Downloaded $1/$2!"
 
 else
 
-  bash-comment s '...'
+  message yellow 'Copying...'
   curl -fs "$URL/$2/$3.coffee" | pbcopy
-  bash-comment s "Copied $2/$3 to the clipboard!"
+  message green "Copied $2/$3 to the clipboard!"
 
 fi
