@@ -34,7 +34,7 @@ bash <(curl -s https://npmjs.org/install.sh)
 To compile icon fonts, use [Font Custom](http://fontcustom.com/).
 
 ```bash
-brew install fontforge ttfautohint
+brew install fontforge eot-utils
 gem install fontcustom
 ```
 
