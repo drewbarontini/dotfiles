@@ -38,6 +38,10 @@ brew install fontforge ttfautohint
 gem install fontcustom
 ```
 
+**FTPM**
+
+- [FTPM](http://heldr.github.io/ftpm/)
+
 ### rbenv
 
 ```bash
