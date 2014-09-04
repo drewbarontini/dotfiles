@@ -4,19 +4,19 @@ Drew Barontini's Dotfiles
 Installation
 ------------
 
-```bash
+```shell
 bash <(curl -s http://drewb.io/install.sh)
 ```
 
 ### OS X Settings
 
-```bash
+```shell
 bash setup/osx
 ```
 
 ### Homebrew
 
-```bash
+```shell
 ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
 brew bundle setup/brew
 ```
@@ -25,7 +25,7 @@ brew bundle setup/brew
 
 Node is install via Homebrew, but you'll need to run this to install NPM:
 
-```bash
+```shell
 bash <(curl -s https://npmjs.org/install.sh)
 ```
 
@@ -33,9 +33,15 @@ bash <(curl -s https://npmjs.org/install.sh)
 
 To compile icon fonts, use [Font Custom](http://fontcustom.com/).
 
-```bash
+```shell
 brew install fontforge eot-utils
 gem install fontcustom
+```
+
+If you get weird Python errors, try building `fontforge` with Python:
+
+```shell
+brew install -v fontforge --HEAD --with-libspiro --enable-pyextension
 ```
 
 **FTPM**
@@ -44,13 +50,13 @@ gem install fontcustom
 
 ### rbenv
 
-```bash
+```shell
 bash setup/rbenv
 ```
 
 ### OS X Applications
 
-```bash
+```shell
 brew bundle setup/cask
 ```
 
