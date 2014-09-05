@@ -2,6 +2,16 @@
 "   Functions
 " ====================================================
 
+" ========== Browser ========== "
+" Open link on current line in browser
+
+function! Browser ()
+  let line = getline (".")
+  let line = matchstr (line, "\%(http://\|www\.\)[^ ,;\t]*")
+  exec "!netscape ".line
+endfunction
+map <Leader>R :call Browser ()<CR>
+
 " ========== Multi-purpose Tab Key ========== "
 " Indent if we're at the beginning of a line. Else, do completion.
 
