@@ -133,18 +133,3 @@ function symlinks() {
   ls -al "$1" | grep .-\>
 }
 
-# ----------------------------------------------------
-#   Todo
-#   -> Add a text todo to text file
-# ----------------------------------------------------
-#
-# $1 - the todo
-#
-# Usage: `todo Do this thing!`
-#
-
-function todo() {
-  echo "- $*" >> "$TODOLIST_PATH_RAW"
-  echo "Added!"
-}
-
