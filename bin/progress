@@ -20,4 +20,3 @@ while [ "$(ps a | awk '{print $1}' | grep $pid)" ]; do
   echo -n "$( font blue ).$( font default )"
   sleep $delay
 done
-echo
