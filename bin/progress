@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+# ****************************************************
+#
+#   Progress
+#   -> Progress "bar" while command is running
+#
+# ----------------------------------------------------
+#   Dependencies
+# ----------------------------------------------------
+#
+#  - font
+#
+# ****************************************************
+
+($*) &
+
+pid=$!
+delay=0.75
+while [ "$(ps a | awk '{print $1}' | grep $pid)" ]; do
+  echo -n "$( font blue ).$( font default )"
+  sleep $delay
+done
+echo
