@@ -70,6 +70,24 @@ function o() {
 }
 
 # ----------------------------------------------------
+#   Resize Images
+#   -> Batch resize specified images
+# ----------------------------------------------------
+#
+# $1 - the file extension
+# $2 - the size
+#
+# Usage: `resize_images png 110x110`
+#
+
+function resize_images() {
+  shopt -s nullglob
+  for image in *.$1; do
+    mogrify -resize $2 "${image}"
+  done
+}
+
+# ----------------------------------------------------
 #   Run
 #   -> Run a command a set number of times
 # ----------------------------------------------------
