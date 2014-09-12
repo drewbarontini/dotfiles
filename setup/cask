@@ -34,5 +34,4 @@ cask install superduper 2> /dev/null
 cask install totalfinder 2> /dev/null
 cask install transmit 2> /dev/null
 cask install vlc 2> /dev/null
-cask install ynab 2> /dev/null
 cask install iterm2 2> /dev/null
