@@ -26,6 +26,7 @@ cask install jing 2> /dev/null
 cask install keyboard-maestro 2> /dev/null
 cask install mamp 2> /dev/null
 cask install moom 2> /dev/null
+cask install onepassword 2> /dev/null
 cask install rdio 2> /dev/null
 cask install screenflow 2> /dev/null
 cask install skype 2> /dev/null

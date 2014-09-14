@@ -62,7 +62,6 @@ brew bundle setup/cask
 
 Applications not in cask:
 
-- [1Password](https://agilebits.com/onepassword/mac)
 - [Postgres](http://postgresapp.com/)
 - [Remote Buddy](http://www.iospirit.com/products/remotebuddy/)
 - [svgo-gui](https://github.com/svg/svgo-gui)
