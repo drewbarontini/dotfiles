@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+packages=(
+bower
+csslint
+grunt
+grunt-cli
+gulp
+jasmine-node
+jshint
+psi
+yo
+)
+
+for package in ${packages[@]}; do
+  npm install -g $package
+done

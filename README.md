@@ -29,6 +29,12 @@ Node is install via Homebrew, but you'll need to run this to install NPM:
 bash <(curl -s https://npmjs.org/install.sh)
 ```
 
+Then run the follwoing to set up NPM modules:
+
+```shell
+bash setup/npm
+```
+
 #### Fonts
 
 To compile icon fonts, use [Font Custom](http://fontcustom.com/).
