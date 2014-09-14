@@ -58,6 +58,10 @@ install redis
 # -> Rename files in the command line
 install rename
 
+# Sitespeed.io
+# -> Analyze your website speed and performance
+install sitespeed.io
+
 # TheSilverSearcher
 # -> A code-searching tool similar to ack, but faster
 install the_silver_searcher
