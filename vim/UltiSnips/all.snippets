@@ -10,3 +10,20 @@ endsnippet
 snippet _lms "Lorem ipsum sentence"
 Lorem ipsum dolor sit amet.
 endsnippet
+
+snippet _change "CHANGELOG"
+${1:`git describe --abbrev=0 --tags`} - `!v strftime("%Y-%m-%d")`
+-------------------
+
+### Added
+
+- ${2:Nothing}
+
+### Removed
+
+- ${3:Nothing}
+
+### Fixed
+
+- ${4:Nothing}$0
+endsnippet
