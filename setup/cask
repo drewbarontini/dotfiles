@@ -27,7 +27,6 @@ cask install moom 2> /dev/null
 cask install onepassword 2> /dev/null
 cask install rdio 2> /dev/null
 cask install screenflow 2> /dev/null
-cask install skype 2> /dev/null
 cask install sublime-text 2> /dev/null
 cask install superduper 2> /dev/null
 cask install totalfinder 2> /dev/null

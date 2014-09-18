@@ -27,38 +27,13 @@ ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
 brew bundle setup/brew
 ```
 
-#### NPM
+### NPM
 
-Node is install via Homebrew, but you'll need to run this to install NPM:
-
-```shell
-bash <(curl -s https://npmjs.org/install.sh)
-```
-
-Then run the follwoing to set up NPM modules:
+Set up NPM modules:
 
 ```shell
 bash setup/npm
 ```
-
-#### Fonts
-
-To compile icon fonts, use [Font Custom](http://fontcustom.com/).
-
-```shell
-brew install fontforge eot-utils
-gem install fontcustom
-```
-
-If you get weird Python errors, try building `fontforge` with Python:
-
-```shell
-brew install -v fontforge --HEAD --with-libspiro --enable-pyextension
-```
-
-**FTPM**
-
-- [FTPM](http://heldr.github.io/ftpm/)
 
 ### rbenv
 
@@ -80,6 +55,25 @@ Applications not in cask:
 - [Miro](http://www.getmiro.com/)
 
 And the rest are in the Mac App Store.
+
+### Fonts
+
+To compile icon fonts, use [Font Custom](http://fontcustom.com/).
+
+```shell
+brew install fontforge eot-utils
+gem install fontcustom
+```
+
+If you get weird Python errors, try building `fontforge` with Python:
+
+```shell
+brew install -v fontforge --HEAD --with-libspiro --enable-pyextension
+```
+
+**FTPM**
+
+- [FTPM](http://heldr.github.io/ftpm/)
 
 ### GitHub Command Line
 
