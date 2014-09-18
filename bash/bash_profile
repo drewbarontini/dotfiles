@@ -8,7 +8,7 @@
 #   $PATH
 # ----------------------------------------------------
 
-export PATH="$HOME:/usr/local/bin:/.dotfiles/bin:$HOME/.rbenv/bin:$PATH:/Applications/Postgres.app/Contents/Versions/9.3/bin"
+export PATH="$HOME:/usr/local/bin:/usr/local/heroku/bin:/.dotfiles/bin:$HOME/.rbenv/bin:$PATH:/Applications/Postgres.app/Contents/Versions/9.3/bin"
 
 # ----------------------------------------------------
 #   Imports
@@ -28,4 +28,3 @@ source ~/.bash/functions/wrappers
 source ~/.bash/prompt
 source ~/.bash/overrides
 source ~/.bash/rbenv
-

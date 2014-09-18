@@ -29,6 +29,7 @@ cask install rdio 2> /dev/null
 cask install screenflow 2> /dev/null
 cask install sublime-text 2> /dev/null
 cask install superduper 2> /dev/null
+cask install things 2> /dev/null
 cask install totalfinder 2> /dev/null
 cask install transmit 2> /dev/null
 cask install vlc 2> /dev/null
