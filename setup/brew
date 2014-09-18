@@ -11,10 +11,6 @@ upgrade
 # -> A tool like grep, optimized for programmers
 install ack
 
-# apple-gcc42
-# -> Components removed from < Xcode 4.2
-install apple-gcc42
-
 # Autojump
 # -> A cd command that learns
 install autojump
