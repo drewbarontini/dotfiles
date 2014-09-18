@@ -8,6 +8,12 @@ Installation
 bash <(curl -s http://drewb.io/install.sh)
 ```
 
+**Note**: If this is a brand new computer, you'll need to set up Git first.
+
+### Set up Git/GitHub
+
+Follow this article: [GitHub Help](http://help.github.com/articles/generating-ssh-keys)
+
 ### OS X Settings
 
 ```shell
