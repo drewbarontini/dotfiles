@@ -27,8 +27,17 @@ defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 # Set a blazingly fast keyboard repeat rate
 defaults write NSGlobalDomain KeyRepeat -int 0
 
-# Set a fast tracking speed
-defaults write com.apple.mouse.scaling 3
+# Mouse tracking speed (1...5)
+defaults write NSGlobalDomain com.apple.mouse.scaling -float 5
+
+# Trackpad tracking speed (1...5)
+defaults write NSGlobalDomain com.apple.trackpad.scaling -int 5
+
+# Scrolling speed (1...5)
+defaults write NSGlobalDomain com.apple.scrollwheel.scaling -float 5
+
+# Enable full keyboard access for all controls (eg enable Tab in modal dialogs)
+defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 
 # Require password immediately after sleep or screen saver begins
 defaults write com.apple.screensaver askForPassword -int 1
