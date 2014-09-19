@@ -18,6 +18,7 @@ cask install dropbox 2> /dev/null
 cask install firefox 2> /dev/null
 cask install flux 2> /dev/null
 cask install google-chrome 2> /dev/null
+cask install hazel 2> /dev/null
 cask install imageoptim 2> /dev/null
 cask install instacast 2> /dev/null
 cask install iterm2 2> /dev/null
