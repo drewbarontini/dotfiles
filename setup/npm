@@ -2,7 +2,6 @@
 
 packages=(
 bower
-csslint
 grunt
 grunt-cli
 gulp
