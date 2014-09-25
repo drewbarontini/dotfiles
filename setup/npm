@@ -6,7 +6,6 @@ grunt
 grunt-cli
 gulp
 jasmine-node
-jshint
 stylestats
 psi
 yo
