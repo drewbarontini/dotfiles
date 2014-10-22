@@ -15,6 +15,9 @@ alias drew='brew'
 alias d='brew'
 alias di='brew install'
 alias dl='brew list'
+alias du='brew update'
+alias dg='brew upgrade'
+alias drewery='brew update && brew upgrade && brew cleanup && brew prune && brew doctor'
 
 # ----------------------------------------------------
 #   Files & Jumps
