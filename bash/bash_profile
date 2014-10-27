@@ -27,4 +27,3 @@ source ~/.bash/functions/wrappers
 [[ -f ~/.bash_functions.local ]] && source ~/.bash_functions.local
 source ~/.bash/prompt
 source ~/.bash/overrides
-source ~/.bash/rbenv
