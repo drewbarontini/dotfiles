@@ -27,3 +27,18 @@ ${1:`git describe --abbrev=0 --tags`} - `!v strftime("%Y-%m-%d")`
 
 - ${4:Nothing}$0
 endsnippet
+
+snippet _usf "User Story - Feature"
+Feature: ${1:<title>}
+	As a ${2:<who>}
+	I want to ${3:<what>}
+	Because ${4:<why>}$0
+endsnippet
+
+snippet _uss "User Story - Scenario"
+Scenario: ${1:<title>}
+	Given ${2:<state>}
+	When ${3:<event>}
+	Then ${4:<expected outcome>}
+	And ${5:<extend previous step>}$0
+endsnippet
