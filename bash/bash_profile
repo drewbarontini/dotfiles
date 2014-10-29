@@ -13,10 +13,12 @@ PATH_DIRECTORIES=(
   '/Applications/Postgres.app/Contents/Versions/9.3/bin'
   '/usr/local/heroku/bin'
   '/usr/local/bin'
+  "$HOME/.rbenv/bin"
   '/usr/bin'
   '/bin'
   '/usr/sbin/'
   '/sbin'
+  '/opt/X11/bin'
 )
 
 export PATH=$( IFS=:; echo "${PATH_DIRECTORIES[*]}" )
