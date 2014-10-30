@@ -32,6 +32,7 @@ source ~/.bash/vars
 source ~/.bash/config
 source ~/.bash/aliases
 [[ -f ~/.bash_aliases.local ]] && source ~/.bash_aliases.local
+[[ -f ~/.bash_aliases_temp.local ]] && source ~/.bash_aliases_temp.local
 source ~/.bash/completions/git.bash
 source ~/.bash/functions/general
 source ~/.bash/functions/git
