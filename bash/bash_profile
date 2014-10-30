@@ -16,7 +16,7 @@ PATH_DIRECTORIES=(
   "$HOME/.rbenv/bin"
   '/usr/bin'
   '/bin'
-  '/usr/sbin/'
+  '/usr/sbin'
   '/sbin'
   '/opt/X11/bin'
 )
