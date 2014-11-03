@@ -26,6 +26,10 @@ vnoremap K :m '<-2<CR>gv=gv
 
 " Tabs
 noremap <C-t> <esc>:tabnew<cr>
+" Move to the previous tab
+nnoremap H gT
+" Move to the next tab
+nnoremap L gt
 
 " Save file
 noremap <C-s> <esc>:w<cr>
@@ -220,3 +224,6 @@ nnoremap <leader>y YP
 " Quicker action to suspend Vim ('fg' to return)
 nnoremap <leader>z <C-z>
 
+" Replace bottom and top
+nnoremap zh H
+nnoremap zl L
