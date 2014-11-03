@@ -109,6 +109,10 @@ nnoremap <leader>I mmgg=G`m
 
 " == J == "
 
+" EasyMotion
+map <leader>j <plug>(easymotion-bd-w)
+
+" Jasmine
 nnoremap <leader>J :!bundle exec rake jasmine:ci<cr>
 
 " == K == "
@@ -119,9 +123,6 @@ nnoremap <leader>J :!bundle exec rake jasmine:ci<cr>
 
 " Clear the search buffer when hitting return
 nnoremap <silent> <leader>l :nohlsearch<cr>
-
-" EasyMotion
-map L <plug>(easymotion-bd-w)
 
 " == M == "
 
