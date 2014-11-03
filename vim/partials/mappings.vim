@@ -8,21 +8,17 @@
 nnoremap ; :
 inoremap jk <esc>
 
-" NO Arrow Keys
-map <Left> <Nop>
-map <Right> <Nop>
-map <Up> <Nop>
-map <Down> <Nop>
+" Arrow Keys for window sizing
+noremap <up>    <C-W>+
+noremap <down>  <C-W>-
+noremap <left>  1<C-W>>
+noremap <right> 1<C-W><
 
 " Window navigation
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
-
-" Window sizing
-nnoremap + <C-w>>
-nnoremap _ <C-w><
 
 " Tabs
 noremap <C-t> <esc>:tabnew<cr>
