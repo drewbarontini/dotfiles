@@ -38,17 +38,6 @@ then
 
   echo
   echo "--------------------------------------------------------------"
-  echo "--> Setting up Sublime Text..."
-  echo "--------------------------------------------------------------"
-  cd ~/Library/Application\ Support/Sublime\ Text\ 3/
-  rm -rf Packages
-  ln -s ~/.dotfiles/sublime-text/Packages Packages
-  echo "--> Symlinked ~/.dotfiles/sublime-text/Packages Packages to Sublime Text Packages"
-  ln -s ~/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
-  echo "--> Symlinked Sublime Text subl to /usr/local/bin/subl"
-
-  echo
-  echo "--------------------------------------------------------------"
   echo "--> Setting up Vim..."
   echo "--------------------------------------------------------------"
   ln -s ~/.dotfiles/vim ~/.vim

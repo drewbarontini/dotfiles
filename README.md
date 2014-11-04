@@ -56,6 +56,12 @@ Applications not in cask:
 
 And the rest are in the Mac App Store.
 
+#### Sublime Text Setup
+
+```shell
+bash setup/sublime
+```
+
 ### Fonts
 
 To compile icon fonts, use [Font Custom](http://fontcustom.com/).
