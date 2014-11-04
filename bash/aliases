@@ -118,6 +118,8 @@ alias im='ghi milestone'
 alias hd='git push heroku master'
 alias hap='heroku accounts:set personal'
 alias haw='heroku accounts:set work'
+alias hrc='heroku run rails console'
+alias hrk='heroku run rake'
 
 ## ----- Hub ----- ##
 
