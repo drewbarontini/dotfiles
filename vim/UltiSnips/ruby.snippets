@@ -9,3 +9,51 @@ def ${1:method_name}
 	${0:# ...}
 end
 endsnippet
+
+snippet each "Each Block"
+${1:@variable}.each do |$2|
+	${3:# ...}
+end$0
+endsnippet
+
+snippet eachi "Each Block"
+${1:@variable}.each { |$2| ${3:# ...} }
+endsnippet
+
+snippet if "If Statement"
+if $1{condition}
+	${2:# ...}
+end$0
+endsnippet
+
+snippet ife "If/Else Statement"
+if $1{condition}
+	${2:# ...}
+else
+	${3:# ...}
+end$0
+endsnippet
+
+snippet pv "Private"
+private
+
+$0
+endsnippet
+
+snippet req "Require"
+require '$1'$0
+endsnippet
+
+snippet un "Unless"
+unless $1{condition}
+	${2:# ...}
+end$0
+endsnippet
+
+snippet une "Unless/Else"
+unless $1{condition}
+	${2:# ...}
+else
+	${3:# ...}
+end$0
+endsnippet
