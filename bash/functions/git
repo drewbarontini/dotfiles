@@ -5,6 +5,20 @@
 # ****************************************************
 
 # ----------------------------------------------------
+#   Git Delete Branch For Real
+#   -> Delete both local and remote copies of a branch
+# ----------------------------------------------------
+#
+# $1 - the branch name
+#
+# Usage: `git_delete_branch_for_real fix_form_styles`
+#
+
+function git_delete_branch_for_real() {
+  git branch -D $1 && git push origin :$1
+}
+
+# ----------------------------------------------------
 #   Delete Remote Tag
 #   -> Delete git tag on remote
 # ----------------------------------------------------
