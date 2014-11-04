@@ -60,17 +60,6 @@ And the rest are in the Mac App Store.
 
 To compile icon fonts, use [Font Custom](http://fontcustom.com/).
 
-```shell
-brew install fontforge eot-utils
-gem install fontcustom
-```
-
-If you get weird Python errors, try building `fontforge` with Python:
-
-```shell
-brew install -v fontforge --HEAD --with-libspiro --enable-pyextension
-```
-
 **FTPM**
 
 - [FTPM](http://heldr.github.io/ftpm/)
