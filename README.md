@@ -49,6 +49,7 @@ brew bundle setup/cask
 
 Applications not in cask:
 
+- [Dropbox](https://www.dropbox.com/install)
 - [Postgres](http://postgresapp.com/)
 - [Remote Buddy](http://www.iospirit.com/products/remotebuddy/)
 - [svgo-gui](https://github.com/svg/svgo-gui)

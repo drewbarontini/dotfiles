@@ -14,7 +14,6 @@ cask install bartender 2> /dev/null
 cask install caffeine 2> /dev/null
 cask install colorschemer-studio 2> /dev/null
 cask install drobo-dashboard 2> /dev/null
-cask install dropbox 2> /dev/null
 cask install evernote 2> /dev/null
 cask install firefox 2> /dev/null
 cask install flux 2> /dev/null
