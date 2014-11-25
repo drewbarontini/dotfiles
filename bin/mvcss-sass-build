@@ -39,6 +39,7 @@ curl -s "$MVCSSURL"/foundation/_base.sass >> build.sass
 bash-comment s "Getting Component files..."
 curl -s "$MVCSSURL"/components/_bucket.sass >> build.sass
 curl -s "$MVCSSURL"/components/_card.sass >> build.sass
+curl -s "$MVCSSURL"/components/_cell.sass >> build.sass
 curl -s "$MVCSSURL"/components/_grid.sass >> build.sass
 curl -s "$MVCSSURL"/components/_row.sass >> build.sass
 curl -s "$MVCSSURL"/components/_well.sass >> build.sass
