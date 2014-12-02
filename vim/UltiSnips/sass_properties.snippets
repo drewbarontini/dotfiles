@@ -118,6 +118,10 @@ snippet bo "Bottom"
 bottom: ${0}
 endsnippet
 
+snippet bo "Bottom"
+bottom: ${0}
+endsnippet
+
 snippet bof "Bottom Flush"
 bottom: 0
 endsnippet
@@ -138,7 +142,7 @@ snippet co "Color"
 color: ${0}
 endsnippet
 
-snippet cont "Content"
+snippet con "Content"
 content: ''
 endsnippet
 
@@ -238,6 +242,26 @@ snippet mf "Margin Flush"
 margin: 0
 endsnippet
 
+snippet maxs "Margin Extra-Small"
+margin: $b-space-xs
+endsnippet
+
+snippet mas "Margin Small"
+margin: $b-space-s
+endsnippet
+
+snippet mam "Margin Medium"
+margin: $b-space
+endsnippet
+
+snippet mal "Margin Large"
+margin: $b-space-l
+endsnippet
+
+snippet maxl "Margin Extra-Large"
+margin: $b-space-xl
+endsnippet
+
 snippet mv "Margin Base Variable"
 margin: $b-${0}
 endsnippet
@@ -250,24 +274,28 @@ snippet mbf "Margin Bottom Flush"
 margin-bottom: 0
 endsnippet
 
-snippet mbv "Margin Bottom Base Variable"
-margin-bottom: $b-${0}
-endsnippet
-
-snippet mbl "Margin Bottom Large"
-margin-bottom: $b-space-l$0
-endsnippet
-
-snippet mbm "Margin Bottom Medium"
-margin-bottom: $b-space$0
+snippet mbxs "Margin Bottom Extra-Small"
+margin-bottom: $b-space-xs
 endsnippet
 
 snippet mbs "Margin Bottom Small"
-margin-bottom: $b-space-s$0
+margin-bottom: $b-space-s
 endsnippet
 
-snippet mbxs "Margin Bottom Extra Small"
-margin-bottom: $b-space-xs$0
+snippet mbm "Margin Bottom Medium"
+margin-bottom: $b-space
+endsnippet
+
+snippet mbl "Margin Bottom Large"
+margin-bottom: $b-space-l
+endsnippet
+
+snippet mbxl "Margin Bottom Extra-Large"
+margin-bottom: $b-space-xl
+endsnippet
+
+snippet mbv "Margin Bottom Base Variable"
+margin-bottom: $b-${0}
 endsnippet
 
 snippet mhc "Margin Horizontal Center"
@@ -290,6 +318,26 @@ snippet mlf "Margin Left Flush"
 margin-left: 0
 endsnippet
 
+snippet mlxs "Margin Left Extra-Small"
+margin-left: $b-space-xs
+endsnippet
+
+snippet mls "Margin Left Small"
+margin-left: $b-space-s
+endsnippet
+
+snippet mlm "Margin Left Medium"
+margin-left: $b-space
+endsnippet
+
+snippet mll "Margin Left Large"
+margin-left: $b-space-l
+endsnippet
+
+snippet mlxl "Margin Left Extra-Large"
+margin-left: $b-space-xl
+endsnippet
+
 snippet mlv "Margin Left Base Variable"
 margin-left: $b-${0}
 endsnippet
@@ -302,20 +350,24 @@ snippet mrf "Margin Right Flush"
 margin-right: 0
 endsnippet
 
-snippet mrl "Margin Right Large"
-margin-right: $b-space-l$0
-endsnippet
-
-snippet mrm "Margin Right Medium"
-margin-right: $b-space$0
+snippet mrxs "Margin Right Extra Small"
+margin-right: $b-space-xs
 endsnippet
 
 snippet mrs "Margin Right Small"
-margin-right: $b-space-s$0
+margin-right: $b-space-s
 endsnippet
 
-snippet mrxs "Margin Right Extra Small"
-margin-right: $b-space-xs$0
+snippet mrm "Margin Right Medium"
+margin-right: $b-space
+endsnippet
+
+snippet mrl "Margin Right Large"
+margin-right: $b-space-l
+endsnippet
+
+snippet mrxl "Margin Right Extra-Large"
+margin-right: $b-space-xl
 endsnippet
 
 snippet mrv "Margin Right Base Variable"
@@ -328,6 +380,26 @@ endsnippet
 
 snippet mtf "Margin Top Flush"
 margin-top: 0
+endsnippet
+
+snippet mtxs "Margin Top Extra-Small"
+margin-top: $b-space-xs
+endsnippet
+
+snippet mts "Margin Top Small"
+margin-top: $b-space-s
+endsnippet
+
+snippet mtm "Margin Top Medium"
+margin-top: $b-space
+endsnippet
+
+snippet mtl "Margin Top Large"
+margin-top: $b-space-l
+endsnippet
+
+snippet mtxl "Margin Top Extra-Large"
+margin-top: $b-space-xl
 endsnippet
 
 snippet mtv "Margin Top Base Variable"
@@ -362,6 +434,26 @@ snippet pf "Padding Flush"
 padding: 0
 endsnippet
 
+snippet paxs "Padding Extra-Small"
+padding: $b-space-xs
+endsnippet
+
+snippet pas "Padding Small"
+padding: $b-space-s
+endsnippet
+
+snippet pam "Padding Medium"
+padding: $b-space
+endsnippet
+
+snippet pal "Padding Large"
+padding: $b-space-l
+endsnippet
+
+snippet paxl "Padding Extra-Large"
+padding: $b-space-xl
+endsnippet
+
 snippet pv "Padding Base Variable"
 padding: $b-${0}
 endsnippet
@@ -374,12 +466,28 @@ snippet pbf "Padding Bottom Flush"
 padding-bottom: 0
 endsnippet
 
-snippet pbv "Padding Bottom Base Variable"
-padding-bottom: $b-${0}
+snippet pbxs "Padding Bottom Extra-Small"
+padding-bottom: $b-space-xs
 endsnippet
 
-snippet pbm "Padding Bottom Base Space"
-padding-bottom: $b-space$0
+snippet pbs "Padding Bottom Small"
+padding-bottom: $b-space-s
+endsnippet
+
+snippet pbm "Padding Bottom Medium"
+padding-bottom: $b-space
+endsnippet
+
+snippet pbl "Padding Bottom Large"
+padding-bottom: $b-space-l
+endsnippet
+
+snippet pbxl "Padding Bottom Extra-Large"
+padding-bottom: $b-space-xl
+endsnippet
+
+snippet pbv "Padding Bottom Base Variable"
+padding-bottom: $b-${0}
 endsnippet
 
 snippet pl "Padding Left"
@@ -388,6 +496,26 @@ endsnippet
 
 snippet plf "Padding Left Flush"
 padding-left: 0
+endsnippet
+
+snippet plxs "Padding Left Extra-Small"
+padding-left: $b-space-xs
+endsnippet
+
+snippet pls "Padding Left Small"
+padding-left: $b-space-s
+endsnippet
+
+snippet plm "Padding Left Medium"
+padding-left: $b-space
+endsnippet
+
+snippet pll "Padding Left Large"
+padding-left: $b-space-l
+endsnippet
+
+snippet plxl "Padding Left Extra-Large"
+padding-left: $b-space-xl
 endsnippet
 
 snippet plv "Padding Left Base Variable"
@@ -402,6 +530,26 @@ snippet prf "Padding Right Flush"
 padding-right: 0
 endsnippet
 
+snippet prxs "Padding Right Extra-Small"
+padding-right: $b-space-xs
+endsnippet
+
+snippet prs "Padding Right Small"
+padding-right: $b-space-s
+endsnippet
+
+snippet prm "Padding Right Medium"
+padding-right: $b-space
+endsnippet
+
+snippet prl "Padding Right Large"
+padding-right: $b-space-l
+endsnippet
+
+snippet prxl "Padding Right Extra-Large"
+padding-right: $b-space-xl
+endsnippet
+
 snippet prv "Padding Right Base Variable"
 padding-right: $b-${0}
 endsnippet
@@ -412,6 +560,26 @@ endsnippet
 
 snippet ptf "Padding Top Flush"
 padding-top: 0
+endsnippet
+
+snippet ptxs "Padding Top Extra-Small"
+padding-top: $b-space-xs
+endsnippet
+
+snippet pts "Padding Top Small"
+padding-top: $b-space-s
+endsnippet
+
+snippet ptm "Padding Top Medium"
+padding-top: $b-space
+endsnippet
+
+snippet ptl "Padding Top Large"
+padding-top: $b-space-l
+endsnippet
+
+snippet ptxl "Padding Top Extra-Large"
+padding-top: $b-space-xl
 endsnippet
 
 snippet ptv "Padding Top Base Variable"
