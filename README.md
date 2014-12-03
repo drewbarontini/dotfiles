@@ -50,10 +50,12 @@ brew bundle setup/cask
 Applications not in cask:
 
 - [Dropbox](https://www.dropbox.com/install)
+- [Evernote](https://evernote.com/)
+- [Miro](http://www.getmiro.com/)
 - [Postgres](http://postgresapp.com/)
 - [Remote Buddy](http://www.iospirit.com/products/remotebuddy/)
 - [svgo-gui](https://github.com/svg/svgo-gui)
-- [Miro](http://www.getmiro.com/)
+- [Typed](http://realmacsoftware.com/typed)
 
 And the rest are in the Mac App Store.
 
