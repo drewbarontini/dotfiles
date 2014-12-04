@@ -10,6 +10,13 @@
 #
 #  - bash-comment
 #
+# ----------------------------------------------------
+#   Usage
+# ----------------------------------------------------
+#
+#  `mvcss-css-build` - copies an unminified application CSS file to clipboard
+#  `mvcss-css-build min` - copies a minified application CSS file to clipboard
+#
 # ****************************************************
 
 set -o errexit

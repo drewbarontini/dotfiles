@@ -11,6 +11,14 @@
 #  - bash-comment
 #  - download-zip
 #
+# ----------------------------------------------------
+#   Usage
+# ----------------------------------------------------
+#
+#  `mvcss-library` - downloads all of the files
+#  `mvcss-library components list` - downloads the List Component
+#  `mvcss-library copy components list` - copies the List Component to clipboard
+#
 # ****************************************************
 
 set -o errexit

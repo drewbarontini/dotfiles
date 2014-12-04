@@ -13,6 +13,14 @@
 #  - font
 #  - message
 #
+# ----------------------------------------------------
+#   Usage
+# ----------------------------------------------------
+#
+#  `mvcss` - downloads all the files
+#  `mvcss components card` - downloads the Card Component
+#  `mvcss copy components card` - copies the Card Component
+#
 # ****************************************************
 
 set -o errexit

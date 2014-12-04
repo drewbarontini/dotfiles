@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 # ****************************************************
 #
 #   Optimize Images
@@ -13,6 +12,12 @@
 #  - imageoptim (https://github.com/JamieMason/ImageOptim-CLI)
 #  - bash-comment
 #  - message
+#
+# ----------------------------------------------------
+#   Usage
+# ----------------------------------------------------
+#
+#  `optimize-images app/assets/images` - runs the optimizers on the specified directory
 #
 # ****************************************************
 

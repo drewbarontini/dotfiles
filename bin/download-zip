@@ -4,6 +4,12 @@
 #   Download Zip
 #   -> Download and extract an external ZIP archive
 #
+# ----------------------------------------------------
+#   Usage
+# ----------------------------------------------------
+#
+#  `download-zip path/to/zip/file.zip`
+#
 # ****************************************************
 
 set -o errexit

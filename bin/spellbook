@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# ----------------------------------------------------
+# ****************************************************
 #
 #   Spellbook
 #   -> Download Spellbook files or copy to clipboard
@@ -12,6 +12,14 @@
 #  - download-zip
 #
 # ----------------------------------------------------
+#   Usage
+# ----------------------------------------------------
+#
+#  `spellbook` - downloads all the files
+#  `spellbook components limiter` - downloads the limiter Component
+#  `spellbook copy components limiter` - copies the limiter Component to the clipboard
+#
+# ****************************************************
 
 set -o errexit
 set -o nounset

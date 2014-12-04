@@ -4,6 +4,12 @@
 #   New Script
 #   -> Create an executable shell script
 #
+# ----------------------------------------------------
+#   Usage
+# ----------------------------------------------------
+#
+#  `new-script bin/script-name` - creates a new script called 'script-name'
+#
 # ****************************************************
 
 set -o errexit
