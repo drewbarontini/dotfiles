@@ -17,7 +17,7 @@
 #   Usage
 # ----------------------------------------------------
 #
-#  `optimize-images app/assets/images` - runs the optimizers on the specified directory
+#  `optimize-images app/assets/images`
 #
 # ****************************************************
 
