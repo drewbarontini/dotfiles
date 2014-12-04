@@ -29,14 +29,11 @@ bash-comment l 'Optimize Images'
 echo
 
 bash-comment m 'Running SVG images through svgo...'
-echo
 svgo -f $1
-echo
 message green 'Optimized SVGs!'
 
+echo
 bash-comment m 'Running all other images through imageoptim...'
-echo
 imageoptim --directory $1
-echo
 message green 'Optimized all other images!'
 
