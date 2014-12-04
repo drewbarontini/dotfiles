@@ -1,0 +1,42 @@
+#!/usr/bin/env bash
+
+# ----------------------------------------------------
+#
+#   Optimize Images
+#   -> Runs a directory of images through optimization
+#
+# ----------------------------------------------------
+#   Dependencies
+# ----------------------------------------------------
+#
+#  - svgo (https://github.com/svg/svgo)
+#  - imageoptim (https://github.com/JamieMason/ImageOptim-CLI)
+#  - bash-comment
+#  - message
+#
+# ----------------------------------------------------
+
+set -o errexit
+set -o nounset
+set -o pipefail
+
+# ----------------------------------------------------
+#   Main
+# ----------------------------------------------------
+
+echo
+bash-comment l 'Optimize Images'
+echo
+
+bash-comment m 'Running SVG images through svgo...'
+echo
+svgo -f $1
+echo
+message green 'Optimized SVGs!'
+
+bash-comment m 'Running all other images through imageoptim...'
+echo
+imageoptim --directory $1
+echo
+message green 'Optimized all other images!'
+
