@@ -101,6 +101,9 @@ nnoremap <silent> <leader>F :ClearCtrlPCache<cr>
 " :Gbrowse
 nnoremap <leader>gb :Gbrowse<cr>
 
+" g Command
+nnoremap <leader>G :g/
+
 " == H == "
 
 " Horizontal split
@@ -130,8 +133,7 @@ nnoremap <silent> <leader>l :nohlsearch<cr>
 
 " == M == "
 
-" Open current file in Marked 2 application
-nnoremap <leader>m :!open -a Marked\ 2.app "%"<cr>
+" ...
 
 " == N == "
 
