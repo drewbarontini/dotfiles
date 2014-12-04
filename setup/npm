@@ -5,8 +5,10 @@ bower
 grunt
 grunt-cli
 gulp
+imageoptim-cli
 jasmine-node
 stylestats
+svgo
 psi
 yo
 )
