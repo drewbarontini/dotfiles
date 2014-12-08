@@ -222,8 +222,8 @@ alias reil='rbenv install list'
 alias rer='rbenv rehash'
 alias rev='rbenv version'
 alias reva='rbenv versions'
-alias update_rbenv='cd $HOME/.rbenv && git pull'
-alias update_ruby_build='cd $HOME/.rbenv/plugins/ruby-build && git pull'
+alias update_rbenv='cd $HOME/.rbenv && git pull && cd -'
+alias update_ruby_build='cd $HOME/.rbenv/plugins/ruby-build && git pull && cd -'
 
 # ----------------------------------------------------
 #   Unix
