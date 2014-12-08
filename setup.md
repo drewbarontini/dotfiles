@@ -78,6 +78,8 @@ And the rest are in the Mac App Store.
 bash setup/sublime
 ```
 
+Next, [install Package Control](https://sublime.wbond.net/installation).
+
 ### Compiling Icon Fonts
 
 To compile icon fonts, use [Font Custom](http://fontcustom.com/).
