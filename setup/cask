@@ -1,35 +1,35 @@
+#!/usr/bin/env bash
 # Install native apps
-# Usage: `brew bundle setup/cask`
 
-install caskroom/cask/brew-cask
-tap caskroom/versions
+brew install caskroom/cask/brew-cask
+brew tap caskroom/versions
 
-cask install adobe-creative-cloud 2> /dev/null
-cask install alfred 2> /dev/null
-cask install anvil 2> /dev/null
-cask install appcleaner 2> /dev/null
-cask install arq 2> /dev/null
-cask install backblaze-downloader 2> /dev/null
-cask install bartender 2> /dev/null
-cask install caffeine 2> /dev/null
-cask install colorschemer-studio 2> /dev/null
-cask install drobo-dashboard 2> /dev/null
-cask install evernote 2> /dev/null
-cask install firefox 2> /dev/null
-cask install flux 2> /dev/null
-cask install google-chrome 2> /dev/null
-cask install hazel 2> /dev/null
-cask install imageoptim 2> /dev/null
-cask install instacast 2> /dev/null
-cask install iterm2 2> /dev/null
-cask install keyboard-maestro 2> /dev/null
-# cask install liteicon 2> /dev/null
-cask install mamp 2> /dev/null
-cask install moom 2> /dev/null
-cask install rdio 2> /dev/null
-cask install screenflow 2> /dev/null
-cask install sublime-text3 2> /dev/null
-cask install superduper 2> /dev/null
-cask install totalfinder 2> /dev/null
-cask install transmit 2> /dev/null
-cask install vlc 2> /dev/null
+brew cask install adobe-creative-cloud 2> /dev/null
+brew cask install alfred 2> /dev/null
+brew cask install anvil 2> /dev/null
+brew cask install appcleaner 2> /dev/null
+brew cask install arq 2> /dev/null
+brew cask install backblaze-downloader 2> /dev/null
+brew cask install bartender 2> /dev/null
+brew cask install caffeine 2> /dev/null
+brew cask install colorschemer-studio 2> /dev/null
+brew cask install drobo-dashboard 2> /dev/null
+brew cask install evernote 2> /dev/null
+brew cask install firefox 2> /dev/null
+brew cask install flux 2> /dev/null
+brew cask install google-chrome 2> /dev/null
+brew cask install hazel 2> /dev/null
+brew cask install imageoptim 2> /dev/null
+brew cask install instacast 2> /dev/null
+brew cask install iterm2 2> /dev/null
+brew cask install keyboard-maestro 2> /dev/null
+# brew cask install liteicon 2> /dev/null
+brew cask install mamp 2> /dev/null
+brew cask install moom 2> /dev/null
+brew cask install rdio 2> /dev/null
+brew cask install screenflow 2> /dev/null
+brew cask install sublime-text3 2> /dev/null
+brew cask install superduper 2> /dev/null
+brew cask install totalfinder 2> /dev/null
+brew cask install transmit 2> /dev/null
+brew cask install vlc 2> /dev/null

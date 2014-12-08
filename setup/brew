@@ -1,78 +1,78 @@
+#!/usr/bin/env bash
 # Install command-line tools using Homebrew
-# Usage: `brew bundle setup/brew`
 
 # Make sure we’re using the latest Homebrew
-update
+brew update
 
 # Upgrade any already-installed formulae
-upgrade
+brew upgrade
 
 # Ack
 # -> A tool like grep, optimized for programmers
-install ack
+brew install ack
 
 # Autojump
 # -> A cd command that learns
-install autojump
+brew install autojump
 
 # Bash & Bash Completion
-install bash
-install bash-completion
+brew install bash
+brew install bash-completion
 
 # FFmpeg
 # -> Record, convert and stream audio and video
-install ffmpeg
+brew install ffmpeg
 
 # Git
 # -> Version control
-install git
+brew install git
 
 # GHI
 # -> GitHub Issues on the command line
-install ghi
+brew install ghi
 
 # Git FTP
-install git-ftp
+brew install git-ftp
 
 # Hub
 # -> Command-line wrapper for git
-install hub
+brew install hub
 
 # ImageMagick
 # -> Create, edit, compose, or convert bitmap images
-install imagemagick
+brew install imagemagick
 
 # Node
 # -> Platform built on Chrome's JavaScript runtime
-install node
+brew install node
 
 # Redis
 # -> Advanced key-value store
-install redis
+brew install redis
 
 # Rename
 # -> Rename files in the command line
-install rename
+brew install rename
 
 # Sitespeed.io
 # -> Analyze your website speed and performance
-install sitespeed.io
+brew install sitespeed.io
 
 # TheSilverSearcher
 # -> A code-searching tool similar to ack, but faster
-install the_silver_searcher
+brew install the_silver_searcher
 
 # Tree
 # -> Recursive directory listing command
-install tree
+brew install tree
 
 # Vim
 # -> Ye' old text editor
-install vim
+brew install vim
 
 # webkit2png
 # -> Command-line webpage screenshots
-install webkit2png
+brew install webkit2png
 
 # Remove outdated versions from the cellar
-cleanup
+brew cleanup

@@ -34,7 +34,7 @@ Once you've set up rbenv:
 
 ```shell
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew bundle setup/brew
+bash setup/brew
 ```
 
 ### Postgres
@@ -58,7 +58,7 @@ bash setup/osx
 ### [OS X Applications](https://github.com/drewbarontini/dotfiles/blob/master/setup/cask)
 
 ```shell
-brew bundle setup/cask
+bash setup/cask
 ```
 
 **Note**: Modify or cherry-pick from `setup/cask`, as these are personal applications I use.
