@@ -1,10 +1,15 @@
 .DS_Store
-sublime-text/Packages/User/Package Control.cache
-sublime-text/Packages/User/Package Control.last-run
-sublime-text/Packages/User/SublimeGit.sublime-settings
-sublime-text/Packages/PyV8
+
+sublime-text/Packages
+!sublime-text/Packages/Color Scheme - User
+!sublime-text/Packages/Theme - Spacegray
+!sublime-text/Packages/User
+
 doc/tags
+
 vim/bundle
 vim/.netrwhist
+
 gitconfig.local
+
 bin/_*

@@ -27,9 +27,9 @@
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
+		"Modific",
 		"Sass",
-		"Emmet",
-		"Modific"
+		"Emmet"
 	],
 	"line_padding_bottom": 2,
 	"line_padding_top": 2,
