@@ -17,7 +17,7 @@ Dotfiles
 bash <(curl -s http://drewb.io/install.sh)
 ```
 
-### rbenv
+### [rbenv](https://github.com/drewbarontini/dotfiles/blob/master/setup/rbenv)
 
 ```shell
 bash setup/rbenv
@@ -28,7 +28,7 @@ Once you've set up rbenv:
 - Install a Ruby version (`rbenv install VERSION`)
 - Set a global Ruby version (`rbenv global VERSION`)
 
-### Homebrew
+### [Homebrew](https://github.com/drewbarontini/dotfiles/blob/master/setup/brew)
 
 ```shell
 ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
@@ -41,19 +41,19 @@ Install Postgres through the application rather than Homebrew:
 
 - [Postgres](http://postgresapp.com/)
 
-### NPM
+### [NPM](https://github.com/drewbarontini/dotfiles/blob/master/setup/npm)
 
 ```shell
 bash setup/npm
 ```
 
-### OS X Settings
+### [OS X Settings](https://github.com/drewbarontini/dotfiles/blob/master/setup/osx)
 
 ```shell
 bash setup/osx
 ```
 
-### OS X Applications
+### [OS X Applications](https://github.com/drewbarontini/dotfiles/blob/master/setup/cask)
 
 ```shell
 brew bundle setup/cask
@@ -72,7 +72,7 @@ Applications not in cask:
 
 And the rest are in the Mac App Store.
 
-### Sublime Text
+### [Sublime Text](https://github.com/drewbarontini/dotfiles/blob/master/setup/sublime)
 
 ```shell
 bash setup/sublime
