@@ -1,0 +1,86 @@
+#!/usr/bin/env bash
+# ****************************************************
+#
+#   Baseman Starter
+#   -> Creates an Baseman starter application using drewbarontini/baseman
+#
+# ----------------------------------------------------
+#   Dependencies
+# ----------------------------------------------------
+#
+#  - bash-comment
+#  - message
+#
+# ----------------------------------------------------
+#   Usage
+# ----------------------------------------------------
+#
+#  `baseman-starter scratch app/assets/stylesheets`
+#
+# ****************************************************
+
+set -o errexit
+set -o nounset
+set -o pipefail
+
+# ----------------------------------------------------
+#   Variables
+# ----------------------------------------------------
+
+BASEMANURL='git@github.com:drewbarontini/baseman.git'
+
+# ----------------------------------------------------
+#   Main
+# ----------------------------------------------------
+
+echo
+bash-comment l 'Baseman Starter Project'
+echo
+
+bash-comment m 'Cloning drewbarontini/baseman...'
+echo
+git clone $BASEMANURL $1
+cd $1
+
+echo
+bash-comment m 'Cleaning up repo...'
+echo
+rm CHANGELOG.md
+rm MIT-LICENSE
+rm source/assets/stylesheets/application.sass
+message green 'Cleaned up repo!'
+
+echo
+bash-comment m "Copying over files from $2..."
+echo
+rm -rf source/assets/stylesheets
+cp -R $2 source/assets
+message green 'Copied!'
+
+echo
+bash-comment m 'Setting up Bower...'
+echo
+npm install -g bower
+bower install
+message green 'Bower is successfully set up!'
+
+echo
+bash-comment m 'Setting up a new Git repo...'
+echo
+rm -rf .git
+git init
+git add .
+git commit -m 'Initial commit'
+echo
+message green 'Set up new Git repo with initial commit!'
+
+echo
+bash-comment m 'Bundling...'
+echo
+gem install bundler
+bundle install --binstubs
+
+echo
+bash-comment m 'Starting Middleman server...'
+bundle exec middleman server
+echo
