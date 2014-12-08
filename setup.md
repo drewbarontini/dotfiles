@@ -80,6 +80,12 @@ bash setup/sublime
 
 Next, [install Package Control](https://sublime.wbond.net/installation).
 
+Run the following to make sure Vintage mode works:
+
+```shell
+defaults write com.sublimetext.2 ApplePressAndHoldEnabled -bool false
+```
+
 ### Compiling Icon Fonts
 
 To compile icon fonts, use [Font Custom](http://fontcustom.com/).
