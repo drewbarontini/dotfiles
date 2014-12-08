@@ -31,7 +31,7 @@ Once you've set up rbenv:
 ### [Homebrew](https://github.com/drewbarontini/dotfiles/blob/master/setup/brew)
 
 ```shell
-ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew bundle setup/brew
 ```
 
