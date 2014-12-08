@@ -35,7 +35,7 @@ BASEMANURL='git@github.com:drewbarontini/baseman.git'
 # ----------------------------------------------------
 
 echo
-bash-comment l 'MVCSS Start Project'
+bash-comment l 'MVCSS Starter Project'
 echo
 
 bash-comment m 'Cloning drewbarontini/baseman...'
@@ -49,6 +49,13 @@ echo
 message green 'Cleaned up repo!'
 rm CHANGELOG.md
 rm MIT-LICENSE
+
+echo
+bash-comment m 'Setting up Bower...'
+echo
+npm install -g bower
+bower install
+message green 'Bower is successfully set up!'
 
 echo
 bash-comment m 'Downloading MVCSS...'
