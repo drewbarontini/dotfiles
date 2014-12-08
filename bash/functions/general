@@ -47,6 +47,20 @@ function get_process_id() {
 }
 
 # ----------------------------------------------------
+#   Make Directory & CD
+#   -> Creates a directory and moves into it
+# ----------------------------------------------------
+#
+# Arguments
+#
+# Usage: `mcd DIRECTORY_NAME`
+#
+
+function mcd() {
+  mkdir $1 && cd $1
+}
+
+# ----------------------------------------------------
 #   Open
 #   -> Alias for 'open' command
 # ----------------------------------------------------
