@@ -23,6 +23,11 @@ bash <(curl -s http://drewb.io/install.sh)
 bash setup/rbenv
 ```
 
+Once you've set up rbenv:
+
+- Install a Ruby version
+- Set a global Ruby version
+
 ### OS X Settings
 
 ```shell
