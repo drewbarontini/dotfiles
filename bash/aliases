@@ -239,6 +239,7 @@ alias ld='ls -lF'
 
 alias c='clear'
 alias ..='cd ..'
+alias ...='cd ../..'
 alias -- -='cd -'
 alias p='less'
 alias sbp='source ~/.bash_profile'
