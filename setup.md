@@ -28,12 +28,6 @@ Once you've set up rbenv:
 - Install a Ruby version (`rbenv install VERSION`)
 - Set a global Ruby version (`rbenv global VERSION`)
 
-### OS X Settings
-
-```shell
-bash setup/osx
-```
-
 ### Homebrew
 
 ```shell
@@ -45,6 +39,12 @@ brew bundle setup/brew
 
 ```shell
 bash setup/npm
+```
+
+### OS X Settings
+
+```shell
+bash setup/osx
 ```
 
 ### OS X Applications
