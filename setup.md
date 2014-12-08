@@ -25,8 +25,8 @@ bash setup/rbenv
 
 Once you've set up rbenv:
 
-- Install a Ruby version
-- Set a global Ruby version
+- Install a Ruby version (`rbenv install VERSION`)
+- Set a global Ruby version (`rbenv global VERSION`)
 
 ### OS X Settings
 
