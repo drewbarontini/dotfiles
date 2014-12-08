@@ -35,6 +35,12 @@ ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
 brew bundle setup/brew
 ```
 
+### Postgres
+
+Install Postgres through the application rather than Homebrew:
+
+- [Postgres](http://postgresapp.com/)
+
 ### NPM
 
 ```shell
@@ -60,7 +66,6 @@ Applications not in cask:
 - [Dropbox](https://www.dropbox.com/install)
 - [Evernote](https://evernote.com/)
 - [Miro](http://www.getmiro.com/)
-- [Postgres](http://postgresapp.com/)
 - [Remote Buddy](http://www.iospirit.com/products/remotebuddy/)
 - [svgo-gui](https://github.com/svg/svgo-gui)
 - [Typed](http://realmacsoftware.com/typed)
