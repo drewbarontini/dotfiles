@@ -6,7 +6,9 @@ Initial Setup
 
 - Download and install latest version of Xcode from Mac App Store
 - Download and install Xcode Command Line Tools
-- Set up Git/GitHub: [GitHub Help](http://help.github.com/articles/generating-ssh-keys)
+- Set up Git/GitHub:
+  - [Set Up Git](https://help.github.com/articles/set-up-git/)
+  - [Generating SSH Keys](http://help.github.com/articles/generating-ssh-keys/)
 
 Dotfiles
 --------
