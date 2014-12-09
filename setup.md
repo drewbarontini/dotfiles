@@ -99,11 +99,11 @@ curl get.pow.cx | sh
 
 ### Heroku
 
-#### Toolbelt
+**Toolbelt**
 
 Download at [https://toolbelt.heroku.com/](https://toolbelt.heroku.com/).
 
-#### Multiple Accounts
+**Multiple Accounts**
 
 If you manage more than one Heroku account, install [Heroku Accounts](https://github.com/ddollar/heroku-accounts):
 
