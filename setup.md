@@ -97,11 +97,13 @@ If you use [Pow](http://pow.cx/) and/or the [powder Gem](https://github.com/Rodr
 curl get.pow.cx | sh
 ```
 
-### Heroku Toolbelt
+### Heroku
+
+#### Toolbelt
 
 Download at [https://toolbelt.heroku.com/](https://toolbelt.heroku.com/).
 
-### Multiple Heroku Accounts
+#### Multiple Accounts
 
 If you manage more than one Heroku account, install [Heroku Accounts](https://github.com/ddollar/heroku-accounts):
 
