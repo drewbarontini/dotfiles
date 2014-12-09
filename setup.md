@@ -86,6 +86,9 @@ Run the following to make sure Vintage mode works:
 defaults write com.sublimetext.2 ApplePressAndHoldEnabled -bool false
 ```
 
+Additional Tools
+----------------
+
 ### Pow & Powder
 
 If you use [Pow](http://pow.cx/) and/or the [powder Gem](https://github.com/Rodreegez/powder), you'll need to install Pow _before_ the powder Gem:
