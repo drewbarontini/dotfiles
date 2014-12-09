@@ -106,9 +106,7 @@ gem install fontcustom
 
 **FTPM**
 
-For managing your fonts, you can use FTPM:
-
-- [FTPM](http://heldr.github.io/ftpm/)
+For managing your fonts, you can use [FTPM](http://heldr.github.io/ftpm/).
 
 ### GitHub Command Line
 
