@@ -144,12 +144,3 @@ To easily swap out multiple space and monitor wallpapers on OS X, install [chris
 ```shell
 gem install desktop
 ```
-
-### BrowserSync
-
-[http://www.browsersync.io/](http://www.browsersync.io/)
-
-```shell
-npm install -g browser-sync
-```
-
