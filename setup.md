@@ -98,7 +98,15 @@ curl get.pow.cx | sh
 
 To compile icon fonts, use [Font Custom](http://fontcustom.com/).
 
+```shell
+brew install fontforge --with-python
+brew install eot-utils
+gem install fontcustom
+```
+
 **FTPM**
+
+For managing your fonts, you can use FTPM:
 
 - [FTPM](http://heldr.github.io/ftpm/)
 
