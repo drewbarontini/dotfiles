@@ -97,19 +97,17 @@ If you use [Pow](http://pow.cx/) and/or the [powder Gem](https://github.com/Rodr
 curl get.pow.cx | sh
 ```
 
-### Compiling Icon Fonts
+### Heroku Toolbelt
 
-To compile icon fonts, use [Font Custom](http://fontcustom.com/).
+Download at [https://toolbelt.heroku.com/](https://toolbelt.heroku.com/).
+
+### Multiple Heroku Accounts
+
+If you manage more than one Heroku account, install [Heroku Accounts](https://github.com/ddollar/heroku-accounts):
 
 ```shell
-brew install fontforge --with-python
-brew install eot-utils
-gem install fontcustom
+heroku plugins:install git://github.com/ddollar/heroku-accounts.git
 ```
-
-**FTPM**
-
-For managing your fonts, you can use [FTPM](http://heldr.github.io/ftpm/).
 
 ### GitHub Command Line
 
@@ -128,17 +126,19 @@ This is in `setup/brew`.
 [sudo] npm install -g gh
 ```
 
-### Heroku Toolbelt
+### Compiling Icon Fonts
 
-Download at [https://toolbelt.heroku.com/](https://toolbelt.heroku.com/).
-
-### Multiple Heroku Accounts
-
-If you manage more than one Heroku account, install [Heroku Accounts](https://github.com/ddollar/heroku-accounts):
+To compile icon fonts, use [Font Custom](http://fontcustom.com/).
 
 ```shell
-heroku plugins:install git://github.com/ddollar/heroku-accounts.git
+brew install fontforge --with-python
+brew install eot-utils
+gem install fontcustom
 ```
+
+**FTPM**
+
+For managing your fonts, you can use [FTPM](http://heldr.github.io/ftpm/).
 
 ### Desktop Wallpapers
 
