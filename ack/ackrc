@@ -5,6 +5,7 @@
 --type-add=html=.haml
 --type-add=ruby=.haml
 --type-set=coffee=.coffee
+--type-set=haml=.haml
 
 # Ignores
 --ignore-dir=.bundle
