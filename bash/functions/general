@@ -19,6 +19,20 @@ function clean_url() {
 }
 
 # ----------------------------------------------------
+#   Copy File Contents
+#   -> Copies a files' contents to clipboard
+# ----------------------------------------------------
+#
+# $1 - The file to copy
+#
+# Usage: `copy_file_contents file.txt`
+#
+
+function copy_file_contents() {
+  cat $1 | pbcopy
+}
+
+# ----------------------------------------------------
 #   Delete Files
 #   -> Deletes files with a pattern
 # ----------------------------------------------------
