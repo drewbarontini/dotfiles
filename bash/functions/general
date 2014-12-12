@@ -30,6 +30,7 @@ function clean_url() {
 
 function copy_file_contents() {
   cat $1 | pbcopy
+  echo "-- '$1' copied to the clipboard! --"
 }
 
 # ----------------------------------------------------
