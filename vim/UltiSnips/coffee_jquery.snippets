@@ -1,3 +1,19 @@
+snippet jac "Add Class" i
+.addClass('$1')$0
+endsnippet
+
+snippet jap "Append" i
+.append('$1')$0
+endsnippet
+
+snippet jat "Attr" i
+.attr('$1')$0
+endsnippet
+
+snippet jn "Next" i
+.next()$0
+endsnippet
+
 snippet jo "jQuery Object"
 $('$1')$0
 endsnippet
@@ -5,6 +21,10 @@ endsnippet
 snippet jon "jQuery 'on'"
 $('${1:}').on '${2:click}', (event) ->
 	${0:# ...}
+endsnippet
+
+snippet jp "Parent" i
+.parent()$0
 endsnippet
 
 snippet jpd "jQuery Prevent Default"
@@ -16,7 +36,18 @@ jQuery ($) ->
 	${0:# ...}
 endsnippet
 
+snippet jrat "Remove Attr" i
+.removeAttr('$1')$0
+endsnippet
+
+snippet jrc "Remove Class" i
+.removeClass('$1')$0
+endsnippet
+
 snippet jt "jQuery This"
 $(@)$0
 endsnippet
 
+snippet jtc "Toggle Class" i
+.toggleClass('$1')$0
+endsnippet
