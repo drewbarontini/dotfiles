@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-if [ ! -d "$HOME/.rbenv" ]
-then
+if [ ! -d "$HOME/.rbenv" ]; then
+
   echo "Setting up rbenv..."
   git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
   echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile
@@ -11,6 +11,9 @@ then
   git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
 
   echo "Rbenv is now set up! Type 'rbenv'"
+
 else
+
   echo "rbenv is already installed on this machine."
+
 fi

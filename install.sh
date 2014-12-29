@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-if [ ! -d "$HOME/.dotfiles" ]
-then
+if [ ! -d "$HOME/.dotfiles" ]; then
+
   echo
   echo "=============================================================="
   echo "==> Installing Drew Barontini's dotfiles..."
@@ -56,7 +56,10 @@ then
 
   echo
   echo "Done! Run 'open ~/.dotfiles' to see your new files."
+
 else
+
   echo "These dotfiles are already installed on this machine."
+
 fi
 
