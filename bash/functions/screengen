@@ -46,11 +46,15 @@ function sg-init() {
 function sg() {
   local re='^[0-9]+$'
   local page=$(clean_url $1)
-  if ! [[ $1 =~ $re ]]
-  then
+
+  if ! [[ $1 =~ $re ]]; then
+
     webkit2png -W $SGWIDTH -H $SGHEIGHT -F -o screenshot-$page http://$1
+
   else
+
     webkit2png -W $1 -H $2 -F -o screenshot-$page http://$3
+
   fi
 }
 
@@ -69,8 +73,9 @@ function sg() {
 
 function sg-file() {
   local i=1
-  while read line
-  do
+
+  while read line; do
+
     local url=$(echo $line | awk '{print $1}')
     local page=$(clean_url $url)
     local size=$(echo $line | awk '{print $2}')
@@ -78,6 +83,7 @@ function sg-file() {
     local height=$(echo $size | awk -F 'x' '{print $2}')
     webkit2png -W $width -H $height -F -o screenshot-$page http://$url
     let i++
+
   done < $1
 }
 

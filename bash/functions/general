@@ -87,14 +87,18 @@ function mcd() {
 #
 
 function o() {
-  if [ "$1" == 'l' ]
-  then
+  if [ "$1" == 'l' ]; then
+
     open http://localhost:$2/$3
-  elif [ "$1" == 'm' ]
-  then
+
+  elif [ "$1" == 'm' ]; then
+
     open http://localhost:4567/$2
+
   else
+
     open http://$1
+
   fi
 }
 
@@ -130,8 +134,7 @@ function resize_images() {
 function run() {
   num=$1
   shift
-  for i in `seq $num`
-  do
+  for i in `seq $num`; do
     $@
   done
 }

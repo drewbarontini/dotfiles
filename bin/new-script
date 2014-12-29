@@ -28,9 +28,13 @@ set -o pipefail
 # ----------------------------------------------------
 
 if (( "$#" == 1 )); then
+
   echo '#!/usr/bin/env bash' >> "$1"
+
 else
+
   echo "#!/usr/bin/env $2" >> "$1"
+
 fi
 
 chmod +x "$1"

@@ -34,9 +34,14 @@ spin[2]='|'
 spin[3]='/'
 
 while [ "$(ps a | awk '{print $1}' | grep $pid)" ]; do
+
   for i in "${spin[@]}"; do
+
     echo -ne "$( font blue )\b$i$( font default )"
     sleep $delay
+
   done
+
 done
+
 echo -ne '\r '

@@ -78,18 +78,22 @@ function git_tag() {
   local patch=$(echo $tag | cut -d '.' -f3)
 
   case "$1" in
+
     'major')
       local nmajor=$(($major+1))
       local version="$nmajor.0.0"
       ;;
+
     'minor')
       local nminor=$(($minor+1))
       local version="$major.$nminor.0"
       ;;
+
     'patch')
       local npatch=$(($patch+1))
       local version="$major.$minor.$npatch"
       ;;
+
     *)
       echo "Automatically set a git tag based on Semantic Versioning keyword"
       echo
@@ -99,11 +103,13 @@ function git_tag() {
       echo "  git_tag major"
       echo
       echo "If this is your first tag, use 'git tag' to set up your first one."
+
   esac
 
-  if [[ "$version" ]]
-  then
+  if [[ "$version" ]]; then
+
     git tag -a "$prefix$version" -m "Version $version"
     echo "$prefix$version created!"
+
   fi
 }
