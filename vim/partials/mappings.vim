@@ -9,37 +9,37 @@ nnoremap ; :
 inoremap jk <esc>
 
 " Arrow Keys for window sizing
-noremap <up>    <C-W>+
-noremap <down>  <C-W>-
-noremap <left>  1<C-W>>
-noremap <right> 1<C-W><
+noremap <up>    <c-w>+
+noremap <down>  <c-w>-
+noremap <left>  1<c-w>>
+noremap <right> 1<c-w><
 
 " Window navigation
-nnoremap <C-h> <C-w>h
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-l> <C-w>l
+nnoremap <c-h> <c-w>h
+nnoremap <c-j> <c-w>j
+nnoremap <c-k> <c-w>k
+nnoremap <c-l> <c-w>l
 
 " Move visual block
-vnoremap J :m '>+1<CR>gv=gv
-vnoremap K :m '<-2<CR>gv=gv
+vnoremap J :m '>+1<cr>gv=gv
+vnoremap K :m '<-2<ct>gv=gv
 
 " Tabs
-noremap <C-t> <esc>:tabnew<cr>
+noremap <c-t> <esc>:tabnew<cr>
 " Move to the previous tab
 nnoremap H gT
 " Move to the next tab
 nnoremap L gt
 
 " Save file
-noremap <C-s> <esc>:w<cr>
-inoremap <C-s> <esc>:w<cr>
+noremap <c-s> <esc>:w<cr>
+inoremap <c-s> <esc>:w<cr>
 
 " Directory of Current File
-cnoremap %% <C-R>=expand('%:h').'/'<cr>
+cnoremap %% <c-r>=expand('%:h').'/'<cr>
 
 " Jump out of parenthesis, brackets, etc.
-inoremap <C-e> <C-o>A
+inoremap <c-e> <c-o>A
 
 " Insert newlines
 nnoremap J O<esc>Dj
@@ -53,18 +53,20 @@ nnoremap Y y$
 " == Non-Alphanumeric == "
 
 " Switch between buffers
-nnoremap ,, <C-^>
+nnoremap ,, <c-^>
 
 " Tabularize
 vnoremap <leader>= :Tabularize /
 
 " == A == "
 
-" Open a new tab and search for something with Ack
-nnoremap <leader>aa :Ack! ""<Left>
+" Search with Ack
+nnoremap <leader>aa :Ack! ''<left>
+nnoremap <leader>as :Ack! --sass ''<left>
+nnoremap <leader>ah :Ack! --html ''<left>
 
 " Search for word under cursor with Ack
-nnoremap <leader>AA :Ack! <C-r><C-w><cr>
+nnoremap <leader>AA :Ack! <c-r><c-w><cr>
 
 " == B == "
 
@@ -107,7 +109,7 @@ nnoremap <leader>G :g/
 " == H == "
 
 " Horizontal split
-nnoremap <leader>h <C-w>s<C-w>j
+nnoremap <leader>h <c-w>s<c-w>j
 
 " == I == "
 
@@ -201,7 +203,7 @@ nnoremap <silent> <leader>ug :IndentGuidesToggle<cr>
 " == V == "
 
 " Vertical split
-nnoremap <leader>v <C-w>v<C-w>l
+nnoremap <leader>v <c-w>v<c-w>l
 
 " Goyo trigger
 nnoremap <leader>V :Goyo<cr>
@@ -224,7 +226,7 @@ nnoremap <leader>y YP
 " == Z == "
 
 " Quicker action to suspend Vim ('fg' to return)
-nnoremap <leader>z <C-z>
+nnoremap <leader>z <c-z>
 
 " Replace bottom and top
 nnoremap zh H
