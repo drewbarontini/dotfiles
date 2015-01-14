@@ -1,7 +1,7 @@
 priority -50
 
 snippet fun "Function" b
-${1:name} = `!p snip.rv = "(" if t[2] else ""`${2:args}`!p snip.rv = ") " if t[2] else ""`->
+${1:name} = `!p snip.rv = "( " if t[2] else ""`${2:args}`!p snip.rv = " ) " if t[2] else ""`->
 	${0:# body...}
 endsnippet
 
@@ -88,7 +88,7 @@ ${1/^'?(\w+)'?$/\L$1\E/} = require(${1:'${2:sys}'})
 endsnippet
 
 snippet # "Interpolated Code" i
-#{$1}$0
+#{ $1 }$0
 endsnippet
 
 snippet log "Log" b

@@ -14,7 +14,7 @@ describe '${1}', ->
 endsnippet
 
 snippet ex "Expect"
-expect(${1})$0
+expect( ${1} )$0
 endsnippet
 
 snippet it "Expectation"
@@ -23,20 +23,20 @@ it '${1}', ->
 endsnippet
 
 snippet lf "loadFixtures"
-loadFixtures('${1}.html')$0
+loadFixtures( '${1}.html' )$0
 endsnippet
 
 snippet tb "toBe" w
-.toBe(${1})$0
+.toBe( ${1} )$0
 endsnippet
 
 snippet te "toEqual" w
-.toEqual(${1})$0
+.toEqual( ${1} )$0
 endsnippet
 
 snippet ce "Test Event"
-spyOnEvent(${1:@element}, '${2:click}')
+spyOnEvent( ${1:@element}, '${2:click}' )
 $1.$2()
 
-expect('$2').toHaveBeenTriggeredOn($1)$0
+expect( '$2' ).toHaveBeenTriggeredOn( $1 )$0
 endsnippet
