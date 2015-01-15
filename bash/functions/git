@@ -19,6 +19,20 @@ function git_delete_branch_for_real() {
 }
 
 # ----------------------------------------------------
+#   Find Branch
+#   -> Find a specific branch (local or remote)
+# ----------------------------------------------------
+#
+# $1 - the name of the branch
+#
+# Usage: `git_find_branch update_`
+#
+
+function git_find_branch() {
+  git branch -a | grep $1
+}
+
+# ----------------------------------------------------
 #   Delete Remote Tag
 #   -> Delete git tag on remote
 # ----------------------------------------------------
