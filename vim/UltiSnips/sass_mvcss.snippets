@@ -1,3 +1,7 @@
+snippet bsp "Base Space Variable"
+$b-${0:space}
+endsnippet
+
 snippet coh "Heading Comment"
 // *************************************
 //
@@ -74,6 +78,70 @@ snippet comp "Component Template"
 // .$3-scaffolding
 endsnippet
 
+snippet con "Context Class"
+.has-${1}
+	${0}
+endsnippet
+
+snippet cos "Short Comment"
+// ----- ${1:Comment} ----- //$0
+endsnippet
+
+snippet cosd "Short Comment Description"
+// -> ${1:Description}
+//
+// ${0:...}
+//
+endsnippet
+
+snippet em "em Function"
+em(${0}px)
+endsnippet
+
+snippet exi "Extend Icon"
+@extend %icn
+@extend %icn--${0}
+endsnippet
+
+snippet ffa "font-face Mixin"
++font-face(${1:font-family}, ${2:path}${3:, ${4:weight}, ${5:style}, ${6:asset-pipeline}})$0
+endsnippet
+
+snippet mod "Modifier Class"
+.${1:`!p res = re.sub(r'_', '', snip.basename)`}--${2}
+	${0}
+endsnippet
+
+snippet rt "respond-to Mixin"
++respond-to(${1})
+	$0
+endsnippet
+
+snippet rts "respond-to Mixin - Small"
++respond-to($g-s)
+	$0
+endsnippet
+
+snippet rtm "respond-to Mixin - Medium"
++respond-to($g-m)
+	$0
+endsnippet
+
+snippet rtl "respond-to Mixin - Large"
++respond-to($g-l)
+	$0
+endsnippet
+
+snippet sca "Scaffold Class"
+.${1:`!p res = re.sub(r'_', '', snip.basename)`}-${2}
+	${0}
+endsnippet
+
+snippet ste "State Class"
+.${1:`!p res = re.sub(r'_', '', snip.basename)`}.is-${2}
+	${0}
+endsnippet
+
 snippet struc "Structure Template"
 // *************************************
 //
@@ -118,74 +186,6 @@ snippet struc "Structure Template"
 // .$3-scaffolding
 endsnippet
 
-snippet cos "Short Comment"
-// ----- ${1:Comment} ----- //$0
-endsnippet
-
-snippet cosd "Short Comment Description"
-// -> ${1:Description}
-//
-// ${0:...}
-//
-endsnippet
-
-snippet exi "Extend Icon"
-@extend %icn
-@extend %icn--${0}
-endsnippet
-
-snippet ffa "font-face Mixin"
-+font-face(${1:font-family}, ${2:path}${3:, ${4:weight}, ${5:style}, ${6:asset-pipeline}})$0
-endsnippet
-
-snippet rt "respond-to Mixin"
-+respond-to(${1})
-	$0
-endsnippet
-
-snippet rts "respond-to Mixin - Small"
-+respond-to($g-s)
-	$0
-endsnippet
-
-snippet rtm "respond-to Mixin - Medium"
-+respond-to($g-m)
-	$0
-endsnippet
-
-snippet rtl "respond-to Mixin - Large"
-+respond-to($g-l)
-	$0
-endsnippet
-
-snippet em "em Function"
-em(${0}px)
-endsnippet
-
-snippet bsp "Base Space Variable"
-$b-${0:space}
-endsnippet
-
-snippet mod "Modifier Class"
-.${1:`!p res = re.sub(r'_', '', snip.basename)`}--${2}
-	${0}
-endsnippet
-
-snippet ste "State Class"
-.${1:`!p res = re.sub(r'_', '', snip.basename)`}.is-${2}
-	${0}
-endsnippet
-
-snippet con "Context Class"
-.has-${1}
-	${0}
-endsnippet
-
-snippet sca "Scaffold Class"
-.${1:`!p res = re.sub(r'_', '', snip.basename)`}-${2}
-	${0}
-endsnippet
-
 snippet vb "Base Variable"
 $b-${0}
 endsnippet
@@ -198,12 +198,12 @@ snippet vcb "$c-background"
 $c-background
 endsnippet
 
-snippet vch "$c-highlight"
-$c-highlight
-endsnippet
-
 snippet vcbi "$c-background-invert"
 $c-background-invert
+endsnippet
+
+snippet vch "$c-highlight"
+$c-highlight
 endsnippet
 
 snippet vcti "$c-text-invert"

@@ -1,3 +1,22 @@
+snippet each "Each Loop"
+- @${1:variable}.each do |${2:variable}|
+	$0
+endsnippet
+
+snippet favicon "Favicon"
+%link{ rel: 'shortcut icon', href: ${1:image_path('favicon.ico')} }$0
+endsnippet
+
+snippet fix "FIXME comment"
+-# FIXME${1:(${2})}: $0
+endsnippet
+
+snippet fm "Frontmatter"
+---
+${1:key}: ${2:value}
+---
+endsnippet
+
 snippet if "If Statement"
 - if ${1:condition}
 	${0}
@@ -10,38 +29,19 @@ snippet ife "If/Else Statement"
 	${0}
 endsnippet
 
-snippet ul "Unordered List"
-%ul
-	%li ${0:item}
-endsnippet
-
-snippet each "Each Loop"
-- @${1:variable}.each do |${2:variable}|
-	$0
-endsnippet
-
-snippet fm "Frontmatter"
----
-${1:key}: ${2:value}
----
-endsnippet
-
-snippet todo "TODO comment"
--# TODO${1:(${2})}: $0
-endsnippet
-
-snippet fix "FIXME comment"
--# FIXME${1:(${2})}: $0
+snippet metaviewport "Meta Viewport Tag"
+%meta{ content: "width=device-width, initial-scale=1.0", name: "viewport" }$0
 endsnippet
 
 snippet note "NOTE comment"
 -# NOTE${1:(${2})}: $0
 endsnippet
 
-snippet favicon "Favicon"
-%link{ rel: 'shortcut icon', href: ${1:image_path('favicon.ico')} }$0
+snippet todo "TODO comment"
+-# TODO${1:(${2})}: $0
 endsnippet
 
-snippet metaviewport "Meta Viewport Tag"
-%meta{ content: "width=device-width, initial-scale=1.0", name: "viewport" }$0
+snippet ul "Unordered List"
+%ul
+	%li ${0:item}
 endsnippet

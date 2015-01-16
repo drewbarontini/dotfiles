@@ -1,13 +1,7 @@
-snippet feat "Feature"
-feature '${1}' do
-	${2:# ...}
-end
-endsnippet
-
-snippet scen "Scenario"
-scenario '${1}' do
-	${2:# ...}
-end
+snippet bef "before"
+before do
+	${1:# ...}
+end$0
 endsnippet
 
 snippet desc "describe"
@@ -16,14 +10,14 @@ describe ${1} do
 end$0
 endsnippet
 
-snippet bef "before"
-before do
-	${1:# ...}
-end$0
+snippet ex "Expectation"
+expect($1)$0
 endsnippet
 
-snippet let "let"
-let(${1}) { ${2} }$0
+snippet feat "Feature"
+feature '${1}' do
+	${2:# ...}
+end
 endsnippet
 
 snippet it "it"
@@ -32,6 +26,12 @@ it '${1:Expectation}' do
 end$0
 endsnippet
 
-snippet ex "Expectation"
-expect($1)$0
+snippet let "let"
+let(${1}) { ${2} }$0
+endsnippet
+
+snippet scen "Scenario"
+scenario '${1}' do
+	${2:# ...}
+end
 endsnippet

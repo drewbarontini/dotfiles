@@ -1,16 +1,3 @@
-snippet _lm "Lorem ipsum paragraph"
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-culpa qui officia deserunt mollit anim id est laborum.
-endsnippet
-
-snippet _lms "Lorem ipsum sentence"
-Lorem ipsum dolor sit amet.
-endsnippet
-
 snippet _change "CHANGELOG"
 ${1:`git describe --abbrev=0 --tags | sed 's/^v//'`} - `!v strftime("%Y-%m-%d")`
 -------------------
@@ -26,6 +13,19 @@ ${1:`git describe --abbrev=0 --tags | sed 's/^v//'`} - `!v strftime("%Y-%m-%d")`
 ### Fixed
 
 - ${4:Nothing}$0
+endsnippet
+
+snippet _lm "Lorem ipsum paragraph"
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+culpa qui officia deserunt mollit anim id est laborum.
+endsnippet
+
+snippet _lms "Lorem ipsum sentence"
+Lorem ipsum dolor sit amet.
 endsnippet
 
 snippet _usf "User Story - Feature"

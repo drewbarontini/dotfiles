@@ -1,3 +1,7 @@
+snippet al "Alias"
+alias ${1:name}='$0'
+endsnippet
+
 snippet coh "Heading Comment"
 # ****************************************************
 #
@@ -29,12 +33,6 @@ snippet cof "Function Comment Heading"
 #$0
 endsnippet
 
-snippet func "Function"
-function ${1:function_name}() {
-	${0:# ...}
-}
-endsnippet
-
 snippet cfunc "Function with Comment Heading"
 # ----------------------------------------------------
 #   ${1:Function Title}
@@ -55,6 +53,12 @@ snippet es "Echo"
 echo "$0"
 endsnippet
 
+snippet func "Function"
+function ${1:function_name}() {
+	${0:# ...}
+}
+endsnippet
+
 snippet if "If Statement"
 if [[ "$1" ]]
 then
@@ -69,8 +73,4 @@ then
 else
 	${0:# ...}
 fi
-endsnippet
-
-snippet al "Alias"
-alias ${1:name}='$0'
 endsnippet

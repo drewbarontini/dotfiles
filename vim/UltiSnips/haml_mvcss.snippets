@@ -1,15 +1,12 @@
-snippet lay "Layout"
-.row
-	.cell${1:.cell--xs}.well${2:.well--l}
+snippet bk "Bucket"
+.bucket${1:${2:.bucket--flag}}
+	.bucket-media
+
+		$3
+
+	.bucket-content
 
 		$0
-endsnippet
-
-snippet wlay "Wrap with Layout"
-.row
-	.cell${1:.cell--xs}.well${2:.well--l}
-
-		${VISUAL}
 endsnippet
 
 snippet gr "Grid"
@@ -23,6 +20,23 @@ snippet gr "Grid"
 		$0
 endsnippet
 
+snippet grb "Grid Box"
+.g-b.g-b--${1:1of2}
+
+	$0
+endsnippet
+
+snippet lay "Layout"
+.row
+	.cell${1:.cell--s}.well${2:.well--l}
+
+		$0
+endsnippet
+
+snippet lit "List Item"
+%li.list-item $0
+endsnippet
+
 snippet wgr "Wrap with Grid"
 .g
 	.g-b.g-b--${1:1of2}
@@ -34,29 +48,14 @@ snippet wgr "Wrap with Grid"
 		$0
 endsnippet
 
-snippet grb "Grid Box"
-.g-b.g-b--${1:1of2}
+snippet wlay "Wrap with Layout"
+.row
+	.cell${1:.cell--s}.well${2:.well--l}
 
-	$0
+		${VISUAL}
 endsnippet
 
 snippet ull "List"
 %ul.list${1:.list--inline}
 	%li.list-item $0
 endsnippet
-
-snippet lit "List Item"
-%li.list-item $0
-endsnippet
-
-snippet bk "Bucket"
-.bucket${1:${2:.bucket--flag}}
-	.bucket-media
-
-		$3
-
-	.bucket-content
-
-		$0
-endsnippet
-
