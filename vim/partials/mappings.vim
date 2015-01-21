@@ -22,7 +22,7 @@ nnoremap <c-l> <c-w>l
 
 " Move visual block
 vnoremap J :m '>+1<cr>gv=gv
-vnoremap K :m '<-2<ct>gv=gv
+vnoremap K :m '<-1<ct>gv=gv
 
 " Tabs
 noremap <c-t> <esc>:tabnew<cr>
@@ -47,6 +47,9 @@ nnoremap K o<esc>Dk
 
 " Copy to end of line
 nnoremap Y y$
+
+" Sort block
+nmap <silent> <c-a> (jV)k :sort<cr>
 
 " ========== Leader ========== "
 
