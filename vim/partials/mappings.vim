@@ -48,9 +48,6 @@ nnoremap K o<esc>Dk
 " Copy to end of line
 nnoremap Y y$
 
-" Sort block
-nmap <silent> <c-a> (jV)k :sort<cr>
-
 " ========== Leader ========== "
 
 " == Non-Alphanumeric == "
@@ -104,11 +101,14 @@ nnoremap <silent> <leader>F :ClearCtrlPCache<cr>
 
 " == G == "
 
+" g Command
+nnoremap <leader>G :g/
+
 " :Gbrowse
 nnoremap <leader>gb :Gbrowse<cr>
 
-" g Command
-nnoremap <leader>G :g/
+" Sort block
+nnoremap <leader>gs (jV)k :sort<cr>
 
 " == H == "
 
