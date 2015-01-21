@@ -42,4 +42,3 @@ function! RenameFile()
   endif
 endfunction
 map <leader>rn :call RenameFile()<cr>
-
