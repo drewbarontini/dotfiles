@@ -108,7 +108,7 @@ nnoremap <leader>G :g/
 nnoremap <leader>gb :Gbrowse<cr>
 
 " Sort block
-nnoremap <leader>gs (jV)k :sort<cr>
+nnoremap <silent> <leader>gs (jV)k :sort<cr>
 
 " == H == "
 
