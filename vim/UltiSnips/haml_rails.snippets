@@ -15,6 +15,11 @@ snippet lt "Link To"
 = link_to '${1:text}', ${2:'${3:#}'}${4:, class: '${5}'}$0
 endsnippet
 
+snippet ltd "Link To - Block"
+= link_to '${1:#}'${2:, class: '${3}'} do
+	$0
+endsnippet
+
 snippet rp "Render Partial"
 = render '${0:partial}'
 endsnippet
