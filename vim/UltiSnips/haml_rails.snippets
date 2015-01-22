@@ -20,6 +20,10 @@ snippet ltd "Link To - Block"
 	$0
 endsnippet
 
+snippet ltp "Link To - Punctuation"
+= link_to('${1:text}', ${2:'${3:#}'}${4:, class: '${5}'}) + '${6:.}'$0
+endsnippet
+
 snippet rp "Render Partial"
 = render '${0:partial}'
 endsnippet
