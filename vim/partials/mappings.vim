@@ -55,9 +55,6 @@ nnoremap Y y$
 " Switch between buffers
 nnoremap ,, <c-^>
 
-" Tabularize
-vnoremap <leader>= :Tabularize /
-
 " == A == "
 
 " Search with Ack
@@ -195,6 +192,11 @@ nnoremap <leader>sd :e ~/.dotfiles/vim/UltiSnips<cr>
 nnoremap <leader>se :UltiSnipsEdit<cr>
 
 " == T == "
+
+" Tabularize
+vnoremap <leader>T :Tabularize /
+vnoremap <leader>T= :Tabularize /=<cr>
+vnoremap <leader>T: :Tabularize /:<cr>
 
 " Run RSpec test for current file
 nnoremap <leader>t :!bundle exec rspec %<cr>
