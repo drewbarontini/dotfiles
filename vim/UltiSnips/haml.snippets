@@ -2,6 +2,14 @@ snippet # "Brackets" i
 { $1: '$2' }$0
 endsnippet
 
+snippet at "Attribute" i
+${1:attribute}: '$2'$0
+endsnippet
+
+snippet atd "Attribute - Dimensions" i
+width: '$1', height: '$2'$0
+endsnippet
+
 snippet each "Each Loop"
 - @${1:variable}.each do |${2:variable}|
 	$0
