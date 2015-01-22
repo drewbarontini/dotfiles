@@ -3,6 +3,14 @@ snippet cf "Content For"
 	$0
 endsnippet
 
+snippet it "Image Tag"
+= image_tag '${1:image.jpg}', alt: '${2:Alt Text}'${3:, class: '$4'}
+endsnippet
+
+snippet lt "Link To"
+= link_to '${1:text}', ${2:'${3:#}'}${4:, class: '$5'}
+endsnippet
+
 snippet rp "Render Partial"
 = render '${0:partial}'
 endsnippet
