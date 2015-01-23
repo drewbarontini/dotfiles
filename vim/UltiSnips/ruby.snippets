@@ -51,6 +51,10 @@ snippet eachi "Each Block"
 ${1:@variable}.each { |$2| ${3:# ...} }
 endsnippet
 
+snippet ib "Inline Block" i
+${1:map} { |$2| $3 }$0
+endsnippet
+
 snippet if "If Statement"
 if ${1:condition}
 	${2:# ...}
