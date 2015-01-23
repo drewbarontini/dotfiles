@@ -28,7 +28,6 @@
 [core]
 
   editor = vim
-  excludesfile = ~/.gitignore
   quotepath = false
 
 [merge]
