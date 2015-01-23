@@ -1,17 +1,44 @@
+snippet # "String Interpolation" i
+#{ $1 }$0
+endsnippet
+
 snippet bp "binding.pry"
 binding.pry
 endsnippet
 
 snippet class "Class Definition" b
-class ${1}
+class $1
 	$0
 end
+endsnippet
+
+snippet coh "Comment Heading"
+# ====================================
+#   ${1:Title}
+# ====================================
 endsnippet
 
 snippet def "Method Definition"
 def ${1:method_name}
 	${0:# ...}
 end
+endsnippet
+
+snippet doc "Documentation Block"
+# ${1:Description}
+#
+# == Parameters
+#
+# @param ${2:name} [${3:String}] ${4:description}
+#
+# == Usage
+#
+#   ${5}
+#$0
+endsnippet
+
+snippet docp "Documentation Parameter" i
+@param ${1:name} [${2:String}] ${3:description}
 endsnippet
 
 snippet each "Each Block"
@@ -36,6 +63,12 @@ if ${1:condition}
 else
 	${3:# ...}
 end$0
+endsnippet
+
+snippet md "Module"
+module ${1:ModuleName}
+	$0
+end
 endsnippet
 
 snippet pv "Private"
