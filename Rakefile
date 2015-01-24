@@ -8,7 +8,7 @@ task :install do
 
   if response?('y')
     puts
-    message "Download and install latest version of Xcode from Mac App Store, Type 'next' when ready."
+    message "Download and install latest version of Xcode from Mac App Store. Type 'next' when ready."
 
     #run 'install_command_line_tools' if response?('next')
   end
