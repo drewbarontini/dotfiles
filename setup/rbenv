@@ -4,13 +4,13 @@ if [ ! -d "$HOME/.rbenv" ]; then
 
   echo "Setting up rbenv..."
   git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
-  echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile
-  echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
+  echo 'Add export PATH="$HOME/.rbenv/bin:$PATH" to your ~/.bash_profile'
+  echo 'Add eval "$(rbenv init -)" to your ~/.bash_profile'
 
   echo "Setting up ruby-build..."
   git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
 
-  echo "Rbenv is now set up! Type 'rbenv'"
+  echo "rbenv is now set up! Type 'rbenv'"
 
 else
 
