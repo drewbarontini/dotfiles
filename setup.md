@@ -19,7 +19,7 @@ Dotfiles
 bash <(curl -s http://drewb.io/install.sh)
 ```
 
-If you have any _local_ (private) dotfiles, now is when you can set those up.
+**Note**: If you have any local (private) dotfiles, now is when you can set those up.
 
 ### [rbenv](https://github.com/drewbarontini/dotfiles/blob/master/setup/rbenv)
 
