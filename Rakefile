@@ -1,6 +1,3 @@
-require 'rake'
-require 'fileutils'
-
 # ====================================
 #   Installation Start
 # ====================================
