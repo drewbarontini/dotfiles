@@ -27,8 +27,10 @@ task :install_command_line_tools do
   if response?('y')
     puts
     message 'Installing Command Line Tools...'
+
     system 'xcode-select --install'
     puts '<--'
+
     run 'install_rbenv'
   end
 end
