@@ -10,15 +10,6 @@ Initial Setup
   - [Set Up Git](https://help.github.com/articles/set-up-git/)
   - [Generating SSH Keys](http://help.github.com/articles/generating-ssh-keys/)
 
-**Note**: The installation of these dotfiles will create a `~/.gitconfig.local` symlink from `~/.dotfiles/git/gitconfig.local` for your user-specific information (name, email, etc.). Make sure to create this file before you run the `rake install`. The file should look something like this:
-
-```bash
-[user]
-
-  name = Your Name
-  email = yourgithubemail@example.com
-```
-
 Dotfiles
 --------
 
@@ -29,8 +20,6 @@ git clone git@github.com:drewbarontini/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
 rake install
 ```
-
-**Note**: If you have any local (private) dotfiles, now is when you can set those up.
 
 Sections
 --------
