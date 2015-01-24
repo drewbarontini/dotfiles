@@ -50,9 +50,12 @@ installation_order = [
 # ====================================
 
 task :install do
-  message 'Ready to install? [y|n]'
+  puts '---------------------------------------------'
+  puts ' drewbarontini/dotfiles Installation'
+  puts " --> Type 'start'"
+  puts '---------------------------------------------'
 
-  run installation_order[current_step] if response?('y')
+  run installation_order[current_step] if response?('start')
 end
 
 # ====================================
@@ -306,7 +309,9 @@ end
 #
 def prompt(section)
   puts
-  puts "--> Ready to install #{ section }? [y|n]"
+  puts '---------------------------------------------'
+  puts " Ready to install #{ section }? [y|n]"
+  puts '---------------------------------------------'
 end
 
 # Determines the user's response
