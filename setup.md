@@ -1,19 +1,13 @@
 Setup
 =====
 
-Initial Setup
--------------
-
 - Download and install latest version of Xcode from Mac App Store
 - Download and install Xcode Command Line Tools
 - Set up Git/GitHub:
   - [Set Up Git](https://help.github.com/articles/set-up-git/)
   - [Generating SSH Keys](http://help.github.com/articles/generating-ssh-keys/)
 
-Dotfiles
---------
-
-### Initialization
+Once those steps are complete, run the following commands:
 
 ```shell
 git clone git@github.com:drewbarontini/dotfiles.git ~/.dotfiles
@@ -23,6 +17,8 @@ rake install
 
 Sections
 --------
+
+If you want to, you can run the individual sections of `rake install` to update or redo any particular section.
 
 ### [rbenv](https://github.com/drewbarontini/dotfiles/blob/master/setup/rbenv)
 
