@@ -15,4 +15,3 @@ What's Included
 - rbenv
 - Sublime Text
 - Vim
-

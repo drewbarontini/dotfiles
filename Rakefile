@@ -1,17 +1,267 @@
 # ====================================
+#   Variables
+# ====================================
+
+# ----- Original Locations ----- #
+
+original_locations                   = {}
+original_locations[:bash_directory]  = "#{ ENV['HOME'] }/.dotfiles/bash"
+original_locations[:bash_profile]    = "#{ ENV['HOME'] }/.dotfiles/bash/bash_profile"
+original_locations[:ackrc]           = "#{ ENV['HOME'] }/.dotfiles/ack/ackrc"
+original_locations[:gitconfig]       = "#{ ENV['HOME'] }/.dotfiles/git/gitconfig"
+original_locations[:gitignore]       = "#{ ENV['HOME'] }/.dotfiles/git/gitignore"
+original_locations[:vim]             = "#{ ENV['HOME'] }/.dotfiles/vim"
+original_locations[:vimrc]           = "#{ ENV['HOME'] }/.dotfiles/vim/vimrc"
+original_locations[:gvimrc]          = "#{ ENV['HOME'] }/.dotfiles/vim/gvimrc"
+
+# ----- New Locations ----- #
+
+new_locations                   = {}
+new_locations[:bash_directory]  = "#{ ENV['HOME'] }/.bash"
+new_locations[:bash_profile]    = "#{ ENV['HOME'] }/.bash_profile"
+new_locations[:ackrc]           = "#{ ENV['HOME'] }/.ackrc"
+new_locations[:gitconfig_local] = "#{ ENV['HOME'] }/.gitconfig.local"
+new_locations[:gitconfig]       = "#{ ENV['HOME'] }/.gitconfig"
+new_locations[:gitignore]       = "#{ ENV['HOME'] }/.gitignore"
+new_locations[:vim]             = "#{ ENV['HOME'] }/.vim"
+new_locations[:vimrc]           = "#{ ENV['HOME'] }/.vimrc"
+new_locations[:gvimrc]          = "#{ ENV['HOME'] }/.gvimrc"
+
+# ----- Installation Order ----- #
+
+current_step = 0
+
+installation_order = [
+  'install_symlinks',
+  'install_vim',
+  'install_rbenv',
+  'install_homebrew',
+  'install_homebrew_packages',
+  'install_npm_packages',
+  'install_osx_settings',
+  'install_cask',
+  'install_sublime_text_settings',
+  'install_pow',
+  'install_cleanup'
+]
+
+# ====================================
 #   Installation Start
 # ====================================
 
 task :install do
-  puts
-  message 'Ready to install? [y]es [n]o'
+  message 'Ready to install? [y|n]'
+
+  run installation_order[current_step] if response?('y')
+end
+
+# ====================================
+#   Install Symlinks
+# ====================================
+
+task :install_symlinks, :run do |task, args|
+  current_step = current_step + 1
+
+  prompt 'symlinks'
 
   if response?('y')
-    puts
-    message "Download and install latest version of Xcode from Mac App Store. Type 'next' when ready."
+    message 'Symlinking files...'
 
-    #run 'install_command_line_tools' if response?('next')
+    create_symlinks(original_locations, new_locations)
+    puts '<--'
+
+    run installation_order[current_step] unless args[:run] == 'single'
   end
+end
+
+# ====================================
+#   Install Vim
+# ====================================
+
+task :install_vim, :run do |task, args|
+  current_step = current_step + 1
+
+  prompt 'Vim'
+
+  if response?('y')
+    message 'Installing Vundle...'
+
+    vundle_directory = "#{ ENV['HOME'] }/.vim/bundle/vundle"
+
+    unless File.exists?(vundle_directory)
+      system "git clone https://github.com/gmarik/vundle.git #{ vundle_directory }"
+      puts "Done! Run ':BundleInstall' in Vim to install plugins."
+    else
+      puts "#{ vundle_directory } already exists. Contining.."
+    end
+
+    puts '<--'
+
+    run installation_order[current_step] unless args[:run] == 'single'
+  end
+end
+
+# ====================================
+#   Install rbenv
+# ====================================
+
+task :install_rbenv, :run do |task, args|
+  current_step = current_step + 1
+
+  prompt 'rbenv'
+
+  if response?('y')
+    message 'Installing rbenv...'
+
+    system 'bash setup/rbenv'
+    puts '<--'
+
+    run installation_order[current_step] unless args[:run] == 'single'
+  end
+end
+
+# ====================================
+#   Install Homebrew
+# ====================================
+
+task :install_homebrew, :run do |task, args|
+  current_step = current_step + 1
+
+  prompt 'Homebrew'
+
+  if response?('y')
+    message 'Installing Homebrew...'
+
+    system 'ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"'
+    puts '<--'
+
+    run installation_order[current_step] unless args[:run] == 'single'
+  end
+end
+
+# ====================================
+#   Install Homebrew Packages
+# ====================================
+
+task :install_homebrew_packages, :run do |task, args|
+  current_step = current_step + 1
+
+  prompt 'Homebrew Packages'
+
+  if response?('y')
+    message 'Installing Homebrew Packages...'
+
+    system 'bash setup/brew'
+    puts '<--'
+
+    run installation_order[current_step] unless args[:run] == 'single'
+  end
+end
+
+# ====================================
+#   Install NPM Packages
+# ====================================
+
+task :install_npm_packages, :run do |task, args|
+  current_step = current_step + 1
+
+  prompt 'NPM Packages'
+
+  if response?('y')
+    message 'Installing NPM Packages...'
+
+    system 'bash setup/npm'
+    puts '<--'
+
+    run installation_order[current_step] unless args[:run] == 'single'
+  end
+end
+
+# ====================================
+#   Install OS X Settings
+# ====================================
+
+task :install_osx_settings, :run do |task, args|
+  current_step = current_step + 1
+
+  prompt 'OS X Settings'
+
+  if response?('y')
+    message 'Installing OS X Settings...'
+
+    system 'bash setup/osx'
+    puts '<--'
+
+    run installation_order[current_step] unless args[:run] == 'single'
+  end
+end
+
+# ====================================
+#   Install Cask
+# ====================================
+
+task :install_cask, :run do |task, args|
+  current_step = current_step + 1
+
+  prompt 'Cask & Applications'
+
+  if response?('y')
+    message 'Installing Cask & Applications...'
+
+    system 'bash setup/cask'
+    puts '<--'
+
+    run installation_order[current_step] unless args[:run] == 'single'
+  end
+end
+
+# ====================================
+#   Install Sublime Text Settings
+# ====================================
+
+task :install_sublime_text_settings, :run do |task, args|
+  current_step = current_step + 1
+
+  prompt 'Sublime Text Settings'
+
+  if response?('y')
+    message 'Installing Sublime Text Settings...'
+
+    system 'bash setup/sublime'
+
+    message "Now, install Package Control. Type 'next' when you are ready."
+
+    if response?('next')
+       run installation_order[current_step] unless args[:run] == 'single'
+    end
+  end
+end
+
+# ====================================
+#   Install Pow
+# ====================================
+
+task :install_pow, :run do |task, args|
+  current_step = current_step + 1
+
+  prompt 'Pow'
+
+  if response?('y')
+    message 'Installing Pow...'
+
+    system 'curl get.pow.cx | sh'
+
+    run installation_order[current_step] unless args[:run] == 'single'
+  end
+end
+
+# ====================================
+#   Install Cleanup
+# ====================================
+
+task :install_cleanup do
+  system "source #{ ENV['HOME'] }/.bash_profile"
+  puts "Done! Run 'open ~/.dotfiles' to see your new files."
 end
 
 # ====================================
@@ -22,154 +272,10 @@ task :install_command_line_tools do
   prompt 'Command Line Tools'
 
   if response?('y')
-    puts
     message 'Installing Command Line Tools...'
 
     system 'xcode-select --install'
     puts '<--'
-
-    run 'install_rbenv'
-  end
-end
-
-# ====================================
-#   Install rbenv
-# ====================================
-
-task :install_rbenv do
-  prompt 'rbenv'
-
-  if response?('y')
-    puts
-    message 'Installing rbenv...'
-
-    system 'bash setup/rbenv'
-    puts '<--'
-
-    run 'install_homebrew'
-  end
-end
-
-# ====================================
-#   Install Homebrew
-# ====================================
-
-task :install_homebrew do
-  prompt 'Homebrew'
-
-  if response?('y')
-    puts
-    message 'Installing Homebrew...'
-
-    system 'ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"'
-    puts '<--'
-
-    run 'install_homebrew_packages'
-  end
-end
-
-# ====================================
-#   Install Homebrew Packages
-# ====================================
-
-task :install_homebrew_packages do
-  prompt 'Homebrew Packages'
-
-  if response?('y')
-    puts
-    message 'Installing Homebrew Packages...'
-
-    system 'bash setup/brew'
-    puts '<--'
-
-    run 'install_npm_packages'
-  end
-end
-
-# ====================================
-#   Install NPM Packages
-# ====================================
-
-task :install_npm_packages do
-  prompt 'NPM Packages'
-
-  if response?('y')
-    puts
-    message 'Installing NPM Packages...'
-
-    system 'bash setup/npm'
-    puts '<--'
-
-    run 'install_osx_settings'
-  end
-end
-
-# ====================================
-#   Install OS X Settings
-# ====================================
-
-task :install_osx_settings do
-  prompt 'OS X Settings'
-
-  if response?('y')
-    puts
-    message 'Installing OS X Settings...'
-
-    system 'bash setup/osx'
-    puts '<--'
-
-    run 'install_cask'
-  end
-end
-
-# ====================================
-#   Install Cask
-# ====================================
-
-task :install_cask do
-  prompt 'Cask & Applications'
-
-  if response?('y')
-    puts
-    message 'Installing Cask & Applications...'
-
-    system 'bash setup/cask'
-    puts '<--'
-
-    run 'install_sublime_text_settings'
-  end
-end
-
-# ====================================
-#   Install Sublime Text Settings
-# ====================================
-
-task :install_sublime_text_settings do
-  prompt 'Sublime Text Settings'
-
-  if response?('y')
-    puts
-    message 'Installingn Sublime Text Settings...'
-    system 'bash setup/sublime'
-    message "Now, install Package Control. Type 'next' when you are ready."
-
-    if response?('next')
-      run 'install_pow'
-    end
-  end
-end
-
-# ====================================
-#   Install Pow
-# ====================================
-
-task :install_pow do
-  prompt 'Pow'
-
-  if response?('y')
-    puts
-    message 'Installing Pow...'
-    system 'curl get.pow.cx | sh'
   end
 end
 
@@ -184,6 +290,7 @@ end
 #   message 'This is a message to show.'
 #
 def message(string)
+  puts
   puts "--> #{ string }"
 end
 
@@ -199,7 +306,7 @@ end
 #
 def prompt(section)
   puts
-  message "Ready to install #{ section }? [y]es [n]o"
+  puts "--> Ready to install #{ section }? [y|n]"
 end
 
 # Determines the user's response
@@ -230,4 +337,45 @@ end
 #
 def run(task)
   Rake::Task[task].invoke
+end
+
+# Determines if a symlink can be made
+#
+# == Parameters
+#
+# @param destination_path [String] the destination of the symlink
+#
+# == Usage
+#
+#   if can_symlink?(destination_path)
+#     # ...
+#   end
+#
+def can_symlink?(destination_path)
+  File.exists?(destination_path) ? false : true
+end
+
+# Creates all of the specified symlinks
+#
+# == Parameters
+#
+# @param original_locations [Hash] set of original locations
+# @param new_locations [Hash] set of new locations
+#
+# == Usage
+#
+#   create_symlinks(original_locations, new_locations)
+#
+def create_symlinks(original_locations, new_locations)
+  (0..original_locations.count - 1).each do |index|
+    old = original_locations[ original_locations.keys[index] ]
+    new = new_locations[ new_locations.keys[index] ]
+
+    if can_symlink?(new)
+      File.symlink(old, new)
+      puts "#{ old } -> #{ new } symlink created."
+    else
+      puts "#{ new } already exists. Continuing..."
+    end
+  end
 end

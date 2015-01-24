@@ -10,21 +10,35 @@ Initial Setup
   - [Set Up Git](https://help.github.com/articles/set-up-git/)
   - [Generating SSH Keys](http://help.github.com/articles/generating-ssh-keys/)
 
+**Note**: The installation of these dotfiles will create a `~/.gitconfig.local` symlink from `~/.dotfiles/git/gitconfig.local` for your user-specific information (name, email, etc.). Make sure to create this file before you run the `rake install`. The file should look something like this:
+
+```bash
+[user]
+
+  name = Your Name
+  email = yourgithubemail@example.com
+```
+
 Dotfiles
 --------
 
 ### Initialization
 
 ```shell
-bash <(curl -s http://drewb.io/install.sh)
+git clone git@github.com:drewbarontini/dotfiles.git ~/.dotfiles
+cd ~/.dotfiles
+rake install
 ```
 
 **Note**: If you have any local (private) dotfiles, now is when you can set those up.
 
+Sections
+--------
+
 ### [rbenv](https://github.com/drewbarontini/dotfiles/blob/master/setup/rbenv)
 
 ```shell
-bash setup/rbenv
+rake install_rbenv[single]
 ```
 
 Once you've set up rbenv:
@@ -35,8 +49,8 @@ Once you've set up rbenv:
 ### [Homebrew](https://github.com/drewbarontini/dotfiles/blob/master/setup/brew)
 
 ```shell
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-bash setup/brew
+rake install_homebrew[single]
+rake install_homebrew_packages[single]
 ```
 
 ### Postgres
@@ -50,19 +64,19 @@ Install Postgres through the application rather than Homebrew:
 **Note**: NPM is installed during the Homebrew setup (alongside Node), but this sets up some common packages.
 
 ```shell
-bash setup/npm
+rake install_npm[single]
 ```
 
 ### [OS X Settings](https://github.com/drewbarontini/dotfiles/blob/master/setup/osx)
 
 ```shell
-bash setup/osx
+rake install_osx_settings[single]
 ```
 
 ### [OS X Applications](https://github.com/drewbarontini/dotfiles/blob/master/setup/cask)
 
 ```shell
-bash setup/cask
+rake install_cask[single]
 ```
 
 **Note**: Modify or cherry-pick from `setup/cask`, as these are personal applications I use.
@@ -79,7 +93,7 @@ And the rest are in the Mac App Store.
 ### [Sublime Text](https://github.com/drewbarontini/dotfiles/blob/master/setup/sublime)
 
 ```shell
-bash setup/sublime
+rake install_sublime_text_settings[single]
 ```
 
 Next, [install Package Control](https://sublime.wbond.net/installation).
@@ -98,7 +112,7 @@ Additional Tools
 If you use [Pow](http://pow.cx/) and/or the [powder Gem](https://github.com/Rodreegez/powder), you'll need to install Pow _before_ the powder Gem:
 
 ```shell
-curl get.pow.cx | sh
+rake install_pow[single]
 ```
 
 ### Heroku
@@ -124,7 +138,7 @@ Two options:
 
 **GHI**
 
-This is in `setup/brew`.
+This is in `rake install_homebrew[single]`.
 
 **GH**
 
