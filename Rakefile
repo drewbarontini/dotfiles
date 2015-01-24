@@ -229,5 +229,5 @@ end
 #   run 'install_homebrew'
 #
 def run(task)
-  Rake::Task[task].execute
+  Rake::Task[task].invoke
 end
