@@ -6,16 +6,16 @@
 # ****************************************************
 
 packages=(
-bower
-grunt
-grunt-cli
-gulp
-imageoptim-cli
-jasmine-node
-stylestats
-svgo
-psi
-yo
+  bower
+  grunt
+  grunt-cli
+  gulp
+  imageoptim-cli
+  jasmine-node
+  stylestats
+  svgo
+  psi
+  yo
 )
 
 for package in ${packages[@]}; do
