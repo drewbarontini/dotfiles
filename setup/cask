@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
-# Install native apps
+# ****************************************************
+#
+#   Setup - Cask
+#
+# ****************************************************
 
 brew install caskroom/cask/brew-cask
 brew tap caskroom/versions
