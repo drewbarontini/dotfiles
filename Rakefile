@@ -71,7 +71,6 @@ task :install_symlinks, :run do |task, args|
     message 'Symlinking files...'
 
     create_symlinks(original_locations, new_locations)
-    puts '<--'
 
     run installation_order[current_step] unless args[:run] == 'single'
   end
@@ -98,7 +97,6 @@ task :install_vim, :run do |task, args|
       puts "#{ vundle_directory } already exists. Contining.."
     end
 
-    puts '<--'
 
     run installation_order[current_step] unless args[:run] == 'single'
   end
@@ -117,7 +115,6 @@ task :install_rbenv, :run do |task, args|
     message 'Installing rbenv...'
 
     system 'bash setup/rbenv'
-    puts '<--'
 
     run installation_order[current_step] unless args[:run] == 'single'
   end
@@ -136,7 +133,6 @@ task :install_homebrew, :run do |task, args|
     message 'Installing Homebrew...'
 
     system 'ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"'
-    puts '<--'
 
     run installation_order[current_step] unless args[:run] == 'single'
   end
@@ -155,7 +151,6 @@ task :install_homebrew_packages, :run do |task, args|
     message 'Installing Homebrew Packages...'
 
     system 'bash setup/brew'
-    puts '<--'
 
     run installation_order[current_step] unless args[:run] == 'single'
   end
@@ -174,7 +169,6 @@ task :install_npm_packages, :run do |task, args|
     message 'Installing NPM Packages...'
 
     system 'bash setup/npm'
-    puts '<--'
 
     run installation_order[current_step] unless args[:run] == 'single'
   end
@@ -193,7 +187,6 @@ task :install_osx_settings, :run do |task, args|
     message 'Installing OS X Settings...'
 
     system 'bash setup/osx'
-    puts '<--'
 
     run installation_order[current_step] unless args[:run] == 'single'
   end
@@ -212,7 +205,6 @@ task :install_cask, :run do |task, args|
     message 'Installing Cask & Applications...'
 
     system 'bash setup/cask'
-    puts '<--'
 
     run installation_order[current_step] unless args[:run] == 'single'
   end
@@ -279,7 +271,6 @@ task :install_command_line_tools do
     message 'Installing Command Line Tools...'
 
     system 'xcode-select --install'
-    puts '<--'
   end
 end
 
