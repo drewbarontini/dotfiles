@@ -210,8 +210,6 @@ alias rkdbr='./bin/rake db:reset'
 alias rkdbs='./bin/rake db:seed'
 alias rkdbt='./bin/rake db:setup'
 alias rkdy='rake deploy'
-alias rkdys='rake deploy:staging'
-alias rkdyp='rake deploy:production'
 
 # ----------------------------------------------------
 #   Rbenv
