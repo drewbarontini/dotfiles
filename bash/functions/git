@@ -19,6 +19,30 @@ function git_delete_branch_for_real() {
 }
 
 # ----------------------------------------------------
+#   Git Diff From Master
+#   -> Show changes on specified branch that are
+#      different than master
+# ----------------------------------------------------
+#
+# $1 - 'files' show only files changed (optional)
+# $2 - the name of the branch
+#
+# Usage: `git_diff_from_master my_feature_branch`
+# Usage: `git_diff_from_master files my_feature_branch`
+#
+function git_diff_from_master() {
+  if [ "$1" == 'files' ]; then
+
+    git diff --name-only HEAD.."$2"
+
+  else
+
+    git diff HEAD.."$1"
+
+  fi
+}
+
+# ----------------------------------------------------
 #   Find Branch
 #   -> Find a specific branch (local or remote)
 # ----------------------------------------------------
