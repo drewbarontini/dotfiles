@@ -23,11 +23,6 @@
 pid=$!
 delay=0.1
 
-#while [ "$(ps a | awk '{print $1}' | grep $pid)" ]; do
-  #echo -n "$( font blue ).$( font default )"
-  #sleep $delay
-#done
-
 spin[0]='-'
 spin[1]='\\'
 spin[2]='|'
