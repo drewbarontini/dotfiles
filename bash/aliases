@@ -203,6 +203,7 @@ alias ras='./bin/rails s'
 ## ----- Rake ----- ##
 
 alias rk='./bin/rake'
+alias rkap='RAILS_ENV=development ./bin/rake assets:precompile'
 alias rkdbc='./bin/rake db:create'
 alias rkdbd='./bin/rake db:drop'
 alias rkdbm='./bin/rake db:migrate'
