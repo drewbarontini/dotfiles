@@ -27,6 +27,8 @@ export PATH=$( IFS=:; echo "${PATH_DIRECTORIES[*]}" )
 #   Imports
 # ----------------------------------------------------
 
+## ----- Base ----- ##
+
 source ~/.bash/vars
 source ~/.bash/config
 source ~/.bash/aliases
@@ -37,6 +39,9 @@ source ~/.bash/functions/screengen
 source ~/.bash/functions/wrappers
 source ~/.bash/prompt
 source ~/.bash/overrides
+
+## ----- Local ----- ##
+## These are for local files included in private, local dotfiles.
 
 [[ -f ~/.bash_vars.local ]] && source ~/.bash_vars.local
 [[ -f ~/.bash_aliases.local ]] && source ~/.bash_aliases.local
