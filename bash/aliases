@@ -142,7 +142,6 @@ alias mis='./bin/middleman s'
 #   Miscellaneous
 # ----------------------------------------------------
 
-alias walls="ls -lF ${colorflag} $WALLPAPER_PATH"
 alias timer='echo "Timer started. Stop with Ctrl-D." && date && time cat && date'
 
 # ----------------------------------------------------
@@ -267,4 +266,3 @@ alias vim="stty stop '' -ixoff ; vim"
 
 alias v='vim'
 alias vi='vim'
-
