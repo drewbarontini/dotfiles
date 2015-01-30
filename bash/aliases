@@ -234,6 +234,7 @@ alias update_ruby_build='cd $HOME/.rbenv/plugins/ruby-build && git pull && cd -'
 alias l='ls -1F'
 alias la='ls -A1F'
 alias ld='ls -lF'
+alias path="echo $PATH | tr ':' '\n'"
 
 ## ----- Miscellaneous ----- ##
 
