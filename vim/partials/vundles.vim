@@ -40,6 +40,9 @@ Bundle 'goldfeld/vim-seek'
 " Nice inteface for dealing with Git branches
 Bundle 'idanarye/vim-merginal'
 
+" Break down your code into partials
+Bundle 'jbgutierrez/vim-partial'
+
 " Distraction-free writing
 Bundle 'junegunn/goyo.vim'
 
