@@ -70,6 +70,11 @@ snippet log "console.log" b
 console.log '${1}'
 endsnippet
 
+snippet met "Method" b
+${1:name}: ${2:( $3 )} ->
+	${0:# body...}
+endsnippet
+
 snippet req "Require" b
 ${1/^'?(\w+)'?$/\L$1\E/} = require(${1:'${2:sys}'})
 endsnippet
