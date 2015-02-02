@@ -33,11 +33,11 @@ function git_delete_branch_for_real() {
 function git_diff_from_master() {
   if [ "$1" == 'files' ]; then
 
-    git diff --name-only HEAD.."$2"
+    git diff --name-only master..$2 $*
 
   else
 
-    git diff HEAD.."$1"
+    git diff master..$1 $*
 
   fi
 }
