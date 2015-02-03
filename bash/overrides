@@ -7,12 +7,15 @@
 # Allow 'g' alias for 'git'
 __git_complete g __git_main
 
-# Allow 'go' alias to autocomplete
-__git_complete go _git_checkout
-
 # Allow 'gb' alias to autocomplete
 __git_complete gb _git_branch
 __git_complete gbd _git_branch
 
+# Allwo 'gd' alias to autocomplete
+__git_complete git_diff_from_master _git_diff
+
 # Allow 'gm' alias to autocomplete
 __git_complete gm _git_merge
+
+# Allow 'go' alias to autocomplete
+__git_complete go _git_checkout
