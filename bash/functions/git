@@ -28,7 +28,9 @@ function git_delete_branch_for_real() {
 # $2 - the name of the branch
 #
 # Usage: `git_diff_from_master my_feature_branch`
+# Usage: `git_diff_from_master my_feature_branch path/to/directory`
 # Usage: `git_diff_from_master files my_feature_branch`
+# Usage: `git_diff_from_master files my_feature_branch | grep 'path/to/directory'`
 #
 function git_diff_from_master() {
   if [ "$1" == 'files' ]; then
