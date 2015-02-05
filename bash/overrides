@@ -4,18 +4,19 @@
 #
 # ****************************************************
 
-# Allow 'g' alias for 'git'
+# git
 __git_complete g __git_main
 
-# Allow 'gb' alias to autocomplete
+# git branch
 __git_complete gb _git_branch
 __git_complete gbd _git_branch
+__git_complete git_delete_branch_for_real _git_branch
 
-# Allwo 'gd' alias to autocomplete
+# git diff
 __git_complete git_diff_from_master _git_diff
 
-# Allow 'gm' alias to autocomplete
+# git merge
 __git_complete gm _git_merge
 
-# Allow 'go' alias to autocomplete
+# git checkout
 __git_complete go _git_checkout
