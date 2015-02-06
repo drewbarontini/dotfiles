@@ -17,9 +17,9 @@ snippet coht "Heading Comment with Template"
 //   Template (Haml)
 // -------------------------------------
 //
-// (.has-$3)
+// .has-$3
 //
-// .${3:`!p res = re.sub(r'_', '', snip.basename)`[.`!p res = re.sub(r'_', '', snip.basename)`--modifier](.is-state)}
+// .${3:`!p res = re.sub(r'_', '', snip.basename)`}[${4:modifier}](${5:state})
 //
 // *************************************$0
 endsnippet
@@ -40,9 +40,10 @@ snippet comp "Component Template"
 //   Template (Haml)
 // -------------------------------------
 //
-// (.has-$3)
+// .has-$3
 //
-// .${3:`!p res = re.sub(r'_', '', snip.basename)`}[.$3--modifier](.is-state)
+// .${3:`!p res = re.sub(r'_', '', snip.basename)`}[${4:modifier}](${5:state})
+//
 //   .$3-scaffolding
 //
 // *************************************
@@ -150,7 +151,7 @@ snippet struc "Structure Template"
 //
 // (.has-$3)
 //
-// .${3:`!p res = re.sub(r'_', '', snip.basename)`}[.$3--modifier](.is-state)
+// .${3:`!p res = re.sub(r'_', '', snip.basename)`}[${4:modifier}](${5:state})
 //   .$3-scaffolding
 //
 // *************************************
