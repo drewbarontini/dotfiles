@@ -154,6 +154,14 @@ source ~/.vim/partials/filetypes.vim
 source ~/.vim/partials/settings.vim
 
 " ====================================================
+"   Local
+" ====================================================
+
+if filereadable( expand('~/.dotfiles-local/vimrc.local') )
+  source ~/.dotfiles-local/vimrc.local
+endif
+
+" ====================================================
 "   Autosave
 " ====================================================
 

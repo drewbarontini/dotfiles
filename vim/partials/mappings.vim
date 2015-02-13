@@ -140,14 +140,7 @@ nnoremap <silent> <leader>l :nohlsearch<cr>
 
 " == N == "
 
-" Open up Dropbox notes.txt file
-nnoremap <leader>ns :vsp ~/Dropbox\ (Personal)/Notes/notes-scratch.txt<cr>
-
-" Open up Dropbox notes directory
-nnoremap <leader>no :e ~/Dropbox\ (Personal)/Notes/<cr>
-
-" Open or create Dropbox notes file
-nnoremap <leader>nc :vsp ~/Dropbox\ (Personal)/Notes/
+" ...
 
 " == O == "
 
