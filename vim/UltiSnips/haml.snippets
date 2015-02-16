@@ -61,6 +61,15 @@ snippet note "NOTE comment"
 -# NOTE${1:(${2})}: $0
 endsnippet
 
+snippet tb "Tag - Block"
+%${1:p}
+	$0
+endsnippet
+
+snippet ti "Tag - Inline"
+%${1:p}$0
+endsnippet
+
 snippet todo "TODO comment"
 -# TODO${1:(${2})}: $0
 endsnippet
