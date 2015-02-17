@@ -46,9 +46,9 @@ brew install hub
 # -> Create, edit, compose, or convert bitmap images
 brew install imagemagick
 
-# Node
-# -> Platform built on Chrome's JavaScript runtime
-brew install node
+# NVM
+# -> Node Version Manager
+brew install nvm
 
 # Redis
 # -> Advanced key-value store
