@@ -34,6 +34,22 @@ function copy_file_contents() {
 }
 
 # ----------------------------------------------------
+#   Curl To
+#   -> Curls a file to a specified location
+# ----------------------------------------------------
+#
+# $1 - The file to curl
+# $2 - The file location to save it to
+#
+# Usage: `curl_to http://example.com/file.js path/to/file.js`
+#
+
+function curl_to() {
+  curl -s "$1" >> "$2"
+  echo "--'$1' copied to '$2' --"
+}
+
+# ----------------------------------------------------
 #   Delete Files
 #   -> Deletes files with a pattern
 # ----------------------------------------------------
