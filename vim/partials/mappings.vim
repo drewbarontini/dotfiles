@@ -56,6 +56,9 @@ nnoremap Y y$
 " Switch between buffers
 nnoremap ,, <c-^>
 
+" Shell command
+nnoremap ! :!<space>
+
 " == A == "
 
 " Search with Ack
@@ -172,9 +175,6 @@ nnoremap <leader>rs :%s//
 nnoremap <leader>rm :e ~/.dotfiles/vim/partials/mappings.vim<cr>
 
 " == S == "
-
-" Shell command
-nnoremap <leader>S :!<space>
 
 " Trim trailing whitespace
 nnoremap <silent> <leader>s :%s/\s\+$//<cr>:let @/=''<cr>
