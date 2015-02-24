@@ -6,6 +6,7 @@
 
 " Better defaults
 nnoremap ; :
+nnoremap : ;
 inoremap jk <esc>
 
 " Arrow Keys for window sizing
