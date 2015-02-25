@@ -175,6 +175,10 @@ alias mlcco='mvcss-library copy components'
 #   NPM
 # ----------------------------------------------------
 
+alias ni='npm install'
+alias nin='npm init'
+alias nis='npm install --save'
+alias nisd='npm install --save-dev'
 alias npm_list='npm -g ls --depth=0'
 
 # ----------------------------------------------------
