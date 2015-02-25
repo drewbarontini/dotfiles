@@ -29,3 +29,31 @@ endsnippet
 snippet cos "Short Comment"
 // ----- ${2:Comment} ----- //$0
 endsnippet
+
+snippet gc "Gulp Source"
+gulp.src( $1 )$0
+endsnippet
+
+snippet gm "Gulp Method"
+gulp.${1:method}( $2 )$0
+endsnippet
+
+snippet gp "Gulp Pipe"
+gulp.pipe( $1 )$0
+endsnippet
+
+snippet gs "Gulp Start"
+gulp.start( '${1:task}' );$0
+endsnippet
+
+snippet gt "Gulp Task"
+gulp.task( '${1:task}', function() {
+
+	$2
+
+});$0
+endsnippet
+
+snippet req "Require"
+var ${1:variable} = require( '$2' );$0
+endsnippet
