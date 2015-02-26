@@ -65,7 +65,7 @@ function delete_files() {
 
 # ----------------------------------------------------
 #   Dispatch
-#   -> Check if project has setup function
+#   -> Check if project has setup function and run it
 # ----------------------------------------------------
 #
 # Usage: `dispatch`
