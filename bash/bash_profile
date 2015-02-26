@@ -44,3 +44,9 @@ source ~/.bash/overrides
 ## These are for files included in private, local dotfiles.
 
 [[ -f ~/.bash-local/init ]] && source ~/.bash-local/init
+
+# ----------------------------------------------------
+#   Prompt Command
+# ----------------------------------------------------
+
+PROMPT_COMMAND+='; dispatch'

@@ -64,6 +64,23 @@ function delete_files() {
 }
 
 # ----------------------------------------------------
+#   Dispatch
+#   -> Check if project has setup function
+# ----------------------------------------------------
+#
+# Usage: `dispatch`
+#
+
+function dispatch() {
+  local path=$(pwd)
+  local project=$(basename $path)
+
+  if type -t "$project"_setup | grep -i function > /dev/null; then
+    "$project"_setup
+  fi
+}
+
+# ----------------------------------------------------
 #   Get Process ID
 #   -> Returns a process id or set of ids for specified process
 # ----------------------------------------------------
