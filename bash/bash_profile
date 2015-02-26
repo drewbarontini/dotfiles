@@ -49,4 +49,5 @@ source ~/.bash/overrides
 #   Prompt Command
 # ----------------------------------------------------
 
+export DISPATCHED=0
 export PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND ;} history -a; dispatch"

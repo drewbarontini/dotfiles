@@ -75,8 +75,11 @@ function dispatch() {
   local path=$(pwd)
   local project=$(basename $path)
 
-  if type -t "$project"_setup | grep -i function > /dev/null; then
-    "$project"_setup
+  if [ "$DISPATCHED" == 0 ]; then
+    if type -t "$project"_setup | grep -i function > /dev/null; then
+      "$project"_setup
+      DISPATCHED=1
+    fi
   fi
 }
 
