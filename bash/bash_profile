@@ -43,7 +43,4 @@ source ~/.bash/overrides
 ## ----- Local ----- ##
 ## These are for files included in private, local dotfiles.
 
-[[ -f ~/.bash_vars.local ]] && source ~/.bash_vars.local
-[[ -f ~/.bash_aliases.local ]] && source ~/.bash_aliases.local
-[[ -f ~/.bash_aliases_temp.local ]] && source ~/.bash_aliases_temp.local
-[[ -f ~/.bash_functions.local ]] && source ~/.bash_functions.local
+[[ -f ~/.bash-local/init ]] && source ~/.bash-local/init

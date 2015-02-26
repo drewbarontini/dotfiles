@@ -157,8 +157,8 @@ source ~/.vim/partials/settings.vim
 "   Local
 " ====================================================
 
-if filereadable( expand('~/.dotfiles-local/vimrc.local') )
-  source ~/.dotfiles-local/vimrc.local
+if filereadable( expand('~/.vimrc.local') )
+  source ~/.vimrc.local
 endif
 
 " ====================================================
