@@ -5,7 +5,7 @@ snippet # "Interpolated Code" i
 endsnippet
 
 snippet bfun "Function (bound)" i
-`!p snip.rv = "(" if t[1] else ""`${1:args}`!p snip.rv = ") " if t[1] else ""`=>`!p snip.rv = " " if t[2] and not t[2].startswith("\n") else ""`${2:expr}
+`!p snip.rv = "( " if t[1] else ""`${1:args}`!p snip.rv = " ) " if t[1] else ""`=>`!p snip.rv = " " if t[2] and not t[2].startswith("\n") else ""`${2:expr}
 endsnippet
 
 snippet bug "Debugger" b
@@ -15,7 +15,7 @@ endsnippet
 snippet cla "Class" b
 class ${1:ClassName}`!p snip.rv = " extends " if t[2] else ""`${2:Ancestor}
 
-	${3:constructor:`!p snip.rv = " (" if t[4] else ""`${4:args}`!p snip.rv = ")" if t[4] else ""` ->
+	${3:constructor:`!p snip.rv = " ( " if t[4] else ""`${4:args}`!p snip.rv = " )" if t[4] else ""` ->
 		${5:# body...}}
 	$0
 endsnippet
@@ -36,12 +36,12 @@ for ${1:key}, ${2:value} of ${3:Object}
 endsnippet
 
 snippet forr "Range Comprehension (inclusive)" b
-for ${1:name} in [${2:start}..${3:finish}]`!p snip.rv = " by " if t[4] else ""`${4:step}
+for ${1:name} in [ ${2:start}..${3:finish} ]`!p snip.rv = " by " if t[4] else ""`${4:step}
 	${0:# body...}
 endsnippet
 
 snippet forrex "Range Comprehension (exclusive)" b
-for ${1:name} in [${2:start}...${3:finish}]`!p snip.rv = " by " if t[4] else ""`${4:step}
+for ${1:name} in [ ${2:start}...${3:finish} ]`!p snip.rv = " by " if t[4] else ""`${4:step}
 	${0:# body...}
 endsnippet
 
@@ -67,7 +67,7 @@ if ${1:condition} then ${2:value} else ${3:other}
 endsnippet
 
 snippet log "console.log" b
-console.log '${1}'
+console.log ${1'$2'}$0
 endsnippet
 
 snippet met "Method" b
@@ -76,7 +76,7 @@ ${1:name}: ${2:( $3 )} ->
 endsnippet
 
 snippet req "Require" b
-${1/^'?(\w+)'?$/\L$1\E/} = require(${1:'${2:sys}'})
+${1/^'?(\w+)'?$/\L$1\E/} = require( ${1:'${2:sys}'} )
 endsnippet
 
 snippet swi "Switch" b
