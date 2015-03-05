@@ -14,7 +14,7 @@ function! Browser()
     echo "No URI found in line."
   endif
 endfunction
-map <leader>R :call Browser()<cr>
+nnoremap <leader>R :call Browser()<cr>
 
 " ========== Multi-purpose Tab Key ========== "
 " Indent if we're at the beginning of a line. Else, do completion.
@@ -41,4 +41,4 @@ function! RenameFile()
     redraw!
   endif
 endfunction
-map <leader>rn :call RenameFile()<cr>
+nnoremap <leader>rn :call RenameFile()<cr>
