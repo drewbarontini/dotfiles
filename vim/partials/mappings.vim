@@ -63,9 +63,9 @@ nnoremap ! :!<space>
 
 " Search with Ack
 nnoremap <leader>aa :Ack! ''<left>
-nnoremap <leader>as :Ack! --sass ''<left>
-nnoremap <leader>ah :Ack! --html ''<left>
 nnoremap <leader>ac :Ack! --coffee ''<left>
+nnoremap <leader>ah :Ack! --html ''<left>
+nnoremap <leader>as :Ack! --sass ''<left>
 
 " Search for word under cursor with Ack
 nnoremap <leader>AA :Ack! <c-r><c-w><cr>
@@ -228,6 +228,7 @@ nnoremap <leader>y YP
 " Quicker action to suspend Vim ('fg' to return)
 nnoremap <leader>z <c-z>
 
-" Replace bottom and top
+" Replace bottom, middle, top
 nnoremap zh H
+nnoremap zm M
 nnoremap zl L
