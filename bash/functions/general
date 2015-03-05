@@ -34,6 +34,21 @@ function copy_file_contents() {
 }
 
 # ----------------------------------------------------
+#   Count Occurences Of
+#   -> Count the number of occurrences of string
+# ----------------------------------------------------
+#
+# $1 - the string
+#
+# Usage: `count_occurrences_of 'my string'`
+#
+
+function count_occurrences_of() {
+  local count=$(ack "$1" | wc -l | tr -d '[[:space:]]')
+  echo "There are $count occurences of '$1'."
+}
+
+# ----------------------------------------------------
 #   Curl To
 #   -> Curls a file to a specified location
 # ----------------------------------------------------
