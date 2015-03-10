@@ -55,6 +55,7 @@ bash-comment m 'Setting up Bower...'
 echo
 npm install -g bower
 bower install
+echo
 message green 'Bower is successfully set up!'
 
 echo
