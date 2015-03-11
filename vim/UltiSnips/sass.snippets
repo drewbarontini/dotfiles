@@ -59,12 +59,6 @@ snippet for "For Loop"
 	${0}
 endsnippet
 
-snippet hf "Hover, Focus"
-&:hover,
-&:focus
-	${0}
-endsnippet
-
 snippet if "If Conditional"
 @if ${1}
 	${0}
@@ -111,6 +105,13 @@ endsnippet
 
 snippet note "NOTE comment"
 // NOTE${1:(${2})}: $0
+endsnippet
+
+snippet state "Active, Focus, Hover"
+&:active,
+&:focus,
+&:hover
+	${0}
 endsnippet
 
 snippet todo "TODO comment"

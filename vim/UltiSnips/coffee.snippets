@@ -79,6 +79,16 @@ snippet req "Require" b
 ${1/^'?(\w+)'?$/\L$1\E/} = require( ${1:'${2:sys}'} )
 endsnippet
 
+snippet st "setTimeout"
+setTimeout ->
+	$1
+, $2
+endsnippet
+
+snippet sti "setTimeout Inline"
+setTimeout( -> $1, $2 )
+endsnippet
+
 snippet swi "Switch" b
 switch ${1:object}
 	when ${2:value}
