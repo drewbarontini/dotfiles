@@ -39,9 +39,12 @@
 
 # ----- Directories ----- #
 
+--ignore-dir=.sass-cache
+--ignore-dir=bower_components
 --ignore-dir=build
 --ignore-dir=bundle
 --ignore-dir=log
+--ignore-dir=node_modules
 --ignore-dir=tmp
 
 # ----------------------------------------------------
