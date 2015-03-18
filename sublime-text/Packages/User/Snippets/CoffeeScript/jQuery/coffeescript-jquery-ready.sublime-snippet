@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+jQuery ($) ->
+  ${0:# ...}
+]]></content>
+  <tabTrigger>cfjr</tabTrigger>
+  <description>Document Ready - CoffeeScript (jQuery)</description>
+  <scope>source.coffee</scope>
+</snippet>

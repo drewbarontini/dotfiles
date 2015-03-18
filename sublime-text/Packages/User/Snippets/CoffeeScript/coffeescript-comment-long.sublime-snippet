@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+# -------------------------------------
+#   ${2:Title}
+# -------------------------------------$0
+]]></content>
+  <tabTrigger>cfcol</tabTrigger>
+  <description>Comment Long - CoffeeScript</description>
+  <scope>source.coffee</scope>
+</snippet>

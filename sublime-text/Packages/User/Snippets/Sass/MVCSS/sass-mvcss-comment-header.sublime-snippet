@@ -1,0 +1,13 @@
+<snippet>
+  <content><![CDATA[
+// *************************************
+//
+//   ${1:Title}
+//   -> ${2:Description}
+//
+// *************************************$0
+]]></content>
+  <tabTrigger>sscoh</tabTrigger>
+  <description>Comment Header - Sass (MVCSS)</description>
+  <scope>source.sass, source.scss</scope>
+</snippet>

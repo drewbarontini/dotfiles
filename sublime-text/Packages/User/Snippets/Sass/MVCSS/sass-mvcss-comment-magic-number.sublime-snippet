@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[
+// FIXME: Magic number!
+]]></content>
+  <tabTrigger>ssmn</tabTrigger>
+  <description>Magic Number Comment - Sass (MVCSS)</description>
+  <scope>source.sass, source.scss</scope>
+</snippet>

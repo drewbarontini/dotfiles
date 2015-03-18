@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+$( '${1:}' ).on '${2:click}', ( event ) ->
+  ${0:# ...}
+]]></content>
+  <tabTrigger>cfjon</tabTrigger>
+  <description>On - CoffeeScript (jQuery)</description>
+  <scope>source.coffee</scope>
+</snippet>

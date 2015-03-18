@@ -1,0 +1,17 @@
+<snippet>
+  <content><![CDATA[
+# *************************************
+#
+#   ${1:Title}
+#   -> ${2:Description}
+#
+# *************************************
+#
+# @param ${3:param} { ${4:type} }
+#
+# *************************************$0
+]]></content>
+  <tabTrigger>cfcohd</tabTrigger>
+  <description>Comment Heading (Documentation) - CoffeeScript</description>
+  <scope>source.coffee</scope>
+</snippet>

@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[
+debugger
+]]></content>
+  <tabTrigger>cfbug</tabTrigger>
+  <description>debugger - CoffeeScript</description>
+  <scope>source.coffee</scope>
+</snippet>

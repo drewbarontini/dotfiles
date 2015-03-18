@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
++respond-to(${1})
+  $0
+]]></content>
+  <tabTrigger>sscoh</tabTrigger>
+  <description>+respond-to - Sass (MVCSS)</description>
+  <scope>source.sass, source.scss</scope>
+</snippet>

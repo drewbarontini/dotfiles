@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[
+darken(${1}, ${0}%)
+]]></content>
+  <tabTrigger>ssdkn</tabTrigger>
+  <description>darken() - Sass</description>
+  <scope>source.sass, source.scss</scope>
+</snippet>

@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[
+// TODO${1:(${2})}: $0
+]]></content>
+  <tabTrigger>sstodo</tabTrigger>
+  <description>TODO Comment - Sass</description>
+  <scope>source.sass, source.scss</scope>
+</snippet>

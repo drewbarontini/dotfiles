@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[
+$( '$1' )$0
+]]></content>
+  <tabTrigger>cfjo</tabTrigger>
+  <description>Object - CoffeeScript (jQuery)</description>
+  <scope>source.coffee</scope>
+</snippet>

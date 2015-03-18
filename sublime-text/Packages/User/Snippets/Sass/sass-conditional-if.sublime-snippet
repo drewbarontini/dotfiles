@@ -1,0 +1,11 @@
+<snippet>
+  <content><![CDATA[
+@if $1
+  ${2:// ...}
+@else
+  ${0:// ...}
+]]></content>
+  <tabTrigger>ssife</tabTrigger>
+  <description>If/Else Statement - Sass</description>
+  <scope>source.sass, source.scss</scope>
+</snippet>

@@ -1,9 +1,11 @@
 .DS_Store
 
-sublime-text/Packages
-!sublime-text/Packages/Color Scheme - User
-!sublime-text/Packages/Theme - Spacegray
-!sublime-text/Packages/User
+sublime-text/Packages/bz2
+sublime-text/Packages/User/Package Control.cache
+sublime-text/Packages/User/Package Control.last-run
+sublime-text/Packages/User/Package Control.merged-ca-bundle
+sublime-text/Packages/User/Package Control.system-ca-bundle
+sublime-text/Packages/User/Package Control.user-ca-bundle
 
 doc/tags
 
