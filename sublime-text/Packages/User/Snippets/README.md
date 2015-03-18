@@ -21,3 +21,8 @@ All snippets are prefixed to prevent clashing with Sublime Text's autocomplete.
 - **Sass**: `ss`
 
 Once you type the prefix, you'll see the autocomplete list of snippets.
+
+Updating
+--------
+
+Simple `cd` into the directory for your snippets and run `git pull`.
