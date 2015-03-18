@@ -7,7 +7,7 @@ Installation
 ------------
 
 ```bash
-cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/Users # Change path if you're using Sublime Text 2
+cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User # Change path if you're using Sublime Text 2
 git clone git@github.com:drewbarontini/sublime-text-snippets.git Snippets
 ```
 
