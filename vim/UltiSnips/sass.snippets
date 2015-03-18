@@ -1,3 +1,7 @@
+snippet # "String Interpolation" i
+#{$0}
+endsnippet
+
 snippet .. "Placeholder Comment"
 // ...$0
 endsnippet
@@ -35,9 +39,9 @@ darken(${1}, ${0}%)
 endsnippet
 
 snippet each "Each Loop"
-@each ${1} in ${2}
+@each ${1:$key} in ${2:$collection}
 
-	${0}
+	${0:// ...}
 endsnippet
 
 snippet ex "Extend"
@@ -60,38 +64,24 @@ endsnippet
 
 snippet for "For Loop"
 @for $i from 1 through ${1}
-	${0}
+
+	${0:// ...}
 endsnippet
 
 snippet if "If Conditional"
 @if ${1}
-	${0}
+	${0:// ...}
 endsnippet
 
 snippet ife "If/Else Conditional"
 @if ${1}
-	${2}
+	${2:// ...}
 @else
-	${0}
+	${0:// ...}
 endsnippet
 
 snippet imp "Import"
-@import '${0}'
-endsnippet
-
-snippet it "String Interpolation" i
-#{$0}
-endsnippet
-
-snippet key "Keyframe Animation"
-@-webkit-keyframes ${1:animationName}
-	${2://...}
-
-@-moz-keyframes $1
-	$2
-
-@keyframes $1
-	$2
+@import '${1}'$0
 endsnippet
 
 snippet lc "Last Child"
