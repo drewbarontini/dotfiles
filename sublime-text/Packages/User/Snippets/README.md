@@ -1,19 +1,23 @@
 Sublime Text Snippets
 =====================
 
-CoffeeScript
+> I'm a Vim user, but these are for teammembers and my occasional use of Sublime Text :)
+
+Installation
 ------------
 
-### jQuery
+```bash
+cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/Users # Change path if you're using Sublime Text 2
+git clone git@github.com:drewbarontini/sublime-text-snippets.git Snippets
+```
 
-Haml
-----
+Usage
+-----
 
-### MVCSS
+All snippets are prefixed to prevent clashing with Sublime Text's autocomplete.
 
-### Rails
+- **CoffeeScript**: `cf`
+- **Haml**: `hm`
+- **Sass**: `ss`
 
-Sass
-----
-
-### MVCSS
+Once you type the prefix, you'll see the autocomplete list of snippets.
