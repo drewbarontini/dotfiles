@@ -1,0 +1,15 @@
+<snippet>
+  <content><![CDATA[
+.bucket${1:${2:.bucket--flag}}
+  .bucket-media
+
+    $3
+
+  .bucket-content
+
+    $0
+]]></content>
+  <tabTrigger>hmbk</tabTrigger>
+  <description>Bucket - Haml (MVCSS)</description>
+  <scope>source.haml</scope>
+</snippet>

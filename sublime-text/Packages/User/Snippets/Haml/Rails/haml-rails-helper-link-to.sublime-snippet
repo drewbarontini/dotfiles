@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[
+= link_to '${1:text}', ${2:'${3:#}'}${4:, class: '${5}'}$0
+]]></content>
+  <tabTrigger>hmlt</tabTrigger>
+  <description>Link To - Haml (Rails)</description>
+  <scope>source.haml</scope>
+</snippet>

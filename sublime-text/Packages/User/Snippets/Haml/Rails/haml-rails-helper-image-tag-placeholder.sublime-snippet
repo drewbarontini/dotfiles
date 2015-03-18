@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[
+= image_tag 'http://placehold.it/${1:800x400}/000/000', alt: 'Placeholder'${2:, class: '${3}'}$0
+]]></content>
+  <tabTrigger>hmitp</tabTrigger>
+  <description>Image Tag (Placeholder) - Haml (Rails)</description>
+  <scope>source.haml</scope>
+</snippet>

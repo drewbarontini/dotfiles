@@ -1,0 +1,15 @@
+<snippet>
+  <content><![CDATA[
+.g
+  .g-b.g-b--${1:1of2}
+
+    $3
+
+  .g-b.g-b--${2:$1}
+
+    $0
+]]></content>
+  <tabTrigger>hmgr</tabTrigger>
+  <description>Grid - Haml (MVCSS)</description>
+  <scope>source.haml</scope>
+</snippet>

@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[
+= image_tag '${1:image.jpg}', alt: '${2:Alt Text}'${3:, class: '${4}'}$0
+]]></content>
+  <tabTrigger>hmit</tabTrigger>
+  <description>Image Tag - Haml (Rails)</description>
+  <scope>source.haml</scope>
+</snippet>

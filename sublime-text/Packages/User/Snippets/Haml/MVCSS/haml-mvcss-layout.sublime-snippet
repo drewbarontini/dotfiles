@@ -1,0 +1,11 @@
+<snippet>
+  <content><![CDATA[
+.row
+  .cell${1:.cell--s}.well${2:.well--l}
+
+    $0
+]]></content>
+  <tabTrigger>hmlay</tabTrigger>
+  <description>Layout - Haml (MVCSS)</description>
+  <scope>source.haml</scope>
+</snippet>

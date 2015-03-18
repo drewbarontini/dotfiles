@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[
+= render '${0:partial}'
+]]></content>
+  <tabTrigger>hmrp</tabTrigger>
+  <description>Partial - Haml (Rails)</description>
+  <scope>source.haml</scope>
+</snippet>
