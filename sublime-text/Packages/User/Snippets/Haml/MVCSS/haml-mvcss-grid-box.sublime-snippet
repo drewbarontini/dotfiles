@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+.g-b.g-b--${1:1of2}
+
+  $0
+]]></content>
+  <tabTrigger>hmgrb</tabTrigger>
+  <description>Grid Box - Haml (MVCSS)</description>
+  <scope>source.haml</scope>
+</snippet>
