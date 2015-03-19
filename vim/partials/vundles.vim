@@ -3,119 +3,124 @@
 " ====================================================
 
 " Required by Vundle
+set nocompatible
 filetype off
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
 " Vundle manages Vundle (required)
-Bundle 'gmarik/vundle'
+Plugin 'gmarik/Vundle.vim'
 
-" ========== Bundles ========== "
+" ========== Plugins ========== "
 
 " Close matching parenthesis, quote, etc.
-Bundle 'AutoClose'
+Plugin 'AutoClose'
 
 " Better, visual navigation
-Bundle 'Lokaltog/vim-easymotion'
+Plugin 'Lokaltog/vim-easymotion'
 
 " Solarized
-Bundle 'altercation/vim-colors-solarized'
+Plugin 'altercation/vim-colors-solarized'
 
 " Status bar
-Bundle 'bling/vim-airline'
+Plugin 'bling/vim-airline'
 
 " Search word under cursor
-Bundle 'bronson/vim-visual-star-search'
+Plugin 'bronson/vim-visual-star-search'
+
+" EnhancedDiff for better diffs
+Plugin 'chrisbra/vim-diff-enhanced'
 
 " Perform all your vim insert mode completions with Tab
-Bundle 'ervandew/supertab'
+Plugin 'ervandew/supertab'
 
 " Text filtering and alignment
-Bundle 'godlygeek/tabular'
+Plugin 'godlygeek/tabular'
 
 " Just like 'f', but for two characters
-Bundle 'goldfeld/vim-seek'
+Plugin 'goldfeld/vim-seek'
 
 " Nice inteface for dealing with Git branches
-Bundle 'idanarye/vim-merginal'
+Plugin 'idanarye/vim-merginal'
 
 " Break down your code into partials
-Bundle 'jbgutierrez/vim-partial'
+Plugin 'jbgutierrez/vim-partial'
 
 " Distraction-free writing
-Bundle 'junegunn/goyo.vim'
+Plugin 'junegunn/goyo.vim'
 
 " CoffeeScript language support
-Bundle 'kchmck/vim-coffee-script'
+Plugin 'kchmck/vim-coffee-script'
 
 " Fuzzy file finder
-Bundle 'kien/ctrlp.vim'
+Plugin 'kien/ctrlp.vim'
 
 " Expanding abbreviations
-Bundle 'mattn/emmet-vim'
+Plugin 'mattn/emmet-vim'
 
 " GitHub Gist (and dependencies)
-Bundle 'mattn/gist-vim'
-Bundle 'mattn/webapi-vim'
+Plugin 'mattn/gist-vim'
+Plugin 'mattn/webapi-vim'
 
 " Better than Grep
-Bundle 'mileszs/ack.vim'
+Plugin 'mileszs/ack.vim'
 
 " Indentation guides
-Bundle 'nathanaelkane/vim-indent-guides'
+Plugin 'nathanaelkane/vim-indent-guides'
 
 " Populate the argument list from the files in the quickfix list
-Bundle 'nelstrom/vim-qargs'
+Plugin 'nelstrom/vim-qargs'
 
 " Easier commenting
-Bundle 'scrooloose/nerdcommenter'
+Plugin 'scrooloose/nerdcommenter'
 
 " Syntax checker
-Bundle 'scrooloose/syntastic'
+Plugin 'scrooloose/syntastic'
 
 " Select, and act on, multiple words at once
-Bundle 'terryma/vim-multiple-cursors'
+Plugin 'terryma/vim-multiple-cursors'
 
 " Tim Pope Plugins (he deserves his own section)
 " Easily search for, substitute, and abbreviate multiple variants of a word
-Bundle 'tpope/vim-abolish'
+Plugin 'tpope/vim-abolish'
 
 " Asynchronous build and test dispatcher
-Bundle 'tpope/vim-dispatch'
+Plugin 'tpope/vim-dispatch'
 
 " Git wrapper
-Bundle 'tpope/vim-fugitive'
+Plugin 'tpope/vim-fugitive'
 
 " Vim Git runtime files
-Bundle 'tpope/vim-git'
+Plugin 'tpope/vim-git'
 
 " Vim runtime files for Haml, Sass, and SCSS
-Bundle 'tpope/vim-haml'
+Plugin 'tpope/vim-haml'
 
 " Vim Markdown runtime files
-Bundle 'tpope/vim-markdown'
+Plugin 'tpope/vim-markdown'
 
 " Ruby on Rails power tools
-Bundle 'tpope/vim-rails'
+Plugin 'tpope/vim-rails'
 
 " Enable repeating supported plugin maps with '.'
-Bundle 'tpope/vim-repeat'
+Plugin 'tpope/vim-repeat'
 
 " Quoting/parenthesizing made simple
-Bundle 'tpope/vim-surround'
+Plugin 'tpope/vim-surround'
 
 " Enhance netrw, the built-in directory browser
-Bundle 'tpope/vim-vinegar'
+Plugin 'tpope/vim-vinegar'
 
 " Requires Python (ships with Homebrew Vim)
-Bundle 'SirVer/ultisnips'
+Plugin 'SirVer/ultisnips'
 
 " Simple TODO lists
-Bundle 'vitalk/vim-simple-todo'
+Plugin 'vitalk/vim-simple-todo'
 
 " Adds a 'gs' sort
-Bundle 'christoomey/vim-sort-motion'
+Plugin 'christoomey/vim-sort-motion'
 
 " Required by vundle
+call vundle#end()
 filetype indent plugin on
