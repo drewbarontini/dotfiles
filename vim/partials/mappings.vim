@@ -61,11 +61,11 @@ nnoremap ! :!<space>
 
 " == A == "
 
-" Search with Ack
-nnoremap <leader>aa :Ack! ''<left>
-nnoremap <leader>ac :Ack! --coffee ''<left>
-nnoremap <leader>ah :Ack! --haml ''<left>
-nnoremap <leader>as :Ack! --sass ''<left>
+" Search with ag
+nnoremap <leader>aa :Ag! ''<left>
+nnoremap <leader>ac :Ag! --coffee ''<left>
+nnoremap <leader>ah :Ag! --haml ''<left>
+nnoremap <leader>as :Ag! --sass ''<left>
 
 " Search for word under cursor with Ack
 nnoremap <leader>AA :Ack! <c-r><c-w><cr>

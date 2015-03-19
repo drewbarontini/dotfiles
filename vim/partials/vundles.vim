@@ -61,13 +61,16 @@ Plugin 'mattn/gist-vim'
 Plugin 'mattn/webapi-vim'
 
 " Better than Grep
-Plugin 'mileszs/ack.vim'
+" Plugin 'mileszs/ack.vim'
 
 " Indentation guides
 Plugin 'nathanaelkane/vim-indent-guides'
 
 " Populate the argument list from the files in the quickfix list
 Plugin 'nelstrom/vim-qargs'
+
+" Front for ag, A.K.A. the_silver_searcher
+Plugin 'rking/ag.vim'
 
 " Easier commenting
 Plugin 'scrooloose/nerdcommenter'

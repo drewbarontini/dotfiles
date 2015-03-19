@@ -2,12 +2,6 @@
 "   Settings
 " ====================================================
 
-" ========== Ack ========== "
-
-if executable('ag')
-  let g:ackprg = 'ag --vimgrep'
-endif
-
 " ========== Airline ========== "
 
 let g:airline_left_sep=''
@@ -54,4 +48,3 @@ let g:gist_post_private = 1
 let g:syntastic_mode_map = { 'mode': 'active',
                            \ 'active_filetypes': ['ruby', 'php'],
                            \ 'passive_filetypes': ['html'] }
-
