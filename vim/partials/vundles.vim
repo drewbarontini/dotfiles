@@ -44,9 +44,6 @@ Plugin 'goldfeld/vim-seek'
 " Nice inteface for dealing with Git branches
 Plugin 'idanarye/vim-merginal'
 
-" Break down your code into partials
-Plugin 'jbgutierrez/vim-partial'
-
 " Distraction-free writing
 Plugin 'junegunn/goyo.vim'
 
