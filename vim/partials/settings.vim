@@ -2,6 +2,10 @@
 "   Settings
 " ====================================================
 
+" ========== Ack ========== "
+
+let g:ackprg = 'ag --nogroup --nocolor --column'
+
 " ========== Airline ========== "
 
 let g:airline_left_sep=''
