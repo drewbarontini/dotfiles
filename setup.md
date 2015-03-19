@@ -22,7 +22,7 @@ If you want to, you can run the individual sections of `rake install` to update 
 
 ### Aliases
 
-If you need to symlink a new alias, add an `original_location` (in your dotfiles) and a `new_location` in the `Rakefile`. After that, you can simply run `rake install_symlinks[single]` to set up your newly added file. For example:
+If you need to symlink a new file, add an `original_location` (in your dotfiles) and a `new_location` in the `Rakefile`. After that, you can simply run `rake install_symlinks[single]` to set up your newly added file. For example:
 
 ```ruby
 # ----- Original Locations ----- #
