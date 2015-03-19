@@ -13,7 +13,7 @@ brew upgrade
 
 # Ack
 # -> A tool like grep, optimized for programmers
-brew install ack
+# brew install ack
 
 # Autojump
 # -> A cd command that learns
