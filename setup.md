@@ -22,7 +22,17 @@ If you want to, you can run the individual sections of `rake install` to update 
 
 ### Aliases
 
-If you need to symlink a new alias, add an `original_location` (in your dotfiles) and a `new_location` in the `Rakefile`. After that, you can simple run `rake install_symlinks` to set up your newly added file.
+If you need to symlink a new alias, add an `original_location` (in your dotfiles) and a `new_location` in the `Rakefile`. After that, you can simply run `rake install_symlinks[single]` to set up your newly added file. For example:
+
+```ruby
+# ----- Original Locations ----- #
+
+original_locations[:new_file] = "#{ ENV['HOME'] }/.dotfiles/new_file"
+
+# ----- New Locations ----- #
+
+new_locations[:new_file] = "#{ ENV['HOME'] }/.new_file"
+```
 
 ### [rbenv](https://github.com/drewbarontini/dotfiles/blob/master/setup/rbenv)
 
