@@ -8,7 +8,7 @@ What's Included
 
 - Git
 - Bash
-- Ack
+- Ag (Ack interchangeable)
 - Homebrew
 - iTerm2 (colors)
 - OS X Apps, Settings
