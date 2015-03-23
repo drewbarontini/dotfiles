@@ -44,7 +44,7 @@ function copy_file_contents() {
 #
 
 function count_occurrences_of() {
-  local count=$(ack "$1" | wc -l | tr -d '[[:space:]]')
+  local count=$(ag "$1" | wc -l | tr -d '[[:space:]]')
   echo "There are $count occurences of '$1'."
 }
 
