@@ -50,7 +50,7 @@ General
 Leader Keys
 -----------
 
-All of these, with the exception of the "Non-Alphanumeric", beging with the `<leader>` key, which is the spacebar.
+All of these, with the exception of the "Non-Alphanumeric", beging with the `<leader>` key, which is the `spacebar`.
 
 ### Non-Alphanumeric
 
