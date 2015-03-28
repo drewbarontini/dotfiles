@@ -233,4 +233,3 @@ function server() {
 function symlinks() {
   ls -al "$1" | grep .-\>
 }
-
