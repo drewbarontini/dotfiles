@@ -1,6 +1,8 @@
 Vim Shortcuts
 =============
 
+You can see the implementation in [vim/partials/mappings.vim](https://github.com/drewbarontini/dotfiles/blob/master/vim/partials/mappings.vim) and [vim/partials/functions.vim](https://github.com/drewbarontini/dotfiles/blob/master/vim/partials/functions.vim).
+
 General
 -------
 
