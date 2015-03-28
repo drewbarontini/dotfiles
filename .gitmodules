@@ -1,0 +1,3 @@
+[submodule "vim/UltiSnips"]
+	path = vim/UltiSnips
+	url = git@github.com:drewbarontini/vim-snippets.git
