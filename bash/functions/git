@@ -170,4 +170,5 @@ function git_update_submodule() {
   git checkout master
   git pull
   cd -
+  echo "If there were updates, run git commit -a -m 'Update $1'"
 }
