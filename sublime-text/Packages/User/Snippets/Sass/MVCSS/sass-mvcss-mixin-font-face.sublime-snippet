@@ -1,8 +1,0 @@
-<snippet>
-  <content><![CDATA[
-+font-face(${1:font-family}, ${2:path}${3:, ${4:weight}, ${5:style}, ${6:asset-pipeline}})$0
-]]></content>
-  <tabTrigger>ssff</tabTrigger>
-  <description>+font-face - Sass (MVCSS)</description>
-  <scope>source.sass, source.scss</scope>
-</snippet>

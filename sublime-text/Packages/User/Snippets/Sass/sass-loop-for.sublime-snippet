@@ -1,9 +1,0 @@
-<snippet>
-  <content><![CDATA[
-@for $i from 1 through ${1}
-  ${0:// ...}
-]]></content>
-  <tabTrigger>ssfor</tabTrigger>
-  <description>For Loop - Sass</description>
-  <scope>source.sass, source.scss</scope>
-</snippet>

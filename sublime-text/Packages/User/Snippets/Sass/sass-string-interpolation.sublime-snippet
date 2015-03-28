@@ -1,8 +1,0 @@
-<snippet>
-  <content><![CDATA[
-#{$1}$0
-]]></content>
-  <tabTrigger>ss#</tabTrigger>
-  <description>String Interpolation - Sass</description>
-  <scope>source.sass, source.scss</scope>
-</snippet>

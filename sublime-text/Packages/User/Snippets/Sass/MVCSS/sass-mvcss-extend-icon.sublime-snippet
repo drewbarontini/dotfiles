@@ -1,9 +1,0 @@
-<snippet>
-  <content><![CDATA[
-@extend %icn
-@extend %icn--${0}
-]]></content>
-  <tabTrigger>ssicn</tabTrigger>
-  <description>Icon Extend - Sass (MVCSS)</description>
-  <scope>source.sass, source.scss</scope>
-</snippet>

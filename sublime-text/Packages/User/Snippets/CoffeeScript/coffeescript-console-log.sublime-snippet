@@ -1,8 +1,0 @@
-<snippet>
-  <content><![CDATA[
-console.log ${1:'$2'}$0
-]]></content>
-  <tabTrigger>cflog</tabTrigger>
-  <description>console.log - CoffeeScript</description>
-  <scope>source.coffee</scope>
-</snippet>
