@@ -1,6 +1,6 @@
 # Vim Snippets
 
-These are all Vim snippets through [UltiSnips](https://github.com/SirVer/ultisnips).
+These are all Vim snippets through [UltiSnips](https://github.com/SirVer/ultisnips) that are used in [drewbarontini/dotfiles](https://github.com/drewbarontini/dotfiles).
 
 - All filetypes
 - Bash
