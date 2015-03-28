@@ -1,3 +1,6 @@
 [submodule "vim/UltiSnips"]
 	path = vim/UltiSnips
 	url = git@github.com:drewbarontini/vim-snippets.git
+[submodule "sublime-text/Packages/User/Snippets"]
+	path = sublime-text/Packages/User/Snippets
+	url = git@github.com:drewbarontini/sublime-text-snippets.git
