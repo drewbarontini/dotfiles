@@ -5,4 +5,3 @@ set guioptions-=l
 set guioptions-=r
 set go-=L
 set guioptions+=e
-
