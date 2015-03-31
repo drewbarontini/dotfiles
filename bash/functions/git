@@ -153,22 +153,3 @@ function git_tag() {
 
   fi
 }
-
-# ----------------------------------------------------
-#   Update submodule
-#   -> Updates a repository's submodule
-# ----------------------------------------------------
-#
-# $1 - the directory location of the submodule
-#
-# Usage: `git_update_submodule path/to/submodule`
-#
-
-function git_update_submodule() {
-  git submodule update
-  cd $1
-  git checkout master
-  git pull
-  cd -
-  echo "If there were updates, run git commit -a -m 'Update $1'"
-}
