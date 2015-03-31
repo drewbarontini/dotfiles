@@ -10,6 +10,7 @@
 
 PATH_DIRECTORIES=(
   "$HOME/.dotfiles/bin"
+  "$HOME/.dotfiles-local/bin" # IF you have local dotfile scripts.
   '/Applications/Postgres.app/Contents/Versions/9.3/bin'
   '/usr/local/heroku/bin'
   '/usr/local/bin'
