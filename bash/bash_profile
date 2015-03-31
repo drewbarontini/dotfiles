@@ -9,8 +9,6 @@
 # ----------------------------------------------------
 
 PATH_DIRECTORIES=(
-  "$HOME/.dotfiles/bin"
-  "$HOME/.dotfiles-local/bin" # IF you have local dotfile scripts.
   '/Applications/Postgres.app/Contents/Versions/9.3/bin'
   '/usr/local/heroku/bin'
   '/usr/local/bin'
@@ -20,7 +18,10 @@ PATH_DIRECTORIES=(
   '/usr/sbin'
   '/sbin'
   '/opt/X11/bin'
+  "$HOME/.dotfiles/bin"
 )
+
+[[ -d ~/.dotfiles-local/bin ]] && PATH_DIRECTORIES+=("$HOME/.dotfiles-local/bin")
 
 export PATH=$( IFS=:; echo "${PATH_DIRECTORIES[*]}" )
 
