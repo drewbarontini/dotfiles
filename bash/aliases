@@ -17,7 +17,7 @@ alias as='ag --sass'
 #   Brew
 # ----------------------------------------------------
 
-## ----- Drew's Brew ----- ##
+# ----- Drew's Brew ----- #
 
 alias drew='brew'
 
@@ -44,7 +44,7 @@ alias vfiles="vim $VIM_FILES_PATH"
 #   Git
 # ----------------------------------------------------
 
-## ----- Git ----- ##
+# ----- Git ----- #
 
 alias g='git'
 alias ga='git add'
@@ -112,7 +112,7 @@ alias git_standup="git log --since yesterday --author='$USERNAME' --pretty=oneli
 alias git_today="git log --since=midnight --author='$NAME' --oneline"
 alias git_update_submodules='git submodule foreach git pull'
 
-## ----- GHI ----- ##
+# ----- GHI ----- #
 
 alias i='ghi'
 alias il='ghi list'
@@ -125,7 +125,7 @@ alias ila='ghi label'
 alias ia='ghi assign'
 alias im='ghi milestone'
 
-## ----- Heroku ----- ##
+# ----- Heroku ----- #
 
 alias hd='git push heroku master'
 alias hap='heroku accounts:set personal'
@@ -133,7 +133,7 @@ alias haw='heroku accounts:set work'
 alias hrc='heroku run rails console'
 alias hrk='heroku run rake'
 
-## ----- Hub ----- ##
+# ----- Hub ----- #
 
 alias h='hub'
 alias hb='hub browse'
@@ -192,27 +192,27 @@ alias ls_cleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/L
 #   Rails Environment
 # ----------------------------------------------------
 
-## ----- Bundle ----- ##
+# ----- Bundle ----- #
 
 alias be='bundle exec'
 alias bi='bundle install'
 alias bib='bundle install --binstubs'
 
-## ----- Pow ----- ##
+# ----- Pow ----- #
 
 alias pd='powder'
 alias pdl='powder link'
 alias pdo='powder open'
 alias pdr='powder restart'
 
-## ----- Rails ----- ##
+# ----- Rails ----- #
 
 alias ra='./bin/rails'
 alias rac='./bin/rails c'
 alias rag='./bin/rails g'
 alias ras='./bin/rails s'
 
-## ----- Rake ----- ##
+# ----- Rake ----- #
 
 alias rk='./bin/rake'
 alias rkap='RAILS_ENV=development ./bin/rake assets:precompile'
@@ -241,14 +241,14 @@ alias update_ruby_build='cd $HOME/.rbenv/plugins/ruby-build && git pull && cd -'
 #   Unix
 # ----------------------------------------------------
 
-## ----- Listing ----- ##
+# ----- Listing ----- #
 
 alias l='ls -1F'
 alias la='ls -A1F'
 alias ld='ls -lF'
 alias path="echo $PATH | tr ':' '\n'"
 
-## ----- Miscellaneous ----- ##
+# ----- Miscellaneous ----- #
 
 alias ..='cd ..'
 alias ...='cd ../..'
@@ -260,12 +260,12 @@ alias p='less'
 alias sbp='source ~/.bash_profile'
 alias sym='ln -s'
 
-## ----- Removal ----- ##
+# ----- Removal ----- #
 
 alias rmd='rm -rf'
 alias rmorig='find . -name *.orig -delete'
 
-## ----- Searching ----- ##
+# ----- Searching ----- #
 
 alias fa='alias | grep'
 alias grep='grep --color=auto'
