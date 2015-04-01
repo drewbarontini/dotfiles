@@ -101,6 +101,20 @@ function git_remote_tracking_branch() {
 }
 
 # ----------------------------------------------------
+#   Search Commits
+#   -> Runs a search on all commit messages
+# ----------------------------------------------------
+#
+# $1 - the search string
+#
+# Usage: `git_search_commits 'my search string'`
+#
+
+function git_search_commits() {
+  git log --all --oneline --grep="$1"
+}
+
+# ----------------------------------------------------
 #   Tag
 #   -> Automatically set a git tag based on Semantic Versioning keyword
 # ----------------------------------------------------
