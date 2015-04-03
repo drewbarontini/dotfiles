@@ -99,6 +99,20 @@ function dispatch() {
 }
 
 # ----------------------------------------------------
+#   Find Alias
+#   -> Greps for an alias
+# ----------------------------------------------------
+#
+# $1 - the alias name
+#
+# Usage: `find_alias 'gba'`
+#
+
+function find_alias() {
+  alias | grep "alias\s$1"
+}
+
+# ----------------------------------------------------
 #   Get Process ID
 #   -> Returns a process id or set of ids for specified process
 # ----------------------------------------------------
