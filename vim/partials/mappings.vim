@@ -177,7 +177,7 @@ nnoremap <leader>rm :e ~/.dotfiles/vim/partials/mappings.vim<cr>
 " == S == "
 
 " Trim trailing whitespace
-nnoremap <silent> <leader>S :%s/\s\+$//<cr>:let @/=''<cr>
+nnoremap <silent> <leader>st :%s/\s\+$//<cr>:let @/=''<cr>
 
 " Open current file in Sublime Text
 nnoremap <leader>sb :! subl %:p<cr>
