@@ -144,7 +144,8 @@ _Search with ag_
 
 ### S
 
-- `s` Trim trailing whitespace
+- `S` Trim trailing whitespace
+- `sb` Open current file in Sublime Text
 - `sd` Open snippets
 - `se` Edit currently scoped snippets
 
