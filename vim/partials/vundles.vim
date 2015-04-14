@@ -32,6 +32,9 @@ Plugin 'bronson/vim-visual-star-search'
 " EnhancedDiff for better diffs
 Plugin 'chrisbra/vim-diff-enhanced'
 
+" Jade syntax highlighting
+Plugin 'digitaltoad/vim-jade'
+
 " Perform all your vim insert mode completions with Tab
 Plugin 'ervandew/supertab'
 
