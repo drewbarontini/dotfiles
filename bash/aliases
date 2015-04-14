@@ -144,8 +144,8 @@ alias hpr='hub pull-request'
 #   Middleman
 # ----------------------------------------------------
 
-alias mib='./bin/middleman build'
-alias mis='./bin/middleman s'
+alias mmb='./bin/middleman build'
+alias mms='./bin/middleman s'
 
 # ----------------------------------------------------
 #   Miscellaneous
@@ -185,7 +185,7 @@ alias npm_list='npm -g ls --depth=0'
 #   OS X
 # ----------------------------------------------------
 
-# Clean up LaunchServices to remove duplicates in the "Open With" menu
+# Clean up LaunchServices to remove duplicates in the 'Open With' menu
 alias ls_cleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder"
 
 # ----------------------------------------------------
