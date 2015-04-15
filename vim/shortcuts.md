@@ -123,7 +123,7 @@ _Search with ag_
 
 ### O
 
-- ...
+- `os` Open current file in Sublime Text
 
 ### P
 
@@ -145,7 +145,6 @@ _Search with ag_
 ### S
 
 - `S` Trim trailing whitespace
-- `sb` Open current file in Sublime Text
 - `sd` Open snippets
 - `se` Edit currently scoped snippets
 

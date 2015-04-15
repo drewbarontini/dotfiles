@@ -148,7 +148,8 @@ nnoremap <silent> <leader>l :nohlsearch<cr>
 
 " == O == "
 
-" ...
+" Open current file in Sublime Text
+nnoremap <leader>os :! subl '%:p'<cr>
 
 " == P == "
 
@@ -178,9 +179,6 @@ nnoremap <leader>rm :e ~/.dotfiles/vim/partials/mappings.vim<cr>
 
 " Trim trailing whitespace
 nnoremap <silent> <leader>st :%s/\s\+$//<cr>:let @/=''<cr>
-
-" Open current file in Sublime Text
-nnoremap <leader>sb :! subl %:p<cr>
 
 " Open snippets
 nnoremap <leader>sd :e ~/.dotfiles/vim/UltiSnips<cr>
