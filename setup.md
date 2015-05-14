@@ -88,7 +88,7 @@ rake install_cask[single]
 
 Applications not in cask:
 
-- [Miro](http://www.getmiro.com/)
+- [MacID](http://macid.co/)
 - [Remote Buddy](http://www.iospirit.com/products/remotebuddy/)
 - [svgo-gui](https://github.com/svg/svgo-gui)
 - [Typed](http://realmacsoftware.com/typed)
