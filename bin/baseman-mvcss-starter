@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # ****************************************************
 #
-#   MVCSS Starter
+#   Baseman MVCSS Starter
 #   -> Creates an MVCSS starter application using drewbarontini/baseman
 #
 # ----------------------------------------------------
@@ -16,7 +16,7 @@
 #   Usage
 # ----------------------------------------------------
 #
-#  `mvcss-starter scratch` - creates a new project called 'scratch'
+#  `baseman-mvcss-starter scratch` - creates a new project called 'scratch'
 #
 # ****************************************************
 
