@@ -86,15 +86,6 @@ rake install_cask[single]
 
 **Note**: Modify or cherry-pick from `setup/cask`, as these are personal applications I use.
 
-Applications not in cask:
-
-- [MacID](http://macid.co/)
-- [Remote Buddy](http://www.iospirit.com/products/remotebuddy/)
-- [svgo-gui](https://github.com/svg/svgo-gui)
-- [Typed](http://realmacsoftware.com/typed)
-
-And the rest are in the Mac App Store.
-
 ### [Sublime Text](https://github.com/drewbarontini/dotfiles/blob/master/setup/sublime)
 
 ```shell
