@@ -14,4 +14,5 @@ What's included?
 - OS X Apps, Settings
 - rbenv
 - Sublime Text
+- tmux
 - Vim
