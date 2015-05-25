@@ -66,6 +66,10 @@ brew install sitespeed.io
 # -> A code-searching tool similar to ack, but faster
 brew install the_silver_searcher
 
+# tmux
+# -> Terminal multiplexer
+brew install tmux
+
 # Tree
 # -> Recursive directory listing command
 brew install tree
