@@ -49,6 +49,20 @@ let g:syntastic_mode_map = { 'mode': 'active',
                            \ 'active_filetypes': ['ruby', 'php'],
                            \ 'passive_filetypes': ['html'] }
 
-" ========== tmux Powerline ========== "
+" ========== tmuxline ========== "
 
 let g:tmuxline_powerline_separators = 0
+let g:tmuxline_separators = {
+  \ 'left'      : '',
+  \ 'left_alt'  : '',
+  \ 'right'     : '',
+  \ 'right_alt' : '',
+  \ 'space'     : ' ' }
+let g:tmuxline_preset = {
+  \'a'    : '#S',
+  \'win'  : '#I:#W',
+  \'cwin' : '#I:#W',
+  \'x'    : '#(rdio-status)',
+  \'y'    : ['#(date +"%m-%d-%y")', '#(date +"%I:%M")'],
+  \ 'options': {
+    \'status-justify': 'left' } }
