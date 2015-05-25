@@ -5,36 +5,12 @@
 #
 # ****************************************************
 
-# ----- Bundler ----- #
-# -> Manange Ruby gems
-
 gem install bundler
-
-# ----- CoffeeScript ----- #
-
 gem install coffee-script
-
-# ----- Desktop ----- #
-# -> A decent way to change your desktop image
-
 gem install desktop
-
-# ----- Haml ----- #
-
 gem install haml
-
-# ----- Middleman ----- #
-
 gem install middleman
-
-# ----- Rails ----- #
-
 gem install rails
-
-# ----- Sass ----- #
-
+gem install rdio-cli
 gem install sass
-
-# ----- Sinatra ----- #
-
 gem install sinatra
