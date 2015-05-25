@@ -42,6 +42,7 @@ installation_order = [
   'install_homebrew',
   'install_homebrew_packages',
   'install_npm_packages',
+  'install_gems',
   'install_osx_settings',
   'install_cask',
   'install_sublime_text_settings',
@@ -173,6 +174,24 @@ task :install_npm_packages, :run do |task, args|
     message 'Installing NPM Packages...'
 
     system 'bash setup/npm'
+
+    run installation_order[current_step] unless args[:run] == 'single'
+  end
+end
+
+# ====================================
+#   Install Gems
+# ====================================
+
+task :install_gems, :run do |task, args|
+  current_step = current_step + 1
+
+  prompt 'Ruby Gems'
+
+  if response?('y')
+    message 'Installing Ruby Gems...'
+
+    system 'bash setup/gems'
 
     run installation_order[current_step] unless args[:run] == 'single'
   end

@@ -1,0 +1,45 @@
+#!/usr/bin/env bash
+# ****************************************************
+#
+#   Setup - Gems
+#
+# ****************************************************
+
+# ----- Bundler ----- #
+# -> Manange Ruby gems
+
+gem install bundler
+
+# ----- CoffeeScript ----- #
+
+gem install coffee-script
+
+# ----- Desktop ----- #
+# -> A decent way to change your desktop image
+
+gem install desktop
+
+# ----- Haml ----- #
+
+gem install haml
+
+# ----- Middleman ----- #
+
+gem install middleman
+
+# ----- Rails ----- #
+
+gem install rails
+
+# ----- Sass ----- #
+
+gem install sass
+
+# ----- Sinatra ----- #
+
+gem install sinatra
+
+# ----- Tmuxinator ----- #
+# -> Manage complex tmux sessions easily
+
+gem install tmuxinator
