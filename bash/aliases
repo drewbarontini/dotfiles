@@ -245,6 +245,7 @@ alias tx='tmux'
 alias txd='tmux kill-session -t'
 alias txda="tmux ls | grep : | cut -d. -f1 | awk '{print substr($1, 0, length($1)-1)}' | xargs kill"
 alias txl='tmux ls'
+alias txs='tmux source-file ~/.tmux.conf'
 
 # ----------------------------------------------------
 #   Unix
