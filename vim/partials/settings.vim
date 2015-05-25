@@ -48,3 +48,7 @@ let g:gist_post_private = 1
 let g:syntastic_mode_map = { 'mode': 'active',
                            \ 'active_filetypes': ['ruby', 'php'],
                            \ 'passive_filetypes': ['html'] }
+
+" ========== tmux Powerline ========== "
+
+let g:tmuxline_powerline_separators = 0

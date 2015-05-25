@@ -35,6 +35,9 @@ Plugin 'chrisbra/vim-diff-enhanced'
 " Jade syntax highlighting
 Plugin 'digitaltoad/vim-jade'
 
+" tmux status line
+Plugin 'edkolev/tmuxline.vim'
+
 " Perform all your vim insert mode completions with Tab
 Plugin 'ervandew/supertab'
 
