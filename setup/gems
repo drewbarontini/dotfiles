@@ -38,8 +38,3 @@ gem install sass
 # ----- Sinatra ----- #
 
 gem install sinatra
-
-# ----- Tmuxinator ----- #
-# -> Manage complex tmux sessions easily
-
-gem install tmuxinator
