@@ -64,5 +64,6 @@ let g:tmuxline_preset = {
   \'cwin' : '#I:#W',
   \'x'    : '#(rdio-status)',
   \'y'    : ['#(date +"%m-%d-%y")', '#(date +"%I:%M")'],
+  \'z'    : '#(battery-percentage)',
   \ 'options': {
     \'status-justify': 'left' } }
