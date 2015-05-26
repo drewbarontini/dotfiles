@@ -32,6 +32,9 @@ Plugin 'bronson/vim-visual-star-search'
 " EnhancedDiff for better diffs
 Plugin 'chrisbra/vim-diff-enhanced'
 
+" Vim tmux navigator
+Plugin 'christoomey/vim-tmux-navigator'
+
 " Jade syntax highlighting
 Plugin 'digitaltoad/vim-jade'
 
