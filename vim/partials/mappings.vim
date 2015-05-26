@@ -163,6 +163,7 @@ nnoremap <leader>P :set paste<cr>o<esc>"*]p :set nopaste<cr>
 
 " Quit
 nnoremap <leader>q :q<cr>
+nnoremap <leader>Q :x<cr>
 
 " == R == "
 
