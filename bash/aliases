@@ -244,7 +244,6 @@ alias update_ruby_build='cd $HOME/.rbenv/plugins/ruby-build && git pull && cd -'
 alias tx='tmux'
 alias txa='tmux a -t'
 alias txd='tmux kill-session -t'
-alias txda="tmux ls | grep : | cut -d. -f1 | awk '{print substr($1, 0, length($1)-1)}' | xargs kill"
 alias txl='tmux ls'
 alias txn='tmux new -s'
 alias txs='tmux source-file ~/.tmux.conf'
