@@ -50,6 +50,10 @@ brew install imagemagick
 # -> Node Version Manager
 brew install nvm
 
+# reattach-to-user-namespace
+# -> Copy/paste to clipboard in tmux
+brew install reattach-to-user-namespace
+
 # Redis
 # -> Advanced key-value store
 brew install redis
