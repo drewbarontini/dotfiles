@@ -17,8 +17,8 @@ let g:airline#extensions#tabline#left_alt_sep = '|'
 
 " ========== CtrlP ========== "
 
+set wildignore+=*/tmp/*,*/log/*,*.so,*.swp,*.zip,*/node_modules/*,*/bower_components/*
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
-set wildignore+=*/tmp/*,*/log/*,*.so,*.swp,*.zip
 
 " ========== EasyMotion ========== "
 
