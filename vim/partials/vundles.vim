@@ -90,7 +90,17 @@ Plugin 'scrooloose/syntastic'
 " Select, and act on, multiple words at once
 Plugin 'terryma/vim-multiple-cursors'
 
-" Tim Pope Plugins (he deserves his own section)
+" Requires Python (ships with Homebrew Vim)
+Plugin 'SirVer/ultisnips'
+
+" Simple TODO lists
+Plugin 'vitalk/vim-simple-todo'
+
+" Adds a 'gs' sort
+Plugin 'christoomey/vim-sort-motion'
+
+" ========== tpope ========== "
+
 " Easily search for, substitute, and abbreviate multiple variants of a word
 Plugin 'tpope/vim-abolish'
 
@@ -123,15 +133,6 @@ Plugin 'tpope/vim-unimpaired'
 
 " Enhance netrw, the built-in directory browser
 Plugin 'tpope/vim-vinegar'
-
-" Requires Python (ships with Homebrew Vim)
-Plugin 'SirVer/ultisnips'
-
-" Simple TODO lists
-Plugin 'vitalk/vim-simple-todo'
-
-" Adds a 'gs' sort
-Plugin 'christoomey/vim-sort-motion'
 
 " Required by vundle
 call vundle#end()
