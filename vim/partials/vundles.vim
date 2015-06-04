@@ -107,6 +107,9 @@ Plugin 'tpope/vim-abolish'
 " Asynchronous build and test dispatcher
 Plugin 'tpope/vim-dispatch'
 
+" Helpers for UNIX
+Plugin 'tpope/vim-eunuch'
+
 " Git wrapper
 Plugin 'tpope/vim-fugitive'
 
