@@ -118,6 +118,9 @@ Plugin 'tpope/vim-repeat'
 " Quoting/parenthesizing made simple
 Plugin 'tpope/vim-surround'
 
+" Pairs of handy bracket mappings
+Plugin 'tpope/vim-unimpaired'
+
 " Enhance netrw, the built-in directory browser
 Plugin 'tpope/vim-vinegar'
 
