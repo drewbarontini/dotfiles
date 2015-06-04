@@ -130,7 +130,6 @@ alias hpr='hub pull-request'
 # ----- Node GH ----- #
 
 alias i='gh is'
-alias im='gh is -A db'
 alias ig='gh gi -l'
 alias igo='gh gi'
 alias in='gh nt'
