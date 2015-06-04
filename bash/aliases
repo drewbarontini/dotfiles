@@ -112,19 +112,6 @@ alias git_standup="git log --since yesterday --author='$USERNAME' --pretty=oneli
 alias git_today="git log --since=midnight --author='$NAME' --oneline"
 alias git_update_submodules='git submodule foreach git pull'
 
-# ----- GHI ----- #
-
-alias i='ghi'
-alias il='ghi list'
-alias is='ghi show'
-alias io='ghi open'
-alias ic='ghi close'
-alias ie='ghi edit'
-alias ico='ghi comment'
-alias ila='ghi label'
-alias ia='ghi assign'
-alias im='ghi milestone'
-
 # ----- Heroku ----- #
 
 alias hd='git push heroku master'
@@ -139,6 +126,15 @@ alias h='hub'
 alias hb='hub browse'
 alias hc='hub clone'
 alias hpr='hub pull-request'
+
+# ----- Node GH ----- #
+
+alias i='gh is'
+alias ig='gh gi -l'
+alias igo='gh gi'
+alias in='gh nt'
+alias inw='gh nt -w'
+alias ipr='gh pr'
 
 # ----------------------------------------------------
 #   Middleman

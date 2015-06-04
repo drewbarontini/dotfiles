@@ -31,10 +31,6 @@ brew install ffmpeg
 # -> Version control
 brew install git
 
-# GHI
-# -> GitHub Issues on the command line
-brew install ghi
-
 # Git FTP
 brew install git-ftp
 
