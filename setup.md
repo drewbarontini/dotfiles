@@ -123,17 +123,17 @@ heroku plugins:install git://github.com/ddollar/heroku-accounts.git
 
 Two options:
 
+1. [stephencelis/ghi](http://github.com/stephencelis/ghi)
 1. [node-gh/gh](http://github.com/node-gh/gh)
-2. [stephencelis/ghi](http://github.com/stephencelis/ghi)
-
-**GH**
-
-This is in `rake install_npm[single]`.
 
 **GHI**
 
+This is in `rake install_brew[single]`.
+
+**GH**
+
 ```shell
-brew install ghi
+npm install -g gh
 ```
 
 ### Compiling Icon Fonts

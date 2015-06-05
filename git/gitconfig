@@ -50,3 +50,6 @@
 [commit]
 
   template = ~/.dotfiles/git/template
+
+[ghi]
+  editor = vim
