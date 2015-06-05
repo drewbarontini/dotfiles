@@ -88,6 +88,9 @@ nnoremap <leader>co ggVG"*y
 " Delete all text in file
 nnoremap <leader>do ggdG
 
+" Start Dispatch command
+nnoremap <leader>D :Dispatch<space>
+
 " == E == "
 
 " ...
