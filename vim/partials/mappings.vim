@@ -145,7 +145,8 @@ nnoremap <silent> <leader>l :nohlsearch<cr>
 
 " == M == "
 
-" ...
+" Open current file in Marked 2 application
+nnoremap <leader>m :!open -a Marked\ 2.app "%"<cr>
 
 " == N == "
 
