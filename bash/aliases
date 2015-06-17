@@ -152,6 +152,7 @@ alias mms='./bin/middleman s'
 #   Miscellaneous
 # ----------------------------------------------------
 
+alias pomodoro='time-police 25'
 alias timer='echo "Timer started. Stop with Ctrl-D." && date && time cat && date'
 
 # ----------------------------------------------------

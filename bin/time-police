@@ -1,0 +1,225 @@
+#!/usr/bin/env bash
+# ****************************************************
+#
+#   Timer Police
+#   -> A simple shell script for effective time management
+#      Credit: https://github.com/connermcd/gtd
+#
+# ****************************************************
+
+set -e
+
+# Command configuration
+CUSTOM_CMD="${CUSTOM_CMD:-"clear"}"
+MPD_CMD="${MPD_CMD:-"mpc -q toggle"}"
+NOTIFY_CMD="${NOTIFY_CMD:-"notify-send"}"
+SPEAK_CMD="${SPEAK_CMD:-"&>/dev/null espeak"}"
+
+# Setting configuration
+DEFAULT_WORK_LENGTH="${DEFAULT_WORK_LENGTH:-15}"
+DEFAULT_BREAK_LENGTH="${DEFAULT_BREAK_LENGTH}"
+NOTIFY_WORK="${NOTIFY_WORK:-"\"Get things done.\""}"
+NOTIFY_BREAK="${NOTIFY_BREAK:-"\"Take a break.\""}"
+SPEAK_WORK="${SPEAK_WORK:-"$NOTIFY_WORK"}"
+SPEAK_BREAK="${SPEAK_BREAK:-"$NOTIFY_BREAK"}"
+
+# File configuration
+CFG_FILE="${CFG_FILE:-$HOME/.gtdrc}"
+
+# Check for configuration file and source it
+if [[ -e "$CFG_FILE" ]]; then
+   source "$CFG_FILE"
+fi
+
+# Display help
+usage() {
+cat << EOF
+USAGE:
+
+   gtd [ -bcmnst ] [ work length ] [ break length ]
+
+OPTIONS:
+
+   -b : start on a break
+   -c : custom command (defaults to "clear")
+   -m : toggle MPD on change
+   -n : notify on change
+   -s : speak command
+   -t : show time in tmux status bar
+   -e : specify time to end at (e.g. 2:45pm today)
+
+EOF
+}
+
+# Show an error message and print usage
+error() {
+   echo -e "\033[0;31m$1\033[0m"
+   usage && exit 1
+}
+
+# Set flag options
+while getopts "bcmnste:h" opt; do
+   case "$opt" in
+      b) [[ -n "$DO_BREAK"  ]] && unset DO_BREAK  || DO_BREAK=true;;
+      c) [[ -n "$DO_CUSTOM" ]] && unset DO_CUSTOM || DO_CUSTOM=true;;
+      m) [[ -n "$DO_MPD"    ]] && unset DO_MPD    || DO_MPD=true;;
+      n) [[ -n "$DO_NOTIFY" ]] && unset DO_NOTIFY || DO_NOTIFY=true;;
+      s) [[ -n "$DO_SPEAK"  ]] && unset DO_SPEAK  || DO_SPEAK=true;;
+      t) [[ -n "$DO_TMUX"   ]] && unset DO_TMUX   || DO_TMUX=true;;
+      e) END_TIME="$OPTARG";;
+      h) usage && exit 0;;
+      *) error "Invalid flag.";;
+   esac
+done 2>/dev/null
+shift "$((OPTIND-1))"
+
+# Make sure tmux is installed if it is required
+if [[ -n "$DO_TMUX" ]]; then
+   which tmux &>/dev/null || error "This feature requires \`tmux\` to be installed."
+fi
+
+if [[ -n "$END_TIME" ]]; then
+   # Make sure at is installed if it is required
+   which at &>/dev/null || error "This feature requires \`at\` to be installed."
+
+   # Kill this process at $END_TIME
+   at "$END_TIME" <<<"kill $$"
+fi
+
+# Set work length if specified and is a number
+if [[ -z "$1" ]]; then
+   work_length="$DEFAULT_WORK_LENGTH"
+elif [[ "$1" =~ [^0-9] ]]; then
+   error "Work length must be a number of minutes."
+else
+   work_length="$1"
+fi
+
+# Set break length if specified and is a number
+if [[ -z "$2" ]]; then
+   break_length="${DEFAULT_BREAK_LENGTH:-$(( $work_length / 5 ))}"
+elif [[ "$2" =~ [^0-9] ]]; then
+   error "Break length must be a number of minutes."
+else
+   break_length="$2"
+fi
+
+# Show error message for three arguments or more
+[[ -n "$3" ]] && error "Only two arguments are allowed."
+
+# Collect session statistics
+total_working_time=0
+count=1
+
+# Displays milliseconds as HH:MM:SS
+hms() {
+   local S="$1"
+   ((h=S/3600))
+   ((m=S%3600/60))
+   ((s=S%60))
+   printf "%02d:%02d:%02d\n" "$h" "$m" "$s"
+}
+
+# Displays a countdown using hms() while sleeping ("visual" sleep)
+vsleep() {
+   left="$1"
+   while [[ "$left" -gt 0 ]]; do
+      hms="$(hms $left)"
+
+      # Updates a temporary file for tmux to read from and refreshes the client
+      if [[ -n "$DO_TMUX" ]]; then
+         (echo -ne "$hms |" > /tmp/gtd)
+         (tmux refresh-client -S)
+      fi
+
+      # Prints time information to terminal title bar
+      if [[ -n "$in_break" ]]; then
+         printf "\e]1;(brk) $hms\a"
+      else
+         printf "\e]1;(gtd) $hms\a"
+      fi
+
+      # Print the countdown to the terminal and decrement one second
+      echo -e "$hms $(tput el)\r\c"
+      sleep 1
+      left="$(( $left - 1 ))"
+   done
+}
+
+# Do various tasks based on the user-specified flags
+do_options() {
+   [[ -n "$DO_CUSTOM" ]] && eval "$CUSTOM_CMD"
+
+   if [[ -n "$DO_NOTIFY" ]]; then
+      if [[ -n "$in_break" ]]; then
+         eval "$NOTIFY_CMD $NOTIFY_BREAK"
+      else
+         eval "$NOTIFY_CMD $NOTIFY_WORK"
+      fi
+   fi
+
+   if [[ -n "$DO_SPEAK" ]]; then
+      if [[ -n "$in_break" ]]; then
+         eval "$SPEAK_CMD $SPEAK_BREAK"
+      else
+         eval "$SPEAK_CMD $SPEAK_WORK"
+      fi
+   fi
+
+   [[ -n "$DO_MPD" ]] && (sleep 1 && eval "$MPD_CMD")
+
+   return 0
+}
+
+# Handle CTRL-C interrupt
+ctrl_c() {
+   if [[ -n "$in_break" ]]; then
+      total="$(hms $(( $total_working_time * 60 )) )"
+   else
+      total="$(hms $(( ($total_working_time + $work_length) * 60 - $left )))"
+   fi
+
+   echo -e "\rTotal working time: $total"
+
+   # Prints total time to terminal title bar
+   printf "\e]1;(tot) $total\a"
+
+   exit 0
+}
+
+cleanup() {
+   # Clear the temporary file and refresh tmux when interrupted/terminated
+   [[ -n "$DO_TMUX" ]] && (tmux refresh-client -S && rm /tmp/gtd)
+
+   exit 0
+}
+
+main() {
+   # Display the initial session settings
+   clear && echo "$work_length minute sessions with $break_length minute breaks."
+
+   # Loop through work and break cycles
+   while true; do
+      # Break period
+      if [[ -n "$DO_BREAK" ]]; then
+         echo -e "Break. Total working time: $(hms $(( $total_working_time * 60 )))"
+         in_break=true && do_options
+         vsleep "$(( $break_length * 60 ))"
+      else DO_BREAK=true; fi
+
+      # Work period
+      echo -e "Period #$count. Total working time: $(hms $(( $total_working_time * 60 )))"
+      unset in_break && do_options
+      vsleep "$(( $work_length * 60 ))"
+
+      # Calculate totals
+      total_working_time="$(( ($total_working_time + $work_length) ))"
+      count="$(( $count + 1 ))"
+   done
+}
+
+if [[ -z "$DEBUG" ]]; then
+   trap ctrl_c INT TERM
+   trap cleanup EXIT
+   main
+fi
