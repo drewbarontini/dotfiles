@@ -81,9 +81,6 @@ Plugin 'nelstrom/vim-qargs'
 " Front for ag, A.K.A. the_silver_searcher
 Plugin 'rking/ag.vim'
 
-" Easier commenting
-Plugin 'scrooloose/nerdcommenter'
-
 " Syntax checker
 Plugin 'scrooloose/syntastic'
 
@@ -103,6 +100,9 @@ Plugin 'christoomey/vim-sort-motion'
 
 " Easily search for, substitute, and abbreviate multiple variants of a word
 Plugin 'tpope/vim-abolish'
+
+" Comment things out
+Plugin 'tpope/vim-commentary'
 
 " Asynchronous build and test dispatcher
 Plugin 'tpope/vim-dispatch'
