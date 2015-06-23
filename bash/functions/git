@@ -15,15 +15,15 @@
 #
 
 function git_check_repo_state() {
-  local local=$(git rev-parse @)
-  local remote=$(git rev-parse @{u})
-  local base=$(git merge-base @ @{u})
+  local local_repo=$(git rev-parse @)
+  local remote_repo=$(git rev-parse @{u})
+  local base_repo=$(git merge-base @ @{u})
 
-  if [ $LOCAL == $REMOTE ]; then
+  if [ $local_repo == $remote_repo ]; then
     echo 'Up-to-date'
-  elif [ $LOCAL == $BASE ]; then
+  elif [ $local_repo == $base_repo ]; then
     echo 'Need to pull'
-  elif [ $REMOTE == $BASE ]; then
+  elif [ $remote_repo == $base_repo ]; then
     echo 'Need to push'
   else
     echo 'Diverged'
