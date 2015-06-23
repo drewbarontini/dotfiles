@@ -5,6 +5,32 @@
 # ****************************************************
 
 # ----------------------------------------------------
+#   Check Repo State
+#   -> Checks to see if a repo is up-to-date or not
+# ----------------------------------------------------
+#
+# $1 - the repo to check
+#
+# Usage: `git_check_repo_state`
+#
+
+function git_check_repo_state() {
+  local local=$(git rev-parse @)
+  local remote=$(git rev-parse @{u})
+  local base=$(git merge-base @ @{u})
+
+  if [ $LOCAL == $REMOTE ]; then
+    echo 'Up-to-date'
+  elif [ $LOCAL == $BASE ]; then
+    echo 'Need to pull'
+  elif [ $REMOTE == $BASE ]; then
+    echo 'Need to push'
+  else
+    echo 'Diverged'
+  fi
+}
+
+# ----------------------------------------------------
 #   Git Delete Branch For Real
 #   -> Delete both local and remote copies of a branch
 # ----------------------------------------------------
@@ -45,20 +71,6 @@ function git_diff_from_master() {
 }
 
 # ----------------------------------------------------
-#   Find Branch
-#   -> Find a specific branch (local or remote)
-# ----------------------------------------------------
-#
-# $1 - the name of the branch
-#
-# Usage: `git_find_branch update_`
-#
-
-function git_find_branch() {
-  git branch -a | grep $1
-}
-
-# ----------------------------------------------------
 #   Delete Remote Tag
 #   -> Delete git tag on remote
 # ----------------------------------------------------
@@ -73,6 +85,20 @@ function git_delete_remote_tag() {
 }
 
 # ----------------------------------------------------
+#   Find Branch
+#   -> Find a specific branch (local or remote)
+# ----------------------------------------------------
+#
+# $1 - the name of the branch
+#
+# Usage: `git_find_branch update_`
+#
+
+function git_find_branch() {
+  git branch -a | grep $1
+}
+
+# ----------------------------------------------------
 #   Interactive Rebase
 #   -> Runs git interactive rebase
 # ----------------------------------------------------
@@ -84,6 +110,39 @@ function git_delete_remote_tag() {
 
 function git_interactive_rebase() {
   git rebase -i HEAD~$1
+}
+
+# ----------------------------------------------------
+#   Git Pull Subdirectories
+#   -> Pulls within each subdirectory in the current directory
+# ----------------------------------------------------
+#
+# Usage: `git_pull_subdirectories`
+#
+
+function git_pull_subdirectories() {
+  local local_path=`pwd`
+  local separator='------------------------------------------------------------'
+
+  echo
+  echo $separator
+  for directory in */; do
+    cd $directory
+    echo "-> $local_path/$directory"
+    if [ `git_check_repo_state .` == 'Need to pull' ]; then
+      git pull
+    else
+      if [ `git_check_repo_state .` == 'Up-to-date' ]; then
+        echo '✓ Good'
+      else
+        echo 'Check the repo...'
+      fi
+    fi
+    echo
+    echo $separator
+    echo
+    cd ..
+  done
 }
 
 # ----------------------------------------------------
