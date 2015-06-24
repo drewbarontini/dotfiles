@@ -136,7 +136,8 @@ nnoremap <leader>J :!bundle exec rake jasmine:ci<cr>
 
 " == K == "
 
-" ...
+map <leader>ka f(cs)(
+map <leader>kr f(cs()
 
 " == L == "
 

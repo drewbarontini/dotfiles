@@ -107,7 +107,8 @@ _Search with ag_
 
 ### K
 
-- ...
+- `ka` Adds space to `('turtle')`
+- `kr` Removes space from `( 'turtle' )`
 
 ### L
 
