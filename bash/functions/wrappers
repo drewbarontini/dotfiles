@@ -17,6 +17,20 @@ function brew_deps() {
 }
 
 # ----------------------------------------------------
+#   View GitHub Issue
+#   -> Opens a GitHub issue in the browser using ghi
+# ----------------------------------------------------
+#
+# $1 - the issue number
+#
+# Usage: `view_issue 3806`
+#
+
+function view_issue() {
+  ghi show "$1" -w
+}
+
+# ----------------------------------------------------
 #   Remote Parker
 #   -> Run 'parker' on a remote stylesheet
 # ----------------------------------------------------
