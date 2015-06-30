@@ -35,6 +35,9 @@ Plugin 'chrisbra/vim-diff-enhanced'
 " Vim tmux navigator
 Plugin 'christoomey/vim-tmux-navigator'
 
+" Delete buffers in CtrlP
+Plugin 'd11wtq/ctrlp_bdelete.vim'
+
 " Jade syntax highlighting
 Plugin 'digitaltoad/vim-jade'
 

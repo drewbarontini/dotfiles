@@ -20,6 +20,10 @@ let g:airline#extensions#tabline#left_alt_sep = '|'
 set wildignore+=*/tmp/*,*/log/*,*.so,*.swp,*.zip,*/node_modules/*,*/bower_components/*
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 
+" Buffer delete
+
+call ctrlp_bdelete#init()
+
 " ========== EasyMotion ========== "
 
 let g:EasyMotion_leader_key = '<leader>e'
