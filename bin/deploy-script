@@ -9,7 +9,15 @@
 # ----------------------------------------------------
 #
 #  - message
-
+#
+# ----------------------------------------------------
+#   Usage
+# ----------------------------------------------------
+#
+#  `deploy-script ftp`
+#  `deploy-script ftp-staging`
+#  `deploy-script github`
+#
 # ****************************************************
 
 url='https://raw.githubusercontent.com/drewbarontini/baseman-deploy/master'
