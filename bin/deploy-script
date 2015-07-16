@@ -1,0 +1,40 @@
+#!/usr/bin/env bash
+# ****************************************************
+#
+#   Deploy Script
+#   -> Sets up Rakefile for deployment
+#
+# ----------------------------------------------------
+#   Dependencies
+# ----------------------------------------------------
+#
+#  - message
+
+# ****************************************************
+
+url='https://raw.githubusercontent.com/drewbarontini/baseman-deploy/master'
+
+case "$1" in
+
+  'ftp')
+    curl -s "$url/ftp.rake" >> Rakefile
+    message green "Rakefile created! Open up the file and edit the configuration."
+    ;;
+
+  'ftp-staging')
+    curl -s "$url/ftp-staging.rake" >> Rakefile
+    message green "Rakefile created! Open up the file and edit the configuration."
+    ;;
+
+  'github')
+    curl -s "$url/github.rake" >> Rakefile
+    message green "Rakefile created! Open up the file and edit the configuration."
+    ;;
+
+  *)
+    echo
+    echo "Sets up a Rakefile for deployment"
+    echo
+    echo "Usage: deploy-script <ftp|ftp-staging|github>"
+
+esac
