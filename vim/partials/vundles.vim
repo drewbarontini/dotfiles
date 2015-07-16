@@ -90,9 +90,6 @@ Plugin 'terryma/vim-multiple-cursors'
 " Requires Python (ships with Homebrew Vim)
 Plugin 'SirVer/ultisnips'
 
-" Simple TODO lists
-Plugin 'vitalk/vim-simple-todo'
-
 " Adds a 'gs' sort
 Plugin 'christoomey/vim-sort-motion'
 
