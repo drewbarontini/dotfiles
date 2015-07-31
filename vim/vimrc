@@ -11,6 +11,7 @@ set nocompatible
 " ====================================================
 
 set number                     " Line numbers are good
+set relativenumber             " Relative line numbers
 set backspace=indent,eol,start " Allow backspace in Insert mode
 set history=1000               " Store :cmdline history
 set visualbell                 " No sounds
@@ -21,7 +22,6 @@ set mousehide
 set ttyfast
 set showmatch
 set laststatus=2
-set relativenumber
 
 " This makes vim act like all other editors, buffers can
 " exist in the background without being in a window.
