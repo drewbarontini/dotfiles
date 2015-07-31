@@ -30,6 +30,15 @@ endfunction
 inoremap <tab> <c-r>=InsertTabWrapper()<cr>
 inoremap <s-tab> <c-n>
 
+" ========== Long Line Toggle ========== "
+" Toggle relative line numbers and cursorline; useful for long line files
+
+function! LongLineToggle()
+  set relativenumber!
+  set cursorline!
+endfunction
+nnoremap <leader>ot :call LongLineToggle()<cr>
+
 " ========== Rename File ========== "
 
 function! RenameFile()
