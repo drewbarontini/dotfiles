@@ -72,6 +72,9 @@ Plugin 'mattn/webapi-vim'
 " Better than Grep
 " Plugin 'mileszs/ack.vim'
 
+" React JSX syntax highlighting/indenting
+Plugin 'mxw/vim-jsx'
+
 " Indentation guides
 Plugin 'nathanaelkane/vim-indent-guides'
 
