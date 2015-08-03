@@ -49,6 +49,9 @@ nnoremap K o<esc>Dk
 " Copy to end of line
 nnoremap Y y$
 
+" Save and quit file
+nnoremap <bs> :wq<cr>
+
 " ========== Leader ========== "
 
 " == Non-Alphanumeric == "
