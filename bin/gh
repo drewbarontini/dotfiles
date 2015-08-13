@@ -81,6 +81,10 @@ else
       open "https://${advanced_url/://}/pull/${branch//\//%2F}"
       ;;
 
+    'commits')
+      open "$url/commits/$branch"
+      ;;
+
     *)
       echo
       echo "Opens GitHub URLs"
