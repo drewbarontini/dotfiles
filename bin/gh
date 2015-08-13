@@ -1,0 +1,88 @@
+#!/usr/bin/env bash
+# ****************************************************
+#
+#   GitHub
+#   -> Opens appropriate URLs
+#
+# ----------------------------------------------------
+#   Usage
+# ----------------------------------------------------
+#
+#  `gh root`       - opens the root project page
+#  `gh issues`     - opens the issues page
+#  `gh milestones` - opens the milestones page
+#  `gh pulls`      - opens the pulls page
+#  `gh pr`         - opens the pull request for the current branch
+#
+# ****************************************************
+
+set -o errexit
+set -o nounset
+set -o pipefail
+
+# ----------------------------------------------------
+#   Functions
+# ----------------------------------------------------
+
+remote_url() {
+  git remote -v | grep "^$1" | head -1 | grep -o 'github.com[/:]\S\+'
+}
+
+# ----------------------------------------------------
+#   Variables
+# ----------------------------------------------------
+
+repo=`git remote show origin | grep "Fetch URL:" | sed "s#^.*:\(.*\/.*\).git#\1#"`
+url="https://github.com/$repo"
+
+branch="$(git symbolic-ref HEAD)"
+branch="${branch#refs/heads/}"
+advanced_url="$(remote_url upstream || true)"
+advanced_url="${advanced_url:-$(remote_url github || true)}"
+advanced_url="${advanced_url:-$(remote_url origin || true)}"
+advanced_url="${advanced_url%.git}"
+
+# ----------------------------------------------------
+#   Main
+# ----------------------------------------------------
+
+if (( "$#" == 0 )); then
+
+  echo
+  echo "Opens GitHub URLs"
+  echo
+  echo "Usage: gh <root|issues|milestones|pulls|pr>"
+
+else
+
+  case "$1" in
+
+    'root')
+      open "$url"
+      ;;
+
+    'issues')
+      open "$url/issues"
+      ;;
+
+    'milestones')
+      open "$url/milestones"
+      ;;
+
+    'pulls')
+      open "$url/pulls"
+      ;;
+
+    'pr')
+      open "https://${advanced_url/://}/pull/${branch//\//%2F}"
+      ;;
+
+    *)
+      echo
+      echo "Opens GitHub URLs"
+      echo
+      echo "Usage: gh <issues|milestones|pulls>"
+
+  esac
+
+fi
