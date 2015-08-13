@@ -10,9 +10,13 @@
 #
 #  `gh`            - opens the root project page
 #  `gh issues`     - opens the issues page
+#  `gh issue`      - opens the new issue page
 #  `gh milestones` - opens the milestones page
 #  `gh pulls`      - opens the pulls page
 #  `gh pr`         - opens the pull request for the current branch
+#  `gh commits`    - opens the commits for the current branch
+#  `gh branches`   - opens the branches page
+#  `gh pulse`      - opens the pulse page
 #
 # ****************************************************
 
