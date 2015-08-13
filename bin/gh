@@ -94,7 +94,7 @@ else
       echo
       echo "Opens GitHub URLs"
       echo
-      echo "Usage: gh <issues|milestones|pulls>"
+      echo "Usage: gh <issues|issue|milestones|pulls|pr|commits|branches|pulse>"
       ;;
 
   esac
