@@ -85,6 +85,14 @@ else
       open "$url/commits/$branch"
       ;;
 
+    'branches')
+      open "$url/branches"
+      ;;
+
+    'pulse')
+      open "$url/pulse"
+      ;;
+
     *)
       echo
       echo "Opens GitHub URLs"
