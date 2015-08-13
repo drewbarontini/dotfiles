@@ -65,6 +65,10 @@ else
       open "$url/issues"
       ;;
 
+    'issue')
+      open "$url/issues/new"
+      ;;
+
     'milestones')
       open "$url/milestones"
       ;;
