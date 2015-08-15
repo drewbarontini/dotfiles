@@ -116,6 +116,9 @@ nnoremap <leader>G :g/
 " :Gbrowse
 nnoremap <leader>gb :Gbrowse<cr>
 
+" :Gdiff
+nnoremap <leader>gd :Gdiff<cr>
+
 " Sort block
 nnoremap <silent> <leader>gs (jV)k :sort<cr>
 
