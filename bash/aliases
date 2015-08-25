@@ -213,6 +213,7 @@ alias pdr='powder restart'
 alias ra='./bin/rails'
 alias rac='./bin/rails c'
 alias rag='./bin/rails g'
+alias ram='./bin/rails g migration'
 alias ras='./bin/rails s'
 
 # ----- Rake ----- #
