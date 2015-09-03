@@ -1,0 +1,8 @@
+packages: [
+  "atom-material-ui"
+  "language-haml"
+  "minimap"
+  "package-sync"
+  "vim-mode"
+  "Zen"
+]
