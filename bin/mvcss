@@ -52,7 +52,12 @@ if (( "$#" == 0 )); then
 
   message yellow 'Downloading...'
   download-zip 'https://github.com/mvcss/mvcss/archive/master.zip'
-  message green 'Downloaded MVCSS to mvcss-master/'
+  mv mvcss-master/foundation .
+  mv mvcss-master/components .
+  mv mvcss-master/structures .
+  mv mvcss-master/application.sass .
+  rm -rf mvcss-master
+  message green "Downloaded MVCSS to $(pwd)"
   exit
 
 fi
