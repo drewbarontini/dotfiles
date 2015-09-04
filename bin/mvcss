@@ -33,6 +33,7 @@ set -o pipefail
 
 EXT='sass'
 URL='https://raw.githubusercontent.com/mvcss/mvcss/master'
+ZIP='https://github.com/mvcss/mvcss/archive/master.zip'
 
 # ----------------------------------------------------
 #   Error Handling
@@ -51,7 +52,7 @@ trap _on-exit EXIT
 if (( "$#" == 0 )); then
 
   message yellow 'Downloading...'
-  download-zip 'https://github.com/mvcss/mvcss/archive/master.zip'
+  download-zip "$ZIP"
   mv mvcss-master/foundation .
   mv mvcss-master/components .
   mv mvcss-master/structures .
