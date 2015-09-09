@@ -14,6 +14,16 @@ alias ah='ag --haml'
 alias as='ag --sass'
 
 # ----------------------------------------------------
+#   Bower
+# ----------------------------------------------------
+
+alias bw='bower'
+alias bwi='bower install'
+alias bwis='bower install --save'
+alias bwlp='bower list -p'
+alias bws='bower search'
+
+# ----------------------------------------------------
 #   Brew
 # ----------------------------------------------------
 
