@@ -58,9 +58,9 @@ prompt_git() {
       git rev-parse --short HEAD 2> /dev/null || \
       echo '(unknown)')";
 
-    [ -n "${s}" ] && s="${s}";
+    [ -n "${s}" ] && s="[${s}]";
 
-    echo -e " ${violet}(${1}${branchName}${s})";
+    echo -e " ${violet}(${1}${branchName}) ${blue}${s}";
   else
     return;
   fi;
@@ -115,5 +115,5 @@ PS1="\[\033]0;\w\007\]";
 PS1+="\[${bold}\]\n"; # newline
 PS1+="\[${green}\]\w"; # working directory
 PS1+="\$(prompt_git \"${violet}\")"; # Git repository details
-PS1+="\[${reset}\]\n> "
+PS1+="\[${reset}\]\n$ "
 export PS1;
