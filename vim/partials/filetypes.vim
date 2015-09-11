@@ -12,3 +12,6 @@ autocmd Filetype markdown setlocal linebreak
 autocmd Filetype markdown setlocal nolist
 autocmd BufNewFile,BufRead *.scss set ft=scss.css
 autocmd BufNewFile,BufRead *.sass set ft=sass.css
+autocmd BufNewFile,BufRead *.coffee.erb set filetype=coffee
+autocmd BufNewFile,BufRead *.haml.erb set filetype=haml
+autocmd BufNewFile,BufRead *.sass.erb set filetype=sass
