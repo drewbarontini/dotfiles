@@ -160,8 +160,16 @@ source ~/.vim/partials/settings.vim
 "   Local
 " ====================================================
 
+" ========== To Everything ========== "
+
 if filereadable( expand('~/.vimrc.local') )
   source ~/.vimrc.local
+endif
+
+" ========== Per Project ========== "
+
+if filereadable( glob('.vimrc.local') )
+  source .vimrc.local
 endif
 
 " ====================================================
