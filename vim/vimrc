@@ -126,7 +126,6 @@ set completeopt=longest,menuone
 "   Search
 " ====================================================
 
-set cursorline
 set incsearch
 set hlsearch
 set ignorecase
