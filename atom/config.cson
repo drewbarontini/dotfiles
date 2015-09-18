@@ -7,7 +7,7 @@
   editor:
     invisibles: {}
     lineHeight: 1.7
-    fontFamily: "Source Code Pro"
+    fontFamily: "Hack"
     fontSize: 17
     scrollPastEnd: true
   Zen:
