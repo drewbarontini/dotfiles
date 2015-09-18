@@ -5,6 +5,21 @@
 # ****************************************************
 
 # ----------------------------------------------------
+#   Author stats
+#   -> Gets added/removed/total line
+# ----------------------------------------------------
+#
+# $1 - the author name
+# $2 - the date since
+#
+# Usage: `git_author_stats`
+#
+
+function git_author_stats() {
+  git log --author="$1" --since="$2" --pretty=tformat: --numstat | awk '{ add += $1; subs += $2; loc += $1 - $2 } END { printf "added lines: %s, removed lines: %s, total lines: %s\n", add, subs, loc }' -
+}
+
+# ----------------------------------------------------
 #   Check Repo State
 #   -> Checks to see if a repo is up-to-date or not
 # ----------------------------------------------------
