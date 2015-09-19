@@ -7,9 +7,9 @@
   editor:
     invisibles: {}
     lineHeight: 1.7
-    fontFamily: "Hack"
     fontSize: 17
     scrollPastEnd: true
+    fontFamily: "Hack"
   Zen:
     softWrap: true
   "atom-material-ui":
