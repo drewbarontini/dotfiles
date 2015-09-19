@@ -306,5 +306,6 @@ alias todos="ag -i '(TODO|FIX(ME)|NOTE?):'"
 # Disable C-s in terminal
 alias vim="stty stop '' -ixoff ; vim"
 
+alias f='fg'
 alias v='vim'
 alias vi='vim'
