@@ -14,7 +14,6 @@ brew cask install anvil 2> /dev/null
 brew cask install appcleaner 2> /dev/null
 brew cask install arq 2> /dev/null
 brew cask install backblaze-downloader 2> /dev/null
-brew cask install bartender 2> /dev/null
 brew cask install caffeine 2> /dev/null
 # brew cask install colorschemer-studio 2> /dev/null
 brew cask install drobo-dashboard 2> /dev/null
