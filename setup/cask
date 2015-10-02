@@ -15,19 +15,15 @@ brew cask install appcleaner 2> /dev/null
 brew cask install arq 2> /dev/null
 brew cask install backblaze-downloader 2> /dev/null
 brew cask install caffeine 2> /dev/null
-# brew cask install colorschemer-studio 2> /dev/null
 brew cask install drobo-dashboard 2> /dev/null
 brew cask install dropbox 2> /dev/null
-# brew cask install evernote 2> /dev/null
 brew cask install firefox 2> /dev/null
 brew cask install flux 2> /dev/null
 brew cask install google-chrome 2> /dev/null
 brew cask install hazel 2> /dev/null
 brew cask install imageoptim 2> /dev/null
-# brew cask install instacast 2> /dev/null
 brew cask install iterm2 2> /dev/null
 brew cask install keyboard-maestro 2> /dev/null
-# brew cask install liteicon 2> /dev/null
 brew cask install mamp 2> /dev/null
 brew cask install moom 2> /dev/null
 brew cask install rdio 2> /dev/null
@@ -37,3 +33,12 @@ brew cask install superduper 2> /dev/null
 brew cask install totalfinder 2> /dev/null
 brew cask install transmit 2> /dev/null
 brew cask install vlc 2> /dev/null
+
+# ----------------------------------------------------
+#   Disabled
+# ----------------------------------------------------
+
+# brew cask install colorschemer-studio 2> /dev/null
+# brew cask install evernote 2> /dev/null
+# brew cask install instacast 2> /dev/null
+# brew cask install liteicon 2> /dev/null
