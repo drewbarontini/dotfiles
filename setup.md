@@ -1,10 +1,7 @@
 Setup
 =====
 
-- Download and install latest version of Xcode from Mac App Store
-- Download and install Xcode Command Line Tools
-
-Once those steps are complete, run the following commands:
+- Download and install latest version of Xcode from Mac App Store, and then run:
 
 ```shell
 git clone git@github.com:drewbarontini/dotfiles.git ~/.dotfiles
