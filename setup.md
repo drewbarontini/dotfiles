@@ -1,7 +1,7 @@
 Setup
 =====
 
-- Download and install latest version of Xcode from Mac App Store, and then run:
+Download and install latest version of Xcode from Mac App Store, and then run:
 
 ```shell
 git clone git@github.com:drewbarontini/dotfiles.git ~/.dotfiles
