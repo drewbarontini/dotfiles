@@ -13,6 +13,7 @@ brew cask install alfred 2> /dev/null
 brew cask install anvil 2> /dev/null
 brew cask install appcleaner 2> /dev/null
 brew cask install arq 2> /dev/null
+brew cask install atom 2> /dev/null
 brew cask install backblaze-downloader 2> /dev/null
 brew cask install caffeine 2> /dev/null
 brew cask install drobo-dashboard 2> /dev/null
