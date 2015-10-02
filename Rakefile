@@ -52,6 +52,7 @@ installation_order = [
   'install_gems',
   'install_osx_settings',
   'install_cask',
+  'install_outliers',
   'install_sublime_text_settings',
   'install_pow',
   'install_cleanup'
@@ -235,6 +236,24 @@ task :install_cask, :run do |task, args|
     message 'Installing Cask & Applications...'
 
     system 'bash setup/cask'
+
+    run installation_order[current_step] unless args[:run] == 'single'
+  end
+end
+
+# ====================================
+#   Install Outliers
+# ====================================
+
+task :install_outliers, :run do |task, args|
+  current_step = current_step + 1
+
+  prompt 'Outlier Applications'
+
+  if response?('y')
+    message 'Installing Outlier Applications...'
+
+    system 'bash setup/outliers'
 
     run installation_order[current_step] unless args[:run] == 'single'
   end
