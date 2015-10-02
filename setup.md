@@ -64,6 +64,8 @@ Install Postgres through the application rather than Homebrew:
 
 - [Postgres](http://postgresapp.com/)
 
+**Note**: The Postgres app is installed during the setup/cask task.
+
 ### [NPM](https://github.com/drewbarontini/dotfiles/blob/master/setup/npm)
 
 **Note**: NPM is installed during the Homebrew setup (alongside Node), but this sets up some common packages.
