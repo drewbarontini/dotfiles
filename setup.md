@@ -157,3 +157,5 @@ To easily swap out multiple space and monitor wallpapers on OS X, install [chris
 ```shell
 gem install desktop
 ```
+
+This is in `rake install_gems[single]`.
