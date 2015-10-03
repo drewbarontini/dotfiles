@@ -36,7 +36,7 @@ brew install ghi
 brew install git
 
 # Git FTP
-brew install git-ftp
+# brew install git-ftp
 
 # Hub
 # -> Command-line wrapper for git
@@ -60,7 +60,7 @@ brew install redis
 
 # Rename
 # -> Rename files in the command line
-brew install rename
+# brew install rename
 
 # Sitespeed.io
 # -> Analyze your website speed and performance
