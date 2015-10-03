@@ -11,7 +11,7 @@ rake install
 ```
 
 **Note**: If installing on El Capitan, [read
-this before running `rake install`](https://github.com/Homebrew/homebrew/blob/master/share/doc/homebrew/El_Capitan_and_Homebrew.md). Once that is fixed, you can resume with `rake install`.
+this](https://github.com/Homebrew/homebrew/blob/master/share/doc/homebrew/El_Capitan_and_Homebrew.md) _before_ running `rake install`.
 
 Sections
 --------
