@@ -10,6 +10,9 @@ rake install_command_line_tools[single]
 rake install
 ```
 
+**Note**: If installing on El Capitan, [read
+this before running `rake install`](https://github.com/Homebrew/homebrew/blob/master/share/doc/homebrew/El_Capitan_and_Homebrew.md). Once that is fixed, you can resume with `rake install`.
+
 Sections
 --------
 
@@ -52,9 +55,6 @@ Once you've set up rbenv:
 rake install_homebrew[single]
 rake install_homebrew_packages[single]
 ```
-
-**Note**: If installing on El Capitan, [read
-this](https://github.com/Homebrew/homebrew/blob/master/share/doc/homebrew/El_Capitan_and_Homebrew.md).
 
 ### Postgres
 
