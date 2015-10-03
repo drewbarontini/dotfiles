@@ -1,11 +1,12 @@
 Setup
 =====
 
-Download and install latest version of Xcode from Mac App Store, and then run:
+- Download and install latest version of Xcode from Mac App Store, and then run:
 
 ```shell
 git clone git@github.com:drewbarontini/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
+rake install_command_line_tools[single]
 rake install
 ```
 
@@ -51,6 +52,9 @@ Once you've set up rbenv:
 rake install_homebrew[single]
 rake install_homebrew_packages[single]
 ```
+
+**Note**: If installing on El Capitan, [read
+this](https://github.com/Homebrew/homebrew/blob/master/share/doc/homebrew/El_Capitan_and_Homebrew.md).
 
 ### Postgres
 
