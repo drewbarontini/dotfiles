@@ -62,6 +62,10 @@ nnoremap ,, <c-^>
 " Shell command
 nnoremap ! :!<space>
 
+" Zoom pane
+nnoremap <leader>- :wincmd _<cr>:wincmd \|<cr>
+nnoremap <leader>= :wincmd =<cr>
+
 " == A == "
 
 " Search with ag
