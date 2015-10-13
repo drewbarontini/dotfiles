@@ -51,13 +51,13 @@ map <Space> <leader>
 "   Vundle
 " ====================================================
 
-source ~/.vim/partials/vundles.vim
+source ~/.vim/partials/plugins.vim
 
 " ====================================================
 "   Colors
 " ====================================================
 
-source ~/.vim/partials/colors.vim
+source ~/.vim/partials/visual.vim
 source ~/.vim/partials/solarized.vim
 
 " ====================================================
