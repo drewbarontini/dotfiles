@@ -7,8 +7,15 @@ autocmd BufNewFile,BufRead *.haml.erb set filetype=haml
 autocmd BufNewFile,BufRead *.sass set ft=sass.css
 autocmd BufNewFile,BufRead *.sass.erb set filetype=sass
 autocmd BufNewFile,BufRead *.scss set ft=scss.css
-autocmd FileType css set omnifunc=csscomplete#CompleteCSS
-autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
+
+autocmd FileType css        set omnifunc=csscomplete#CompleteCSS
+autocmd Filetype gitcommit  setlocal spell textwidth=72
+autocmd FileType html       set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
-autocmd Filetype markdown setlocal textwidth=80 colorcolumn=80 linebreak nolist wrap nonumber norelativenumber
-autocmd Filetype gitcommit setlocal spell textwidth=72
+autocmd FileType markdown   setlocal spell spelllang=en
+
+augroup pencil
+  autocmd!
+  autocmd FileType markdown call pencil#init()
+  autocmd FileType text     call pencil#init()
+augroup END

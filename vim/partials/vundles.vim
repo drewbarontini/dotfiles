@@ -35,6 +35,9 @@ Plugin 'chrisbra/vim-diff-enhanced'
 " Vim tmux navigator
 Plugin 'christoomey/vim-tmux-navigator'
 
+" Adds a 'gs' sort
+Plugin 'christoomey/vim-sort-motion'
+
 " Jade syntax highlighting
 Plugin 'digitaltoad/vim-jade'
 
@@ -81,6 +84,9 @@ Plugin 'nathanaelkane/vim-indent-guides'
 " Populate the argument list from the files in the quickfix list
 Plugin 'nelstrom/vim-qargs'
 
+" Rethinking Vim as a tool for writing
+Plugin 'reedes/vim-pencil'
+
 " Front for ag, A.K.A. the_silver_searcher
 Plugin 'rking/ag.vim'
 
@@ -92,9 +98,6 @@ Plugin 'terryma/vim-multiple-cursors'
 
 " Requires Python (ships with Homebrew Vim)
 Plugin 'SirVer/ultisnips'
-
-" Adds a 'gs' sort
-Plugin 'christoomey/vim-sort-motion'
 
 " ========== tpope ========== "
 
