@@ -19,6 +19,7 @@ original_locations[:vim]             = "#{ ENV['HOME'] }/.dotfiles/vim"
 original_locations[:vimrc]           = "#{ ENV['HOME'] }/.dotfiles/vim/vimrc"
 original_locations[:gvimrc]          = "#{ ENV['HOME'] }/.dotfiles/vim/gvimrc"
 original_locations[:atom]            = "#{ ENV['HOME'] }/.dotfiles/atom"
+original_locations[:gemrc]           = "#{ ENV['HOME'] }/.dotfiles/gem/gemrc"
 
 # ----- New Locations ----- #
 
@@ -37,6 +38,7 @@ new_locations[:vim]             = "#{ ENV['HOME'] }/.vim"
 new_locations[:vimrc]           = "#{ ENV['HOME'] }/.vimrc"
 new_locations[:gvimrc]          = "#{ ENV['HOME'] }/.gvimrc"
 new_locations[:atom]            = "#{ ENV['HOME'] }/.atom"
+new_locations[:gemrc]           = "#{ ENV['HOME'] }/.gemrc"
 
 # ----- Installation Order ----- #
 
