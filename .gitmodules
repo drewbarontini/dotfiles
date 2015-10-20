@@ -4,3 +4,6 @@
 [submodule "sublime-text/Packages/User/Snippets"]
 	path = sublime-text/Packages/User/Snippets
 	url = git@github.com:drewbarontini/sublime-text-snippets.git
+[submodule "bin"]
+	path = bin
+	url = git@github.com:drewbarontini/bin-scripts.git
