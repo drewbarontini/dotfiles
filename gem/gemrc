@@ -1,1 +1,9 @@
-gem: --no-document
+---
+:backtrace: false
+:bulk_threshold: 1000
+:sources:
+- https://rubygems.org/
+- https://otV4SQmAxNUuRA7qgFuz@repo.fury.io/codeschool/
+:update_sources: true
+:verbose: true
+gem: "--no-document"
