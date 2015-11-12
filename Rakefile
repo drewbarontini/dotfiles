@@ -45,6 +45,7 @@ new_locations[:gemrc]           = "#{ ENV['HOME'] }/.gemrc"
 current_step = 0
 
 installation_order = [
+  'install_git_submodules',
   'install_symlinks',
   'install_vim',
   'install_rbenv',
@@ -72,6 +73,25 @@ task :install do
   puts '---------------------------------------------'
 
   run installation_order[current_step] if response?('start')
+end
+
+# ====================================
+#   Install Git Submodules
+# ====================================
+
+task :install_git_submodules, :run do |task, args|
+  current_step = current_step + 1
+
+  prompt 'submodules'
+
+  if response?('y')
+    message 'Installing git submodules...'
+
+    system 'git submodule init'
+    system 'git submodule update'
+
+    run installation_order[current_step] unless args[:run] == 'single'
+  end
 end
 
 # ====================================
