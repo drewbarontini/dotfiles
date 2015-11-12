@@ -124,11 +124,11 @@ task :install_vim, :run do |task, args|
   if response?('y')
     message 'Installing Vundle...'
 
-    vundle_directory = "#{ ENV['HOME'] }/.vim/bundle/vundle"
+    vundle_directory = "#{ ENV['HOME'] }/.vim/bundle/Vundle.vim"
 
     unless File.exists?(vundle_directory)
-      system "git clone https://github.com/gmarik/vundle.git #{ vundle_directory }"
-      puts "Done! Run ':BundleInstall' in Vim to install plugins."
+      system "git clone https://github.com/VundleVim/Vundle.vim.git #{ vundle_directory }"
+      puts "Done! Run ':PluginInstall' in Vim to install plugins."
     else
       puts "#{ vundle_directory } already exists. Contining.."
     end
