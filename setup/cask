@@ -34,7 +34,6 @@ brew cask install screenhero 2> /dev/null
 brew cask install sublime-text3 2> /dev/null
 brew cask install superduper 2> /dev/null
 brew cask install toggldesktop 2> /dev/null
-brew cask install totalfinder 2> /dev/null
 brew cask install transmit 2> /dev/null
 brew cask install vlc 2> /dev/null
 
