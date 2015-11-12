@@ -113,10 +113,10 @@ Download at [https://toolbelt.heroku.com/](https://toolbelt.heroku.com/).
 
 **Multiple Accounts**
 
-If you manage more than one Heroku account, install [Heroku Accounts](https://github.com/ddollar/heroku-accounts):
+If you manage more than one Heroku account, install [Heroku Accounts](https://github.com/heroku/heroku-accounts):
 
 ```shell
-heroku plugins:install git://github.com/ddollar/heroku-accounts.git
+heroku plugins:install https://github.com/heroku/heroku-accounts.git
 ```
 
 ### GitHub Command Line
