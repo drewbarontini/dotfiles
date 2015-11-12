@@ -50,6 +50,7 @@ installation_order = [
   'install_rbenv',
   'install_homebrew',
   'install_homebrew_packages',
+  'install_nvm',
   'install_npm_packages',
   'install_gems',
   'install_osx_settings',
@@ -166,6 +167,30 @@ task :install_homebrew_packages, :run do |task, args|
     message 'Installing Homebrew Packages...'
 
     system 'bash setup/brew'
+
+    run installation_order[current_step] unless args[:run] == 'single'
+  end
+end
+
+# ====================================
+#   Install NVM
+# ====================================
+
+task :install_nvm, :run do |task, args|
+  current_step = current_step + 1
+
+  nvm_directory = "#{ ENV['HOME'] }/.nvm"
+
+  prompt 'NVM'
+
+  if response?('y')
+    message 'Installing NVM...'
+
+    unless File.exists?(nvm_directory)
+      system 'mkdir ~/.nvm'
+      system 'nvm install 5.0'
+      system 'nvm alias default v5.0.0'
+    end
 
     run installation_order[current_step] unless args[:run] == 'single'
   end
