@@ -9,7 +9,7 @@
     lineHeight: 1.7
     fontSize: 17
     scrollPastEnd: true
-    fontFamily: "Office Code Pro"
+    fontFamily: "Inconsolata-dz"
   Zen:
     softWrap: true
   "atom-material-ui":
