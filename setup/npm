@@ -8,7 +8,7 @@
 packages=(
   bower
   browser-sync
-  gh
+  # gh
   grunt
   grunt-cli
   gulp
