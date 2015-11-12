@@ -29,6 +29,14 @@ open http://macpaw.com/download/cleanmymac
 echo 'Downloaded!'
 
 # ----------------------------------------------------
+#   Heroku
+# ----------------------------------------------------
+
+echo 'Downloading Heroku Toolbelt...'
+open https://toolbelt.heroku.com/
+echo 'Downloaded! Run heroku plugins:install git://github.com/ddollar/heroku-accounts.git'
+
+# ----------------------------------------------------
 #   End
 # ----------------------------------------------------
 
