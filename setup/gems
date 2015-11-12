@@ -5,13 +5,13 @@
 #
 # ****************************************************
 
-gem install bundler
-gem install coffee-script
-gem install desktop
-gem install haml
-gem install middleman
-gem install rails
-gem install rdio-cli
-gem install sass
-gem install sinatra
-gem install tmuxinator
+sudo gem install bundler
+sudo gem install coffee-script
+sudo gem install desktop
+sudo gem install haml
+sudo gem install middleman
+sudo gem install rails
+sudo gem install rdio-cli
+sudo gem install sass
+sudo gem install sinatra
+sudo gem install tmuxinator
