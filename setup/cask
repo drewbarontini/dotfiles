@@ -21,14 +21,12 @@ brew cask install dropbox 2> /dev/null
 brew cask install firefox 2> /dev/null
 brew cask install flux 2> /dev/null
 brew cask install google-chrome 2> /dev/null
-brew cask install hazel 2> /dev/null
 brew cask install imageoptim 2> /dev/null
 brew cask install iterm2 2> /dev/null
 brew cask install keyboard-maestro 2> /dev/null
 brew cask install mamp 2> /dev/null
 brew cask install moom 2> /dev/null
 brew cask install postgres 2> /dev/null
-brew cask install rdio 2> /dev/null
 brew cask install screenflow 2> /dev/null
 brew cask install screenhero 2> /dev/null
 brew cask install sublime-text3 2> /dev/null
@@ -44,9 +42,11 @@ brew cask install vlc 2> /dev/null
 # brew cask install colorschemer-studio 2> /dev/null
 # brew cask install evernote 2> /dev/null
 # brew cask install focus 2> /dev/null
+# brew cask install hazel 2> /dev/null
 # brew cask install instacast 2> /dev/null
 # brew cask install liteicon 2> /dev/null
 # brew cask install mailbox 2> /dev/null
+# brew cask install rdio 2> /dev/null
 # brew cask install shortcat 2> /dev/null
 # brew cask install skype 2> /dev/null
 # brew cask install spotify 2> /dev/null
