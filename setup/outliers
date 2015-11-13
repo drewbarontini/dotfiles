@@ -29,14 +29,6 @@ open http://macpaw.com/download/cleanmymac
 echo 'Downloaded!'
 
 # ----------------------------------------------------
-#   Hazel
-# ----------------------------------------------------
-
-echo 'Downloading Hazel...'
-open https://www.noodlesoft.com/Products/Hazel/download
-echo 'Downloaded!'
-
-# ----------------------------------------------------
 #   Heroku
 # ----------------------------------------------------
 
