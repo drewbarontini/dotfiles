@@ -24,6 +24,6 @@ set visible-stats on
 #   Mappings
 # ----------------------------------------------------
 
-# Use <ctrl+j> and <ctrl-k> to seach history
+# Use <ctrl+j> and <ctrl-k> to search history
 '\C-j': history-search-forward
 '\C-k': history-search-backward
