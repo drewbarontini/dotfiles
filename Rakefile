@@ -7,6 +7,7 @@
 original_locations                   = {}
 original_locations[:bash_directory]  = "#{ ENV['HOME'] }/.dotfiles/bash"
 original_locations[:bash_profile]    = "#{ ENV['HOME'] }/.dotfiles/bash/bash_profile"
+original_locations[:inputrc]         = "#{ ENV['HOME'] }/.dotfiles/bash/inputrc"
 original_locations[:ackrc]           = "#{ ENV['HOME'] }/.dotfiles/ack/ackrc"
 original_locations[:agignore]        = "#{ ENV['HOME'] }/.dotfiles/ag/agignore"
 original_locations[:rspec]           = "#{ ENV['HOME'] }/.dotfiles/rspec/rspec"
@@ -26,6 +27,7 @@ original_locations[:gemrc]           = "#{ ENV['HOME'] }/.dotfiles/gem/gemrc"
 new_locations                   = {}
 new_locations[:bash_directory]  = "#{ ENV['HOME'] }/.bash"
 new_locations[:bash_profile]    = "#{ ENV['HOME'] }/.bash_profile"
+new_locations[:inputrc]         = "#{ ENV['HOME'] }/.inputrc"
 new_locations[:ackrc]           = "#{ ENV['HOME'] }/.ackrc"
 new_locations[:agignore]        = "#{ ENV['HOME'] }/.agignore"
 new_locations[:rspec]           = "#{ ENV['HOME'] }/.rspec"

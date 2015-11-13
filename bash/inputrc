@@ -1,0 +1,29 @@
+# ****************************************************
+#
+#   Inputrc
+#   -> Readline configuration
+#
+# ****************************************************
+
+# ----------------------------------------------------
+#   Completion
+# ----------------------------------------------------
+
+# Enable <tab> completion case insensitivity
+set completion-ignore-case on
+
+# Show completion after <tab> press without bell
+set show-all-if-ambiguous on
+set show-all-if-unmodified on
+
+# Style <tab> completion list
+set colored-stats on
+set visible-stats on
+
+# ----------------------------------------------------
+#   Mappings
+# ----------------------------------------------------
+
+# Use <ctrl+j> and <ctrl-k> to seach history
+'\C-j': history-search-forward
+'\C-k': history-search-backward
