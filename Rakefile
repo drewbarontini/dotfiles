@@ -207,7 +207,14 @@ task :install_tmux_plugin_manager, :run do |task, args|
   if response?('y')
     message 'Installing Tmux Plugin Manager...'
 
-    system 'git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm'
+    tpm_directory = "#{ ENV['HOME'] }/.tmux/plugins/tpm"
+
+    unless File.exists?(tpm_directory)
+      system 'git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm'
+      puts "Done! Run 'Prefix + I' in Tmux to install plugins."
+    else
+      puts "#{ tpm_directory } already exists. Contining.."
+    end
 
     run installation_order[current_step] unless args[:run] == 'single'
   end
