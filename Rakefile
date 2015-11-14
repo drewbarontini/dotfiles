@@ -53,6 +53,7 @@ installation_order = [
   'install_rbenv',
   'install_homebrew',
   'install_homebrew_packages',
+  'install_tmux_plugin_manager',
   'install_nvm',
   'install_npm_packages',
   'install_gems',
@@ -189,6 +190,24 @@ task :install_homebrew_packages, :run do |task, args|
     message 'Installing Homebrew Packages...'
 
     system 'bash setup/brew'
+
+    run installation_order[current_step] unless args[:run] == 'single'
+  end
+end
+
+# ====================================
+#   Install Tmux Plugin Manager
+# ====================================
+
+task :install_tmux_plugin_manager, :run do |task, args|
+  current_step = current_step + 1
+
+  prompt 'Tmux Plugin Manager'
+
+  if response?('y')
+    message 'Installing Tmux Plugin Manager...'
+
+    system 'git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm'
 
     run installation_order[current_step] unless args[:run] == 'single'
   end
