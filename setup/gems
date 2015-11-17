@@ -11,7 +11,6 @@ sudo gem install desktop
 sudo gem install haml
 sudo gem install middleman
 sudo gem install rails
-sudo gem install rdio-cli
 sudo gem install sass
 sudo gem install sinatra
 sudo gem install tmuxinator
