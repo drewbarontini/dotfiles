@@ -37,14 +37,6 @@ open https://toolbelt.heroku.com/
 echo 'Downloaded! Run heroku plugins:install https://github.com/heroku/heroku-accounts.git'
 
 # ----------------------------------------------------
-#   Rdio
-# ----------------------------------------------------
-
-echo 'Downloading Rdio...'
-open http://rdio0-a.akamaihd.net/media/static/desktop/mac/Rdio.dmg
-echo 'Downloaded!'
-
-# ----------------------------------------------------
 #   End
 # ----------------------------------------------------
 
