@@ -66,7 +66,7 @@ let g:tmuxline_preset = {
   \'a'    : '#S',
   \'win'  : '#I:#W',
   \'cwin' : '#I:#W',
-  \'x'    : '#(rdio-status)',
+  \'x'    : '#(spotify status)',
   \'y'    : ['#(date +"%m-%d-%y")', '#(date +"%I:%M")'],
   \'z'    : '#(battery-percentage)',
   \ 'options': {
