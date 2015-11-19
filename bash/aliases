@@ -253,7 +253,7 @@ alias rkdy='rake deploy'
 
 alias rb='rbenv'
 alias rbi='rbenv install'
-alias rbil='rbenv install list'
+alias rbil='rbenv install --list'
 alias rbr='rbenv rehash'
 alias rbv='rbenv version'
 alias rbva='rbenv versions'
