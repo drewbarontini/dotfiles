@@ -44,11 +44,6 @@ rake install_symlinks[single]
 rake install_rbenv[single]
 ```
 
-Once you've set up rbenv:
-
-- Install a Ruby version (`rbenv install VERSION`)
-- Set a global Ruby version (`rbenv global VERSION`)
-
 ### [Homebrew](https://github.com/drewbarontini/dotfiles/blob/master/setup/brew)
 
 ```shell
@@ -93,6 +88,12 @@ rake install_sublime_text_settings[single]
 ```
 
 Next, [install Package Control](https://sublime.wbond.net/installation).
+
+### Pow
+
+```shell
+rake install_pow[single]
+```
 
 Additional Tools
 ----------------

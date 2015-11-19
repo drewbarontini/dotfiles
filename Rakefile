@@ -2,6 +2,11 @@
 #   Variables
 # ====================================
 
+# ----- Versions ----- #
+
+global_ruby_version = '2.2.3'
+global_node_version = '5.0.0'
+
 # ----- Original Locations ----- #
 
 original_locations                   = {}
@@ -51,10 +56,11 @@ installation_order = [
   'install_symlinks',
   'install_vim',
   'install_rbenv',
+  'install_global_ruby',
   'install_homebrew',
   'install_homebrew_packages',
   'install_tmux_plugin_manager',
-  'install_nvm',
+  'install_global_node',
   'install_npm_packages',
   'install_gems',
   'install_osx_settings',
@@ -160,6 +166,26 @@ task :install_rbenv, :run do |task, args|
 end
 
 # ====================================
+#   Install Global Ruby
+# ====================================
+
+task :install_global_ruby, :run do |task, args|
+  current_step = current_step + 1
+
+  prompt 'global ruby'
+
+  if response?('y')
+    message "Installing Ruby #{ global_ruby_version }..."
+
+    system "rbenv install #{ global_ruby_version }"
+    system "rbenv rehash"
+    system "rbenv global #{ global_ruby_version }"
+
+    run installation_order[current_step] unless args[:run] == 'single'
+  end
+end
+
+# ====================================
 #   Install Homebrew
 # ====================================
 
@@ -221,10 +247,10 @@ task :install_tmux_plugin_manager, :run do |task, args|
 end
 
 # ====================================
-#   Install NVM
+#   Install Global Node
 # ====================================
 
-task :install_nvm, :run do |task, args|
+task :install_global_node, :run do |task, args|
   current_step = current_step + 1
 
   nvm_directory = "#{ ENV['HOME'] }/.nvm"
@@ -232,12 +258,12 @@ task :install_nvm, :run do |task, args|
   prompt 'NVM'
 
   if response?('y')
-    message 'Installing NVM...'
+    message "Installing Node #{ global_node_version }..."
 
     unless File.exists?(nvm_directory)
       system 'mkdir ~/.nvm'
-      system 'nvm install 5.0'
-      system 'nvm alias default v5.0.0'
+      system "nvm install #{ global_node_version }"
+      system "nvm alias default v#{ global_node_version }"
     end
 
     run installation_order[current_step] unless args[:run] == 'single'
