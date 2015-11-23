@@ -7,9 +7,9 @@
   editor:
     invisibles: {}
     lineHeight: 1.7
-    fontSize: 17
     scrollPastEnd: true
-    fontFamily: "Inconsolata-dz"
+    fontFamily: "Meslo LG M"
+    fontSize: 13
   Zen:
     softWrap: true
   "atom-material-ui":
