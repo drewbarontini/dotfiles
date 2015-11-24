@@ -8,8 +8,8 @@
     invisibles: {}
     lineHeight: 1.7
     scrollPastEnd: true
-    fontFamily: "Meslo LG M"
-    fontSize: 13
+    fontFamily: "Meslo LG L"
+    fontSize: 15
   Zen:
     softWrap: true
   "atom-material-ui":
