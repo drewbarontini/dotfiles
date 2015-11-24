@@ -51,3 +51,9 @@ function! RenameFile()
   endif
 endfunction
 nnoremap <leader>rn :call RenameFile()<cr>
+
+" ========== Clean File ========== "
+
+function! CleanFile()
+  exec ':%s/\n\n\n/\r\r/ge'
+endfunction
