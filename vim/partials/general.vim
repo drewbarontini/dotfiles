@@ -12,6 +12,7 @@ set noshowmode
 set cursorline
 set mousehide
 set ttyfast
+set lazyredraw
 set showmatch
 set laststatus=2
 
