@@ -8,7 +8,7 @@
     invisibles: {}
     lineHeight: 1.7
     scrollPastEnd: true
-    fontFamily: "Meslo LG L"
+    fontFamily: "Source Code Pro"
     fontSize: 15
   Zen:
     softWrap: true
