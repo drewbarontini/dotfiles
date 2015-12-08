@@ -15,7 +15,6 @@ brew cask install appcleaner 2> /dev/null
 brew cask install arq 2> /dev/null
 brew cask install atom 2> /dev/null
 brew cask install backblaze-downloader 2> /dev/null
-brew cask install caffeine 2> /dev/null
 brew cask install drobo-dashboard 2> /dev/null
 brew cask install dropbox 2> /dev/null
 brew cask install firefox 2> /dev/null
@@ -25,6 +24,7 @@ brew cask install hazel 2> /dev/null
 brew cask install imageoptim 2> /dev/null
 brew cask install iterm2 2> /dev/null
 brew cask install keyboard-maestro 2> /dev/null
+brew cask install keepingyouawake 2> /dev/null
 brew cask install mamp 2> /dev/null
 brew cask install moom 2> /dev/null
 brew cask install postgres 2> /dev/null
@@ -41,6 +41,7 @@ brew cask install vlc 2> /dev/null
 #   Disabled
 # ----------------------------------------------------
 
+# brew cask install caffeine 2> /dev/null
 # brew cask install colorschemer-studio 2> /dev/null
 # brew cask install evernote 2> /dev/null
 # brew cask install focus 2> /dev/null
