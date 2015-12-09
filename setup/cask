@@ -30,6 +30,7 @@ brew cask install moom 2> /dev/null
 brew cask install postgres 2> /dev/null
 brew cask install screenflow 2> /dev/null
 brew cask install screenhero 2> /dev/null
+brew cask install sketch 2> /dev/null
 brew cask install spotify 2> /dev/null
 brew cask install sublime-text3 2> /dev/null
 brew cask install superduper 2> /dev/null
