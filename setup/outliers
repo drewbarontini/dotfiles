@@ -21,14 +21,6 @@ download-zip http://www.macbartender.com/Demo/Bartender%202.zip
 echo 'Downloaded!'
 
 # ----------------------------------------------------
-#   CleanMyMac 3
-# ----------------------------------------------------
-
-echo 'Downloading CleanMyMac 3...'
-open http://macpaw.com/download/cleanmymac
-echo 'Downloaded!'
-
-# ----------------------------------------------------
 #   Heroku
 # ----------------------------------------------------
 

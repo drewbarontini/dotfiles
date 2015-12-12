@@ -15,6 +15,7 @@ brew cask install appcleaner 2> /dev/null
 brew cask install arq 2> /dev/null
 brew cask install atom 2> /dev/null
 brew cask install backblaze-downloader 2> /dev/null
+brew cask install cleanmymac 2> /dev/null
 brew cask install drobo-dashboard 2> /dev/null
 brew cask install dropbox 2> /dev/null
 brew cask install firefox 2> /dev/null
