@@ -31,6 +31,10 @@ brew install ffmpeg
 # -> GitHub issues on command line
 brew install ghi
 
+# Gifify
+# -> Convert .mov into .gif
+brew install gifify
+
 # Git
 # -> Version control
 brew install git
