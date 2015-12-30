@@ -103,6 +103,9 @@ nnoremap <leader>b :CtrlPBuffer<cr>
 
 " ----- C ----- "
 
+" Run coffeelint on current file
+nnoremap <silent> <leader>cl :CoffeeLint -f ~/.dotfiles/coffeelint/coffeelint.json \| cwindow<cr>
+
 " Copy whole file, store in register
 nnoremap <leader>co ggVG"*y
 
