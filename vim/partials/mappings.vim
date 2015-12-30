@@ -1,40 +1,57 @@
-" ====================================================
+" *************************************
+"
 "   Mappings
-" ====================================================
+"
+" *************************************
 
-" ========== General ========== "
+" -------------------------------------
+"   General
+" -------------------------------------
 
-" Better defaults
+" ----- Better Defaults ----- "
+
 nnoremap ; :
 nnoremap : ;
 inoremap jk <esc>
 
-" Arrow Keys for window sizing
+" ----- Arrow Keys for Window Sizing ----- "
+
 noremap <up>    <c-w>+
 noremap <down>  <c-w>-
 noremap <left>  1<c-w>>
 noremap <right> 1<c-w><
 
-" Window navigation
+" ----- Window Navigation ----- "
+
 nnoremap <c-h> <c-w>h
 nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
 nnoremap <c-l> <c-w>l
 
-" Move visual block
+" ----- Move Visual Block ----- "
+
 vnoremap J :m '>+1<cr>gv=gv
 vnoremap K :m '<-1<ct>gv=gv
 
-" Tabs
+" ----- Tabs ----- "
+
 noremap <c-t> <esc>:tabnew<cr>
-" Move to the previous tab
+
+" Previous tab
 nnoremap H gT
-" Move to the next tab
+
+" Next tab
 nnoremap L gt
 
-" Save file
+" ----- Save File ----- "
+
 noremap <c-s> <esc>:w<cr>
 inoremap <c-s> <esc>:w<cr>
+
+" Save and quit file
+nnoremap <bs> :wq<cr>
+
+" ----- Miscellaneous ----- "
 
 " Directory of Current File
 cnoremap %% <c-r>=expand('%:h').'/'<cr>
@@ -49,12 +66,11 @@ nnoremap K o<esc>Dk
 " Copy to end of line
 nnoremap Y y$
 
-" Save and quit file
-nnoremap <bs> :wq<cr>
+" -------------------------------------
+"   Leader
+" -------------------------------------
 
-" ========== Leader ========== "
-
-" == Non-Alphanumeric == "
+" ----- Non-alphanumeric ----- "
 
 " Switch between buffers
 nnoremap ,, <c-^>
@@ -66,7 +82,7 @@ nnoremap ! :!<space>
 nnoremap <leader>- :wincmd _<cr>:wincmd \|<cr>
 nnoremap <leader>= :wincmd =<cr>
 
-" == A == "
+" ----- A ----- "
 
 " Search with ag
 nnoremap <leader>aa :Ag! ''<left>
@@ -77,7 +93,7 @@ nnoremap <leader>as :Ag! --sass ''<left>
 " Search for word under cursor with ag
 nnoremap <leader>AA :Ag! <c-r><c-w><cr>
 
-" == B == "
+" ----- B ----- "
 
 " bundle install
 nnoremap <leader>B :!bundle install<cr>
@@ -85,12 +101,12 @@ nnoremap <leader>B :!bundle install<cr>
 " Open CtrlP buffer search
 nnoremap <leader>b :CtrlPBuffer<cr>
 
-" == C == "
+" ----- C ----- "
 
 " Copy whole file, store in register
 nnoremap <leader>co ggVG"*y
 
-" == D == "
+" ----- D ----- "
 
 " Delete all text in file
 nnoremap <leader>do ggdG
@@ -100,11 +116,11 @@ nnoremap <leader>dd :Dispatch<space>
 nnoremap <leader>db :Make!<space>
 nnoremap <leader>dc :Copen<cr>
 
-" == E == "
+" ----- E ----- "
 
 " ...
 
-" == F == "
+" ----- F ----- "
 
 " Standard CtrlP window
 nnoremap <leader>f :CtrlP<cr>
@@ -112,7 +128,7 @@ nnoremap <leader>f :CtrlP<cr>
 " Clear CtrlP cache
 nnoremap <silent> <leader>F :ClearCtrlPCache<cr>
 
-" == G == "
+" ----- G ----- "
 
 " g Command
 nnoremap <leader>G :g/
@@ -126,17 +142,17 @@ nnoremap <leader>gd :Gdiff<cr>
 " Sort block
 nnoremap <silent> <leader>gs (jV)k :sort<cr>
 
-" == H == "
+" ----- H ----- "
 
 " Horizontal split
 nnoremap <leader>h <c-w>s<c-w>j
 
-" == I == "
+" ----- I ----- "
 
 " Auto-indent entire file
 nnoremap <leader>I mmgg=G`m
 
-" == J == "
+" ----- J ----- "
 
 " EasyMotion
 map <leader>j <plug>(easymotion-bd-w)
@@ -144,31 +160,31 @@ map <leader>j <plug>(easymotion-bd-w)
 " Jasmine
 nnoremap <leader>J :!bundle exec rake jasmine:ci<cr>
 
-" == K == "
+" ----- K ----- "
 
 map <leader>ka f(cs)(
 map <leader>kr f(cs()
 
-" == L == "
+" ----- L ----- "
 
 " Clear the search buffer when hitting return
 nnoremap <silent> <leader>l :nohlsearch<cr>
 
-" == M == "
+" ----- M ----- "
 
 " Open current file in Marked 2 application
 nnoremap <leader>m :!open -a Marked\ 2.app "%"<cr>
 
-" == N == "
+" ----- N ----- "
 
 " ...
 
-" == O == "
+" ----- O ----- "
 
 " Open current file in Sublime Text
 nnoremap <leader>os :! subl '%:p'<cr>
 
-" == P == "
+" ----- P ----- "
 
 " Duplicate current line, paste after
 nnoremap <leader>p Yp
@@ -176,13 +192,13 @@ nnoremap <leader>p Yp
 " Nice paste
 nnoremap <leader>P :set paste<cr>o<esc>"*]p :set nopaste<cr>
 
-" == Q == "
+" ----- Q ----- "
 
 " Quit
 nnoremap <leader>q :q<cr>
 nnoremap <leader>Q :x<cr>
 
-" == R == "
+" ----- R ----- "
 
 " Open .vimrc
 nnoremap <leader>rc :e ~/.dotfiles/vim/vimrc<cr>
@@ -193,7 +209,7 @@ nnoremap <leader>rs :%s//
 " Open Vim mappings file
 nnoremap <leader>rm :e ~/.dotfiles/vim/partials/mappings.vim<cr>
 
-" == S == "
+" ----- S ----- "
 
 " Trim trailing whitespace
 nnoremap <silent> <leader>st :%s/\s\+$//<cr>:let @/=''<cr>
@@ -204,7 +220,7 @@ nnoremap <leader>sd :e ~/.dotfiles/vim/UltiSnips<cr>
 " Edit currently scoped snippets
 nnoremap <leader>se :UltiSnipsEdit<cr>
 
-" == T == "
+" ----- T ----- "
 
 " Tabularize
 vnoremap <leader>T :Tabularize /
@@ -214,12 +230,12 @@ vnoremap <leader>T: :Tabularize /:<cr>
 " Run RSpec test for current file
 nnoremap <leader>t :!bundle exec rspec %<cr>
 
-" == U == "
+" ----- U ----- "
 
 " IndentGuidesToggle
 nnoremap <silent> <leader>ug :IndentGuidesToggle<cr>
 
-" == V == "
+" ----- V ----- "
 
 " Vertical split
 nnoremap <leader>v <c-w>v<c-w>l
@@ -227,22 +243,22 @@ nnoremap <leader>v <c-w>v<c-w>l
 " Goyo trigger
 nnoremap <leader>V :Goyo<cr>
 
-" == W == "
+" ----- W ----- "
 
 " Save file
 nnoremap <leader>w :w<cr>
 nnoremap <leader>W :x<cr>
 
-" == X == "
+" ----- X ----- "
 
 " ...
 
-" == Y == "
+" ----- Y ----- "
 
 " Copy line, paste before current line
 nnoremap <leader>y YP
 
-" == Z == "
+" ----- Z ----- "
 
 " Quicker action to suspend Vim ('fg' to return)
 nnoremap <leader>z <c-z>

@@ -1,8 +1,12 @@
-" ====================================================
+" *************************************
+"
 "   Settings
-" ====================================================
+"
+" *************************************
 
-" ========== Airline ========== "
+" -------------------------------------
+"   Airline
+" -------------------------------------
 
 let g:airline_left_sep=''
 let g:airline_right_sep=''
@@ -15,12 +19,16 @@ let g:airline#extensions#tabline#tab_min_count = 2
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
 
-" ========== CtrlP ========== "
+" -------------------------------------
+"   CtrlP
+" -------------------------------------
 
 set wildignore+=*/tmp/*,*/log/*,*.so,*.swp,*.zip,*/node_modules/*,*/bower_components/*
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 
-" ========== EasyMotion ========== "
+" -------------------------------------
+"   EasyMotion
+" -------------------------------------
 
 let g:EasyMotion_leader_key = '<leader>e'
 
@@ -36,24 +44,32 @@ hi link EasyMotionShade  Comment
 hi link EasyMotionTarget2First Type
 hi link EasyMotionTarget2Second Type
 
-" ========== Gist ========== "
+" -------------------------------------
+"   Gist
+" -------------------------------------
 
 let g:gist_clip_command = 'pbcopy'
 let g:gist_open_browser_after_post = 1
 let g:gist_update_on_write = 2
 let g:gist_post_private = 1
 
-" ========== Pencil ========== "
+" -------------------------------------
+"   Pencil
+" -------------------------------------
 
 let g:pencil#wrapModeDefault = 'soft'
 
-" ========== Syntastic ========== "
+" -------------------------------------
+"   Syntastic
+" -------------------------------------
 
 let g:syntastic_mode_map = { 'mode': 'active',
                            \ 'active_filetypes': ['ruby', 'php'],
                            \ 'passive_filetypes': ['html'] }
 
-" ========== tmuxline ========== "
+" -------------------------------------
+"   tmuxline
+" -------------------------------------
 
 let g:tmuxline_powerline_separators = 0
 let g:tmuxline_separators = {
