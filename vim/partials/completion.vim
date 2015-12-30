@@ -1,6 +1,8 @@
-" ====================================================
-"   Completion
-" ====================================================
+" *************************************
+"
+"   Completions
+"
+" *************************************
 
 set wildmode=list:longest
 set wildmenu                      "Enable ctrl-n and ctrl-p to scroll thru matches

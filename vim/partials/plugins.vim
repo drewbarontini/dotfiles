@@ -1,6 +1,13 @@
-" ====================================================
+" *************************************
+"
 "   Vundle
-" ====================================================
+"   -> Plugin manager
+"
+" *************************************
+
+" -------------------------------------
+"   Base
+" -------------------------------------
 
 " Required by Vundle
 set nocompatible
@@ -12,7 +19,9 @@ call vundle#begin()
 " Vundle manages Vundle (required)
 Plugin 'gmarik/Vundle.vim'
 
-" ========== Plugins ========== "
+" -------------------------------------
+"   Plugins
+" -------------------------------------
 
 " Close matching parenthesis, quote, etc.
 Plugin 'AutoClose'
@@ -99,7 +108,9 @@ Plugin 'terryma/vim-multiple-cursors'
 " Requires Python (ships with Homebrew Vim)
 Plugin 'SirVer/ultisnips'
 
-" ========== tpope ========== "
+" -------------------------------------
+"   tpope
+" -------------------------------------
 
 " Easily search for, substitute, and abbreviate multiple variants of a word
 Plugin 'tpope/vim-abolish'
@@ -139,6 +150,10 @@ Plugin 'tpope/vim-unimpaired'
 
 " Enhance netrw, the built-in directory browser
 Plugin 'tpope/vim-vinegar'
+
+" -------------------------------------
+"   Close
+" -------------------------------------
 
 " Required by vundle
 call vundle#end()

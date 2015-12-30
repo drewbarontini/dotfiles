@@ -1,9 +1,13 @@
-" ====================================================
+" *************************************
+"
 "   Functions
-" ====================================================
+"
+" *************************************
 
-" ========== Browser ========== "
-" Open link on current line in browser
+" -------------------------------------
+"   Browser
+"   -> Open link on current line in browser
+" -------------------------------------
 
 function! Browser()
   let s:uri = matchstr(getline("."), '[a-z]*:\/\/[^ >,;:]*')
@@ -16,8 +20,18 @@ function! Browser()
 endfunction
 nnoremap <leader>R :call Browser()<cr>
 
-" ========== Multi-purpose Tab Key ========== "
-" Indent if we're at the beginning of a line. Else, do completion.
+" -------------------------------------
+"   Clean File
+" -------------------------------------
+
+function! CleanFile()
+  exec ':%s/\n\n\n/\r\r/ge'
+endfunction
+
+" -------------------------------------
+"   Multi-purpose Tab Key
+"   -> Indent if we're at the beginning of a line. Else, do completion.
+" -------------------------------------
 
 function! InsertTabWrapper()
   let col = col('.') - 1
@@ -30,8 +44,10 @@ endfunction
 inoremap <tab> <c-r>=InsertTabWrapper()<cr>
 inoremap <s-tab> <c-n>
 
-" ========== Long Line Toggle ========== "
-" Toggle relative line numbers and cursorline; useful for long line files
+" -------------------------------------
+"   Long Line Toggle
+"   -> Toggle relative line numbers and cursorline; useful for long line files
+" -------------------------------------
 
 function! LongLineToggle()
   set relativenumber!
@@ -39,7 +55,9 @@ function! LongLineToggle()
 endfunction
 nnoremap <leader>ot :call LongLineToggle()<cr>
 
-" ========== Rename File ========== "
+" -------------------------------------
+"   Rename File
+" -------------------------------------
 
 function! RenameFile()
   let old_name = expand('%')
@@ -51,9 +69,3 @@ function! RenameFile()
   endif
 endfunction
 nnoremap <leader>rn :call RenameFile()<cr>
-
-" ========== Clean File ========== "
-
-function! CleanFile()
-  exec ':%s/\n\n\n/\r\r/ge'
-endfunction
