@@ -1,21 +1,21 @@
-# ****************************************************
+# *************************************
 #
 #   Aliases
 #
-# ****************************************************
+# *************************************
 
-# ----------------------------------------------------
+# -------------------------------------
 #   Ag
-# ----------------------------------------------------
+# -------------------------------------
 
 alias a='ag'
 alias ac='ag --coffee'
 alias ah='ag --haml'
 alias as='ag --sass'
 
-# ----------------------------------------------------
+# -------------------------------------
 #   Bower
-# ----------------------------------------------------
+# -------------------------------------
 
 alias bw='bower'
 alias bwi='bower install'
@@ -23,9 +23,9 @@ alias bwis='bower install --save'
 alias bwlp='bower list -p'
 alias bws='bower search'
 
-# ----------------------------------------------------
+# -------------------------------------
 #   Brew
-# ----------------------------------------------------
+# -------------------------------------
 
 # ----- Drew's Brew ----- #
 
@@ -43,15 +43,15 @@ alias du='brew update'
 alias dg='brew upgrade'
 alias beerfest='brew update && brew cleanup && brew prune && brew doctor'
 
-# ----------------------------------------------------
+# -------------------------------------
 #   Dotfiles
-# ----------------------------------------------------
+# -------------------------------------
 
 alias update='update_rbenv && update_ruby_build && git_update_submodules && beerfest'
 
-# ----------------------------------------------------
+# -------------------------------------
 #   Files & Jumps
-# ----------------------------------------------------
+# -------------------------------------
 
 alias al="vim $ALIASES_PATH"
 alias bfunc="vim $GENERALFUNC_PATH"
@@ -61,9 +61,9 @@ alias mappings="vim $VIM_MAPPINGS_PATH"
 alias rc="vim $VIMRC_PATH"
 alias vfiles="vim $VIM_FILES_PATH"
 
-# ----------------------------------------------------
+# -------------------------------------
 #   Git
-# ----------------------------------------------------
+# -------------------------------------
 
 # ----- Git ----- #
 
@@ -168,23 +168,23 @@ alias ilm='ghi list --mine'
 alias ilma='ghi list -a --mine'
 alias is='ghi show'
 
-# ----------------------------------------------------
+# -------------------------------------
 #   Middleman
-# ----------------------------------------------------
+# -------------------------------------
 
 alias mmb='./bin/middleman build'
 alias mms='./bin/middleman s'
 
-# ----------------------------------------------------
+# -------------------------------------
 #   Miscellaneous
-# ----------------------------------------------------
+# -------------------------------------
 
 alias pomodoro='time-police 25'
 alias timer='echo "Timer started. Stop with Ctrl-D." && date && time cat && date'
 
-# ----------------------------------------------------
+# -------------------------------------
 #   MVCSS
-# ----------------------------------------------------
+# -------------------------------------
 
 alias m='mvcss'
 alias ma='mvcss all'
@@ -200,9 +200,9 @@ alias mlcf='mvcss-library copy foundation'
 alias mlco='mvcss-library components'
 alias mlcco='mvcss-library copy components'
 
-# ----------------------------------------------------
+# -------------------------------------
 #   NPM
-# ----------------------------------------------------
+# -------------------------------------
 
 alias ni='npm install'
 alias nin='npm init'
@@ -210,16 +210,16 @@ alias nis='npm install --save'
 alias nisd='npm install --save-dev'
 alias npm_list='npm -g ls --depth=0'
 
-# ----------------------------------------------------
-#   OS X
-# ----------------------------------------------------
+# -------------------------------------
+#   OSX
+# -------------------------------------
 
 # Clean up LaunchServices to remove duplicates in the 'Open With' menu
 alias ls_cleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder"
 
-# ----------------------------------------------------
+# -------------------------------------
 #   Rails Environment
-# ----------------------------------------------------
+# -------------------------------------
 
 # ----- Bundle ----- #
 
@@ -254,9 +254,9 @@ alias rkdbs='./bin/rake db:seed'
 alias rkdbt='./bin/rake db:setup'
 alias rkdy='rake deploy'
 
-# ----------------------------------------------------
+# -------------------------------------
 #   rbenv
-# ----------------------------------------------------
+# -------------------------------------
 
 alias rb='rbenv'
 alias rbi='rbenv install'
@@ -267,9 +267,9 @@ alias rbva='rbenv versions'
 alias update_rbenv='cd $HOME/.rbenv && git pull && cd -'
 alias update_ruby_build='cd $HOME/.rbenv/plugins/ruby-build && git pull && cd -'
 
-# ----------------------------------------------------
+# -------------------------------------
 #   tmux
-# ----------------------------------------------------
+# -------------------------------------
 
 alias tx='tmux'
 alias txa='tmux a -t'
@@ -278,9 +278,9 @@ alias txl='tmux ls'
 alias txn='tmux new -s'
 alias txs='tmux source-file ~/.tmux.conf'
 
-# ----------------------------------------------------
+# -------------------------------------
 #   Unix
-# ----------------------------------------------------
+# -------------------------------------
 
 # ----- Listing ----- #
 
@@ -313,9 +313,9 @@ alias grep='grep --color=auto'
 alias magic_numbers="ag -i '(FIXME: Magic number!)'" # `| wc -l` to get the count
 alias todos="ag -i '(TODO|FIX(ME)|NOTE?):'"
 
-# ----------------------------------------------------
+# -------------------------------------
 #   Vim
-# ----------------------------------------------------
+# -------------------------------------
 
 # Disable C-s in terminal
 alias vim="stty stop '' -ixoff ; vim"

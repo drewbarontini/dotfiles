@@ -1,13 +1,13 @@
-# ****************************************************
+# *************************************
 #
 #   Functions - Git
 #
-# ****************************************************
+# *************************************
 
-# ----------------------------------------------------
+# -------------------------------------
 #   Author stats
 #   -> Gets added/removed/total line
-# ----------------------------------------------------
+# -------------------------------------
 #
 # $1 - the author name
 # $2 - the date since
@@ -19,10 +19,10 @@ function git_author_stats() {
   git log --author="$1" --since="$2" --pretty=tformat: --numstat | awk '{ add += $1; subs += $2 } END { printf "added lines: %s, removed lines: %s\n", add, subs }' -
 }
 
-# ----------------------------------------------------
+# -------------------------------------
 #   Check Repo State
 #   -> Checks to see if a repo is up-to-date or not
-# ----------------------------------------------------
+# -------------------------------------
 #
 # $1 - the repo to check
 #
@@ -45,10 +45,10 @@ function git_check_repo_state() {
   fi
 }
 
-# ----------------------------------------------------
+# -------------------------------------
 #   Git Delete Branch For Real
 #   -> Delete both local and remote copies of a branch
-# ----------------------------------------------------
+# -------------------------------------
 #
 # $1 - the branch name
 #
@@ -59,11 +59,11 @@ function git_delete_branch_for_real() {
   git branch -D $1 && git push origin :$1
 }
 
-# ----------------------------------------------------
+# -------------------------------------
 #   Git Diff From Master
 #   -> Show changes on specified branch that are
 #      different than master
-# ----------------------------------------------------
+# -------------------------------------
 #
 # $1 - 'files' show only files changed (optional)
 # $2 - the name of the branch
@@ -85,10 +85,10 @@ function git_diff_from_master() {
   fi
 }
 
-# ----------------------------------------------------
+# -------------------------------------
 #   Delete Remote Tag
 #   -> Delete git tag on remote
-# ----------------------------------------------------
+# -------------------------------------
 #
 # $1 - the tag name
 #
@@ -99,10 +99,10 @@ function git_delete_remote_tag() {
   git push origin :refs/tags/$1
 }
 
-# ----------------------------------------------------
+# -------------------------------------
 #   Find Branch
 #   -> Find a specific branch (local or remote)
-# ----------------------------------------------------
+# -------------------------------------
 #
 # $1 - the name of the branch
 #
@@ -113,10 +113,10 @@ function git_find_branch() {
   git branch -a | grep $1
 }
 
-# ----------------------------------------------------
+# -------------------------------------
 #   Interactive Rebase
 #   -> Runs git interactive rebase
-# ----------------------------------------------------
+# -------------------------------------
 #
 # $1 - the number of commits to rebase
 #
@@ -127,10 +127,10 @@ function git_interactive_rebase() {
   git rebase -i HEAD~$1
 }
 
-# ----------------------------------------------------
+# -------------------------------------
 #   Git Pull Subdirectories
 #   -> Pulls within each subdirectory in the current directory
-# ----------------------------------------------------
+# -------------------------------------
 #
 # Usage: `git_pull_subdirectories`
 #
@@ -160,10 +160,10 @@ function git_pull_subdirectories() {
   done
 }
 
-# ----------------------------------------------------
+# -------------------------------------
 #   Remote Tracking Branch
 #   -> Creates a new branch and pushes that branch to remote
-# ----------------------------------------------------
+# -------------------------------------
 #
 # $1 - the branch name
 #
@@ -174,10 +174,10 @@ function git_remote_tracking_branch() {
   git checkout -b $1 && git push -u origin $1
 }
 
-# ----------------------------------------------------
+# -------------------------------------
 #   Search Commits
 #   -> Runs a search on all commit messages
-# ----------------------------------------------------
+# -------------------------------------
 #
 # $1 - the search string
 #
@@ -188,10 +188,10 @@ function git_search_commits() {
   git log --all --oneline --grep="$1"
 }
 
-# ----------------------------------------------------
+# -------------------------------------
 #   Tag
 #   -> Automatically set a git tag based on Semantic Versioning keyword
-# ----------------------------------------------------
+# -------------------------------------
 #
 # $1 - 'major', 'minor', 'patch'
 #
