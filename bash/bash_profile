@@ -1,14 +1,12 @@
 # *************************************
 #
-#   Base Profile
+#   Bash Profile
 #
 # *************************************
 
 # -------------------------------------
-#   Imports
+#   Base
 # -------------------------------------
-
-# ----- Base ----- #
 
 source ~/.bash/partials/path
 source ~/.bash/partials/vars
@@ -22,21 +20,15 @@ source ~/.bash/functions/wrappers
 source ~/.bash/partials/prompt
 source ~/.bash/partials/overrides
 
-# ----- Local ----- #
-# These are for files included in private, local dotfiles.
+# -------------------------------------
+#   Local
+#   -> Files included in private, local dotfiles.
+# -------------------------------------
 
 [[ -f ~/.bash-local/init ]] && source ~/.bash-local/init
 
 # -------------------------------------
-#   Prompt Command
+#   Extras
 # -------------------------------------
 
-export DISPATCHED=0
-export PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND ;} history -a; dispatch"
-
-# -------------------------------------
-#   Disable C-s
-# -------------------------------------
-
-stty -ixon
-stty stop undef
+source ~/.bash/partials/extras
