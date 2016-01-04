@@ -31,16 +31,16 @@ export PATH=$( IFS=:; echo "${PATH_DIRECTORIES[*]}" )
 
 # ----- Base ----- #
 
-source ~/.bash/vars
-source ~/.bash/config
-source ~/.bash/aliases
+source ~/.bash/partials/vars
+source ~/.bash/partials/config
+source ~/.bash/partials/aliases
 source ~/.bash/completions/git.bash
 source ~/.bash/functions/general
 source ~/.bash/functions/git
 source ~/.bash/functions/screengen
 source ~/.bash/functions/wrappers
-source ~/.bash/prompt
-source ~/.bash/overrides
+source ~/.bash/partials/prompt
+source ~/.bash/partials/overrides
 
 # ----- Local ----- #
 # These are for files included in private, local dotfiles.
