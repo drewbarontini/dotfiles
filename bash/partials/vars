@@ -8,7 +8,7 @@
 #   Paths
 # -------------------------------------
 
-ALIASES_PATH="$HOME/.dotfiles/bash/aliases"
+ALIASES_PATH="$HOME/.dotfiles/bash/partials/aliases"
 DOTFILES_PATH="$HOME/.dotfiles"
 DOTFILES_LOCAL_PATH="$HOME/.dotfiles-local"
 GENERALFUNC_PATH="$HOME/.dotfiles/bash/functions/general"
