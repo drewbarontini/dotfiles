@@ -25,7 +25,7 @@ source ~/.bash/partials/overrides
 #   -> Files included in private, local dotfiles.
 # -------------------------------------
 
-[[ -f ~/.bash-local/init ]] && source ~/.bash-local/init
+[[ -f ~/.bash-local/partials/init ]] && source ~/.bash-local/partials/init
 
 # -------------------------------------
 #   Extras
