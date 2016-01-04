@@ -8,6 +8,7 @@ atom/dev
 atom/packages
 atom/storage
 atom/storage
+atom/blob-store
 
 sublime-text/Packages/bz2
 sublime-text/Packages/User/Package Control.cache
