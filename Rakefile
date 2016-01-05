@@ -10,42 +10,42 @@ global_node_version = '5.0.0'
 # ----- Original Locations ----- #
 
 original_locations                   = {}
-original_locations[:bash_directory]  = "#{ ENV['HOME'] }/.dotfiles/bash"
-original_locations[:bash_profile]    = "#{ ENV['HOME'] }/.dotfiles/bash/bash_profile"
-original_locations[:inputrc]         = "#{ ENV['HOME'] }/.dotfiles/bash/inputrc"
 original_locations[:ackrc]           = "#{ ENV['HOME'] }/.dotfiles/ack/ackrc"
 original_locations[:agignore]        = "#{ ENV['HOME'] }/.dotfiles/ag/agignore"
-original_locations[:rspec]           = "#{ ENV['HOME'] }/.dotfiles/rspec/rspec"
-original_locations[:gitconfig_local] = "#{ ENV['HOME'] }/.dotfiles-local/git/gitconfig"
+original_locations[:atom]            = "#{ ENV['HOME'] }/.dotfiles/atom"
+original_locations[:bash_directory]  = "#{ ENV['HOME'] }/.dotfiles/bash"
+original_locations[:bash_profile]    = "#{ ENV['HOME'] }/.dotfiles/bash/bash_profile"
+original_locations[:gemrc]           = "#{ ENV['HOME'] }/.dotfiles/gem/gemrc"
 original_locations[:gitconfig]       = "#{ ENV['HOME'] }/.dotfiles/git/gitconfig"
+original_locations[:gitconfig_local] = "#{ ENV['HOME'] }/.dotfiles-local/git/gitconfig"
 original_locations[:gitignore]       = "#{ ENV['HOME'] }/.dotfiles/git/gitignore"
+original_locations[:gvimrc]          = "#{ ENV['HOME'] }/.dotfiles/vim/gvimrc"
+original_locations[:inputrc]         = "#{ ENV['HOME'] }/.dotfiles/bash/inputrc"
+original_locations[:rspec]           = "#{ ENV['HOME'] }/.dotfiles/rspec/rspec"
 original_locations[:tmux_conf]       = "#{ ENV['HOME'] }/.dotfiles/tmux/tmux.conf"
 original_locations[:tmuxline_conf]   = "#{ ENV['HOME'] }/.dotfiles/tmux/tmuxline_snapshot"
 original_locations[:vim]             = "#{ ENV['HOME'] }/.dotfiles/vim"
 original_locations[:vimrc]           = "#{ ENV['HOME'] }/.dotfiles/vim/vimrc"
-original_locations[:gvimrc]          = "#{ ENV['HOME'] }/.dotfiles/vim/gvimrc"
-original_locations[:atom]            = "#{ ENV['HOME'] }/.dotfiles/atom"
-original_locations[:gemrc]           = "#{ ENV['HOME'] }/.dotfiles/gem/gemrc"
 
 # ----- New Locations ----- #
 
 new_locations                   = {}
-new_locations[:bash_directory]  = "#{ ENV['HOME'] }/.bash"
-new_locations[:bash_profile]    = "#{ ENV['HOME'] }/.bash_profile"
-new_locations[:inputrc]         = "#{ ENV['HOME'] }/.inputrc"
 new_locations[:ackrc]           = "#{ ENV['HOME'] }/.ackrc"
 new_locations[:agignore]        = "#{ ENV['HOME'] }/.agignore"
-new_locations[:rspec]           = "#{ ENV['HOME'] }/.rspec"
-new_locations[:gitconfig_local] = "#{ ENV['HOME'] }/.gitconfig.local"
+new_locations[:atom]            = "#{ ENV['HOME'] }/.atom"
+new_locations[:bash_directory]  = "#{ ENV['HOME'] }/.bash"
+new_locations[:bash_profile]    = "#{ ENV['HOME'] }/.bash_profile"
+new_locations[:gemrc]           = "#{ ENV['HOME'] }/.gemrc"
 new_locations[:gitconfig]       = "#{ ENV['HOME'] }/.gitconfig"
+new_locations[:gitconfig_local] = "#{ ENV['HOME'] }/.gitconfig.local"
 new_locations[:gitignore]       = "#{ ENV['HOME'] }/.gitignore"
+new_locations[:gvimrc]          = "#{ ENV['HOME'] }/.gvimrc"
+new_locations[:inputrc]         = "#{ ENV['HOME'] }/.inputrc"
+new_locations[:rspec]           = "#{ ENV['HOME'] }/.rspec"
 new_locations[:tmux_conf]       = "#{ ENV['HOME'] }/.tmux.conf"
 new_locations[:tmuxline_conf]   = "#{ ENV['HOME'] }/.tmuxline_snapshot"
 new_locations[:vim]             = "#{ ENV['HOME'] }/.vim"
 new_locations[:vimrc]           = "#{ ENV['HOME'] }/.vimrc"
-new_locations[:gvimrc]          = "#{ ENV['HOME'] }/.gvimrc"
-new_locations[:atom]            = "#{ ENV['HOME'] }/.atom"
-new_locations[:gemrc]           = "#{ ENV['HOME'] }/.gemrc"
 
 # ----- Installation Order ----- #
 
