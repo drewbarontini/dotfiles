@@ -19,6 +19,13 @@ require 'json'
 
 # ----- Credentials ----- #
 
+# Update this path to the CONFIG_FILE that will hold the following
+# configuration variables:
+#
+# export GITHUB_USERNAME='yourusername'
+# export GITHUB_ACCESS_TOKEN='youraccesstoken'
+#
+#
 CONFIG_FILE = "#{ ENV[ 'HOME' ] }/.dotfiles/bitbar/config/plugin.github.sh"
 
 if File.exists? CONFIG_FILE
@@ -35,10 +42,10 @@ end
 
 # ----- URLs ----- #
 
-GITHUB_API         = 'https://api.github.com'
-GITHUB_REPOS_API   = "#{ GITHUB_API }/repos"
-GITHUB_USER_ISSUES = "#{ GITHUB_API }/issues?state=open"
-GITHUB_USER_REPOS  = "#{ GITHUB_API }/user/repos"
+GITHUB_API        = 'https://api.github.com'
+GITHUB_ISSUES     = "#{ GITHUB_API }/issues?state = open"
+GITHUB_REPOS      = "#{ GITHUB_API }/repos"
+GITHUB_USER_REPOS = "#{ GITHUB_API }/user/repos"
 
 # ----- Repos ----- #
 
@@ -171,11 +178,11 @@ def get_my_pull_requests
 
   repos_to_get.each do |repo|
     status    = []
-    pulls_url = "#{ GITHUB_REPOS_API }/#{ repo }/pulls?state=open"
+    pulls_url = "#{ GITHUB_REPOS }/#{ repo }/pulls?state=open"
 
     get_json( pulls_url ).each_with_index do |item, index|
       sha        = item[ 'head' ][ 'sha' ]
-      status_url = "#{ GITHUB_REPOS_API }/#{ repo }/commits/#{ sha }/status"
+      status_url = "#{ GITHUB_REPOS }/#{ repo }/commits/#{ sha }/status"
 
       status << get_json( status_url )
 
@@ -203,7 +210,7 @@ end
 #
 
 def get_my_issues
-  get_json( GITHUB_USER_ISSUES ).each do |item|
+  get_json( GITHUB_ISSUES ).each do |item|
     puts "#{ item[ 'repository' ][ 'full_name' ] }: ##{ item[ 'number' ] } #{ item[ 'title' ] } | href=#{ item[ 'html_url' ] }"
   end
 end
