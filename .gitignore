@@ -10,6 +10,12 @@ atom/storage
 atom/storage
 atom/blob-store
 
+bitbar/config
+
+doc/tags
+
+gitconfig.local
+
 sublime-text/Packages/bz2
 sublime-text/Packages/User/Package Control.cache
 sublime-text/Packages/User/Package Control.last-run
@@ -17,9 +23,5 @@ sublime-text/Packages/User/Package Control.merged-ca-bundle
 sublime-text/Packages/User/Package Control.system-ca-bundle
 sublime-text/Packages/User/Package Control.user-ca-bundle
 
-doc/tags
-
 vim/bundle
 vim/.netrwhist
-
-gitconfig.local

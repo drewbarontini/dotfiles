@@ -1,0 +1,232 @@
+#!/usr/bin/env ruby
+# *************************************
+#
+#   BitBar - GitHub
+#   -> Description
+#
+# *************************************
+
+# -------------------------------------
+#   Requires
+# -------------------------------------
+
+require 'open-uri'
+require 'json'
+
+# -------------------------------------
+#   Configuration
+# -------------------------------------
+
+# ----- Credentials ----- #
+
+CONFIG_FILE = "#{ ENV[ 'HOME' ] }/.dotfiles/bitbar/config/plugin.github.sh"
+
+if File.exists? CONFIG_FILE
+  system "source #{ CONFIG_FILE }"
+
+  File.readlines( CONFIG_FILE ).each do |line|
+    values = line.gsub( /export\s/, '' ).gsub( /\n/, '' ).gsub( /\'/, '' ).split( '=' )
+    ENV[ values[0] ] = values[1]
+  end
+else
+  puts "#{ CONFIG_FILE } doesn't exist. Create it!"
+  exit
+end
+
+# ----- URLs ----- #
+
+GITHUB_API         = 'https://api.github.com'
+GITHUB_REPOS_API   = "#{ GITHUB_API }/repos"
+GITHUB_USER_ISSUES = "#{ GITHUB_API }/issues?state=open"
+GITHUB_USER_REPOS  = "#{ GITHUB_API }/user/repos"
+
+# ----- Repos ----- #
+
+# If you don't want ALL of your repositories to be included, you can
+# specify an array of specific ones to include. For example:
+#
+# GITHUB_REPOS = [
+#   'owner/repository-name',
+#   'owner/another-repository-name'
+# ]
+#
+
+GITHUB_REPOS = nil
+
+# -------------------------------------
+#   Methods
+# -------------------------------------
+
+
+# Returns JSON from an endpoint
+#
+# == Parameters
+#
+# @param url [String] the URL to fetch
+#
+# == Usage
+#
+#   data << get_json( 'http://example.com/data' )
+#
+
+def get_json( url )
+  JSON.parse( get_url( url ){ |f| f.read } )
+end
+
+# Returns a URL resource
+#
+# == Parameters
+#
+# @param url [String] the URL to fetch
+#
+# == Usage
+#
+#   get_url( 'http://example.com/data' )
+#
+
+def get_url( url, &block )
+  open( url, { http_basic_authentication: [ ENV[ 'GITHUB_USERNAME' ], ENV[ 'GITHUB_ACCESS_TOKEN' ] ] } ) do |response|
+    yield response if block_given?
+  end
+end
+
+# Returns the appropriate status color code
+#
+# == Parameters
+#
+# @param status [String] the status string
+#
+# == Usage
+#
+#   determine_status_color( 'success' )
+#
+
+def determine_status_color( status )
+  case status
+  when 'pending' then return '#cea61b'
+  when 'error'   then return '#bd2c00'
+  when 'success' then return '#6cc644'
+  end
+end
+
+# Checks to see if the API rate limit is exceeded
+#
+# == Usage
+#
+#   if rate_limited_exceeded?
+#     # ...
+#   end
+#
+
+def rate_limited_exceeded?
+  limit = get_json( "#{ GITHUB_API }/rate_limit" )[ 'rate' ][ 'remaining' ]
+  limit == 0 ? true : false
+end
+
+# Returns the total number of pages of repo results
+#
+# == Usage
+#
+#   get_total_repo_pages_count
+#
+
+def get_total_repo_pages_count
+  get_url( "#{ GITHUB_USER_REPOS }?per_page=100" ) do |response|
+    link      = response.meta[ 'link' ]
+    no_quotes = link.gsub( /\"/, '' )
+    captures  = no_quotes.match( /page=(\d+)\>\; rel=last/ ).captures
+
+    return captures[0]
+  end
+end
+
+# Returns the current user's repositories
+#
+# == Usage
+#
+#   get_my_repos
+#
+
+def get_my_repos
+  repos     = []
+
+  (1..get_total_repo_pages_count.to_i).each do |index|
+    get_json( "#{ GITHUB_USER_REPOS }?per_page=100&page=#{ index }" ).each do |item|
+      repos << item[ 'full_name' ]
+    end
+  end
+
+  return repos
+end
+
+# Outputs Pull Requests assigned to me
+#
+# == Usage
+#
+#   get_my_pull_requests
+#
+
+def get_my_pull_requests
+  repos_to_get = GITHUB_REPOS.kind_of?( Array ) ? GITHUB_REPOS : get_my_repos
+
+  repos_to_get.each do |repo|
+    status    = []
+    pulls_url = "#{ GITHUB_REPOS_API }/#{ repo }/pulls?state=open"
+
+    get_json( pulls_url ).each_with_index do |item, index|
+      sha        = item[ 'head' ][ 'sha' ]
+      status_url = "#{ GITHUB_REPOS_API }/#{ repo }/commits/#{ sha }/status"
+
+      status << get_json( status_url )
+
+      unless item[ 'assignee' ].nil?
+        if item[ 'assignee' ][ 'login' ] == ENV[ 'GITHUB_USERNAME' ]
+          color = ''
+          state = status[ index ][ 'state' ]
+
+          unless status[ index ][ 'statuses' ].empty?
+            color = "| color=#{ determine_status_color( state )}"
+          end
+
+          puts "#{ repo }: ##{ item[ 'number' ] } #{ item[ 'title' ] } #{ color }  | href=#{ item[ 'html_url' ] }"
+        end
+      end
+    end
+  end
+end
+
+# Outputs Issues assigned to me across all repositories
+#
+# == Usage
+#
+#   get_my_issues
+#
+
+def get_my_issues
+  get_json( GITHUB_USER_ISSUES ).each do |item|
+    puts "#{ item[ 'repository' ][ 'full_name' ] }: ##{ item[ 'number' ] } #{ item[ 'title' ] } | href=#{ item[ 'html_url' ] }"
+  end
+end
+
+# -------------------------------------
+#   Initialize
+# -------------------------------------
+
+puts 'My GitHub'
+puts '---'
+puts 'My Pull Requests'
+
+unless rate_limited_exceeded?
+  get_my_pull_requests
+else
+  puts 'Rate limit exceeded.'
+end
+
+# puts '---'
+# puts 'My Issues'
+
+# unless rate_limited_exceeded?
+#   get_my_issues
+# else
+#   puts 'Rate limit exceeded.'
+# end
