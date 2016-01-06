@@ -42,10 +42,10 @@ end
 
 # ----- URLs ----- #
 
-GITHUB_API        = 'https://api.github.com'
-GITHUB_ISSUES     = "#{ GITHUB_API }/issues?state = open"
-GITHUB_REPOS      = "#{ GITHUB_API }/repos"
-GITHUB_USER_REPOS = "#{ GITHUB_API }/user/repos"
+GITHUB_API_URL        = 'https://api.github.com'
+GITHUB_ISSUES_URL     = "#{ GITHUB_API_URL }/issues?state = open"
+GITHUB_REPOS_URL      = "#{ GITHUB_API_URL }/repos"
+GITHUB_USER_REPOS_URL = "#{ GITHUB_API_URL }/user/repos"
 
 # ----- Repos ----- #
 
@@ -126,7 +126,7 @@ end
 #
 
 def rate_limited_exceeded?
-  limit = get_json( "#{ GITHUB_API }/rate_limit" )[ 'rate' ][ 'remaining' ]
+  limit = get_json( "#{ GITHUB_API_URL }/rate_limit" )[ 'rate' ][ 'remaining' ]
   limit == 0 ? true : false
 end
 
@@ -138,7 +138,7 @@ end
 #
 
 def get_total_repo_pages_count
-  get_url( "#{ GITHUB_USER_REPOS }?per_page=100" ) do |response|
+  get_url( "#{ GITHUB_USER_REPOS_URL }?per_page=100" ) do |response|
     link      = response.meta[ 'link' ]
     no_quotes = link.gsub( /\"/, '' )
     captures  = no_quotes.match( /page=(\d+)\>\; rel=last/ ).captures
@@ -158,7 +158,7 @@ def get_my_repos
   repos     = []
 
   (1..get_total_repo_pages_count.to_i).each do |index|
-    get_json( "#{ GITHUB_USER_REPOS }?per_page=100&page=#{ index }" ).each do |item|
+    get_json( "#{ GITHUB_USER_REPOS_URL }?per_page=100&page=#{ index }" ).each do |item|
       repos << item[ 'full_name' ]
     end
   end
@@ -178,11 +178,11 @@ def get_my_pull_requests
 
   repos_to_get.each do |repo|
     status    = []
-    pulls_url = "#{ GITHUB_REPOS }/#{ repo }/pulls?state=open"
+    pulls_url = "#{ GITHUB_REPOS_URL }/#{ repo }/pulls?state=open"
 
     get_json( pulls_url ).each_with_index do |item, index|
       sha        = item[ 'head' ][ 'sha' ]
-      status_url = "#{ GITHUB_REPOS }/#{ repo }/commits/#{ sha }/status"
+      status_url = "#{ GITHUB_REPOS_URL }/#{ repo }/commits/#{ sha }/status"
 
       status << get_json( status_url )
 
@@ -210,7 +210,7 @@ end
 #
 
 def get_my_issues
-  get_json( GITHUB_ISSUES ).each do |item|
+  get_json( GITHUB_ISSUES_URL ).each do |item|
     puts "#{ item[ 'repository' ][ 'full_name' ] }: ##{ item[ 'number' ] } #{ item[ 'title' ] } | href=#{ item[ 'html_url' ] }"
   end
 end
