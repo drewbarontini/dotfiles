@@ -25,7 +25,7 @@ require 'json'
 # export GITHUB_USERNAME='yourusername'
 # export GITHUB_ACCESS_TOKEN='youraccesstoken'
 #
-#
+
 CONFIG_FILE = "#{ ENV[ 'HOME' ] }/.dotfiles/bitbar/config/plugin.github.sh"
 
 if File.exists? CONFIG_FILE
