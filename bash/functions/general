@@ -49,6 +49,33 @@ function count_occurrences_of() {
 }
 
 # -------------------------------------
+#   Create Symlink
+#   -> Creates a symlink from two files
+# -------------------------------------
+#
+# $1 - The file to create a symlink from
+# $2 - The file the symlink is to
+#
+# Usage: `create_symlink path/to/file path/to/file`
+#
+
+function create_symlink() {
+  # Create the new file
+  touch $2
+
+  # Copy the original file contents into the new file
+  while read line; do
+   echo $line >> $2
+  done < $1
+
+  # Remove the original file
+  rm $1
+
+  # Create the symlink
+  ln -s $2 $1
+}
+
+# -------------------------------------
 #   Curl To
 #   -> Curls a file to a specified location
 # -------------------------------------
