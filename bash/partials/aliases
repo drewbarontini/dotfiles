@@ -254,6 +254,7 @@ alias rkdbr='./bin/rake db:reset'
 alias rkdbs='./bin/rake db:seed'
 alias rkdbt='./bin/rake db:setup'
 alias rkdy='rake deploy'
+alias rkt='./bin/rake -T'
 
 # -------------------------------------
 #   rbenv
