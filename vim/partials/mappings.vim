@@ -118,6 +118,7 @@ nnoremap <leader>do ggdG
 nnoremap <leader>dd :Dispatch<space>
 nnoremap <leader>db :Make!<space>
 nnoremap <leader>dc :Copen<cr>
+nnoremap <leader>df :Make<space>
 
 " ----- E ----- "
 
