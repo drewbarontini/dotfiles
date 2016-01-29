@@ -5,7 +5,7 @@
     disableAnimations: true
   core:
     themes: [
-      "atom-material-ui"
+      "one-dark-ui"
       "base16-tomorrow-dark-theme"
     ]
   editor:
