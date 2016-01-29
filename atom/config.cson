@@ -1,20 +1,20 @@
 "*":
-  "exception-reporting":
-    userId: "8473803a-195c-30cf-99ec-b8d5d3def03d"
-  welcome:
-    showOnStartup: false
-  core:
-    themes: [
-      "one-dark-ui"
-      "base16-tomorrow-dark-theme"
-    ]
-  editor:
-    invisibles: {}
-    lineHeight: 1.7
-    scrollPastEnd: true
-    fontFamily: "Source Code Pro"
-    fontSize: 15
   Zen:
     softWrap: true
   "atom-material-ui":
     disableAnimations: true
+  core:
+    themes: [
+      "atom-material-ui"
+      "base16-tomorrow-dark-theme"
+    ]
+  editor:
+    fontFamily: "Source Code Pro"
+    fontSize: 15
+    invisibles: {}
+    lineHeight: 1.7
+    scrollPastEnd: true
+  "exception-reporting":
+    userId: "8473803a-195c-30cf-99ec-b8d5d3def03d"
+  welcome:
+    showOnStartup: false
