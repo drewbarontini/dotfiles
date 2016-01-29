@@ -10,7 +10,7 @@
     ]
   editor:
     fontFamily: "Source Code Pro"
-    fontSize: 15
+    fontSize: 22
     invisibles: {}
     lineHeight: 1.7
     scrollPastEnd: true
