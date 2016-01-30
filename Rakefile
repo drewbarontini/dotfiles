@@ -144,7 +144,6 @@ task :install_vim, :run do |task, args|
       puts "#{ vundle_directory } already exists. Contining.."
     end
 
-
     run installation_order[current_step] unless args[:run] == 'single'
   end
 end
