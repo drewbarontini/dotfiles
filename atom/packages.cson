@@ -1,5 +1,6 @@
 packages: [
   "atom-material-ui"
+  "file-icons"
   "language-haml"
   "minimap"
   "package-sync"
