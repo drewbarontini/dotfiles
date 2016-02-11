@@ -33,7 +33,8 @@ Plugin 'Lokaltog/vim-easymotion'
 Plugin 'altercation/vim-colors-solarized'
 
 " Status bar
-Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 
 " Search word under cursor
 Plugin 'bronson/vim-visual-star-search'
