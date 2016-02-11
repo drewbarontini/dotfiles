@@ -17,7 +17,7 @@ source ~/.bash/functions/general
 source ~/.bash/functions/git
 source ~/.bash/functions/screengen
 source ~/.bash/functions/wrappers
-source ~/.bash/partials/prompt
+source ~/.bash/partials/prompt-powerline
 source ~/.bash/partials/overrides
 
 # -------------------------------------
