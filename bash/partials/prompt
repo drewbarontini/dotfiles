@@ -19,9 +19,9 @@ fi;
 prompt_git() {
   local s='';
   local branchName='';
-  local stat="$(git status --porcelain --branch | grep '^##' | grep -o '\[.\+\]$')";
-  local aheadN="$(echo $stat | grep -o 'ahead [[:digit:]]\+' | grep -o '[[:digit:]]\+')";
-  local behindN="$(echo $stat | grep -o 'behind [[:digit:]]\+' | grep -o '[[:digit:]]\+')";
+  local stat='';
+  local aheadN='';
+  local behindN='';
 
   # Check if the current directory is in a Git repository.
   if [ $(git rev-parse --is-inside-work-tree &>/dev/null; echo "${?}") == '0' ]; then
@@ -51,6 +51,11 @@ prompt_git() {
       if $(git rev-parse --verify refs/stash &>/dev/null); then
         s+='$';
       fi;
+
+      # Check for push and pull differences from remote.
+      stat+="$(git status --porcelain --branch | grep '^##' | grep -o '\[.\+\]$')";
+      aheadN+="$(echo $stat | grep -o 'ahead [[:digit:]]\+' | grep -o '[[:digit:]]\+')";
+      behindN+="$(echo $stat | grep -o 'behind [[:digit:]]\+' | grep -o '[[:digit:]]\+')";
 
     fi;
 
