@@ -221,6 +221,9 @@ nnoremap <silent> <leader>st :%s/\s\+$//<cr>:let @/=''<cr>
 " Open snippets
 nnoremap <leader>sd :e ~/.dotfiles/vim/UltiSnips<cr>
 
+" Shell command
+nnoremap <leader>sh :!<space>
+
 " Edit currently scoped snippets
 nnoremap <leader>se :UltiSnipsEdit<cr>
 
