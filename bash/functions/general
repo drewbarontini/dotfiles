@@ -158,6 +158,18 @@ function get_process_id() {
 #   -> Creates a directory and moves into it
 # -------------------------------------
 #
+# Usage: `mcd my-cool-directory`
+#
+
+function mcd() {
+  mkdir $1 && cd $1
+}
+
+# -------------------------------------
+#   Open
+#   -> Opens a URL
+# -------------------------------------
+#
 # Usage: `o google.com`, `o l 3000`, `o m`
 #
 
