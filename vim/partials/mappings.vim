@@ -185,6 +185,8 @@ nnoremap <leader>m :!open -a Marked\ 2.app "%"<cr>
 
 " ----- O ----- "
 
+" Open current file in Atom
+nnoremap <leader>oa :! atom '%:p'<cr>
 " Open current file in Sublime Text
 nnoremap <leader>os :! subl '%:p'<cr>
 
