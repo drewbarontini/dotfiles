@@ -50,6 +50,10 @@ brew install hub
 # -> Create, edit, compose, or convert bitmap images
 brew install imagemagick
 
+# MAS
+# -> Mac App Store command-line interface
+brew install mas
+
 # NVM
 # -> Node Version Manager
 brew install nvm
