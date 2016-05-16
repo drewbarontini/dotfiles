@@ -69,6 +69,7 @@ installation_order = [
   'install_gems',
   'install_osx_settings',
   'install_cask',
+  'install_mas_apps',
   'install_outliers',
   'install_sublime_text_settings',
   'install_pow',
@@ -340,6 +341,24 @@ task :install_cask, :run do |task, args|
     message 'Installing Cask & Applications...'
 
     system 'bash setup/cask'
+
+    run installation_order[current_step] unless args[:run] == 'single'
+  end
+end
+
+# ====================================
+#   Install MAS Apps
+# ====================================
+
+task :install_mas_apps, :run do |task, args|
+  current_step = current_step + 1
+
+  prompt 'Mac App Store Apps'
+
+  if response?('y')
+    message 'Installing Mac App Store apps...'
+
+    system 'bash setup/mas-apps'
 
     run installation_order[current_step] unless args[:run] == 'single'
   end

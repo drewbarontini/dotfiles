@@ -1,0 +1,52 @@
+#!/usr/bin/env bash
+# ****************************************************
+#
+#   Setup - Mac App Store Apps
+#
+# ****************************************************
+
+mas_install() {
+  mas list | grep $1 || mas install $1
+}
+
+# Airmail
+mas_install 918858936
+
+# Boom
+mas_install 948176063
+
+# ColorSnapper
+mas_install 969418666
+
+# Dash
+mas_install 449589707
+
+# Deliveries
+mas_install 924726344
+
+# Evernote
+mas_install 406056744
+
+# Fantastical
+mas_install 975937182
+
+# Monosnap
+mas_install 540348655
+
+# Name Mangler
+mas_install 603637384
+
+# NZBVortex
+mas_install 914250185
+
+# Slack
+mas_install 803453959
+
+# Todoist
+mas_install 585829637
+
+# Tweetbot
+mas_install 557168941
+
+# Typeface
+mas_install 1062679359
