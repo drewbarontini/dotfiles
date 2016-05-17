@@ -46,6 +46,21 @@ function git_check_repo_state() {
 }
 
 # -------------------------------------
+#   Git Copy File From Date
+#   -> Copies a given file from a date
+# -------------------------------------# ...
+#
+# $1 - the file
+# $2 - the date
+#
+# Usage: `git_copy_file_from_date index.html 2016-01-01`
+#
+
+function git_copy_file_from_date() {
+  git show HEAD@{"$2"}:./"$1"
+}
+
+# -------------------------------------
 #   Git Delete Branch For Real
 #   -> Delete both local and remote copies of a branch
 # -------------------------------------
