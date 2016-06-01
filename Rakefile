@@ -86,6 +86,12 @@ task :install do
   puts " --> Type 'start'"
   puts '---------------------------------------------'
 
+  hush_login_file = "#{ ENV['HOME'] }/.hushlogin"
+
+  unless File.exist?(hush_login_file)
+    system "touch #{ hush_login_file }"
+  end
+
   run installation_order[current_step] if response?('start')
 end
 
