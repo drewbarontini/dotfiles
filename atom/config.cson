@@ -9,8 +9,8 @@
       "base16-tomorrow-dark-theme"
     ]
   editor:
-    fontFamily: "Source Code Pro"
-    fontSize: 20
+    fontFamily: "Fira Code"
+    fontSize: 15
     invisibles: {}
     lineHeight: 1.7
     scrollPastEnd: true
