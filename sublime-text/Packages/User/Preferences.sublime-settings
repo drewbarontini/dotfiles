@@ -17,19 +17,18 @@
 		".sass-cache",
 		"tmp"
 	],
-	"font_face": "Source Code Pro",
+	"font_face": "Fira Code",
 	"font_options":
 	[
 		"subpixel_antialias"
 	],
-	"font_size": 20.0,
+	"font_size": 15.0,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
 		"CoffeeScript",
 		"Emmet",
-		"Material Theme",
 		"Modific"
 	],
 	"line_padding_bottom": 2,
