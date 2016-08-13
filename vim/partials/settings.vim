@@ -26,6 +26,10 @@ let g:airline#extensions#tabline#left_alt_sep = '|'
 set wildignore+=*/tmp/*,*/log/*,*.so,*.swp,*.zip,*/node_modules/*,*/bower_components/*
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 
+if executable('ag')
+  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+endif
+
 " -------------------------------------
 "   EasyMotion
 " -------------------------------------
