@@ -24,7 +24,7 @@ let g:airline#extensions#tabline#left_alt_sep = '|'
 " -------------------------------------
 
 set wildignore+=*/tmp/*,*/log/*,*.so,*.swp,*.zip,*/node_modules/*,*/bower_components/*
-let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
+let g:ctrlp_custom_ignore = 'bower_components\|build\|bundle\|node_modules\|public'
 
 if executable('ag')
   let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
