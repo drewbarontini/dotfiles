@@ -30,6 +30,9 @@ mas_install 406056744
 # Fantastical
 mas_install 975937182
 
+# iA Writer
+mas_install 775737590
+
 # Monosnap
 mas_install 540348655
 
@@ -50,3 +53,6 @@ mas_install 557168941
 
 # Typeface
 mas_install 1062679359
+
+# Who's On My WiFi
+# mas_install 909760813
