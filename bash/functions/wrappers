@@ -51,3 +51,18 @@ function remote_parker() {
 
   fi
 }
+
+# -------------------------------------
+#   Vim Launch
+#   -> Launches vim with file or at root
+# -------------------------------------
+#
+
+function vim_launch() {
+  # If there are arguments...
+  if [ $# -gt 0 ]; then
+    vim "$@"
+  else
+    vim ./
+  fi
+}

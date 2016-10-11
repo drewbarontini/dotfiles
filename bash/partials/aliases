@@ -329,5 +329,4 @@ alias todos="ag -i '(TODO|FIX(ME)|NOTE?):'"
 alias vim="stty stop '' -ixoff ; vim"
 
 alias f='fg'
-alias v='vim'
-alias vi='vim'
+alias v='vim_launch'
