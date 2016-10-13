@@ -4,6 +4,7 @@
   "atom-material-ui":
     disableAnimations: true
   core:
+    telemetryConsent: "limited"
     themes: [
       "one-dark-ui"
       "base16-tomorrow-dark-theme"
