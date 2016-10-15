@@ -4,13 +4,15 @@
   "atom-material-ui":
     disableAnimations: true
   core:
+    excludeVcsIgnoredPaths: false
     telemetryConsent: "limited"
     themes: [
       "one-dark-ui"
-      "base16-tomorrow-dark-theme"
+      "oceanic-next"
     ]
   editor:
     fontFamily: "Fira Code"
+    fontSize: 15
     invisibles: {}
     lineHeight: 1.7
     scrollPastEnd: true
