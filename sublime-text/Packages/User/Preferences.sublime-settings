@@ -27,7 +27,6 @@
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
-		"CoffeeScript",
 		"Emmet",
 		"Modific"
 	],
@@ -42,7 +41,7 @@
 	"tab_size": 2,
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
-	"vintage_start_in_command_mode": false,
+	"vintage_start_in_command_mode": true,
 	"wide_caret": true,
 	"word_wrap": false
 }
