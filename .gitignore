@@ -22,6 +22,7 @@ sublime-text/Packages/User/Package Control.last-run
 sublime-text/Packages/User/Package Control.merged-ca-bundle
 sublime-text/Packages/User/Package Control.system-ca-bundle
 sublime-text/Packages/User/Package Control.user-ca-bundle
+sublime-text/Packages/User/oscrypto-ca-bundle.crt
 
 vim/bundle
 vim/.netrwhist
