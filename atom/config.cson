@@ -5,10 +5,19 @@
     disableAnimations: true
   core:
     excludeVcsIgnoredPaths: false
+    ignoredNames: [
+      ".git"
+      ".hg"
+      ".svn"
+      ".DS_Store"
+      "._*"
+      "Thumbs.db"
+      "node_modules"
+    ]
     telemetryConsent: "limited"
     themes: [
       "one-dark-ui"
-      "oceanic-next"
+      "solarized-dark-syntax"
     ]
   editor:
     fontFamily: "Fira Code"
