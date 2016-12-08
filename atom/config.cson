@@ -23,7 +23,7 @@
     fontFamily: "Fira Code"
     fontSize: 15
     invisibles: {}
-    lineHeight: 1.7
+    lineHeight: 1.6
     scrollPastEnd: true
   "exception-reporting":
     userId: "8473803a-195c-30cf-99ec-b8d5d3def03d"
