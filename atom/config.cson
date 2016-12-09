@@ -20,8 +20,8 @@
       "solarized-dark-syntax"
     ]
   editor:
-    fontFamily: "Fira Code"
-    fontSize: 15
+    fontFamily: "Operator Mono"
+    fontSize: 17
     invisibles: {}
     lineHeight: 1.6
     scrollPastEnd: true
