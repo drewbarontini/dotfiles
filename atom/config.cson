@@ -13,6 +13,7 @@
       "._*"
       "Thumbs.db"
       "node_modules"
+      ".sass-cache"
     ]
     telemetryConsent: "limited"
     themes: [
