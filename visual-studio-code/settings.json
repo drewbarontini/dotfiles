@@ -1,0 +1,8 @@
+{
+    "editor.fontFamily": "Fira Code",
+    "editor.fontSize": 15,
+    "editor.lineHeight": 0,
+    "editor.rulers": [80],
+    "editor.tabSize": 2,
+    "editor.fontLigatures": true,
+}

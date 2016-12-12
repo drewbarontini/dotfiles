@@ -72,6 +72,7 @@ installation_order = [
   'install_mas_apps',
   'install_outliers',
   'install_sublime_text_settings',
+  'install_visual_studio_code_settings',
   'install_pow',
   'install_cleanup'
 ]
@@ -404,6 +405,26 @@ task :install_sublime_text_settings, :run do |task, args|
     system 'defaults write com.sublimetext.2 ApplePressAndHoldEnabled -bool false'
 
     message "Now, install Package Control. Type 'next' when you are ready."
+
+    if response?('next')
+       run installation_order[current_step] unless args[:run] == 'single'
+    end
+  end
+end
+
+# ====================================
+#   Install Visual Studio Code Settings
+# ====================================
+
+task :install_visual_studio_code_settings, :run do |task, args|
+  current_step = current_step + 1
+
+  prompt 'Visual Studio Code Settings'
+
+  if response?('y')
+    message 'Installing Visual Studio Code Settings...'
+
+    system 'bash setup/visual-studio-code'
 
     if response?('next')
        run installation_order[current_step] unless args[:run] == 'single'
