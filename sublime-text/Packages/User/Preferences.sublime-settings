@@ -25,14 +25,16 @@
 	"font_size": 17.0,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
+	"indent_guide_options": [ "draw_normal", "draw_active" ],
 	"ignored_packages":
 	[
 		"CoffeeScript",
 		"Emmet",
 		"Modific"
 	],
-	"line_padding_bottom": 2,
-	"line_padding_top": 2,
+	"line_padding_bottom": 3,
+	"line_padding_top": 3,
+	"material_theme_tabs_autowidth": true,
 	"open_files_in_new_window": false,
 	"rulers":
 	[
