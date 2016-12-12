@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# ****************************************************
+#
+#   Setup - Visual Studio Code
+#
+# ****************************************************
+
+cd ~/Library/Application\ Support/Code/User
+rm settings.json
+ln -s ~/.dotfiles/visual-studio-code/settings.json settings.json
+echo 'Symlinked ~/.dotfiles/visual-studio-code/snippets.json to Visual Studio Code Settings'
