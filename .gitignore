@@ -17,6 +17,7 @@ doc/tags
 gitconfig.local
 
 sublime-text/Packages/bz2
+sublime-text/Packages/Babel
 sublime-text/Packages/User/Package Control.cache
 sublime-text/Packages/User/Package Control.last-run
 sublime-text/Packages/User/Package Control.merged-ca-bundle
