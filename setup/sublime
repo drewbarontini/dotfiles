@@ -7,8 +7,13 @@
 
 cd ~/Library/Application\ Support/Sublime\ Text\ 3/
 rm -rf Packages
+rm -rf Installed\ Packages
+
 ln -s ~/.dotfiles/sublime-text/Packages Packages
 echo 'Symlinked ~/.dotfiles/sublime-text/Packages to Sublime Text Packages'
+
+ln -s ~/.dotfiles/sublime-text/Installed\ Packages Installed\ Packages
+echo 'Symlinked ~/.dotfiles/sublime-text/Installed\ Packages to Sublime Text Installed Packages'
 
 ln -s ~/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
 echo 'Symlinked Sublime Text subl to /usr/local/bin/subl'
