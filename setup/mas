@@ -10,10 +10,10 @@ mas_install() {
 }
 
 # Airmail
-mas_install 918858936
+# mas_install 918858936
 
 # Boom
-mas_install 948176063
+# mas_install 948176063
 
 # ColorSnapper
 mas_install 969418666
@@ -25,22 +25,22 @@ mas_install 449589707
 mas_install 924726344
 
 # Evernote
-mas_install 406056744
+# mas_install 406056744
 
 # Fantastical
 mas_install 975937182
 
 # iA Writer
-mas_install 775737590
+# mas_install 775737590
 
 # Monosnap
 mas_install 540348655
 
 # Name Mangler
-mas_install 603637384
+# mas_install 603637384
 
 # NZBVortex
-mas_install 914250185
+# mas_install 914250185
 
 # Slack
 mas_install 803453959
@@ -52,7 +52,7 @@ mas_install 585829637
 mas_install 557168941
 
 # Typeface
-mas_install 1062679359
+# mas_install 1062679359
 
 # Who's On My WiFi
 # mas_install 909760813
