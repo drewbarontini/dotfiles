@@ -4,8 +4,8 @@
 
 # ----- Versions ----- #
 
-global_ruby_version = '2.2.3'
-global_node_version = '5.0.0'
+global_ruby_version = '2.3.1'
+global_node_version = '6.9.1'
 
 # ----- Original Locations ----- #
 
@@ -369,7 +369,7 @@ task :install_mas_apps, :run do |task, args|
   if response?('y')
     message 'Installing Mac App Store apps...'
 
-    system 'bash setup/mas-apps'
+    system 'bash setup/mas'
 
     run installation_order[current_step] unless args[:run] == 'single'
   end
