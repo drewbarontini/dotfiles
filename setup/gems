@@ -6,11 +6,6 @@
 # ****************************************************
 
 gem install bundler
-gem install coffee-script
 gem install desktop
-gem install haml
-gem install middleman
 gem install rails
-gem install sass
-gem install sinatra
 gem install tmuxinator
