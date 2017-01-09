@@ -129,6 +129,8 @@ task :install_symlinks, :run do |task, args|
   if response?('y')
     message 'Symlinking files...'
 
+    system "mkdir #{ ENV['HOME'] }/.bundle"
+
     create_symlinks(original_locations, new_locations)
 
     run installation_order[current_step] unless args[:run] == 'single'
