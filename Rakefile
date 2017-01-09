@@ -409,12 +409,7 @@ task :install_sublime_text_settings, :run do |task, args|
       message 'Installing Sublime Text Settings...'
       system 'bash setup/sublime'
       system 'defaults write com.sublimetext.2 ApplePressAndHoldEnabled -bool false'
-    end
-
-    message "Now, install Package Control. Type 'next' when you are ready."
-
-    if response?('next')
-       run installation_order[current_step] unless args[:run] == 'single'
+      run installation_order[current_step] unless args[:run] == 'single'
     end
   end
 end
