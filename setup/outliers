@@ -18,7 +18,7 @@ cd ~/Downloads
 
 echo 'Downloading Heroku Toolbelt...'
 open https://toolbelt.heroku.com/
-echo 'Downloaded! Run heroku plugins:install https://github.com/heroku/heroku-accounts.git'
+echo 'Downloaded! Run heroku plugins:install heroku-accounts'
 
 # ----------------------------------------------------
 #   End
