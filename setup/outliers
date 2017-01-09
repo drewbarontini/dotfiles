@@ -13,14 +13,6 @@
 cd ~/Downloads
 
 # ----------------------------------------------------
-#   Bartender 2
-# ----------------------------------------------------
-
-echo 'Downloading Bartender 2...'
-download-zip http://www.macbartender.com/Demo/Bartender%202.zip
-echo 'Downloaded!'
-
-# ----------------------------------------------------
 #   Heroku
 # ----------------------------------------------------
 
