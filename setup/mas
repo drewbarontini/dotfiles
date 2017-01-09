@@ -18,9 +18,6 @@ mas_install() {
 # ColorSnapper
 mas_install 969418666
 
-# Dash
-mas_install 449589707
-
 # Deliveries
 mas_install 924726344
 
