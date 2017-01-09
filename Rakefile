@@ -428,9 +428,7 @@ task :install_visual_studio_code_settings, :run do |task, args|
 
     system 'bash setup/visual-studio-code'
 
-    if response?('next')
-       run installation_order[current_step] unless args[:run] == 'single'
-    end
+    run installation_order[current_step] unless args[:run] == 'single'
   end
 end
 
