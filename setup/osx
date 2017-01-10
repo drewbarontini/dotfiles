@@ -2,18 +2,18 @@
 # ****************************************************
 #
 #   Setup - OS X
-#   -> http://mths.be/osx
+#   -> http://mths.be/osx (modified)
 #
 # ****************************************************
 
 # Ask for the administrator password upfront
 sudo -v
 
-# Menu bar: disable transparency
-#defaults write NSGlobalDomain AppleEnableMenuBarTransparency -bool false
+# Hide the menu bar
+defaults write NSGlobalDomain _HIHideMenuBar -bool true
 
 # Set highlight color to gold
-#defaults write NSGlobalDomain AppleHighlightColor -string "0.984300 0.929400 0.451000"
+# defaults write NSGlobalDomain AppleHighlightColor -string "0.984300 0.929400 0.451000"
 
 # Set sidebar icon size to Small
 defaults write NSGlobalDomain NSTableViewDefaultSizeMode -int 1
@@ -71,17 +71,13 @@ defaults write com.apple.dock tilesize -int 50
 defaults write com.apple.dock mineffect -string "scale"
 
 # Wipe all (default) app icons from the Dock
-# This is only really useful when setting up a new Mac, or if you don’t use
-# the Dock to launch apps.
 defaults write com.apple.dock persistent-apps -array ""
 
 # Remove the auto-hiding Dock delay
-#defaults write com.apple.dock autohide-delay -float 0
-# Remove the animation when hiding/showing the Dock
-#defaults write com.apple.dock autohide-time-modifier -float 0
+# defaults write com.apple.dock autohide-delay -float 0
 
-# Enable the 2D Dock
-#defaults write com.apple.dock no-glass -bool true
+# Remove the animation when hiding/showing the Dock
+# defaults write com.apple.dock autohide-time-modifier -float 0
 
 # Automatically hide and show the Dock
 defaults write com.apple.dock autohide -bool true
