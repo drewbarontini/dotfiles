@@ -190,13 +190,15 @@ task :install_global_ruby, :run do |task, args|
   prompt 'global ruby'
 
   if response?('y')
-    message "Installing Ruby #{ global_ruby_version }..."
+    message "Installing Ruby #{ global_ruby_version }... Type 'next' when ready..."
 
     system "rbenv install #{ global_ruby_version }"
-    system "rbenv rehash"
-    system "rbenv global #{ global_ruby_version }"
 
-    run installation_order[current_step] unless args[:run] == 'single'
+    if response?('next')
+      system "rbenv rehash"
+      system "rbenv global #{ global_ruby_version }"
+      run installation_order[current_step] unless args[:run] == 'single'
+    end
   end
 end
 
@@ -273,15 +275,17 @@ task :install_global_node, :run do |task, args|
   prompt 'NVM'
 
   if response?('y')
-    message "Installing Node #{ global_node_version }..."
+    message "Installing Node #{ global_node_version }... Type 'next' when ready..."
 
     unless File.exists?(nvm_directory)
       system 'mkdir ~/.nvm'
-      system "nvm install #{ global_node_version }"
-      system "nvm alias default v#{ global_node_version }"
     end
 
-    run installation_order[current_step] unless args[:run] == 'single'
+    if response?('next')
+      system "nvm install #{ global_node_version }"
+      system "nvm alias default v#{ global_node_version }"
+      run installation_order[current_step] unless args[:run] == 'single'
+    end
   end
 end
 
