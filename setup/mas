@@ -15,6 +15,9 @@ mas_install() {
 # Boom
 # mas_install 948176063
 
+# Bear
+mas_install 1091189122
+
 # ColorSnapper
 mas_install 969418666
 
