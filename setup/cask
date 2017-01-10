@@ -46,6 +46,7 @@ brew cask install visual-studio-code 2> /dev/null
 # brew cask install bitbar 2> /dev/null
 # brew cask install caffeine 2> /dev/null
 # brew cask install colorschemer-studio 2> /dev/null
+# brew cask install docker 2> /dev/null
 # brew cask install evernote 2> /dev/null
 # brew cask install focus 2> /dev/null
 # brew cask install gitscout 2> /dev/null
