@@ -30,7 +30,6 @@
 	"ignored_packages":
 	[
 		"CoffeeScript",
-		"Emmet",
 		"Modific"
 	],
 	"indent_guide_options":
