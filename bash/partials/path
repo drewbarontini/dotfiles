@@ -5,7 +5,7 @@
 # *************************************
 
 PATH_DIRECTORIES=(
-  '/Applications/Postgres.app/Contents/Versions/9.4/bin'
+  '/Applications/Postgres.app/Contents/Versions/9.6/bin'
   '/usr/local/heroku/bin'
   '/usr/local/bin'
   "$HOME/.rbenv/bin"
