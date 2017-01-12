@@ -44,20 +44,16 @@ brew cask install visual-studio-code 2> /dev/null
 
 # brew cask install anvil 2> /dev/null
 # brew cask install bitbar 2> /dev/null
-# brew cask install caffeine 2> /dev/null
-# brew cask install colorschemer-studio 2> /dev/null
 # brew cask install docker 2> /dev/null
-# brew cask install evernote 2> /dev/null
 # brew cask install focus 2> /dev/null
 # brew cask install gitscout 2> /dev/null
 # brew cask install google-drive 2> /dev/null
 # brew cask install instacast 2> /dev/null
 # brew cask install liteicon 2> /dev/null
-# brew cask install mailbox 2> /dev/null
 # brew cask install mamp 2> /dev/null
+# brew cask install paw 2> /dev/null
 # brew cask install shortcat 2> /dev/null
 # brew cask install skype 2> /dev/null
-# brew cask install spotify 2> /dev/null
 # brew cask install superduper 2> /dev/null
 # brew cask install toggldesktop 2> /dev/null
 # brew cask install totalfinder 2> /dev/null
