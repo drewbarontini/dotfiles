@@ -97,5 +97,9 @@ brew install vim
 # -> Command-line webpage screenshots
 brew install webkit2png
 
+# Yarn
+# -> Package manager
+brew install yarn
+
 # Remove outdated versions from the cellar
 brew cleanup
