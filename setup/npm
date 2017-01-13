@@ -11,6 +11,7 @@ packages=(
   coffeelint
   # gh
   eslint
+  eslint-plugin-react
   grunt
   grunt-cli
   gulp
