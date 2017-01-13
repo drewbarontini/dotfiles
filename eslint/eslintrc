@@ -1,3 +1,4 @@
+// http://eslint.org/docs/rules/
 {
   "extends": ["eslint:recommended", "plugin:react/recommended"],
   "plugins": [
@@ -16,6 +17,6 @@
     }
   },
   "rules": {
-    "space-in-parens": ["error", "never"]
+    "space-in-parens": ["error", "always"]
   }
 }
