@@ -10,6 +10,7 @@ packages=(
   browser-sync
   coffeelint
   # gh
+  eslint
   grunt
   grunt-cli
   gulp
