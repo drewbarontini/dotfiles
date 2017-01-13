@@ -122,7 +122,7 @@ nnoremap <leader>df :Make<space>
 
 " ----- E ----- "
 
-" ...
+nnoremap <leader>E :Fixmyjs<cr>
 
 " ----- F ----- "
 

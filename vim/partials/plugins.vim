@@ -109,6 +109,9 @@ Plugin 'terryma/vim-multiple-cursors'
 " Requires Python (ships with Homebrew Vim)
 Plugin 'SirVer/ultisnips'
 
+" Auto fix your javascript using eslint or fixmyjs or jscs
+Plugin 'ruanyl/vim-fixmyjs'
+
 " -------------------------------------
 "   tpope
 " -------------------------------------
