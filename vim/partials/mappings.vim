@@ -122,7 +122,8 @@ nnoremap <leader>df :Make<space>
 
 " ----- E ----- "
 
-nnoremap <leader>E :Fixmyjs<cr>
+nnoremap <leader>Ef :Fixmyjs<cr>
+nnoremap <leader>Es :! eslint %<cr>
 
 " ----- F ----- "
 
