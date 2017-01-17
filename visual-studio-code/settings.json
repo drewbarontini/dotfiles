@@ -6,6 +6,6 @@
     "editor.tabSize": 2,
     "editor.fontLigatures": true,
     "terminal.integrated.shellArgs.osx": ["-l"],
-    "terminal.integrated.fontSize": 15,
+    "terminal.integrated.fontSize": 13,
     "terminal.integrated.lineHeight": 1.5,
 }
