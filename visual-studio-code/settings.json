@@ -1,11 +1,13 @@
 {
-    "editor.fontFamily": "Fira Code",
-    "editor.fontSize": 15,
+    "editor.fontFamily": "Operator Mono",
+    "editor.fontSize": 17,
     "editor.lineHeight": 0,
     "editor.rulers": [80],
     "editor.tabSize": 2,
     "editor.fontLigatures": true,
+    "files.insertFinalNewline": false,
     "terminal.integrated.shellArgs.osx": ["-l"],
+    "terminal.integrated.fontFamily": "Fira Code",
     "terminal.integrated.fontSize": 13,
     "terminal.integrated.lineHeight": 1.5,
 }
