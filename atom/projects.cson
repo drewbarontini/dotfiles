@@ -1,0 +1,16 @@
+[
+  {
+    title: "Inventory"
+    group: "Apps"
+    paths: [
+      "/Users/drewbarontini/Code/Apps/inventory"
+    ]
+  }
+  {
+    title: "Code School"
+    group: "Work"
+    paths: [
+      "/Users/drewbarontini/Code/CS/codeschool"
+    ]
+  }
+]
