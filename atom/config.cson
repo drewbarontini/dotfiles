@@ -3,6 +3,9 @@
     softWrap: true
   "atom-material-ui": {}
   core:
+    disabledPackages: [
+      "minimap"
+    ]
     excludeVcsIgnoredPaths: false
     ignoredNames: [
       ".git"
