@@ -4,6 +4,6 @@ packages: [
   "language-haml"
   "minimap"
   "package-sync"
-  "vim-mode"
+  "vim-mode-plus"
   "Zen"
 ]

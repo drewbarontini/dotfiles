@@ -26,13 +26,13 @@ atom-text-editor {
 }
 
 // To style other content in the text editor's shadow DOM, use the ::shadow expression
-atom-text-editor::shadow .cursor {
+atom-text-editor .cursor {
   // border-color: red;
 }
 
 // Custom
 
-atom-text-editor::shadow .gutter {
+atom-text-editor .gutter {
   background-color: transparent;
   color: rgba(255, 255, 255, 0.2);
 }
@@ -46,7 +46,7 @@ atom-text-editor {
     font-style: italic;
 }
 
-atom-text-editor::shadow {
+atom-text-editor {
   text-rendering: optimizeLegibility;
 
   .entity.other.attribute-name,
@@ -61,6 +61,6 @@ atom-text-editor::shadow {
   }
 }
 
-atom-text-editor::shadow .lines .cursor-line .keyword.operator {
+atom-text-editor .lines .cursor-line .keyword.operator {
   text-rendering: auto;
 }

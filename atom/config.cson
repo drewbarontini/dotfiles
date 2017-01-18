@@ -1,8 +1,7 @@
 "*":
   Zen:
     softWrap: true
-  "atom-material-ui":
-    disableAnimations: true
+  "atom-material-ui": {}
   core:
     excludeVcsIgnoredPaths: false
     ignoredNames: [
@@ -17,17 +16,19 @@
     ]
     telemetryConsent: "limited"
     themes: [
-      "one-dark-ui"
-      "solarized-dark-syntax"
+      "atom-material-ui"
+      "atom-material-syntax-dark"
     ]
   editor:
-    fontFamily: "Operator Mono"
-    fontSize: 17
+    fontFamily: "Fira Code"
+    fontSize: 15
     invisibles: {}
     lineHeight: 1.6
     scrollPastEnd: true
   "exception-reporting":
     userId: "8473803a-195c-30cf-99ec-b8d5d3def03d"
   minimap: {}
+  "package-sync":
+    createOnChange: true
   welcome:
     showOnStartup: false
