@@ -58,6 +58,9 @@ brew install mas
 # -> Node Version Manager
 brew install nvm
 
+# Postgres
+brew install postgres
+
 # Python
 brew install python
 
