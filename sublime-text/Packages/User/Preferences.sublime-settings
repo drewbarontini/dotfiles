@@ -19,12 +19,12 @@
 		".sass-cache",
 		"tmp"
 	],
-	"font_face": "Operator Mono",
+	"font_face": "Fira Code",
 	"font_options":
 	[
 		"subpixel_antialias"
 	],
-	"font_size": 17.0,
+	"font_size": 15.0,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
