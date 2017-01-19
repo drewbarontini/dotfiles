@@ -36,6 +36,7 @@
   "package-sync":
     createOnChange: true
   "vim-mode-plus":
+    automaticallyEscapeInsertModeOnActivePaneItemChange: true
     useSmartcaseForSearch: true
   welcome:
     showOnStartup: false
