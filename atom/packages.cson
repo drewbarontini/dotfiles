@@ -3,6 +3,7 @@ packages: [
   "atom-material-syntax-dark"
   "atom-material-ui"
   "docblockr"
+  "easy-motion-redux"
   "emmet"
   "file-icons"
   "git-plus"
