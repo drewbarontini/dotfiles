@@ -1,4 +1,5 @@
 packages: [
+  "aligner"
   "atom-material-syntax"
   "atom-material-syntax-dark"
   "atom-material-ui"
