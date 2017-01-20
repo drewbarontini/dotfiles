@@ -16,3 +16,41 @@
 # This file uses CoffeeScript Object Notation (CSON).
 # If you are unfamiliar with CSON, you can read more about it here:
 # https://github.com/bevry/cson#what-is-cson
+
+# *************************************
+#
+#   JavaScript Snippets
+#
+# *************************************
+
+# -------------------------------------
+#   Comments
+# -------------------------------------
+
+'.source.js':
+  'Comment (Heading)':
+    'prefix': 'coh'
+    'body': """
+      // *************************************
+      //
+      //   ${1:Comment}
+      //   ${2:-> ${3:Description}}
+      //
+      // *************************************$0
+    """
+
+'.source.js':
+  'Comment (Long)':
+    'prefix': 'col'
+    'body': """
+      // -------------------------------------
+      //   {$1:Comment}
+      // -------------------------------------$0
+    """
+
+'.source.js':
+  'Comment (Short)':
+    'prefix': 'cos'
+    'body': """
+      // ----- ${1:Comment} ----- //$0
+    """
