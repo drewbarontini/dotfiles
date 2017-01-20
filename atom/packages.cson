@@ -13,6 +13,7 @@ packages: [
   "minimap"
   "package-sync"
   "project-manager"
+  "relative-numbers"
   "vim-mode-plus"
   "Zen"
 ]
