@@ -7,6 +7,7 @@ packages: [
   "emmet"
   "file-icons"
   "git-plus"
+  "language-javascript-jsx"
   "language-haml"
   "linter"
   "linter-eslint"
