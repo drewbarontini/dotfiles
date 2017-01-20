@@ -17,6 +17,6 @@
     }
   },
   "rules": {
-    "space-in-parens": ["error", "always", { "exceptions": ["{}"] }]
+    "space-in-parens": ["error", "never"]
   }
 }
