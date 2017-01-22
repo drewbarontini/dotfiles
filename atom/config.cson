@@ -1,7 +1,10 @@
 "*":
   Zen:
     softWrap: true
-  "atom-material-ui": {}
+  "atom-material-ui":
+    colors: {}
+    tabs: {}
+    treeView: {}
   core:
     disabledPackages: [
       "minimap"
