@@ -83,3 +83,15 @@
   'console.log()':
     'prefix': 'cl'
     'body': "console.log(${1:'$2'});"
+
+  # -------------------------------------
+  #   Variables
+  # -------------------------------------
+
+  'const':
+    'prefix': 'const'
+    'body': 'const ${1:name} = $2;'
+
+  'let':
+    'prefix': 'let'
+    'body': 'let ${1:name} = $2;'
