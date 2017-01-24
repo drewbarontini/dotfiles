@@ -5,9 +5,12 @@
     colors: {}
     tabs: {}
     treeView: {}
+    ui:
+      panelContrast: true
   core:
     disabledPackages: [
       "minimap"
+      "background-tips"
     ]
     excludeVcsIgnoredPaths: false
     ignoredNames: [
