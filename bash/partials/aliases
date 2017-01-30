@@ -41,7 +41,7 @@ alias di='brew install'
 alias dl='brew list'
 alias du='brew update'
 alias dg='brew upgrade'
-alias beerfest='brew update && brew cleanup && brew prune && brew doctor'
+alias beerfest='brew update && brew upgrade && brew cleanup && brew prune && brew doctor'
 
 # -------------------------------------
 #   Dotfiles
