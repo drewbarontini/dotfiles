@@ -13,6 +13,7 @@ PATH_DIRECTORIES=(
   '/usr/sbin'
   '/sbin'
   '/opt/X11/bin'
+  '/usr/local/opt/qt5/bin'
   "$HOME/.dotfiles/bin"
 )
 
