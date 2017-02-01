@@ -4,7 +4,10 @@
   "advanced-open-file":
     createDirectories: true
   "atom-material-ui":
-    colors: {}
+    colors:
+      abaseColor: "#ffd54f"
+      accentColor: "#a28832"
+      predefinedColor: "Amber"
     tabs: {}
     treeView: {}
     ui: {}
