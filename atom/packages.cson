@@ -1,4 +1,5 @@
 packages: [
+  "advanced-open-file"
   "aligner"
   "atom-material-syntax"
   "atom-material-syntax-dark"

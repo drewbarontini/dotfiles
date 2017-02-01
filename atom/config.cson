@@ -1,6 +1,8 @@
 "*":
   Zen:
     softWrap: true
+  "advanced-open-file":
+    createDirectories: true
   "atom-material-ui":
     colors: {}
     tabs: {}
