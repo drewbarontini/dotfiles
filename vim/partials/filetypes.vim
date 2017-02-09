@@ -13,6 +13,7 @@ autocmd BufNewFile,BufRead *.haml.erb set filetype=haml
 autocmd BufNewFile,BufRead *.sass set ft=sass.css
 autocmd BufNewFile,BufRead *.sass.erb set filetype=sass
 autocmd BufNewFile,BufRead *.scss set ft=scss.css
+autocmd BufNewFile,BufRead *.js.es6 set ft=javascript
 
 " -------------------------------------
 "   Filetypes
