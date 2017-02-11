@@ -53,6 +53,7 @@ brew cask install transmit 2> /dev/null
 # brew cask install postgres 2> /dev/null
 # brew cask install shortcat 2> /dev/null
 # brew cask install skype 2> /dev/null
+# brew cask install skyfonts 2> /dev/null
 # brew cask install superduper 2> /dev/null
 # brew cask install toggldesktop 2> /dev/null
 # brew cask install totalfinder 2> /dev/null
