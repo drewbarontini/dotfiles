@@ -20,6 +20,7 @@ brew cask install cleanmymac 2> /dev/null
 brew cask install dash 2> /dev/null
 brew cask install drobo-dashboard 2> /dev/null
 brew cask install dropbox 2> /dev/null
+brew cask install duet 2> /dev/null
 brew cask install firefox 2> /dev/null
 brew cask install flux 2> /dev/null
 brew cask install google-chrome 2> /dev/null
