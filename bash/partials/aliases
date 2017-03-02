@@ -218,6 +218,8 @@ alias npm_list='npm -g ls --depth=0'
 
 # Clean up LaunchServices to remove duplicates in the 'Open With' menu
 alias ls_cleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder"
+# macOS Sierra doesn't like SSH keys for some reason
+alias add_ssh_key='ssh-add -K ~/.ssh/id_rsa'
 
 # -------------------------------------
 #   Rails Environment
