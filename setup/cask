@@ -29,6 +29,7 @@ brew cask install imageoptim 2> /dev/null
 brew cask install iterm2 2> /dev/null
 brew cask install keyboard-maestro 2> /dev/null
 brew cask install keepingyouawake 2> /dev/null
+brew cask install michaelvillar-timer 2> /dev/null>
 brew cask install moom 2> /dev/null
 brew cask install screenflow 2> /dev/null
 brew cask install screenhero 2> /dev/null
