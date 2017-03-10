@@ -29,7 +29,6 @@ brew cask install imageoptim 2> /dev/null
 brew cask install iterm2 2> /dev/null
 brew cask install keyboard-maestro 2> /dev/null
 brew cask install keepingyouawake 2> /dev/null
-brew cask install michaelvillar-timer 2> /dev/null>
 brew cask install moom 2> /dev/null
 brew cask install noun-project 2> /dev/null
 brew cask install screenflow 2> /dev/null
@@ -52,6 +51,7 @@ brew cask install transmit 2> /dev/null
 # brew cask install instacast 2> /dev/null
 # brew cask install liteicon 2> /dev/null
 # brew cask install mamp 2> /dev/null
+# brew cask install michaelvillar-timer 2> /dev/null>
 # brew cask install paw 2> /dev/null
 # brew cask install postgres 2> /dev/null
 # brew cask install shortcat 2> /dev/null
