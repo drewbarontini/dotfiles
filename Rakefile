@@ -78,6 +78,7 @@ installation_order = [
   'install_sublime_text_settings',
   'install_visual_studio_code_settings',
   'install_pow',
+  'install_terminal_italics',
   'install_cleanup'
 ]
 
@@ -451,6 +452,24 @@ task :install_pow, :run do |task, args|
     message 'Installing Pow...'
 
     system 'curl get.pow.cx | sh'
+
+    run installation_order[current_step] unless args[:run] == 'single'
+  end
+end
+
+# ====================================
+#   Install Terminal Italics
+# ====================================
+
+task :install_terminal_italics do
+  current_step = current_step + 1
+
+  prompt 'Terminal Italics'
+
+  if response?('y')
+    message 'Installing terminal italics...'
+
+    system 'bash setup/terminal-italics'
 
     run installation_order[current_step] unless args[:run] == 'single'
   end

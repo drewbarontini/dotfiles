@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# *************************************
+#
+#   Setup - Terminal Italics
+#
+# *************************************
+
+tic ~/.dotfiles/iterm/tmux-256color.terminfo
+tic ~/.dotfiles/iterm/tmux-256color.terminfo
