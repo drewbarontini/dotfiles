@@ -25,6 +25,7 @@ brew cask install firefox 2> /dev/null
 brew cask install flux 2> /dev/null
 brew cask install google-chrome 2> /dev/null
 brew cask install hazel 2> /dev/null
+brew cask install iconjar 2> /dev/null
 brew cask install imageoptim 2> /dev/null
 brew cask install iterm2 2> /dev/null
 brew cask install keyboard-maestro 2> /dev/null
