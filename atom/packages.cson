@@ -1,6 +1,7 @@
 packages: [
   "advanced-open-file"
   "aligner"
+  "atom-csscomb"
   "atom-material-syntax"
   "atom-material-syntax-dark"
   "atom-material-ui"
