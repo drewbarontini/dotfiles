@@ -25,5 +25,5 @@ set visible-stats on
 # -------------------------------------
 
 # Use <ctrl+j> and <ctrl-k> to search history
-'\C-j': history-search-forward
-'\C-k': history-search-backward
+# '\C-j': history-search-forward
+# '\C-k': history-search-backward
