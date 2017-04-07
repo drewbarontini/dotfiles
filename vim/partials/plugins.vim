@@ -67,7 +67,7 @@ Plugin 'goldfeld/vim-seek'
 Plugin 'idanarye/vim-merginal'
 
 " Distraction-free writing
-Plugin 'junegunn/goyo.vim'
+" Plugin 'junegunn/goyo.vim'
 
 " CoffeeScript language support
 Plugin 'kchmck/vim-coffee-script'
@@ -79,8 +79,8 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'mattn/emmet-vim'
 
 " GitHub Gist (and dependencies)
-Plugin 'mattn/gist-vim'
-Plugin 'mattn/webapi-vim'
+" Plugin 'mattn/gist-vim'
+" Plugin 'mattn/webapi-vim'
 
 " Better than Grep
 " Plugin 'mileszs/ack.vim'
@@ -92,10 +92,10 @@ Plugin 'mxw/vim-jsx'
 Plugin 'nathanaelkane/vim-indent-guides'
 
 " Populate the argument list from the files in the quickfix list
-Plugin 'nelstrom/vim-qargs'
+" Plugin 'nelstrom/vim-qargs'
 
 " Rethinking Vim as a tool for writing
-Plugin 'reedes/vim-pencil'
+" Plugin 'reedes/vim-pencil'
 
 " Front for ag, A.K.A. the_silver_searcher
 Plugin 'rking/ag.vim'
