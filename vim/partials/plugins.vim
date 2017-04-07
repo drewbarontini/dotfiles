@@ -23,18 +23,14 @@ Plugin 'gmarik/Vundle.vim'
 "   Plugins
 " -------------------------------------
 
-" Close matching parenthesis, quote, etc.
-Plugin 'AutoClose'
-
-" Better, visual navigation
-Plugin 'Lokaltog/vim-easymotion'
+" Git status in the sidebar
+Plugin 'airblade/vim-gitgutter'
 
 " Solarized
 Plugin 'altercation/vim-colors-solarized'
 
-" Status bar
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
+" Close matching parenthesis, quote, etc.
+Plugin 'AutoClose'
 
 " Search word under cursor
 Plugin 'bronson/vim-visual-star-search'
@@ -75,6 +71,9 @@ Plugin 'kchmck/vim-coffee-script'
 " Fuzzy file finder
 Plugin 'kien/ctrlp.vim'
 
+" Better, visual navigation
+Plugin 'Lokaltog/vim-easymotion'
+
 " Expanding abbreviations
 Plugin 'mattn/emmet-vim'
 
@@ -100,17 +99,21 @@ Plugin 'nathanaelkane/vim-indent-guides'
 " Front for ag, A.K.A. the_silver_searcher
 Plugin 'rking/ag.vim'
 
+" Auto fix your javascript using eslint or fixmyjs or jscs
+Plugin 'ruanyl/vim-fixmyjs'
+
 " Syntax checker
 Plugin 'scrooloose/syntastic'
-
-" Select, and act on, multiple words at once
-Plugin 'terryma/vim-multiple-cursors'
 
 " Requires Python (ships with Homebrew Vim)
 Plugin 'SirVer/ultisnips'
 
-" Auto fix your javascript using eslint or fixmyjs or jscs
-Plugin 'ruanyl/vim-fixmyjs'
+" Select, and act on, multiple words at once
+Plugin 'terryma/vim-multiple-cursors'
+
+" Status bar
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 
 " -------------------------------------
 "   tpope
