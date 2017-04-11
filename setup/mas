@@ -10,7 +10,7 @@ mas_install() {
 }
 
 # Airmail
-# mas_install 918858936
+mas_install 918858936
 
 # Boom
 # mas_install 948176063
