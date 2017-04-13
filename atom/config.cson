@@ -30,9 +30,10 @@
     ]
     telemetryConsent: "limited"
     themes: [
-      "atom-material-ui"
-      "atom-material-syntax-dark"
+      "apex-ui"
+      "apex-syntax"
     ]
+    titleBar: "hidden"
   "easy-motion-redux": {}
   editor:
     fontFamily: "Fira Code"
@@ -46,6 +47,8 @@
   minimap: {}
   "package-sync":
     createOnChange: true
+  tabs:
+    alwaysShowTabBar: false
   "vim-mode-plus":
     automaticallyEscapeInsertModeOnActivePaneItemChange: true
     useSmartcaseForSearch: true
