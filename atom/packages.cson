@@ -4,6 +4,7 @@ packages: [
   "apex-syntax"
   "apex-ui"
   "atom-csscomb"
+  "atom-jade"
   "atom-material-syntax"
   "atom-material-syntax-dark"
   "atom-material-ui"
