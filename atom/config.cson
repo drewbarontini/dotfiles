@@ -47,6 +47,7 @@
   minimap: {}
   "package-sync":
     createOnChange: true
+    forceOverwrite: true
   tabs:
     alwaysShowTabBar: false
   "vim-mode-plus":
