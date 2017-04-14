@@ -211,6 +211,8 @@ alias nin='npm init'
 alias nis='npm install --save'
 alias nisd='npm install --save-dev'
 alias npm_list='npm -g ls --depth=0'
+alias nr='npm run'
+alias ns='npm start'
 
 # -------------------------------------
 #   OSX
