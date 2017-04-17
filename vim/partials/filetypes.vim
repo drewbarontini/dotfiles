@@ -19,10 +19,11 @@ autocmd BufNewFile,BufRead *.js.es6 set ft=javascript
 "   Filetypes
 " -------------------------------------
 
-autocmd FileType css         set omnifunc=csscomplete#CompleteCSS
-autocmd Filetype gitcommit   setlocal spell textwidth=72
-autocmd FileType html        set omnifunc=htmlcomplete#CompleteTags
-autocmd FileType javascript  set omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType css set omnifunc=csscomplete#CompleteCSS
+autocmd Filetype gitcommit setlocal spell textwidth=72
+autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
+autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType javascript set formatprg=prettier\ --stdin\ --parser\ flow\ --single-quote\ --trailing-comma\ es6
 autocmd FileType markdown,md setlocal spell spelllang=en
 
 " -------------------------------------
