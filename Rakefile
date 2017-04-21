@@ -5,7 +5,7 @@
 # ----- Versions ----- #
 
 global_ruby_version = '2.4.1'
-global_node_version = 'v6.10.2'
+global_node_version = '6.10.2'
 
 # ----- Original Locations ----- #
 
