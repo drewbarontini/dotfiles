@@ -2,7 +2,9 @@
 
 ## Unreleased
 
-Everything is up-to-date!
+### Changed
+
+- Update Atom theme
 
 ## 1.0.0 - 2017-04-24
 
