@@ -30,8 +30,8 @@ autocmd FileType markdown,md setlocal spell spelllang=en
 "   Pencil
 " -------------------------------------
 
-augroup pencil
-  autocmd!
-  autocmd FileType markdown,md call pencil#init()
-  autocmd FileType text        call pencil#init()
-augroup END
+" augroup pencil
+"   autocmd!
+"   autocmd FileType markdown,md call pencil#init()
+"   autocmd FileType text        call pencil#init()
+" augroup END
