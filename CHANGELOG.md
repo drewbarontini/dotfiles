@@ -9,7 +9,7 @@
 
 ### Changed
 
-- Update Atom theme
+- Update Atom theme and settings
 - Update Sublime Text settings
 
 ## 1.0.0 - 2017-04-24
