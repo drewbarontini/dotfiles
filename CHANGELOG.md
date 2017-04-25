@@ -2,6 +2,11 @@
 
 ## Unreleased
 
+### Added
+
+- Newton to `setup/mas`
+- Noizio to `setup/mas`
+
 ### Changed
 
 - Update Atom theme
