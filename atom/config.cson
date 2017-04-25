@@ -5,12 +5,16 @@
     createDirectories: true
   "atom-material-ui":
     colors:
-      abaseColor: "#ffd54f"
-      accentColor: "#a28832"
-      predefinedColor: "Amber"
-    tabs: {}
-    treeView: {}
-    ui: {}
+      abaseColor: "#7e7e7e"
+      predefinedColor: "Grey"
+    tabs:
+      compactTabs: true
+      noTabMinWidth: true
+    treeView:
+      compactList: true
+    ui:
+      panelContrast: true
+      panelShadows: true
   core:
     disabledPackages: [
       "minimap"
