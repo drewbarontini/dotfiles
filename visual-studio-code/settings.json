@@ -11,4 +11,6 @@
     "terminal.integrated.fontFamily": "Fira Code",
     "terminal.integrated.fontSize": 13,
     "terminal.integrated.lineHeight": 1.5,
+    "workbench.colorTheme": "Sublime Material Theme - Dark",
+    "workbench.iconTheme": "vs-seti",
 }
