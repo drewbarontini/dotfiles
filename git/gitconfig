@@ -2,6 +2,14 @@
 
   path = ~/.gitconfig.local
 
+[alias]
+
+  undo = reset --soft HEAD^
+  # https://git-scm.com/docs/git-reset#git-reset-emgitresetemltmodegtltcommitgt
+
+  stash-all = stash save --include-untracked
+  # https://git-scm.com/docs/git-stash
+
 [color]
 
   ui = true
@@ -46,6 +54,9 @@
 [push]
 
   default = simple
+
+  followTags = true
+  # https://git-scm.com/docs/git-config#git-config-pushfollowTags
 
 [commit]
 
