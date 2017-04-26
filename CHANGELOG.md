@@ -6,6 +6,7 @@
 
 - Newton to `setup/mas`
 - Noizio to `setup/mas`
+- New options to `.gitconfig` (`git/gitconfig`)
 
 ### Changed
 
