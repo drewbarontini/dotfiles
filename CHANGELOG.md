@@ -13,6 +13,7 @@
 - Update Atom theme and settings
 - Update Sublime Text settings
 - Update Visual Studio Code settings
+- Update tmux copy/paste commands to the new syntax
 
 ## 1.0.0 - 2017-04-24
 
