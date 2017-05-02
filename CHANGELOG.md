@@ -1,6 +1,6 @@
 # Change Log
 
-## Unreleased
+## 1.1.0 - 2017-05-02
 
 ### Added
 
@@ -14,6 +14,7 @@
 - Update Sublime Text settings
 - Update Visual Studio Code settings
 - Update tmux copy/paste commands to the new syntax
+- `setup.md` to be more concise
 
 ## 1.0.0 - 2017-04-24
 
