@@ -14,16 +14,6 @@ alias ah='ag --haml'
 alias as='ag --sass'
 
 # -------------------------------------
-#   Bower
-# -------------------------------------
-
-alias bw='bower'
-alias bwi='bower install'
-alias bwis='bower install --save'
-alias bwlp='bower list -p'
-alias bws='bower search'
-
-# -------------------------------------
 #   Brew
 # -------------------------------------
 
@@ -183,24 +173,6 @@ alias coffeelint='coffeelint -f $HOME/.dotfiles/coffeelint/coffeelint.json'
 alias mas='reattach-to-user-namespace mas'
 alias pomodoro='time-police 25'
 alias timer='echo "Timer started. Stop with Ctrl-D." && date && time cat && date'
-
-# -------------------------------------
-#   MVCSS
-# -------------------------------------
-
-alias m='mvcss'
-alias ma='mvcss all'
-alias mc='mvcss copy'
-alias mf='mvcss foundation'
-alias mcf='mvcss copy foundation'
-alias mco='mvcss components'
-alias mcco='mvcss copy components'
-alias ml='mvcss-library'
-alias mlc='mvcss-library copy'
-alias mlf='mvcss-library foundation'
-alias mlcf='mvcss-library copy foundation'
-alias mlco='mvcss-library components'
-alias mlcco='mvcss-library copy components'
 
 # -------------------------------------
 #   NPM
