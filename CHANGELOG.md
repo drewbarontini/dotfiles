@@ -10,6 +10,7 @@
 ### Removed
 
 - Newton from `setup/mas`
+- Unused bash aliases
 
 ## 1.1.0 - 2017-05-02
 
