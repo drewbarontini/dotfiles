@@ -1,5 +1,11 @@
 # Change Log
 
+## Unreleased
+
+### Changed
+
+- Update Atom settings
+
 ## 1.1.0 - 2017-05-02
 
 ### Added
