@@ -6,6 +6,10 @@
 
 - Update Atom settings
 
+### Removed
+
+- Newton from `setup/mas`
+
 ## 1.1.0 - 2017-05-02
 
 ### Added
