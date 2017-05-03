@@ -5,6 +5,7 @@
 ### Changed
 
 - Update Atom settings
+- Update Visual Studio Code settings
 
 ### Removed
 
