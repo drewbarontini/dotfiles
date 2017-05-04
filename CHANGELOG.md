@@ -7,6 +7,7 @@
 - Update Atom settings
 - Update Visual Studio Code settings
 - `ld` bash alias to show human-readable filesizes
+- Bash prompt to include 😎 emoji
 
 ### Removed
 
