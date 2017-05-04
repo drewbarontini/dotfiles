@@ -271,7 +271,7 @@ alias mux='tmuxinator'
 
 alias l='ls -1F'
 alias la='ls -A1F'
-alias ld='ls -lF'
+alias ld='ls -lFh'
 alias path="echo $PATH | tr ':' '\n'"
 
 # ----- Miscellaneous ----- #
