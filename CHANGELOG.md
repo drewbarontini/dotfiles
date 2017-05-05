@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+### Added
+
+- Yarn aliases
+
 ### Changed
 
 - Update Atom settings
