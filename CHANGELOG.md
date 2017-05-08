@@ -5,6 +5,7 @@
 ### Added
 
 - Yarn aliases
+- `mongodb-compass` to `setup/cask`
 
 ### Changed
 
