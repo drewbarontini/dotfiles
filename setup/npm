@@ -6,20 +6,20 @@
 # ****************************************************
 
 packages=(
-  bower
+  # bower
   browser-sync
-  coffeelint
+  # coffeelint
   # gh
   eslint
   eslint-config-airbnb
   eslint-plugin-import
   eslint-plugin-jsx-a11y
   eslint-plugin-react
-  grunt
-  grunt-cli
+  # grunt
+  # grunt-cli
   gulp
   imageoptim-cli
-  jasmine-node
+  # jasmine-node
   # remind-me
   # remind
   speed-test
@@ -28,7 +28,7 @@ packages=(
   parker
   prettier
   psi
-  yo
+  # yo
 )
 
 for package in ${packages[@]}; do
