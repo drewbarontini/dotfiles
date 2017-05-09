@@ -14,6 +14,7 @@
 - Update Sublime Text settings
 - `ld` bash alias to show human-readable filesizes
 - Bash prompt to include 😎 emoji
+- Node modules in `setup/npm`
 
 ### Removed
 
