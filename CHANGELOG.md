@@ -6,6 +6,10 @@
 
 - New application in `setup/mas`
 
+### Removed
+
+- Mappings for `gitgutter` Vim plugin
+
 ## 1.2.0 - 2017-05-09
 
 ### Added
