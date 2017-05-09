@@ -1,5 +1,11 @@
 # Change Log
 
+## Unreleased
+
+### Added
+
+- New application in `setup/mas`
+
 ## 1.2.0 - 2017-05-09
 
 ### Added
