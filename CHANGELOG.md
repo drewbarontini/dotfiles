@@ -15,6 +15,7 @@
 - `ld` bash alias to show human-readable filesizes
 - Bash prompt to include 😎 emoji
 - Node modules in `setup/npm`
+- Global Node version to `7.10.0`
 
 ### Removed
 
