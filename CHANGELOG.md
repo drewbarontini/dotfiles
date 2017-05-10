@@ -1,10 +1,11 @@
 # Change Log
 
-## Unreleased
+## 1.3.0 - 2017-05-10
 
 ### Added
 
 - New application in `setup/mas`
+- `~/.editorconfig` file
 
 ### Removed
 
