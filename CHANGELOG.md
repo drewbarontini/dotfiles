@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+### Added
+
+- `vc` alias
+
 ### Changed
 
 - Updated Sublime Text settings
