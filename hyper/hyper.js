@@ -93,7 +93,8 @@ module.exports = {
   //   `project#1.0.1`
   plugins: [
     // 'hyper-solarized-dark'
-    'hyper-atom-dark-transparent'
+    'hyper-atom-dark-transparent',
+    'hyper-flat'
   ],
 
   // in development, you can create a directory under

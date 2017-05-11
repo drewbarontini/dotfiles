@@ -307,6 +307,7 @@ alias vim="stty stop '' -ixoff ; vim"
 
 alias f='fg'
 alias v='vim_launch'
+alias vc='vim -u NONE'
 
 # -------------------------------------
 #   Yarn
