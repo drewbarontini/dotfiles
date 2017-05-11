@@ -1,5 +1,12 @@
 # Change Log
 
+## Unreleased
+
+### Changed
+
+- Updated Sublime Text settings
+- Updated Hyper settings
+
 ## 1.3.0 - 2017-05-10
 
 ### Added
