@@ -54,8 +54,7 @@
   "package-sync":
     createOnChange: true
     forceOverwrite: true
-  tabs:
-    alwaysShowTabBar: false
+  tabs: {}
   "vim-mode-plus":
     automaticallyEscapeInsertModeOnActivePaneItemChange: true
     useSmartcaseForSearch: true
