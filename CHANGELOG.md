@@ -5,7 +5,6 @@
 ### Added
 
 - `vc` alias
-- `cheatsheet` to `setup/cask`
 
 ### Changed
 
