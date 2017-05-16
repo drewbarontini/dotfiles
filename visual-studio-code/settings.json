@@ -11,18 +11,7 @@
     "terminal.integrated.fontFamily": "Fira Code",
     "terminal.integrated.fontSize": 13,
     "terminal.integrated.lineHeight": 1.5,
-    "workbench.colorTheme": "Tomorrow Night",
+    "workbench.colorTheme": "Nord",
     "workbench.iconTheme": "vs-seti",
-    "workbench.activityBar.visible": false,
-    "workbench.colorCustomizations":{
-        "tab.activeBackground": "#1d1f21",
-        "activityBar.background": "#151718",
-        "editorGroup.background": "#1d1f21",
-        "sideBar.background": "#151718",
-        "titleBar.activeBackground": "#1d1f21",
-        "editorGroupHeader.tabsBackground": "#1d1f21",
-        "tab.inactiveBackground": "#1d1f21",
-        "tab.border": "#1d1f21",
-        "tab.inactiveForeground": "#404048"
-    }
+    "workbench.activityBar.visible": false
 }
