@@ -11,6 +11,11 @@
 
 - Updated Sublime Text settings
 - Updated Hyper settings
+- Updated Bash prompt
+
+### Removed
+
+- `vim-gitgutter` plugin
 
 ## 1.3.0 - 2017-05-10
 
