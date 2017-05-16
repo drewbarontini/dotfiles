@@ -12,6 +12,7 @@
 - Updated Sublime Text settings
 - Updated Hyper settings
 - Updated Bash prompt
+- Updated Visual Studio Code settings
 
 ### Removed
 
