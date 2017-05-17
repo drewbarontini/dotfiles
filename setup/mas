@@ -27,8 +27,6 @@ mas_install 1091189122
 # ColorSnapper
 mas_install 969418666
 
-mas_install 1055511498
-
 # Deliveries
 mas_install 924726344
 
@@ -70,6 +68,9 @@ mas_install 928871589
 
 # Slack
 mas_install 803453959
+
+# Spark
+mas_install 1176895641
 
 # Todoist
 mas_install 585829637
