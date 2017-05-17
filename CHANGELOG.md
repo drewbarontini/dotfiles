@@ -5,6 +5,7 @@
 ### Added
 
 - `vc` alias
+- `Spark.app` to `setup/mas`
 
 ### Changed
 
