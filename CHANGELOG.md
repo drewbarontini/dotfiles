@@ -6,6 +6,7 @@
 
 - `vc` alias
 - `Spark.app` to `setup/mas`
+- `setup/eslint`
 
 ### Changed
 
