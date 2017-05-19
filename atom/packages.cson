@@ -1,6 +1,7 @@
 packages: [
   "advanced-open-file"
   "aligner"
+  "aligner-javascript"
   "apex-syntax"
   "apex-ui"
   "atom-csscomb"
