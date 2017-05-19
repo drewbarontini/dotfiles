@@ -18,6 +18,7 @@
 ### Removed
 
 - `vim-gitgutter` plugin
+- Disable Gulp autocomplete
 
 ## 1.3.0 - 2017-05-10
 
