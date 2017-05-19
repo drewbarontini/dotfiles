@@ -7,6 +7,7 @@
 - `vc` alias
 - `Spark.app` to `setup/mas`
 - `setup/eslint`
+- `Pug` Sublime Text package
 
 ### Changed
 
