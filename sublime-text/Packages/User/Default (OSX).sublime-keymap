@@ -7,6 +7,5 @@
         { "key": "following_text", "operator": "regex_contains", "operand": "^[)\"\\]]", "match_all": true },
         { "key": "auto_complete_visible", "operator": "equal", "operand": false }
     ]
-  },
-  { "keys": ["ctrl+e"], "command": "noop" }
+  }
 ]
