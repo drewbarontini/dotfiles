@@ -1,16 +1,23 @@
 [
   {
-    title: "Inventory"
-    group: "Apps"
+    title: "Belay"
+    group: "Products"
     paths: [
-      "/Users/drewbarontini/Code/Apps/inventory"
+      "/Users/drewbarontini/Code/Apps/belay"
+    ]
+  },
+  {
+    title: "Creator"
+    group: "Products"
+    paths: [
+      "/Users/drewbarontini/Code/Apps/creator"
     ]
   }
   {
-    title: "Code School"
-    group: "Work"
+    title: "New North"
+    group: "Products"
     paths: [
-      "/Users/drewbarontini/Code/CS/codeschool"
+      "/Users/drewbarontini/Code/Apps/new-north"
     ]
   }
 ]
