@@ -15,6 +15,8 @@
     ui:
       panelContrast: true
       panelShadows: true
+  "atom-package-deps":
+    ignored: []
   core:
     disabledPackages: [
       "minimap"
