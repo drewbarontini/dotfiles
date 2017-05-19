@@ -307,6 +307,7 @@ task :install_npm_packages, :run do |task, args|
     message 'Installing NPM Packages...'
 
     system 'bash setup/npm'
+    system 'bash setup/eslint'
 
     run installation_order[current_step] unless args[:run] == 'single'
   end
