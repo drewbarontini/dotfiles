@@ -3,6 +3,7 @@
     softWrap: true
   "advanced-open-file":
     createDirectories: true
+    createFileInstantly: true
   "atom-material-ui":
     colors:
       abaseColor: "#7e7e7e"
