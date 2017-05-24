@@ -3,7 +3,7 @@
     title: "Belay"
     group: "Products"
     paths: [
-      "/Users/drewbarontini/Code/Apps/belay"
+      "/Users/drewbarontini/Code/Sites/belay"
     ]
   },
   {
@@ -17,7 +17,7 @@
     title: "New North"
     group: "Products"
     paths: [
-      "/Users/drewbarontini/Code/Apps/new-north"
+      "/Users/drewbarontini/Code/Sites/new-north"
     ]
   }
 ]
