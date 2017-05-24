@@ -34,6 +34,7 @@
       "Thumbs.db"
       "node_modules"
       ".sass-cache"
+      ".bundle"
     ]
     telemetryConsent: "limited"
     themes: [
