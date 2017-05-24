@@ -8,6 +8,7 @@
 - `Spark.app` to `setup/mas`
 - `setup/eslint`
 - `Pug` Sublime Text package
+- `Atom Beta` to `setup/cask`
 
 ### Changed
 
