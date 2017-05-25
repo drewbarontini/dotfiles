@@ -4,11 +4,21 @@
 
 [alias]
 
-  undo = reset --soft HEAD^
-  # https://git-scm.com/docs/git-reset#git-reset-emgitresetemltmodegtltcommitgt
+  standup = !git log --since yesterday --author=${1-$(git config user.email)} --pretty=oneline
 
-  stash-all = stash save --include-untracked
+  # https://git-scm.com/docs/git-reset#git-reset-emgitresetemltmodegtltcommitgt
+  undo = reset --soft HEAD^
+
   # https://git-scm.com/docs/git-stash
+  stash-all = stash save --include-untracked
+
+  # https://csswizardry.com/2017/05/little-things-i-like-to-do-with-git/
+  changelog = !git log --oneline --no-merges ${1-$(git describe --abbrev=0)}..HEAD
+  leaderboard = !git shortlog -sn
+  local = !git log --oneline --no-merges ${1-$(git branch -lvv | perl -ne '/^\\*.*\\[(.*?)\\]/ and print "$1\n"')}..HEAD
+  recap = !git log --all --oneline --no-merges --author=${1-$(git config user.email)}
+  today = !git log --all --since=00:00:00 --oneline --no-merges --author=${1-$(git config user.email)}
+  upstream = !git log --oneline --no-merges HEAD..${1-$(git branch -lvv | perl -ne '/^\\*.*\\[(.*?)\\]/ and print "$1\n"')}
 
 [color]
 
