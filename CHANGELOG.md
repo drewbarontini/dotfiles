@@ -1,5 +1,15 @@
 # Change Log
 
+## Unreleased
+
+### Added
+
+- New Git aliases
+
+### Removed
+
+- Unused Git aliases
+
 ## 1.4.0 - 2017-05-25
 
 ### Added
