@@ -6,6 +6,10 @@
 
 - New Git aliases
 
+### Changed
+
+- Update Atom settings
+
 ### Removed
 
 - Unused Git aliases
