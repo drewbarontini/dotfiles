@@ -16,6 +16,7 @@ packages: [
   "file-icons"
   "git-plus"
   "intentions"
+  "language-babel"
   "language-haml"
   "language-javascript-jsx"
   "linter"

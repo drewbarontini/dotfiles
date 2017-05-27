@@ -33,6 +33,14 @@ atom-text-editor .cursor {
 // Custom
 atom-text-editor {
   text-rendering: optimizeLegibility;
+
+  .syntax--comment,
+  .syntax--attribute-name.syntax--jsx,
+  .syntax--attribute-name.syntax--html {
+    font-family: 'Operator Mono' !important;
+    font-size: 16px;
+    font-style: italic !important;
+  }
 }
 
 // Hides artifact from the `relative-numbers` plugin
