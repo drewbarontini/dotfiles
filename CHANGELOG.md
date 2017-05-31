@@ -4,11 +4,13 @@
 
 ### Added
 
-- New Git aliases
+- Git aliases
+- Heroku aliases
 
 ### Changed
 
 - Update Atom settings
+- Heroku `hd` alias
 
 ### Removed
 
