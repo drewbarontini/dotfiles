@@ -121,7 +121,9 @@ alias git_update_submodules='git submodule foreach git pull'
 
 # ----- Heroku ----- #
 
-alias hd='git push heroku master'
+alias hd='gpmp'
+alias hl='heroku logs'
+alias hlt='heroku logs -t'
 alias hrc='heroku run rails console'
 alias hrk='heroku run rake'
 
