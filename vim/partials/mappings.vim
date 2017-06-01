@@ -144,6 +144,9 @@ nnoremap <leader>gb :Gbrowse<cr>
 " :Gdiff
 nnoremap <leader>gd :Gdiff<cr>
 
+" Toggle light/dark backgrounds
+nnoremap <leader>gl :let &background = (&background == "dark" ? "light" : "dark")<cr>
+
 " Sort block
 nnoremap <silent> <leader>gs (jV)k :sort<cr>
 
