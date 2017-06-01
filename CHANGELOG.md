@@ -6,6 +6,7 @@
 
 - Git aliases
 - Heroku aliases
+- `gl` Vim mapping
 
 ### Changed
 
