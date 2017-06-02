@@ -88,7 +88,7 @@ set foldcolumn=1
 " -------------------------------------
 
 set ruler
-set colorcolumn=72
+set colorcolumn=80
 
 " -------------------------------------
 "   Search
