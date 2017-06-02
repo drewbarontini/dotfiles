@@ -102,6 +102,9 @@ Plugin 'rking/ag.vim'
 " Auto fix your javascript using eslint or fixmyjs or jscs
 Plugin 'ruanyl/vim-fixmyjs'
 
+" Prettier
+Plugin 'sbdchd/neoformat'
+
 " Syntax checker
 Plugin 'scrooloose/syntastic'
 
