@@ -64,6 +64,16 @@ let g:gist_post_private = 1
 let g:gitgutter_map_keys = 0
 
 " -------------------------------------
+"   Neoformat
+" -------------------------------------
+
+let g:neoformat_javascript_prettier = {
+            \ 'exe': 'prettier',
+            \ 'args': ['--stdin', '--parser flow', '--single-quote', '--trailing-comma es5', 'es6'],
+            \ 'stdin': 1,
+            \ }
+
+" -------------------------------------
 "   Pencil
 " -------------------------------------
 

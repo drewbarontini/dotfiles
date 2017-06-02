@@ -8,6 +8,7 @@
 packages=(
   create-react-app
   eslint
+  prettier
   # imageoptim-cli
   # remind-me
   # remind
@@ -15,7 +16,6 @@ packages=(
   # stylestats
   # svgo
   # parker
-  # prettier
   # psi
   # yo
 )
