@@ -7,11 +7,13 @@
 - Git aliases
 - Heroku aliases
 - `gl` Vim mapping
+- Better Prettier support in Vim (change on save!)
 
 ### Changed
 
 - Update Atom settings
 - Heroku `hd` alias
+- Vim ruler to `80`
 
 ### Removed
 
