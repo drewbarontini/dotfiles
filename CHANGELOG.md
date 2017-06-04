@@ -8,12 +8,14 @@
 - Heroku aliases
 - `gl` Vim mapping
 - Better Prettier support in Vim (change on save!)
+- Initial stylefmt/stylelint support
 
 ### Changed
 
 - Update Atom settings
 - Heroku `hd` alias
 - Vim ruler to `80`
+- Update Sublime Text settings
 
 ### Removed
 
