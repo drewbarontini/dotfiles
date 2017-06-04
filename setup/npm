@@ -9,6 +9,9 @@ packages=(
   create-react-app
   eslint
   prettier
+  stylefmt
+  stylelint
+  # stylelint-order
   # imageoptim-cli
   # remind-me
   # remind
