@@ -16,6 +16,7 @@
 - Heroku `hd` alias
 - Vim ruler to `80`
 - Update Sublime Text settings
+- Bash prompt
 
 ### Removed
 
