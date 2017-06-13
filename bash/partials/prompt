@@ -125,5 +125,5 @@ PS1="\[\033]0;\w\007\]";
 PS1+="\[${bold}\]\n"; # newline
 PS1+="\[${green}\]\w"; # working directory
 PS1+="\$(prompt_git \"${violet}\")"; # Git repository details
-PS1+="\[${reset}\]\n➜ ";
+PS1+="\[${reset}\]\n-> ";
 export PS1;
