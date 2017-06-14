@@ -1,0 +1,5 @@
+# pip dev/test dependencies
+flake8
+pep8-naming
+pytest
+pylint
