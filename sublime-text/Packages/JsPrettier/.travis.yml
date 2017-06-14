@@ -1,0 +1,30 @@
+# recommended by travis support:
+sudo: required
+
+language:
+  - python
+  - node_js
+
+python:
+  - "2.7"
+  - "3.3"
+
+node_js:
+  - "node"
+
+cache:
+  directories:
+  # cache pylint stats
+  - $HOME/.pylint.d
+
+# install dependencies:
+install:
+  - bash scripts/install.sh
+
+# run tests:
+script:
+  - bash scripts/run_tests.sh
+
+# disable email build notifications:
+notifications:
+  email: false

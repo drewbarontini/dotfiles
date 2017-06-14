@@ -1,0 +1,208 @@
+{
+	// ----------------------------------------------------------------------
+	// Debug Mode
+	// ----------------------------------------------------------------------
+	//
+	// @param {bool} "debug"
+	// @default false
+	//
+	// When enabled (true), additional debugging information about the command
+	// and configured settings will be printed to the Sublime Text Console;
+	// useful for troubleshooting purposes.
+	// ----------------------------------------------------------------------
+
+	"debug": false,
+
+	// ----------------------------------------------------------------------
+	// Prettier CLI Path
+	// ----------------------------------------------------------------------
+	//
+	// @param {string} "prettier_cli_path"
+	// @default ""
+	//
+	// It's recommended to leave the "prettier_cli_path" value empty "".
+	// However, if Sublime Text has problems resolving the path to the
+	// `prettier` cli executable, you can explicitly specify the path here.
+	//
+	// If the `prettier_cli_path` setting is left empty (""), the path is
+	// resolved by searching locations in the following order, returning the
+	// first matched path:
+	//
+	// - Locally installed prettier, relative to the Sublime Text Project file's
+	//   root directory, e.g.: `node_modules/.bin/prettier'.
+	// - The user's home directory, e.g.: `$HOME/node_modules/.bin/prettier`.
+	// - Look in the JsPrettier Sublime Text plug-in directory for
+	//   `node_modules/.bin/prettier`.
+	// - Finally, check if prettier is installed globally,
+	//   e.g.: `yarn global add prettier`
+	//     or: `npm install -g prettier`
+	//
+	// nvm users are required to set an appropriate absolute `prettier_cli_path`
+	// (and absolute `node_path`), according to the target runtime environment.
+	//
+	// Examples:
+	//
+	//     - macOS/Linux...: "/path/to/node_modules/.bin/prettier" (absolute)
+	//                   or  "./node_modules/.bin/prettier" (relative)
+	//     - Windows.......: "C:/path/to/npm/prettier" (absolute)
+	// ----------------------------------------------------------------------
+
+	"prettier_cli_path": "",
+
+	// ----------------------------------------------------------------------
+	// Node Path
+	// ----------------------------------------------------------------------
+	//
+	// @param {bool} "node_path"
+	// @default ""
+	//
+	// It's strongly recommended to leave the "node_path" value empty "".
+	// However, if Sublime Text has problems resolving the "absolute" path to
+	// `node`, you can explicitly specify the path here.
+	//
+	// nvm users will be required to set an appropriate absolute `node_path`
+	// (and absolute `prettier_cli_path`), according to the target runtime
+	// environment.
+	//
+	// Examples:
+	//
+	//     - macOS/Linux...: "/path/to/node"
+	//     - Windows.......: "C:/path/to/node.exe"
+	// ----------------------------------------------------------------------
+
+	"node_path": "",
+
+	// ----------------------------------------------------------------------
+	// Auto Format on Save
+	// ----------------------------------------------------------------------
+	//
+	// @param {bool} "auto_format_on_save"
+	// @default false
+	//
+	// Whether or not to run the `js_prettier` command automatically
+	// on every file save.
+	// ----------------------------------------------------------------------
+
+	"auto_format_on_save": false,
+
+	// ----------------------------------------------------------------------
+	// Allow Inline Formatting
+	// ----------------------------------------------------------------------
+	//
+	// @param {bool} "allow_inline_formatting"
+	// @default false
+	//
+	// Provides the ability to format selections of in-lined code, outside of
+	// the normally supported syntaxes and file types. For example, to format a
+	// selection of JavaScript code within a PHP or HTML file. When `true`, the
+	// JsPrettier command is available for use across all Sublime Text syntaxes.
+	// ----------------------------------------------------------------------
+
+	"allow_inline_formatting": false,
+
+	// ----------------------------------------------------------------------
+	// Custom File Extensions
+	// ----------------------------------------------------------------------
+	//
+	// @param {array} "custom_file_extensions"
+	// @default []
+	//
+	// Additional custom file extensions to format.
+	//
+	// There's built-in support already for "js", "jsx", "ts", "tsx", "css",
+	// "scss" and "less" files. Any additional file extensions must be specified
+	// here (excluding the leading dot).
+	// ----------------------------------------------------------------------
+
+	"custom_file_extensions": [],
+
+	// ----------------------------------------------------------------------
+	// Additional CLI Arguments
+	// ----------------------------------------------------------------------
+	//
+	// @param {object} "additional_cli_args"
+	// @default {}
+	//
+	// A key-value pair of additional arguments to append to the prettier
+	// command.
+	//
+	// Example:
+	// {
+	//     "--no-color": "",
+	//     "--single-quote=false": "",
+	//     "--cursor-offset": -1,
+	//     "--list-different": ""
+	// }
+	//
+	// NOTE: If choosing to specify additional cli args, it is assumed that each
+	// argument is supported by the prettier-cli. Otherwise, the command will
+	// fail to run, and errors will be dumped out to the Sublime Text Console.
+	// You can also enable the debug setting to inspect the generated
+	// command-line output passed to prettier; which is also useful for quickly
+	// troubleshooting issues.
+	// ----------------------------------------------------------------------
+
+	"additional_cli_args": {},
+
+	// ----------------------------------------------------------------------
+	// Maximum File Size Limit
+	// ----------------------------------------------------------------------
+	//
+	// @param {int} "max_file_size_limit"
+	// @default -1
+	//
+	// The maximum allowed file size to format in bytes. For performance
+	// reasons, files with a greater file size than the specified
+	// `max_file_size_limit` will not be formatted.
+	//
+	// Setting the `max_file_size_limit` value to `-1` will disable file size
+	// checking (default).
+	// ----------------------------------------------------------------------
+
+	"max_file_size_limit": -1,
+
+	// ----------------------------------------------------------------------
+	// Prettier Options
+	// ----------------------------------------------------------------------
+	//
+	// Native Prettier Options. For a complete list of supported options and
+	// acceptable values, visit https://github.com/jlongster/prettier.
+	// ----------------------------------------------------------------------
+
+	"prettier_options": {
+		// Fit code within this line limit
+		"printWidth": 80,
+
+		// If true, will use single instead of double quotes
+		"singleQuote": false,
+
+		// Controls the printing of trailing commas wherever possible.
+		//
+		// Valid options:
+		//
+		// "none" - No trailing commas
+		// "es5"  - Trailing commas where valid in ES5 (objects, arrays, etc)
+		// "all"  - Trailing commas wherever possible (function arguments)
+		"trailingComma": "none",
+
+		// Controls the printing of spaces inside array and objects
+		"bracketSpacing": true,
+
+		// If true, puts the `>` of a multi-line jsx element at the end of
+		// the last line instead of being alone on the next line
+		"jsxBracketSameLine": false,
+
+		// Which parser to use. Valid options are "flow", "babylon",
+		// "typescript" and "postcss".
+		//
+		// If CSS or TypeScript is detected in Sublime Text, the parser option
+		// will always be internally overridden and set to "postcss" or
+		// "typescript" respectively.
+		"parser": "babylon",
+
+		// Whether to add a semicolon at the end of every line (semi: true), or
+		// only at the beginning of lines that may introduce
+		// ASI failures (semi: false)
+		"semi": true
+	}
+}

@@ -3,8 +3,7 @@
 	"bootstrapped": true,
 	"in_process_packages":
 	[
-		"CoffeeScript",
-		"GitGutter"
+		"CoffeeScript"
 	],
 	"installed_packages":
 	[
@@ -16,6 +15,7 @@
 		"Emmet",
 		"GhostText",
 		"GitGutter",
+		"JsPrettier",
 		"JSX",
 		"Material Theme",
 		"Modific",
