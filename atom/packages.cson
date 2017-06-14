@@ -24,6 +24,7 @@ packages: [
   "linter-ui-default"
   "minimap"
   "package-sync"
+  "prettier-atom"
   "project-manager"
   "relative-numbers"
   "vim-mode-plus"
