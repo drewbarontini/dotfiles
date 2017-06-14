@@ -30,6 +30,7 @@
 	"ignored_packages":
 	[
 		"CoffeeScript",
+		"GitGutter",
 		"Modific"
 	],
 	"indent_guide_options":
