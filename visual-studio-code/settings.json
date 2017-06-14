@@ -13,5 +13,8 @@
     "terminal.integrated.lineHeight": 1.5,
     "workbench.colorTheme": "Nord",
     "workbench.iconTheme": "vs-seti",
-    "workbench.activityBar.visible": false
+    "workbench.activityBar.visible": false,
+    "vim.disableAnnoyingNeovimMessage": true,
+    "prettier.singleQuote": true,
+    "prettier.trailingComma": "es5"
 }
