@@ -9,6 +9,7 @@
 - `gl` Vim mapping
 - Better Prettier support in Vim (change on save!)
 - Initial stylefmt/stylelint support
+- `Rocket.app` to `setup/cask`
 
 ### Changed
 
