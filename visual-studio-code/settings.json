@@ -5,6 +5,7 @@
     "editor.rulers": [80],
     "editor.tabSize": 2,
     "editor.fontLigatures": true,
+    "editor.minimap.enabled": false,
     "editor.renderIndentGuides": true,
     "files.insertFinalNewline": false,
     "terminal.integrated.shellArgs.osx": ["-l"],
