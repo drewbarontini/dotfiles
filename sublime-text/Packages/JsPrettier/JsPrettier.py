@@ -2,8 +2,9 @@
 
 import os
 import platform
+import fnmatch
 
-from re import sub
+from re import match, sub
 from subprocess import PIPE
 from subprocess import Popen
 
@@ -62,6 +63,8 @@ PRETTIER_OPTION_CLI_MAP = [
 ALLOWED_FILE_EXTENSIONS = [
     'js',
     'jsx',
+    'json',
+    'graphql',
     'ts',
     'tsx',
     'css',
@@ -354,7 +357,7 @@ class JsPrettierCommand(sublime_plugin.TextCommand):
             sublime.error_message('{0} - {1}'.format(PLUGIN_NAME, ex))
             raise
 
-    def is_visible(self):
+    def should_show_plugin(self):
         view = self.view
         if self.allow_inline_formatting is True:
             return True
@@ -366,17 +369,11 @@ class JsPrettierCommand(sublime_plugin.TextCommand):
             return True
         return False
 
+    def is_visible(self):
+        return self.should_show_plugin()
+
     def is_enabled(self):
-        view = self.view
-        if self.allow_inline_formatting is True:
-            return True
-        if self.is_source_js(view) is True:
-            return True
-        if self.is_css(view) is True:
-            return True
-        if self.is_allowed_file_ext(view) is True:
-            return True
-        return False
+        return self.should_show_plugin()
 
     def get_setting(self, key, default_value=None):
         settings = self.view.settings().get(PLUGIN_NAME)
@@ -402,9 +399,13 @@ class JsPrettierCommand(sublime_plugin.TextCommand):
         return project_value
 
     def parse_prettier_options(self, view):
+        # TODO: optimize option parsing...
         prettier_cli_args = []
+
         is_css = self.is_css(view)
         is_typescript = self.is_typescript(view)
+        is_json = self.is_json(view)
+        is_graphql = self.is_graphql(view)
 
         for mapping in PRETTIER_OPTION_CLI_MAP:
             option_name = mapping['option']
@@ -423,6 +424,20 @@ class JsPrettierCommand(sublime_plugin.TextCommand):
             if option_name == 'parser' and is_typescript:
                 prettier_cli_args.append(cli_option_name)
                 prettier_cli_args.append('typescript')
+                continue
+
+            # internally override the 'parser' for json
+            # and set the value to 'json':
+            if option_name == 'parser' and is_json:
+                prettier_cli_args.append(cli_option_name)
+                prettier_cli_args.append('json')
+                continue
+
+            # internally override the 'parser' for graphql
+            # and set the value to 'graphql':
+            if option_name == 'parser' and is_graphql:
+                prettier_cli_args.append(cli_option_name)
+                prettier_cli_args.append('graphql')
                 continue
 
             if option_value is None or str(option_value) == '':
@@ -497,9 +512,10 @@ class JsPrettierCommand(sublime_plugin.TextCommand):
               '{1}'.format(PLUGIN_NAME, self.error_message))
 
     def format_error_message(self, error_message, error_code):
-        self.error_message = '## Prettier CLI Error Output:\n\n{0}\n' \
-                             '## Prettier CLI Return Code:\n\n{1}'\
-            .format(error_message.replace('\n', '\n    '), '    {0}'
+        self.error_message = 'Prettier reported the following ' \
+                             'error:\n\n{0}\n' \
+                             'Process finished with exit code {1}\n'\
+            .format(error_message, '{0}'
                     .format(error_code))
 
     @staticmethod
@@ -529,6 +545,25 @@ class JsPrettierCommand(sublime_plugin.TextCommand):
         if scopename.startswith('source.ts') or filename.endswith('.ts'):
             return True
         if scopename.startswith('source.tsx') or filename.endswith('.tsx'):
+            return True
+        return False
+
+    @staticmethod
+    def is_json(view):
+        filename = view.file_name()
+        if not filename:
+            return False
+        scopename = view.scope_name(0)
+        if scopename.startswith('source.json') or filename.endswith('.json'):
+            return True
+        return False
+
+    @staticmethod
+    def is_graphql(view):
+        filename = view.file_name()
+        if not filename:
+            return False
+        if filename.endswith('.graphql'):
             return True
         return False
 
@@ -732,10 +767,14 @@ class JsPrettierCommand(sublime_plugin.TextCommand):
 class CommandOnSave(sublime_plugin.EventListener):
     def on_pre_save(self, view):
         if self.is_allowed(view) and self.is_enabled(view):
-            view.run_command(PLUGIN_CMD_NAME, {'force_entire_file': True})
+            if self.is_excluded(view):
+                view.run_command(PLUGIN_CMD_NAME, {'force_entire_file': True})
 
     def auto_format_on_save(self, view):
         return self.get_setting(view, 'auto_format_on_save', False)
+
+    def auto_format_on_save_excludes(self, view):
+        return self.get_setting(view, 'auto_format_on_save_excludes', [])
 
     def custom_file_extensions(self, view):
         return self.get_setting(view, 'custom_file_extensions', [])
@@ -745,6 +784,17 @@ class CommandOnSave(sublime_plugin.EventListener):
 
     def is_enabled(self, view):
         return self.auto_format_on_save(view)
+
+    def is_excluded(self, view):
+        filename = view.file_name()
+        if not filename:
+            return False
+        excludes = self.auto_format_on_save_excludes(view)
+        regmatch_ef = [fnmatch.translate(pattern) for pattern in excludes]
+        for regmatch in regmatch_ef:
+            if match(regmatch, filename):
+                return False
+        return True
 
     def is_allowed_file_ext(self, view):
         filename = view.file_name()
