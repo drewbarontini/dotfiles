@@ -86,6 +86,27 @@
 	"auto_format_on_save": false,
 
 	// ----------------------------------------------------------------------
+	// Auto Format on Save Excludes
+	// ----------------------------------------------------------------------
+	//
+	// @param {array} "auto_format_on_save_excludes"
+	// @default ["*/node_modules/*", "*/.git/*"]
+	//
+	// Ignore auto formatting when the target file, or its path resides in a
+	// particular location, and when `auto_format_on_save` is turned on.
+	//
+	// Examples:
+	//
+	//     [
+	//         "*/node_modules/*",
+	//         "*/file.js",
+	//         "*.json"
+	//     ]
+	// ----------------------------------------------------------------------
+
+	"auto_format_on_save_excludes": ["*/node_modules/*", "*/.git/*"],
+
+	// ----------------------------------------------------------------------
 	// Allow Inline Formatting
 	// ----------------------------------------------------------------------
 	//
@@ -109,9 +130,9 @@
 	//
 	// Additional custom file extensions to format.
 	//
-	// There's built-in support already for "js", "jsx", "ts", "tsx", "css",
-	// "scss" and "less" files. Any additional file extensions must be specified
-	// here (excluding the leading dot).
+	// There's built-in support already for "js", "jsx", "json", "graphql",
+	// "ts", "tsx", "css", "scss" and "less" files. Any additional file
+	// extensions must be specified here (exclude the leading dot).
 	// ----------------------------------------------------------------------
 
 	"custom_file_extensions": [],
