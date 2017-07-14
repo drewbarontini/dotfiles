@@ -58,6 +58,9 @@
   "package-sync":
     createOnChange: true
     forceOverwrite: true
+  "prettier-atom":
+    formatOnSaveOptions:
+      enabled: true
   tabs: {}
   "vim-mode-plus":
     automaticallyEscapeInsertModeOnActivePaneItemChange: true
