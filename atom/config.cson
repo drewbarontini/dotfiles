@@ -61,6 +61,10 @@
   "prettier-atom":
     formatOnSaveOptions:
       enabled: true
+    prettierOptions:
+      parser: "flow"
+      singleQuote: true
+      trailingComma: "es5"
   tabs: {}
   "vim-mode-plus":
     automaticallyEscapeInsertModeOnActivePaneItemChange: true
