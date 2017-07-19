@@ -44,10 +44,10 @@
     titleBar: "hidden"
   "easy-motion-redux": {}
   editor:
-    fontFamily: "Fira Code"
-    fontSize: 15
+    fontFamily: "Operator Mono"
+    fontSize: 16
     invisibles: {}
-    lineHeight: 1.6
+    lineHeight: 1.8
     scrollPastEnd: true
   "exception-reporting":
     userId: "8473803a-195c-30cf-99ec-b8d5d3def03d"
