@@ -12,6 +12,7 @@
 - `Rocket.app` to `setup/cask`
 - `Tweeten.app` to `setup/cask`
 - `FontBase.app` to `setup/cask`
+- New Atom snippets
 
 ### Changed
 
