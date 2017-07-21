@@ -28,5 +28,6 @@ packages: [
   "project-manager"
   "relative-numbers"
   "vim-mode-plus"
+  "vim-mode-plus-keymaps-for-surround"
   "Zen"
 ]
