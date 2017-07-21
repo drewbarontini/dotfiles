@@ -69,6 +69,7 @@
   tabs: {}
   "vim-mode-plus":
     automaticallyEscapeInsertModeOnActivePaneItemChange: true
+    clearMultipleCursorsOnEscapeInsertMode: true
     useSmartcaseForSearch: true
   welcome:
     showOnStartup: false
