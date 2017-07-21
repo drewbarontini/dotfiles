@@ -21,6 +21,7 @@
 - Vim ruler to `80`
 - Update Sublime Text settings
 - Bash prompt
+- Update Vim Solarized settings
 
 ### Removed
 
