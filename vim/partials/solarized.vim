@@ -8,5 +8,9 @@
 hi! LineNR guibg=NONE ctermbg=NONE
 hi FoldColumn ctermbg=NONE
 hi SignColumn ctermbg=NONE
-hi Comment cterm=italic
+hi htmlArg gui=italic
+hi Comment gui=italic
+hi Type    gui=italic
 hi htmlArg cterm=italic
+hi Comment cterm=italic
+hi Type    cterm=italic
