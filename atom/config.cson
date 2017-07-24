@@ -67,6 +67,8 @@
       singleQuote: true
       trailingComma: "es5"
   tabs: {}
+  tester:
+    showInlineError: true
   "vim-mode-plus":
     automaticallyEscapeInsertModeOnActivePaneItemChange: true
     clearMultipleCursorsOnEscapeInsertMode: true
