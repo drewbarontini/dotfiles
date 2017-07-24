@@ -22,6 +22,7 @@
 - Update Sublime Text settings
 - Bash prompt
 - Update Vim Solarized settings
+- Update Visual Studio Code settings
 
 ### Removed
 
