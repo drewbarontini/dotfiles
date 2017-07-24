@@ -39,6 +39,17 @@ atom-text-editor {
   .syntax--attribute-name.syntax--html {
     font-style: italic !important;
   }
+
+  .syntax--storage.syntax--type.syntax--function.syntax--arrow,
+  .syntax--keyword.syntax--operator:not(.accessor),
+  .syntax--punctuation.syntax--definition {
+    font-family: "Fira Code";
+  }
+
+  .syntax--string.syntax--quoted,
+  .syntax--string.syntax--regexp {
+    -webkit-font-feature-settings: "liga" off, "calt" off;
+  }
 }
 
 // Hides artifact from the `relative-numbers` plugin
