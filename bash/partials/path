@@ -15,6 +15,7 @@ PATH_DIRECTORIES=(
   '/opt/X11/bin'
   '/usr/local/opt/qt5/bin'
   "$HOME/.dotfiles/bin"
+  "$HOME/.nvm/versions/node/v7.10.0"
 )
 
 [[ -d ~/.dotfiles-local/bin ]] && PATH_DIRECTORIES+=("$HOME/.dotfiles-local/bin")
