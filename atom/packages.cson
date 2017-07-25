@@ -15,6 +15,7 @@ packages: [
   "emmet"
   "file-icons"
   "git-plus"
+  "hyperclick"
   "intentions"
   "language-babel"
   "language-haml"
