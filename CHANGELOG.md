@@ -24,6 +24,7 @@
 - Bash prompt
 - Update Vim Solarized settings
 - Update Visual Studio Code settings
+- Updated ESLint configuration
 
 ### Removed
 
