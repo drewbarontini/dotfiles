@@ -19,6 +19,18 @@
   "atom-package-deps":
     ignored: []
   core:
+    customFileTypes:
+      "source.ini": [
+        ".flowconfig"
+        ".hgrc"
+        ".buckconfig"
+      ]
+      "source.json": [
+        "BUCK.autodeps"
+      ]
+      "source.python": [
+        "BUCK"
+      ]
     disabledPackages: [
       "minimap"
       "background-tips"
@@ -51,9 +63,16 @@
     scrollPastEnd: true
   "exception-reporting":
     userId: "8473803a-195c-30cf-99ec-b8d5d3def03d"
+  "flow-ide":
+    showUncovered: true
   linter: {}
+  "linter-eslint":
+    eslintrcPath: "~/.eslintrc"
+    globalNodePath: "/Users/drewbarontini/.nvm/versions/node/v7.10.0"
+    useGlobalEslint: true
   "linter-ui-default":
-    panelHeight: 81
+    panelHeight: 282
+    showPanel: true
   minimap: {}
   "package-sync":
     createOnChange: true
