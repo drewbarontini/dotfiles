@@ -1,6 +1,11 @@
 // http://eslint.org/docs/rules/
 {
-  "extends": ["airbnb", "plugin:react/recommended"],
+  "extends": [
+    "airbnb",
+    "plugin:react/recommended",
+    "prettier",
+    "prettier/react"
+  ],
   "plugins": [
     "react",
     "jsx-a11y",
