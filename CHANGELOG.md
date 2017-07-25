@@ -13,6 +13,7 @@
 - `Tweeten.app` to `setup/cask`
 - `FontBase.app` to `setup/cask`
 - New Atom snippets
+- `watchman` to `setup/brew`
 
 ### Changed
 
