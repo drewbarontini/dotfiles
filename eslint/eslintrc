@@ -25,39 +25,6 @@
     }
   },
   "rules": {
-    "array-bracket-spacing": ["error", "always", {
-      "singleValue": false
-    }],
-    "brace-style": "error",
-    "comma-spacing": ["error", {
-      "before": false,
-      "after": true
-    }],
-    "func-call-spacing": ["error", "never"],
-    "indent": ["error", 2,{
-      "SwitchCase": 1
-    }],
-    "key-spacing": ["error", {
-      "beforeColon": false,
-      "afterColon": true
-    }],
-    "keyword-spacing": ["error", {
-      "before": true,
-      "after": true
-    }],
-    "max-len": ["warn", 80],
-    "newline-after-var": ["error", "always"],
-    "newline-before-return": "error",
-    "no-multi-spaces": ["error"],
-    "no-trailing-spaces": "error",
-    "object-curly-spacing": ["error", "always"],
-    "react/jsx-curly-spacing": [2, "always"],
-    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
-    "spaced-comment": ["error", "always"],
-    "space-in-parens": ["error", "never"],
-    "template-curly-spacing": ["error", "always"],
-    "quotes": ["error", "single", {
-      "avoidEscape": true
-    }]
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
   }
 }
