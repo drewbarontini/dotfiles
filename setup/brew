@@ -96,6 +96,10 @@ brew install tree
 # -> Ye' old text editor
 brew install vim
 
+# Watchman
+# -> A file watching service
+brew install watchman
+
 # webkit2png
 # -> Command-line webpage screenshots
 brew install webkit2png
