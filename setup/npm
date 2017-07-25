@@ -9,7 +9,10 @@ packages=(
   create-react-app
   eslint
   prettier
+  prettier-eslint
+  prettier-eslint-cli
   eslint-config-prettier
+  eslint-plugin-prettier
   stylefmt
   stylelint
   # stylelint-order
