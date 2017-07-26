@@ -15,6 +15,7 @@ packages=(
   eslint-plugin-prettier
   stylefmt
   stylelint
+  # babel-eslint
   # stylelint-order
   # imageoptim-cli
   # remind-me
