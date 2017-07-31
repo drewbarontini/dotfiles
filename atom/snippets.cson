@@ -136,8 +136,6 @@
       const ${1:Component} = (${2}) =>
         ${3:// ...}
 
-      // $1.propTypes = {};
-
       export default $1;
     """
 
