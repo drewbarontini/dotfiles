@@ -34,7 +34,6 @@
     disabledPackages: [
       "minimap"
       "background-tips"
-      "easy-motion-redux"
     ]
     excludeVcsIgnoredPaths: false
     ignoredNames: [

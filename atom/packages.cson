@@ -11,7 +11,6 @@ packages: [
   "atom-material-ui"
   "busy-signal"
   "docblockr"
-  "easy-motion-redux"
   "emmet"
   "file-icons"
   "git-plus"
