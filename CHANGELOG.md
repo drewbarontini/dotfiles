@@ -1,5 +1,11 @@
 # Change Log
 
+## Unreleased
+
+### Added
+
+- Add `Ulysses.app` to `setup/mas`
+
 ## 1.5.0 - 2017-07-31
 
 ### Added
