@@ -4,7 +4,12 @@
 
 ### Added
 
-- Add `Ulysses.app` to `setup/mas`
+- `Ulysses.app` to `setup/mas`
+- `language-graphql` package to Atom
+
+### Changed
+
+- Visual Studio Code settings
 
 ## 1.5.0 - 2017-07-31
 
