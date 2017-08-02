@@ -17,6 +17,7 @@ packages: [
   "hyperclick"
   "intentions"
   "language-babel"
+  "language-graphql"
   "language-haml"
   "language-javascript-jsx"
   "linter"
