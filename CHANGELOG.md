@@ -10,6 +10,7 @@
 ### Changed
 
 - Visual Studio Code settings
+- Atom settings
 
 ## 1.5.0 - 2017-07-31
 
