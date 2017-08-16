@@ -8,6 +8,7 @@
 packages=(
   create-react-app
   eslint
+  flow-bin
   prettier
   prettier-eslint
   prettier-eslint-cli
