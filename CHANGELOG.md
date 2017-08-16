@@ -6,6 +6,7 @@
 
 - `Ulysses.app` to `setup/mas`
 - `language-graphql` package to Atom
+-  `flow-bin` to `setup/npm`
 
 ### Changed
 
