@@ -9,7 +9,6 @@
       abaseColor: "#7e7e7e"
       predefinedColor: "Grey"
     tabs:
-      compactTabs: true
       noTabMinWidth: true
     treeView:
       compactList: true
