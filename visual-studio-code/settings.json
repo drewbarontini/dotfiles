@@ -18,5 +18,6 @@
   "terminal.integrated.fontSize": 13,
   "terminal.integrated.lineHeight": 1.5,
   "workbench.iconTheme": "vs-seti",
-  "vim.disableAnnoyingNeovimMessage": true
+  "vim.disableAnnoyingNeovimMessage": true,
+  "workbench.colorTheme": "Tomorrow Night Operator Mono"
 }
