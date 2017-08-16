@@ -19,12 +19,12 @@
 		".sass-cache",
 		"tmp"
 	],
-	"font_face": "Fira Code",
+	"font_face": "Operator Mono",
 	"font_options":
 	[
 		"subpixel_antialias"
 	],
-	"font_size": 15.0,
+	"font_size": 16.0,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
@@ -37,8 +37,8 @@
 		"draw_normal",
 		"draw_active"
 	],
-	"line_padding_bottom": 3,
-	"line_padding_top": 3,
+	"line_padding_bottom": 4,
+	"line_padding_top": 4,
 	"material_theme_tabs_autowidth": true,
 	"open_files_in_new_window": false,
 	"rulers":
