@@ -1,10 +1,10 @@
 module.exports = {
   config: {
     // default font size in pixels for all tabs
-    fontSize: 15,
+    fontSize: 16,
 
     // font family with optional fallbacks
-    fontFamily: 'Fira Code',
+    fontFamily: 'Operator Mono',
 
     // terminal cursor background color and opacity (hex, rgb, hsl, hsv, hwb or cmyk)
     cursorColor: 'rgba(255,255,255,0.8)',
@@ -59,7 +59,7 @@ module.exports = {
       lightBlue: '#0066ff',
       lightMagenta: '#cc00ff',
       lightCyan: '#00ffff',
-      lightWhite: '#ffffff'
+      lightWhite: '#ffffff',
     },
 
     // the shell to run when spawning a new session (i.e. /usr/local/bin/fish)
@@ -77,7 +77,7 @@ module.exports = {
     bell: false,
 
     // if true, selected text will automatically be copied to the clipboard
-    copyOnSelect: false
+    copyOnSelect: false,
 
     // URL to custom bell
     // bellSoundURL: 'http://example.com/bell.mp3',
@@ -91,18 +91,10 @@ module.exports = {
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-  plugins: [
-    'hyper-solarized-dark',
-    // 'hyper-atom-dark-transparent',
-    // 'hyper-flat',
-    // 'hyper-chesterish',
-    'hyper-tabs-enhanced',
-    'hyper-statusline'
-  ],
+  plugins: ['hyper-sierra', 'hyper-tabs-enhanced', 'hyper-statusline'],
 
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here
   // to load it and avoid it being `npm install`ed
-  localPlugins: []
+  localPlugins: [],
 };
-
