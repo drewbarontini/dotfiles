@@ -12,6 +12,7 @@
 
 - Visual Studio Code settings
 - Atom settings
+- Hyper settings
 
 ## 1.5.0 - 2017-07-31
 
