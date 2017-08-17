@@ -70,8 +70,7 @@
     globalNodePath: "/Users/drewbarontini/.nvm/versions/node/v7.10.0"
     useGlobalEslint: true
   "linter-ui-default":
-    panelHeight: 282
-    showPanel: true
+    panelHeight: 301
   minimap: {}
   "package-sync":
     createOnChange: true
