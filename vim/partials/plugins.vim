@@ -35,6 +35,9 @@ Plugin 'AutoClose'
 " Search word under cursor
 Plugin 'bronson/vim-visual-star-search'
 
+" Support React JSX
+Plugin 'chemzqm/vim-jsx-improve'
+
 " EnhancedDiff for better diffs
 Plugin 'chrisbra/vim-diff-enhanced'
 
@@ -66,7 +69,7 @@ Plugin 'idanarye/vim-merginal'
 " Plugin 'junegunn/goyo.vim'
 
 " CoffeeScript language support
-Plugin 'kchmck/vim-coffee-script'
+" Plugin 'kchmck/vim-coffee-script'
 
 " Fuzzy file finder
 Plugin 'kien/ctrlp.vim'
@@ -129,10 +132,10 @@ Plugin 'tpope/vim-abolish'
 Plugin 'tpope/vim-commentary'
 
 " Asynchronous build and test dispatcher
-Plugin 'tpope/vim-dispatch'
+" Plugin 'tpope/vim-dispatch'
 
 " Helpers for UNIX
-Plugin 'tpope/vim-eunuch'
+" Plugin 'tpope/vim-eunuch'
 
 " Git wrapper
 Plugin 'tpope/vim-fugitive'
@@ -147,7 +150,7 @@ Plugin 'tpope/vim-haml'
 Plugin 'tpope/vim-markdown'
 
 " Ruby on Rails power tools
-Plugin 'tpope/vim-rails'
+" Plugin 'tpope/vim-rails'
 
 " Enable repeating supported plugin maps with '.'
 Plugin 'tpope/vim-repeat'
