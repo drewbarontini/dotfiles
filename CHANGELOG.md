@@ -7,6 +7,7 @@
 - `Ulysses.app` to `setup/mas`
 - `language-graphql` package to Atom
 -  `flow-bin` to `setup/npm`
+- `vim-jsx-improve` plugin
 
 ### Changed
 
@@ -14,6 +15,7 @@
 - Atom settings
 - Hyper settings
 - Sublime Text settings
+- Vim active plugins
 
 ## 1.5.0 - 2017-07-31
 
