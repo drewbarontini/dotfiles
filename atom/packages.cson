@@ -1,7 +1,5 @@
 packages: [
   "advanced-open-file"
-  "aligner"
-  "aligner-javascript"
   "apex-syntax"
   "apex-ui"
   "atom-csscomb"
@@ -14,7 +12,6 @@ packages: [
   "emmet"
   "file-icons"
   "git-plus"
-  "hyperclick"
   "intentions"
   "language-babel"
   "language-graphql"
