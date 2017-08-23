@@ -121,6 +121,9 @@ Plugin 'terryma/vim-multiple-cursors'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 
+" Hybrid Color Scheme
+" Plugin 'w0ng/vim-hybrid'
+
 " Asynchronous Lint Engine
 Plugin 'w0rp/ale'
 
