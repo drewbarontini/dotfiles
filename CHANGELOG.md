@@ -17,6 +17,7 @@
 - Sublime Text settings
 - Vim active plugins
 - Replaced `syntastic` with `ale`
+- `vim/UltiSnips`
 
 ## 1.5.0 - 2017-07-31
 
