@@ -16,6 +16,7 @@
 - Hyper settings
 - Sublime Text settings
 - Vim active plugins
+- Replaced `syntastic` with `ale`
 
 ## 1.5.0 - 2017-07-31
 
