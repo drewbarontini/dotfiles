@@ -71,6 +71,8 @@
     useGlobalEslint: true
   "linter-ui-default":
     panelHeight: 301
+  "markdown-preview-plus":
+    useGitHubStyle: true
   minimap: {}
   "package-sync":
     createOnChange: true
