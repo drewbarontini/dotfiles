@@ -75,7 +75,7 @@ Plugin 'idanarye/vim-merginal'
 Plugin 'kien/ctrlp.vim'
 
 " Better, visual navigation
-Plugin 'Lokaltog/vim-easymotion'
+Plugin 'easymotion/vim-easymotion'
 
 " Expanding abbreviations
 Plugin 'mattn/emmet-vim'
