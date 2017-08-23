@@ -86,9 +86,6 @@ nnoremap <leader>= :wincmd =<cr>
 
 " Search with ag
 nnoremap <leader>aa :Ag! ''<left>
-nnoremap <leader>ac :Ag! --coffee ''<left>
-nnoremap <leader>ah :Ag! --haml ''<left>
-nnoremap <leader>as :Ag! --sass ''<left>
 
 " Search for word under cursor with ag
 nnoremap <leader>AA :Ag! <c-r><c-w><cr>
