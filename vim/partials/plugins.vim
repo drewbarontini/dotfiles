@@ -158,6 +158,9 @@ Plugin 'tpope/vim-markdown'
 " Enable repeating supported plugin maps with '.'
 Plugin 'tpope/vim-repeat'
 
+" GitHub extension for fugitive.vim
+Plugin 'tpope/vim-rhubarb'
+
 " Quoting/parenthesizing made simple
 Plugin 'tpope/vim-surround'
 
