@@ -109,7 +109,7 @@ Plugin 'ruanyl/vim-fixmyjs'
 Plugin 'sbdchd/neoformat'
 
 " Syntax checker
-Plugin 'scrooloose/syntastic'
+" Plugin 'scrooloose/syntastic'
 
 " Requires Python (ships with Homebrew Vim)
 Plugin 'SirVer/ultisnips'
@@ -120,6 +120,9 @@ Plugin 'terryma/vim-multiple-cursors'
 " Status bar
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+
+" Asynchronous Lint Engine
+Plugin 'w0rp/ale'
 
 " -------------------------------------
 "   tpope
