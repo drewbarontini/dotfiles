@@ -21,6 +21,7 @@
 - `vim/UltiSnips`
 - Solarized-specific Vim settings
 - `vimrc` settings
+- `vim-easymotion` plugin source
 
 ## 1.5.0 - 2017-07-31
 
