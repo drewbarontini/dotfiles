@@ -24,7 +24,7 @@ Plugin 'gmarik/Vundle.vim'
 " -------------------------------------
 
 " Git status in the sidebar
-" Plugin 'airblade/vim-gitgutter'
+Plugin 'airblade/vim-gitgutter'
 
 " Solarized
 Plugin 'altercation/vim-colors-solarized'
