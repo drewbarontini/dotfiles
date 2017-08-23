@@ -138,7 +138,7 @@ Plugin 'tpope/vim-commentary'
 " Plugin 'tpope/vim-dispatch'
 
 " Helpers for UNIX
-" Plugin 'tpope/vim-eunuch'
+Plugin 'tpope/vim-eunuch'
 
 " Git wrapper
 Plugin 'tpope/vim-fugitive'
