@@ -22,6 +22,7 @@
 - Solarized-specific Vim settings
 - `vimrc` settings
 - `vim-easymotion` plugin source
+- Reactivated `vim-gitgutter` plugin
 
 ## 1.5.0 - 2017-07-31
 
