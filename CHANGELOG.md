@@ -24,6 +24,10 @@
 - `vim-easymotion` plugin source
 - Reactivated `vim-gitgutter` plugin
 
+### Removed
+
+- Unused Vim mappings
+
 ## 1.5.0 - 2017-07-31
 
 ### Added
