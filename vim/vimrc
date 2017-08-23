@@ -23,7 +23,6 @@ source ~/.vim/partials/plugins.vim
 " -------------------------------------
 
 source ~/.vim/partials/visual.vim
-source ~/.vim/partials/solarized.vim
 
 " -------------------------------------
 "   Completion
