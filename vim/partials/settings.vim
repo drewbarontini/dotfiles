@@ -18,6 +18,17 @@ let g:airline#extensions#tabline#show_buffers = 0
 let g:airline#extensions#tabline#tab_min_count = 2
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
+let g:airline#extensions#ale#enabled = 1
+
+" -------------------------------------
+"   Ale
+" -------------------------------------
+
+let g:ale_fixers = {
+\ 'javascript': ['eslint'],
+\}
+
+let g:ale_fix_on_save = 1
 
 " -------------------------------------
 "   CtrlP
