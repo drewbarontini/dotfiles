@@ -8,6 +8,7 @@
 - `language-graphql` package to Atom
 -  `flow-bin` to `setup/npm`
 - `vim-jsx-improve` plugin
+- Hybrid color scheme
 
 ### Changed
 
@@ -18,6 +19,8 @@
 - Vim active plugins
 - Replaced `syntastic` with `ale`
 - `vim/UltiSnips`
+- Solarized-specific Vim settings
+- `vimrc` settings
 
 ## 1.5.0 - 2017-07-31
 
