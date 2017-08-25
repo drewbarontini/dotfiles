@@ -19,5 +19,16 @@
   "terminal.integrated.lineHeight": 1.5,
   "workbench.iconTheme": "vs-seti",
   "vim.disableAnnoyingNeovimMessage": true,
-  "workbench.colorTheme": "Tomorrow Night Operator Mono"
+  "workbench.colorTheme": "Tomorrow Night Operator Mono",
+  "sync.gist": "7ad2d71d970519c3fda31234db46e6d0",
+  "sync.lastUpload": "2017-08-24T19:15:57.940Z",
+  "sync.autoDownload": false,
+  "sync.autoUpload": false,
+  "sync.lastDownload": "",
+  "sync.forceDownload": false,
+  "sync.anonymousGist": false,
+  "sync.host": "",
+  "sync.pathPrefix": "",
+  "sync.quietSync": false,
+  "sync.askGistName": false
 }
