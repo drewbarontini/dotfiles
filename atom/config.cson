@@ -60,6 +60,7 @@
     invisibles: {}
     lineHeight: 1.8
     scrollPastEnd: true
+    showIndentGuide: true
   "exception-reporting":
     userId: "8473803a-195c-30cf-99ec-b8d5d3def03d"
   "flow-ide":
