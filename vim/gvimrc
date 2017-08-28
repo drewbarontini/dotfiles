@@ -1,6 +1,6 @@
 let g:airline#extensions#tabline#enabled = 0
-set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h15
-set linespace=1
+set guifont=Operator\ Mono:h16
+set linespace=2
 set guioptions-=l
 set guioptions-=r
 set go-=L
