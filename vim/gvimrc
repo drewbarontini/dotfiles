@@ -1,5 +1,5 @@
 let g:airline#extensions#tabline#enabled = 0
-set guifont=Operator\ Mono:h16
+set guifont=Operator\ Mono\ Book:h16
 set linespace=2
 set guioptions-=l
 set guioptions-=r
