@@ -23,6 +23,7 @@
 - `vimrc` settings
 - `vim-easymotion` plugin source
 - Reactivated `vim-gitgutter` plugin
+- `gvimrc`
 
 ### Removed
 
