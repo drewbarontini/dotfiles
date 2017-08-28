@@ -60,6 +60,7 @@ brew cask install quitter 2> /dev/null
 # brew cask install google-drive 2> /dev/null
 # brew cask install instacast 2> /dev/null
 # brew cask install liteicon 2> /dev/null
+# brew cask install macvim 2> /dev/null
 # brew cask install mamp 2> /dev/null
 # brew cask install michaelvillar-timer 2> /dev/null>
 # brew cask install paw 2> /dev/null
