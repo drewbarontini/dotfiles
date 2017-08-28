@@ -38,14 +38,14 @@ atom-text-editor {
   .syntax--attribute-name.syntax--jsx,
   .syntax--attribute-name.syntax--html,
   .syntax--module.syntax--control.syntax--js,
-  .syntax--storage.syntax--type.syntax--js:not(.syntax--arrow),
+  .syntax--storage.syntax--type.syntax--js:not(.syntax--arrow):not(.syntax--function),
   .syntax--keyword.syntax--typedef.syntax--flowtype,
   .syntax--variable.syntax--this.syntax--js {
     font-style: italic !important;
   }
 
   .syntax--storage.syntax--type.syntax--function.syntax--arrow,
-  .syntax--keyword.syntax--operator.syntax--logical,
+  .syntax--keyword.syntax--operator.syntax--logical:not(.syntax--control),
   .syntax--keyword.syntax--operator.syntax--comparison,
   .syntax--keyword.syntax--operator.syntax--relational,
   .syntax--keyword.syntax--operator.syntax--arithmetic,
