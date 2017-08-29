@@ -11,10 +11,10 @@
 #
 # ... which performs the following operations:
 #
-# - Bumps 'package.json' file to passed <semver> arg (1).
-# - Commit and push the change (on master)
-# - Create and push <semver> git tag
-# - publish the npm package
+# - Bumps 'package.json' version field to the passed <semver> arg (1).
+# - Commit and push the change (to master).
+# - Create and push passed <semver> arg (1) git tag.
+# - Run npm publish.
 #
 # Example:
 #
@@ -50,13 +50,12 @@ fi
 echo
 echo "> Bump package.json version:"
 echo
-sed -E s/'"version"\: "[0-9]+\.[0-9]+\.[0-9]+"'/'"version"\: "'"$VERSION"'"'/ package.json \
-    > /tmp/package.json && \
-    mv /tmp/package.json package.json
+TMP_PKG_FILE="${TMPDIR:-/tmp}/package.json.$$"
+sed -E s/'"version"\: "[0-9]+\.[0-9]+\.[0-9]+"'/'"version"\: "'"$VERSION"'"'/ package.json > "$TMP_PKG_FILE" && mv "$TMP_PKG_FILE" package.json
 grep "$VERSION" -C 1 package.json
 
 if [[ ! $(git diff --stat) =~ "1 file changed, 1 insertion(+), 1 deletion(-)" ]]; then
-    echo "WARNING! Expected exactly 2 changes in 2 files after replacing version number. Bailing! (check git status and git diff)"
+    echo "WARNING! Expected exactly 1 change in 1 file after replacing version number. Bailing! (check git status and git diff)"
     exit 1
 fi
 
