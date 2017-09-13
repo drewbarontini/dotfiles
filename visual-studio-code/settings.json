@@ -8,6 +8,7 @@
   "editor.tabSize": 2,
   "editor.minimap.enabled": false,
   "editor.renderIndentGuides": true,
+  "emmet.triggerExpansionOnTab": true,
   "files.insertFinalNewline": false,
   "flow.useNPMPackagedFlow": true,
   "javascript.validate.enable": false,
