@@ -66,8 +66,8 @@
 	//
 	// Examples:
 	//
-	//     - macOS/Linux...: "/path/to/node"
-	//     - Windows.......: "C:/path/to/node.exe"
+	// macOS/Linux...: "node_path": "/path/to/node"
+	// Windows.......: "node_path": "C:/path/to/node.exe"
 	// ----------------------------------------------------------------------
 
 	"node_path": "",
@@ -97,14 +97,17 @@
 	//
 	// Examples:
 	//
-	//     [
+	//     "auto_format_on_save_excludes": [
 	//         "*/node_modules/*",
 	//         "*/file.js",
 	//         "*.json"
 	//     ]
 	// ----------------------------------------------------------------------
 
-	"auto_format_on_save_excludes": ["*/node_modules/*", "*/.git/*"],
+	"auto_format_on_save_excludes": [
+		"*/node_modules/*",
+		"*/.git/*"
+	],
 
 	// ----------------------------------------------------------------------
 	// Allow Inline Formatting
@@ -130,40 +133,12 @@
 	//
 	// Additional custom file extensions to format.
 	//
-	// There's built-in support already for "js", "jsx", "json", "graphql",
-	// "ts", "tsx", "css", "scss" and "less" files. Any additional file
-	// extensions must be specified here (exclude the leading dot).
+	// There's built-in support already for "js", "jsx", "json", "graphql/gql",
+	// "ts", "tsx", "css", "scss" and "less". Any additional file extensions
+	// must be specified here, without the leading dot.
 	// ----------------------------------------------------------------------
 
 	"custom_file_extensions": [],
-
-	// ----------------------------------------------------------------------
-	// Additional CLI Arguments
-	// ----------------------------------------------------------------------
-	//
-	// @param {object} "additional_cli_args"
-	// @default {}
-	//
-	// A key-value pair of additional arguments to append to the prettier
-	// command.
-	//
-	// Example:
-	// {
-	//     "--no-color": "",
-	//     "--single-quote=false": "",
-	//     "--cursor-offset": -1,
-	//     "--list-different": ""
-	// }
-	//
-	// NOTE: If choosing to specify additional cli args, it is assumed that each
-	// argument is supported by the prettier-cli. Otherwise, the command will
-	// fail to run, and errors will be dumped out to the Sublime Text Console.
-	// You can also enable the debug setting to inspect the generated
-	// command-line output passed to prettier; which is also useful for quickly
-	// troubleshooting issues.
-	// ----------------------------------------------------------------------
-
-	"additional_cli_args": {},
 
 	// ----------------------------------------------------------------------
 	// Maximum File Size Limit
@@ -183,11 +158,44 @@
 	"max_file_size_limit": -1,
 
 	// ----------------------------------------------------------------------
+	// Additional CLI Arguments
+	// ----------------------------------------------------------------------
+	//
+	// @param {object} "additional_cli_args"
+	// @default {}
+	//
+	// A key-value pair of additional arguments to append to the prettier
+	// command.
+	//
+	// Examples:
+	//
+	//     "additional_cli_args": {
+	//         "--config": "path/to/my/custom/.prettierrc",
+	//         "--no-config": "",
+	//         "--with-node-modules": ""
+	//         "--ignore-path": "path/to/.prettierignore"
+	//         "--config-precedence": "file-override"
+	//     }
+	//
+	// NOTE: If choosing to specify additional cli args, it is assumed that each
+	// argument is supported by the prettier-cli. Otherwise, the command will
+	// fail to run, and errors will be dumped out to the Sublime Text Console.
+	//
+	// You can also enable the debug setting to inspect the generated
+	// command-line output passed to prettier; which is also useful for quickly
+	// troubleshooting issues.
+	// ----------------------------------------------------------------------
+
+	"additional_cli_args": {},
+
+	// ----------------------------------------------------------------------
 	// Prettier Options
 	// ----------------------------------------------------------------------
 	//
-	// Native Prettier Options. For a complete list of supported options and
-	// acceptable values, visit https://github.com/jlongster/prettier.
+	// Native Prettier options are defined here.
+	//
+	// For a complete list of supported options and acceptable values,
+	// visit https://github.com/jlongster/prettier.
 	// ----------------------------------------------------------------------
 
 	"prettier_options": {

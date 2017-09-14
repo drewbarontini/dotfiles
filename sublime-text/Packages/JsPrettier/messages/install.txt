@@ -81,8 +81,8 @@
                     "auto_format_on_save_excludes": ["*/node_modules/*", "*/.git/*"],
                     "allow_inline_formatting": false,
                     "custom_file_extensions": [],
-                    "additional_cli_args": {},
                     "max_file_size_limit": -1,
+                    "additional_cli_args": {},
                     "prettier_options": {
                         "printWidth": 80,
                         "singleQuote": false,
