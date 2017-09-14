@@ -27,6 +27,7 @@ packages: [
   "oceanic-next"
   "package-sync"
   "prettier-atom"
+  "pristine-ui"
   "project-manager"
   "relative-numbers"
   "vim-mode-plus"
