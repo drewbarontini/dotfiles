@@ -54,6 +54,10 @@ brew install imagemagick
 # -> Mac App Store command-line interface
 brew install mas
 
+# Neovim
+# -> Vim port
+brew install neovim
+
 # NVM
 # -> Node Version Manager
 brew install nvm
