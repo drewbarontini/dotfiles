@@ -50,7 +50,7 @@
     ]
     telemetryConsent: "limited"
     themes: [
-      "one-dark-ui"
+      "pristine-ui"
       "oceanic-next"
     ]
     titleBar: "hidden"
@@ -89,6 +89,8 @@
       parser: "flow"
       singleQuote: true
       trailingComma: "es5"
+  "pristine-ui":
+    tabSizing: "Maximum"
   tabs: {}
   tester:
     showInlineError: true
