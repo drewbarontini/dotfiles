@@ -28,6 +28,7 @@
 - `gvimrc`
 - Global Node version
 - Visual Studio Code settings
+- `vim`/`tmux` navigation settings
 
 ### Removed
 
