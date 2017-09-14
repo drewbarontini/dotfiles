@@ -73,6 +73,7 @@
     useGlobalEslint: true
   "linter-ui-default":
     panelHeight: 301
+    showPanel: true
   "markdown-preview-plus":
     useGitHubStyle: true
   minimap: {}
@@ -89,8 +90,7 @@
       parser: "flow"
       singleQuote: true
       trailingComma: "es5"
-  "pristine-ui":
-    tabSizing: "Maximum"
+  "pristine-ui": {}
   tabs: {}
   tester:
     showInlineError: true
