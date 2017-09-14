@@ -49,16 +49,16 @@
     ]
     telemetryConsent: "limited"
     themes: [
-      "atom-material-ui"
-      "atom-material-syntax-dark"
+      "one-dark-ui"
+      "oceanic-next"
     ]
     titleBar: "hidden"
   "easy-motion-redux": {}
   editor:
     fontFamily: "Operator Mono"
-    fontSize: 16
+    fontSize: 15
     invisibles: {}
-    lineHeight: 1.8
+    lineHeight: 1.6
     scrollPastEnd: true
     showIndentGuide: true
   "exception-reporting":
