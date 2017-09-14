@@ -253,6 +253,15 @@ alias txs='tmux source-file ~/.tmux.conf'
 alias mux='tmuxinator'
 
 # -------------------------------------
+#   tpm
+# -------------------------------------
+
+alias tpmi='~/.tmux/plugins/tpm/bin/install_plugins'
+alias tpmu='~/.tmux/plugins/tpm/bin/update_plugins'
+alias tpmua='~/.tmux/plugins/tpm/bin/update_plugins all'
+alias tpmr='~/.tmux/plugins/tpm/bin/clean_plugins'
+
+# -------------------------------------
 #   Unix
 # -------------------------------------
 
