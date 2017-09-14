@@ -9,6 +9,7 @@
 -  `flow-bin` to `setup/npm`
 - `vim-jsx-improve` plugin
 - Hybrid color scheme
+- `neovim` to `setup/brew`
 
 ### Changed
 
@@ -24,6 +25,8 @@
 - `vim-easymotion` plugin source
 - Reactivated `vim-gitgutter` plugin
 - `gvimrc`
+- Global Node version
+- Visual Studio Code settings
 
 ### Removed
 
