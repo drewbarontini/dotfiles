@@ -23,10 +23,11 @@ noremap <right> 1<c-w><
 
 " ----- Window Navigation ----- "
 
-nnoremap <c-h> <c-w>h
-nnoremap <c-j> <c-w>j
-nnoremap <c-k> <c-w>k
-nnoremap <c-l> <c-w>l
+nnoremap <silent> <c-h> :TmuxNavigateLeft<cr>
+nnoremap <silent> <c-j> :TmuxNavigateDown<cr>
+nnoremap <silent> <c-k> :TmuxNavigateUp<cr>
+nnoremap <silent> <c-l> :TmuxNavigateRight<cr>
+nnoremap <silent> <c-h> :TmuxNavigatePrevious<cr>
 
 " ----- Move Visual Block ----- "
 

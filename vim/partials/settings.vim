@@ -118,3 +118,9 @@ let g:tmuxline_preset = {
   \'z'    : '#(battery-percentage)',
   \ 'options': {
     \'status-justify': 'left' } }
+
+" -------------------------------------
+"   Tmux Navigator
+" -------------------------------------
+
+let g:tmux_navigator_no_mappings = 1
