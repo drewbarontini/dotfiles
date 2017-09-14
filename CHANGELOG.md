@@ -11,6 +11,7 @@
 - Hybrid color scheme
 - `neovim` to `setup/brew`
 - `tpm` aliases
+- `pristine-ui` Atom package
 
 ### Changed
 
