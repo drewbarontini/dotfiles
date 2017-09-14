@@ -10,6 +10,7 @@
 - `vim-jsx-improve` plugin
 - Hybrid color scheme
 - `neovim` to `setup/brew`
+- `tpm` aliases
 
 ### Changed
 
