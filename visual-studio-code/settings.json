@@ -1,9 +1,9 @@
 {
   "editor.fontFamily": "Operator Mono",
   "editor.fontLigatures": true,
-  "editor.fontSize": 16,
+  "editor.fontSize": 15,
   "editor.formatOnSave": true,
-  "editor.lineHeight": 30,
+  "editor.lineHeight": 25,
   "editor.rulers": [80],
   "editor.tabSize": 2,
   "editor.minimap.enabled": false,
@@ -20,7 +20,6 @@
   "terminal.integrated.lineHeight": 1.5,
   "workbench.iconTheme": "vs-seti",
   "vim.disableAnnoyingNeovimMessage": true,
-  "workbench.colorTheme": "Tomorrow Night Operator Mono",
   "sync.gist": "7ad2d71d970519c3fda31234db46e6d0",
   "sync.lastUpload": "2017-08-24T19:15:57.940Z",
   "sync.autoDownload": false,
@@ -31,5 +30,6 @@
   "sync.host": "",
   "sync.pathPrefix": "",
   "sync.quietSync": false,
-  "sync.askGistName": false
+  "sync.askGistName": false,
+  "workbench.colorTheme": "Cobalt2"
 }
