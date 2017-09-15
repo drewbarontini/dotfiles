@@ -65,7 +65,7 @@ prompt_git() {
     [ -n "$aheadN" ] && s+=" ⇡$aheadN"
     [ -n "$behindN" ] && s+=" ⇣$behindN"
 
-    echo -e " ${italic}${violet}(${1}${branchName})${reset}${blue}${s}";
+    echo -e " ${violet}(${italic}${1}${branchName}${reset}${violet})${reset}${blue}${s}";
   else
     return;
   fi;
