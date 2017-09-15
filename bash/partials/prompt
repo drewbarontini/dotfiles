@@ -74,6 +74,7 @@ prompt_git() {
 if tput setaf 1 &> /dev/null; then
   tput sgr0; # reset colors
   bold=$(tput bold);
+  italic=$(tput sitm);
   reset=$(tput sgr0);
   # Solarized colors, taken from http://git.io/solarized-colors.
   black=$(tput setaf 0);
@@ -87,7 +88,8 @@ if tput setaf 1 &> /dev/null; then
   white=$(tput setaf 15);
   yellow=$(tput setaf 136);
 else
-  bold='';
+  bold="\e[1m";
+  italic="\e[3m";
   reset="\e[0m";
   black="\e[1;30m";
   blue="\e[1;34m";
@@ -120,7 +122,7 @@ PS1="\[\033]0;\w\007\]";
 
 PS1+="\[${bold}\]\n"; # newline
 PS1+="\[${green}\]\w"; # working directory
-PS1+="\$(prompt_git \"${violet}\")"; # Git repository details
+PS1+="\$(prompt_git \"${italic}${violet}\")"; # Git repository details
 PS1+="\[${reset}\]\n-> ";
 
 export PS1;
