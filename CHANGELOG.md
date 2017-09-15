@@ -1,6 +1,6 @@
 # Change Log
 
-## Unreleased
+## 1.6.0 - 2017-09-15
 
 ### Added
 
@@ -30,6 +30,7 @@
 - Global Node version
 - Visual Studio Code settings
 - `vim`/`tmux` navigation settings
+- Update bash prompt (italics for Git branch!)
 
 ### Removed
 
