@@ -38,6 +38,7 @@
       "background-tips"
       "relative-numbers"
       "ide-flowtype"
+      "atom-ide-ui"
     ]
     excludeVcsIgnoredPaths: false
     ignoredNames: [
@@ -76,7 +77,6 @@
     useGlobalEslint: true
   "linter-ui-default":
     panelHeight: 301
-    showPanel: true
   "markdown-preview-plus":
     useGitHubStyle: true
   minimap: {}
