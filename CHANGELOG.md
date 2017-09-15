@@ -1,5 +1,10 @@
 # Change Log
 
+## 1.6.3 - 2017-09-15
+
+### Changed
+- Fixed italics in tmuxline being overwritten
+
 ## 1.6.2 - 2017-09-15
 
 ### Changed
