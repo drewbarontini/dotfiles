@@ -1,5 +1,11 @@
 # Change Log
 
+## 1.6.2 - 2017-09-15
+
+### Changed
+- Fixed italics in Bash prompt
+- `Ale` plugin settings in Vim
+
 ## 1.6.1 - 2017-09-15
 
 ### Changed
