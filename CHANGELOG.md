@@ -1,5 +1,10 @@
 # Change Log
 
+## 1.6.4 - 2017-09-15
+
+### Changed
+- Fixed Spotify status in tmuxline
+
 ## 1.6.3 - 2017-09-15
 
 ### Changed
