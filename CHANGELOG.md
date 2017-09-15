@@ -1,5 +1,10 @@
 # Change Log
 
+## 1.6.1 - 2017-09-15
+
+### Changed
+- tmux project name now in italics!
+
 ## 1.6.0 - 2017-09-15
 
 ### Added
