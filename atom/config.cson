@@ -4,6 +4,9 @@
   "advanced-open-file":
     createDirectories: true
     createFileInstantly: true
+  "atom-ide-ui":
+    use:
+      "atom-ide-diagnostics-ui": false
   "atom-material-ui":
     colors:
       abaseColor: "#7e7e7e"
