@@ -3,7 +3,7 @@
   "editor.fontLigatures": true,
   "editor.fontSize": 15,
   "editor.formatOnSave": true,
-  "editor.lineHeight": 25,
+  "editor.lineHeight": 23,
   "editor.rulers": [80],
   "editor.tabSize": 2,
   "editor.minimap.enabled": false,
@@ -31,5 +31,5 @@
   "sync.pathPrefix": "",
   "sync.quietSync": false,
   "sync.askGistName": false,
-  "workbench.colorTheme": "Cobalt2"
+  "workbench.colorTheme": "Atom One Dark"
 }
