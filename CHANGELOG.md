@@ -1,24 +1,34 @@
 # Change Log
 
+## Unreleased
+
+### Changed
+
+- Update Visual Studio Code settings
+
 ## 1.6.4 - 2017-09-15
 
 ### Changed
+
 - Fixed Spotify status in tmuxline
 
 ## 1.6.3 - 2017-09-15
 
 ### Changed
+
 - Fixed italics in tmuxline being overwritten
 
 ## 1.6.2 - 2017-09-15
 
 ### Changed
+
 - Fixed italics in Bash prompt
 - `Ale` plugin settings in Vim
 
 ## 1.6.1 - 2017-09-15
 
 ### Changed
+
 - tmux project name now in italics!
 
 ## 1.6.0 - 2017-09-15
