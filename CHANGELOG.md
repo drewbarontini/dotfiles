@@ -6,6 +6,10 @@
 
 - Update Visual Studio Code settings
 
+### Added
+
+- `github-desktop` to `setup/cask`
+
 ## 1.6.4 - 2017-09-15
 
 ### Changed
