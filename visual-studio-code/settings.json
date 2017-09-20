@@ -8,6 +8,9 @@
   "editor.tabSize": 2,
   "editor.minimap.enabled": false,
   "editor.renderIndentGuides": true,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
   "emmet.triggerExpansionOnTab": true,
   "files.insertFinalNewline": false,
   "flow.useNPMPackagedFlow": true,
@@ -21,7 +24,7 @@
   "workbench.iconTheme": "vs-seti",
   "vim.disableAnnoyingNeovimMessage": true,
   "sync.gist": "7ad2d71d970519c3fda31234db46e6d0",
-  "sync.lastUpload": "2017-09-15T11:12:56.543Z",
+  "sync.lastUpload": "2017-09-20T17:35:06.453Z",
   "sync.autoDownload": false,
   "sync.autoUpload": false,
   "sync.lastDownload": "",
@@ -30,5 +33,6 @@
   "sync.host": "",
   "sync.pathPrefix": "",
   "sync.quietSync": false,
-  "sync.askGistName": false
+  "sync.askGistName": false,
+  "git.confirmSync": false
 }
