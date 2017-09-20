@@ -1,7 +1,7 @@
 {
-  "editor.fontFamily": "Fira Code",
+  "editor.fontFamily": "Operator Mono",
   "editor.fontLigatures": true,
-  "editor.fontSize": 13,
+  "editor.fontSize": 14,
   "editor.formatOnSave": true,
   "editor.lineHeight": 22,
   "editor.rulers": [80],
@@ -34,5 +34,9 @@
   "sync.pathPrefix": "",
   "sync.quietSync": false,
   "sync.askGistName": false,
-  "git.confirmSync": false
+  "git.confirmSync": false,
+  "workbench.colorTheme": "Material Theme",
+  "materialTheme.cache.workbench.settings": {
+    "themeColours": "Darker"
+  }
 }
