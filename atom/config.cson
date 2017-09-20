@@ -61,7 +61,6 @@
   "easy-motion-redux": {}
   editor:
     fontFamily: "Operator Mono"
-    fontSize: 15
     invisibles: {}
     lineHeight: 1.6
     scrollPastEnd: true
