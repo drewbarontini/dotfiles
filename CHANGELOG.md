@@ -4,7 +4,8 @@
 
 ### Changed
 
-- Update Visual Studio Code settings
+- Visual Studio Code settings
+- Atom settings
 
 ### Added
 
