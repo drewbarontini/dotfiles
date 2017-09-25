@@ -10,13 +10,13 @@ mas_install() {
 }
 
 # Airmail
-mas_install 918858936
+# mas_install 918858936
 
 # Boom
 # mas_install 948176063
 
 # Bear
-mas_install 1091189122
+# mas_install 1091189122
 
 # Boxy
 # mas_install 1053031090
@@ -76,7 +76,7 @@ mas_install 1176895641
 mas_install 904280696
 
 # Todoist
-mas_install 585829637
+# mas_install 585829637
 
 # Tweetbot
 mas_install 557168941
