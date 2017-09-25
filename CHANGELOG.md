@@ -8,6 +8,7 @@
 - Atom settings
 - `setup/mas`
 - `setup/cask`
+- `vim/gvimrc` font size
 
 ### Added
 
