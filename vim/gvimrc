@@ -1,4 +1,4 @@
-set guifont=Operator\ Mono\ Book:h16
+set guifont=Operator\ Mono\ Book:h14
 set linespace=2
 set guioptions-=l
 set guioptions-=r
