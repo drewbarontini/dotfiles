@@ -6,7 +6,7 @@
 
 - Visual Studio Code settings
 - Atom settings
-- `setup/cask`
+- `setup/mas`
 
 ### Added
 
