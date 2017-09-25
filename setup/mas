@@ -9,20 +9,8 @@ mas_install() {
   mas list | grep $1 || mas install $1
 }
 
-# Airmail
-# mas_install 918858936
-
-# Boom
-# mas_install 948176063
-
-# Bear
-# mas_install 1091189122
-
-# Boxy
-# mas_install 1053031090
-
 # BreakTime
-# mas_install 427475982
+mas_install 427475982
 
 # ColorSnapper
 mas_install 969418666
@@ -30,14 +18,11 @@ mas_install 969418666
 # Deliveries
 mas_install 924726344
 
-# Evernote
-# mas_install 406056744
-
 # Fantastical
 mas_install 975937182
 
 # Gestimer
-# mas_install 990588172
+mas_install 990588172
 
 # GIPHY Capture
 mas_install 668208984
@@ -45,26 +30,11 @@ mas_install 668208984
 # HazeOver
 mas_install 430798174
 
-# iA Writer
-# mas_install 775737590
-
 # Monosnap
 mas_install 540348655
 
-# Name Mangler
-# mas_install 603637384
-
-# Newton
-# mas_install 1059655371
-
 # Noizio
 mas_install 928871589
-
-# NZBVortex
-# mas_install 914250185
-
-# Red Hot Timer
-# mas_install 929960914
 
 # Slack
 mas_install 803453959
@@ -75,20 +45,28 @@ mas_install 1176895641
 # Things 3
 mas_install 904280696
 
-# Todoist
-# mas_install 585829637
-
 # Tweetbot
 mas_install 557168941
 
-# Typeface
-# mas_install 1062679359
-
 # Ulysses
-# mas_install 623795237
-
-# Wallcat
-# mas_install 1000397973
+mas_install 623795237
 
 # Who's On My WiFi
-# mas_install 909760813
+mas_install 909760813
+
+# -------------------------------------
+#   Disabled
+# -------------------------------------
+
+# mas_install 918858936 (Airmail)
+# mas_install 948176063 (Boom)
+# mas_install 1091189122 (Bear)
+# mas_install 1053031090 (Boxy)
+# mas_install 603637384 (Name Mangler)
+# mas_install 1059655371 (Newton)
+# mas_install 914250185 (NZBVortex)
+# mas_install 929960914 (Red Hot Timer)
+# mas_install 585829637 (Todoist)
+# mas_install 1062679359 (Typeface)
+# mas_install 1000397973 (Wallcat)
+
