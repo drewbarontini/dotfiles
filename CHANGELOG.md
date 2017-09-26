@@ -9,6 +9,7 @@
 - `setup/mas`
 - `setup/cask`
 - `vim/gvimrc` font size
+- Sublime Text settings
 
 ### Added
 
