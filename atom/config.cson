@@ -96,6 +96,8 @@
   tabs: {}
   tester:
     showInlineError: true
+  "tree-view":
+    hideVcsIgnoredFiles: true
   "vim-mode-plus":
     automaticallyEscapeInsertModeOnActivePaneItemChange: true
     clearMultipleCursorsOnEscapeInsertMode: true
