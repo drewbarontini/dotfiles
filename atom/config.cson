@@ -54,7 +54,7 @@
     ]
     telemetryConsent: "limited"
     themes: [
-      "pristine-ui"
+      "one-dark-ui"
       "oceanic-next"
     ]
     titleBar: "hidden"
@@ -79,8 +79,7 @@
   "markdown-preview-plus":
     useGitHubStyle: true
   minimap: {}
-  "one-dark-ui":
-    tabSizing: "Maximum"
+  "one-dark-ui": {}
   "package-sync":
     createOnChange: true
     forceOverwrite: true
