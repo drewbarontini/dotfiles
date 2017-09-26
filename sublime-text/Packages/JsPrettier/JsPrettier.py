@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 
+from __future__ import print_function
+
 import os
 import platform
 import fnmatch
@@ -58,6 +60,11 @@ PRETTIER_OPTION_CLI_MAP = [
         'option': 'semi',
         'cli': '--semi',
         'default': 'true'
+    },
+    {
+        'option': 'requirePragma',
+        'cli': '--require-pragma',
+        'default': 'false'
     }
 ]
 ALLOWED_FILE_EXTENSIONS = [
@@ -369,9 +376,12 @@ class JsPrettierCommand(sublime_plugin.TextCommand):
                 env=self.proc_env,
                 shell=self.is_windows())
             stdout, stderr = proc.communicate(input=source.encode('utf-8'))
-            if stderr or proc.returncode != 0:
-                self.format_error_message(stderr.decode('utf-8'), str(proc.returncode))
+            if proc.returncode != 0:
+                self.error_message = self.format_error_message(stderr.decode('utf-8'), str(proc.returncode))
                 return None
+            if stderr:
+                # allow warnings to pass-through
+                print(self.format_error_message(stderr.decode('utf-8'), str(proc.returncode)))
             return stdout.decode('utf-8')
         except OSError as ex:
             sublime.error_message('{0} - {1}'.format(PLUGIN_NAME, ex))
@@ -578,12 +588,12 @@ class JsPrettierCommand(sublime_plugin.TextCommand):
         print('\n------------------\n {0} ERROR \n------------------\n\n'
               '{1}'.format(PLUGIN_NAME, self.error_message))
 
-    def format_error_message(self, error_message, error_code):
-        self.error_message = 'Prettier reported the following ' \
-                             'error:\n\n{0}\n' \
-                             'Process finished with exit code {1}\n'\
-            .format(error_message, '{0}'
-                    .format(error_code))
+    @staticmethod
+    def format_error_message(error_message, error_code):
+        return 'Prettier reported the following error(s):\n\n' \
+               '{0}\n' \
+               'Process finished with exit code {1}\n' \
+            .format(error_message, '{0}'.format(error_code))
 
     @staticmethod
     def is_source_js(view):
