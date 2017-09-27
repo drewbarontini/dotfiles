@@ -10,6 +10,7 @@
 - `setup/cask`
 - `vim/gvimrc` font size
 - Sublime Text settings
+- Global Node version to `8.6.0`
 
 ### Added
 
