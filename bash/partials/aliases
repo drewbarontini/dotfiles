@@ -313,6 +313,8 @@ alias vc='vim -u NONE'
 
 alias y='yarn'
 alias ya='yarn add'
+alias yd='yarn outdated'
 alias yi='yarn init'
 alias yr='yarn remove'
 alias yu='yarn upgrade'
+alias yui='yarn upgrade-interactive'
