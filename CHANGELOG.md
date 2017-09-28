@@ -15,6 +15,7 @@
 ### Added
 
 - `github-desktop` to `setup/cask`
+- `yarn` aliases
 
 ## 1.6.4 - 2017-09-15
 
