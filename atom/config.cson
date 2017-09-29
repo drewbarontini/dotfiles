@@ -38,7 +38,6 @@
       "background-tips"
       "relative-numbers"
       "ide-flowtype"
-      "atom-ide-ui"
     ]
     excludeVcsIgnoredPaths: false
     ignoredNames: [
@@ -75,7 +74,7 @@
     globalNodePath: "/Users/drewbarontini/.nvm/versions/node/v7.10.0"
     useGlobalEslint: true
   "linter-ui-default":
-    panelHeight: 301
+    panelHeight: 81
   "markdown-preview-plus":
     useGitHubStyle: true
   minimap: {}
