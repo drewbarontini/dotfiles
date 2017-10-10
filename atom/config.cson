@@ -99,6 +99,7 @@
   "vim-mode-plus":
     automaticallyEscapeInsertModeOnActivePaneItemChange: true
     clearMultipleCursorsOnEscapeInsertMode: true
+    notifiedCoffeeScriptNoLongerSupportedToExtendVMP: true
     useSmartcaseForSearch: true
   welcome:
     showOnStartup: false
