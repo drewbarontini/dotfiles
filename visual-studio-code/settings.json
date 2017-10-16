@@ -35,7 +35,7 @@
   "sync.quietSync": false,
   "sync.askGistName": false,
   "git.confirmSync": false,
-  "workbench.colorTheme": "Panda Syntax",
+  "workbench.colorTheme": "Cobalt2",
   "materialTheme.cache.workbench.settings": {
     "themeColours": "Darker"
   }
