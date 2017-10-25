@@ -35,7 +35,7 @@
   "sync.quietSync": false,
   "sync.askGistName": false,
   "git.confirmSync": false,
-  "workbench.colorTheme": "Cobalt2",
+  "workbench.colorTheme": "Atom One Dark",
   "materialTheme.cache.workbench.settings": {
     "themeColours": "Darker"
   }
