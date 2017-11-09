@@ -35,7 +35,7 @@
   "sync.quietSync": false,
   "sync.askGistName": false,
   "git.confirmSync": false,
-  "workbench.colorTheme": "Atom One Dark",
+  "workbench.colorTheme": "Sublime Material Theme - Dark",
   "materialTheme.cache.workbench.settings": {
     "themeColours": "Darker"
   }
