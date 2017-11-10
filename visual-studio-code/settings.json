@@ -38,5 +38,6 @@
   "workbench.colorTheme": "Sublime Material Theme - Dark",
   "materialTheme.cache.workbench.settings": {
     "themeColours": "Darker"
-  }
+  },
+  "explorer.confirmDragAndDrop": false
 }
