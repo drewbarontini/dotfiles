@@ -53,8 +53,8 @@
     ]
     telemetryConsent: "limited"
     themes: [
-      "one-dark-ui"
-      "oceanic-next"
+      "city-lights-ui"
+      "city-lights-syntax"
     ]
     titleBar: "hidden"
   "easy-motion-redux": {}
