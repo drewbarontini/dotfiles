@@ -53,8 +53,8 @@
     ]
     telemetryConsent: "limited"
     themes: [
-      "city-lights-ui"
-      "city-lights-syntax"
+      "one-dark-ui"
+      "oceanic-next"
     ]
     titleBar: "hidden"
   "easy-motion-redux": {}
@@ -99,7 +99,6 @@
   "vim-mode-plus":
     automaticallyEscapeInsertModeOnActivePaneItemChange: true
     clearMultipleCursorsOnEscapeInsertMode: true
-    notifiedCoffeeScriptNoLongerSupportedToExtendVMP: true
     useSmartcaseForSearch: true
   welcome:
     showOnStartup: false
