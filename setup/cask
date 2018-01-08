@@ -40,7 +40,6 @@ brew cask install sketch 2> /dev/null
 brew cask install spotify 2> /dev/null
 brew cask install sublime-text 2> /dev/null
 brew cask install transmit 2> /dev/null
-brew cask install twitch 2> /dev/null
 brew cask install quitter 2> /dev/null
 
 # ----------------------------------------------------
@@ -73,5 +72,7 @@ brew cask install quitter 2> /dev/null
 # brew cask install toggldesktop 2> /dev/null
 # brew cask install totalfinder 2> /dev/null
 # brew cask install tweeten 2> /dev/null
+# brew cask install twist 2> /dev/null
+# brew cask install twitch 2> /dev/null
 # brew cask install visual-studio-code 2> /dev/null
 # brew cask install vlc 2> /dev/null
