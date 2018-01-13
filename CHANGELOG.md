@@ -1,6 +1,6 @@
 # Change Log
 
-## Unreleased
+## 1.6.5 - 2018-01-13
 
 ### Changed
 
@@ -17,6 +17,7 @@
 
 - `github-desktop` to `setup/cask`
 - `yarn` aliases
+- `gem/gemrc` file
 
 ## 1.6.4 - 2017-09-15
 
