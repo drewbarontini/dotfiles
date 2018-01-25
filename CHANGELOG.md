@@ -4,6 +4,7 @@
 
 ## Changed
 
+- `setup/cask`
 - `setup/mas`
 
 ## 1.6.5 - 2018-01-13
