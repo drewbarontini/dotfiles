@@ -47,6 +47,7 @@ brew cask install quitter 2> /dev/null
 # ----------------------------------------------------
 
 # brew cask install anvil 2> /dev/null
+# brew cask install astro 2> /dev/null
 # brew cask install balsamiq-mockups 2> /dev/null
 # brew cask install bitbar 2> /dev/null
 # brew cask install cheatsheet 2> /dev/null
