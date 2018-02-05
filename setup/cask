@@ -28,6 +28,7 @@ brew cask install hazel 2> /dev/null
 brew cask install iconjar 2> /dev/null
 brew cask install imageoptim 2> /dev/null
 brew cask install iterm2 2> /dev/null
+brew cask install kap 2> /dev/null
 brew cask install keyboard-maestro 2> /dev/null
 brew cask install keepingyouawake 2> /dev/null
 brew cask install moom 2> /dev/null
