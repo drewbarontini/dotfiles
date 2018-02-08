@@ -38,10 +38,11 @@
   "sync.quietSync": false,
   "sync.askGistName": false,
   "git.confirmSync": false,
-  "workbench.colorTheme": "Material Theme",
+  "workbench.colorTheme": "Plastic",
   "materialTheme.cache.workbench.settings": {
     "themeColours": "Darker High Contrast"
   },
   "explorer.autoReveal": false,
-  "eslint.autoFixOnSave": true
+  "eslint.autoFixOnSave": true,
+  "window.zoomLevel": 0
 }
