@@ -26,7 +26,6 @@
   "terminal.integrated.fontSize": 13,
   "terminal.integrated.lineHeight": 1.5,
   "workbench.iconTheme": "eq-material-theme-icons",
-  "vim.disableAnnoyingNeovimMessage": true,
   "sync.gist": "7ad2d71d970519c3fda31234db46e6d0",
   "sync.lastUpload": "2017-09-20T17:35:06.453Z",
   "sync.autoDownload": false,
@@ -43,5 +42,6 @@
   "materialTheme.cache.workbench.settings": {
     "themeColours": "Darker High Contrast"
   },
-  "explorer.autoReveal": false
+  "explorer.autoReveal": false,
+  "eslint.autoFixOnSave": true
 }
