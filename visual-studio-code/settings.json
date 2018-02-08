@@ -4,7 +4,9 @@
   "editor.fontSize": 14,
   "editor.formatOnSave": true,
   "editor.lineHeight": 22,
-  "editor.rulers": [80],
+  "editor.rulers": [
+    80
+  ],
   "editor.tabSize": 2,
   "editor.minimap.enabled": false,
   "editor.renderIndentGuides": true,
@@ -17,7 +19,9 @@
   "javascript.validate.enable": false,
   "prettier.singleQuote": true,
   "prettier.trailingComma": "es5",
-  "terminal.integrated.shellArgs.osx": ["-l"],
+  "terminal.integrated.shellArgs.osx": [
+    "-l"
+  ],
   "terminal.integrated.fontFamily": "Fira Code",
   "terminal.integrated.fontSize": 13,
   "terminal.integrated.lineHeight": 1.5,
@@ -35,9 +39,9 @@
   "sync.quietSync": false,
   "sync.askGistName": false,
   "git.confirmSync": false,
-  "workbench.colorTheme": "Sublime Material Theme - Dark",
+  "workbench.colorTheme": "Material Theme",
   "materialTheme.cache.workbench.settings": {
-    "themeColours": "Darker"
+    "themeColours": "Darker High Contrast"
   },
   "explorer.confirmDragAndDrop": false
 }
