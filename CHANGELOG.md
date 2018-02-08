@@ -6,6 +6,7 @@
 
 - `setup/cask`
 - `setup/mas`
+- Visual Studio Code settings
 
 ## 1.6.5 - 2018-01-13
 
