@@ -44,5 +44,14 @@
   },
   "explorer.autoReveal": false,
   "eslint.autoFixOnSave": true,
-  "window.zoomLevel": 0
+  "window.zoomLevel": 0,
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/.sass-cache": true,
+    "**/.bundle": true
+  }
 }
