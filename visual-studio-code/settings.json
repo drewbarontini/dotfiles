@@ -55,6 +55,7 @@
   "sync.quietSync": false,
   "sync.askGistName": false,
   "workbench.colorTheme": "Plastic",
+  "workbench.editor.tabSizing": "shrink",
   "vim.easymotion": true,
   "vim.easymotionMarkerFontFamily": "Operator Mono",
   "vim.hlsearch": true,
