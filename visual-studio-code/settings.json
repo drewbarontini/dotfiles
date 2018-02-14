@@ -30,6 +30,7 @@
   "files.trimFinalNewlines": true,
   "flow.useNPMPackagedFlow": true,
   "git.confirmSync": false,
+  "git.inputValidation": "always",
   "javascript.validate.enable": false,
   "materialTheme.cache.workbench.settings": {
     "themeColours": "Darker High Contrast"
@@ -39,9 +40,9 @@
   "terminal.integrated.shellArgs.osx": [
     "-l"
   ],
-  "terminal.integrated.fontFamily": "Fira Code",
-  "terminal.integrated.fontSize": 13,
-  "terminal.integrated.lineHeight": 1.5,
+  "terminal.integrated.fontFamily": "Operator Mono",
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.lineHeight": 1.3,
   "workbench.iconTheme": "eq-material-theme-icons",
   "sync.gist": "7ad2d71d970519c3fda31234db46e6d0",
   "sync.lastUpload": "2017-09-20T17:35:06.453Z",
