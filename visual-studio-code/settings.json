@@ -65,4 +65,5 @@
   "vim.overrideCopy": false,
   "window.zoomLevel": 0,
   "workbench.iconTheme": "eq-material-theme-icons",
+  "workbench.startupEditor": "newUntitledFile",
 }
