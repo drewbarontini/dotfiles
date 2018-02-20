@@ -57,11 +57,11 @@
 
 [diff]
 
-  tool = vimdiff
+  tool = default-difftool
 
-[difftool]
+[difftool "default-difftool"]
 
-  prompt = false
+  cmd = code --wait --diff $LOCAL $REMOTE
 
 [push]
 
@@ -80,6 +80,10 @@
   clean = git-lfs clean -- %f
   smudge = git-lfs smudge -- %f
   process = git-lfs filter-process
+
+[pull]
+  rebase = true
+
 [user]
-	name = Drew Barontini
-	email = hello@drewb.io
+  name = Drew Barontini
+  email = hello@drewb.io
