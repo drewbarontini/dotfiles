@@ -7,6 +7,8 @@
 - `setup/cask`
 - `setup/mas`
 - Visual Studio Code settings
+- `git/gitignore` to `rebase` by default when pulling
+- Use VSCode as the git diff tool
 
 ## 1.6.5 - 2018-01-13
 
