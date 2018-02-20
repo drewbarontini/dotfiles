@@ -44,7 +44,7 @@
   "terminal.integrated.fontFamily": "Operator Mono",
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.fontWeightBold": "normal",
-  "terminal.integrated.lineHeight": 1.2,
+  "terminal.integrated.lineHeight": 1.4,
   "sync.gist": "7ad2d71d970519c3fda31234db46e6d0",
   "sync.lastUpload": "2018-02-15T19:40:11.724Z",
   "sync.autoDownload": false,
