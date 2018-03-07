@@ -1,6 +1,6 @@
 # Change Log
 
-## Unreleased
+## 1.7.0 - 2018-03-07
 
 ### Changed
 
@@ -9,10 +9,11 @@
 - Visual Studio Code settings
 - `git/gitignore` to `rebase` by default when pulling
 - Use VSCode as the git diff tool
+- New colors!
 
 ### Fixed
 
-- Fix a bug with Vim pane navigation
+- Fixed a bug with Vim pane navigation
 
 ## 1.6.5 - 2018-01-13
 
