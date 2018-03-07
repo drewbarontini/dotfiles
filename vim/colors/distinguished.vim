@@ -56,7 +56,7 @@ call s:ColorDictParser({
   \ , 'StatusLineNC'                : [    244,    232,               '',      '808080',  '080808',               '']
   \
   \ , 'LineNr'                      : [    243,    235,               '',      '767676',  '262626',               '']
-  \ , 'VertSplit'                   : [    240,     '',               '',      '585858',  '1c1c1c',               '']
+  \ , 'VertSplit'                   : [    240,    240,               '',      '585858',  '1c1c1c',               '']
   \
   \ , 'WildMenu'                    : [    234,    231,               '',      '1c1c1c',  'ffffff',               '']
   \ , 'Directory'                   : [    143,     '',           'bold',      'afaf5f',        '',           'bold']
@@ -67,7 +67,7 @@ call s:ColorDictParser({
   \ , 'WarningMsg'                  : [    202,     '',           'bold',      'ff5f00',        '',           'bold']
   \ , 'ErrorMsg'                    : [    196,     '',           'bold',      'ff0000',        '',           'bold']
   \
-  \ , 'Comment'                     : [    243,    233,               '',      '767676',  '121212',               '']
+  \ , 'Comment'                     : [    243,    233,         'italic',      '767676',  '121212',               '']
   \ , 'vimCommentTitleLeader'       : [    250,    233,               '',      'bcbcbc',  '121212',               '']
   \ , 'vimCommentTitle'             : [    250,    233,               '',      'bcbcbc',  '121212',               '']
   \ , 'vimCommentString'            : [    245,    233,               '',      '8a8a8a',  '121212',               '']
@@ -157,10 +157,10 @@ call s:ColorDictParser({
   \
   \ , 'cssImportant'                : [    166,     '',           'bold',      'd75f00',        '',           'bold']
   \
-  \ , 'DiffAdd'                     : [    112,     22,               '',      '87d700',  '005f00',               '']
+  \ , 'DiffAdd'                     : [    143,     '',               '',      '87d700',  '005f00',               '']
   \ , 'DiffChange'                  : [    220,     94,               '',      'ffd700',  '875f00',               '']
-  \ , 'DiffDelete'                  : [    160,     '',               '',      'd70000',        '',               '']
-  \ , 'DiffText'                    : [    220,     94,   'reverse,bold',      'ffd700',  '875f00',   'reverse,bold']
+  \ , 'DiffDelete'                  : [    131,     '',               '',      'd70000',        '',               '']
+  \ , 'DiffText'                    : [    231,     16,   'reverse,bold',      'ffd700',  '875f00',   'reverse,bold']
   \
   \ , 'diffLine'                    : [     68,     '',           'bold',      '5f87d7',        '',           'bold']
   \ , 'diffFile'                    : [    242,     '',               '',      '6c6c6c',        '',               '']
@@ -180,12 +180,8 @@ hi link diffChanged        DiffChange
 hi link diffRemoved        DiffDelete
 
 " Added by Drew Barontini
-hi link diffAdded    DiffAdd
-hi link diffChanged  DiffChange
-hi link diffRemoved  DiffDelete
 hi ColorColumn ctermbg=234 cterm=NONE ctermfg=NONE
 hi FoldColumn ctermbg=NONE
 hi SignColumn ctermbg=NONE
 hi LineNr ctermbg=NONE
 hi CursorLineNr ctermbg=NONE
-

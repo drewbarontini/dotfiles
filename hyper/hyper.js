@@ -1,7 +1,7 @@
 module.exports = {
   config: {
     // default font size in pixels for all tabs
-    fontSize: 16,
+    fontSize: 14,
 
     // font family with optional fallbacks
     fontFamily: 'Operator Mono',
@@ -91,7 +91,7 @@ module.exports = {
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-  plugins: ['hyper-sierra', 'hyper-tabs-enhanced', 'hyper-statusline', 'hyper-solarized-dark'],
+  plugins: ['hyper-snazzy', 'hyper-tabs-enhanced', 'hyper-statusline'],
 
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here
