@@ -5,6 +5,7 @@
 ### Changed
 
 - Vim colors
+- Auto-formatting settings in Vim
 
 ### Added
 
