@@ -6,6 +6,10 @@
 
 - Vim colors
 
+### Fixed
+
+- Italics in tmuxline
+
 ## 1.7.0 - 2018-03-07
 
 ### Changed
