@@ -6,6 +6,10 @@
 
 - Vim colors
 
+### Added
+
+- `vim-javascript` plugin
+
 ### Fixed
 
 - Italics in tmuxline
