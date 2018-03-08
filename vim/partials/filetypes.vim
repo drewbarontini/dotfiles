@@ -14,7 +14,6 @@ autocmd BufNewFile,BufRead *.sass set ft=sass.css
 autocmd BufNewFile,BufRead *.sass.erb set filetype=sass
 autocmd BufNewFile,BufRead *.scss set ft=scss.css
 autocmd BufNewFile,BufRead *.js.es6 set ft=javascript
-autocmd BufWritePre *.js Neoformat
 
 " -------------------------------------
 "   Filetypes
@@ -24,7 +23,6 @@ autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 autocmd Filetype gitcommit setlocal spell textwidth=72
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
-autocmd FileType javascript setlocal formatprg=prettier\ --stdin\ --parser\ flow\ --single-quote\ --trailing-comma\ es5\ es6
 autocmd FileType markdown,md setlocal spell spelllang=en
 
 " -------------------------------------

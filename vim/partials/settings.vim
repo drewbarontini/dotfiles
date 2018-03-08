@@ -29,9 +29,13 @@ let g:ale_sign_error = '●' " Less aggressive than the default '>>'
 let g:ale_sign_warning = '.'
 let g:ale_lint_on_enter = 0 " Less distracting when opening a new file
 let g:ale_fixers = {
-\ 'javascript': ['eslint'],
+\ 'javascript': ['eslint', 'prettier'],
 \}
 let g:ale_fix_on_save = 1
+let g:ale_javascript_prettier_options = '--single-quote --trailing-comma es5'
+
+highlight clear ALEErrorSign ctermbg=234
+highlight clear ALEWarningSign ctermbg=234
 
 " -------------------------------------
 "   CtrlP
@@ -76,16 +80,6 @@ let g:gist_post_private = 1
 " -------------------------------------
 
 let g:gitgutter_map_keys = 0
-
-" -------------------------------------
-"   Neoformat
-" -------------------------------------
-
-let g:neoformat_javascript_prettier = {
-            \ 'exe': 'prettier',
-            \ 'args': ['--stdin', '--parser flow', '--single-quote', '--trailing-comma es5', 'es6'],
-            \ 'stdin': 1,
-            \ }
 
 " -------------------------------------
 "   Pencil

@@ -107,7 +107,7 @@ Plugin 'rking/ag.vim'
 Plugin 'ruanyl/vim-fixmyjs'
 
 " Prettier
-Plugin 'sbdchd/neoformat'
+" Plugin 'sbdchd/neoformat'
 
 " Syntax checker
 " Plugin 'scrooloose/syntastic'
