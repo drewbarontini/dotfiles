@@ -88,6 +88,7 @@ Plugin 'mattn/emmet-vim'
 " Plugin 'mileszs/ack.vim'
 
 " React JSX syntax highlighting/indenting
+Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
 
 " Indentation guides
