@@ -1,5 +1,11 @@
 # Change Log
 
+## Unreleased
+
+### Changed
+
+- Vim colors
+
 ## 1.7.0 - 2018-03-07
 
 ### Changed
