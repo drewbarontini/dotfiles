@@ -17,6 +17,8 @@
   "emmet.triggerExpansionOnTab": true,
   "eslint.autoFixOnSave": true,
   "explorer.autoReveal": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
   "files.exclude": {
     "**/.git": true,
     "**/.svn": true,
@@ -66,6 +68,4 @@
   "window.zoomLevel": 0,
   "workbench.iconTheme": "eq-material-theme-icons",
   "workbench.startupEditor": "newUntitledFile",
-  "explorer.confirmDragAndDrop": false,
-  "explorer.confirmDelete": false,
 }
