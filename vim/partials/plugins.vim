@@ -27,7 +27,7 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'airblade/vim-gitgutter'
 
 " Solarized
-Plugin 'altercation/vim-colors-solarized'
+" Plugin 'altercation/vim-colors-solarized'
 
 " Close matching parenthesis, quote, etc.
 Plugin 'AutoClose'
@@ -48,7 +48,7 @@ Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'christoomey/vim-sort-motion'
 
 " Jade syntax highlighting
-Plugin 'digitaltoad/vim-jade'
+" Plugin 'digitaltoad/vim-jade'
 
 " tmux status line
 Plugin 'edkolev/tmuxline.vim'
@@ -65,12 +65,6 @@ Plugin 'goldfeld/vim-seek'
 " Nice inteface for dealing with Git branches
 Plugin 'idanarye/vim-merginal'
 
-" Distraction-free writing
-" Plugin 'junegunn/goyo.vim'
-
-" CoffeeScript language support
-" Plugin 'kchmck/vim-coffee-script'
-
 " Fuzzy file finder
 Plugin 'kien/ctrlp.vim'
 
@@ -80,13 +74,6 @@ Plugin 'easymotion/vim-easymotion'
 " Expanding abbreviations
 Plugin 'mattn/emmet-vim'
 
-" GitHub Gist (and dependencies)
-" Plugin 'mattn/gist-vim'
-" Plugin 'mattn/webapi-vim'
-
-" Better than Grep
-" Plugin 'mileszs/ack.vim'
-
 " React JSX syntax highlighting/indenting
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
@@ -94,23 +81,8 @@ Plugin 'mxw/vim-jsx'
 " Indentation guides
 Plugin 'nathanaelkane/vim-indent-guides'
 
-" Populate the argument list from the files in the quickfix list
-" Plugin 'nelstrom/vim-qargs'
-
-" Rethinking Vim as a tool for writing
-" Plugin 'reedes/vim-pencil'
-
 " Front for ag, A.K.A. the_silver_searcher
 Plugin 'rking/ag.vim'
-
-" Auto fix your javascript using eslint or fixmyjs or jscs
-Plugin 'ruanyl/vim-fixmyjs'
-
-" Prettier
-" Plugin 'sbdchd/neoformat'
-
-" Syntax checker
-" Plugin 'scrooloose/syntastic'
 
 " Requires Python (ships with Homebrew Vim)
 Plugin 'SirVer/ultisnips'
@@ -122,10 +94,6 @@ Plugin 'terryma/vim-multiple-cursors'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 
-" Hybrid Color Scheme
-" Plugin 'w0ng/vim-hybrid'
-
-" Asynchronous Lint Engine
 Plugin 'w0rp/ale'
 
 " -------------------------------------
@@ -133,7 +101,7 @@ Plugin 'w0rp/ale'
 " -------------------------------------
 
 " Easily search for, substitute, and abbreviate multiple variants of a word
-Plugin 'tpope/vim-abolish'
+" Plugin 'tpope/vim-abolish'
 
 " Comment things out
 Plugin 'tpope/vim-commentary'
@@ -142,13 +110,13 @@ Plugin 'tpope/vim-commentary'
 " Plugin 'tpope/vim-dispatch'
 
 " Helpers for UNIX
-Plugin 'tpope/vim-eunuch'
+" Plugin 'tpope/vim-eunuch'
 
 " Git wrapper
-Plugin 'tpope/vim-fugitive'
+" Plugin 'tpope/vim-fugitive'
 
 " Vim Git runtime files
-Plugin 'tpope/vim-git'
+" Plugin 'tpope/vim-git'
 
 " Vim runtime files for Haml, Sass, and SCSS
 Plugin 'tpope/vim-haml'
@@ -160,16 +128,16 @@ Plugin 'tpope/vim-markdown'
 " Plugin 'tpope/vim-rails'
 
 " Enable repeating supported plugin maps with '.'
-Plugin 'tpope/vim-repeat'
+" Plugin 'tpope/vim-repeat'
 
 " GitHub extension for fugitive.vim
-Plugin 'tpope/vim-rhubarb'
+" Plugin 'tpope/vim-rhubarb'
 
 " Quoting/parenthesizing made simple
 Plugin 'tpope/vim-surround'
 
 " Pairs of handy bracket mappings
-Plugin 'tpope/vim-unimpaired'
+" Plugin 'tpope/vim-unimpaired'
 
 " Enhance netrw, the built-in directory browser
 Plugin 'tpope/vim-vinegar'
