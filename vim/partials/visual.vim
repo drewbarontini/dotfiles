@@ -31,3 +31,4 @@ hi! SignColumn ctermbg=NONE
 hi! VertSplit ctermfg=234 ctermbg=234
 hi! htmlArg gui=italic cterm=italic
 hi! Comment gui=italic cterm=italic
+hi! LineNr ctermfg=236
