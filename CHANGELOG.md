@@ -11,6 +11,10 @@
 
 - `vim-javascript` plugin
 
+### Removed
+
+- Line numbers in Vim
+
 ### Fixed
 
 - Italics in tmuxline
