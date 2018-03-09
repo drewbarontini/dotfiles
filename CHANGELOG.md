@@ -6,6 +6,7 @@
 
 - Vim colors
 - Auto-formatting settings in Vim
+- VSCode settings
 
 ### Added
 
