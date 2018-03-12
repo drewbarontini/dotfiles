@@ -5,6 +5,7 @@
   "editor.fontSize": 14,
   "editor.formatOnSave": true,
   "editor.lineHeight": 22,
+  "editor.lineNumbers": "relative",
   "editor.rulers": [
     80
   ],
@@ -58,7 +59,7 @@
   "sync.pathPrefix": "",
   "sync.quietSync": false,
   "sync.askGistName": false,
-  "workbench.colorTheme": "Plastic",
+  "workbench.colorTheme": "Plastic - deprioritised punctuation",
   "workbench.editor.tabSizing": "shrink",
   "vim.easymotion": true,
   "vim.easymotionMarkerFontFamily": "Operator Mono",
