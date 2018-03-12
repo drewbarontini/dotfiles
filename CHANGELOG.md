@@ -11,6 +11,7 @@
 ### Added
 
 - `vim-javascript` plugin
+- Spacemacs configuration
 
 ### Removed
 
