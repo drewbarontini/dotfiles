@@ -49,7 +49,7 @@
   "terminal.integrated.fontWeightBold": "normal",
   "terminal.integrated.lineHeight": 1.4,
   "sync.gist": "7ad2d71d970519c3fda31234db46e6d0",
-  "sync.lastUpload": "2018-02-15T19:40:11.724Z",
+  "sync.lastUpload": "2018-03-13T14:19:35.138Z",
   "sync.autoDownload": false,
   "sync.autoUpload": false,
   "sync.lastDownload": "",
@@ -59,6 +59,8 @@
   "sync.pathPrefix": "",
   "sync.quietSync": false,
   "sync.askGistName": false,
+  "sync.removeExtensions": true,
+  "sync.syncExtensions": true,
   "workbench.colorTheme": "Plastic - deprioritised punctuation",
   "workbench.editor.tabSizing": "shrink",
   "vim.easymotion": true,
@@ -68,5 +70,5 @@
   "vim.overrideCopy": false,
   "window.zoomLevel": 0,
   "workbench.iconTheme": "eq-material-theme-icons",
-  "workbench.startupEditor": "newUntitledFile",
+  "workbench.startupEditor": "newUntitledFile"
 }
