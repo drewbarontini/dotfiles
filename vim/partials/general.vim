@@ -8,6 +8,7 @@
 "   Base
 " -------------------------------------
 
+set number
 set backspace=indent,eol,start " Allow backspace in Insert mode
 set history=1000               " Store :cmdline history
 set visualbell                 " No sounds
@@ -21,7 +22,6 @@ set lazyredraw
 set ttyfast
 set regexpengine=1
 
-" set number                     " Line numbers are good
 " set relativenumber             " Relative line numbers
 " Smart line numbers
 " autocmd WinEnter,FocusGained * :setlocal number relativenumber
