@@ -70,7 +70,7 @@
   "terminal.integrated.shellArgs.osx": [
     "-l"
   ],
-  "workbench.colorTheme": "GitHub Plus",
+  "workbench.colorTheme": "Plastic - deprioritised punctuation",
   "workbench.editor.tabSizing": "shrink",
   "vim.easymotion": true,
   "vim.easymotionMarkerFontFamily": "Operator Mono",
