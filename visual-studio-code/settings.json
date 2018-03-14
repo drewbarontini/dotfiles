@@ -70,8 +70,16 @@
   "terminal.integrated.shellArgs.osx": [
     "-l"
   ],
-  "workbench.colorTheme": "Plastic - deprioritised punctuation",
   "workbench.editor.tabSizing": "shrink",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.colorCustomizations": {
+    // Color adjustments for the "Plastic" theme terminal
+    "terminal.ansiBrightBlue": "#19b9c4",
+    "terminal.ansiBrightGreen": "#8cc567",
+    "terminal.ansiWhite": "#d1d6dc"
+  },
+  "workbench.colorTheme": "Plastic - deprioritised punctuation",
   "vim.easymotion": true,
   "vim.easymotionMarkerFontFamily": "Operator Mono",
   "vim.easymotionMarkerHeight": 20,
@@ -81,6 +89,4 @@
   "vim.mouseSelectionGoesIntoVisualMode": false,
   "vim.overrideCopy": false,
   "window.zoomLevel": 0,
-  "workbench.iconTheme": "material-icon-theme",
-  "workbench.startupEditor": "newUntitledFile",
 }
