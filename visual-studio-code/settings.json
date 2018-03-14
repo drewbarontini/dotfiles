@@ -1,25 +1,35 @@
 {
   "editor.cursorStyle": "line-thin",
-  "editor.fontFamily": "Operator Mono",
   "editor.fontLigatures": true,
+  "editor.fontFamily": "Operator Mono",
   "editor.fontSize": 14,
   "editor.formatOnSave": true,
   "editor.lineHeight": 22,
   "editor.lineNumbers": "relative",
+  "editor.minimap.enabled": false,
   "editor.rulers": [
     80
   ],
-  "editor.tabSize": 2,
-  "editor.minimap.enabled": false,
   "editor.renderIndentGuides": true,
+  "editor.tabSize": 2,
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "comment",
+        "settings": {
+          "fontStyle": "italic"
+        }
+      }
+    ]
+  },
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
   },
   "emmet.triggerExpansionOnTab": true,
   "eslint.autoFixOnSave": true,
   "explorer.autoReveal": false,
-  "explorer.confirmDragAndDrop": false,
   "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
   "files.exclude": {
     "**/.git": true,
     "**/.svn": true,
@@ -40,37 +50,37 @@
   },
   "prettier.singleQuote": true,
   "prettier.trailingComma": "es5",
-  "terminal.integrated.shellArgs.osx": [
-    "-l"
-  ],
+  "sync.askGistName": false,
+  "sync.autoDownload": false,
+  "sync.autoUpload": false,
+  "sync.forceDownload": false,
+  "sync.gist": "7ad2d71d970519c3fda31234db46e6d0",
+  "sync.host": "",
+  "sync.lastUpload": "2018-03-13T14:19:35.138Z",
+  "sync.lastDownload": "",
+  "sync.pathPrefix": "",
+  "sync.quietSync": false,
+  "sync.removeExtensions": true,
+  "sync.syncExtensions": true,
   "terminal.integrated.copyOnSelection": true,
   "terminal.integrated.fontFamily": "Operator Mono",
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.fontWeightBold": "normal",
   "terminal.integrated.lineHeight": 1.4,
-  "sync.gist": "7ad2d71d970519c3fda31234db46e6d0",
-  "sync.lastUpload": "2018-03-13T14:19:35.138Z",
-  "sync.autoDownload": false,
-  "sync.autoUpload": false,
-  "sync.lastDownload": "",
-  "sync.forceDownload": false,
-  "sync.host": "",
-  "sync.pathPrefix": "",
-  "sync.quietSync": false,
-  "sync.askGistName": false,
-  "sync.removeExtensions": true,
-  "sync.syncExtensions": true,
-  "workbench.colorTheme": "Plastic - deprioritised punctuation",
+  "terminal.integrated.shellArgs.osx": [
+    "-l"
+  ],
+  "workbench.colorTheme": "GitHub Plus",
   "workbench.editor.tabSizing": "shrink",
   "vim.easymotion": true,
+  "vim.easymotionMarkerFontFamily": "Operator Mono",
   "vim.easymotionMarkerHeight": 20,
   "vim.easymotionMarkerYOffset": 2,
-  "vim.easymotionMarkerFontFamily": "Operator Mono",
   "vim.hlsearch": true,
   "vim.leader": "<space>",
   "vim.mouseSelectionGoesIntoVisualMode": false,
   "vim.overrideCopy": false,
   "window.zoomLevel": 0,
   "workbench.iconTheme": "eq-material-theme-icons",
-  "workbench.startupEditor": "newUntitledFile"
+  "workbench.startupEditor": "newUntitledFile",
 }
