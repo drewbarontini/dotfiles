@@ -24,9 +24,9 @@ brew install bash
 brew install bash-completion
 
 # Emacs
-brew tap d12frosted/emacs-plus
-brew install emacs-plus
-brew linkapps emacs-plus
+# brew tap d12frosted/emacs-plus
+# brew install emacs-plus
+# brew linkapps emacs-plus
 
 # FFmpeg
 # -> Record, convert and stream audio and video
