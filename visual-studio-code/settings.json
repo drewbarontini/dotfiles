@@ -43,7 +43,7 @@
   "files.trimFinalNewlines": true,
   "flow.useNPMPackagedFlow": true,
   "git.confirmSync": false,
-  "git.inputValidation": "always",
+  "git.inputValidation": "warn",
   "javascript.validate.enable": false,
   "materialTheme.cache.workbench.settings": {
     "themeColours": "Darker High Contrast"
