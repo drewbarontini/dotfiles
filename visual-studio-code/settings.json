@@ -1,5 +1,5 @@
 {
-  "editor.cursorStyle": "line-thin",
+  "editor.cursorStyle": "line",
   "editor.fontLigatures": true,
   "editor.fontFamily": "Operator Mono",
   "editor.fontSize": 14,
@@ -74,7 +74,8 @@
   "workbench.iconTheme": "material-icon-theme",
   "workbench.startupEditor": "newUntitledFile",
   "workbench.colorCustomizations": {
-    // Color adjustments for the "Plastic" theme terminal
+    // Color adjustments for the "Plastic" theme
+    "titleBar.border": "#080a0f",
     "terminal.ansiBrightBlue": "#19b9c4",
     "terminal.ansiBrightGreen": "#8cc567",
     "terminal.ansiWhite": "#d1d6dc"
