@@ -73,8 +73,10 @@
   "workbench.editor.tabSizing": "shrink",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.startupEditor": "newUntitledFile",
+  // https://code.visualstudio.com/docs/getstarted/theme-color-reference
   "workbench.colorCustomizations": {
     // Color adjustments for the "Plastic" theme
+    "panelTitle.activeBorder": "#ffffff",
     "titleBar.border": "#080a0f",
     "terminal.ansiBrightBlue": "#19b9c4",
     "terminal.ansiBrightGreen": "#8cc567",
