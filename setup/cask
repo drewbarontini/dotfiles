@@ -32,6 +32,7 @@ brew cask install kap 2> /dev/null
 brew cask install keyboard-maestro 2> /dev/null
 brew cask install keepingyouawake 2> /dev/null
 brew cask install moom 2> /dev/null
+brew cask install notion 2> /dev/null
 brew cask install noun-project 2> /dev/null
 brew cask install nucleo 2> /dev/null
 brew cask install rocket 2> /dev/null
