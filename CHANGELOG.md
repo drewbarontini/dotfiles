@@ -12,6 +12,7 @@
 
 - `vim-javascript` plugin
 - Spacemacs configuration
+- `notion` to `setup/cask`
 
 ### Removed
 
