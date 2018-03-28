@@ -80,6 +80,7 @@
     "titleBar.border": "#080a0f",
     "terminal.ansiBrightBlue": "#19b9c4",
     "terminal.ansiBrightGreen": "#8cc567",
+    "terminal.ansiBrightRed": "#f16372",
     "terminal.ansiWhite": "#d1d6dc"
   },
   "workbench.colorTheme": "Plastic - deprioritised punctuation",
