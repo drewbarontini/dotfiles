@@ -10,7 +10,7 @@
 
 let g:airline_left_sep=''
 let g:airline_right_sep=''
-let g:airline_theme='distinguished'
+let g:airline_theme='solarized'
 let g:airline_powerline_fonts=0
 let g:airline#extensions#hunks#non_zero_only = 1
 let g:airline#extensions#tabline#enabled = 1

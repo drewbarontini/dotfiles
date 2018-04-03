@@ -27,7 +27,7 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'airblade/vim-gitgutter'
 
 " Solarized
-" Plugin 'altercation/vim-colors-solarized'
+Plugin 'altercation/vim-colors-solarized'
 
 " Close matching parenthesis, quote, etc.
 Plugin 'AutoClose'
