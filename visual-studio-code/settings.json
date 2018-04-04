@@ -84,6 +84,7 @@
     "terminal.ansiWhite": "#d1d6dc"
   },
   "workbench.colorTheme": "Plastic - deprioritised punctuation",
+  "window.zoomLevel": 0,
   "vim.easymotion": true,
   "vim.easymotionMarkerFontFamily": "Operator Mono",
   "vim.easymotionMarkerHeight": 20,
@@ -92,5 +93,4 @@
   "vim.leader": "<space>",
   "vim.mouseSelectionGoesIntoVisualMode": false,
   "vim.overrideCopy": false,
-  "window.zoomLevel": 0,
 }
