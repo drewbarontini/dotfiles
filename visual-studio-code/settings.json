@@ -56,7 +56,7 @@
   "sync.forceDownload": false,
   "sync.gist": "7ad2d71d970519c3fda31234db46e6d0",
   "sync.host": "",
-  "sync.lastUpload": "2018-03-13T14:19:35.138Z",
+  "sync.lastUpload": "2018-04-04T14:50:38.196Z",
   "sync.lastDownload": "",
   "sync.pathPrefix": "",
   "sync.quietSync": false,
@@ -70,6 +70,55 @@
   "terminal.integrated.shellArgs.osx": [
     "-l"
   ],
+  "vim.easymotion": true,
+  "vim.easymotionMarkerFontFamily": "Operator Mono",
+  "vim.easymotionMarkerHeight": 20,
+  "vim.easymotionMarkerYOffset": 2,
+  "vim.hlsearch": true,
+  "vim.leader": "<space>",
+  "vim.mouseSelectionGoesIntoVisualMode": false,
+  // https://code.visualstudio.com/docs/getstarted/keybindings
+  "vim.otherModesKeyBindingsNonRecursive": [
+    {
+      "before": [
+        ":"
+      ],
+      "after": [],
+      "commands": [
+        {
+          "command": "workbench.action.showCommands",
+          "args": []
+        }
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "s"
+      ],
+      "after": [],
+      "commands": [
+        {
+          "command": ":noh1",
+          "args": []
+        }
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "v"
+      ],
+      "after": [],
+      "commands": [
+        {
+          "command": "workbench.action.splitEditor",
+          "args": []
+        }
+      ]
+    }
+  ],
+  "vim.overrideCopy": false,
   "workbench.editor.tabSizing": "shrink",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.startupEditor": "newUntitledFile",
@@ -85,12 +134,4 @@
   },
   "workbench.colorTheme": "Plastic - deprioritised punctuation",
   "window.zoomLevel": 0,
-  "vim.easymotion": true,
-  "vim.easymotionMarkerFontFamily": "Operator Mono",
-  "vim.easymotionMarkerHeight": 20,
-  "vim.easymotionMarkerYOffset": 2,
-  "vim.hlsearch": true,
-  "vim.leader": "<space>",
-  "vim.mouseSelectionGoesIntoVisualMode": false,
-  "vim.overrideCopy": false,
 }
