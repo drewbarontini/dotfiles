@@ -7,6 +7,7 @@
 - Vim colors
 - Auto-formatting settings in Vim
 - VSCode settings
+- Hyper settings
 
 ### Added
 
