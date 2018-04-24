@@ -8,6 +8,7 @@
 - Auto-formatting settings in Vim
 - VSCode settings
 - Hyper settings
+- Sublime Text settings/packages
 
 ### Added
 
