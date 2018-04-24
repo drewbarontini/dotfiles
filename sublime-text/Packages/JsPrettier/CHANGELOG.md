@@ -1,5 +1,36 @@
 # Changelog
 
+## 1.20.0
+
+**Release Date:** 2018-02-13
+
+- Added new `auto_format_on_save_requires_prettier_config` setting that will
+  enable/disable auto format on save *only* if a Prettier config file is (or isn't) found.
+  
+  The Prettier config file is resolved by first checking if a `--config </path/to/prettier/config>`  
+  is specified in the `additional_cli_args` setting, then by searching the
+  location of the file being formatted, and finally navigating up the file tree
+  until a config file is (or isn't) found.
+
+## 1.19.0
+
+**Release Date:** 2018-01-12
+
+- Support for Vue Single File Components. Requires [Prettier v1.10+].
+
+## 1.18.0
+
+**Release Date:** 2017-12-09
+
+- Added support for [`arrowParens`] option. Configure formatting to include
+  parentheses around a sole arrow function parameter. Requires [Prettier v1.9+].
+
+## 1.17.0
+
+**Release Date:** 2017-11-10
+
+- Added support for formatting Markdown files (requires [Prettier v1.8+]).
+
 ## 1.16.0
 
 **Release Date:** 2017-09-23
@@ -47,8 +78,8 @@
 
 **Release Date:** 2017-06-29
 
-- Added support for JSON formatting (requires [prettier v1.5+]).
-- Added support for GraphQL formatting (requires [prettier v1.5+]).
+- Added support for JSON formatting (requires [Prettier v1.5+]).
+- Added support for GraphQL formatting (requires [Prettier v1.5+]).
 
 ## 1.10.0
 
@@ -69,7 +100,7 @@
 **Release Date:** 2017-06-04
 
 - Added new setting to allow formatting custom file extensions.
-- Support for CSS formatting (requires [prettier v1.4+]).
+- Support for CSS formatting (requires [Prettier v1.4+]).
 - Built-in support for TypeScript.
 
 ## 1.7.0
@@ -207,15 +238,19 @@
 - JsPrettier now available on [Package Control].
 
 [Package Control]: https://packagecontrol.io/packages/JsPrettier
-[#4]: https://github.com/jonlabelle/SublimeJsPrettier/issues/4
 [Prettier]: https://github.com/jlongster/prettier
 [Project-level settings]: https://github.com/jonlabelle/SublimeJsPrettier#project-level-settings
-[prettier v1.4+]: https://github.com/prettier/prettier/releases/tag/1.4.0
-[prettier v1.5+]: https://github.com/prettier/prettier/releases/tag/1.5.0
-[prettier v1.6+]: https://github.com/prettier/prettier/releases/tag/1.6.0
+[Prettier v1.4+]: https://github.com/prettier/prettier/releases/tag/1.4.0
+[Prettier v1.5+]: https://github.com/prettier/prettier/releases/tag/1.5.0
+[Prettier v1.6+]: https://github.com/prettier/prettier/releases/tag/1.6.0
+[Prettier v1.8+]: https://github.com/prettier/prettier/releases/tag/1.8.0
 [requirePragma]: https://github.com/prettier/prettier#require-pragma
+[#4]: https://github.com/jonlabelle/SublimeJsPrettier/issues/4
 [#63]: https://github.com/jonlabelle/SublimeJsPrettier/issues/63
 [#64]: https://github.com/jonlabelle/SublimeJsPrettier/issues/64
 [#67]: https://github.com/jonlabelle/SublimeJsPrettier/issues/67
 [#68]: https://github.com/jonlabelle/SublimeJsPrettier/issues/68
 [#72]: https://github.com/jonlabelle/SublimeJsPrettier/issues/72
+[`arrowParens`]: https://prettier.io/docs/en/options.html#arrow-function-parentheses
+[Prettier v1.9+]: https://github.com/prettier/prettier/releases/tag/1.9.0
+[Prettier v1.10+]: https://prettier.io/blog/2018/01/10/1.10.0.html

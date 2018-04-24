@@ -45,9 +45,9 @@
     ### Custom Key Binding
 
         To add a custom key binding to JsPrettier, please reference the
-        following example which binds `js_prettier` to "ctrl/cmd + b".
+        following example which binds `js_prettier` to "ctrl/cmd + alt + f".
 
-            { "keys": ["super+b"], "command": "js_prettier" }
+            { "keys": ["super+alt+f"], "command": "js_prettier" }
 
 
 ## Settings
@@ -78,7 +78,8 @@
                     "prettier_cli_path": "",
                     "node_path": "",
                     "auto_format_on_save": false,
-                    "auto_format_on_save_excludes": ["*/node_modules/*", "*/.git/*"],
+                    "auto_format_on_save_excludes": [],
+                    "auto_format_on_save_requires_prettier_config": false,
                     "allow_inline_formatting": false,
                     "custom_file_extensions": [],
                     "max_file_size_limit": -1,
@@ -91,7 +92,9 @@
                         "jsxBracketSameLine": false,
                         "parser": "babylon",
                         "semi": true,
-                        "requirePragma": false
+                        "requirePragma": false,
+                        "proseWrap": "preserve",
+                        "arrowParens": "avoid"
                     }
                 }
             }
@@ -113,4 +116,4 @@
 
     The MIT License (MIT)
 
-    Copyright (c) 2017 Jon LaBelle
+    Copyright (c) 2018 Jon LaBelle

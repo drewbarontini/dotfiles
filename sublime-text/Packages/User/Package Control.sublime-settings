@@ -3,7 +3,9 @@
 	"bootstrapped": true,
 	"in_process_packages":
 	[
-		"CoffeeScript"
+		"CoffeeScript",
+		"Material Theme",
+		"Theme - Spacegray"
 	],
 	"installed_packages":
 	[
@@ -25,10 +27,10 @@
 		"Oceanic Next Italic Color Scheme",
 		"Package Control",
 		"Pug",
+		"Sass",
 		"Schemr",
 		"SublimeGit",
 		"Surround",
-		"Syntax Highlighting for Sass",
 		"Theme - Flatland",
 		"Theme - Soda",
 		"Theme - Sodarized",

@@ -21,7 +21,7 @@ if PY3:
     if PY34:
         import html  # noqa
         html_unescape = html.unescape  # noqa
-    else:
+    else:  # pragma: no cover
         html_unescape = HTMLParser().unescape  # noqa
 else:
     uchr = unichr  # noqa
@@ -101,16 +101,6 @@ else:
         return uchr(value)
 
 
-def get_arg_count(fn):
-    """Get argument count of function."""
-
-    if PY3:
-        count = fn.__code__.co_argcount
-    else:
-        count = fn.func_code.co_argcount
-    return count
-
-
 def escape_chars(md, echrs):
     """
     Add chars to the escape list.
@@ -129,10 +119,10 @@ def escape_chars(md, echrs):
 
 def parse_url(url):
     """
-    Parse the url.
+    Parse the URL.
 
     Try to determine if the following is a file path or
-    (as we will call anything else) a url.
+    (as we will call anything else) a URL.
 
     We return it slightly modified and combine the path parts.
 
@@ -186,5 +176,5 @@ def parse_url(url):
     return (scheme, netloc, path, params, query, fragment, is_url, is_absolute)
 
 
-class PymdownxDeprecationWarning(UserWarning):
+class PymdownxDeprecationWarning(UserWarning):  # pragma: no cover
     """Deprecation warning for Pymdownx that is not hidden."""

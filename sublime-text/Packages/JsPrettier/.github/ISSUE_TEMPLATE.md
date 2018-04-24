@@ -2,7 +2,7 @@
 
 When [reporting an issue](https://github.com/jonlabelle/SublimeJsPrettier/issues), please include the following information in your post:
 
-- [ ] **Explain the issue**
+- [ ] **Explain the Issue and Expected Behavior**
 - [ ] **Prettier version**
 - [ ] **JsPrettier Plug-in Version**
 - [ ] **Platform Details**
@@ -14,9 +14,9 @@ When [reporting an issue](https://github.com/jonlabelle/SublimeJsPrettier/issues
 
 ---
 
-### Explain the issue
+### Explain the Issue and Expected Behavior
 
-Provide a story of the issue with as much detail as possible...
+Provide a story of the issue with as much detail as possible, including the expected behavior.
 
 ### Prettier version
 
@@ -74,7 +74,7 @@ To view the generated prettier command line arguments you need to enable JsPrett
 
 ### Is the same behavior observed when run against Prettier directly?
 
-For example, to pass the contents of file `path_to_js_file.js` to Prettier from the command line.
+For example, the following command passes the contents of `messy_formatted_file.js` to Prettier as stdin (`--stdin`) and prints the formatted code back to stdout.
 
     /usr/local/bin/prettier           \
         --stdin                       \
@@ -88,23 +88,25 @@ For example, to pass the contents of file `path_to_js_file.js` to Prettier from 
         --semi=true                   \
         --tab-width 4                 \
         --use-tabs=true               \
-        < path_to_js_file.js
+        < messy_formatted_file.js
 
 ### The contents of your `User/JsPrettier.sublime-settings` file
 
-The entire contents of your ***User*** overridden JsPrettier Settings, and exclude the comments.
+The entire contents of your ***User*** overridden JsPrettier Settings, excluding the comments.
 
-**Example**
+**Example JsPrettier.sublime-settings**
 
     {
         "debug": false,
         "prettier_cli_path": "",
         "node_path": "",
         "auto_format_on_save": false,
+        "auto_format_on_save_excludes": [],
+        "auto_format_on_save_requires_prettier_config": false,
         "allow_inline_formatting": false,
         "custom_file_extensions": [],
-        "additional_cli_args": {},
         "max_file_size_limit": -1,
+        "additional_cli_args": {},
         "prettier_options": {
             "printWidth": 80,
             "singleQuote": false,
@@ -112,13 +114,16 @@ The entire contents of your ***User*** overridden JsPrettier Settings, and exclu
             "bracketSpacing": true,
             "jsxBracketSameLine": false,
             "parser": "babylon",
-            "semi": true
+            "semi": true,
+            "requirePragma": false,
+            "proseWrap": "preserve",
+            "arrowParens": "avoid"
         }
     }
     
 ### The contents of your `<project_name>.sublime-project` file (if applicable)
 
-The entire contents of your ***User*** overridden JsPretter Project-level Settings, and exclude the comments.
+The entire contents of your ***User*** overridden JsPretter Project-level Settings, excluding the comments.
 
 **Example**
 
@@ -134,10 +139,12 @@ The entire contents of your ***User*** overridden JsPretter Project-level Settin
                 "prettier_cli_path": "",
                 "node_path": "",
                 "auto_format_on_save": false,
+                "auto_format_on_save_excludes": [],
+                "auto_format_on_save_requires_prettier_config": false,
                 "allow_inline_formatting": false,
                 "custom_file_extensions": [],
-                "additional_cli_args": {},
                 "max_file_size_limit": -1,
+                "additional_cli_args": {},
                 "prettier_options": {
                     "printWidth": 80,
                     "singleQuote": false,
@@ -145,7 +152,10 @@ The entire contents of your ***User*** overridden JsPretter Project-level Settin
                     "bracketSpacing": true,
                     "jsxBracketSameLine": false,
                     "parser": "babylon",
-                    "semi": true
+                    "semi": true,
+                    "requirePragma": false,
+                    "proseWrap": "preserve",
+                    "arrowParens": "avoid"
                 }
             }
         }
@@ -158,7 +168,10 @@ The steps one would take to reproduce and observe the problem.
     1. This is the first step
     2. This is the second step
     3. Further steps, etc.
-    
-    Any other information you want to share that is relevant to the issue being reported. This might include the lines of code that you have identified as causing the bug, and potential solutions (and your opinions on their merits).
+
+    Any other information you want to share that is relevant to the issue being
+    reported. This might include the lines of code that you have identified as
+    causing the bug, and potential solutions (and your opinions on their
+    merits).
 
 [debug setting]: https://github.com/jonlabelle/SublimeJsPrettier/blob/master/JsPrettier.sublime-settings#L14

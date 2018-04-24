@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
 ##
-# Release tasks bulked into one script w/ user
-# intervention/confirmation required.
+# Release tasks bulked into one script w/ user intervention/confirmation
+# required.
 #
 # - Bumps 'package.json' version field to the passed <semver> arg (1).
 # - Commit and push the change (to master).
@@ -11,56 +11,62 @@
 #
 # Usage:
 #
-# From the 'master' branch... run:
+#   $ release.sh [options] [version]
 #
-#     release.sh <semver>
+# Examples:
 #
-# Example:
+#   To bump and tag to the specified version (1.2.1):
+#       $ release.sh 1.2.1
 #
-#     bash release.sh 1.2.1
+#   To bump and tag automatically incrementing to the next patch version:
+#       $ release.sh --next
 ##
 
 set -e
 
 VERSION=$1
+PREVIOUS_VERSION="$(git describe --abbrev=0 --tags)"
+NEXT_VERSION="${PREVIOUS_VERSION%.*}.$((${PREVIOUS_VERSION##*.}+1))"
 
+readonly PREVIOUSWRKDIR="$(pwd)"
 readonly SCRIPTSDIR="$(cd "$(dirname "${0}")"; echo "$(pwd)")"
 readonly SCRIPTNAME="$(basename "${BASH_SOURCE[0]}")"
 
 
-show_info() {
-    local msg="$1"
-    echo -e "\e[36m${1}\e[0m"
-}
-
-show_success() {
-    local msg="$1"
-    echo -e "\e[32m${msg}\e[0m"
-}
-
-show_warning() {
-    local msg="$1"
-    echo -e "\e[33mwarning\e[0m : ${1}"
-}
-
-show_error() {
-    local msg="$1"
-    echo -e "\e[31merror\e[0m : ${1}"
-}
-
-
-show_usage() {
-    echo "Usage: bash $SCRIPTNAME <semver/version>"
-}
-
 cd_project_root() {
-    show_info '> cd to project root'
-    pushd "${SCRIPTSDIR}" && pushd ..
+    cd "${SCRIPTSDIR}" && cd ..
 }
 
 cd_previous_working_dir() {
-    show_info '> Restore previous working directory'
-    popd && popd
+    [ -d "${PREVIOUSWRKDIR}" ] && cd "${PREVIOUSWRKDIR}"
+}
+
+show_info() {
+    echo -e "\\e[36m${1}\\e[0m"
+}
+
+show_success() {
+    echo -e "\\e[32m${1}\\e[0m"
+}
+
+show_warning() {
+    echo -e "\\e[33m${1}\\e[0m"
+}
+
+show_error() {
+    echo -e "\\e[31mError:\\e[0m ${1}"
+}
+
+show_usage() {
+    echo
+    echo "Usage: $SCRIPTNAME [options] [version]"
+    echo
+    echo "Release tasks bulked into one script."
+    echo
+    echo "OPTIONS"
+    echo "    -n, --next    auto-increment to the next patch version"
+    echo "    -h, --help    show usage"
+    echo
 }
 
 validate_version() {
@@ -99,7 +105,7 @@ ensure_git_repo_is_clean() {
 }
 
 bump_package_json_version() {
-    show_info "> Bump version in 'package.json' file"
+    show_info "> Bump version in 'package.json' file, 'v$PREVIOUS_VERSION' -> 'v$VERSION'"
     local tmp_pkg_file="${TMPDIR:-/tmp}/package.json.$$"
     sed -E s/'"version"\: "[0-9]+\.[0-9]+\.[0-9]+"'/'"version"\: "'"$VERSION"'"'/ package.json > "$tmp_pkg_file" && mv "$tmp_pkg_file" package.json
     grep "$VERSION" -C 1 package.json
@@ -159,9 +165,17 @@ main() {
 }
 
 if [ $# -eq 0 ]; then
-    show_error "you must specify a valid semver/version number for the release."
+    show_error "a valid semver number for the new release is required"
+    echo "Currently, the latest release is '$(show_success "${PREVIOUS_VERSION}")'"
     show_usage
     exit 1
 else
+    if [ "$1" = "-n" ] || [ "$1" = "--next" ]; then
+        VERSION=${NEXT_VERSION}
+    fi
+    if [ "$1" = "-h" ] || [ "$1" = "--help" ]; then
+        show_usage
+        exit 0
+    fi
     main
 fi

@@ -79,8 +79,7 @@
 	// @param {bool} "auto_format_on_save"
 	// @default false
 	//
-	// Whether or not to run the `js_prettier` command automatically
-	// on every file save.
+	// Whether or not to automatically format the file on save.
 	// ----------------------------------------------------------------------
 
 	"auto_format_on_save": false,
@@ -90,12 +89,12 @@
 	// ----------------------------------------------------------------------
 	//
 	// @param {array} "auto_format_on_save_excludes"
-	// @default ["*/node_modules/*", "*/.git/*"]
+	// @default []
 	//
 	// Ignore auto formatting when the target file, or its path resides in a
 	// particular location, and when `auto_format_on_save` is turned on.
 	//
-	// Examples:
+	// Example:
 	//
 	//     "auto_format_on_save_excludes": [
 	//         "*/node_modules/*",
@@ -104,10 +103,24 @@
 	//     ]
 	// ----------------------------------------------------------------------
 
-	"auto_format_on_save_excludes": [
-		"*/node_modules/*",
-		"*/.git/*"
-	],
+	"auto_format_on_save_excludes": [],
+
+	// ----------------------------------------------------------------------
+	// Auto Format Requires Prettier Config File
+	// ----------------------------------------------------------------------
+	//
+	// @param {bool} "auto_format_on_save_requires_prettier_config"
+	// @default false
+	//
+	// Enable auto format on save ONLY when a Prettier config file is found.
+	//
+	// The Prettier config file is resolved by first checking if a `--config </path/to/prettier/config>`
+	// is specified in the `additional_cli_args` setting, then by searching the
+	// location of the file being formatted, and finally navigating up the file
+	// tree until a config file is (or isn't) found.
+	// ----------------------------------------------------------------------
+
+	"auto_format_on_save_requires_prettier_config": false,
 
 	// ----------------------------------------------------------------------
 	// Allow Inline Formatting
@@ -134,8 +147,8 @@
 	// Additional custom file extensions to format.
 	//
 	// There's built-in support already for "js", "jsx", "json", "graphql/gql",
-	// "ts", "tsx", "css", "scss" and "less". Any additional file extensions
-	// must be specified here, without the leading dot.
+	// "ts", "tsx", "css", "scss", "less", "md" and "vue" files. Additional file
+	// extensions MUST be specified here, without the leading dot.
 	// ----------------------------------------------------------------------
 
 	"custom_file_extensions": [],
@@ -171,10 +184,9 @@
 	//
 	//     "additional_cli_args": {
 	//         "--config": "path/to/my/custom/.prettierrc",
-	//         "--no-config": "",
-	//         "--with-node-modules": "",
+	//         "--config-precedence": "prefer-file",
 	//         "--ignore-path": "path/to/.prettierignore",
-	//         "--config-precedence": "file-override"
+	//         "--with-node-modules": ""
 	//     }
 	//
 	// NOTE: If choosing to specify additional cli args, it is assumed that each
@@ -222,22 +234,41 @@
 		"jsxBracketSameLine": false,
 
 		// Which parser to use. Valid options are "flow", "babylon",
-		// "typescript" and "postcss".
+		// "typescript", "css", "json", "graphql" and "markdown".
 		//
-		// If CSS or TypeScript is detected in Sublime Text, the parser option
-		// will always be internally overridden and set to "postcss" or
-		// "typescript" respectively.
+		// NOTE: The `parser` option is automatically set by the plug-in
+		// (JsPrettier), based on the contents of current file or selection.
 		"parser": "babylon",
 
 		// Whether to add a semicolon at the end of every line (semi: true), or
-		// only at the beginning of lines that may introduce
-		// ASI failures (semi: false)
+		// only at the beginning of lines that may introduce ASI failures (semi: false)
 		"semi": true,
 
 		// Prettier can restrict itself to only format files that contain a
 		// special comment, called a pragma, at the top of the file. This is
 		// very useful when gradually transitioning large, unformatted codebases
 		// to prettier.
-		"requirePragma": false
+		"requirePragma": false,
+
+		// (Markdown only) By default, Prettier will wrap markdown text as-is
+		// since some services use a linebreak-sensitive renderer, e.g. GitHub
+		// comment and BitBucket. In some cases you may want to rely on
+		// SublimeText soft wrapping instead, so this option allows you to opt
+		// out with "never".
+		//
+		// Valid options:
+		//
+		// "always" - Wrap prose if it exceeds the print width.
+		// "never" - Do not wrap prose.
+		// "preserve" (default) - Wrap prose as-is. available in v1.9.0+
+		"proseWrap": "preserve",
+
+		// Include parentheses around a sole arrow function parameter.
+		//
+		// Valid Options:
+		//
+		// - "avoid" (default) - Omit parentheses when possible. Example: `x => x`
+		// - "always" - Always include parentheses. Example: `(x) => x`
+		"arrowParens": "avoid"
 	}
 }

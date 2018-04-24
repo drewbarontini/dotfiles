@@ -16,7 +16,7 @@ import time
 from . import version as ver
 from . import colorbox
 from collections import OrderedDict
-from .st_scheme_template import Scheme2CSS, POPUP, PHANTOM
+from .st_scheme_template import SchemeTemplate, POPUP, PHANTOM, NEW_SCHEMES
 from .st_clean_css import clean_css
 from .st_pygments_highlight import syntax_hl as pyg_syntax_hl
 from .st_code_highlight import SublimeHighlight
@@ -24,24 +24,22 @@ from .st_mapping import lang_map
 from . import imagetint
 import re
 import os
+from . import frontmatter
 try:
     import bs4
 except Exception:
     bs4 = None
-try:
-    from . import frontmatter
-except Exception as e:
-    frontmatter = None
-try:
-    import pymdownx
-except Exception:
-    pymdownx = None
 
 DEFAULT_CSS = 'Packages/mdpopups/css/default.css'
 DEFAULT_USER_CSS = 'Packages/User/mdpopups.css'
 IDK = '''
 <style>html {background-color: #333; color: red}</style>
-<div><p>¯\_(ツ)_/¯'</p></div>
+<div><p>¯\_(ツ)_/¯</p></div>
+<div><p>
+MdPopups failed to create<br>
+the popup/phantom!<br><br>
+Check the console to see if<br>
+there are helpful errors.</p></div>
 '''
 HL_SETTING = 'mdpopups.use_sublime_highlighter'
 STYLE_SETTING = 'mdpopups.default_style'
@@ -96,6 +94,7 @@ def _can_show(view, location=-1):
         can_show = False
 
     return can_show
+
 
 ##############################
 # Theme/Scheme cache management
@@ -170,15 +169,15 @@ def _get_scheme(view):
             # Check if cache expired or user changed pygments setting.
             if (
                 _is_cache_expired(t) or
-                obj.variables.get('use_pygments', False) != (not settings.get(HL_SETTING, True)) or
-                obj.variables.get('default_style', True) != settings.get(STYLE_SETTING, True)
+                obj.use_pygments != (not settings.get(HL_SETTING, True)) or
+                obj.default_style != settings.get(STYLE_SETTING, True)
             ):
                 obj = None
                 user_css = ''
                 default_css = ''
         if obj is None:
             try:
-                obj = Scheme2CSS(scheme)
+                obj = SchemeTemplate(scheme)
                 _prune_cache()
                 user_css = _get_user_css()
                 default_css = _get_default_css()
@@ -272,6 +271,7 @@ def _get_theme(view, css=None, css_type=POPUP, template_vars=None):
     obj, user_css, default_css = _get_scheme(view)
     try:
         return obj.apply_template(
+            view,
             default_css + '\n' +
             ((clean_css(css) + '\n') if css else '') +
             user_css,
@@ -322,11 +322,9 @@ def _create_html(
             allow_code_wrap=allow_code_wrap
         )
     else:
-        if frontmatter:
-            # Strip out frontmatter if found as we don't currently
-            # do anything with it when content is just HTML.
-            content = frontmatter.get_frontmatter(content)[1]
-        content = _markup_template(content, template_vars, template_env_options)
+        # Strip out frontmatter if found as we don't currently
+        # do anything with it when content is just HTML.
+        content = _markup_template(frontmatter.get_frontmatter(content)[1], template_vars, template_env_options)
 
     if debug:
         _debug('=====HTML OUTPUT=====', INFO)
@@ -377,10 +375,7 @@ def md2html(
     else:
         sublime_hl = (False, None)
 
-    if frontmatter:
-        fm, markup = frontmatter.get_frontmatter(markup)
-    else:
-        fm = {}
+    fm, markup = frontmatter.get_frontmatter(markup)
 
     # We allways include these
     extensions = [
@@ -410,9 +405,9 @@ def md2html(
                 "markdown.extensions.admonition",
                 "markdown.extensions.attr_list",
                 "markdown.extensions.def_list",
-                "pymdownx.betterem" if pymdownx else "mdpopups.mdx.betterem",
-                "pymdownx.magiclink" if pymdownx else "mdpopups.mdx.magiclink",
-                "pymdownx.extrarawhtml" if pymdownx else "mdpopups.mdx.extrarawhtml"
+                "pymdownx.betterem",
+                "pymdownx.magiclink",
+                "pymdownx.extrarawhtml"
             ]
         )
 
@@ -527,6 +522,16 @@ def syntax_highlight(view, src, language=None, inline=False, allow_code_wrap=Fal
     return code
 
 
+def tabs2spaces(text, tab_size=4):
+    """
+    Convert tabs to spaces on tab stops.
+
+    Does not account for char width.
+    """
+
+    return text.expandtabs(tab_size)
+
+
 def scope2style(view, scope, selected=False, explicit_background=False):
     """Convert the scope to a style."""
 
@@ -536,10 +541,20 @@ def scope2style(view, scope, selected=False, explicit_background=False):
         'style': ''
     }
     obj = _get_scheme(view)[0]
-    style_obj = obj.guess_style(scope, selected, explicit_background)
-    style['color'] = style_obj.fg_simulated
-    style['background'] = style_obj.bg_simulated
-    style['style'] = style_obj.style
+    style_obj = obj.guess_style(view, scope, selected, explicit_background)
+    if NEW_SCHEMES:
+        style['color'] = style_obj['foreground']
+        style['background'] = style_obj['background']
+        font = []
+        if style_obj['bold']:
+            font.append('bold')
+        if style_obj['italic']:
+            font.append('italic')
+        style['style'] = ' '.join(font)
+    else:
+        style['color'] = style_obj.fg_simulated
+        style['background'] = style_obj.bg_simulated
+        style['style'] = style_obj.style
     return style
 
 
@@ -764,8 +779,8 @@ class PhantomSet(sublime.PhantomSet):
 
         self.phantoms = new_phantoms
 
-if frontmatter:
-    def format_frontmatter(values):
-        """Format values as frontmatter."""
 
-        return frontmatter.dump_frontmatter(values)
+def format_frontmatter(values):
+    """Format values as frontmatter."""
+
+    return frontmatter.dump_frontmatter(values)

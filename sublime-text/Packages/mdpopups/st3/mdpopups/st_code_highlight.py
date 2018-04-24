@@ -27,6 +27,8 @@ import re
 from .st_color_scheme_matcher import ColorSchemeMatcher
 from .st_mapping import lang_map
 
+NEW_SCHEMES = int(sublime.version()) >= 3150
+
 INLINE_BODY_START = '<code class="inline-highlight">'
 BODY_START = '<div class="highlight"><pre>'
 LINE = '%(code)s<br>'
@@ -45,10 +47,12 @@ class SublimeHighlight(object):
         """Initialization."""
 
         self.view = None
-        self.csm = ColorSchemeMatcher(scheme)
 
-        self.fground = self.csm.get_special_color('foreground', simulate_transparency=True)
-        self.bground = self.csm.get_special_color('background', simulate_transparency=True)
+        if not NEW_SCHEMES:
+            self.csm = ColorSchemeMatcher(scheme)
+
+            self.fground = self.csm.get_special_color('foreground', simulate_transparency=True)
+            self.bground = self.csm.get_special_color('background', simulate_transparency=True)
 
     def setup(self, **kwargs):
         """Get get general document preferences from sublime preferences."""
@@ -58,7 +62,7 @@ class SublimeHighlight(object):
         self.pt = 0
         self.end = 0
         self.curr_row = 0
-        self.ebground = self.bground
+        # self.ebground = self.bground
 
     def setup_print_block(self, curr_sel, multi=False):
         """Determine start and end points and whether to parse whole file or selection."""
@@ -82,6 +86,7 @@ class SublimeHighlight(object):
         """Begin conversion of the view to HTML."""
 
         for line in self.view.split_by_newlines(sublime.Region(self.pt, self.size)):
+            self.char_count = 0
             self.size = line.end()
             empty = not bool(line.size())
             line = self.convert_line_to_html(empty)
@@ -90,20 +95,30 @@ class SublimeHighlight(object):
 
     def html_encode(self, text):
         """Format text to HTML."""
-        encode_table = {
-            '&': '&amp;',
-            '>': '&gt;',
-            '<': '&lt;',
-            '\t': ' ' * self.tab_size,
-            '\n': ''
-        }
+
+        new_text = []
+        for c in text:
+            if c == '\t':
+                tab_size = self.tab_size - self.char_count % self.tab_size
+                new_text.append(' ' * tab_size)
+                self.char_count += tab_size
+            elif c == '&':
+                new_text.append('&amp;')
+                self.char_count += 1
+            elif c == '>':
+                new_text.append('&gt;')
+                self.char_count += 1
+            elif c == '<':
+                new_text.append('&lt;')
+                self.char_count += 1
+            elif c != '\n':
+                new_text.append(c)
+                self.char_count += 1
 
         return re.sub(
             (r'(?!\s($|\S))\s' if self.inline or self.code_wrap else r'\s'),
             '&nbsp;',
-            ''.join(
-                encode_table.get(c, c) for c in text
-            )
+            ''.join(new_text)
         )
 
     def format_text(self, line, text, color, bgcolor, style, empty, annotate=False):
@@ -113,9 +128,9 @@ class SublimeHighlight(object):
             text = '&nbsp;'
 
         css_style = ''
-        if style and style == 'bold':
+        if style and 'bold' in style:
             css_style += ' font-weight: bold;'
-        if style and style == 'italic':
+        if style and 'italic' in style:
             css_style += ' font-style: italic;'
 
         if bgcolor is None:
@@ -140,10 +155,25 @@ class SublimeHighlight(object):
             scope_name = self.view.scope_name(self.pt)
             while self.view.scope_name(self.end) == scope_name and self.end < self.size:
                 self.end += 1
-            color_match = self.csm.guess_color(scope_name, selected=do_highlight, explicit_background=True)
-            color = color_match.fg_simulated
-            bgcolor = color_match.bg_simulated
-            style = color_match.style
+            if NEW_SCHEMES:
+                color_match = self.view.style_for_scope(scope_name)
+                color = color_match.get('foreground', self.fground)
+                bgcolor = color_match.get('background')
+                style = []
+                if color_match['bold']:
+                    style.append('bold')
+                if color_match['italic']:
+                    style.append('italic')
+                if do_highlight:
+                    sfg = color_match.get('selection_forground', self.defaults.get('selection_forground'))
+                    if sfg:
+                        color = sfg
+                    bgcolor = color_match.get('selection', '#0000FF')
+            else:
+                color_match = self.csm.guess_color(scope_name, selected=do_highlight, explicit_background=True)
+                color = color_match.fg_simulated
+                bgcolor = color_match.bg_simulated
+                style = color_match.style.split(' ')
 
             region = sublime.Region(self.pt, self.end)
             # Normal text formatting
@@ -154,11 +184,15 @@ class SublimeHighlight(object):
             self.pt = self.end
             self.end = self.pt + 1
 
-        # Get the color for the space at the end of a line
-        if self.end < self.view.size():
-            end_key = self.view.scope_name(self.pt)
-            color_match = self.csm.guess_color(end_key, explicit_background=True)
-            self.ebground = color_match.bg_simulated
+        # # Get the color for the space at the end of a line
+        # if self.end < self.view.size():
+        #     end_key = self.view.scope_name(self.pt)
+        #     if NEW_SCHEMES:
+        #         color_match = self.view.style_for_scope(end_key)
+        #         self.ebground = color_match.get('background')
+        #     else:
+        #         color_match = self.csm.guess_color(end_key, explicit_background=True)
+        #         self.ebground = color_match.bg_simulated
 
         # Join line segments
         return ''.join(line)
@@ -184,7 +218,7 @@ class SublimeHighlight(object):
         """Setup view for conversion."""
 
         # Get the output panel
-        self.view = sublime.active_window().get_output_panel('mdpopups')
+        self.view = sublime.active_window().create_output_panel('mdpopups', unlisted=True)
         # Let all plugins no to leave this view alone
         self.view.settings().set('is_widget', True)
         # Don't translate anything.
@@ -231,6 +265,10 @@ class SublimeHighlight(object):
         """Syntax Highlight."""
 
         self.set_view(src, 'text' if not lang else lang)
+        if NEW_SCHEMES:
+            self.defaults = self.view.style()
+            self.fground = self.defaults.get('foreground', '#000000')
+            self.bground = self.defaults.get('background', '#FFFFFF')
         self.inline = inline
         self.hl_lines = hl_lines
         self.no_wrap = no_wrap
