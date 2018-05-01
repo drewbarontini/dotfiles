@@ -30,6 +30,7 @@
   "explorer.autoReveal": false,
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
+  "explorer.openEditors.visible": 0,
   "files.exclude": {
     "**/.git": true,
     "**/.svn": true,
