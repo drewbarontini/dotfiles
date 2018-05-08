@@ -19,6 +19,12 @@
         "settings": {
           "fontStyle": "italic"
         }
+      },
+      {
+        "scope": "entity.other.attribute-name",
+        "settings": {
+          "fontStyle": "italic"
+        }
       }
     ]
   },
