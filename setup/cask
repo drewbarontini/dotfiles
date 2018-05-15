@@ -17,6 +17,7 @@ brew cask install atom 2> /dev/null
 brew cask install atom-beta 2> /dev/null
 brew cask install bartender 2> /dev/null
 brew cask install backblaze-downloader 2> /dev/null
+brew cask install bettertouchtool 2> /dev/null
 brew cask install cleanmymac 2> /dev/null
 brew cask install dash 2> /dev/null
 brew cask install drobo-dashboard 2> /dev/null
