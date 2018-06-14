@@ -3,9 +3,7 @@
 	"bootstrapped": true,
 	"in_process_packages":
 	[
-		"CoffeeScript",
-		"Material Theme",
-		"Theme - Spacegray"
+		"CoffeeScript"
 	],
 	"installed_packages":
 	[
