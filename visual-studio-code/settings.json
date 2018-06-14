@@ -140,5 +140,6 @@
     "terminal.ansiWhite": "#d1d6dc"
   },
   "workbench.colorTheme": "Plastic - deprioritised punctuation",
+  "window.clickThroughInactive": false,
   "window.zoomLevel": 0,
 }
