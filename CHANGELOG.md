@@ -16,6 +16,9 @@
 - Spacemacs configuration
 - `notion` to `setup/cask`
 - `bettertouchtool` to `setup/cask`
+- `visual-studio-code` to `setup/cask`
+- `visual-studio-code-insiders` to `setup/cask`
+- `Newton` to `setup/mas`
 
 ### Removed
 
