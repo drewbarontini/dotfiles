@@ -36,6 +36,9 @@ mas_install 1289197285
 # Monosnap
 mas_install 540348655
 
+# Newton
+mas_install 1059655371
+
 # Noizio
 mas_install 928871589
 
@@ -72,7 +75,6 @@ mas_install 909760813
 # mas_install 1091189122 (Bear)
 # mas_install 1053031090 (Boxy)
 # mas_install 603637384 (Name Mangler)
-# mas_install 1059655371 (Newton)
 # mas_install 914250185 (NZBVortex)
 # mas_install 929960914 (Red Hot Timer)
 # mas_install 585829637 (Todoist)
