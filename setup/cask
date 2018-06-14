@@ -43,6 +43,8 @@ brew cask install sketch 2> /dev/null
 brew cask install spotify 2> /dev/null
 brew cask install sublime-text 2> /dev/null
 brew cask install transmit 2> /dev/null
+brew cask install visual-studio-code 2> /dev/null
+brew cask install visual-studio-code-insiders 2> /dev/null
 brew cask install quitter 2> /dev/null
 
 # ----------------------------------------------------
