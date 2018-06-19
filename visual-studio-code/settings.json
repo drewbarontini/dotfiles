@@ -85,7 +85,7 @@
   "vim.leader": "<space>",
   "vim.mouseSelectionGoesIntoVisualMode": false,
   // https://code.visualstudio.com/docs/getstarted/keybindings
-  "vim.otherModesKeyBindingsNonRecursive": [
+  "vim.normalModeKeyBindingsNonRecursive": [
     {
       "before": [
         ":"
