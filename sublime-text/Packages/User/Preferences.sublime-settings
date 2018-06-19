@@ -30,7 +30,12 @@
 	"ignored_packages":
 	[
 		"CoffeeScript",
-		"Modific"
+		"GitGutter",
+		"JsPrettier",
+		"Material Theme",
+		"Modific",
+		"Sass",
+		"Theme - Spacegray"
 	],
 	"indent_guide_options":
 	[
