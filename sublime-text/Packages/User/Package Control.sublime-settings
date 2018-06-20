@@ -3,12 +3,10 @@
 	"bootstrapped": true,
 	"in_process_packages":
 	[
+		"Better CoffeeScript",
 		"CoffeeScript",
 		"GitGutter",
-		"JsPrettier",
-		"Material Theme",
-		"Sass",
-		"Theme - Spacegray"
+		"JsPrettier"
 	],
 	"installed_packages":
 	[

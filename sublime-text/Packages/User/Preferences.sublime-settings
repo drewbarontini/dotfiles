@@ -29,13 +29,11 @@
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
+		"Better CoffeeScript",
 		"CoffeeScript",
 		"GitGutter",
 		"JsPrettier",
-		"Material Theme",
-		"Modific",
-		"Sass",
-		"Theme - Spacegray"
+		"Modific"
 	],
 	"indent_guide_options":
 	[
