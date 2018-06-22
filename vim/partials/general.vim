@@ -21,8 +21,8 @@ set laststatus=2
 set lazyredraw
 set ttyfast
 set regexpengine=1
+set relativenumber             " Relative line numbers
 
-" set relativenumber             " Relative line numbers
 " Smart line numbers
 " autocmd WinEnter,FocusGained * :setlocal number relativenumber
 " autocmd WinLeave,FocusLost   * :setlocal number norelativenumber
