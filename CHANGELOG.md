@@ -5,6 +5,7 @@
 ### Changed
 
 - Vim colors
+- Vim settings
 - Auto-formatting settings in Vim
 - VSCode settings
 - Hyper settings
