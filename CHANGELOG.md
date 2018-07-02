@@ -10,6 +10,7 @@
 - VSCode settings
 - Hyper settings
 - Sublime Text settings/packages
+- `tmuxline_snapshot`
 
 ### Added
 
