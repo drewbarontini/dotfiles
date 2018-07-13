@@ -11,6 +11,7 @@
 - Hyper settings
 - Sublime Text settings/packages
 - `tmuxline_snapshot`
+- `git_remote_tracking_branch` function to accept source branch
 
 ### Added
 
