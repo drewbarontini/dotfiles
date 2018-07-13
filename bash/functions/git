@@ -181,12 +181,16 @@ function git_pull_subdirectories() {
 # -------------------------------------
 #
 # $1 - the branch name
+# $2 - the branch to branch off of (optional)
 #
-# Usage: `git_remote_tracking_branch fix_sign_up_form_styles`
+# Usage: `git_remote_tracking_branch feature/[title]`
+# Usage: `git_remote_tracking_branch hotfix/[title] release/[title]`
 #
 
 function git_remote_tracking_branch() {
-  git checkout -b $1 && git push -u origin $1
+  SOURCE=${2:-master}
+
+  git checkout -b $1 $SOURCE && git push -u origin $1
 }
 
 # -------------------------------------
