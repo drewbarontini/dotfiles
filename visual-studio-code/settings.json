@@ -123,6 +123,19 @@
           "args": []
         }
       ]
+    },
+    {
+      "before": [
+        "leader",
+        "h"
+      ],
+      "after": [],
+      "commands": [
+        {
+          "command": "workbench.action.splitEditorDown",
+          "args": []
+        }
+      ]
     }
   ],
   "vim.overrideCopy": false,
