@@ -36,9 +36,6 @@ mas_install 1289197285
 # Monosnap
 mas_install 540348655
 
-# Newton
-mas_install 1059655371
-
 # Noizio
 mas_install 928871589
 
@@ -80,4 +77,3 @@ mas_install 909760813
 # mas_install 585829637 (Todoist)
 # mas_install 1062679359 (Typeface)
 # mas_install 1000397973 (Wallcat)
-
