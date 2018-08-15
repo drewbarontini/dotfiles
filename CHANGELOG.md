@@ -2,6 +2,16 @@
 
 ## Unreleased
 
+### Added
+
+- `vim-javascript` plugin
+- Spacemacs configuration
+- `notion` to `setup/cask`
+- `bettertouchtool` to `setup/cask`
+- `visual-studio-code` to `setup/cask`
+- `visual-studio-code-insiders` to `setup/cask`
+- `Newton` to `setup/mas`
+
 ### Changed
 
 - Vim colors
@@ -12,16 +22,8 @@
 - Sublime Text settings/packages
 - `tmuxline_snapshot`
 - `git_remote_tracking_branch` function to accept source branch
-
-### Added
-
-- `vim-javascript` plugin
-- Spacemacs configuration
-- `notion` to `setup/cask`
-- `bettertouchtool` to `setup/cask`
-- `visual-studio-code` to `setup/cask`
-- `visual-studio-code-insiders` to `setup/cask`
-- `Newton` to `setup/mas`
+- `setup/cask`
+- `setup/mas`
 
 ### Removed
 
