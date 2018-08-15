@@ -27,17 +27,11 @@ mas_install 990588172
 # Gifox
 mas_install 1082624744
 
-# GIPHY Capture
-# mas_install 668208984
-
 # HazeOver
 mas_install 430798174
 
 # MindNode
 mas_install 1289197285
-
-# Monosnap
-mas_install 540348655
 
 # Noizio
 mas_install 928871589
@@ -45,14 +39,8 @@ mas_install 928871589
 # Slack
 mas_install 803453959
 
-# Spark
-mas_install 1176895641
-
 # Things 3
 mas_install 904280696
-
-# Toggle
-mas_install 957734279
 
 # Tweetbot
 mas_install 557168941
@@ -74,9 +62,13 @@ mas_install 909760813
 # mas_install 948176063 (Boom)
 # mas_install 1091189122 (Bear)
 # mas_install 1053031090 (Boxy)
+# mas_install 668208984 (GIPHY Capture)
+# mas_install 540348655 (Monosnap)
 # mas_install 603637384 (Name Mangler)
 # mas_install 914250185 (NZBVortex)
 # mas_install 929960914 (Red Hot Timer)
+# mas_install 1176895641 (Spark)
 # mas_install 585829637 (Todoist)
+# mas_install 957734279 (Toggl)
 # mas_install 1062679359 (Typeface)
 # mas_install 1000397973 (Wallcat)
