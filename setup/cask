@@ -20,7 +20,6 @@ brew cask install backblaze-downloader 2> /dev/null
 brew cask install bettertouchtool 2> /dev/null
 brew cask install cleanmymac 2> /dev/null
 brew cask install dash 2> /dev/null
-brew cask install drobo-dashboard 2> /dev/null
 brew cask install dropbox 2> /dev/null
 brew cask install firefox 2> /dev/null
 brew cask install flux 2> /dev/null
@@ -36,7 +35,6 @@ brew cask install moom 2> /dev/null
 brew cask install notion 2> /dev/null
 brew cask install noun-project 2> /dev/null
 brew cask install nucleo 2> /dev/null
-brew cask install rocket 2> /dev/null
 brew cask install screenflow 2> /dev/null
 brew cask install screenhero 2> /dev/null
 brew cask install sketch 2> /dev/null
@@ -57,6 +55,7 @@ brew cask install quitter 2> /dev/null
 # brew cask install bitbar 2> /dev/null
 # brew cask install cheatsheet 2> /dev/null
 # brew cask install docker 2> /dev/null
+# brew cask install drobo-dashboard 2> /dev/null
 # brew cask install duet 2> /dev/null
 # brew cask install focus 2> /dev/null
 # brew cask install fontbase 2> /dev/null
@@ -71,6 +70,7 @@ brew cask install quitter 2> /dev/null
 # brew cask install mongodb-compass 2> /dev/null
 # brew cask install paw 2> /dev/null
 # brew cask install postgres 2> /dev/null
+# brew cask install rocket 2> /dev/null
 # brew cask install shortcat 2> /dev/null
 # brew cask install skype 2> /dev/null
 # brew cask install skyfonts 2> /dev/null
