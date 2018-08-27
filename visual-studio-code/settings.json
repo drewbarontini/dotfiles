@@ -1,4 +1,5 @@
 {
+  "breadcrumbs.enabled": true,
   "editor.cursorStyle": "line",
   "editor.fontLigatures": true,
   "editor.fontFamily": "Operator Mono",
@@ -7,9 +8,7 @@
   "editor.lineHeight": 22,
   "editor.lineNumbers": "relative",
   "editor.minimap.enabled": false,
-  "editor.rulers": [
-    80
-  ],
+  "editor.rulers": [80],
   "editor.renderIndentGuides": true,
   "editor.tabSize": 2,
   "editor.tokenColorCustomizations": {
@@ -74,9 +73,7 @@
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.fontWeightBold": "normal",
   "terminal.integrated.lineHeight": 1.4,
-  "terminal.integrated.shellArgs.osx": [
-    "-l"
-  ],
+  "terminal.integrated.shellArgs.osx": ["-l"],
   "vim.easymotion": true,
   "vim.easymotionMarkerFontFamily": "Operator Mono",
   "vim.easymotionMarkerHeight": 20,
@@ -87,9 +84,7 @@
   // https://code.visualstudio.com/docs/getstarted/keybindings
   "vim.normalModeKeyBindingsNonRecursive": [
     {
-      "before": [
-        ":"
-      ],
+      "before": [":"],
       "after": [],
       "commands": [
         {
@@ -99,10 +94,7 @@
       ]
     },
     {
-      "before": [
-        "leader",
-        "s"
-      ],
+      "before": ["leader", "s"],
       "after": [],
       "commands": [
         {
@@ -112,10 +104,7 @@
       ]
     },
     {
-      "before": [
-        "leader",
-        "v"
-      ],
+      "before": ["leader", "v"],
       "after": [],
       "commands": [
         {
@@ -125,10 +114,7 @@
       ]
     },
     {
-      "before": [
-        "leader",
-        "h"
-      ],
+      "before": ["leader", "h"],
       "after": [],
       "commands": [
         {
@@ -154,5 +140,5 @@
   },
   "workbench.colorTheme": "Plastic - deprioritised punctuation",
   "window.clickThroughInactive": false,
-  "window.zoomLevel": 0,
+  "window.zoomLevel": 0
 }
