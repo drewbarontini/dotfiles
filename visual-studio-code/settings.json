@@ -49,7 +49,16 @@
   "files.trimFinalNewlines": true,
   "flow.useNPMPackagedFlow": true,
   "git.confirmSync": false,
+  "git.enableSmartCommit": true,
   "git.inputValidation": "warn",
+  "github.hosts": [
+    {
+      "host": "https://github.com",
+      "username": "oauth",
+      "token": "system"
+    }
+  ],
+  "javascript.updateImportsOnFileMove.enabled": "never",
   "javascript.validate.enable": false,
   "materialTheme.cache.workbench.settings": {
     "themeColours": "Darker High Contrast"
