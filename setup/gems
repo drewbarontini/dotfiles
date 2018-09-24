@@ -6,6 +6,7 @@
 # ****************************************************
 
 gem install bundler
-gem install desktop
 gem install rails
 gem install tmuxinator
+
+# gem install desktop

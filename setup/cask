@@ -13,44 +13,39 @@ brew cask install adobe-creative-cloud 2> /dev/null
 brew cask install alfred 2> /dev/null
 brew cask install appcleaner 2> /dev/null
 brew cask install arq 2> /dev/null
-brew cask install atom 2> /dev/null
-brew cask install atom-beta 2> /dev/null
 brew cask install bartender 2> /dev/null
 brew cask install backblaze-downloader 2> /dev/null
 brew cask install bettertouchtool 2> /dev/null
-brew cask install cleanmymac 2> /dev/null
+brew cask install cleanmymac3 2> /dev/null
 brew cask install dash 2> /dev/null
 brew cask install dropbox 2> /dev/null
 brew cask install firefox 2> /dev/null
 brew cask install flux 2> /dev/null
 brew cask install google-chrome 2> /dev/null
 brew cask install hazel 2> /dev/null
-brew cask install iconjar 2> /dev/null
 brew cask install imageoptim 2> /dev/null
 brew cask install iterm2 2> /dev/null
-brew cask install kap 2> /dev/null
 brew cask install keyboard-maestro 2> /dev/null
 brew cask install keepingyouawake 2> /dev/null
 brew cask install moom 2> /dev/null
 brew cask install notion 2> /dev/null
 brew cask install noun-project 2> /dev/null
 brew cask install nucleo 2> /dev/null
-brew cask install screenflow 2> /dev/null
-brew cask install screenhero 2> /dev/null
+brew cask install rescuetime 2> /dev/null
 brew cask install sketch 2> /dev/null
 brew cask install spotify 2> /dev/null
-brew cask install sublime-text 2> /dev/null
 brew cask install transmit 2> /dev/null
 brew cask install visual-studio-code 2> /dev/null
 brew cask install visual-studio-code-insiders 2> /dev/null
 brew cask install quitter 2> /dev/null
+brew cask install zoomus 2> /dev/null
 
 # ----------------------------------------------------
 #   Disabled
 # ----------------------------------------------------
 
-# brew cask install anvil 2> /dev/null
-# brew cask install astro 2> /dev/null
+# brew cask install atom 2> /dev/null
+# brew cask install atom-beta 2> /dev/null
 # brew cask install balsamiq-mockups 2> /dev/null
 # brew cask install bitbar 2> /dev/null
 # brew cask install cheatsheet 2> /dev/null
@@ -62,7 +57,10 @@ brew cask install quitter 2> /dev/null
 # brew cask install github-desktop 2> /dev/null
 # brew cask install gitscout 2> /dev/null
 # brew cask install google-drive 2> /dev/null
+# brew cask install hyper 2> /dev/null
+# brew cask install iconjar 2> /dev/null
 # brew cask install instacast 2> /dev/null
+# brew cask install kap 2> /dev/null
 # brew cask install liteicon 2> /dev/null
 # brew cask install macvim 2> /dev/null
 # brew cask install mamp 2> /dev/null
@@ -71,14 +69,13 @@ brew cask install quitter 2> /dev/null
 # brew cask install paw 2> /dev/null
 # brew cask install postgres 2> /dev/null
 # brew cask install rocket 2> /dev/null
+# brew cask install screenflow 2> /dev/null
+# brew cask install screenhero 2> /dev/null
 # brew cask install shortcat 2> /dev/null
-# brew cask install skype 2> /dev/null
 # brew cask install skyfonts 2> /dev/null
+# brew cask install sublime-text 2> /dev/null
 # brew cask install superduper 2> /dev/null
 # brew cask install toggldesktop 2> /dev/null
-# brew cask install totalfinder 2> /dev/null
-# brew cask install tweeten 2> /dev/null
-# brew cask install twist 2> /dev/null
+# brew cask install tower2 2> /dev/null
 # brew cask install twitch 2> /dev/null
-# brew cask install visual-studio-code 2> /dev/null
 # brew cask install vlc 2> /dev/null

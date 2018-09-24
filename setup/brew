@@ -11,61 +11,28 @@ brew update
 # Upgrade any already-installed formulae
 brew upgrade
 
-# Ack
-# -> A tool like grep, optimized for programmers
-# brew install ack
-
-# Autojump
-# -> A cd command that learns
-brew install autojump
-
 # Bash & Bash Completion
 brew install bash
 brew install bash-completion
-
-# Emacs
-# brew tap d12frosted/emacs-plus
-# brew install emacs-plus
-# brew linkapps emacs-plus
-
-# FFmpeg
-# -> Record, convert and stream audio and video
-brew install ffmpeg
-
-# GHI
-# -> GitHub issues on command line
-brew install ghi
-
-# Gifify
-# -> Convert .mov into .gif
-brew install gifify
 
 # Git
 # -> Version control
 brew install git
 
-# Git FTP
-# brew install git-ftp
-
 # Hub
 # -> Command-line wrapper for git
 brew install hub
-
-# ImageMagick
-# -> Create, edit, compose, or convert bitmap images
-brew install imagemagick
 
 # MAS
 # -> Mac App Store command-line interface
 brew install mas
 
-# Neovim
-# -> Vim port
-brew install neovim
-
 # NVM
 # -> Node Version Manager
 brew install nvm
+
+# OmniGraffle
+brew install omnigraffle
 
 # Postgres
 brew install postgres
@@ -76,18 +43,6 @@ brew install python
 # reattach-to-user-namespace
 # -> Copy/paste to clipboard in tmux
 brew install reattach-to-user-namespace
-
-# Redis
-# -> Advanced key-value store
-brew install redis
-
-# Rename
-# -> Rename files in the command line
-# brew install rename
-
-# Sitespeed.io
-# -> Analyze your website speed and performance
-brew install sitespeed.io
 
 # TheSilverSearcher
 # -> A code-searching tool similar to ack, but faster
@@ -109,13 +64,68 @@ brew install vim
 # -> A file watching service
 brew install watchman
 
-# webkit2png
-# -> Command-line webpage screenshots
-brew install webkit2png
-
 # Yarn
 # -> Package manager
 brew install yarn
 
 # Remove outdated versions from the cellar
 brew cleanup
+
+# ----------------------------------------------------
+#   Disabled
+# ----------------------------------------------------
+
+# Ack
+# -> A tool like grep, optimized for programmers
+# brew install ack
+
+# Autojump
+# -> A cd command that learns
+# brew install autojump
+
+# Docker
+# brew install docker
+
+# Emacs
+# brew tap d12frosted/emacs-plus
+# brew install emacs-plus
+# brew linkapps emacs-plus
+
+# FFmpeg
+# -> Record, convert and stream audio and video
+# brew install ffmpeg
+
+# GHI
+# -> GitHub issues on command line
+# brew install ghi
+
+# Gifify
+# -> Convert .mov into .gif
+# brew install gifify
+
+# Git FTP
+# brew install git-ftp
+
+# ImageMagick
+# -> Create, edit, compose, or convert bitmap images
+# brew install imagemagick
+
+# Neovim
+# -> Vim port
+# brew install neovim
+
+# Redis
+# -> Advanced key-value store
+# brew install redis
+
+# Rename
+# -> Rename files in the command line
+# brew install rename
+
+# Sitespeed.io
+# -> Analyze your website speed and performance
+# brew install sitespeed.io
+
+# webkit2png
+# -> Command-line webpage screenshots
+# brew install webkit2png

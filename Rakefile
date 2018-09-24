@@ -80,10 +80,10 @@ installation_order = [
   'install_osx_settings',
   'install_cask',
   'install_mas_apps',
-  'install_outliers',
-  'install_sublime_text_settings',
+  # 'install_outliers',
+  # 'install_sublime_text_settings',
   'install_visual_studio_code_settings',
-  'install_pow',
+  # 'install_pow',
   'install_terminal_italics',
   'install_cleanup'
 ]

@@ -9,11 +9,14 @@ mas_install() {
   mas list | grep $1 || mas install $1
 }
 
-# BreakTime
-mas_install 427475982
+# Cardhop
+mas_install 1290358394
 
 # ColorSnapper
 mas_install 969418666
+
+# Day One
+mas_install 1055511498
 
 # Deliveries
 mas_install 924726344
@@ -30,11 +33,11 @@ mas_install 1082624744
 # HazeOver
 mas_install 430798174
 
+# iStat Menus
+mas_install 1319778037
+
 # MindNode
 mas_install 1289197285
-
-# Noizio
-mas_install 928871589
 
 # Slack
 mas_install 803453959
@@ -42,33 +45,31 @@ mas_install 803453959
 # Things 3
 mas_install 904280696
 
+# ToothFairy
+mas_install 1191449274
+
 # Tweetbot
 mas_install 557168941
 
 # Ulysses
 mas_install 623795237
 
-# Wallpaper Wizard
-mas_install 1266674560
-
 # Who's On My WiFi
 mas_install 909760813
+
+# WiFi Explorer
+mas_install 494803304
 
 # -------------------------------------
 #   Disabled
 # -------------------------------------
 
-# mas_install 918858936 (Airmail)
-# mas_install 948176063 (Boom)
-# mas_install 1091189122 (Bear)
-# mas_install 1053031090 (Boxy)
-# mas_install 668208984 (GIPHY Capture)
-# mas_install 540348655 (Monosnap)
+# mas_install 427475982 (BreakTime)
 # mas_install 603637384 (Name Mangler)
-# mas_install 914250185 (NZBVortex)
-# mas_install 929960914 (Red Hot Timer)
-# mas_install 1176895641 (Spark)
-# mas_install 585829637 (Todoist)
+# mas_install 928871589 (Noizio)
+# mas_install 413965349 (Soulver)
 # mas_install 957734279 (Toggl)
+# mas_install 1278508951 (Trello)
 # mas_install 1062679359 (Typeface)
-# mas_install 1000397973 (Wallcat)
+# mas_install 1284863847 (Unsplash Wallpapers)
+# mas_install 1266674560 (Wallpaper Wizard)
