@@ -63,6 +63,7 @@
   "materialTheme.cache.workbench.settings": {
     "themeColours": "Darker High Contrast"
   },
+  "prettier.disableLanguages": ["vue", "markdown"],
   "prettier.singleQuote": true,
   "prettier.trailingComma": "es5",
   "sync.askGistName": false,
