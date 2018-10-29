@@ -48,9 +48,11 @@
   "files.insertFinalNewline": false,
   "files.trimFinalNewlines": true,
   "flow.useNPMPackagedFlow": true,
+  "git.allowForcePush": true,
   "git.confirmSync": false,
   "git.enableSmartCommit": true,
   "git.inputValidation": "warn",
+  "git.rebaseWhenSync": true,
   "github.hosts": [
     {
       "host": "https://github.com",
@@ -60,9 +62,6 @@
   ],
   "javascript.updateImportsOnFileMove.enabled": "never",
   "javascript.validate.enable": false,
-  "materialTheme.cache.workbench.settings": {
-    "themeColours": "Darker High Contrast"
-  },
   "prettier.disableLanguages": ["vue", "markdown"],
   "prettier.singleQuote": true,
   "prettier.trailingComma": "es5",
@@ -71,10 +70,6 @@
   "sync.autoUpload": false,
   "sync.forceDownload": false,
   "sync.gist": "674f0187c2013d915b4b55cf65bc9a5f",
-  "sync.host": "",
-  "sync.lastUpload": "2018-06-14T17:53:18.172Z",
-  "sync.lastDownload": "",
-  "sync.pathPrefix": "",
   "sync.quietSync": false,
   "sync.removeExtensions": true,
   "sync.syncExtensions": true,
