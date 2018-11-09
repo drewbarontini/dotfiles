@@ -5,7 +5,7 @@
 #
 # ****************************************************
 
-brew install caskroom/cask/brew-cask
+brew tap caskroom/cask
 brew tap caskroom/versions
 
 brew cask install 1password 2> /dev/null
