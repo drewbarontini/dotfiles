@@ -15,9 +15,6 @@ mas_install 1290358394
 # ColorSnapper
 mas_install 969418666
 
-# Day One
-mas_install 1055511498
-
 # Deliveries
 mas_install 924726344
 
@@ -62,6 +59,7 @@ mas_install 494803304
 # -------------------------------------
 
 # mas_install 427475982 (BreakTime)
+# mas_install 1055511498 (Day One)
 # mas_install 603637384 (Name Mangler)
 # mas_install 928871589 (Noizio)
 # mas_install 413965349 (Soulver)
