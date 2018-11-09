@@ -48,6 +48,7 @@ brew cask install zoomus 2> /dev/null
 # brew cask install atom 2> /dev/null
 # brew cask install atom-beta 2> /dev/null
 # brew cask install balsamiq-mockups 2> /dev/null
+# brew cask install basecamp 2> /dev/null
 # brew cask install bitbar 2> /dev/null
 # brew cask install cheatsheet 2> /dev/null
 # brew cask install docker 2> /dev/null
