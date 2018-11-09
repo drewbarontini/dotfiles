@@ -4,8 +4,8 @@
 
 # ----- Versions ----- #
 
-global_ruby_version = '2.4.1'
-global_node_version = '8.6.0'
+global_ruby_version = '2.5.3'
+global_node_version = '8.12.0'
 
 # ----- Original Locations ----- #
 
@@ -284,7 +284,7 @@ task :install_global_node, :run do |task, args|
   prompt 'NVM'
 
   if response?('y')
-    message "Installing Node #{ global_node_version }... Type 'next' when ready..."
+    message "Installing Node #{ global_node_version }..."
 
     unless File.exists?(nvm_directory)
       system 'mkdir ~/.nvm'
