@@ -85,6 +85,9 @@ defaults write com.apple.dock autohide -bool true
 # Don’t display the annoying prompt when quitting iTerm
 defaults write com.googlecode.iterm2 PromptOnQuit -bool false
 
+# Fix macOS Mojave weird font aliasing
+defaults write -g CGFontRenderingFontSmoothingDisabled -bool NO
+
 # Kill affected applications
 for app in Finder Dock SystemUIServer; do killall "$app" > /dev/null 2>&1; done
 echo "OSX Hacks Done. Note that some of these changes require a logout/restart to take effect."
