@@ -6,4 +6,4 @@
 # *************************************
 
 tic ~/.dotfiles/iterm/tmux-256color.terminfo
-tic ~/.dotfiles/iterm/tmux-256color.terminfo
+tic ~/.dotfiles/iterm/xterm-256color-italic.terminfo
