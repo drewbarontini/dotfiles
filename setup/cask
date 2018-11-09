@@ -37,7 +37,6 @@ brew cask install sketch 2> /dev/null
 brew cask install spotify 2> /dev/null
 brew cask install transmit 2> /dev/null
 brew cask install visual-studio-code 2> /dev/null
-brew cask install visual-studio-code-insiders 2> /dev/null
 brew cask install quitter 2> /dev/null
 brew cask install zoomus 2> /dev/null
 
@@ -79,4 +78,5 @@ brew cask install zoomus 2> /dev/null
 # brew cask install toggldesktop 2> /dev/null
 # brew cask install tower2 2> /dev/null
 # brew cask install twitch 2> /dev/null
+# brew cask install visual-studio-code-insiders 2> /dev/null
 # brew cask install vlc 2> /dev/null
