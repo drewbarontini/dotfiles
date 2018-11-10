@@ -11,6 +11,10 @@ brew update
 # Upgrade any already-installed formulae
 brew upgrade
 
+# Autojump
+# -> A cd command that learns
+brew install autojump
+
 # Bash & Bash Completion
 brew install bash
 brew install bash-completion
@@ -78,10 +82,6 @@ brew cleanup
 # Ack
 # -> A tool like grep, optimized for programmers
 # brew install ack
-
-# Autojump
-# -> A cd command that learns
-# brew install autojump
 
 # Docker
 # brew install docker
