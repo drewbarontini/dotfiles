@@ -27,9 +27,6 @@ mas_install 990588172
 # Gifox
 mas_install 1082624744
 
-# HazeOver
-mas_install 430798174
-
 # MindNode
 mas_install 1289197285
 
@@ -60,6 +57,7 @@ mas_install 494803304
 
 # mas_install 427475982 (BreakTime)
 # mas_install 1055511498 (Day One)
+# mas_install 430798174 (HazeOver)
 # mas_install 603637384 (Name Mangler)
 # mas_install 928871589 (Noizio)
 # mas_install 413965349 (Soulver)
