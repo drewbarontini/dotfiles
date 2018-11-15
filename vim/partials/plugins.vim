@@ -85,7 +85,7 @@ Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'rking/ag.vim'
 
 " Requires Python (ships with Homebrew Vim)
-Plugin 'SirVer/ultisnips'
+" Plugin 'SirVer/ultisnips'
 
 " Select, and act on, multiple words at once
 Plugin 'terryma/vim-multiple-cursors'
