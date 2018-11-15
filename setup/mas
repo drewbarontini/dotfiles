@@ -45,12 +45,6 @@ mas_install 1384080005
 # Ulysses
 mas_install 1225570693
 
-# Who's On My WiFi
-mas_install 909760813
-
-# WiFi Explorer
-mas_install 494803304
-
 # -------------------------------------
 #   Disabled
 # -------------------------------------
@@ -66,3 +60,5 @@ mas_install 494803304
 # mas_install 1062679359 (Typeface)
 # mas_install 1284863847 (Unsplash Wallpapers)
 # mas_install 1266674560 (Wallpaper Wizard)
+# mas_install 909760813 (Who's On My WiFi)
+# mas_install 494803304 (WiFi Explorer)
