@@ -31,7 +31,6 @@ brew cask install keyboard-maestro 2> /dev/null
 brew cask install keepingyouawake 2> /dev/null
 brew cask install moom 2> /dev/null
 brew cask install notion 2> /dev/null
-brew cask install noun-project 2> /dev/null
 brew cask install nucleo 2> /dev/null
 brew cask install omnigraffle 2> /dev/null
 brew cask install rescuetime 2> /dev/null
@@ -68,6 +67,7 @@ brew cask install zoomus 2> /dev/null
 # brew cask install mamp 2> /dev/null
 # brew cask install michaelvillar-timer 2> /dev/null>
 # brew cask install mongodb-compass 2> /dev/null
+# brew cask install noun-project 2> /dev/null
 # brew cask install paw 2> /dev/null
 # brew cask install postgres 2> /dev/null
 # brew cask install rocket 2> /dev/null
