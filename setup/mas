@@ -9,6 +9,9 @@ mas_install() {
   mas list | grep $1 || mas install $1
 }
 
+# Amphetamine
+mas_install 937984704
+
 # Cardhop
 mas_install 1290358394
 

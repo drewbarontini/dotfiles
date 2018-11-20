@@ -28,7 +28,6 @@ brew cask install imageoptim 2> /dev/null
 brew cask install istat-menus 2> /dev/null
 brew cask install iterm2 2> /dev/null
 brew cask install keyboard-maestro 2> /dev/null
-brew cask install keepingyouawake 2> /dev/null
 brew cask install moom 2> /dev/null
 brew cask install notion 2> /dev/null
 brew cask install nucleo 2> /dev/null
@@ -62,6 +61,7 @@ brew cask install zoomus 2> /dev/null
 # brew cask install iconjar 2> /dev/null
 # brew cask install instacast 2> /dev/null
 # brew cask install kap 2> /dev/null
+# brew cask install keepingyouawake 2> /dev/null
 # brew cask install liteicon 2> /dev/null
 # brew cask install macvim 2> /dev/null
 # brew cask install mamp 2> /dev/null
