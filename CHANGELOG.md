@@ -1,6 +1,6 @@
 # Change Log
 
-## Unreleased
+## 1.8.0 - 2018-11-20
 
 ### Added
 
@@ -28,6 +28,7 @@
 ### Removed
 
 - Line numbers in Vim
+- Disable Ultisnips in Vim
 
 ### Fixed
 
