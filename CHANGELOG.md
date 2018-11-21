@@ -2,6 +2,9 @@
 
 ## Unreleased
 
+### Added
+- `Rocket` to `setup/cask`
+
 ### Changed
 - Removed `Arq` from `setup/cask`
 
