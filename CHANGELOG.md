@@ -1,5 +1,10 @@
 # Change Log
 
+## Unreleased
+
+### Changed
+- Removed `Arq` from `setup/cask`
+
 ## 1.8.0 - 2018-11-20
 
 ### Added
