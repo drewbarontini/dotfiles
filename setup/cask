@@ -32,6 +32,7 @@ brew cask install notion 2> /dev/null
 brew cask install nucleo 2> /dev/null
 brew cask install omnigraffle 2> /dev/null
 brew cask install rescuetime 2> /dev/null
+brew cask install rocket 2> /dev/null
 brew cask install sketch 2> /dev/null
 brew cask install spotify 2> /dev/null
 brew cask install transmit 2> /dev/null
