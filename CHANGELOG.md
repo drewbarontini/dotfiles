@@ -8,6 +8,9 @@
 ### Changed
 - Removed `Arq` from `setup/cask`
 
+### Fixed
+- Wrong CleanMyMac version in `setup/cask`
+
 ## 1.8.0 - 2018-11-20
 
 ### Added
