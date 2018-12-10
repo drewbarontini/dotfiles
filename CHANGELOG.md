@@ -4,6 +4,7 @@
 
 ### Added
 - `Rocket` to `setup/cask`
+- Vim "no fun" mode
 
 ### Changed
 - Removed `Arq` from `setup/cask`
