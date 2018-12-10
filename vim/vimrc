@@ -82,9 +82,8 @@ endif
 "   "No Fun" Drew
 " -------------------------------------
 
+call NoFunMode()
+
 if exists('nofun')
-  syntax off
-  set nohlsearch
-  set t_Co=0
-  set relativenumber! nu!
+  NoFunMode()
 endif

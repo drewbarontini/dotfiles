@@ -45,6 +45,18 @@ inoremap <tab> <c-r>=InsertTabWrapper()<cr>
 inoremap <s-tab> <c-n>
 
 " -------------------------------------
+"   No Fun
+"   -> Turns on 'no fun' mode
+" -------------------------------------
+
+function! NoFunMode()
+  syntax off
+  set nohlsearch
+  set t_Co=0
+  set relativenumber! nu!
+endfunction
+
+" -------------------------------------
 "   Long Line Toggle
 "   -> Toggle relative line numbers and cursorline; useful for long line files
 " -------------------------------------
