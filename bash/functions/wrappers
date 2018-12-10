@@ -66,3 +66,12 @@ function vim_launch() {
     vim ./
   fi
 }
+
+function vim_launch_no_fun() {
+  # If there are arguments...
+  if [ $# -gt 0 ]; then
+    vim "$@" --cmd "let nofun=1"
+  else
+    vim ./ --cmd "let nofun=1"
+  fi
+}
