@@ -8,25 +8,25 @@
 packages=(
   create-react-app
   eslint
+  eslint-config-prettier
+  eslint-plugin-prettier
   flow-bin
+  npx
   prettier
   prettier-eslint
   prettier-eslint-cli
-  eslint-config-prettier
-  eslint-plugin-prettier
-  stylefmt
-  stylelint
   # babel-eslint
-  # stylelint-order
   # imageoptim-cli
-  # remind-me
-  # remind
-  # speed-test
-  # stylestats
-  # svgo
   # parker
   # psi
-  # yo
+  # remind
+  # remind-me
+  # speed-test
+  # stylefmt
+  # stylelint
+  # stylelint-order
+  # stylestats
+  # svgo
 )
 
 for package in ${packages[@]}; do
