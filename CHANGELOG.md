@@ -8,6 +8,7 @@
 
 ### Changed
 - Removed `Arq` from `setup/cask`
+- `setup/npm`
 
 ### Fixed
 - Wrong CleanMyMac version in `setup/cask`
