@@ -1,7 +1,9 @@
 // http://eslint.org/docs/rules/
 {
+  "parser": "babel-eslint",
   "extends": [
     "airbnb",
+    "react-app",
     "plugin:react/recommended",
     "prettier",
     "prettier/react"
@@ -15,7 +17,8 @@
   "env": {
     "browser": true,
     "node": true,
-    "es6": true
+    "es6": true,
+    "jest": true
   },
   "parserOptions": {
     "ecmaVersion": 6,
@@ -25,6 +28,10 @@
     }
   },
   "rules": {
-    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
-  }
+    "strict": 0,
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "class-methods-use-this": 0,
+    "no-param-reassign": 0,
+    "no-underscore-dangle": 0,
+  },
 }

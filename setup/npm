@@ -7,14 +7,20 @@
 
 packages=(
   create-react-app
-  eslint
-  eslint-config-prettier
-  eslint-plugin-prettier
-  flow-bin
+  gatsby-cli
   npx
   prettier
   prettier-eslint
   prettier-eslint-cli
+  # babel-eslint
+  # eslint
+  # eslint-config-prettier
+  # eslint-config-react-app
+  # eslint-plugin-prettier
+  # eslint-plugin-react
+  # eslint-plugin-import
+  # eslint-plugin-jsx-a11y
+  # flow-bin
   # babel-eslint
   # imageoptim-cli
   # parker

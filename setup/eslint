@@ -1,9 +1,31 @@
 #!/usr/bin/env bash
 
-# To list the dependencies
-# npm info "eslint-config-airbnb@latest" peerDependencies
-
-(
-  export PKG=eslint-config-airbnb;
-  npm info "$PKG@latest" peerDependencies --json | command sed 's/[\{\},]//g ; s/: /@/g' | xargs npm install -g "$PKG@latest"
+packages=(
+  babel-eslint
+  eslint
+  eslint-config-prettier
+  eslint-config-react-app
+  eslint-plugin-prettier
+  eslint-plugin-react
+  eslint-plugin-import
+  eslint-plugin-jsx-a11y
+  prettier
+  prettier-eslint
+  prettier-eslint-cli
 )
+
+for package in ${packages[@]}; do
+  npm install --dev $package
+done
+
+npx install-peerdeps --dev eslint-config-airbnb
+
+function copy_eslintrc() {
+  cat ~/.eslintrc >> .eslintrc
+}
+
+if [[ -f .eslintrc ]]; then
+  copy_eslintrc
+else
+  touch .eslintrc && copy_eslintrc
+fi
