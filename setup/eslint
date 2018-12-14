@@ -1,8 +1,15 @@
 #!/usr/bin/env bash
+# ****************************************************
+#
+#   Setup - ESLint
+#
+# ****************************************************
 
 packages=(
   babel-eslint
   eslint
+  eslint-config-airbnb
+  eslint-config-flowtype
   eslint-config-prettier
   eslint-config-react-app
   eslint-plugin-prettier
@@ -11,7 +18,7 @@ packages=(
   eslint-plugin-jsx-a11y
   prettier
   prettier-eslint
-  prettier-eslint-cli
+  # prettier-eslint-cli
 )
 
 if [[ -f yarn.lock ]]; then
