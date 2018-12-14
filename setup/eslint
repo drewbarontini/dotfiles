@@ -15,10 +15,14 @@ packages=(
 )
 
 for package in ${packages[@]}; do
-  npm install --dev $package
+  if [[ -f yarn.lock ]]; then
+    yarn add --dev $package
+  else
+    npm install --dev $package
+  fi
 done
 
-npx install-peerdeps --dev eslint-config-airbnb
+# npx install-peerdeps --dev eslint-config-airbnb
 
 function copy_eslintrc() {
   cat ~/.eslintrc >> .eslintrc
