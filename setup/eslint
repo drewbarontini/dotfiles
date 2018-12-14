@@ -14,13 +14,15 @@ packages=(
   prettier-eslint-cli
 )
 
-for package in ${packages[@]}; do
-  if [[ -f yarn.lock ]]; then
+if [[ -f yarn.lock ]]; then
+  for package in ${packages[@]}; do
     yarn add --dev $package
-  else
+  done
+else
+  for package in ${packages[@]}; do
     npm install --dev $package
-  fi
-done
+  done
+fi
 
 # npx install-peerdeps --dev eslint-config-airbnb
 
