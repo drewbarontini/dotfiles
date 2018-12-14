@@ -10,6 +10,7 @@
 ### Changed
 - Removed `Arq` from `setup/cask`
 - `setup/npm`
+- ESLint setup
 
 ### Fixed
 - Wrong CleanMyMac version in `setup/cask`
