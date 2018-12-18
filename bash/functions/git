@@ -19,7 +19,7 @@ function git_author_stats() {
 #
 
 function git_changes_since_version() {
-  git git log $1..HEAD --oneline
+  git log $1..HEAD --oneline
 }
 
 # -------------------------------------
