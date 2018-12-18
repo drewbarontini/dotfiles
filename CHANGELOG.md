@@ -6,6 +6,7 @@
 - `Rocket` to `setup/cask`
 - Vim "no fun" mode
 - `prettier/prettierrc`
+- `git_changes_since_version` Bash function
 
 ### Changed
 - Removed `Arq` from `setup/cask`
