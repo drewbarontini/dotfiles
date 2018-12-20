@@ -1,7 +1,7 @@
 module.exports = {
   config: {
     // default font size in pixels for all tabs
-    fontSize: 16,
+    fontSize: 14,
 
     // font family with optional fallbacks
     fontFamily: 'Operator Mono',
@@ -95,7 +95,7 @@ module.exports = {
     'hyper-snazzy',
     'hyper-tabs-enhanced',
     'hyper-statusline',
-    'hyper-solarized-dark',
+    'hyper-npm-theme',
   ],
 
   // in development, you can create a directory under
