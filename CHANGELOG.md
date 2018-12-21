@@ -12,6 +12,7 @@
 - Removed `Arq` from `setup/cask`
 - `setup/npm`
 - ESLint setup
+- VSCode settings
 
 ### Fixed
 - Wrong CleanMyMac version in `setup/cask`
