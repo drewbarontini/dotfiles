@@ -55,13 +55,6 @@
   "git.enableSmartCommit": true,
   "git.inputValidation": "warn",
   "git.rebaseWhenSync": true,
-  "githubPullRequests.hosts": [
-    {
-      "host": "https://github.com",
-      "username": "oauth",
-      "token": "system"
-    }
-  ],
   "javascript.updateImportsOnFileMove.enabled": "never",
   "javascript.validate.enable": false,
   "prettier.disableLanguages": ["vue", "markdown"],
