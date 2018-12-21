@@ -13,6 +13,7 @@
 - `setup/npm`
 - ESLint setup
 - VSCode settings
+- `git/gitconfig`
 
 ### Fixed
 - Wrong CleanMyMac version in `setup/cask`
