@@ -47,7 +47,7 @@
 
 [core]
 
-  editor = vim
+  editor = code --wait
   excludesfile = ~/.gitignore
   quotepath = false
 
