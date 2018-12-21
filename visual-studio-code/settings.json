@@ -10,6 +10,8 @@
   "editor.minimap.enabled": false,
   "editor.rulers": [80],
   "editor.renderIndentGuides": true,
+  "editor.snippetSuggestions": "top",
+  "editor.tabCompletion": "onlySnippets",
   "editor.tabSize": 2,
   "editor.tokenColorCustomizations": {
     "textMateRules": [
@@ -53,7 +55,7 @@
   "git.enableSmartCommit": true,
   "git.inputValidation": "warn",
   "git.rebaseWhenSync": true,
-  "github.hosts": [
+  "githubPullRequests.hosts": [
     {
       "host": "https://github.com",
       "username": "oauth",
