@@ -82,8 +82,11 @@
   process = git-lfs filter-process
 
 [pull]
-  rebase = true
+	rebase = true
 
 [user]
   name = Drew Barontini
   email = hello@drewb.io
+
+[rebase]
+	autoStash = true
