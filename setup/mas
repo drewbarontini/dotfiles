@@ -15,9 +15,6 @@ mas_install 937984704
 # Cardhop
 mas_install 1290358394
 
-# ColorSnapper
-mas_install 969418666
-
 # Deliveries
 mas_install 924726344
 
@@ -53,6 +50,7 @@ mas_install 1225570693
 # -------------------------------------
 
 # mas_install 427475982 (BreakTime)
+# mas_install 969418666 (ColorSnapper)
 # mas_install 1055511498 (Day One)
 # mas_install 430798174 (HazeOver)
 # mas_install 603637384 (Name Mangler)
