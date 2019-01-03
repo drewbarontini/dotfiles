@@ -14,6 +14,7 @@
 - ESLint setup
 - VSCode settings
 - `git/gitconfig`
+- Replaced `ColorSnapper2` with `Sip`
 
 ### Fixed
 - Wrong CleanMyMac version in `setup/cask`
