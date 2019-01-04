@@ -47,7 +47,7 @@
 
 [core]
 
-  editor = code --wait
+  editor = vim
   excludesfile = ~/.gitignore
   quotepath = false
 
@@ -82,11 +82,14 @@
   process = git-lfs filter-process
 
 [pull]
-	rebase = true
+
+  rebase = true
 
 [user]
+
   name = Drew Barontini
   email = hello@drewb.io
 
 [rebase]
-	autoStash = true
+
+  autoStash = true
