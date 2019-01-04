@@ -76,6 +76,7 @@ installation_order = [
   'install_homebrew',
   'install_homebrew_packages',
   'install_tmux_plugin_manager',
+  'install_nvm',
   'install_global_node',
   'install_npm_packages',
   'install_gems',
@@ -275,6 +276,22 @@ task :install_tmux_plugin_manager, :run do |task, args|
 end
 
 # ====================================
+#   Install NVM
+# ====================================
+
+task :install_nvm, :run do |task, args|
+  current_step = current_step + 1
+
+  prompt 'NVM'
+
+  if response?('y')
+    message 'Installing NVM...'
+
+    system 'bash setup/nvm'
+  end
+end
+
+# ====================================
 #   Install Global Node
 # ====================================
 
@@ -283,14 +300,10 @@ task :install_global_node, :run do |task, args|
 
   nvm_directory = "#{ ENV['HOME'] }/.nvm"
 
-  prompt 'NVM'
+  prompt 'Global Node'
 
   if response?('y')
     message "Installing Node #{ global_node_version }..."
-
-    unless File.exists?(nvm_directory)
-      system 'mkdir ~/.nvm'
-    end
 
     if response?('next')
       system "nvm install #{ global_node_version }"
