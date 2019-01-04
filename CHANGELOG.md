@@ -16,6 +16,7 @@
 - `git/gitconfig`
 - Replaced `ColorSnapper2` with `Sip`
 - `setup/osx` is now `setup/macos`
+- Moved `nvm` out of Homebrew
 
 ### Fixed
 - Wrong CleanMyMac version in `setup/cask`
