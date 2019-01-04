@@ -7,6 +7,7 @@
 - Vim "no fun" mode
 - `prettier/prettierrc`
 - `git_changes_since_version` Bash function
+- `update_nvm` Bash function
 
 ### Changed
 - Removed `Arq` from `setup/cask`
@@ -17,6 +18,7 @@
 - Replaced `ColorSnapper2` with `Sip`
 - `setup/osx` is now `setup/macos`
 - Moved `nvm` out of Homebrew
+- `update` now includes `update_nvm`
 
 ### Fixed
 - Wrong CleanMyMac version in `setup/cask`
