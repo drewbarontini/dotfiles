@@ -79,7 +79,7 @@ installation_order = [
   'install_global_node',
   'install_npm_packages',
   'install_gems',
-  'install_osx_settings',
+  'install_macos_settings',
   'install_cask',
   'install_mas_apps',
   'install_visual_studio_code_settings',
@@ -338,18 +338,18 @@ task :install_gems, :run do |task, args|
 end
 
 # ====================================
-#   Install OS X Settings
+#   Install macOS Settings
 # ====================================
 
-task :install_osx_settings, :run do |task, args|
+task :install_macos_settings, :run do |task, args|
   current_step = current_step + 1
 
   prompt 'OS X Settings'
 
   if response?('y')
-    message 'Installing OS X Settings...'
+    message 'Installing macOS Settings...'
 
-    system 'bash setup/osx'
+    system 'bash setup/macos'
 
     run installation_order[current_step] unless args[:run] == 'single'
   end
