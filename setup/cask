@@ -9,6 +9,7 @@ brew tap caskroom/cask
 brew tap caskroom/versions
 
 brew cask install 1password 2> /dev/null
+brew cask install aerial 2> /dev/null
 brew cask install adobe-creative-cloud 2> /dev/null
 brew cask install alfred 2> /dev/null
 brew cask install appcleaner 2> /dev/null
