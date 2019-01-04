@@ -15,6 +15,7 @@
 - VSCode settings
 - `git/gitconfig`
 - Replaced `ColorSnapper2` with `Sip`
+- `setup/osx` is now `setup/macos`
 
 ### Fixed
 - Wrong CleanMyMac version in `setup/cask`
