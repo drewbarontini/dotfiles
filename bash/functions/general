@@ -269,3 +269,19 @@ function server() {
 function symlinks() {
   ls -al "$1" | grep .-\>
 }
+
+# -------------------------------------
+#   Update NVM
+#   -> Runs the commands to update NVM
+# -------------------------------------
+#
+# Usage: `update_nvm`
+#
+
+function update_nvm() {
+  (
+    cd "$NVM_DIR"
+    git fetch --tags origin
+    git checkout `git describe --abbrev=0 --tags --match "v[0-9]*" $(git rev-list --tags --max-count=1)`
+  ) && \. "$NVM_DIR/nvm.sh"
+}
