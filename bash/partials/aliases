@@ -34,12 +34,6 @@ alias dg='brew upgrade'
 alias beerfest='brew update && brew cleanup && brew prune && brew doctor'
 
 # -------------------------------------
-#   Dotfiles
-# -------------------------------------
-
-alias update='update_rbenv && update_ruby_build && update_nvm && git_update_submodules && beerfest'
-
-# -------------------------------------
 #   Files & Jumps
 # -------------------------------------
 

@@ -448,6 +448,21 @@ task :install_command_line_tools do
   end
 end
 
+# ====================================
+#   Update
+# ====================================
+
+task :update do
+  puts '---------------------------------------------'
+  puts ' drewbarontini/dotfiles Update'
+  puts " --> Type 'start'"
+  puts '---------------------------------------------'
+
+  if response?('start')
+    system 'bash scripts/update'
+  end
+end
+
 # Prints out a message to the console
 #
 # == Parameters
