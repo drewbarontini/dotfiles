@@ -5,6 +5,14 @@
 #
 # ****************************************************
 
+VERSION='2.5.3'
+
+function install_global_ruby() {
+  rbenv install $VERSION
+  rbenv rehash
+  rbenv global $VERSION
+}
+
 if [ ! -d "$HOME/.rbenv" ]; then
 
   echo 'Setting up rbenv...'
@@ -15,10 +23,21 @@ if [ ! -d "$HOME/.rbenv" ]; then
   echo 'Setting up ruby-build...'
   git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
 
-  echo "rbenv is now set up! Type 'rbenv'"
+  echo "rbenv is now set up! Installing latest Ruby..."
+  install_global_ruby
 
 else
 
   echo 'rbenv is already installed on this machine.'
+
+  if [ ! -d "$HOME/.rbenv/versions/$VERSION" ]; then
+
+    install_global_ruby
+
+  else
+
+    echo "Ruby $VERSION is already installed on this machine."
+
+  fi
 
 fi

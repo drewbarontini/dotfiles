@@ -4,10 +4,6 @@ require 'rake'
 #   Configuration
 # ====================================
 
-# ----- Versions ----- #
-
-global_ruby_version = '2.5.3'
-
 # ----- Original Locations ----- #
 
 original_locations                   = {}
@@ -71,7 +67,6 @@ installation_order = [
   'install_symlinks',
   'install_vim',
   'install_rbenv',
-  'install_global_ruby',
   'install_homebrew',
   'install_homebrew_packages',
   'install_tmux_plugin_manager',
@@ -174,26 +169,7 @@ task :install_rbenv do
   if response?('y')
     message 'Installing rbenv...'
 
-    system 'bash scripts/rbenv'
-  end
-end
-
-# ====================================
-#   Install Global Ruby
-# ====================================
-
-task :install_global_ruby do
-  prompt 'global ruby'
-
-  if response?('y')
-    message "Installing Ruby #{ global_ruby_version }... Type 'next' when ready..."
-
-    system "rbenv install #{ global_ruby_version }"
-
-    if response?('next')
-      system "rbenv rehash"
-      system "rbenv global #{ global_ruby_version }"
-    end
+    system "bash scripts/rbenv ${global_ruby_version}"
   end
 end
 
