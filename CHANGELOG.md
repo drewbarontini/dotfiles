@@ -21,6 +21,7 @@
 - Moved `nvm` out of Homebrew
 - `update` now includes `update_nvm`
 - `brew` to `homebrew-packages`
+- `Rakefile` to be better
 
 ### Fixed
 - Wrong CleanMyMac version in `setup/cask`
