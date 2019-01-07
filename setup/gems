@@ -5,8 +5,18 @@
 #
 # ****************************************************
 
-gem install bundler
-gem install rails
-gem install tmuxinator
+gems=(
+  bundler
+  tmuxinator
+)
+
+for gem in ${gems[@]}; do
+  gem install $gem
+done
+
+# ----------------------------------------------------
+#   Disabled
+# ----------------------------------------------------
 
 # gem install desktop
+# gem install rails
