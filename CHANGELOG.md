@@ -9,6 +9,7 @@
 - `git_changes_since_version` Bash function
 - `update_nvm` Bash function
 - `setup/homebrew`
+- `rake update` task
 
 ### Changed
 - Removed `Arq` from `setup/cask`
