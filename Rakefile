@@ -176,7 +176,7 @@ task :install_rbenv do
   if response?('y')
     message 'Installing rbenv...'
 
-    system 'bash setup/rbenv'
+    system 'bash scripts/rbenv'
   end
 end
 
@@ -209,7 +209,7 @@ task :install_homebrew do
   if response?('y')
     message 'Installing Homebrew...'
 
-    system 'bash setup/homebrew'
+    system 'bash scripts/homebrew'
   end
 end
 
@@ -223,7 +223,7 @@ task :install_homebrew_packages do
   if response?('y')
     message 'Installing Homebrew Packages...'
 
-    system 'bash setup/homebrew-packages'
+    system 'bash scripts/homebrew-packages'
   end
 end
 
@@ -258,7 +258,7 @@ task :install_nvm do
   if response?('y')
     message 'Installing NVM...'
 
-    system 'bash setup/nvm'
+    system 'bash scripts/nvm'
   end
 end
 
@@ -291,7 +291,7 @@ task :install_npm_packages do
   if response?('y')
     message 'Installing NPM Packages...'
 
-    system 'bash setup/npm'
+    system 'bash scripts/npm'
   end
 end
 
@@ -305,7 +305,7 @@ task :install_gems do
   if response?('y')
     message 'Installing Ruby Gems...'
 
-    system 'bash setup/gems'
+    system 'bash scripts/gems'
   end
 end
 
@@ -319,7 +319,7 @@ task :install_macos_settings do
   if response?('y')
     message 'Installing macOS Settings...'
 
-    system 'bash setup/macos'
+    system 'bash scripts/macos'
   end
 end
 
@@ -333,7 +333,7 @@ task :install_cask do
   if response?('y')
     message 'Installing Cask & Applications...'
 
-    system 'bash setup/cask'
+    system 'bash scripts/cask'
   end
 end
 
@@ -347,7 +347,7 @@ task :install_mas_apps do
   if response?('y')
     message 'Installing Mac App Store apps...'
 
-    system 'bash setup/mas'
+    system 'bash scripts/mas'
   end
 end
 
@@ -361,7 +361,7 @@ task :install_outliers do
   if response?('y')
     message 'Installing Outlier Applications...'
 
-    system 'bash setup/outliers'
+    system 'bash scripts/outliers'
   end
 end
 
@@ -377,7 +377,7 @@ task :install_sublime_text_settings do
 
     if response?('next')
       message 'Installing Sublime Text Settings...'
-      system 'bash setup/sublime'
+      system 'bash scripts/sublime'
       system 'defaults write com.sublimetext.2 ApplePressAndHoldEnabled -bool false'
     end
   end
@@ -393,7 +393,7 @@ task :install_visual_studio_code_settings do
   if response?('y')
     message 'Installing Visual Studio Code Settings...'
 
-    system 'bash setup/visual-studio-code'
+    system 'bash scripts/visual-studio-code'
   end
 end
 
@@ -421,7 +421,7 @@ task :install_terminal_italics do
   if response?('y')
     message 'Installing terminal italics...'
 
-    system 'bash setup/terminal-italics'
+    system 'bash scripts/terminal-italics'
   end
 end
 
