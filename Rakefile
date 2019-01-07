@@ -1,5 +1,7 @@
+require 'rake'
+
 # ====================================
-#   Variables
+#   Configuration
 # ====================================
 
 # ----- Versions ----- #
@@ -65,8 +67,6 @@ new_locations[:vimrc]           = "#{ ENV['HOME'] }/.vimrc"
 
 # ----- Installation Order ----- #
 
-current_step = 0
-
 installation_order = [
   'install_git_submodules',
   'install_symlinks',
@@ -83,13 +83,15 @@ installation_order = [
   'install_macos_settings',
   'install_cask',
   'install_mas_apps',
-  'install_visual_studio_code_settings',
-  # 'install_outliers',
-  # 'install_sublime_text_settings',
-  # 'install_pow',
+  'install_pow',
   'install_terminal_italics',
   'install_cleanup'
 ]
+
+# Disabled Tasks
+# 'install_visual_studio_code_settings'
+# 'install_outliers'
+# 'install_sublime_text_settings'
 
 # ====================================
 #   Installation Start
@@ -107,16 +109,16 @@ task :install do
     system "touch #{ hush_login_file }"
   end
 
-  run installation_order[current_step] if response?('start')
+  if response?('start')
+    installation_order.each { |task| Rake::Task[task].invoke() }
+  end
 end
 
 # ====================================
 #   Install Git Submodules
 # ====================================
 
-task :install_git_submodules, :run do |task, args|
-  current_step = current_step + 1
-
+task :install_git_submodules do
   prompt 'submodules'
 
   if response?('y')
@@ -124,8 +126,6 @@ task :install_git_submodules, :run do |task, args|
 
     system 'git submodule init'
     system 'git submodule update'
-
-    run installation_order[current_step] unless args[:run] == 'single'
   end
 end
 
@@ -133,9 +133,7 @@ end
 #   Install Symlinks
 # ====================================
 
-task :install_symlinks, :run do |task, args|
-  current_step = current_step + 1
-
+task :install_symlinks do
   prompt 'symlinks'
 
   if response?('y')
@@ -144,8 +142,6 @@ task :install_symlinks, :run do |task, args|
     system "mkdir #{ ENV['HOME'] }/.bundle"
 
     create_symlinks(original_locations, new_locations)
-
-    run installation_order[current_step] unless args[:run] == 'single'
   end
 end
 
@@ -153,9 +149,7 @@ end
 #   Install Vim
 # ====================================
 
-task :install_vim, :run do |task, args|
-  current_step = current_step + 1
-
+task :install_vim do
   prompt 'Vim'
 
   if response?('y')
@@ -169,8 +163,6 @@ task :install_vim, :run do |task, args|
     else
       puts "#{ vundle_directory } already exists. Contining.."
     end
-
-    run installation_order[current_step] unless args[:run] == 'single'
   end
 end
 
@@ -178,17 +170,13 @@ end
 #   Install rbenv
 # ====================================
 
-task :install_rbenv, :run do |task, args|
-  current_step = current_step + 1
-
+task :install_rbenv do
   prompt 'rbenv'
 
   if response?('y')
     message 'Installing rbenv...'
 
     system 'bash setup/rbenv'
-
-    run installation_order[current_step] unless args[:run] == 'single'
   end
 end
 
@@ -196,9 +184,7 @@ end
 #   Install Global Ruby
 # ====================================
 
-task :install_global_ruby, :run do |task, args|
-  current_step = current_step + 1
-
+task :install_global_ruby do
   prompt 'global ruby'
 
   if response?('y')
@@ -209,7 +195,6 @@ task :install_global_ruby, :run do |task, args|
     if response?('next')
       system "rbenv rehash"
       system "rbenv global #{ global_ruby_version }"
-      run installation_order[current_step] unless args[:run] == 'single'
     end
   end
 end
@@ -218,17 +203,13 @@ end
 #   Install Homebrew
 # ====================================
 
-task :install_homebrew, :run do |task, args|
-  current_step = current_step + 1
-
+task :install_homebrew do
   prompt 'Homebrew'
 
   if response?('y')
     message 'Installing Homebrew...'
 
     system 'bash setup/homebrew'
-
-    run installation_order[current_step] unless args[:run] == 'single'
   end
 end
 
@@ -236,17 +217,13 @@ end
 #   Install Homebrew Packages
 # ====================================
 
-task :install_homebrew_packages, :run do |task, args|
-  current_step = current_step + 1
-
+task :install_homebrew_packages do
   prompt 'Homebrew Packages'
 
   if response?('y')
     message 'Installing Homebrew Packages...'
 
     system 'bash setup/homebrew-packages'
-
-    run installation_order[current_step] unless args[:run] == 'single'
   end
 end
 
@@ -254,9 +231,7 @@ end
 #   Install Tmux Plugin Manager
 # ====================================
 
-task :install_tmux_plugin_manager, :run do |task, args|
-  current_step = current_step + 1
-
+task :install_tmux_plugin_manager do
   prompt 'Tmux Plugin Manager'
 
   if response?('y')
@@ -270,8 +245,6 @@ task :install_tmux_plugin_manager, :run do |task, args|
     else
       puts "#{ tpm_directory } already exists. Contining.."
     end
-
-    run installation_order[current_step] unless args[:run] == 'single'
   end
 end
 
@@ -279,9 +252,7 @@ end
 #   Install NVM
 # ====================================
 
-task :install_nvm, :run do |task, args|
-  current_step = current_step + 1
-
+task :install_nvm do
   prompt 'NVM'
 
   if response?('y')
@@ -295,9 +266,7 @@ end
 #   Install Global Node
 # ====================================
 
-task :install_global_node, :run do |task, args|
-  current_step = current_step + 1
-
+task :install_global_node do
   nvm_directory = "#{ ENV['HOME'] }/.nvm"
 
   prompt 'Global Node'
@@ -308,7 +277,6 @@ task :install_global_node, :run do |task, args|
     if response?('next')
       system "nvm install #{ global_node_version }"
       system "nvm alias default v#{ global_node_version }"
-      run installation_order[current_step] unless args[:run] == 'single'
     end
   end
 end
@@ -317,17 +285,13 @@ end
 #   Install NPM Packages
 # ====================================
 
-task :install_npm_packages, :run do |task, args|
-  current_step = current_step + 1
-
+task :install_npm_packages do
   prompt 'NPM Packages'
 
   if response?('y')
     message 'Installing NPM Packages...'
 
     system 'bash setup/npm'
-
-    run installation_order[current_step] unless args[:run] == 'single'
   end
 end
 
@@ -335,17 +299,13 @@ end
 #   Install Gems
 # ====================================
 
-task :install_gems, :run do |task, args|
-  current_step = current_step + 1
-
+task :install_gems do
   prompt 'Ruby Gems'
 
   if response?('y')
     message 'Installing Ruby Gems...'
 
     system 'bash setup/gems'
-
-    run installation_order[current_step] unless args[:run] == 'single'
   end
 end
 
@@ -353,17 +313,13 @@ end
 #   Install macOS Settings
 # ====================================
 
-task :install_macos_settings, :run do |task, args|
-  current_step = current_step + 1
-
+task :install_macos_settings do
   prompt 'OS X Settings'
 
   if response?('y')
     message 'Installing macOS Settings...'
 
     system 'bash setup/macos'
-
-    run installation_order[current_step] unless args[:run] == 'single'
   end
 end
 
@@ -371,17 +327,13 @@ end
 #   Install Cask
 # ====================================
 
-task :install_cask, :run do |task, args|
-  current_step = current_step + 1
-
+task :install_cask do
   prompt 'Cask & Applications'
 
   if response?('y')
     message 'Installing Cask & Applications...'
 
     system 'bash setup/cask'
-
-    run installation_order[current_step] unless args[:run] == 'single'
   end
 end
 
@@ -389,17 +341,13 @@ end
 #   Install MAS Apps
 # ====================================
 
-task :install_mas_apps, :run do |task, args|
-  current_step = current_step + 1
-
+task :install_mas_apps do
   prompt 'Mac App Store Apps'
 
   if response?('y')
     message 'Installing Mac App Store apps...'
 
     system 'bash setup/mas'
-
-    run installation_order[current_step] unless args[:run] == 'single'
   end
 end
 
@@ -407,17 +355,13 @@ end
 #   Install Outliers
 # ====================================
 
-task :install_outliers, :run do |task, args|
-  current_step = current_step + 1
-
+task :install_outliers do
   prompt 'Outlier Applications'
 
   if response?('y')
     message 'Installing Outlier Applications...'
 
     system 'bash setup/outliers'
-
-    run installation_order[current_step] unless args[:run] == 'single'
   end
 end
 
@@ -425,9 +369,7 @@ end
 #   Install Sublime Text Settings
 # ====================================
 
-task :install_sublime_text_settings, :run do |task, args|
-  current_step = current_step + 1
-
+task :install_sublime_text_settings do
   prompt 'Sublime Text Settings'
 
   if response?('y')
@@ -437,7 +379,6 @@ task :install_sublime_text_settings, :run do |task, args|
       message 'Installing Sublime Text Settings...'
       system 'bash setup/sublime'
       system 'defaults write com.sublimetext.2 ApplePressAndHoldEnabled -bool false'
-      run installation_order[current_step] unless args[:run] == 'single'
     end
   end
 end
@@ -446,17 +387,13 @@ end
 #   Install Visual Studio Code Settings
 # ====================================
 
-task :install_visual_studio_code_settings, :run do |task, args|
-  current_step = current_step + 1
-
+task :install_visual_studio_code_settings do
   prompt 'Visual Studio Code Settings'
 
   if response?('y')
     message 'Installing Visual Studio Code Settings...'
 
     system 'bash setup/visual-studio-code'
-
-    run installation_order[current_step] unless args[:run] == 'single'
   end
 end
 
@@ -464,17 +401,13 @@ end
 #   Install Pow
 # ====================================
 
-task :install_pow, :run do |task, args|
-  current_step = current_step + 1
-
+task :install_pow do
   prompt 'Pow'
 
   if response?('y')
     message 'Installing Pow...'
 
     system 'curl get.pow.cx | sh'
-
-    run installation_order[current_step] unless args[:run] == 'single'
   end
 end
 
@@ -483,16 +416,12 @@ end
 # ====================================
 
 task :install_terminal_italics do
-  current_step = current_step + 1
-
   prompt 'Terminal Italics'
 
   if response?('y')
     message 'Installing terminal italics...'
 
     system 'bash setup/terminal-italics'
-
-    run installation_order[current_step] unless args[:run] == 'single'
   end
 end
 
