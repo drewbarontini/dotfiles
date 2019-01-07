@@ -27,6 +27,7 @@
 
 ### Fixed
 - Wrong CleanMyMac version in `setup/cask`
+- Installing Node
 
 ## 1.8.0 - 2018-11-20
 
