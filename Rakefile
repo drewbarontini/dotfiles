@@ -7,7 +7,6 @@ require 'rake'
 # ----- Versions ----- #
 
 global_ruby_version = '2.5.3'
-global_node_version = '8.12.0'
 
 # ----- Original Locations ----- #
 
@@ -77,7 +76,6 @@ installation_order = [
   'install_homebrew_packages',
   'install_tmux_plugin_manager',
   'install_nvm',
-  'install_global_node',
   'install_npm_packages',
   'install_gems',
   'install_macos_settings',
@@ -256,28 +254,9 @@ task :install_nvm do
   prompt 'NVM'
 
   if response?('y')
-    message 'Installing NVM...'
+    message 'Installing NVM and latest Node...'
 
     system 'bash scripts/nvm'
-  end
-end
-
-# ====================================
-#   Install Global Node
-# ====================================
-
-task :install_global_node do
-  nvm_directory = "#{ ENV['HOME'] }/.nvm"
-
-  prompt 'Global Node'
-
-  if response?('y')
-    message "Installing Node #{ global_node_version }..."
-
-    if response?('next')
-      system "nvm install #{ global_node_version }"
-      system "nvm alias default v#{ global_node_version }"
-    end
   end
 end
 
