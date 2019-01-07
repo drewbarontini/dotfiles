@@ -8,6 +8,7 @@
 - `prettier/prettierrc`
 - `git_changes_since_version` Bash function
 - `update_nvm` Bash function
+- `setup/homebrew`
 
 ### Changed
 - Removed `Arq` from `setup/cask`
@@ -19,6 +20,7 @@
 - `setup/osx` is now `setup/macos`
 - Moved `nvm` out of Homebrew
 - `update` now includes `update_nvm`
+- `brew` to `homebrew-packages`
 
 ### Fixed
 - Wrong CleanMyMac version in `setup/cask`
