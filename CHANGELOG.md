@@ -1,6 +1,6 @@
 # Change Log
 
-## Unreleased
+## 1.9.0 - 2018-12-07
 
 ### Added
 - `Rocket` to `setup/cask`
