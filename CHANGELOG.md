@@ -22,6 +22,7 @@
 - `update` now includes `update_nvm`
 - `brew` to `homebrew-packages`
 - `Rakefile` to be better
+- `setup/` directory to `scripts/`
 
 ### Fixed
 - Wrong CleanMyMac version in `setup/cask`
