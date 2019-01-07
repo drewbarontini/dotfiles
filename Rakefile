@@ -226,7 +226,7 @@ task :install_homebrew, :run do |task, args|
   if response?('y')
     message 'Installing Homebrew...'
 
-    system 'ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"'
+    system 'bash setup/homebrew'
 
     run installation_order[current_step] unless args[:run] == 'single'
   end
@@ -244,7 +244,7 @@ task :install_homebrew_packages, :run do |task, args|
   if response?('y')
     message 'Installing Homebrew Packages...'
 
-    system 'bash setup/brew'
+    system 'bash setup/homebrew-packages'
 
     run installation_order[current_step] unless args[:run] == 'single'
   end
