@@ -2,6 +2,9 @@
 
 ## Unreleased
 
+### Added
+- Scripts in `scripts/` for any `rake` tasks missing them
+
 ### Changed
 - Better `Rakefile` with namespaces and descriptions
 - Better `README` with `rake` tasks and descriptions
