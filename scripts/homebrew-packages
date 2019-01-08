@@ -18,7 +18,6 @@ packages=(
   git
   hub
   mas
-  omnigraffle
   postgres
   python
   reattach-to-user-namespace
