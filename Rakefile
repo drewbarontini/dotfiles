@@ -129,7 +129,7 @@ namespace :install do
   #   Install Symlinks
   # ====================================
   
-  desc 'Install symlinks'
+  desc 'Create symlinks'
   task :symlinks do
     prompt 'symlinks'
   

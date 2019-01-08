@@ -24,7 +24,7 @@ rake install:outliers                     # (INACTIVE) Install outlier applicati
 rake install:pow                          # (INACTIVE) Install Pow for Rails URLs in dev
 rake install:rbenv                        # Install rbenv for managing Ruby versions
 rake install:sublime_text_settings        # (INACTIVE) Install Submit Text settings
-rake install:symlinks                     # Install symlinks
+rake install:symlinks                     # Create symlinks
 rake install:terminal_italics             # Install Terminal italics
 rake install:tmux_plugin_manager          # Install tpm for managing Tmux plugins
 rake install:visual_studio_code_settings  # Install Visual Studio Code settings
