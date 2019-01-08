@@ -121,8 +121,7 @@ namespace :install do
     if response?('y')
       message 'Installing git submodules...'
   
-      system 'git submodule init'
-      system 'git submodule update'
+      system 'bash scripts/git-submodules'
     end
   end
   
@@ -154,14 +153,7 @@ namespace :install do
     if response?('y')
       message 'Installing Vundle...'
   
-      vundle_directory = "#{ ENV['HOME'] }/.vim/bundle/Vundle.vim"
-  
-      unless File.exists?(vundle_directory)
-        system "git clone https://github.com/VundleVim/Vundle.vim.git #{ vundle_directory }"
-        puts "Done! Run ':PluginInstall' in Vim to install plugins."
-      else
-        puts "#{ vundle_directory } already exists. Contining.."
-      end
+      system 'bash scripts/vundle'
     end
   end
   
@@ -221,14 +213,7 @@ namespace :install do
     if response?('y')
       message 'Installing Tmux Plugin Manager...'
   
-      tpm_directory = "#{ ENV['HOME'] }/.tmux/plugins/tpm"
-  
-      unless File.exists?(tpm_directory)
-        system 'git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm'
-        puts "Done! Run 'Prefix + I' in Tmux to install plugins."
-      else
-        puts "#{ tpm_directory } already exists. Contining.."
-      end
+      system 'scripts/tpm'
     end
   end
   
@@ -382,7 +367,7 @@ namespace :install do
     if response?('y')
       message 'Installing Pow...'
   
-      system 'curl get.pow.cx | sh'
+      system 'bash scripts/pow'
     end
   end
   
@@ -422,7 +407,7 @@ namespace :install do
     if response?('y')
       message 'Installing Command Line Tools...'
   
-      system 'xcode-select --install'
+      system 'bash scripts/command-line-tools'
     end
   end
 end

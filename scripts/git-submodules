@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# ****************************************************
+#
+#   Git Submodules
+#
+# ****************************************************
+
+git submodule init
+git submodule update

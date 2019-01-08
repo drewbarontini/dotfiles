@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# ****************************************************
+#
+#   TPM
+#
+# ****************************************************
+
+DIRECTORY="$HOME/.tmux/plugins/tpm"
+
+if [ ! -d "$DIRECTORY" ]; then
+
+  git clone https://github.com/tmux-plugins/tpm $DIRECTORY
+  echo "Done! Run 'Prefix + I' in Tmux to install plugins."
+
+else
+
+  echo 'TPM is already installed on this machine.'
+
+fi

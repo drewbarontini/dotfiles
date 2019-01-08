@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# ****************************************************
+#
+#   Vundle
+#
+# ****************************************************
+
+DIRECTORY="$HOME/.vim/bundle/Vundle.vim"
+
+if [ ! -d "$DIRECTORY" ]; then
+
+  git clone https://github.com/VundleVim/Vundle.vim.git $DIRECTORY
+  echo "Done! Run ':PluginInstall' in Vim to install plugins."
+
+else
+
+  echo 'Vundle is already installed on this machine.'
+
+fi
