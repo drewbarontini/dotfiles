@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+### Changed
+- Better `Rakefile` with namespaces and descriptions
+- Better `README` with `rake` tasks and descriptions
+
 ### Removed
 - `omnigraffle` from `scripts/homebrew-packages`
 
