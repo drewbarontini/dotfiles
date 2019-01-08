@@ -1,5 +1,10 @@
 # Change Log
 
+## Unreleased
+
+### Removed
+- `omnigraffle` from `scripts/homebrew-packages`
+
 ## 1.9.0 - 2018-12-07
 
 ### Added
