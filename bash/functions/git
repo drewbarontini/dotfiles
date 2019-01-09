@@ -4,6 +4,17 @@
 #
 # *************************************
 
+# -------------------------------------
+#   Get Author Stats
+#   -> Prints stats for a particular author
+# -------------------------------------
+#
+# $1 - the author
+# $2 - the date to match since
+#
+# Usage: `git_author_stats "Drew Barontini" 2019-01-01`
+#
+
 function git_author_stats() {
   git log --author="$1" --since="$2" --pretty=tformat: --numstat | awk '{ add += $1; subs += $2 } END { printf "added lines: %s, removed lines: %s\n", add, subs }' -
 }
@@ -93,13 +104,9 @@ function git_delete_branch_for_real() {
 #
 function git_diff_from_master() {
   if [ "$1" == 'files' ]; then
-
     git diff --name-only master..$2
-
   else
-
     git diff master..$1 $*
-
   fi
 }
 

@@ -42,13 +42,9 @@ function view_issue() {
 
 function remote_parker() {
   if [ "$1" == 'json' ]; then
-
     curl "$1" -s | parker -s --format=json
-
   else
-
     curl "$1" -s | parker -s
-
   fi
 }
 
