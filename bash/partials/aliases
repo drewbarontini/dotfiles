@@ -108,6 +108,7 @@ alias gw='git show'
 alias git_config_vars='git config --global -l'
 alias git_current_tag='git describe --abbrev=0 --tags'
 alias git_push_deploy='git pull --rebase && git push && rake deploy'
+alias git_tag='git-tag'
 alias git_update_submodules='git submodule foreach git pull'
 
 # ----- Heroku ----- #
