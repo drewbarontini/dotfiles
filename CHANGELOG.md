@@ -4,13 +4,17 @@
 
 ### Added
 - Scripts in `scripts/` for any `rake` tasks missing them
+- `git-tag` bin script
 
 ### Changed
 - Better `Rakefile` with namespaces and descriptions
 - Better `README` with `rake` tasks and descriptions
+- Cleaned up `bash/partials/aliases`
+- Cleaned up `bash/functions`
 
 ### Removed
 - `omnigraffle` from `scripts/homebrew-packages`
+- `git_tag` function
 
 ## 1.9.0 - 2018-12-07
 
