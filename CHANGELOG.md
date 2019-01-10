@@ -15,6 +15,7 @@
 ### Removed
 - `omnigraffle` from `scripts/homebrew-packages`
 - `git_tag` function
+- Unnecessary line in `Rakefile` for disabling press and hold in macOS
 
 ## 1.9.0 - 2018-12-07
 
