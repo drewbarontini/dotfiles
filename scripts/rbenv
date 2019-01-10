@@ -14,7 +14,6 @@ function install_global_ruby() {
 }
 
 if [ ! -d "$HOME/.rbenv" ]; then
-
   echo 'Setting up rbenv...'
   git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
   echo 'Add export PATH="$HOME/.rbenv/bin:$PATH" to your ~/.bash_profile'
@@ -25,19 +24,12 @@ if [ ! -d "$HOME/.rbenv" ]; then
 
   echo "rbenv is now set up! Installing latest Ruby..."
   install_global_ruby
-
 else
-
   echo 'rbenv is already installed on this machine.'
 
   if [ ! -d "$HOME/.rbenv/versions/$VERSION" ]; then
-
     install_global_ruby
-
   else
-
     echo "Ruby $VERSION is already installed on this machine."
-
   fi
-
 fi
