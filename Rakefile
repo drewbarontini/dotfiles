@@ -336,7 +336,6 @@ namespace :install do
       if response?('next')
         message 'Installing Sublime Text Settings...'
         system 'bash scripts/sublime'
-        system 'defaults write com.sublimetext.2 ApplePressAndHoldEnabled -bool false'
       end
     end
   end
