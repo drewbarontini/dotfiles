@@ -11,6 +11,7 @@
 - Better `README` with `rake` tasks and descriptions
 - Cleaned up `bash/partials/aliases`
 - Cleaned up `bash/functions`
+- Hide the activity bar in VSCode (sidebar icons)
 
 ### Removed
 - `omnigraffle` from `scripts/homebrew-packages`
