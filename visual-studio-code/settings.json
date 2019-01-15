@@ -125,9 +125,7 @@
     }
   ],
   "vim.overrideCopy": false,
-  "workbench.editor.tabSizing": "shrink",
-  "workbench.iconTheme": "material-icon-theme",
-  "workbench.startupEditor": "newUntitledFile",
+  "workbench.activityBar.visible": false,
   // https://code.visualstudio.com/docs/getstarted/theme-color-reference
   "workbench.colorCustomizations": {
     // Color adjustments for the "Plastic" theme
@@ -140,5 +138,8 @@
   },
   "workbench.colorTheme": "Plastic - deprioritised punctuation",
   "window.clickThroughInactive": false,
+  "workbench.editor.tabSizing": "shrink",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.startupEditor": "newUntitledFile",
   "window.zoomLevel": 0
 }
