@@ -125,7 +125,6 @@
     }
   ],
   "vim.overrideCopy": false,
-  "workbench.activityBar.visible": false,
   // https://code.visualstudio.com/docs/getstarted/theme-color-reference
   "workbench.colorCustomizations": {
     // Color adjustments for the "Plastic" theme
