@@ -11,6 +11,7 @@
 - Better `README` with `rake` tasks and descriptions
 - Cleaned up `bash/partials/aliases`
 - Cleaned up `bash/functions`
+- Moved the VSCode to the right
 
 ### Removed
 - `omnigraffle` from `scripts/homebrew-packages`
