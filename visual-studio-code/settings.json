@@ -139,6 +139,7 @@
   "window.clickThroughInactive": false,
   "workbench.editor.tabSizing": "shrink",
   "workbench.iconTheme": "material-icon-theme",
+  "workbench.sideBar.location": "right",
   "workbench.startupEditor": "newUntitledFile",
   "window.zoomLevel": 0
 }
