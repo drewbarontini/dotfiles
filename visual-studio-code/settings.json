@@ -133,7 +133,15 @@
     "terminal.ansiBrightBlue": "#19b9c4",
     "terminal.ansiBrightGreen": "#8cc567",
     "terminal.ansiBrightRed": "#f16372",
-    "terminal.ansiWhite": "#d1d6dc"
+    "terminal.ansiWhite": "#d1d6dc",
+    // Changing the bar color
+    // "activityBar.background": "#fbc02d",
+    // "activityBar.foreground": "#FFF",
+    // "activityBar.inactiveForeground": "#FFF",
+    // "titleBar.activeBackground": "#fbc02d",
+    // "titleBar.activeForeground": "#111"
+    // "statusBar.background": "#fbc02d",
+    // "statusBar.foreground": "#111"
   },
   "workbench.colorTheme": "Plastic - deprioritised punctuation",
   "window.clickThroughInactive": false,
@@ -141,5 +149,5 @@
   "workbench.iconTheme": "material-icon-theme",
   "workbench.sideBar.location": "right",
   "workbench.startupEditor": "newUntitledFile",
-  "window.zoomLevel": 0
+  "window.zoomLevel": 0}
 }
