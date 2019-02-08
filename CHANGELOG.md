@@ -5,6 +5,7 @@
 ### Added
 - Scripts in `scripts/` for any `rake` tasks missing them
 - `git-tag` bin script
+- Day One
 
 ### Changed
 - Better `Rakefile` with namespaces and descriptions
@@ -17,6 +18,7 @@
 - `omnigraffle` from `scripts/homebrew-packages`
 - `git_tag` function
 - Unnecessary line in `Rakefile` for disabling press and hold in macOS
+- Tweetbot
 
 ## 1.9.0 - 2018-12-07
 
