@@ -127,13 +127,24 @@
   "vim.overrideCopy": false,
   // https://code.visualstudio.com/docs/getstarted/theme-color-reference
   "workbench.colorCustomizations": {
-    // Color adjustments for the "Plastic" theme
-    "panelTitle.activeBorder": "#ffffff",
-    "titleBar.border": "#080a0f",
-    "terminal.ansiBrightBlue": "#19b9c4",
-    "terminal.ansiBrightGreen": "#8cc567",
-    "terminal.ansiBrightRed": "#f16372",
-    "terminal.ansiWhite": "#d1d6dc",
+    "[Plastic - deprioritised punctuation]": {
+      "panelTitle.activeBorder": "#ffffff",
+      "titleBar.border": "#080a0f",
+      "terminal.ansiBrightBlue": "#19b9c4",
+      "terminal.ansiBrightGreen": "#8cc567",
+      "terminal.ansiBrightRed": "#f16372",
+      "terminal.ansiWhite": "#d1d6dc"
+    },
+    "[Night Owl]": {
+      "contrastActiveBorder": "#ff00",
+      "sideBar.background": "#000e1a",
+      "sideBar.border": "#ff00",
+      "tab.border": "#ff00",
+      "tab.inactiveBackground": "#ff00",
+      "tab.activeBackground": "#000e1a",
+      "tab.activeBorder": "#ff00",
+      "tab.unfocusedActiveBorder": "#ff00"
+    }
     // Changing the bar color
     // "activityBar.background": "#fbc02d",
     // "activityBar.foreground": "#FFF",
@@ -143,11 +154,11 @@
     // "statusBar.background": "#fbc02d",
     // "statusBar.foreground": "#111"
   },
-  "workbench.colorTheme": "Plastic - deprioritised punctuation",
   "window.clickThroughInactive": false,
   "workbench.editor.tabSizing": "shrink",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.sideBar.location": "right",
   "workbench.startupEditor": "newUntitledFile",
-  "window.zoomLevel": 0}
+  "window.zoomLevel": 0,
+  "workbench.colorTheme": "Plastic - deprioritised punctuation"
 }
