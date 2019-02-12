@@ -127,13 +127,8 @@
   "vim.overrideCopy": false,
   // https://code.visualstudio.com/docs/getstarted/theme-color-reference
   "workbench.colorCustomizations": {
-    "[Plastic - deprioritised punctuation]": {
-      "panelTitle.activeBorder": "#ffffff",
-      "titleBar.border": "#080a0f",
-      "terminal.ansiBrightBlue": "#19b9c4",
-      "terminal.ansiBrightGreen": "#8cc567",
-      "terminal.ansiBrightRed": "#f16372",
-      "terminal.ansiWhite": "#d1d6dc"
+    "[Cobalt2]": {
+      "editorGutter.background": "#ff00"
     },
     "[Night Owl]": {
       "contrastActiveBorder": "#ff00",
@@ -144,6 +139,22 @@
       "tab.activeBackground": "#000e1a",
       "tab.activeBorder": "#ff00",
       "tab.unfocusedActiveBorder": "#ff00"
+    },
+    "[Plastic - deprioritised punctuation]": {
+      "panelTitle.activeBorder": "#ffffff",
+      "titleBar.border": "#080a0f",
+      "terminal.ansiBrightBlue": "#19b9c4",
+      "terminal.ansiBrightGreen": "#8cc567",
+      "terminal.ansiBrightRed": "#f16372",
+      "terminal.ansiWhite": "#d1d6dc"
+    },
+    "[Plastic]": {
+      "panelTitle.activeBorder": "#ffffff",
+      "titleBar.border": "#080a0f",
+      "terminal.ansiBrightBlue": "#19b9c4",
+      "terminal.ansiBrightGreen": "#8cc567",
+      "terminal.ansiBrightRed": "#f16372",
+      "terminal.ansiWhite": "#d1d6dc"
     }
     // Changing the bar color
     // "activityBar.background": "#fbc02d",
