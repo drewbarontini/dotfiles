@@ -177,6 +177,9 @@ alias ls_cleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/L
 # Latest macOS versions don't loading SSH keys on restart for some reason
 alias add_ssh_key='ssh-add -K ~/.ssh/id_rsa'
 
+# For when the application switcher lands on the wrong display
+alias kd='killall Dock'
+
 # -------------------------------------
 #   Rails Environment
 # -------------------------------------
