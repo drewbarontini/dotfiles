@@ -6,6 +6,7 @@
 - Scripts in `scripts/` for any `rake` tasks missing them
 - `git-tag` bin script
 - Day One
+- `kd` Bash alias
 
 ### Changed
 - Better `Rakefile` with namespaces and descriptions
