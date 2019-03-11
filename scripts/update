@@ -22,4 +22,4 @@ cd "$HOME/.rbenv/plugins/ruby-build" && git pull && cd -
 git submodule foreach git pull
 
 # Homebrew & Homebrew Packages
-brew update && brew cleanup && brew prune && brew doctor
+brew update && brew cleanup && brew cleanup --prune-prefix && brew doctor
