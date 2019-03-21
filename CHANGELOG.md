@@ -7,6 +7,7 @@
 - `git-tag` bin script
 - Day One
 - `kd` Bash alias
+- `TablePlus` to `scripts/cask`
 
 ### Changed
 - Better `Rakefile` with namespaces and descriptions
