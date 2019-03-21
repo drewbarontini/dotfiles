@@ -1,6 +1,7 @@
 {
   "breadcrumbs.enabled": true,
   "editor.cursorStyle": "line",
+  "editor.cursorWidth": 1,
   "editor.fontLigatures": true,
   "editor.fontFamily": "Operator Mono",
   "editor.fontSize": 14,
