@@ -1,5 +1,6 @@
 {
   "breadcrumbs.enabled": true,
+  "editor.cursorSmoothCaretAnimation": true,
   "editor.cursorStyle": "line",
   "editor.cursorWidth": 1,
   "editor.fontLigatures": true,
@@ -11,6 +12,7 @@
   "editor.minimap.enabled": false,
   "editor.rulers": [80],
   "editor.renderIndentGuides": true,
+  "editor.smoothScrolling": true,
   "editor.snippetSuggestions": "top",
   "editor.suggestSelection": "first",
   "editor.tabCompletion": "onlySnippets",
