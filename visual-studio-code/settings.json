@@ -12,6 +12,7 @@
   "editor.rulers": [80],
   "editor.renderIndentGuides": true,
   "editor.snippetSuggestions": "top",
+  "editor.suggestSelection": "first",
   "editor.tabCompletion": "onlySnippets",
   "editor.tabSize": 2,
   "editor.tokenColorCustomizations": {
@@ -126,21 +127,22 @@
     }
   ],
   "vim.overrideCopy": false,
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   // https://code.visualstudio.com/docs/getstarted/theme-color-reference
   "workbench.colorCustomizations": {
     "[Cobalt2]": {
       "editorGutter.background": "#ff00"
     },
-    "[Night Owl]": {
-      "contrastActiveBorder": "#ff00",
-      "sideBar.background": "#000e1a",
-      "sideBar.border": "#ff00",
-      "tab.border": "#ff00",
-      "tab.inactiveBackground": "#ff00",
-      "tab.activeBackground": "#000e1a",
-      "tab.activeBorder": "#ff00",
-      "tab.unfocusedActiveBorder": "#ff00"
-    },
+    // "[Night Owl]": {
+    //   "contrastActiveBorder": "#ff00",
+    //   "sideBar.background": "#000e1a",
+    //   "sideBar.border": "#ff00",
+    //   "tab.border": "#ff00",
+    //   "tab.inactiveBackground": "#ff00",
+    //   "tab.activeBackground": "#000e1a",
+    //   "tab.activeBorder": "#ff00",
+    //   "tab.unfocusedActiveBorder": "#ff00"
+    // },
     "[Plastic - deprioritised punctuation]": {
       "panelTitle.activeBorder": "#ffffff",
       "titleBar.border": "#080a0f",
