@@ -126,7 +126,18 @@
           "args": []
         }
       ]
+    },
+    //-- A fix for `"editor.smoothScrolling": true` breaking `<C-u>`
+    //   and `<C-d>` in Vim mode.
+    {
+      "before": ["<C-u>"],
+      "after": ["2", "0", "k"]
+    },
+    {
+      "before": ["<C-d>"],
+      "after": ["2", "0", "j"]
     }
+    // --
   ],
   "vim.overrideCopy": false,
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
