@@ -5,25 +5,29 @@
   // -----------------------------------------
   // "editor.fontFamily": "Operator Mono",
   // "editor.fontSize": 14,
+  // "editor.lineHeight": 24,
   // "terminal.integrated.fontFamily": "Operator Mono",
   // "terminal.integrated.fontSize": 14,
+  // "terminal.integrated.lineHeight": 1.4,
   // "workbench.colorTheme": "Plastic - deprioritised punctuation",
   // ----------------------------------
   // The "Night Owl - Dank Mono" theme!
   // ----------------------------------
   "editor.fontFamily": "Dank Mono",
   "editor.fontSize": 14,
+  "editor.lineHeight": 24,
   "terminal.integrated.fontFamily": "Dank Mono",
   "terminal.integrated.fontSize": 14,
+  "terminal.integrated.lineHeight": 1.4,
   "workbench.colorTheme": "Night Owl",
   // ----------------------------------
+  "bracketPairColorizer.forceIterationColorCycle": true,
   "breadcrumbs.enabled": true,
   "editor.cursorSmoothCaretAnimation": true,
   "editor.cursorStyle": "line",
   "editor.cursorWidth": 1,
   "editor.fontLigatures": true,
   "editor.formatOnSave": true,
-  "editor.lineHeight": 22,
   "editor.lineNumbers": "relative",
   "editor.minimap.enabled": false,
   "editor.rulers": [80],
@@ -90,7 +94,6 @@
   "sync.syncExtensions": true,
   "terminal.integrated.copyOnSelection": true,
   "terminal.integrated.fontWeightBold": "normal",
-  "terminal.integrated.lineHeight": 1.4,
   "terminal.integrated.shellArgs.osx": ["-l"],
   "vim.easymotion": true,
   "vim.easymotionMarkerFontFamily": "Dank Mono",
@@ -161,7 +164,12 @@
       "editorGutter.background": "#ff00"
     },
     "[Night Owl]": {
-      "editorCursor.foreground": "#ffd800"
+      "activityBar.background": "#000C1D",
+      "activityBar.border": "#102a44",
+      "editorCursor.foreground": "#ffd800",
+      "sideBar.background": "#001122",
+      "sideBar.border": "#102a44",
+      "sideBar.foreground": "#8BADC1"
     },
     "[Plastic - deprioritised punctuation]": {
       "panelTitle.activeBorder": "#ffffff",
