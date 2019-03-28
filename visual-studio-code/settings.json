@@ -1,11 +1,27 @@
 {
+  // Pick a theme!
+  // -----------------------------------------
+  // The "Plastic Code - Operator Mono" theme!
+  // -----------------------------------------
+  // "editor.fontFamily": "Operator Mono",
+  // "editor.fontSize": 14,
+  // "terminal.integrated.fontFamily": "Operator Mono",
+  // "terminal.integrated.fontSize": 14,
+  // "workbench.colorTheme": "Plastic - deprioritised punctuation",
+  // ----------------------------------
+  // The "Night Owl - Dank Mono" theme!
+  // ----------------------------------
+  "editor.fontFamily": "Dank Mono",
+  "editor.fontSize": 14,
+  "terminal.integrated.fontFamily": "Dank Mono",
+  "terminal.integrated.fontSize": 14,
+  "workbench.colorTheme": "Night Owl",
+  // ----------------------------------
   "breadcrumbs.enabled": true,
   "editor.cursorSmoothCaretAnimation": true,
   "editor.cursorStyle": "line",
   "editor.cursorWidth": 1,
   "editor.fontLigatures": true,
-  "editor.fontFamily": "Operator Mono",
-  "editor.fontSize": 14,
   "editor.formatOnSave": true,
   "editor.lineHeight": 22,
   "editor.lineNumbers": "relative",
@@ -73,13 +89,11 @@
   "sync.removeExtensions": true,
   "sync.syncExtensions": true,
   "terminal.integrated.copyOnSelection": true,
-  "terminal.integrated.fontFamily": "Operator Mono",
-  "terminal.integrated.fontSize": 14,
   "terminal.integrated.fontWeightBold": "normal",
   "terminal.integrated.lineHeight": 1.4,
   "terminal.integrated.shellArgs.osx": ["-l"],
   "vim.easymotion": true,
-  "vim.easymotionMarkerFontFamily": "Operator Mono",
+  "vim.easymotionMarkerFontFamily": "Dank Mono",
   "vim.easymotionMarkerHeight": 20,
   "vim.easymotionMarkerYOffset": 2,
   "vim.hlsearch": true,
@@ -146,16 +160,9 @@
     "[Cobalt2]": {
       "editorGutter.background": "#ff00"
     },
-    // "[Night Owl]": {
-    //   "contrastActiveBorder": "#ff00",
-    //   "sideBar.background": "#000e1a",
-    //   "sideBar.border": "#ff00",
-    //   "tab.border": "#ff00",
-    //   "tab.inactiveBackground": "#ff00",
-    //   "tab.activeBackground": "#000e1a",
-    //   "tab.activeBorder": "#ff00",
-    //   "tab.unfocusedActiveBorder": "#ff00"
-    // },
+    "[Night Owl]": {
+      "editorCursor.foreground": "#ffd800"
+    },
     "[Plastic - deprioritised punctuation]": {
       "panelTitle.activeBorder": "#ffffff",
       "titleBar.border": "#080a0f",
@@ -187,6 +194,5 @@
   "workbench.list.automaticKeyboardNavigation": false,
   "workbench.sideBar.location": "right",
   "workbench.startupEditor": "newUntitledFile",
-  "window.zoomLevel": 0,
-  "workbench.colorTheme": "Plastic - deprioritised punctuation"
+  "window.zoomLevel": 0
 }
