@@ -8,6 +8,7 @@
 - Day One
 - `kd` Bash alias
 - `TablePlus` to `scripts/cask`
+- Night Owl theme
 
 ### Changed
 - Better `Rakefile` with namespaces and descriptions
