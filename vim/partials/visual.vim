@@ -12,6 +12,10 @@ if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
   syntax on
 endif
 
+if (has("termguicolors"))
+ set termguicolors
+endif
+
 set t_Co=256
 
 " -------------------------------------
@@ -19,7 +23,7 @@ set t_Co=256
 " -------------------------------------
 
 set background=dark
-color solarized
+color night-owl
 
 " -------------------------------------
 "   Custom Color Adjustments

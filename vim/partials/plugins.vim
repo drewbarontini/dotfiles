@@ -62,6 +62,9 @@ Plugin 'godlygeek/tabular'
 " Just like 'f', but for two characters
 Plugin 'goldfeld/vim-seek'
 
+" Night Owl theme
+Plugin 'haishanh/night-owl.vim'
+
 " Nice inteface for dealing with Git branches
 Plugin 'idanarye/vim-merginal'
 
