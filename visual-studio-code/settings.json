@@ -9,6 +9,8 @@
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.lineHeight": 1.5,
   "workbench.colorTheme": "Night Owl",
+  "vim.easymotionMarkerFontFamily": "Operator Mono",
+  "vim.easymotionMarkerHeight": 26,
   // ----------------------------------
   "bracketPairColorizer.forceIterationColorCycle": true,
   "breadcrumbs.enabled": true,
@@ -85,9 +87,6 @@
   "terminal.integrated.fontWeightBold": "normal",
   "terminal.integrated.shellArgs.osx": ["-l"],
   "vim.easymotion": true,
-  "vim.easymotionMarkerFontFamily": "Dank Mono",
-  "vim.easymotionMarkerHeight": 20,
-  "vim.easymotionMarkerYOffset": 2,
   "vim.hlsearch": true,
   "vim.leader": "<space>",
   "vim.mouseSelectionGoesIntoVisualMode": false,
