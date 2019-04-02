@@ -1,24 +1,13 @@
 {
-  // Pick a theme!
-  // -----------------------------------------
-  // The "Plastic Code - Operator Mono" theme!
-  // -----------------------------------------
-  // "editor.fontFamily": "Operator Mono",
-  // "editor.fontSize": 14,
-  // "editor.lineHeight": 24,
-  // "terminal.integrated.fontFamily": "Operator Mono",
-  // "terminal.integrated.fontSize": 14,
-  // "terminal.integrated.lineHeight": 1.4,
-  // "workbench.colorTheme": "Plastic - deprioritised punctuation",
   // ----------------------------------
-  // The "Night Owl - Dank Mono" theme!
+  // The "Night Owl" theme!
   // ----------------------------------
-  "editor.fontFamily": "Dank Mono",
+  "editor.fontFamily": "Operator Mono",
   "editor.fontSize": 14,
-  "editor.lineHeight": 24,
-  "terminal.integrated.fontFamily": "Dank Mono",
+  "editor.lineHeight": 26,
+  "terminal.integrated.fontFamily": "Operator Mono",
   "terminal.integrated.fontSize": 14,
-  "terminal.integrated.lineHeight": 1.4,
+  "terminal.integrated.lineHeight": 1.5,
   "workbench.colorTheme": "Night Owl",
   // ----------------------------------
   "bracketPairColorizer.forceIterationColorCycle": true,
