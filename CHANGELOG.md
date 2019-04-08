@@ -9,6 +9,7 @@
 - `kd` Bash alias
 - `TablePlus` to `scripts/cask`
 - Night Owl theme
+- `ys` Bash alias for `yarn start`
 
 ### Changed
 - Better `Rakefile` with namespaces and descriptions
