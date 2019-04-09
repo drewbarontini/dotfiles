@@ -6,6 +6,8 @@ module.exports = {
     // font family with optional fallbacks
     fontFamily: 'Operator Mono',
 
+    lineHeight: 1.5,
+
     // terminal cursor background color and opacity (hex, rgb, hsl, hsv, hwb or cmyk)
     cursorColor: 'rgba(255,255,255,0.8)',
 
@@ -95,7 +97,7 @@ module.exports = {
     'hyper-snazzy',
     'hyper-tabs-enhanced',
     'hyper-statusline',
-    'hyper-npm-theme',
+    'hyper-night-owl',
   ],
 
   // in development, you can create a directory under
