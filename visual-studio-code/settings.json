@@ -83,6 +83,8 @@
   "sync.quietSync": false,
   "sync.removeExtensions": true,
   "sync.syncExtensions": true,
+  "terminal.external.osxExec": "iTerm.app",
+  "terminal.explorerKind": "external",
   "terminal.integrated.copyOnSelection": true,
   "terminal.integrated.fontWeightBold": "normal",
   "terminal.integrated.shellArgs.osx": ["-l"],
