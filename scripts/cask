@@ -23,6 +23,7 @@ applications=(
   dropbox
   firefox
   flux
+  github
   google-chrome
   hazel
   imageoptim
