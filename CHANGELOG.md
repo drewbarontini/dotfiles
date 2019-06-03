@@ -18,6 +18,7 @@
 - Cleaned up `bash/partials/aliases`
 - Cleaned up `bash/functions`
 - Moved the VSCode to the right
+- `prettierrc` to include `"proseWrap": "always"`
 
 ### Removed
 - `omnigraffle` from `scripts/homebrew-packages`
