@@ -13,7 +13,6 @@ applications=(
   aerial
   adobe-creative-cloud
   alfred
-  appcleaner
   backblaze
   bartender
   basecamp
@@ -54,6 +53,7 @@ done
 #   Disabled
 # ----------------------------------------------------
 
+# appcleaner
 # arq
 # atom
 # atom-beta

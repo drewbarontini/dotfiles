@@ -17,7 +17,6 @@ applications=(
   975937182 # Fantastical
   990588172 # Gestimer
   1082624744 # Gifox
-  1289197285 # MindNode
   803453959 # Slack
   904280696 # Things 3
   1191449274 # ToothFairy
@@ -35,6 +34,7 @@ done
 # 427475982 (BreakTime)
 # 969418666 (ColorSnapper)
 # 430798174 (HazeOver)
+# 1289197285 (MindNode)
 # 603637384 (Name Mangler)
 # 928871589 (Noizio)
 # 413965349 (Soulver)
