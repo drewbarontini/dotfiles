@@ -25,6 +25,8 @@
 - `git_tag` function
 - Unnecessary line in `Rakefile` for disabling press and hold in macOS
 - Tweetbot
+- MindNode
+- AppCleaner
 
 ## 1.9.0 - 2018-12-07
 
