@@ -31,7 +31,6 @@ applications=(
   keyboard-maestro
   moom
   notion
-  nucleo
   omnigraffle
   rescuetime
   rocket
@@ -81,6 +80,7 @@ done
 # michaelvillar-timer>
 # mongodb-compass
 # noun-project
+# nucleo
 # paw
 # postgres
 # postman
