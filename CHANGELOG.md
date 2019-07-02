@@ -27,6 +27,7 @@
 - Tweetbot
 - MindNode
 - AppCleaner
+- Nucleo
 
 ## 1.9.0 - 2018-12-07
 
