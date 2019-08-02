@@ -11,6 +11,7 @@
 - Night Owl theme
 - `ys` Bash alias for `yarn start`
 - `github` to `scripts/cask`
+- `figma` to `scripts/cask`
 
 ### Changed
 - Better `Rakefile` with namespaces and descriptions
