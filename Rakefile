@@ -113,299 +113,299 @@ namespace :install do
   # ====================================
   #   Install Git Submodules
   # ====================================
-  
+
   desc 'Install git submodules'
   task :git_submodules do
     prompt 'submodules'
-  
+
     if response?('y')
       message 'Installing git submodules...'
-  
+
       system 'bash scripts/git-submodules'
     end
   end
-  
+
   # ====================================
   #   Install Symlinks
   # ====================================
-  
+
   desc 'Create symlinks'
   task :symlinks do
     prompt 'symlinks'
-  
+
     if response?('y')
       message 'Symlinking files...'
-  
+
       system "mkdir #{ ENV['HOME'] }/.bundle"
-  
+
       create_symlinks(original_locations, new_locations)
     end
   end
-  
+
   # ====================================
   #   Install Vim
   # ====================================
-  
+
   desc 'Install Vundle for managing Vim plugins'
   task :vundle do
     prompt 'Vundle'
-  
+
     if response?('y')
       message 'Installing Vundle...'
-  
+
       system 'bash scripts/vundle'
     end
   end
-  
+
   # ====================================
   #   Install rbenv
   # ====================================
-  
+
   desc 'Install rbenv for managing Ruby versions'
   task :rbenv do
     prompt 'rbenv'
-  
+
     if response?('y')
       message 'Installing rbenv...'
-  
+
       system 'bash scripts/rbenv'
     end
   end
-  
+
   # ====================================
   #   Install Homebrew
   # ====================================
-  
+
   desc 'Install Homebrew for managing dev packages'
   task :homebrew do
     prompt 'Homebrew'
-  
+
     if response?('y')
       message 'Installing Homebrew...'
-  
+
       system 'bash scripts/homebrew'
     end
   end
-  
+
   # ====================================
   #   Install Homebrew Packages
   # ====================================
-  
+
   desc 'Install a set of Homebrew packages'
   task :homebrew_packages do
     prompt 'Homebrew Packages'
-  
+
     if response?('y')
       message 'Installing Homebrew Packages...'
-  
+
       system 'bash scripts/homebrew-packages'
     end
   end
-  
+
   # ====================================
   #   Install Tmux Plugin Manager
   # ====================================
-  
+
   desc 'Install tpm for managing Tmux plugins'
   task :tmux_plugin_manager do
     prompt 'Tmux Plugin Manager'
-  
+
     if response?('y')
       message 'Installing Tmux Plugin Manager...'
-  
+
       system 'scripts/tpm'
     end
   end
-  
+
   # ====================================
   #   Install NVM
   # ====================================
-  
+
   desc 'Install NVM for managing Node versions'
   task :nvm do
     prompt 'NVM'
-  
+
     if response?('y')
       message 'Installing NVM and latest Node...'
-  
+
       system 'bash scripts/nvm'
     end
   end
-  
+
   # ====================================
   #   Install NPM Packages
   # ====================================
-  
+
   desc 'Install NPM packages'
   task :npm_packages do
     prompt 'NPM Packages'
-  
+
     if response?('y')
       message 'Installing NPM Packages...'
-  
+
       system 'bash scripts/npm'
     end
   end
-  
+
   # ====================================
   #   Install Gems
   # ====================================
-  
+
   desc 'Install Ruby gems'
   task :gems do
     prompt 'Ruby Gems'
-  
+
     if response?('y')
       message 'Installing Ruby Gems...'
-  
+
       system 'bash scripts/gems'
     end
   end
-  
+
   # ====================================
   #   Install macOS Settings
   # ====================================
-  
+
   desc 'Install custom macOS settings and configuration'
   task :macos_settings do
     prompt 'OS X Settings'
-  
+
     if response?('y')
       message 'Installing macOS Settings...'
-  
+
       system 'bash scripts/macos'
     end
   end
-  
+
   # ====================================
   #   Install Cask
   # ====================================
-  
+
   desc 'Install macOS applications through brew cask'
   task :cask do
     prompt 'Cask & Applications'
-  
+
     if response?('y')
       message 'Installing Cask & Applications...'
-  
+
       system 'bash scripts/cask'
     end
   end
-  
+
   # ====================================
   #   Install MAS Apps
   # ====================================
-  
+
   desc 'Install macOS application through the App Store'
   task :mas_apps do
     prompt 'Mac App Store Apps'
-  
+
     if response?('y')
       message 'Installing Mac App Store apps...'
-  
+
       system 'bash scripts/mas'
     end
   end
-  
+
   # ====================================
   #   Install Outliers
   # ====================================
-  
+
   desc '(INACTIVE) Install outlier applications'
   task :outliers do
     prompt 'Outlier Applications'
-  
+
     if response?('y')
       message 'Installing Outlier Applications...'
-  
+
       system 'bash scripts/outliers'
     end
   end
-  
+
   # ====================================
   #   Install Sublime Text Settings
   # ====================================
-  
+
   desc '(INACTIVE) Install Submit Text settings'
   task :sublime_text_settings do
     prompt 'Sublime Text Settings'
-  
+
     if response?('y')
       message "Open Sublime Text... Type 'next' when you are ready."
-  
+
       if response?('next')
         message 'Installing Sublime Text Settings...'
         system 'bash scripts/sublime'
       end
     end
   end
-  
+
   # ====================================
   #   Install Visual Studio Code Settings
   # ====================================
-  
+
   desc 'Install Visual Studio Code settings'
   task :visual_studio_code_settings do
     prompt 'Visual Studio Code Settings'
-  
+
     if response?('y')
       message 'Installing Visual Studio Code Settings...'
-  
+
       system 'bash scripts/visual-studio-code'
     end
   end
-  
+
   # ====================================
   #   Install Pow
   # ====================================
-  
+
   desc '(INACTIVE) Install Pow for Rails URLs in dev'
   task :pow do
     prompt 'Pow'
-  
+
     if response?('y')
       message 'Installing Pow...'
-  
+
       system 'bash scripts/pow'
     end
   end
-  
+
   # ====================================
   #   Install Terminal Italics
   # ====================================
-  
+
   desc 'Install Terminal italics'
   task :terminal_italics do
     prompt 'Terminal Italics'
-  
+
     if response?('y')
       message 'Installing terminal italics...'
-  
+
       system 'bash scripts/terminal-italics'
     end
   end
-  
+
   # ====================================
   #   Install Cleanup
   # ====================================
-  
+
   desc 'Clean up after installation'
   task :cleanup do
     system "source #{ ENV['HOME'] }/.bash_profile"
     puts "Done! Run 'open ~/.dotfiles' to see your new files."
   end
-  
+
   # ====================================
   #   Install Command Line Tools
   # ====================================
-  
+
   desc 'Install XCode command line tools'
   task :command_line_tools do
     prompt 'Command Line Tools'
-  
+
     if response?('y')
       message 'Installing Command Line Tools...'
-  
+
       system 'bash scripts/command-line-tools'
     end
   end
