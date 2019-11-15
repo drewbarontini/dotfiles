@@ -72,6 +72,10 @@ set list listchars=tab:»·,trail:· "Display extra whitespace
 set nowrap    "Don't wrap lines
 set linebreak "Wrap at convenient points
 
+filetype on
+filetype plugin on
+filetype indent on
+
 " -------------------------------------
 "   Scrolling
 " -------------------------------------
