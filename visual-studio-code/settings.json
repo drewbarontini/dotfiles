@@ -21,7 +21,9 @@
   "editor.formatOnSave": true,
   "editor.lineNumbers": "relative",
   "editor.minimap.enabled": false,
-  "editor.rulers": [80],
+  "editor.rulers": [
+    80
+  ],
   "editor.renderIndentGuides": true,
   "editor.smoothScrolling": true,
   "editor.snippetSuggestions": "top",
@@ -72,7 +74,10 @@
   "git.rebaseWhenSync": true,
   "javascript.updateImportsOnFileMove.enabled": "never",
   "javascript.validate.enable": false,
-  "prettier.disableLanguages": ["vue", "markdown"],
+  "prettier.disableLanguages": [
+    "vue",
+    "markdown"
+  ],
   "prettier.singleQuote": true,
   "prettier.trailingComma": "es5",
   "sync.askGistName": false,
@@ -87,7 +92,9 @@
   "terminal.explorerKind": "external",
   "terminal.integrated.copyOnSelection": true,
   "terminal.integrated.fontWeightBold": "normal",
-  "terminal.integrated.shellArgs.osx": ["-l"],
+  "terminal.integrated.shellArgs.osx": [
+    "-l"
+  ],
   "vim.easymotion": true,
   "vim.hlsearch": true,
   "vim.leader": "<space>",
@@ -95,7 +102,9 @@
   // https://code.visualstudio.com/docs/getstarted/keybindings
   "vim.normalModeKeyBindingsNonRecursive": [
     {
-      "before": [":"],
+      "before": [
+        ":"
+      ],
       "after": [],
       "commands": [
         {
@@ -105,7 +114,10 @@
       ]
     },
     {
-      "before": ["leader", "s"],
+      "before": [
+        "leader",
+        "s"
+      ],
       "after": [],
       "commands": [
         {
@@ -115,7 +127,10 @@
       ]
     },
     {
-      "before": ["leader", "v"],
+      "before": [
+        "leader",
+        "v"
+      ],
       "after": [],
       "commands": [
         {
@@ -125,7 +140,10 @@
       ]
     },
     {
-      "before": ["leader", "h"],
+      "before": [
+        "leader",
+        "h"
+      ],
       "after": [],
       "commands": [
         {
@@ -137,12 +155,24 @@
     //-- A fix for `"editor.smoothScrolling": true` breaking `<C-u>`
     //   and `<C-d>` in Vim mode.
     {
-      "before": ["<C-u>"],
-      "after": ["2", "0", "k"]
+      "before": [
+        "<C-u>"
+      ],
+      "after": [
+        "2",
+        "0",
+        "k"
+      ]
     },
     {
-      "before": ["<C-d>"],
-      "after": ["2", "0", "j"]
+      "before": [
+        "<C-d>"
+      ],
+      "after": [
+        "2",
+        "0",
+        "j"
+      ]
     }
     // --
   ],
