@@ -59,6 +59,12 @@ fi
 zmodload -i zsh/complist
 
 # -------------------------------------
+#   Suggestions
+# -------------------------------------
+
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# -------------------------------------
 #   starship
 # -------------------------------------
 
