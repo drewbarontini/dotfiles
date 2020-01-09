@@ -4,6 +4,10 @@
 
 ### Added
 - `starship`
+- ZSH and ZSH setup files
+
+### Changed
+- The default shell is now `zsh`
 
 ## 1.10.0 - 2020-01-09
 
