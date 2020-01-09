@@ -9,7 +9,7 @@
 # -------------------------------------
 
 export DISPATCHED=0
-export PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND ;} history -a; dispatch"
+export PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND} history -a; dispatch"
 
 # -------------------------------------
 #   Disable C-s
