@@ -1,6 +1,6 @@
 # Change Log
 
-## Unreleased
+## 1.10.0 - 2020-01-09
 
 ### Added
 - Scripts in `scripts/` for any `rake` tasks missing them
@@ -20,6 +20,7 @@
 - Cleaned up `bash/functions`
 - Moved the VSCode to the right
 - `prettierrc` to include `"proseWrap": "always"`
+- Using `Brewfile` setup
 
 ### Removed
 - `omnigraffle` from `scripts/homebrew-packages`
@@ -29,6 +30,9 @@
 - MindNode
 - AppCleaner
 - Nucleo
+- `scripts/cask`
+- `scripts/homebrew-packages`
+- `scripts/mas`
 
 ## 1.9.0 - 2018-12-07
 
