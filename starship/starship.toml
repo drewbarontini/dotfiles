@@ -1,2 +1,5 @@
 [git_branch]
 symbol = ""
+
+[package]
+disabled = true
