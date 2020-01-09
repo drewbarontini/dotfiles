@@ -278,6 +278,7 @@ alias md='mkdir'
 alias mf='touch'
 alias p='less'
 alias sbp='source ~/.bash_profile'
+alias szp='source ~/.zprofile'
 alias sym='ln -s'
 
 # ----- Removal ----- #
