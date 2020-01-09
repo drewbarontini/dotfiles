@@ -98,6 +98,7 @@
   "terminal.integrated.shellArgs.osx": [
     "-l"
   ],
+  "terminal.integrated.shell.osx": "/bin/zsh",
   "vim.easymotion": true,
   "vim.hlsearch": true,
   "vim.leader": "<space>",
