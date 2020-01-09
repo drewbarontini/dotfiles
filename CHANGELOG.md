@@ -1,5 +1,10 @@
 # Change Log
 
+## Unreleased
+
+### Added
+- `starship`
+
 ## 1.10.0 - 2020-01-09
 
 ### Added
