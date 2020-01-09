@@ -20,6 +20,8 @@ brew 'tree'
 brew 'vim'
 brew 'watchman'
 brew 'yarn'
+brew 'zsh'
+brew 'zsh-completions'
 
 # ----------------------------------------------------
 #   Cask

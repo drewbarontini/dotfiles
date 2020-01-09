@@ -25,6 +25,7 @@ original_locations[:hyper]           = "#{ ENV['HOME'] }/.dotfiles/hyper/hyper.j
 original_locations[:inputrc]         = "#{ ENV['HOME'] }/.dotfiles/bash/inputrc"
 original_locations[:prettierrc]      = "#{ ENV['HOME'] }/.dotfiles/prettier/prettierrc"
 original_locations[:rspec]           = "#{ ENV['HOME'] }/.dotfiles/rspec/rspec"
+original_locations[:shell_directory] = "#{ ENV['HOME'] }/.dotfiles/shell"
 original_locations[:spacemacs]       = "#{ ENV['HOME'] }/.dotfiles/spacemacs/spacemacs"
 original_locations[:starship]        = "#{ ENV['HOME'] }/.dotfiles/starship/starship.toml"
 original_locations[:stylelint]       = "#{ ENV['HOME'] }/.dotfiles/stylelint/stylelintrc"
@@ -32,6 +33,8 @@ original_locations[:tmux_conf]       = "#{ ENV['HOME'] }/.dotfiles/tmux/tmux.con
 original_locations[:tmuxline_conf]   = "#{ ENV['HOME'] }/.dotfiles/tmux/tmuxline_snapshot"
 original_locations[:vim]             = "#{ ENV['HOME'] }/.dotfiles/vim"
 original_locations[:vimrc]           = "#{ ENV['HOME'] }/.dotfiles/vim/vimrc"
+original_locations[:zsh_directory]   = "#{ ENV['HOME'] }/.dotfiles/zsh"
+original_locations[:zprofile]        = "#{ ENV['HOME'] }/.dotfiles/zsh/zprofile"
 
 # ----- New Locations ----- #
 
@@ -54,6 +57,7 @@ new_locations[:hyper]           = "#{ ENV['HOME'] }/.hyper.js"
 new_locations[:inputrc]         = "#{ ENV['HOME'] }/.inputrc"
 new_locations[:prettierrc]      = "#{ ENV['HOME'] }/.prettierrc"
 new_locations[:rspec]           = "#{ ENV['HOME'] }/.rspec"
+new_locations[:shell_directory] = "#{ ENV['HOME'] }/.shell"
 new_locations[:spacemacs]       = "#{ ENV['HOME'] }/.spacemacs"
 new_locations[:starship]        = "#{ ENV['HOME'] }/.config/starship.toml"
 new_locations[:stylelint]       = "#{ ENV['HOME'] }/.stylelintrc"
@@ -61,6 +65,8 @@ new_locations[:tmux_conf]       = "#{ ENV['HOME'] }/.tmux.conf"
 new_locations[:tmuxline_conf]   = "#{ ENV['HOME'] }/.tmuxline_snapshot"
 new_locations[:vim]             = "#{ ENV['HOME'] }/.vim"
 new_locations[:vimrc]           = "#{ ENV['HOME'] }/.vimrc"
+new_locations[:zsh_directory]   = "#{ ENV['HOME'] }/.zsh"
+new_locations[:zprofile]        = "#{ ENV['HOME'] }/.zprofile"
 
 # ----- Installation Order ----- #
 
