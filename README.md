@@ -9,15 +9,13 @@ cd ~/.dotfiles
 
 ```shell
 rake install                              # Install drewbarontini/dotfiles
-rake install:cask                         # Install macOS applications through brew cask
 rake install:cleanup                      # Clean up after installation
 rake install:command_line_tools           # Install XCode command line tools
 rake install:gems                         # Install Ruby gems
 rake install:git_submodules               # Install git submodules
 rake install:homebrew                     # Install Homebrew for managing dev packages
-rake install:homebrew_packages            # Install a set of Homebrew packages
+rake install:brewfile                     # Install Homebrew packages and Mac apps
 rake install:macos_settings               # Install custom macOS settings and configuration
-rake install:mas_apps                     # Install macOS application through the App Store
 rake install:npm_packages                 # Install NPM packages
 rake install:nvm                          # Install NVM for managing Node versions
 rake install:outliers                     # (INACTIVE) Install outlier applications

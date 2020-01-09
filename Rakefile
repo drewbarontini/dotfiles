@@ -68,14 +68,12 @@ tasks = [
   'vundle',
   'rbenv',
   'homebrew',
-  'homebrew_packages',
+  'brewfile',
   'tmux_plugin_manager',
   'nvm',
   'npm_packages',
   'gems',
   'macos_settings',
-  'cask',
-  'mas_apps',
   'terminal_italics',
   'cleanup'
 ]
@@ -188,17 +186,17 @@ namespace :install do
   end
 
   # ====================================
-  #   Install Homebrew Packages
+  #   Install Brewfile
   # ====================================
 
-  desc 'Install a set of Homebrew packages'
-  task :homebrew_packages do
-    prompt 'Homebrew Packages'
+  desc 'Install the Brewfile'
+  task :brewfile do
+    prompt 'Brewfile'
 
     if response?('y')
-      message 'Installing Homebrew Packages...'
+      message 'Installing Brewfile...'
 
-      system 'bash scripts/homebrew-packages'
+      system 'brew bundle'
     end
   end
 
@@ -274,36 +272,6 @@ namespace :install do
       message 'Installing macOS Settings...'
 
       system 'bash scripts/macos'
-    end
-  end
-
-  # ====================================
-  #   Install Cask
-  # ====================================
-
-  desc 'Install macOS applications through brew cask'
-  task :cask do
-    prompt 'Cask & Applications'
-
-    if response?('y')
-      message 'Installing Cask & Applications...'
-
-      system 'bash scripts/cask'
-    end
-  end
-
-  # ====================================
-  #   Install MAS Apps
-  # ====================================
-
-  desc 'Install macOS application through the App Store'
-  task :mas_apps do
-    prompt 'Mac App Store Apps'
-
-    if response?('y')
-      message 'Installing Mac App Store apps...'
-
-      system 'bash scripts/mas'
     end
   end
 
