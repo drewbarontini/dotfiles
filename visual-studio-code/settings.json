@@ -77,10 +77,7 @@
   "javascript.updateImportsOnFileMove.enabled": "never",
   "javascript.validate.enable": false,
   "markdown-preview-enhanced.previewTheme": "newsprint.css",
-  "prettier.disableLanguages": [
-    "vue",
-    "markdown"
-  ],
+  "prettier.disableLanguages": [],
   "prettier.singleQuote": true,
   "prettier.trailingComma": "es5",
   "sync.askGistName": false,
