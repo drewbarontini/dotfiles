@@ -218,10 +218,11 @@
     // "statusBar.foreground": "#111"
   },
   "window.clickThroughInactive": false,
+  "workbench.activityBar.visible": false,
   "workbench.editor.tabSizing": "shrink",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.list.automaticKeyboardNavigation": false,
-  "workbench.sideBar.location": "right",
+  "workbench.sideBar.location": "left",
   "workbench.startupEditor": "newUntitledFile",
   "window.zoomLevel": 0
 }
