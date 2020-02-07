@@ -219,9 +219,12 @@
   },
   "window.clickThroughInactive": false,
   "workbench.activityBar.visible": false,
+  "workbench.editor.limit.enabled": true,
+  "workbench.editor.limit.value": 4,
   "workbench.editor.tabSizing": "shrink",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.list.automaticKeyboardNavigation": false,
+  "workbench.panel.defaultLocation": "right",
   "workbench.sideBar.location": "left",
   "workbench.startupEditor": "newUntitledFile",
   "window.zoomLevel": 0
