@@ -74,5 +74,6 @@ mas 'Fantastical', id: 975937182
 mas 'Gestimer', id: 990588172
 mas 'Gifox', id: 1082624744
 mas 'MindNode', id: 1289197285
+mas 'Next Meeting', id: 1017470484
 mas 'Slack', id: 803453959
 mas 'ToothFairy', id: 1191449274
