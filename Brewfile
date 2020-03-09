@@ -29,7 +29,6 @@ brew 'zsh-completions'
 # ----------------------------------------------------
 
 cask '1password'
-cask 'aerial'
 cask 'adobe-creative-cloud'
 cask 'alfred'
 cask 'backblaze'
