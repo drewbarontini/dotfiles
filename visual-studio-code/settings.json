@@ -96,6 +96,7 @@
     "-l"
   ],
   "terminal.integrated.shell.osx": "/bin/zsh",
+  "typescript.updateImportsOnFileMove.enabled": "always",
   "vim.easymotion": true,
   "vim.hlsearch": true,
   "vim.leader": "<space>",
