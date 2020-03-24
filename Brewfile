@@ -66,7 +66,6 @@ cask 'zoomus'
 #   MAS
 # ----------------------------------------------------
 
-
 mas 'Amphetamine', id: 937984704
 mas 'Cardhop', id: 1290358394
 mas 'Fantastical', id: 975937182
