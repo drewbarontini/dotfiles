@@ -12,6 +12,7 @@ packages=(
   prettier
   prettier-eslint
   prettier-eslint-cli
+  project-name-generator
 )
 
 for package in ${packages[@]}; do
