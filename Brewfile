@@ -5,6 +5,7 @@ tap 'homebrew/cask-cask'
 # ----------------------------------------------------
 
 brew 'autojump'
+brew 'awscli'
 brew 'bash'
 brew 'bash-completion'
 brew 'cleanshot'
