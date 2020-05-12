@@ -5,10 +5,7 @@
 #
 # ****************************************************
 
-gems=(
-  bundler
-  tmuxinator
-)
+gems=()
 
 for gem in ${gems[@]}; do
   gem install $gem
@@ -18,5 +15,6 @@ done
 #   Disabled
 # ----------------------------------------------------
 
+# bundler
 # desktop
 # rails

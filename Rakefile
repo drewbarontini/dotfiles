@@ -80,7 +80,6 @@ tasks = [
   'tmux_plugin_manager',
   'nvm',
   'npm_packages',
-  'gems',
   'macos_settings',
   'terminal_italics',
   'cleanup'
