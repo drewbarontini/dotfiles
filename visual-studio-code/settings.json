@@ -78,7 +78,7 @@
   "prettier.disableLanguages": [],
   "prettier.singleQuote": true,
   "prettier.trailingComma": "es5",
-  "sync.askGistName": false,
+  "python.jediEnabled": false,
   "sync.autoDownload": false,
   "sync.autoUpload": false,
   "sync.forceDownload": false,
@@ -192,6 +192,7 @@
     // "statusBar.foreground": "#111"
   },
   "window.clickThroughInactive": false,
+  "window.zoomLevel": 0,
   "workbench.activityBar.visible": false,
   "workbench.editor.limit.enabled": true,
   "workbench.editor.limit.value": 4,
@@ -200,8 +201,8 @@
   "workbench.iconTheme": "material-icon-theme",
   "workbench.list.automaticKeyboardNavigation": false,
   "workbench.panel.defaultLocation": "bottom",
-  "workbench.sideBar.location": "right",
+  "workbench.sideBar.location": "left",
   "workbench.startupEditor": "newUntitledFile",
   "workbench.statusBar.visible": false,
-  "window.zoomLevel": 0
+  "workbench.editor.showTabs": true
 }
