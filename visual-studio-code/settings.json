@@ -1,17 +1,11 @@
 {
-  // ----------------------------------
-  // The "Night Owl" theme!
-  // ----------------------------------
-  "editor.fontFamily": "Operator Mono",
-  "editor.fontSize": 14,
+  "editor.fontFamily": "MonoLisa" /* 'MonoLisa', 'Operator Mono' */,
+  "editor.fontSize": 13,
   "editor.lineHeight": 26,
-  "terminal.integrated.fontFamily": "Operator Mono",
-  "terminal.integrated.fontSize": 14,
   "terminal.integrated.lineHeight": 1.5,
   "workbench.colorTheme": "Night Owl",
-  "vim.easymotionMarkerFontFamily": "Operator Mono",
+  "vim.easymotionMarkerFontFamily": "MonoLisa",
   "vim.easymotionMarkerHeight": 26,
-  // ----------------------------------
   "bracketPairColorizer.forceIterationColorCycle": true,
   "breadcrumbs.enabled": true,
   "editor.codeActionsOnSave": {
@@ -89,6 +83,7 @@
   "terminal.external.osxExec": "iTerm.app",
   "terminal.explorerKind": "external",
   "terminal.integrated.copyOnSelection": true,
+  "terminal.integrated.fontSize": 12,
   "terminal.integrated.fontWeightBold": "normal",
   "terminal.integrated.shellArgs.osx": ["-l"],
   "terminal.integrated.shell.osx": "/bin/zsh",
