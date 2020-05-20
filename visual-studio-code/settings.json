@@ -1,11 +1,29 @@
 {
-  "editor.fontFamily": "MonoLisa" /* 'MonoLisa', 'Operator Mono' */,
+  // ----------------------------------
+  // Theme - MonoLisa
+  // ----------------------------------
+  "editor.fontFamily": "MonoLisa",
   "editor.fontSize": 13,
-  "editor.lineHeight": 26,
-  "terminal.integrated.lineHeight": 1.5,
-  "workbench.colorTheme": "Night Owl",
+  "editor.lineHeight": 28,
+  "terminal.integrated.lineHeight": 1.6,
+  "terminal.integrated.fontSize": 12,
   "vim.easymotionMarkerFontFamily": "MonoLisa",
-  "vim.easymotionMarkerHeight": 26,
+  "vim.easymotionMarkerHeight": 28,
+  // ----------------------------------
+  //
+  // ----------------------------------
+  // Theme - Operator Mono
+  // ----------------------------------
+  // "editor.fontFamily": "Operator Mono",
+  // "editor.fontSize": 14,
+  // "editor.lineHeight": 26,
+  // "terminal.integrated.fontSize": 14,
+  // "terminal.integrated.lineHeight": 1.5,
+  // "workbench.colorTheme": "Night Owl",
+  // "vim.easymotionMarkerFontFamily": "Operator Mono",
+  // "vim.easymotionMarkerHeight": 26,
+  // ----------------------------------
+  "workbench.colorTheme": "Night Owl",
   "bracketPairColorizer.forceIterationColorCycle": true,
   "breadcrumbs.enabled": true,
   "editor.codeActionsOnSave": {
@@ -83,7 +101,6 @@
   "terminal.external.osxExec": "iTerm.app",
   "terminal.explorerKind": "external",
   "terminal.integrated.copyOnSelection": true,
-  "terminal.integrated.fontSize": 12,
   "terminal.integrated.fontWeightBold": "normal",
   "terminal.integrated.shellArgs.osx": ["-l"],
   "terminal.integrated.shell.osx": "/bin/zsh",
