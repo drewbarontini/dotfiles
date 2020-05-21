@@ -3,9 +3,9 @@
   // Theme - MonoLisa
   // ----------------------------------
   "editor.fontFamily": "MonoLisa",
-  "editor.fontSize": 13,
-  "editor.lineHeight": 28,
-  "terminal.integrated.lineHeight": 1.6,
+  "editor.fontSize": 12,
+  "editor.lineHeight": 26,
+  "terminal.integrated.lineHeight": 1.5,
   "terminal.integrated.fontSize": 12,
   "vim.easymotionMarkerFontFamily": "MonoLisa",
   "vim.easymotionMarkerHeight": 28,
