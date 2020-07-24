@@ -90,6 +90,7 @@
   "prettier.singleQuote": true,
   "prettier.trailingComma": "es5",
   "python.jediEnabled": false,
+  "python.languageServer": "Microsoft",
   "sync.autoDownload": false,
   "sync.autoUpload": false,
   "sync.forceDownload": false,
@@ -207,6 +208,7 @@
   "workbench.activityBar.visible": false,
   "workbench.editor.limit.enabled": true,
   "workbench.editor.limit.value": 4,
+  "workbench.editor.showTabs": true,
   "workbench.editor.tabCloseButton": "off",
   "workbench.editor.tabSizing": "shrink",
   "workbench.iconTheme": "material-icon-theme",
@@ -214,6 +216,5 @@
   "workbench.panel.defaultLocation": "bottom",
   "workbench.sideBar.location": "right",
   "workbench.startupEditor": "newUntitledFile",
-  "workbench.statusBar.visible": false,
-  "workbench.editor.showTabs": true
+  "workbench.statusBar.visible": false
 }
