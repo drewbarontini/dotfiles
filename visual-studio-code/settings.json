@@ -7,8 +7,6 @@
   "editor.lineHeight": 26,
   "terminal.integrated.lineHeight": 1.5,
   "terminal.integrated.fontSize": 12,
-  "vim.easymotionMarkerFontFamily": "MonoLisa",
-  "vim.easymotionMarkerHeight": 28,
   // ----------------------------------
   //
   // ----------------------------------
@@ -19,8 +17,6 @@
   // "editor.lineHeight": 26,
   // "terminal.integrated.fontSize": 14,
   // "terminal.integrated.lineHeight": 1.5,
-  // "vim.easymotionMarkerFontFamily": "Operator Mono",
-  // "vim.easymotionMarkerHeight": 26,
   // ----------------------------------
   "workbench.colorTheme": "Night Owl",
   "bracketPairColorizer.forceIterationColorCycle": true,
@@ -89,7 +85,6 @@
   "prettier.disableLanguages": [],
   "prettier.singleQuote": true,
   "prettier.trailingComma": "es5",
-  "python.jediEnabled": false,
   "python.languageServer": "Microsoft",
   "sync.autoDownload": false,
   "sync.autoUpload": false,
