@@ -57,12 +57,10 @@ cask 'omnigraffle'
 cask 'rescuetime'
 cask 'rocket'
 cask 'sip'
-cask 'sketch'
 cask 'spotify'
 cask 'tableplus'
 cask 'transmit'
 cask 'visual-studio-code'
-cask 'quitter'
 cask 'zoomus'
 
 # ----------------------------------------------------
