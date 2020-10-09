@@ -27,6 +27,10 @@
   "editor.cursorSmoothCaretAnimation": true,
   "editor.cursorStyle": "line",
   "editor.cursorWidth": 1,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "editor.fontLigatures": true,
   "editor.formatOnSave": true,
   "editor.lineNumbers": "relative",
