@@ -6,6 +6,9 @@
 # ****************************************************
 
 packages=(
+  avn
+  avn-nvm
+  avn-n
   create-react-app
   gatsby-cli
   npx
