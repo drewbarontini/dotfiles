@@ -6,6 +6,7 @@
 - `starship`
 - ZSH and ZSH setup files
 - ZSH completions and suggestions
+- `avn` package(s)
 
 ### Changed
 - The default shell is now `zsh`
