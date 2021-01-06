@@ -74,7 +74,6 @@ tasks = [
   'git_submodules',
   'symlinks',
   'vundle',
-  'rbenv',
   'homebrew',
   'brewfile',
   'tmux_plugin_manager',
@@ -159,21 +158,6 @@ namespace :install do
       message 'Installing Vundle...'
 
       system 'bash scripts/vundle'
-    end
-  end
-
-  # ====================================
-  #   Install rbenv
-  # ====================================
-
-  desc 'Install rbenv for managing Ruby versions'
-  task :rbenv do
-    prompt 'rbenv'
-
-    if response?('y')
-      message 'Installing rbenv...'
-
-      system 'bash scripts/rbenv'
     end
   end
 
