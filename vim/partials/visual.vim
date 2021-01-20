@@ -23,16 +23,17 @@ set t_Co=256
 " -------------------------------------
 
 set background=dark
-color night-owl
+color grb256
 
 " -------------------------------------
 "   Custom Color Adjustments
 " -------------------------------------
 
+hi! Normal guibg=NONE ctermbg=NONE
 hi! LineNR guibg=NONE ctermbg=NONE
-hi! FoldColumn ctermbg=NONE
-hi! SignColumn ctermbg=NONE
-" hi! VertSplit ctermfg=234 ctermbg=234
+hi! FoldColumn guibg=NONE ctermbg=NONE
+hi! SignColumn guibg=NONE ctermbg=NONE
+hi! VertSplit ctermfg=234 ctermbg=234
 hi! htmlArg gui=italic cterm=italic
 hi! Comment gui=italic cterm=italic
-" hi! LineNr ctermfg=236
+hi! LineNr ctermfg=236

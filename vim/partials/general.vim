@@ -8,7 +8,7 @@
 "   Base
 " -------------------------------------
 
-set nonumber
+set number
 set backspace=indent,eol,start " Allow backspace in Insert mode
 set history=1000               " Store :cmdline history
 set visualbell                 " No sounds
