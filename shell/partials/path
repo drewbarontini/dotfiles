@@ -17,6 +17,7 @@ PATH_DIRECTORIES=(
   "$HOME/.dotfiles/bin"
   "$HOME/.nvm/versions/node/v13.3.0"
   "/usr/local/opt/python@3.8/bin:$PATH"
+  "/usr/local/sbin:$PATH"
 )
 
 [[ -d ~/.dotfiles-local/bin ]] && PATH_DIRECTORIES+=("$HOME/.dotfiles-local/bin")
