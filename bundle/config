@@ -1,6 +1,7 @@
 ---
 BUNDLE_BUILD__EVENTMACHINE: "--with-cppflags=-I/usr/local/opt/openssl/include"
 BUNDLE_PATH: ".bundle"
-BUNDLE_BUILD__PG: "--with-pg-config=/usr/local/Cellar/postgresql/13.1/bin/pg_config"
+BUNDLE_BUILD__PG: "--with-pg-config=/usr/local/bin/pg_config"
 BUNDLE_JOBS: "3"
 BUNDLE_BUILD__LIBV8: "--with-system-v8"
+BUNDLE_BUILD__PUMA: "--with-cflags=-Wno-error=implicit-function-declaration"
