@@ -119,26 +119,6 @@ alias hlt='heroku logs -t'
 alias hrc='heroku run rails console'
 alias hrk='heroku run rake'
 
-# ----- Hub ----- #
-
-alias h='hub'
-alias hb='hub browse'
-alias hc='hub clone'
-alias hpr='hub pull-request'
-
-# ----- GHI ----- #
-
-alias i='ghi'
-alias ia='ghi edit -u'
-alias iam='ghi edit --claim'
-alias ic='ghi close'
-alias icm='ghi comment -v'
-alias il='ghi list'
-alias ill='ghi list -L'
-alias ilm='ghi list --mine'
-alias ilma='ghi list -a --mine'
-alias is='ghi show'
-
 # -------------------------------------
 #   Middleman
 # -------------------------------------
