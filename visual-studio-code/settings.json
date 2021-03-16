@@ -18,7 +18,7 @@
   // "terminal.integrated.fontSize": 14,
   // "terminal.integrated.lineHeight": 1.5,
   // ----------------------------------
-  "workbench.colorTheme": "Real GitHub Dark",
+  "workbench.colorTheme": "GitHub Dark",
   "bracketPairColorizer.forceIterationColorCycle": true,
   "breadcrumbs.enabled": true,
   "editor.codeActionsOnSave": {
