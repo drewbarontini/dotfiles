@@ -35,6 +35,7 @@ original_locations[:vim]             = "#{ ENV['HOME'] }/.dotfiles/vim"
 original_locations[:vimrc]           = "#{ ENV['HOME'] }/.dotfiles/vim/vimrc"
 original_locations[:zsh_directory]   = "#{ ENV['HOME'] }/.dotfiles/zsh"
 original_locations[:zprofile]        = "#{ ENV['HOME'] }/.dotfiles/zsh/zprofile"
+original_locations[:zshrc]           = "#{ ENV['HOME'] }/.dotfiles/zsh/zprofile"
 
 # ----- New Locations ----- #
 
@@ -67,6 +68,7 @@ new_locations[:vim]             = "#{ ENV['HOME'] }/.vim"
 new_locations[:vimrc]           = "#{ ENV['HOME'] }/.vimrc"
 new_locations[:zsh_directory]   = "#{ ENV['HOME'] }/.zsh"
 new_locations[:zprofile]        = "#{ ENV['HOME'] }/.zprofile"
+new_locations[:zshrc]           = "#{ ENV['HOME'] }/.zshrc"
 
 # ----- Installation Order ----- #
 
