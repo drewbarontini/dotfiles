@@ -18,7 +18,6 @@
   // "terminal.integrated.fontSize": 14,
   // "terminal.integrated.lineHeight": 1.5,
   // ----------------------------------
-  "workbench.colorTheme": "GitHub Dark",
   "bracketPairColorizer.forceIterationColorCycle": true,
   "breadcrumbs.enabled": true,
   "editor.codeActionsOnSave": {
@@ -204,7 +203,8 @@
   },
   "window.clickThroughInactive": false,
   "window.zoomLevel": 0,
-  "workbench.activityBar.visible": false,
+  "workbench.activityBar.visible": true,
+  "workbench.colorTheme": "GitHub Dark",
   "workbench.editor.limit.enabled": true,
   "workbench.editor.limit.value": 4,
   "workbench.editor.showTabs": true,
@@ -212,8 +212,8 @@
   "workbench.editor.tabSizing": "shrink",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.list.automaticKeyboardNavigation": false,
-  "workbench.panel.defaultLocation": "bottom",
+  "workbench.panel.defaultLocation": "left",
   "workbench.sideBar.location": "right",
   "workbench.startupEditor": "newUntitledFile",
-  "workbench.statusBar.visible": false
+  "workbench.statusBar.visible": true
 }
