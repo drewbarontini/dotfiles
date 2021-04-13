@@ -85,7 +85,6 @@
   "javascript.updateImportsOnFileMove.enabled": "never",
   "javascript.validate.enable": false,
   "markdown-preview-enhanced.previewTheme": "newsprint.css",
-  "prettier.disableLanguages": [],
   "prettier.singleQuote": true,
   "prettier.trailingComma": "es5",
   "python.languageServer": "Microsoft",
@@ -108,6 +107,15 @@
   "vim.leader": "<space>",
   "vim.mouseSelectionGoesIntoVisualMode": false,
   // https://code.visualstudio.com/docs/getstarted/keybindings
+  "vim.insertModeKeyBindingsNonRecursive": [
+    {
+      "before": ["cmd+s"],
+      "commands": [
+        { "command": "workbench.action.files.save" },
+        { "command": "extension.vim_escape" }
+      ]
+    }
+  ],
   "vim.normalModeKeyBindingsNonRecursive": [
     {
       "before": [":"],
