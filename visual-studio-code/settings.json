@@ -176,6 +176,9 @@
     "[Cobalt2]": {
       "editorGutter.background": "#ff00"
     },
+    "[GitHub Dark Default]": {
+      "terminal.ansiBrightBlack": "#5f666d"
+    },
     "[Night Owl]": {
       "activityBar.background": "#000C1D",
       "activityBar.border": "#102a44",
@@ -212,7 +215,7 @@
   "window.clickThroughInactive": false,
   "window.zoomLevel": 0,
   "workbench.activityBar.visible": true,
-  "workbench.colorTheme": "GitHub Dark",
+  "workbench.colorTheme": "GitHub Dark Default",
   "workbench.editor.limit.enabled": true,
   "workbench.editor.limit.value": 4,
   "workbench.editor.showTabs": true,
