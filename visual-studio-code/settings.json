@@ -2,11 +2,11 @@
   // ----------------------------------
   // Theme - MonoLisa
   // ----------------------------------
-  "editor.fontFamily": "MonoLisa",
-  "editor.fontSize": 12,
+  "editor.fontFamily": "Dank Mono",
+  "editor.fontSize": 14,
   "editor.lineHeight": 26,
   "terminal.integrated.lineHeight": 1.5,
-  "terminal.integrated.fontSize": 12,
+  "terminal.integrated.fontSize": 14,
   // ----------------------------------
   //
   // ----------------------------------
@@ -226,5 +226,6 @@
   "workbench.panel.defaultLocation": "left",
   "workbench.sideBar.location": "right",
   "workbench.startupEditor": "newUntitledFile",
-  "workbench.statusBar.visible": true
+  "workbench.statusBar.visible": true,
+  "terminal.integrated.experimentalLinkProvider": false
 }
