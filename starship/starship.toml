@@ -1,5 +1,8 @@
 [git_branch]
-symbol = ""
+symbol = "🌱 "
 
 [package]
 disabled = true
+
+[nodejs]
+symbol = "🤖 "
