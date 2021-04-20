@@ -1,22 +1,40 @@
 {
   // ----------------------------------
+  // Theme - Dank Mono
+  // ----------------------------------
+  // "editor.fontFamily": "Dank Mono",
+  // "editor.fontSize": 14,
+  // "editor.lineHeight": 26,
+  // "terminal.integrated.fontFamily": "Dank Mono",
+  // "terminal.integrated.lineHeight": 1.5,
+  // "terminal.integrated.fontSize": 14,
+  // ----------------------------------
+  // Theme - Menlo
+  // ----------------------------------
+  // "editor.fontFamily": "Menlo",
+  // "editor.fontSize": 13,
+  // "editor.lineHeight": 30,
+  // "terminal.integrated.fontFamily": "Menlo",
+  // "terminal.integrated.lineHeight": 1.5,
+  // "terminal.integrated.fontSize": 13,
+  // ----------------------------------
   // Theme - MonoLisa
   // ----------------------------------
-  "editor.fontFamily": "Dank Mono",
-  "editor.fontSize": 14,
-  "editor.lineHeight": 26,
-  "terminal.integrated.lineHeight": 1.5,
-  "terminal.integrated.fontSize": 14,
-  // ----------------------------------
-  //
+  // "editor.fontFamily": "MonoLisa",
+  // "editor.fontSize": 12,
+  // "editor.lineHeight": 26,
+  // "terminal.integrated.fontFamily": "MonoLisa",
+  // "terminal.integrated.lineHeight": 1.5,
+  // "terminal.integrated.fontSize": 14,
   // ----------------------------------
   // Theme - Operator Mono
   // ----------------------------------
-  // "editor.fontFamily": "Operator Mono",
-  // "editor.fontSize": 14,
-  // "editor.lineHeight": 26,
-  // "terminal.integrated.fontSize": 14,
-  // "terminal.integrated.lineHeight": 1.5,
+  "editor.fontFamily": "Operator Mono",
+  "editor.fontSize": 14,
+  "editor.lineHeight": 26,
+  "terminal.integrated.fontFamily": "Operator Mono",
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.lineHeight": 1.5,
   // ----------------------------------
   "bracketPairColorizer.forceIterationColorCycle": true,
   "breadcrumbs.enabled": true,
@@ -219,7 +237,6 @@
   "workbench.editor.limit.enabled": true,
   "workbench.editor.limit.value": 4,
   "workbench.editor.showTabs": true,
-  "workbench.editor.tabCloseButton": "off",
   "workbench.editor.tabSizing": "shrink",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.list.automaticKeyboardNavigation": false,
