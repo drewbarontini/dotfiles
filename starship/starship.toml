@@ -9,3 +9,6 @@ disabled = true
 
 [aws]
 disabled = true
+
+[time]
+disabled = true
