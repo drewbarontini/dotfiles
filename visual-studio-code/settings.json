@@ -48,9 +48,10 @@
   // Theme - SF Mono
   // ----------------------------------
   // "editor.fontFamily": "SF Mono",
+  // "editor.fontSize": 12,
   // "editor.lineHeight": 26,
   // "terminal.integrated.fontFamily": "SF Mono",
-  // "terminal.integrated.fontSize": 13,
+  // "terminal.integrated.fontSize": 12,
   // "terminal.integrated.lineHeight": 1.5,
   // ----------------------------------
   "bracketPairColorizer.forceIterationColorCycle": true,
