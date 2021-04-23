@@ -94,3 +94,7 @@
 [rebase]
 
   autoStash = true
+
+[delta]
+
+    features = side-by-side line-numbers decorations
