@@ -50,6 +50,7 @@
   editor = vim
   excludesfile = ~/.gitignore
   quotepath = false
+  pager = delta
 
 [merge]
 
