@@ -1,61 +1,44 @@
 {
-  // ----------------------------------
+  // ---------------------------------------------------------------------------
   // Theme - Dank Mono
-  // ----------------------------------
-  "editor.fontFamily": "Dank Mono",
-  "editor.fontSize": 14,
-  "editor.lineHeight": 26,
-  "terminal.integrated.fontFamily": "Dank Mono",
-  "terminal.integrated.lineHeight": 1.5,
-  "terminal.integrated.fontSize": 14,
-  // ----------------------------------
-  // Theme - Input
-  // ----------------------------------
-  // "editor.fontFamily": "Input",
-  // "editor.fontSize": 13,
+  // ---------------------------------------------------------------------------
+  // "editor.fontFamily": "Dank Mono",
+  // "editor.fontSize": 14,
   // "editor.lineHeight": 26,
-  // "terminal.integrated.fontFamily": "SF Mono",
-  // "terminal.integrated.fontSize": 13,
+  // "terminal.integrated.fontFamily": "Dank Mono",
   // "terminal.integrated.lineHeight": 1.5,
-  // ----------------------------------
-  // Theme - Menlo
-  // ----------------------------------
-  // "editor.fontFamily": "Menlo",
-  // "editor.fontSize": 13,
-  // "editor.lineHeight": 30,
-  // "terminal.integrated.fontFamily": "Menlo",
-  // "terminal.integrated.lineHeight": 1.5,
-  // "terminal.integrated.fontSize": 13,
-  // ----------------------------------
+  // "terminal.integrated.fontSize": 14,
+  // ---------------------------------------------------------------------------
   // Theme - MonoLisa
-  // ----------------------------------
+  // ---------------------------------------------------------------------------
   // "editor.fontFamily": "MonoLisa",
   // "editor.fontSize": 12,
   // "editor.lineHeight": 26,
   // "terminal.integrated.fontFamily": "MonoLisa",
   // "terminal.integrated.lineHeight": 1.5,
-  // "terminal.integrated.fontSize": 14,
-  // ----------------------------------
-  // Theme - Operator Mono
-  // ----------------------------------
-  // "editor.fontFamily": "Operator Mono",
-  // "editor.fontSize": 14,
-  // "editor.lineHeight": 26,
-  // "terminal.integrated.fontFamily": "Operator Mono",
-  // "terminal.integrated.fontSize": 14,
-  // "terminal.integrated.lineHeight": 1.5,
-  // ----------------------------------
-  // Theme - SF Mono
-  // ----------------------------------
-  // "editor.fontFamily": "SF Mono",
-  // "editor.fontSize": 12,
-  // "editor.lineHeight": 26,
-  // "terminal.integrated.fontFamily": "SF Mono",
   // "terminal.integrated.fontSize": 12,
+  // ---------------------------------------------------------------------------
+  // Theme - Operator Mono
+  // ---------------------------------------------------------------------------
+  "editor.fontFamily": "Operator Mono",
+  "editor.fontSize": 14,
+  "editor.lineHeight": 26,
+  "terminal.integrated.fontFamily": "Operator Mono",
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.lineHeight": 1.5,
+  // ---------------------------------------------------------------------------
+  // Theme - Source Code Pro
+  // ---------------------------------------------------------------------------
+  // "editor.fontFamily": "Source Code Pro",
+  // "editor.fontSize": 13,
+  // "editor.lineHeight": 26,
+  // "terminal.integrated.fontFamily": "Source Code Pro",
+  // "terminal.integrated.fontSize": 13,
   // "terminal.integrated.lineHeight": 1.5,
-  // ----------------------------------
+  // ---------------------------------------------------------------------------
   "bracketPairColorizer.forceIterationColorCycle": true,
   "breadcrumbs.enabled": true,
+  // ---------------------------------------------------------------------------
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
@@ -93,14 +76,17 @@
       }
     ]
   },
+  // ---------------------------------------------------------------------------
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
   },
   "emmet.triggerExpansionOnTab": true,
+  // ---------------------------------------------------------------------------
   "explorer.autoReveal": false,
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "explorer.openEditors.visible": 0,
+  // ---------------------------------------------------------------------------
   "files.exclude": {
     "**/.git": true,
     "**/.svn": true,
@@ -113,17 +99,23 @@
   "files.insertFinalNewline": false,
   "files.trimFinalNewlines": true,
   "flow.useNPMPackagedFlow": true,
+  // ---------------------------------------------------------------------------
   "git.allowForcePush": true,
   "git.confirmSync": false,
   "git.enableSmartCommit": true,
   "git.inputValidation": "warn",
   "git.rebaseWhenSync": true,
+  // ---------------------------------------------------------------------------
   "javascript.updateImportsOnFileMove.enabled": "never",
   "javascript.validate.enable": false,
+  // ---------------------------------------------------------------------------
   "markdown-preview-enhanced.previewTheme": "newsprint.css",
+  // ---------------------------------------------------------------------------
   "prettier.singleQuote": true,
   "prettier.trailingComma": "es5",
+  // ---------------------------------------------------------------------------
   "python.languageServer": "Microsoft",
+  // ---------------------------------------------------------------------------
   "sync.autoDownload": false,
   "sync.autoUpload": false,
   "sync.forceDownload": false,
@@ -131,13 +123,17 @@
   "sync.quietSync": false,
   "sync.removeExtensions": true,
   "sync.syncExtensions": true,
+  // ---------------------------------------------------------------------------
   "terminal.external.osxExec": "iTerm.app",
   "terminal.explorerKind": "external",
+  "terminal.integrated.experimentalLinkProvider": false,
   "terminal.integrated.copyOnSelection": true,
   "terminal.integrated.fontWeightBold": "normal",
   "terminal.integrated.shellArgs.osx": ["-l"],
   "terminal.integrated.shell.osx": "/bin/zsh",
+  // ---------------------------------------------------------------------------
   "typescript.updateImportsOnFileMove.enabled": "always",
+  // ---------------------------------------------------------------------------
   "vim.easymotion": true,
   "vim.hlsearch": true,
   "vim.leader": "<space>",
@@ -206,12 +202,14 @@
     // --
   ],
   "vim.overrideCopy": false,
+  // ---------------------------------------------------------------------------
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  // ---------------------------------------------------------------------------
+  "window.clickThroughInactive": false,
+  "window.zoomLevel": 0,
+  // ---------------------------------------------------------------------------
   // https://code.visualstudio.com/docs/getstarted/theme-color-reference
   "workbench.colorCustomizations": {
-    "[Cobalt2]": {
-      "editorGutter.background": "#ff00"
-    },
     "[GitHub Dark Default]": {
       "terminal.ansiBrightBlack": "#5f666d"
     },
@@ -222,22 +220,6 @@
       "sideBar.background": "#001122",
       "sideBar.border": "#102a44",
       "sideBar.foreground": "#8BADC1"
-    },
-    "[Plastic - deprioritised punctuation]": {
-      "panelTitle.activeBorder": "#ffffff",
-      "titleBar.border": "#080a0f",
-      "terminal.ansiBrightBlue": "#19b9c4",
-      "terminal.ansiBrightGreen": "#8cc567",
-      "terminal.ansiBrightRed": "#f16372",
-      "terminal.ansiWhite": "#d1d6dc"
-    },
-    "[Plastic]": {
-      "panelTitle.activeBorder": "#ffffff",
-      "titleBar.border": "#080a0f",
-      "terminal.ansiBrightBlue": "#19b9c4",
-      "terminal.ansiBrightGreen": "#8cc567",
-      "terminal.ansiBrightRed": "#f16372",
-      "terminal.ansiWhite": "#d1d6dc"
     }
     // Changing the bar color
     // "activityBar.background": "#fbc02d",
@@ -248,8 +230,6 @@
     // "statusBar.background": "#fbc02d",
     // "statusBar.foreground": "#111"
   },
-  "window.clickThroughInactive": false,
-  "window.zoomLevel": 0,
   "workbench.activityBar.visible": true,
   "workbench.colorTheme": "GitHub Dark Default",
   "workbench.editor.limit.enabled": true,
@@ -261,6 +241,5 @@
   "workbench.panel.defaultLocation": "left",
   "workbench.sideBar.location": "right",
   "workbench.startupEditor": "newUntitledFile",
-  "workbench.statusBar.visible": true,
-  "terminal.integrated.experimentalLinkProvider": false
+  "workbench.statusBar.visible": true
 }
