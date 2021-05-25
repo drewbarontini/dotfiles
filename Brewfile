@@ -27,6 +27,7 @@ brew 'watchman'
 brew 'yarn'
 brew 'zsh'
 brew 'zsh-completions'
+brew 'zsh-autosuggestions'
 
 # ----------------------------------------------------
 #   Cask
