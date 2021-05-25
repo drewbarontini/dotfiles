@@ -65,6 +65,8 @@ zmodload -i zsh/complist
 # -------------------------------------
 
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+export ZSH_AUTOSUGGEST_USE_ASYNC=true
+export ZSH_AUTOSUGGEST_MANUAL_REBIND=true
 
 # -------------------------------------
 #   starship
