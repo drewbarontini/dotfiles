@@ -10,6 +10,7 @@
 
 ### Changed
 - The default shell is now `zsh`
+- Migrated `zsh-autosuggestions` to Homebrew package
 
 ## 1.10.0 - 2020-01-09
 
