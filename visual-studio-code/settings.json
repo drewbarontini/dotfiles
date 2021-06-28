@@ -129,8 +129,8 @@
   "terminal.integrated.experimentalLinkProvider": false,
   "terminal.integrated.copyOnSelection": true,
   "terminal.integrated.fontWeightBold": "normal",
-  "terminal.integrated.shellArgs.osx": ["-l"],
-  "terminal.integrated.shell.osx": "/bin/zsh",
+  "terminal.integrated.tabs.location": "left",
+  "terminal.integrated.tabs.enabled": false,
   // ---------------------------------------------------------------------------
   "typescript.updateImportsOnFileMove.enabled": "always",
   // ---------------------------------------------------------------------------
