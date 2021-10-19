@@ -74,7 +74,10 @@ cask 'zoomus'
 mas 'Amphetamine', id: 937984704
 mas 'Cardhop', id: 1290358394
 mas 'Fantastical', id: 975937182
-mas 'MindNode', id: 1289197285
 mas 'Slack', id: 803453959
 mas 'ToothFairy', id: 1191449274
-mas 'Unsplash Wallpapers', id: 1284863847
+
+# ----- Disabled Packages ----- #
+
+# mas 'MindNode', id: 1289197285
+# mas 'Unsplash Wallpapers', id: 1284863847
