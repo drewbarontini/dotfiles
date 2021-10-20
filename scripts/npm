@@ -6,9 +6,6 @@
 # ****************************************************
 
 packages=(
-  avn
-  avn-nvm
-  avn-n
   create-react-app
   gatsby-cli
   npx
@@ -26,6 +23,9 @@ done
 #   Disabled
 # ----------------------------------------------------
 
+# avn
+# avn-nvm
+# avn-n
 # babel-eslint
 # eslint
 # eslint-config-prettier
