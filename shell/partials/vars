@@ -12,7 +12,3 @@ ALIASES_PATH="$HOME/.dotfiles/shell/partials/aliases"
 DOTFILES_PATH="$HOME/.dotfiles"
 DOTFILES_LOCAL_PATH="$HOME/.dotfiles-local"
 GENERALFUNC_PATH="$HOME/.dotfiles/shell/functions/general"
-SNIPPETS_PATH="$HOME/.dotfiles/vim/UltiSnips"
-VIMRC_PATH='$HOME/.dotfiles/vim/vimrc'
-VIM_FILES_PATH="$HOME/.dotfiles/vim"
-VIM_MAPPINGS_PATH="$HOME/.dotfiles/vim/partials/mappings.vim"

@@ -15,7 +15,6 @@ source ~/.shell/partials/aliases
 source ~/.bash/completions/git.bash
 source ~/.shell/functions/general
 source ~/.shell/functions/git
-source ~/.shell/functions/screengen
 source ~/.shell/functions/wrappers
 source ~/.bash/partials/prompt
 source ~/.shell/partials/overrides

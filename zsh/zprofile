@@ -14,7 +14,6 @@ source ~/.zsh/partials/config
 source ~/.shell/partials/aliases
 source ~/.shell/functions/general
 source ~/.shell/functions/git
-source ~/.shell/functions/screengen
 source ~/.shell/functions/wrappers
 
 # -------------------------------------

@@ -34,13 +34,9 @@ alias beerfest='brew update && brew cleanup && brew prune && brew doctor'
 #   Files & Jumps
 # -------------------------------------
 
-alias al="vim $ALIASES_PATH"
-alias bfunc="vim $GENERALFUNC_PATH"
 alias cd.="cd $DOTFILES_PATH"
 alias cdl="cd $DOTFILES_LOCAL_PATH"
-alias mappings="vim $VIM_MAPPINGS_PATH"
 alias rc="vim $VIMRC_PATH"
-alias vfiles="vim $VIM_FILES_PATH"
 
 # -------------------------------------
 #   Git
@@ -120,17 +116,9 @@ alias hrc='heroku run rails console'
 alias hrk='heroku run rake'
 
 # -------------------------------------
-#   Middleman
-# -------------------------------------
-
-alias mmb='./bin/middleman build'
-alias mms='./bin/middleman s'
-
-# -------------------------------------
 #   Miscellaneous
 # -------------------------------------
 
-alias coffeelint='coffeelint -f $HOME/.dotfiles/coffeelint/coffeelint.json'
 alias mas='reattach-to-user-namespace mas'
 alias pomodoro='time-police 25'
 alias timer='echo "Timer started. Stop with Ctrl-D." && date && time cat && date'
@@ -170,13 +158,6 @@ alias be='bundle exec'
 alias bi='bundle install'
 alias bib='bundle install --binstubs'
 
-# ----- Pow ----- #
-
-alias pd='powder'
-alias pdl='powder link'
-alias pdo='powder open'
-alias pdr='powder restart'
-
 # ----- Rails ----- #
 
 alias ra='./bin/rails'
@@ -215,27 +196,27 @@ alias update_ruby_build='cd $HOME/.rbenv/plugins/ruby-build && git pull && cd -'
 #   tmux
 # -------------------------------------
 
-alias tx='tmux'
-alias txa='tmux a -t'
-alias txd='tmux kill-session -t'
-alias txl='tmux ls'
-alias txn='tmux new -s'
-alias txs='tmux source-file ~/.tmux.conf'
+# alias tx='tmux'
+# alias txa='tmux a -t'
+# alias txd='tmux kill-session -t'
+# alias txl='tmux ls'
+# alias txn='tmux new -s'
+# alias txs='tmux source-file ~/.tmux.conf'
 
 # -------------------------------------
 #   Tmuxinator
 # -------------------------------------
 
-alias mux='tmuxinator'
+# alias mux='tmuxinator'
 
 # -------------------------------------
 #   tpm
 # -------------------------------------
 
-alias tpmi='~/.tmux/plugins/tpm/bin/install_plugins'
-alias tpmu='~/.tmux/plugins/tpm/bin/update_plugins'
-alias tpmua='~/.tmux/plugins/tpm/bin/update_plugins all'
-alias tpmr='~/.tmux/plugins/tpm/bin/clean_plugins'
+# alias tpmi='~/.tmux/plugins/tpm/bin/install_plugins'
+# alias tpmu='~/.tmux/plugins/tpm/bin/update_plugins'
+# alias tpmua='~/.tmux/plugins/tpm/bin/update_plugins all'
+# alias tpmr='~/.tmux/plugins/tpm/bin/clean_plugins'
 
 # -------------------------------------
 #   Unix
@@ -270,7 +251,6 @@ alias rmorig='find . -name *.orig -delete'
 
 alias fa='alias | grep'
 alias grep='grep --color=auto'
-alias magic_numbers="ag -i '(FIXME: Magic number!)'" # `| wc -l` to get the count
 alias todos="ag -i '(TODO|FIX(ME)|NOTE?):'"
 
 # -------------------------------------

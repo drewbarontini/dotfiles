@@ -17,38 +17,6 @@ function brew_deps() {
 }
 
 # -------------------------------------
-#   View GitHub Issue
-#   -> Opens a GitHub issue in the browser using ghi
-# -------------------------------------
-#
-# $1 - the issue number
-#
-# Usage: `view_issue 3806`
-#
-
-function view_issue() {
-  ghi show "$1" -w
-}
-
-# -------------------------------------
-#   Remote Parker
-#   -> Run 'parker' on a remote stylesheet
-# -------------------------------------
-#
-# $1 - the path to the remote stylesheet
-#
-# Usage: `remote_parker http://www.example.com/application.css`
-#
-
-function remote_parker() {
-  if [ "$1" == 'json' ]; then
-    curl "$1" -s | parker -s --format=json
-  else
-    curl "$1" -s | parker -s
-  fi
-}
-
-# -------------------------------------
 #   Vim Launch
 #   -> Launches vim with file or at root
 # -------------------------------------
