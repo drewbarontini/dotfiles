@@ -29,7 +29,6 @@ brew 'zsh-autosuggestions'
 # brew 'reattach-to-user-namespace'
 # brew 'tmux'
 # brew 'tmuxinator'
-# brew 'watchman'
 
 # ----------------------------------------------------
 #   Cask
@@ -47,7 +46,6 @@ cask 'cleanshot'
 cask 'dropbox'
 cask 'figma'
 cask 'firefox'
-cask 'flux'
 cask 'github'
 cask 'google-chrome'
 cask 'hazel'
@@ -66,6 +64,10 @@ cask 'tableplus'
 cask 'transmit'
 cask 'visual-studio-code'
 cask 'zoomus'
+
+# ----- Disabled Packages ----- #
+
+# cask 'flux'
 
 # ----------------------------------------------------
 #   MAS
