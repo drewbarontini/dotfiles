@@ -61,7 +61,7 @@ cask 'sip'
 cask 'tableplus'
 cask 'transmit'
 cask 'visual-studio-code'
-cask 'zoomus'
+cask 'zoom'
 
 # ----- Disabled Packages ----- #
 
