@@ -150,6 +150,7 @@ namespace :install do
       message 'Symlinking files...'
 
       system "mkdir #{ ENV['HOME'] }/.bundle"
+      system "mkdir #{ ENV['HOME'] }/.config"
 
       create_symlinks(original_locations, new_locations)
     end
