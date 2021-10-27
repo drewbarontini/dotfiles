@@ -54,6 +54,7 @@ cask 'microsoft-edge'
 cask 'moom'
 cask 'nordvpn-teams'
 cask 'notion'
+cask 'rescuetime'
 cask 'rocket'
 cask 'sip'
 cask 'tableplus'
@@ -65,7 +66,6 @@ cask 'zoom'
 
 # cask 'basecamp'
 # cask 'flux'
-# cask 'rescuetime'
 
 # ----------------------------------------------------
 #   MAS
