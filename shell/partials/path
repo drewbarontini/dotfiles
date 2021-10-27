@@ -7,6 +7,7 @@
 PATH_DIRECTORIES=(
   '/usr/local/heroku/bin'
   '/usr/local/bin'
+  '/opt/homebrew/bin'
   "$HOME/.rbenv/bin"
   '/usr/bin'
   '/bin'
