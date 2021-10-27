@@ -37,7 +37,6 @@ cask 'adobe-creative-cloud'
 cask 'alfred'
 cask 'backblaze'
 cask 'bartender'
-cask 'basecamp'
 cask 'bettertouchtool'
 cask 'cleanmymac'
 cask 'cleanshot'
@@ -55,7 +54,6 @@ cask 'microsoft-edge'
 cask 'moom'
 cask 'nordvpn-teams'
 cask 'notion'
-cask 'rescuetime'
 cask 'rocket'
 cask 'sip'
 cask 'tableplus'
@@ -65,7 +63,9 @@ cask 'zoom'
 
 # ----- Disabled Packages ----- #
 
+# cask 'basecamp'
 # cask 'flux'
+# cask 'rescuetime'
 
 # ----------------------------------------------------
 #   MAS
