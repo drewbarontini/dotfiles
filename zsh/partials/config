@@ -22,7 +22,7 @@ set -o vi
 #   Homebrew
 # -------------------------------------
 
-[[ -d /opt/homebrew/bin/brew ]] && eval "$(/opt/homebrew/bin/brew shellenv)"
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # -------------------------------------
 #   rbenv
@@ -70,7 +70,7 @@ zmodload -i zsh/complist
 #   Suggestions
 # -------------------------------------
 
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 export ZSH_AUTOSUGGEST_USE_ASYNC=true
 export ZSH_AUTOSUGGEST_MANUAL_REBIND=true
 
