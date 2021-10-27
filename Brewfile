@@ -33,7 +33,6 @@ brew 'zsh-autosuggestions'
 # ----------------------------------------------------
 
 cask '1password'
-cask 'adobe-creative-cloud'
 cask 'alfred'
 cask 'backblaze'
 cask 'bartender'
@@ -52,9 +51,7 @@ cask 'iterm2'
 cask 'keyboard-maestro'
 cask 'microsoft-edge'
 cask 'moom'
-cask 'nordvpn-teams'
 cask 'notion'
-cask 'rescuetime'
 cask 'rocket'
 cask 'sip'
 cask 'tableplus'
@@ -62,9 +59,15 @@ cask 'transmit'
 cask 'visual-studio-code'
 cask 'zoom'
 
+# ----- Not M1 Ready ----- #
+
+cask 'adobe-creative-cloud'
+# cask 'basecamp'
+cask 'nordvpn-teams'
+cask 'rescuetime'
+
 # ----- Disabled Packages ----- #
 
-# cask 'basecamp'
 # cask 'flux'
 
 # ----------------------------------------------------
