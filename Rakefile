@@ -7,75 +7,125 @@ require 'rake'
 # ----- Original Locations ----- #
 
 original_locations                   = {}
+new_locations                        = {}
+
+# .agignore
 original_locations[:agignore]        = "#{ ENV['HOME'] }/.dotfiles/ag/agignore"
+new_locations[:agignore]             = "#{ ENV['HOME'] }/.agignore"
+
+# .editorconfig
 original_locations[:editorconfig]    = "#{ ENV['HOME'] }/.dotfiles/editorconfig/editorconfig"
+new_locations[:editorconfig]         = "#{ ENV['HOME'] }/.editorconfig"
+
+#.eslintrc
 original_locations[:eslintrc]        = "#{ ENV['HOME'] }/.dotfiles/eslint/eslintrc"
+new_locations[:eslintrc]             = "#{ ENV['HOME'] }/.eslintrc"
+
+# .gemrc
 original_locations[:gemrc]           = "#{ ENV['HOME'] }/.dotfiles/gem/gemrc"
+new_locations[:gemrc]                = "#{ ENV['HOME'] }/.gemrc"
+
+# .gitconfig
 original_locations[:gitconfig]       = "#{ ENV['HOME'] }/.dotfiles/git/gitconfig"
+new_locations[:gitconfig]            = "#{ ENV['HOME'] }/.gitconfig"
+
+# .gitconfig_local
 original_locations[:gitconfig_local] = "#{ ENV['HOME'] }/.dotfiles-local/git/gitconfig"
+new_locations[:gitconfig_local]      = "#{ ENV['HOME'] }/.gitconfig.local"
+
+# .gitignore
 original_locations[:gitignore]       = "#{ ENV['HOME'] }/.dotfiles/git/gitignore"
-original_locations[:inputrc]         = "#{ ENV['HOME'] }/.dotfiles/bash/inputrc"
+new_locations[:gitignore]            = "#{ ENV['HOME'] }/.gitignore"
+
+# .prettierrc
 original_locations[:prettierrc]      = "#{ ENV['HOME'] }/.dotfiles/prettier/prettierrc"
+new_locations[:prettierrc]           = "#{ ENV['HOME'] }/.prettierrc"
+
+# .shell
 original_locations[:shell_directory] = "#{ ENV['HOME'] }/.dotfiles/shell"
+new_locations[:shell_directory]      = "#{ ENV['HOME'] }/.shell"
+
+# .config/starship.toml
 original_locations[:starship]        = "#{ ENV['HOME'] }/.dotfiles/starship/starship.toml"
+new_locations[:starship]             = "#{ ENV['HOME'] }/.config/starship.toml"
+
+# .stylelintrc
 original_locations[:stylelint]       = "#{ ENV['HOME'] }/.dotfiles/stylelint/stylelintrc"
+new_locations[:stylelint]            = "#{ ENV['HOME'] }/.stylelintrc"
+
+# .vim
 original_locations[:vim]             = "#{ ENV['HOME'] }/.dotfiles/vim"
+new_locations[:vim]                  = "#{ ENV['HOME'] }/.vim"
+
+# .vimrc
 original_locations[:vimrc]           = "#{ ENV['HOME'] }/.dotfiles/vim/vimrc"
+new_locations[:vimrc]                = "#{ ENV['HOME'] }/.vimrc"
+
+# .zsh
 original_locations[:zsh_directory]   = "#{ ENV['HOME'] }/.dotfiles/zsh"
+new_locations[:zsh_directory]        = "#{ ENV['HOME'] }/.zsh"
+
+# .zprofile
 original_locations[:zprofile]        = "#{ ENV['HOME'] }/.dotfiles/zsh/zprofile"
+new_locations[:zprofile]             = "#{ ENV['HOME'] }/.zprofile"
+
+# .zshrc
 original_locations[:zshrc]           = "#{ ENV['HOME'] }/.dotfiles/zsh/zprofile"
+new_locations[:zshrc]                = "#{ ENV['HOME'] }/.zshrc"
 
 # ----- Disabled Symlinks ----- #
 
+# .ackrc
 # original_locations[:ackrc]           = "#{ ENV['HOME'] }/.dotfiles/ack/ackrc"
+# new_locations[:ackrc]                = "#{ ENV['HOME'] }/.ackrc"
+
+# .atom
 # original_locations[:atom]            = "#{ ENV['HOME'] }/.dotfiles/atom"
+# new_locations[:atom]                 = "#{ ENV['HOME'] }/.atom"
+
+# .bash
 # original_locations[:bash_directory]  = "#{ ENV['HOME'] }/.dotfiles/bash"
+# new_locations[:bash_directory]       = "#{ ENV['HOME'] }/.bash"
+
+# .bash-powerline.sh
 # original_locations[:bash_powerline]  = "#{ ENV['HOME'] }/.dotfiles/bash/partials/prompt-powerline"
+# new_locations[:bash_powerline]       = "#{ ENV['HOME'] }/.bash-powerline.sh"
+
+# .bash_profile
 # original_locations[:bash_profile]    = "#{ ENV['HOME'] }/.dotfiles/bash/bash_profile"
+# new_locations[:bash_profile]         = "#{ ENV['HOME'] }/.bash_profile"
+
+# .bundle/config
 # original_locations[:bundle]          = "#{ ENV['HOME'] }/.dotfiles/bundle/config"
+# new_locations[:bundle]               = "#{ ENV['HOME'] }/.bundle/config"
+
+# .gvimrc
 # original_locations[:gvimrc]          = "#{ ENV['HOME'] }/.dotfiles/vim/gvimrc"
+# new_locations[:gvimrc]               = "#{ ENV['HOME'] }/.gvimrc"
+
+# .hyper.js
 # original_locations[:hyper]           = "#{ ENV['HOME'] }/.dotfiles/hyper/hyper.js"
+# new_locations[:hyper]                = "#{ ENV['HOME'] }/.hyper.js"
+
+# .inputrc
 # original_locations[:inputrc]         = "#{ ENV['HOME'] }/.dotfiles/bash/inputrc"
+# new_locations[:inputrc]              = "#{ ENV['HOME'] }/.inputrc"
+
+# .rspec
 # original_locations[:rspec]           = "#{ ENV['HOME'] }/.dotfiles/rspec/rspec"
+# new_locations[:rspec]                = "#{ ENV['HOME'] }/.rspec"
+
+# .spacemacs
 # original_locations[:spacemacs]       = "#{ ENV['HOME'] }/.dotfiles/spacemacs/spacemacs"
+# new_locations[:spacemacs]            = "#{ ENV['HOME'] }/.spacemacs"
+
+# .tmux.conf
 # original_locations[:tmux_conf]       = "#{ ENV['HOME'] }/.dotfiles/tmux/tmux.conf"
+# new_locations[:tmux_conf]            = "#{ ENV['HOME'] }/.tmux.conf"
+
+# .tmuxline_snapshot
 # original_locations[:tmuxline_conf]   = "#{ ENV['HOME'] }/.dotfiles/tmux/tmuxline_snapshot"
-
-# ----- New Locations ----- #
-
-new_locations                   = {}
-new_locations[:agignore]        = "#{ ENV['HOME'] }/.agignore"
-new_locations[:editorconfig]    = "#{ ENV['HOME'] }/.editorconfig"
-new_locations[:eslintrc]        = "#{ ENV['HOME'] }/.eslintrc"
-new_locations[:gemrc]           = "#{ ENV['HOME'] }/.gemrc"
-new_locations[:gitconfig]       = "#{ ENV['HOME'] }/.gitconfig"
-new_locations[:gitconfig_local] = "#{ ENV['HOME'] }/.gitconfig.local"
-new_locations[:gitignore]       = "#{ ENV['HOME'] }/.gitignore"
-new_locations[:inputrc]         = "#{ ENV['HOME'] }/.inputrc"
-new_locations[:prettierrc]      = "#{ ENV['HOME'] }/.prettierrc"
-new_locations[:shell_directory] = "#{ ENV['HOME'] }/.shell"
-new_locations[:starship]        = "#{ ENV['HOME'] }/.config/starship.toml"
-new_locations[:stylelint]       = "#{ ENV['HOME'] }/.stylelintrc"
-new_locations[:vim]             = "#{ ENV['HOME'] }/.vim"
-new_locations[:vimrc]           = "#{ ENV['HOME'] }/.vimrc"
-new_locations[:zsh_directory]   = "#{ ENV['HOME'] }/.zsh"
-new_locations[:zprofile]        = "#{ ENV['HOME'] }/.zprofile"
-new_locations[:zshrc]           = "#{ ENV['HOME'] }/.zshrc"
-
-# ----- Disabled Symlinks ----- #
-
-# new_locations[:ackrc]           = "#{ ENV['HOME'] }/.ackrc"
-# new_locations[:atom]            = "#{ ENV['HOME'] }/.atom"
-# new_locations[:bash_directory]  = "#{ ENV['HOME'] }/.bash"
-# new_locations[:bash_powerline]  = "#{ ENV['HOME'] }/.bash-powerline.sh"
-# new_locations[:bash_profile]    = "#{ ENV['HOME'] }/.bash_profile"
-# new_locations[:bundle]          = "#{ ENV['HOME'] }/.bundle/config"
-# new_locations[:gvimrc]          = "#{ ENV['HOME'] }/.gvimrc"
-# new_locations[:hyper]           = "#{ ENV['HOME'] }/.hyper.js"
-# new_locations[:rspec]           = "#{ ENV['HOME'] }/.rspec"
-# new_locations[:spacemacs]       = "#{ ENV['HOME'] }/.spacemacs"
-# new_locations[:tmux_conf]       = "#{ ENV['HOME'] }/.tmux.conf"
-# new_locations[:tmuxline_conf]   = "#{ ENV['HOME'] }/.tmuxline_snapshot"
+# new_locations[:tmuxline_conf]        = "#{ ENV['HOME'] }/.tmuxline_snapshot"
 
 # ----- Installation Order ----- #
 
@@ -487,9 +537,9 @@ end
 #   create_symlinks(original_locations, new_locations)
 #
 def create_symlinks(original_locations, new_locations)
-  (0..original_locations.count - 1).each do |index|
-    old = original_locations[ original_locations.keys[index] ]
-    new = new_locations[ new_locations.keys[index] ]
+  original_locations.each do |key, value|
+    old = value
+    new = new_locations[key]
 
     if can_symlink?(new)
       File.symlink(old, new)
