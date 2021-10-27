@@ -65,12 +65,8 @@ new_locations[:vimrc]                = "#{ ENV['HOME'] }/.vimrc"
 original_locations[:zsh_directory]   = "#{ ENV['HOME'] }/.dotfiles/zsh"
 new_locations[:zsh_directory]        = "#{ ENV['HOME'] }/.zsh"
 
-# .zprofile
-original_locations[:zprofile]        = "#{ ENV['HOME'] }/.dotfiles/zsh/zprofile"
-new_locations[:zprofile]             = "#{ ENV['HOME'] }/.zprofile"
-
 # .zshrc
-original_locations[:zshrc]           = "#{ ENV['HOME'] }/.dotfiles/zsh/zprofile"
+original_locations[:zshrc]           = "#{ ENV['HOME'] }/.dotfiles/zsh/zshrc"
 new_locations[:zshrc]                = "#{ ENV['HOME'] }/.zshrc"
 
 # ----- Disabled Symlinks ----- #

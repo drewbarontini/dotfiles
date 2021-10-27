@@ -5,20 +5,13 @@
 # *************************************
 
 PATH_DIRECTORIES=(
-  '/usr/local/heroku/bin'
   '/usr/local/bin'
   '/opt/homebrew/bin'
-  "$HOME/.rbenv/bin"
   '/usr/bin'
   '/bin'
   '/usr/sbin'
   '/sbin'
-  '/opt/X11/bin'
-  '/usr/local/opt/qt5/bin'
   "$HOME/.dotfiles/bin"
-  "$HOME/.nvm/versions/node/v17.0.1"
-  "/usr/local/opt/python@3.8/bin:$PATH"
-  "/usr/local/sbin:$PATH"
 )
 
 [[ -d ~/.dotfiles-local/bin ]] && PATH_DIRECTORIES+=("$HOME/.dotfiles-local/bin")
