@@ -29,8 +29,6 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 # -------------------------------------
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-export CFLAGS="-Wno-error=implicit-function-declaration"
-export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl) --with-readline-dir=$(brew --prefix readline) --with-libyaml-dir=$(brew --prefix libyaml) --with-zlib-dir=$(brew --prefix zlib)"
 
 # -------------------------------------
 #   Autojump
