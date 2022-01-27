@@ -945,10 +945,9 @@
           "verbose": "Left Alt"
         },
         {
-          "keyCode": 65535,
-          "label": "",
-          "extraLabel": "TRANS",
-          "verbose": "Transparent"
+          "keyCode": 2274,
+          "label": "LEFT ALT",
+          "extraLabel": "S+"
         },
         {
           "keyCode": 65535,
@@ -5521,7 +5520,7 @@
       1
     ],
     [
-      15,
+      12,
       15,
       15,
       15,
@@ -5539,7 +5538,7 @@
       0,
       0,
       0,
-      15,
+      0,
       15,
       15,
       0,
