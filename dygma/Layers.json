@@ -875,10 +875,9 @@
           "verbose": "Transparent"
         },
         {
-          "keyCode": 65535,
-          "label": "",
-          "extraLabel": "TRANS",
-          "verbose": "Transparent"
+          "keyCode": 260,
+          "label": "A",
+          "extraLabel": "C+"
         },
         {
           "keyCode": 4176,
@@ -891,10 +890,9 @@
           "extraLabel": "G+"
         },
         {
-          "keyCode": 65535,
-          "label": "",
-          "extraLabel": "TRANS",
-          "verbose": "Transparent"
+          "keyCode": 264,
+          "label": "E",
+          "extraLabel": "C+"
         },
         {
           "keyCode": 65535,
@@ -5571,10 +5569,10 @@
       15,
       15,
       15,
-      12,
       0,
       0,
-      15,
+      0,
+      0,
       15,
       15,
       12,
