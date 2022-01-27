@@ -1302,10 +1302,8 @@
           "verbose": "Transparent"
         },
         {
-          "keyCode": 65535,
-          "label": "",
-          "extraLabel": "TRANS",
-          "verbose": "Transparent"
+          "keyCode": 53,
+          "label": "`"
         },
         {
           "keyCode": 65535,
@@ -5672,8 +5670,8 @@
       15,
       15,
       15,
-      15,
-      15,
+      11,
+      13,
       15,
       15,
       15,
