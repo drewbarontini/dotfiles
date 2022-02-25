@@ -98,3 +98,7 @@
 [delta]
 
     features = side-by-side line-numbers decorations
+
+[init]
+
+  defaultBranch = main
