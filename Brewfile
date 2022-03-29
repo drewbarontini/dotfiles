@@ -5,6 +5,7 @@
 brew 'autojump'
 brew 'awscli'
 brew 'bash'
+brew 'brave-browser'
 brew 'git'
 brew 'git-delta'
 brew 'gh'
