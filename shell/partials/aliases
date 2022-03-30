@@ -119,7 +119,6 @@ alias hrk='heroku run rake'
 #   Miscellaneous
 # -------------------------------------
 
-alias mas='reattach-to-user-namespace mas'
 alias pomodoro='time-police 25'
 alias timer='echo "Timer started. Stop with Ctrl-D." && date && time cat && date'
 
