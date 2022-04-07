@@ -81,9 +81,7 @@ cask 'rescuetime'
 mas 'Amphetamine', id: 937984704
 mas 'Cardhop', id: 1290358394
 mas 'Fantastical', id: 975937182
-mas 'Gestimer', id: 990588172
 mas 'Gifski', id: 1351639930
-mas 'One Thing', id: 1604176982
 mas 'Slack', id: 803453959
 mas 'ToothFairy', id: 1191449274
 
