@@ -82,7 +82,7 @@ cask 'rescuetime'
 mas 'Amphetamine', id: 937984704
 mas 'Cardhop', id: 1290358394
 mas 'Fantastical', id: 975937182
-mas 'Gifski', id: 1351639930
+mas 'Gifox 2', id: 1461845568
 mas 'Slack', id: 803453959
 mas 'ToothFairy', id: 1191449274
 
