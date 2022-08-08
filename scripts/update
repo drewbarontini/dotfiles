@@ -5,12 +5,6 @@
 #
 # ****************************************************
 
-# Rbenv
-cd "$HOME/.rbenv" && git pull && cd -
-
-# Ruby Build
-cd "$HOME/.rbenv/plugins/ruby-build" && git pull && cd -
-
 # NVM
 (
   cd "$NVM_DIR"
