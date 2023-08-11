@@ -71,6 +71,8 @@
   followTags = true
   # https://git-scm.com/docs/git-config#git-config-pushfollowTags
 
+  autoSetupRemote = true
+
 [commit]
 
   template = ~/.dotfiles/git/template
