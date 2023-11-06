@@ -68,10 +68,8 @@ cask 'zoom'
 
 # ----- Not M1 Ready ----- #
 
-cask 'adobe-creative-cloud'
 # cask 'basecamp'
 cask 'nordvpn-teams'
-cask 'rescuetime'
 
 # ----- Disabled Packages ----- #
 
