@@ -37,7 +37,6 @@ brew 'zsh-autosuggestions'
 
 cask '1password'
 cask 'alfred'
-cask 'backblaze'
 cask 'bartender'
 cask 'bettertouchtool'
 cask 'cleanmymac'
