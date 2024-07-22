@@ -38,7 +38,6 @@ brew 'zsh-autosuggestions'
 # ----------------------------------------------------
 
 cask '1password'
-cask 'alfred'
 cask 'bartender'
 cask 'bettertouchtool'
 cask 'cleanmymac'
@@ -74,6 +73,7 @@ cask 'nordvpn-teams'
 
 # ----- Disabled Packages ----- #
 
+# cask 'alfred'
 # cask 'flux'
 
 # ----------------------------------------------------
@@ -84,10 +84,11 @@ mas 'Amphetamine', id: 937984704
 mas 'Cardhop', id: 1290358394
 mas 'Fantastical', id: 975937182
 mas 'Gifox 2', id: 1461845568
+mas 'MindNode', id: 1289197285
+mas 'Portal', id: 1436994560 # Testing
 mas 'Slack', id: 803453959
 mas 'ToothFairy', id: 1191449274
 
 # ----- Disabled Packages ----- #
 
-# mas 'MindNode', id: 1289197285
 # mas 'Unsplash Wallpapers', id: 1284863847
