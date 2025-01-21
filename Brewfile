@@ -81,11 +81,13 @@ cask 'nordvpn-teams'
 # ----------------------------------------------------
 
 mas 'Amphetamine', id: 937984704
+mas 'Canva', id: 897446215
 mas 'Cardhop', id: 1290358394
 mas 'Fantastical', id: 975937182
 mas 'Gifox 2', id: 1461845568
 mas 'IA Writer', id: 775737590
 mas 'MindNode', id: 1289197285
+mas 'Perplexity', id: 6714467650
 mas 'Portal', id: 1436994560
 mas 'Slack', id: 803453959
 mas 'ToothFairy', id: 1191449274
