@@ -6,8 +6,6 @@
 # ****************************************************
 
 packages=(
-  create-react-app
-  gatsby-cli
   npx
   prettier
   prettier-eslint
@@ -27,6 +25,7 @@ done
 # avn-nvm
 # avn-n
 # babel-eslint
+# create-react-app
 # eslint
 # eslint-config-prettier
 # eslint-config-react-app
@@ -35,7 +34,7 @@ done
 # eslint-plugin-import
 # eslint-plugin-jsx-a11y
 # flow-bin
-# babel-eslint
+# gatsby-cli
 # imageoptim-cli
 # parker
 # psi
