@@ -1,21 +1,17 @@
-# ----------------------------------------------------
+ ----------------------------------------------------
 #   Brew
 # ----------------------------------------------------
 
 brew 'autojump'
 brew 'awscli'
 brew 'bash'
-brew 'brave-browser'
 brew 'git'
 brew 'git-delta'
 brew 'gh'
-brew 'karabiner-elements'
 brew 'mas'
-brew 'nordlayer'
 brew 'npm'
 brew 'postgres'
 brew 'python'
-brew 'raycast'
 brew 'rbenv'
 brew 'ruby-build'
 brew 'starship'
@@ -39,6 +35,7 @@ brew 'zsh-autosuggestions'
 # ----------------------------------------------------
 
 cask '1password'
+cask 'arc'
 cask 'bartender'
 cask 'bettertouchtool'
 cask 'cleanmymac'
@@ -54,12 +51,15 @@ cask 'hazel'
 cask 'homerow'
 cask 'imageoptim'
 cask 'iterm2'
+cask 'karabiner-elements'
 cask 'keyboard-maestro'
 cask 'loom'
 cask 'microsoft-edge'
 cask 'moom'
+cask 'nordlayer'
 cask 'notion'
 cask 'notion-calendar'
+cask 'raycast'
 cask 'rocket'
 cask 'screen-studio'
 cask 'tableplus'
@@ -70,7 +70,7 @@ cask 'zoom'
 # ----- Not M1 Ready ----- #
 
 # cask 'basecamp'
-cask 'nordvpn-teams'
+# cask 'nordvpn-teams'
 
 # ----- Disabled Packages ----- #
 
