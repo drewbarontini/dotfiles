@@ -70,6 +70,7 @@ cask 'screen-studio'
 cask 'tableplus'
 cask 'transmit'
 cask 'visual-studio-code'
+cask 'warp'
 cask 'whimsical'
 cask 'zoom'
 
