@@ -61,6 +61,10 @@ new_locations[:vim]                  = "#{ ENV['HOME'] }/.vim"
 original_locations[:vimrc]           = "#{ ENV['HOME'] }/.dotfiles/vim/vimrc"
 new_locations[:vimrc]                = "#{ ENV['HOME'] }/.vimrc"
 
+# .warp
+original_locations[:warp]            = "#{ ENV['HOME'] }/.dotfiles/warp"
+new_locations[:warp]                 = "#{ ENV['HOME'] }/.warp"
+
 # .zsh
 original_locations[:zsh_directory]   = "#{ ENV['HOME'] }/.dotfiles/zsh"
 new_locations[:zsh_directory]        = "#{ ENV['HOME'] }/.zsh"
