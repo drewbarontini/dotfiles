@@ -19,7 +19,6 @@ rake install:npm_packages                 # Install NPM packages
 rake install:nvm                          # Install NVM for managing Node versions
 rake install:rbenv                        # Install rbenv for managing Ruby versions
 rake install:symlinks                     # Create symlinks
-rake install:visual_studio_code_settings  # Install Visual Studio Code settings
 rake install:vundle                       # Install Vundle for managing Vim plugins
 rake update                               # Update drewbarontini/dotfiles
 ```
