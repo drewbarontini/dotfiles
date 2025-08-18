@@ -136,7 +136,6 @@ tasks = [
   'brewfile',
   'nvm',
   'npm_packages',
-  'terminal_italics',
   'cleanup'
 ]
 
@@ -146,6 +145,7 @@ tasks = [
 # 'macos_settings'
 # 'pow'
 # 'sublime_text_settings'
+# 'terminal_italics',
 # 'tmux_plugin_manager',
 # 'visual_studio_code_settings'
 # 'vundle'
