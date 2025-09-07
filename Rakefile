@@ -25,6 +25,10 @@ new_locations[:eslintrc]             = "#{ ENV['HOME'] }/.eslintrc"
 original_locations[:gemrc]           = "#{ ENV['HOME'] }/.dotfiles/gem/gemrc"
 new_locations[:gemrc]                = "#{ ENV['HOME'] }/.gemrc"
 
+# gh
+original_locations[:gh]              = "#{ ENV['HOME'] }/.dotfiles/gh"
+new_locations[:gh]                   = "#{ ENV['HOME'] }/.config/gh"
+
 # .gitconfig
 original_locations[:gitconfig]       = "#{ ENV['HOME'] }/.dotfiles/git/gitconfig"
 new_locations[:gitconfig]            = "#{ ENV['HOME'] }/.gitconfig"
@@ -36,6 +40,10 @@ new_locations[:gitconfig_local]      = "#{ ENV['HOME'] }/.gitconfig.local"
 # .gitignore
 original_locations[:gitignore]       = "#{ ENV['HOME'] }/.dotfiles/git/gitignore"
 new_locations[:gitignore]            = "#{ ENV['HOME'] }/.gitignore"
+
+# .nvim
+original_locations[:neovim]          = "#{ ENV['HOME'] }/.dotfiles/neovim"
+new_locations[:neovim]               = "#{ ENV['HOME'] }/.config/nvim"
 
 # .prettierrc
 original_locations[:prettierrc]      = "#{ ENV['HOME'] }/.dotfiles/prettier/prettierrc"
